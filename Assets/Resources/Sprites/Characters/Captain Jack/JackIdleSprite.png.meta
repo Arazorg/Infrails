@@ -1,0 +1,945 @@
+fileFormatVersion: 2
+guid: 5a6725c4ae406894da0a4ca84dd51d2d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7119954023932085856
+    second: CaptainJackIdle_0
+  - first:
+      213: -7804060499111747419
+    second: CaptainJackIdle_1
+  - first:
+      213: 4177460036315641466
+    second: CaptainJackIdle_2
+  - first:
+      213: 8011682900975407990
+    second: CaptainJackIdle_3
+  - first:
+      213: 5246724582642479263
+    second: CaptainJackIdle_4
+  - first:
+      213: -5159621567280270080
+    second: CaptainJackIdle_5
+  - first:
+      213: -9002597895906673995
+    second: CaptainJackIdle_6
+  - first:
+      213: -5192449987788212500
+    second: CaptainJackIdle_7
+  - first:
+      213: 9061078102256419770
+    second: CaptainJackIdle_8
+  - first:
+      213: 7399403931728549951
+    second: CaptainJackIdle_9
+  - first:
+      213: -528804617283811609
+    second: CaptainJackIdle_10
+  - first:
+      213: 4834167534450409364
+    second: CaptainJackIdle_11
+  - first:
+      213: -8876869507996077504
+    second: CaptainJackIdle_12
+  - first:
+      213: -1209368086251610411
+    second: CaptainJackIdle_13
+  - first:
+      213: -6392953385965618777
+    second: CaptainJackIdle_14
+  - first:
+      213: 2013457164477560674
+    second: CaptainJackIdle_15
+  - first:
+      213: 9064393884193928794
+    second: CaptainJackIdle_16
+  - first:
+      213: 5493317080165835105
+    second: CaptainJackIdle_17
+  - first:
+      213: 5043974053665352655
+    second: CaptainJackIdle_18
+  - first:
+      213: -7580296455486507457
+    second: CaptainJackIdle_19
+  - first:
+      213: -179291467292837424
+    second: CaptainJackIdle_20
+  - first:
+      213: 4322362167516501578
+    second: CaptainJackIdle_21
+  - first:
+      213: 2716017604109914294
+    second: CaptainJackIdle_22
+  - first:
+      213: 2103416067335590980
+    second: CaptainJackIdle_23
+  - first:
+      213: 7822931074888333721
+    second: CaptainJackIdle_24
+  - first:
+      213: -3499546227438980469
+    second: CaptainJackIdle_25
+  - first:
+      213: -2025171240625545005
+    second: CaptainJackIdle_26
+  - first:
+      213: 9133946031172055536
+    second: CaptainJackIdle_27
+  - first:
+      213: -6609809666866332766
+    second: CaptainJackIdle_28
+  - first:
+      213: -651964252111613489
+    second: CaptainJackIdle_29
+  - first:
+      213: 4249976941977659377
+    second: CaptainJackIdle_0
+  - first:
+      213: 2244963167013273364
+    second: CaptainJackIdle_1
+  - first:
+      213: -3080752793413769104
+    second: CaptainJackIdle_2
+  - first:
+      213: 7086968464429234622
+    second: CaptainJackIdle_3
+  - first:
+      213: 7112386384803479179
+    second: CaptainJackIdle_4
+  - first:
+      213: -1714115398866993091
+    second: CaptainJackIdle_5
+  - first:
+      213: 8025772804730969745
+    second: CaptainJackIdle_6
+  - first:
+      213: -3971364779788892156
+    second: CaptainJackIdle_7
+  - first:
+      213: 964593874893744256
+    second: CaptainJackIdle_8
+  - first:
+      213: -1282044437085588167
+    second: CaptainJackIdle_9
+  - first:
+      213: 2453458668537697221
+    second: CaptainJackIdle_10
+  - first:
+      213: 6292178846849595390
+    second: CaptainJackIdle_11
+  - first:
+      213: 3848176329602763913
+    second: CaptainJackIdle_12
+  - first:
+      213: -4718882933817256422
+    second: CaptainJackIdle_13
+  - first:
+      213: -5024693928324493475
+    second: CaptainJackIdle_14
+  - first:
+      213: -8269550474315465939
+    second: CaptainJackIdle_15
+  - first:
+      213: -4579181364969165132
+    second: CaptainJackIdle_16
+  - first:
+      213: -5097523326643404446
+    second: CaptainJackIdle_17
+  - first:
+      213: -5686296423700467306
+    second: CaptainJackIdle_18
+  - first:
+      213: -5600659568382078852
+    second: CaptainJackIdle_19
+  - first:
+      213: 661399027483399841
+    second: CaptainJackIdle_20
+  - first:
+      213: -4643563968627172591
+    second: CaptainJackIdle_21
+  - first:
+      213: 5817347618456384759
+    second: CaptainJackIdle_22
+  - first:
+      213: -278202138127512941
+    second: CaptainJackIdle_23
+  - first:
+      213: 8064168203995985373
+    second: CaptainJackIdle_24
+  - first:
+      213: -5736392182895068859
+    second: CaptainJackIdle_25
+  - first:
+      213: -2254283712950196400
+    second: CaptainJackIdle_26
+  - first:
+      213: -6857695745183111387
+    second: CaptainJackIdle_27
+  - first:
+      213: -5450137417301599544
+    second: CaptainJackIdle_28
+  - first:
+      213: -4101684389661281561
+    second: CaptainJackIdle_29
+  - first:
+      213: 6674321863350101954
+    second: CaptainJackIdle_30
+  - first:
+      213: -9047012538681340220
+    second: CaptainJackIdle_31
+  - first:
+      213: -8499265117066339527
+    second: CaptainJackIdle_32
+  - first:
+      213: 3907658916547348712
+    second: CaptainJackIdle_33
+  - first:
+      213: -3394619009392563469
+    second: CaptainJackIdle_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 115
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaptainJackIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3680
+        width: 500
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7ed2ae283fafa30800000000000000
+      internalID: 4249976941977659377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3680
+        width: 500
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f79a72b16b72f10800000000000000
+      internalID: 2244963167013273364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3680
+        width: 500
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078a7cb28a7fe35d0800000000000000
+      internalID: -3080752793413769104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3680
+        width: 500
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb933b02548f95260800000000000000
+      internalID: 7086968464429234622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3680
+        width: 500
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e3983ebb544b260800000000000000
+      internalID: 7112386384803479179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3680
+        width: 500
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d308182602d3638e0800000000000000
+      internalID: -1714115398866993091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2760
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19edaf1f7d5416f60800000000000000
+      internalID: 8025772804730969745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2760
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4088f2326c0e2e8c0800000000000000
+      internalID: -3971364779788892156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2760
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0882f81c40de26d00800000000000000
+      internalID: 964593874893744256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_9
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2760
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9357f358063453ee0800000000000000
+      internalID: -1282044437085588167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2760
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3da49f8af6c0220800000000000000
+      internalID: 2453458668537697221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_11
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2760
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef772b5e25f425750800000000000000
+      internalID: 6292178846849595390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1840
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c0a07bbf7776530800000000000000
+      internalID: 3848176329602763913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1840
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a165b2139f8238eb0800000000000000
+      internalID: -4718882933817256422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_14
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1840
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f08218e73b44ab0800000000000000
+      internalID: -5024693928324493475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_15
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1840
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b734658a7ac3d80800000000000000
+      internalID: -8269550474315465939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1840
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4beace26fca7370c0800000000000000
+      internalID: -4579181364969165132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_17
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1840
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2610721da85f149b0800000000000000
+      internalID: -5097523326643404446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69172c9a7873611b0800000000000000
+      internalID: -5686296423700467306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_19
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 920
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7091becbc57642b0800000000000000
+      internalID: -5600659568382078852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 920
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6dfe749e2cd2900800000000000000
+      internalID: 661399027483399841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_21
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 920
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b9c265c2fbe8fb0800000000000000
+      internalID: -4643563968627172591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_22
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 920
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4be0d56de5bb050800000000000000
+      internalID: 5817347618456384759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_23
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 920
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ac72d11a0a32cf0800000000000000
+      internalID: -278202138127512941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd53e28714ea9ef60800000000000000
+      internalID: 8064168203995985373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549363ec3bd3460b0800000000000000
+      internalID: -5736392182895068859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_26
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 0
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057a7a228ec27b0e0800000000000000
+      internalID: -2254283712950196400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52727aaad0294d0a0800000000000000
+      internalID: -6857695745183111387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca5ca025e83d54b0800000000000000
+      internalID: -5450137417301599544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackIdle_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 0
+        width: 500
+        height: 915
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2797d77c3e317c0800000000000000
+      internalID: -4101684389661281561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

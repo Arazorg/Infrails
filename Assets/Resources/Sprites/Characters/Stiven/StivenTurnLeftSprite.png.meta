@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: a5711bb5ca4e56748abf85c7274a2ccc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1708431715607302676
+    second: StivenTurnLeft_0
+  - first:
+      213: 4006757814177578946
+    second: StivenTurnLeft_1
+  - first:
+      213: 6834602972714661562
+    second: StivenTurnLeft_2
+  - first:
+      213: 3396241544065932727
+    second: StivenTurnLeft_3
+  - first:
+      213: -8295278541131352011
+    second: StivenTurnLeft_4
+  - first:
+      213: 2343333933411842641
+    second: StivenTurnLeft_5
+  - first:
+      213: -8355727440163346626
+    second: StivenTurnLeft_6
+  - first:
+      213: -1282095577733750304
+    second: StivenTurnLeft_7
+  - first:
+      213: -8727772515541340206
+    second: StivenTurnLeft_8
+  - first:
+      213: -1849970837823919170
+    second: StivenTurnLeft_9
+  - first:
+      213: -8072493626528008379
+    second: StivenTurnLeft_10
+  - first:
+      213: 3888033397752288212
+    second: StivenTurnLeft_11
+  - first:
+      213: -4595691528335333572
+    second: StivenTurnLeft_12
+  - first:
+      213: -6644617724745831967
+    second: StivenTurnLeft_13
+  - first:
+      213: 2298888271217529967
+    second: StivenTurnLeft_14
+  - first:
+      213: -3175897463424502181
+    second: StivenTurnLeft_15
+  - first:
+      213: -6646563688833630324
+    second: StivenTurnLeft_16
+  - first:
+      213: -7675264107570260894
+    second: StivenTurnLeft_17
+  - first:
+      213: -1481802321108007731
+    second: StivenTurnLeft_18
+  - first:
+      213: 627526216654386019
+    second: StivenTurnLeft_19
+  - first:
+      213: -3436957113735077766
+    second: StivenTurnLeft_20
+  - first:
+      213: -6214375315072275622
+    second: StivenTurnLeft_21
+  - first:
+      213: -3137249878771313412
+    second: StivenTurnLeft_22
+  - first:
+      213: -5060843146880686815
+    second: StivenTurnLeft_23
+  - first:
+      213: 6638277105801829638
+    second: StivenTurnLeft_24
+  - first:
+      213: 5851317634652045738
+    second: StivenTurnLeft_25
+  - first:
+      213: 4092673845175985295
+    second: StivenTurnLeft_26
+  - first:
+      213: 3752014382545106636
+    second: StivenTurnLeft_27
+  - first:
+      213: -7934528807790235955
+    second: StivenTurnLeft_28
+  - first:
+      213: 8140948915919789422
+    second: StivenTurnLeft_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 115
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: StivenTurnLeft_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412d8cbf79195b710800000000000000
+      internalID: 1708431715607302676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf3317d00dda9730800000000000000
+      internalID: 4006757814177578946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab67c71413369de50800000000000000
+      internalID: 6834602972714661562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd5975b0bfd12f20800000000000000
+      internalID: 3396241544065932727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538f1fafd1041ec80800000000000000
+      internalID: -8295278541131352011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ab1230cc1358020800000000000000
+      internalID: 2343333933411842641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_6
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e376419e92e7a0c80800000000000000
+      internalID: -8355727440163346626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_7
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1a4196dd4153ee0800000000000000
+      internalID: -1282095577733750304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_8
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfadba8329b0e680800000000000000
+      internalID: -8727772515541340206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_9
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb6ca613559356e0800000000000000
+      internalID: -1849970837823919170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920
+        width: 480
+        height: 919
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547713b01ddb8ff80800000000000000
+      internalID: -8072493626528008379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 920
+        width: 480
+        height: 919
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d351eb86c115f530800000000000000
+      internalID: 3888033397752288212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 920
+        width: 480
+        height: 919
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37ec4c67e2d830c0800000000000000
+      internalID: -4595691528335333572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_13
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 920
+        width: 480
+        height: 919
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9a240526399c3a0800000000000000
+      internalID: -6644617724745831967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_14
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 920
+        width: 480
+        height: 918
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f649b30e3ba47ef10800000000000000
+      internalID: 2298888271217529967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_15
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 920
+        width: 480
+        height: 918
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56b4896512fce3d0800000000000000
+      internalID: -3175897463424502181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_16
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 922
+        width: 480
+        height: 919
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fbf0e3a89a2c3a0800000000000000
+      internalID: -6646563688833630324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_17
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 920
+        width: 480
+        height: 919
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26418fe95fbfb7590800000000000000
+      internalID: -7675264107570260894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_18
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 920
+        width: 480
+        height: 919
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4020fc3a49f6be0800000000000000
+      internalID: -1481802321108007731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_19
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 920
+        width: 480
+        height: 919
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363fdeee4cb65b800800000000000000
+      internalID: 627526216654386019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70a19ff6b97d40d0800000000000000
+      internalID: -3436957113735077766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b292c739a12c9a0800000000000000
+      internalID: -6214375315072275622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4d23c6bdf3674d0800000000000000
+      internalID: -3137249878771313412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_23
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125e43ea8f544c9b0800000000000000
+      internalID: -5060843146880686815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d1deb4bd5ef1c50800000000000000
+      internalID: 6638277105801829638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa10a69136e043150800000000000000
+      internalID: 5851317634652045738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_26
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f842f33ad291cc830800000000000000
+      internalID: 4092673845175985295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_27
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6f1cfa335d11430800000000000000
+      internalID: 3752014382545106636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_28
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce2f879614e2e190800000000000000
+      internalID: -7934528807790235955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StivenTurnLeft_29
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d100c08e57af070800000000000000
+      internalID: 8140948915919789422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1267829d08f5341a5dd3c6c848ba68, type: 3}
+  m_Name: ResetTimeLootbox
+  m_EditorClassIdentifier: 
+  _typeOfLootbox: 5
+  _animatorController: {fileID: 9100000, guid: bf03f9bad7bbf85468f021ae439c48bc, type: 2}
+  _mainSprite: {fileID: -1646334969417813104, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  _lootboxColor: {r: 0.98823535, g: 0.70980394, b: 0.10980393, a: 1}
+  _nameKey: ResetTimeLootbox
+  _price: 0
+  _isAdLootbox: 1

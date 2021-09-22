@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: b4be0d9ca16ff4449a7227b57cc706cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6267268829210645712
+    second: CaveGolemIdleSprite_0
+  - first:
+      213: 4668372883730189289
+    second: CaveGolemIdleSprite_1
+  - first:
+      213: -8437729258265903411
+    second: CaveGolemIdleSprite_2
+  - first:
+      213: 8454645146648822295
+    second: CaveGolemIdleSprite_3
+  - first:
+      213: 5374466951191079327
+    second: CaveGolemIdleSprite_4
+  - first:
+      213: 8259044191048985436
+    second: CaveGolemIdleSprite_5
+  - first:
+      213: 5581097893815469187
+    second: CaveGolemIdleSprite_6
+  - first:
+      213: -1687936245915231216
+    second: CaveGolemIdleSprite_7
+  - first:
+      213: 4547320326530469472
+    second: CaveGolemIdleSprite_8
+  - first:
+      213: 5141090363196633770
+    second: CaveGolemIdleSprite_9
+  - first:
+      213: 2222124716114089484
+    second: CaveGolemIdleSprite_10
+  - first:
+      213: -6340528463348844413
+    second: CaveGolemIdleSprite_11
+  - first:
+      213: -2409610012351790409
+    second: CaveGolemIdleSprite_12
+  - first:
+      213: 422253196254936390
+    second: CaveGolemIdleSprite_13
+  - first:
+      213: -4049275403492783194
+    second: CaveGolemIdleSprite_14
+  - first:
+      213: 7810995257035087453
+    second: CaveGolemIdleSprite_15
+  - first:
+      213: -8178051342433524312
+    second: CaveGolemIdleSprite_16
+  - first:
+      213: 2988563113599422122
+    second: CaveGolemIdleSprite_17
+  - first:
+      213: -1966415556956555518
+    second: CaveGolemIdleSprite_18
+  - first:
+      213: 6541364052235213728
+    second: CaveGolemIdleSprite_19
+  - first:
+      213: 4068675801438715134
+    second: CaveGolemIdleSprite_20
+  - first:
+      213: -6069305623017673123
+    second: CaveGolemIdleSprite_21
+  - first:
+      213: 3756883165556207768
+    second: CaveGolemIdleSprite_22
+  - first:
+      213: 9100661256550789446
+    second: CaveGolemIdleSprite_23
+  - first:
+      213: -2666573283500854840
+    second: CaveGolemIdleSprite_24
+  - first:
+      213: 1027268097535157201
+    second: CaveGolemIdleSprite_25
+  - first:
+      213: 446469926985323235
+    second: CaveGolemIdleSprite_26
+  - first:
+      213: 8568543415415769751
+    second: CaveGolemIdleSprite_27
+  - first:
+      213: 5832547448805064590
+    second: CaveGolemIdleSprite_28
+  - first:
+      213: 5147502082773029023
+    second: CaveGolemIdleSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d49af47bcfc9f650800000000000000
+      internalID: 6267268829210645712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebcdc5576469c040800000000000000
+      internalID: 4668372883730189289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_2
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcef322d1f927ea80800000000000000
+      internalID: -8437729258265903411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712cbfb57fee45570800000000000000
+      internalID: 8454645146648822295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9922da8731f59a40800000000000000
+      internalID: 5374466951191079327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b6ab7fee40e9270800000000000000
+      internalID: 8259044191048985436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_6
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3844d89e6fa047d40800000000000000
+      internalID: 5581097893815469187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c57ba6dee3398e0800000000000000
+      internalID: -1687936245915231216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_8
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e03c68eb35b1f30800000000000000
+      internalID: 4547320326530469472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_9
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 1400
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2f4885272d85740800000000000000
+      internalID: 5141090363196633770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06989ee7a296de10800000000000000
+      internalID: 2222124716114089484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_11
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388b6d5c4fae108a0800000000000000
+      internalID: -6340528463348844413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_12
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b20c8ed5785f8ed0800000000000000
+      internalID: -2409610012351790409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d7c087b052cd500800000000000000
+      internalID: 422253196254936390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab061979751ec7c0800000000000000
+      internalID: -4049275403492783194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e56d54dca366c60800000000000000
+      internalID: 7810995257035087453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_16
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5e75b12a9b18e80800000000000000
+      internalID: -8178051342433524312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_17
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaecde65152897920800000000000000
+      internalID: 2988563113599422122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_18
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2077dce2873e5b4e0800000000000000
+      internalID: -1966415556956555518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_19
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 700
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab5df7a2f797ca50800000000000000
+      internalID: 6541364052235213728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc7bfaa517d67830800000000000000
+      internalID: 4068675801438715134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_21
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e20c241be75cba0800000000000000
+      internalID: -6069305623017673123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_22
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8907f919551232430800000000000000
+      internalID: 3756883165556207768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641bed9023b0c4e70800000000000000
+      internalID: 9100661256550789446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1726d0abd6efad0800000000000000
+      internalID: -2666573283500854840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_25
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3acaa54e6914e00800000000000000
+      internalID: 1027268097535157201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_26
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2dad8780e223600800000000000000
+      internalID: 446469926985323235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_27
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a8e5696d499e670800000000000000
+      internalID: 8568543415415769751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_28
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ff2a5a00f51f050800000000000000
+      internalID: 5832547448805064590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveGolemIdleSprite_29
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 0
+        width: 390
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9015442fd99f6740800000000000000
+      internalID: 5147502082773029023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

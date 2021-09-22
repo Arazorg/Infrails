@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a392d1af4fdd44ea5c17c010d1eae4, type: 3}
+  m_Name: IncreaseFirstAidKitHeal
+  m_EditorClassIdentifier: 
+  _itemName: IncreaseFirstAidKitHeal
+  _itemColor: {r: 1, g: 0.16078432, b: 0.2627451, a: 1}
+  _itemSpriteUI: {fileID: 5169564406829078756, guid: fbed23d75146c474bb785b2f2fca607c, type: 3}
+  internalId: ea23a685-a9f7-4d47-b69f-d7c9ea9c42b7
+  createdAtTicks: 637649467073765888
+  _amplificationType: 0
+  _amplificationIncreaseType: 1
+  _amplificationPowers: 010000000200000003000000

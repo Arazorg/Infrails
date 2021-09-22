@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3471b72a961df40be855c1896c0249, type: 3}
+  m_Name: Hattori
+  m_EditorClassIdentifier: 
+  _prefab: {fileID: 0}
+  _animatorController: {fileID: 9100000, guid: 3c2861b469cea4c4badaacd92d621e0b, type: 2}
+  _unitColor: {r: 0.29803923, g: 0.16862746, b: 0.454902, a: 1}
+  _colliderSize: {x: 2.5, y: 7}
+  _colliderOffset: {x: 0, y: 3.5}
+  _unitName: Hattori
+  _maxHealth: 20
+  _characterSprite: {fileID: -7992937385601112795, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
+  _teleportationAnimatorController: {fileID: 9100000, guid: ef6c560428405544db93c6e0f0dbc608, type: 2}
+  _hands:
+  - {fileID: -835918767557897202, guid: 92480a129b5129c42b3d7f11ce42e1cc, type: 3}
+  - {fileID: -2651022179980586078, guid: 92480a129b5129c42b3d7f11ce42e1cc, type: 3}
+  _characterStartWeapon: {fileID: 11400000, guid: 0c8a505cb314aec48a063a21d1fbc708, type: 2}
+  _characterSkills:
+  - {fileID: 11400000, guid: 540731d79e3922e4aae5a47a4b96550e, type: 2}
+  - {fileID: 11400000, guid: 0bf56eeb73440e4479ac947ac8d7fcdd, type: 2}
+  _weaponSpawnPoint: {x: 0, y: 3.5}
+  _maxArmor: 5
+  _price: 4000

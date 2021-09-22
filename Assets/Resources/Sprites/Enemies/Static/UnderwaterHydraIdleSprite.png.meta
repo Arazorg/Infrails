@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: 78cbddb004057fc4a9126237f5041ca5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -507911955636466731
+    second: UnderwaterHydraIdleSprite_0
+  - first:
+      213: -4904216605525700913
+    second: UnderwaterHydraIdleSprite_1
+  - first:
+      213: -2688037978784193660
+    second: UnderwaterHydraIdleSprite_2
+  - first:
+      213: -3247884065953875510
+    second: UnderwaterHydraIdleSprite_3
+  - first:
+      213: 8706335232645112254
+    second: UnderwaterHydraIdleSprite_4
+  - first:
+      213: -2823599208124883059
+    second: UnderwaterHydraIdleSprite_5
+  - first:
+      213: 4182498154844272236
+    second: UnderwaterHydraIdleSprite_6
+  - first:
+      213: 23500290940483645
+    second: UnderwaterHydraIdleSprite_7
+  - first:
+      213: 3594720065259345576
+    second: UnderwaterHydraIdleSprite_8
+  - first:
+      213: 4776780856616575477
+    second: UnderwaterHydraIdleSprite_9
+  - first:
+      213: -1667312793368469122
+    second: UnderwaterHydraIdleSprite_10
+  - first:
+      213: -4381851957153728467
+    second: UnderwaterHydraIdleSprite_11
+  - first:
+      213: -1649004223502348584
+    second: UnderwaterHydraIdleSprite_12
+  - first:
+      213: -3816847974375507958
+    second: UnderwaterHydraIdleSprite_13
+  - first:
+      213: 6363407607631958159
+    second: UnderwaterHydraIdleSprite_14
+  - first:
+      213: -7391810791476140366
+    second: UnderwaterHydraIdleSprite_15
+  - first:
+      213: 7155597309534030606
+    second: UnderwaterHydraIdleSprite_16
+  - first:
+      213: -5275612812115929111
+    second: UnderwaterHydraIdleSprite_17
+  - first:
+      213: 1554396537679925113
+    second: UnderwaterHydraIdleSprite_18
+  - first:
+      213: -3475827715830067169
+    second: UnderwaterHydraIdleSprite_19
+  - first:
+      213: 7333692531406455781
+    second: UnderwaterHydraIdleSprite_20
+  - first:
+      213: 2154190355453361923
+    second: UnderwaterHydraIdleSprite_21
+  - first:
+      213: 1905328284678003663
+    second: UnderwaterHydraIdleSprite_22
+  - first:
+      213: -2777573132923270180
+    second: UnderwaterHydraIdleSprite_23
+  - first:
+      213: 3135480402332751132
+    second: UnderwaterHydraIdleSprite_24
+  - first:
+      213: 3666312516743064213
+    second: UnderwaterHydraIdleSprite_25
+  - first:
+      213: 8604806593564003859
+    second: UnderwaterHydraIdleSprite_26
+  - first:
+      213: -1330818965154535292
+    second: UnderwaterHydraIdleSprite_27
+  - first:
+      213: 6889857751132947641
+    second: UnderwaterHydraIdleSprite_28
+  - first:
+      213: -378810962919297878
+    second: UnderwaterHydraIdleSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db4d1374c883f8f0800000000000000
+      internalID: -507911955636466731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce811e1bf8b0fbb0800000000000000
+      internalID: -4904216605525700913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_2
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4832fcb33bb22bad0800000000000000
+      internalID: -2688037978784193660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_3
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9fa2966a23de2d0800000000000000
+      internalID: -3247884065953875510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1a74514cd13d870800000000000000
+      internalID: 8706335232645112254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f54a3fa7f80d8d0800000000000000
+      internalID: -2823599208124883059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66383979e73b0a30800000000000000
+      internalID: 4182498154844272236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3830add36d735000800000000000000
+      internalID: 23500290940483645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_8
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a690cc8ad203e130800000000000000
+      internalID: 3594720065259345576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_9
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 1400
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1648071e88a4240800000000000000
+      internalID: 4776780856616575477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71eec529d38cd8e0800000000000000
+      internalID: -1667312793368469122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_11
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28708b6cd88033c0800000000000000
+      internalID: -4381851957153728467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_12
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de0601456f8d19e0800000000000000
+      internalID: -1649004223502348584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_13
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08bda56df4d70bc0800000000000000
+      internalID: -3816847974375507958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80dbed118d5f4850800000000000000
+      internalID: 6363407607631958159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b66a27af330b6990800000000000000
+      internalID: -7391810791476140366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b448e47d9cd4360800000000000000
+      internalID: 7155597309534030606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_17
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e79459491249c6b0800000000000000
+      internalID: -5275612812115929111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_18
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f428c5a63529510800000000000000
+      internalID: 1554396537679925113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_19
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 700
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10dd71bb1163cfc0800000000000000
+      internalID: -3475827715830067169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3ca62708286c560800000000000000
+      internalID: 7333692531406455781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_21
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fbe5307b835ed10800000000000000
+      internalID: 2154190355453361923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_22
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb9cb4eaf5117a10800000000000000
+      internalID: 1905328284678003663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_23
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb807aa3f31479d0800000000000000
+      internalID: -2777573132923270180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c151e3d30d6738b20800000000000000
+      internalID: 3135480402332751132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_25
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ae90c1fcb51e230800000000000000
+      internalID: 3666312516743064213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e4252b10a6a6770800000000000000
+      internalID: 8604806593564003859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_27
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4886c91c33bf78de0800000000000000
+      internalID: -1330818965154535292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_28
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b44041ee11bd9f50800000000000000
+      internalID: 6889857751132947641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterHydraIdleSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 0
+        width: 330
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaceb2eaf613ebaf0800000000000000
+      internalID: -378810962919297878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

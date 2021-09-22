@@ -1,0 +1,915 @@
+fileFormatVersion: 2
+guid: f1d29c70b32422342bf794f40b3bcbc0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3749497693756907565
+    second: SpaceTeleportation_0
+  - first:
+      213: 3687341330463619025
+    second: SpaceTeleportation_1
+  - first:
+      213: -2066559117878762574
+    second: SpaceTeleportation_2
+  - first:
+      213: -4333469048183886783
+    second: SpaceTeleportation_3
+  - first:
+      213: 859313526371223637
+    second: SpaceTeleportation_4
+  - first:
+      213: -4427140331847342760
+    second: SpaceTeleportation_5
+  - first:
+      213: 5186556250475947074
+    second: SpaceTeleportation_6
+  - first:
+      213: -2531069820274043586
+    second: SpaceTeleportation_7
+  - first:
+      213: -6875297350010281345
+    second: SpaceTeleportation_8
+  - first:
+      213: -2801669597834373436
+    second: SpaceTeleportation_9
+  - first:
+      213: -1656277229936781334
+    second: SpaceTeleportation_10
+  - first:
+      213: -933620636415113289
+    second: SpaceTeleportation_11
+  - first:
+      213: 5186253214613067284
+    second: SpaceTeleportation_12
+  - first:
+      213: 4635826626119392812
+    second: SpaceTeleportation_13
+  - first:
+      213: 244213229069927552
+    second: SpaceTeleportation_14
+  - first:
+      213: 5721855744189111588
+    second: SpaceTeleportation_15
+  - first:
+      213: 6677586050986211879
+    second: SpaceTeleportation_16
+  - first:
+      213: 7767973283648123638
+    second: SpaceTeleportation_17
+  - first:
+      213: -1669837560655724743
+    second: SpaceTeleportation_18
+  - first:
+      213: -956944799327440648
+    second: SpaceTeleportation_19
+  - first:
+      213: -3999362947040937563
+    second: SpaceTeleportation_20
+  - first:
+      213: -614131065696325480
+    second: SpaceTeleportation_21
+  - first:
+      213: 6871197605377571506
+    second: SpaceTeleportation_22
+  - first:
+      213: -8884049500298617962
+    second: SpaceTeleportation_23
+  - first:
+      213: -2851726575098136064
+    second: SpaceTeleportation_24
+  - first:
+      213: 8385765888395619725
+    second: SpaceTeleportation_25
+  - first:
+      213: -8532252655466808167
+    second: SpaceTeleportation_26
+  - first:
+      213: 2188966390062976514
+    second: SpaceTeleportation_27
+  - first:
+      213: 4464562875598306550
+    second: SpaceTeleportation_28
+  - first:
+      213: 6944806195155721587
+    second: VoidTeleportationEffectSprite_0
+  - first:
+      213: 6944229400454108795
+    second: VoidTeleportationEffectSprite_1
+  - first:
+      213: 9215972937178345184
+    second: VoidTeleportationEffectSprite_2
+  - first:
+      213: -7877942856524375169
+    second: VoidTeleportationEffectSprite_3
+  - first:
+      213: 823249812309199125
+    second: VoidTeleportationEffectSprite_4
+  - first:
+      213: 4698595255063512509
+    second: VoidTeleportationEffectSprite_5
+  - first:
+      213: -3687644753598904354
+    second: VoidTeleportationEffectSprite_6
+  - first:
+      213: -4874278670506009870
+    second: VoidTeleportationEffectSprite_7
+  - first:
+      213: 6969416909231678226
+    second: VoidTeleportationEffectSprite_8
+  - first:
+      213: -2714725114953464027
+    second: VoidTeleportationEffectSprite_9
+  - first:
+      213: 6023155144294507600
+    second: VoidTeleportationEffectSprite_10
+  - first:
+      213: -9208833966982488821
+    second: VoidTeleportationEffectSprite_11
+  - first:
+      213: -5800527618313525291
+    second: VoidTeleportationEffectSprite_12
+  - first:
+      213: 6071828850106518838
+    second: VoidTeleportationEffectSprite_13
+  - first:
+      213: 6941785100617969259
+    second: VoidTeleportationEffectSprite_14
+  - first:
+      213: 1720014736630841687
+    second: VoidTeleportationEffectSprite_15
+  - first:
+      213: 7213365929228786961
+    second: VoidTeleportationEffectSprite_16
+  - first:
+      213: 1303742673269033314
+    second: VoidTeleportationEffectSprite_17
+  - first:
+      213: -7129428678624079395
+    second: VoidTeleportationEffectSprite_18
+  - first:
+      213: 5627483973726349319
+    second: VoidTeleportationEffectSprite_19
+  - first:
+      213: -6305050896365125761
+    second: VoidTeleportationEffectSprite_20
+  - first:
+      213: 8802727094591262846
+    second: VoidTeleportationEffectSprite_21
+  - first:
+      213: 9184458943746072962
+    second: VoidTeleportationEffectSprite_22
+  - first:
+      213: -3122912464483588853
+    second: VoidTeleportationEffectSprite_23
+  - first:
+      213: 268641732165411754
+    second: VoidTeleportationEffectSprite_24
+  - first:
+      213: -1360024562436188604
+    second: VoidTeleportationEffectSprite_25
+  - first:
+      213: -6427739522695814084
+    second: VoidTeleportationEffectSprite_26
+  - first:
+      213: -6340386309651400145
+    second: VoidTeleportationEffectSprite_27
+  - first:
+      213: 5592337320191278651
+    second: VoidTeleportationEffectSprite_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d50387078e06060800000000000000
+      internalID: 6944806195155721587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7614ecf8dbde5060800000000000000
+      internalID: 6944229400454108795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eee02cde86b5ef70800000000000000
+      internalID: 9215972937178345184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bd90c06bceba290800000000000000
+      internalID: -7877942856524375169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_4
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 519c810b755cc6b00800000000000000
+      internalID: 823249812309199125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_5
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 4000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db585618d73c43140800000000000000
+      internalID: 4698595255063512509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed787e372aad2dcc0800000000000000
+      internalID: -3687644753598904354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_7
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fad93ccf551b5cb0800000000000000
+      internalID: -4874278670506009870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_8
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213ea5ed0c758b060800000000000000
+      internalID: 6969416909231678226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_9
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5270e5424eb535ad0800000000000000
+      internalID: -2714725114953464027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_10
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 054adb211bb869350800000000000000
+      internalID: 6023155144294507600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_11
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d157a2c46a33080800000000000000
+      internalID: -9208833966982488821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d764981dd2608fa0800000000000000
+      internalID: -5800527618313525291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d41935b28734450800000000000000
+      internalID: 6071828850106518838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6eee6515cc265060800000000000000
+      internalID: 6941785100617969259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75181593a48bed710800000000000000
+      internalID: 1720014736630841687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_16
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d569638160b1460800000000000000
+      internalID: 7213365929228786961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_17
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26908b6cd03d71210800000000000000
+      internalID: 1303742673269033314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1112fd36e2f0d90800000000000000
+      internalID: -7129428678624079395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708a921cbd6d81e40800000000000000
+      internalID: 5627483973726349319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ff5678d95ff78a0800000000000000
+      internalID: -6305050896365125761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_21
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7091d757a1992a70800000000000000
+      internalID: 8802727094591262846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_22
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281e42c7fb0c57f70800000000000000
+      internalID: 9184458943746072962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_23
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1000
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05e0d1d8af29a4d0800000000000000
+      internalID: -3122912464483588853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3a0996b386ab300800000000000000
+      internalID: 268641732165411754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_25
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4465f2ebdd8302de0800000000000000
+      internalID: -1360024562436188604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_26
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c342af0b5f41cc6a0800000000000000
+      internalID: -6427739522695814084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_27
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a7a728e3c6208a0800000000000000
+      internalID: -6340386309651400145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VoidTeleportationEffectSprite_28
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 1000
+        height: 1000
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e392ac929fb9d40800000000000000
+      internalID: 5592337320191278651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

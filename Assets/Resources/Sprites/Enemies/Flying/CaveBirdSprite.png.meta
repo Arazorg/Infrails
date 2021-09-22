@@ -1,0 +1,838 @@
+fileFormatVersion: 2
+guid: ca655d1043e8f8a46b5f3f168f624210
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -128635023781619342
+    second: CaveBirdSprite_0
+  - first:
+      213: 8031056823239447168
+    second: CaveBirdSprite_1
+  - first:
+      213: -5299450809928364858
+    second: CaveBirdSprite_2
+  - first:
+      213: 2641277986635933893
+    second: CaveBirdSprite_3
+  - first:
+      213: -7333803292300559029
+    second: CaveBirdSprite_4
+  - first:
+      213: 927819767276849666
+    second: CaveBirdSprite_5
+  - first:
+      213: -2407581385009023375
+    second: CaveBirdSprite_6
+  - first:
+      213: 8355887915293020377
+    second: CaveBirdSprite_7
+  - first:
+      213: 8564231374205983786
+    second: CaveBirdSprite_8
+  - first:
+      213: 5259478563665263171
+    second: CaveBirdSprite_9
+  - first:
+      213: 4497227468265184545
+    second: CaveBirdSprite_10
+  - first:
+      213: 6844394754680335991
+    second: CaveBirdSprite_11
+  - first:
+      213: -6702719282947915517
+    second: CaveBirdSprite_12
+  - first:
+      213: 2591763332566521734
+    second: CaveBirdSprite_13
+  - first:
+      213: -3229925335215318779
+    second: CaveBirdSprite_14
+  - first:
+      213: -4685663710256461870
+    second: CaveBirdSprite_15
+  - first:
+      213: -7329815048281971609
+    second: CaveBirdSprite_16
+  - first:
+      213: -4264284312986631761
+    second: CaveBirdSprite_17
+  - first:
+      213: 287270293850512828
+    second: CaveBirdSprite_18
+  - first:
+      213: -167191581077255547
+    second: CaveBirdSprite_19
+  - first:
+      213: 770168653048341559
+    second: CaveBirdSprite_20
+  - first:
+      213: 5338849964874594824
+    second: CaveBirdSprite_21
+  - first:
+      213: 1072147966427365969
+    second: CaveBirdSprite_22
+  - first:
+      213: 4631108796168024307
+    second: CaveBirdSprite_23
+  - first:
+      213: 8930882721950992804
+    second: CaveBirdSprite_24
+  - first:
+      213: -2516169178065590400
+    second: CaveBirdSprite_25
+  - first:
+      213: 2807572325949350246
+    second: CaveBirdSprite_26
+  - first:
+      213: -1765258854476224509
+    second: CaveBirdSprite_27
+  - first:
+      213: -5971267347575287202
+    second: CaveBirdSprite_28
+  - first:
+      213: -2739537328185067459
+    second: CaveBirdSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaveBirdSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27992dd902ff63ef0800000000000000
+      internalID: -128635023781619342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0821a2061ab047f60800000000000000
+      internalID: 8031056823239447168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc4099e0919476b0800000000000000
+      internalID: -5299450809928364858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c86e72b554b7a420800000000000000
+      internalID: 2641277986635933893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4db5d503c8193a90800000000000000
+      internalID: -7333803292300559029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a4f1c992740ec00800000000000000
+      internalID: 927819767276849666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_6
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176b1ba7c7d869ed0800000000000000
+      internalID: -2407581385009023375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_7
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0150e99c316f370800000000000000
+      internalID: 8355887915293020377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c9dc14f034ad670800000000000000
+      internalID: 8564231374205983786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_9
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34abc0343eb6df840800000000000000
+      internalID: 5259478563665263171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d53181e8c596e30800000000000000
+      internalID: 4497227468265184545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ea44724cc2cfe50800000000000000
+      internalID: 6844394754680335991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3018abe13582bf2a0800000000000000
+      internalID: -6702719282947915517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687928be40bc7f320800000000000000
+      internalID: 2591763332566521734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_14
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509d47f35000d23d0800000000000000
+      internalID: -3229925335215318779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d789356ead29feb0800000000000000
+      internalID: -4685663710256461870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76427d17c04474a90800000000000000
+      internalID: -7329815048281971609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_17
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1492fa20832d4c0800000000000000
+      internalID: -4264284312986631761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_18
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd5b7b6fc69cf300800000000000000
+      internalID: 287270293850512828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_19
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a447094240eadf0800000000000000
+      internalID: -167191581077255547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73466163f4030ba00800000000000000
+      internalID: 770168653048341559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_21
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80af471b1c7671a40800000000000000
+      internalID: 5338849964874594824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_22
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1528f8d15e801ee00800000000000000
+      internalID: 1072147966427365969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f038c7d9e0054040800000000000000
+      internalID: 4631108796168024307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_24
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9009c848ed0fb70800000000000000
+      internalID: 8930882721950992804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0872d9ab675c41dd0800000000000000
+      internalID: -2516169178065590400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_26
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661ad61c72086f620800000000000000
+      internalID: 2807572325949350246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308e452bc6a8087e0800000000000000
+      internalID: -1765258854476224509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_28
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52d2e80cfbc12da0800000000000000
+      internalID: -5971267347575287202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBirdSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d383b9090553bf9d0800000000000000
+      internalID: -2739537328185067459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

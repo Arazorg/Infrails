@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a392d1af4fdd44ea5c17c010d1eae4, type: 3}
+  m_Name: IncreaseCannonDamage
+  m_EditorClassIdentifier: 
+  _itemName: IncreaseCannonDamage
+  _itemColor: {r: 1, g: 0.654902, b: 0.28235295, a: 1}
+  _itemSpriteUI: {fileID: -684905841876487883, guid: fbed23d75146c474bb785b2f2fca607c, type: 3}
+  internalId: 0dd8b592-e9fc-4d9b-aa66-c24b1a4b968e
+  createdAtTicks: 637649466913463437
+  _amplificationType: 2
+  _amplificationIncreaseType: 1
+  _amplificationPowers: 020000000400000006000000

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fea2970d3605af448b043e37466ae47, type: 3}
+  m_Name: BrokenPirateCannon
+  m_EditorClassIdentifier: 
+  _itemName: BrokenPirateCannon
+  _itemColor: {r: 1, g: 1, b: 1, a: 1}
+  _itemSpriteUI: {fileID: -7645462663578288547, guid: b1be3ff174357bb4eb40a4bfc6a87f47, type: 3}
+  _isStartingItem: 1
+  _prefab: {fileID: 0}
+  _type: 1
+  _animatorController: {fileID: 9100000, guid: 59d41b5b2e4b53647a0628af5d9f7dff, type: 2}
+  _mainSprite: {fileID: -3444876735959433310, guid: 802ac1866975a1f4b99ec2a73d60fc61, type: 3}
+  _firstHandPosition: {x: 0, y: 0}
+  _secondHandPosition: {x: -0.1, y: 3}
+  _bulletSpawnPosition: {x: -0.35, y: 5}
+  _bulletData: {fileID: 0}
+  _bulletSpeed: 60
+  _damage: 4
+  _critChance: 15
+  _fireRate: 0.5
+  _bulletScaleFactor: 1.33

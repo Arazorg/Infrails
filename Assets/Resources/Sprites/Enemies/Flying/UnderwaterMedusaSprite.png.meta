@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: 0d37523d19f077f4d98eccc896a2408e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8217932042335122985
+    second: UnderwaterMedusaSprite_0
+  - first:
+      213: 8195574581183666657
+    second: UnderwaterMedusaSprite_1
+  - first:
+      213: -3342715501249310546
+    second: UnderwaterMedusaSprite_2
+  - first:
+      213: 4550635406781046853
+    second: UnderwaterMedusaSprite_3
+  - first:
+      213: -4176252352773578695
+    second: UnderwaterMedusaSprite_4
+  - first:
+      213: -7951918347551076587
+    second: UnderwaterMedusaSprite_5
+  - first:
+      213: 4286395955322992810
+    second: UnderwaterMedusaSprite_6
+  - first:
+      213: 6379779179630998967
+    second: UnderwaterMedusaSprite_7
+  - first:
+      213: 2817573063945484089
+    second: UnderwaterMedusaSprite_8
+  - first:
+      213: -1859204430717801692
+    second: UnderwaterMedusaSprite_9
+  - first:
+      213: 8833547401018483610
+    second: UnderwaterMedusaSprite_10
+  - first:
+      213: 4376225368205597190
+    second: UnderwaterMedusaSprite_11
+  - first:
+      213: 8876398029765328851
+    second: UnderwaterMedusaSprite_12
+  - first:
+      213: 3624520997583260815
+    second: UnderwaterMedusaSprite_13
+  - first:
+      213: 424036564417727790
+    second: UnderwaterMedusaSprite_14
+  - first:
+      213: 986630606726143914
+    second: UnderwaterMedusaSprite_15
+  - first:
+      213: -896579419378509633
+    second: UnderwaterMedusaSprite_16
+  - first:
+      213: -2360476644252746925
+    second: UnderwaterMedusaSprite_17
+  - first:
+      213: 3052781318829776965
+    second: UnderwaterMedusaSprite_18
+  - first:
+      213: 3240925923397021977
+    second: UnderwaterMedusaSprite_19
+  - first:
+      213: 2340836829378654157
+    second: UnderwaterMedusaSprite_20
+  - first:
+      213: -4979912135449928767
+    second: UnderwaterMedusaSprite_21
+  - first:
+      213: -3708144117238915555
+    second: UnderwaterMedusaSprite_22
+  - first:
+      213: 7191523082042722737
+    second: UnderwaterMedusaSprite_23
+  - first:
+      213: -3905541833899382619
+    second: UnderwaterMedusaSprite_24
+  - first:
+      213: 6390846233287596590
+    second: UnderwaterMedusaSprite_25
+  - first:
+      213: 2309153258955548940
+    second: UnderwaterMedusaSprite_26
+  - first:
+      213: 1238370784166011287
+    second: UnderwaterMedusaSprite_27
+  - first:
+      213: -5806715563949629489
+    second: UnderwaterMedusaSprite_28
+  - first:
+      213: -962921945943073561
+    second: UnderwaterMedusaSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d98054195a04fd80800000000000000
+      internalID: -8217932042335122985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1800
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e95ca9d8a78cb170800000000000000
+      internalID: 8195574581183666657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1800
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0d7da46f94c91d0800000000000000
+      internalID: -3342715501249310546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1800
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540ef7bcaca172f30800000000000000
+      internalID: 4550635406781046853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1800
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930aa84ac98fa06c0800000000000000
+      internalID: -4176252352773578695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1800
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f8e4bd46c15a190800000000000000
+      internalID: -7951918347551076587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8b2bb39665c7b30800000000000000
+      internalID: 4286395955322992810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1350
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5b653cc57898850800000000000000
+      internalID: 6379779179630998967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_8
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1350
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937fd2506c70a1720800000000000000
+      internalID: 2817573063945484089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1350
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bab36bb67c236e0800000000000000
+      internalID: -1859204430717801692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_10
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1350
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9328402f80179a70800000000000000
+      internalID: 8833547401018483610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1350
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a92f049c97bbc30800000000000000
+      internalID: 4376225368205597190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfb3299afc4f2b70800000000000000
+      internalID: 8876398029765328851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 900
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c05edc4a2ec4230800000000000000
+      internalID: 3624520997583260815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_14
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 900
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d45e9320b72e500800000000000000
+      internalID: 424036564417727790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 900
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf90763f4731bd00800000000000000
+      internalID: 986630606726143914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 900
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb89403b4c5be83f0800000000000000
+      internalID: -896579419378509633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_17
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 900
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b75b69ff6ed3fd0800000000000000
+      internalID: -2360476644252746925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5402cc56f68ad5a20800000000000000
+      internalID: 3052781318829776965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_19
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 450
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9113f67c4f41afc20800000000000000
+      internalID: 3240925923397021977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_20
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 450
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf244ca1b25c7020800000000000000
+      internalID: 2340836829378654157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_21
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 450
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb99d92c4cc3eab0800000000000000
+      internalID: -4979912135449928767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_22
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 450
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e150c62960a8cc0800000000000000
+      internalID: -3708144117238915555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 450
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9cd2b042c6dc360800000000000000
+      internalID: 7191523082042722737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a8effef46abcc9c0800000000000000
+      internalID: -3905541833899382619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_25
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a104df9c8d0b850800000000000000
+      internalID: 6390846233287596590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_26
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c092bf397a2cb0020800000000000000
+      internalID: 2309153258955548940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791ef62caa39f2110800000000000000
+      internalID: 1238370784166011287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_28
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfdc0bb5f66a6fa0800000000000000
+      internalID: -5806715563949629489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnderwaterMedusaSprite_29
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 340
+        height: 450
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec92a9879303a2f0800000000000000
+      internalID: -962921945943073561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

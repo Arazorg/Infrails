@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: b199016e831e84b47ab3d0f9c60cf286
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4727070190722366900
+    second: ForestBushIdleSprite_0
+  - first:
+      213: -6923551869095386305
+    second: ForestBushIdleSprite_1
+  - first:
+      213: 7014598227563192187
+    second: ForestBushIdleSprite_2
+  - first:
+      213: -1360338476774604369
+    second: ForestBushIdleSprite_3
+  - first:
+      213: 6255738371227939163
+    second: ForestBushIdleSprite_4
+  - first:
+      213: 1917389845931242895
+    second: ForestBushIdleSprite_5
+  - first:
+      213: -3659317735460748665
+    second: ForestBushIdleSprite_6
+  - first:
+      213: 2752471280603106043
+    second: ForestBushIdleSprite_7
+  - first:
+      213: -3497885362000198529
+    second: ForestBushIdleSprite_8
+  - first:
+      213: 8368191566889680756
+    second: ForestBushIdleSprite_9
+  - first:
+      213: 2412048866261843186
+    second: ForestBushIdleSprite_10
+  - first:
+      213: 1404848127349987387
+    second: ForestBushIdleSprite_11
+  - first:
+      213: 1385260185990611526
+    second: ForestBushIdleSprite_12
+  - first:
+      213: -3430353650705739800
+    second: ForestBushIdleSprite_13
+  - first:
+      213: -1649496080948899416
+    second: ForestBushIdleSprite_14
+  - first:
+      213: -7032141016351672741
+    second: ForestBushIdleSprite_15
+  - first:
+      213: 3362364263442126233
+    second: ForestBushIdleSprite_16
+  - first:
+      213: 7429692032366337802
+    second: ForestBushIdleSprite_17
+  - first:
+      213: 8748598987477263158
+    second: ForestBushIdleSprite_18
+  - first:
+      213: -7331421231546757315
+    second: ForestBushIdleSprite_19
+  - first:
+      213: -5754343617255205997
+    second: ForestBushIdleSprite_20
+  - first:
+      213: 1202174100856391694
+    second: ForestBushIdleSprite_21
+  - first:
+      213: -1393669195138169
+    second: ForestBushIdleSprite_22
+  - first:
+      213: 4446234975223046106
+    second: ForestBushIdleSprite_23
+  - first:
+      213: 5277660730470321207
+    second: ForestBushIdleSprite_24
+  - first:
+      213: 2191468742304933422
+    second: ForestBushIdleSprite_25
+  - first:
+      213: 1978880610687531388
+    second: ForestBushIdleSprite_26
+  - first:
+      213: -1513573569065055364
+    second: ForestBushIdleSprite_27
+  - first:
+      213: 4322125947422175775
+    second: ForestBushIdleSprite_28
+  - first:
+      213: 344662576870398555
+    second: ForestBushIdleSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42c7a5e4b2166eb0800000000000000
+      internalID: -4727070190722366900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_1
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33e392f14a9aef90800000000000000
+      internalID: -6923551869095386305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f1dfb4cebd85160800000000000000
+      internalID: 7014598227563192187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1cd8ddc5b1f1de0800000000000000
+      internalID: -1360338476774604369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5172d087e8d0d650800000000000000
+      internalID: 6255738371227939163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f853ca6f7efeb9a10800000000000000
+      internalID: 1917389845931242895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_6
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782439158ed773dc0800000000000000
+      internalID: -3659317735460748665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa00d6eb0eb23620800000000000000
+      internalID: 2752471280603106043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_8
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7480fcbbc3057fc0800000000000000
+      internalID: -3497885362000198529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_9
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 1400
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ff0ecb4e9c12470800000000000000
+      internalID: 8368191566889680756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcbb6e0aa1597120800000000000000
+      internalID: 2412048866261843186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38911abde50f7310800000000000000
+      internalID: 1404848127349987387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642467bbcce693310800000000000000
+      internalID: 1385260185990611526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef48bb878fe460d0800000000000000
+      internalID: -3430353650705739800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a154a4cd00db19e0800000000000000
+      internalID: -1649496080948899416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5677e5e001d86e90800000000000000
+      internalID: -7032141016351672741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_16
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9959fe7ab7489ae20800000000000000
+      internalID: 3362364263442126233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_17
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fdebb0a819b1760800000000000000
+      internalID: 7429692032366337802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_18
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633ace25d64496970800000000000000
+      internalID: 8748598987477263158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_19
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 700
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3f06e2cb3f814a90800000000000000
+      internalID: -7331421231546757315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39397f9c7f67420b0800000000000000
+      internalID: -5754343617255205997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_21
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0848bfa9fafea010800000000000000
+      internalID: 1202174100856391694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_22
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b70ba177c0bfff0800000000000000
+      internalID: -1393669195138169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf561e172334bd30800000000000000
+      internalID: 4446234975223046106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c46bcd8740e3940800000000000000
+      internalID: 5277660730470321207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_25
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e262571d539a96e10800000000000000
+      internalID: 2191468742304933422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_26
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7930fc4e65667b10800000000000000
+      internalID: 1978880610687531388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_27
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b0572bbd4befae0800000000000000
+      internalID: -1513573569065055364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_28
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12f89a46a64bfb30800000000000000
+      internalID: 4322125947422175775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBushIdleSprite_29
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 0
+        width: 360
+        height: 700
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a1bbd99cc78c400800000000000000
+      internalID: 344662576870398555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

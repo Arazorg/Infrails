@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: 6476f2b23a819934d8ee43ce84894356
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 739450287498685875
+    second: ForestBeeSprite_0
+  - first:
+      213: -3411803724847003303
+    second: ForestBeeSprite_1
+  - first:
+      213: -6593004299799802541
+    second: ForestBeeSprite_2
+  - first:
+      213: 143309302921340232
+    second: ForestBeeSprite_3
+  - first:
+      213: 1326178958784800524
+    second: ForestBeeSprite_4
+  - first:
+      213: 3179488138941991480
+    second: ForestBeeSprite_5
+  - first:
+      213: 5330232957224211400
+    second: ForestBeeSprite_6
+  - first:
+      213: -4371517926394670285
+    second: ForestBeeSprite_7
+  - first:
+      213: 4255651218758956873
+    second: ForestBeeSprite_8
+  - first:
+      213: 2669110952430293075
+    second: ForestBeeSprite_9
+  - first:
+      213: 163858023661653271
+    second: ForestBeeSprite_10
+  - first:
+      213: 2461896142637486198
+    second: ForestBeeSprite_11
+  - first:
+      213: 7461533295224794714
+    second: ForestBeeSprite_12
+  - first:
+      213: 6620985240829612779
+    second: ForestBeeSprite_13
+  - first:
+      213: 7319488140828653356
+    second: ForestBeeSprite_14
+  - first:
+      213: -2744463682183837466
+    second: ForestBeeSprite_15
+  - first:
+      213: -2177337966713388648
+    second: ForestBeeSprite_16
+  - first:
+      213: -5462854547064241876
+    second: ForestBeeSprite_17
+  - first:
+      213: 3089247446198662083
+    second: ForestBeeSprite_18
+  - first:
+      213: 3998641952746095140
+    second: ForestBeeSprite_19
+  - first:
+      213: -4232561436369917024
+    second: ForestBeeSprite_20
+  - first:
+      213: -8244620299934454987
+    second: ForestBeeSprite_21
+  - first:
+      213: -6206762870532616313
+    second: ForestBeeSprite_22
+  - first:
+      213: 1827351430526715588
+    second: ForestBeeSprite_23
+  - first:
+      213: -3731138211636968170
+    second: ForestBeeSprite_24
+  - first:
+      213: -4033147868455617707
+    second: ForestBeeSprite_25
+  - first:
+      213: 357224958365455519
+    second: ForestBeeSprite_26
+  - first:
+      213: -4007263159835455147
+    second: ForestBeeSprite_27
+  - first:
+      213: -8826067080335920973
+    second: ForestBeeSprite_28
+  - first:
+      213: 5901024539720985524
+    second: ForestBeeSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestBeeSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1640
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd6b636e1e034a00800000000000000
+      internalID: 739450287498685875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1640
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959c329b696d6a0d0800000000000000
+      internalID: -3411803724847003303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_2
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1640
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d4fc34581f084a0800000000000000
+      internalID: -6593004299799802541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1640
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845a2ad3d032df100800000000000000
+      internalID: 143309302921340232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1640
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0727f29cb8876210800000000000000
+      internalID: 1326178958784800524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1640
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a8431ed9fcf1c20800000000000000
+      internalID: 3179488138941991480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1230
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3dd6142aac8f940800000000000000
+      internalID: 5330232957224211400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1230
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3335ef37b9f3553c0800000000000000
+      internalID: -4371517926394670285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_8
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1230
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947f51e6c3c1f0b30800000000000000
+      internalID: 4255651218758956873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1230
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35056b905469a0520800000000000000
+      internalID: 2669110952430293075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_10
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1230
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d43fd1104264200800000000000000
+      internalID: 163858023661653271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_11
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1230
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670dfcf7f796a2220800000000000000
+      internalID: 2461896142637486198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 820
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5eaf95cff0bc8760800000000000000
+      internalID: 7461533295224794714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 820
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2d0ce3ff672eb50800000000000000
+      internalID: 6620985240829612779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_14
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 820
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27b6cb0fab049560800000000000000
+      internalID: 7319488140828653356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 820
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8c87462d4b9e9d0800000000000000
+      internalID: -2744463682183837466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 820
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891c312c7aa88c1e0800000000000000
+      internalID: -2177337966713388648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_17
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 820
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21cb9e9bba0034b0800000000000000
+      internalID: -5462854547064241876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 410
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c334fd4f263fda20800000000000000
+      internalID: 3089247446198662083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 410
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422c7699ba70e7730800000000000000
+      internalID: 3998641952746095140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_20
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 410
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab67277ccbe245c0800000000000000
+      internalID: -4232561436369917024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_21
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 410
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bae62e489359d80800000000000000
+      internalID: -8244620299934454987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_22
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 410
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fc1d8dd062dd9a0800000000000000
+      internalID: -6206762870532616313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_23
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 410
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6c850c17e0c5910800000000000000
+      internalID: 1827351430526715588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6150e7f9095583cc0800000000000000
+      internalID: -3731138211636968170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_25
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b3416d1616708c0800000000000000
+      internalID: -4033147868455617707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_26
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94d64cf43e15f400800000000000000
+      internalID: 357224958365455519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5519f7433675368c0800000000000000
+      internalID: -4007263159835455147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_28
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0fec0c0c2838580800000000000000
+      internalID: -8826067080335920973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBeeSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 420
+        height: 410
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbaeeccd86a4e150800000000000000
+      internalID: 5901024539720985524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2292 @@
+fileFormatVersion: 2
+guid: 0815b2b12f758c74aa3b3ab683d4b072
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1311442109166206825
+    second: GD2DAnimationUI_0
+  - first:
+      213: -6289546320455770528
+    second: GD2DAnimationUI_1
+  - first:
+      213: -4719447172510388754
+    second: GD2DAnimationUI_2
+  - first:
+      213: 9147213630849784580
+    second: GD2DAnimationUI_3
+  - first:
+      213: 8972094285082429269
+    second: GD2DAnimationUI_4
+  - first:
+      213: -7270868681071104489
+    second: GD2DAnimationUI_5
+  - first:
+      213: -3369409453684148656
+    second: GD2DAnimationUI_6
+  - first:
+      213: -6830286049892356986
+    second: GD2DAnimationUI_7
+  - first:
+      213: -6704104815701850625
+    second: GD2DAnimationUI_8
+  - first:
+      213: 8929235954041429234
+    second: GD2DAnimationUI_9
+  - first:
+      213: 5779431666144745795
+    second: GD2DAnimationUI_10
+  - first:
+      213: 1336678100086315809
+    second: GD2DAnimationUI_11
+  - first:
+      213: 7481586621376357870
+    second: GD2DAnimationUI_12
+  - first:
+      213: -6754533487955690777
+    second: GD2DAnimationUI_13
+  - first:
+      213: -6078116009838213103
+    second: GD2DAnimationUI_14
+  - first:
+      213: -5408747429325637065
+    second: GD2DAnimationUI_15
+  - first:
+      213: 6098678670735923346
+    second: GD2DAnimationUI_16
+  - first:
+      213: -8607032550418085627
+    second: GD2DAnimationUI_17
+  - first:
+      213: -325563938133487438
+    second: GD2DAnimationUI_18
+  - first:
+      213: 6327875180624502339
+    second: GD2DAnimationUI_19
+  - first:
+      213: -4448929620552041538
+    second: GD2DAnimationUI_20
+  - first:
+      213: 14758585719728983
+    second: GD2DAnimationUI_21
+  - first:
+      213: -1764646996675894570
+    second: GD2DAnimationUI_22
+  - first:
+      213: -8067941926007239611
+    second: GD2DAnimationUI_23
+  - first:
+      213: 1303826195808288838
+    second: GD2DAnimationUI_24
+  - first:
+      213: -751066604936151171
+    second: GD2DAnimationUI_25
+  - first:
+      213: -905093616048908290
+    second: GD2DAnimationUI_26
+  - first:
+      213: 6475090960822454488
+    second: GD2DAnimationUI_27
+  - first:
+      213: 2698240473398879104
+    second: GD2DAnimationUI_28
+  - first:
+      213: 2421296061626616082
+    second: GD2DAnimationUI_29
+  - first:
+      213: -1223254873007725415
+    second: GD2DAnimationUI_30
+  - first:
+      213: -6165747135249654498
+    second: GD2DAnimationUI_31
+  - first:
+      213: 2297001684444917186
+    second: GD2DAnimationUI_32
+  - first:
+      213: -7034200679842151813
+    second: GD2DAnimationUI_33
+  - first:
+      213: 8952872427244066019
+    second: GD2DAnimationUI_34
+  - first:
+      213: 5877889404033785345
+    second: GD2DAnimationUI_35
+  - first:
+      213: -5455026378964789250
+    second: GD2DAnimationUI_36
+  - first:
+      213: -2477453762247149180
+    second: GD2DAnimationUI_37
+  - first:
+      213: 3351444545077666840
+    second: GD2DAnimationUI_38
+  - first:
+      213: 5387224360982297773
+    second: GD2DAnimationUI_39
+  - first:
+      213: 3626279059790341635
+    second: GD2DAnimationUI_40
+  - first:
+      213: -2612132580639551020
+    second: GD2DAnimationUI_41
+  - first:
+      213: 7103854124368113950
+    second: GD2DAnimationUI_42
+  - first:
+      213: -2516935576806063319
+    second: GD2DAnimationUI_43
+  - first:
+      213: -1355710062158814279
+    second: GD2DAnimationUI_44
+  - first:
+      213: 6619037166156934571
+    second: GD2DAnimationUI_45
+  - first:
+      213: -5191870116281055350
+    second: GD2DAnimationUI_46
+  - first:
+      213: 4197499985758227784
+    second: GD2DAnimationUI_47
+  - first:
+      213: -2126299614264941893
+    second: GD2DAnimationUI_48
+  - first:
+      213: -9086028349917809850
+    second: GD2DAnimationUI_49
+  - first:
+      213: -6391228382012985563
+    second: GD2DAnimationUI_50
+  - first:
+      213: -88039884268111154
+    second: GD2DAnimationUI_51
+  - first:
+      213: -20375060315589109
+    second: GD2DAnimationUI_52
+  - first:
+      213: -308110611358621015
+    second: GD2DAnimationUI_53
+  - first:
+      213: -839728627069281908
+    second: GD2DAnimationUI_54
+  - first:
+      213: -1299561868711317973
+    second: GD2DAnimationUI_55
+  - first:
+      213: 2598425565784797442
+    second: GD2DAnimationUI_56
+  - first:
+      213: -4388698045809107057
+    second: GD2DAnimationUI_57
+  - first:
+      213: -4223655634951387198
+    second: GD2DAnimationUI_58
+  - first:
+      213: 9183234701461886814
+    second: GD2DAnimationUI_59
+  - first:
+      213: -6102470327429103934
+    second: GD2DAnimationUI_60
+  - first:
+      213: 2364909240296778540
+    second: GD2DAnimationUI_61
+  - first:
+      213: 7574263382878799888
+    second: GD2DAnimationUI_62
+  - first:
+      213: 5052712890292111735
+    second: GD2DAnimationUI_63
+  - first:
+      213: -7383260921693527134
+    second: GD2DAnimationUI_64
+  - first:
+      213: -6275031930941058738
+    second: GD2DAnimationUI_65
+  - first:
+      213: 3706185960972148929
+    second: GD2DAnimationUI_66
+  - first:
+      213: -4845599774995320904
+    second: GD2DAnimationUI_67
+  - first:
+      213: -8988421439808833240
+    second: GD2DAnimationUI_68
+  - first:
+      213: 4689191574512180229
+    second: GD2DAnimationUI_69
+  - first:
+      213: 854834179464680350
+    second: GD2DAnimationUI_70
+  - first:
+      213: -9019478939426586999
+    second: GD2DAnimationUI_71
+  - first:
+      213: -8821971008798525205
+    second: GD2DAnimationUI_72
+  - first:
+      213: -4719487892503654785
+    second: GD2DAnimationUI_73
+  - first:
+      213: 7462644918613636921
+    second: GD2DAnimationUI_74
+  - first:
+      213: 5770947426300198562
+    second: GD2DAnimationUI_75
+  - first:
+      213: -4252355838647405069
+    second: GD2DAnimationUI_76
+  - first:
+      213: 7812069038068652008
+    second: GD2DAnimationUI_77
+  - first:
+      213: 1676150496510195953
+    second: GD2DAnimationUI_78
+  - first:
+      213: 846257722045640596
+    second: GD2DAnimationUI_79
+  - first:
+      213: -1222022567870179239
+    second: GD2DAnimationUI_80
+  - first:
+      213: 7870249355203614457
+    second: GD2DAnimationUI_81
+  - first:
+      213: 2112487833759415667
+    second: GD2DAnimationUI_82
+  - first:
+      213: -8538185162380006322
+    second: GD2DAnimationUI_83
+  - first:
+      213: 7673712395453113062
+    second: GD2DAnimationUI_84
+  - first:
+      213: -6711967893929239262
+    second: GD2DAnimationUI_85
+  - first:
+      213: 5672303052018783966
+    second: GD2DAnimationUI_86
+  - first:
+      213: -3831023090518621696
+    second: GD2DAnimationUI_87
+  - first:
+      213: -2954871816917204351
+    second: GD2DAnimationUI_88
+  - first:
+      213: -4711983050053827058
+    second: GD2DAnimationUI_89
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GD2DAnimationUI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790c8ab9952dccde0800000000000000
+      internalID: -1311442109166206825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 7000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e5edae1fa07b8a0800000000000000
+      internalID: -6289546320455770528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 7000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedeb422dc7218eb0800000000000000
+      internalID: -4719447172510388754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_3
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b996f455e61fe70800000000000000
+      internalID: 9147213630849784580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_4
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55786a15738438c70800000000000000
+      internalID: 8972094285082429269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_5
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 7000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e6e30157fa81b90800000000000000
+      internalID: -7270868681071104489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056305a24f37d31d0800000000000000
+      internalID: -3369409453684148656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_7
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 6500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c2cd9a603f531a0800000000000000
+      internalID: -6830286049892356986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 6500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff50b13a03c36f2a0800000000000000
+      internalID: -6704104815701850625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_9
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc19448ac40beb70800000000000000
+      internalID: 8929235954041429234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_10
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3499338ca7aa43050800000000000000
+      internalID: 5779431666144745795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_11
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b50b666a5dc8210800000000000000
+      internalID: 1336678100086315809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5e37b946fe3d760800000000000000
+      internalID: 7481586621376357870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_13
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 6000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eabbea64931342a0800000000000000
+      internalID: -6754533487955690777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_14
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 6000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1188af931b136aba0800000000000000
+      internalID: -6078116009838213103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_15
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73afc3baed440f4b0800000000000000
+      internalID: -5408747429325637065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_16
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298577850fbd2a450800000000000000
+      internalID: 6098678670735923346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_17
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5090b165f7dad8880800000000000000
+      internalID: -8607032550418085627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b050ebb25d5b7bf0800000000000000
+      internalID: -325563938133487438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 5500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e522443f021d750800000000000000
+      internalID: 6327875180624502339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_20
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 5500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb3840e41a3242c0800000000000000
+      internalID: -4448929620552041538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_21
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b26330bde643000800000000000000
+      internalID: 14758585719728983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_22
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d26c21f7e6b287e0800000000000000
+      internalID: -1764646996675894570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_23
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 5500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c8bd76099e80090800000000000000
+      internalID: -8067941926007239611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6408002640f181210800000000000000
+      internalID: 1303826195808288838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 5000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f3f12f6eca395f0800000000000000
+      internalID: -751066604936151171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_26
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 5000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef75eeec6267073f0800000000000000
+      internalID: -905093616048908290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_27
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d84a202ce42cd950800000000000000
+      internalID: 6475090960822454488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_28
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083a5872a63127520800000000000000
+      internalID: 2698240473398879104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_29
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 5000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2198e4180fb2a9120800000000000000
+      internalID: 2421296061626616082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994eb909c20260fe0800000000000000
+      internalID: -1223254873007725415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_31
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 4500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ddf84e5adde6aa0800000000000000
+      internalID: -6165747135249654498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_32
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 4500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd20d9acd690ef10800000000000000
+      internalID: 2297001684444917186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_33
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72823f10cf716e90800000000000000
+      internalID: -7034200679842151813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_34
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e49549c90efe3c70800000000000000
+      internalID: 8952872427244066019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_35
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e57744545729150800000000000000
+      internalID: 5877889404033785345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef71b69096adb44b0800000000000000
+      internalID: -5455026378964789250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_37
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 4000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489bdc9ede05e9dd0800000000000000
+      internalID: -2477453762247149180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_38
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 4000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81466c99e09b28e20800000000000000
+      internalID: 3351444545077666840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac3ea9730443ca40800000000000000
+      internalID: 5387224360982297773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_40
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306ad3f8791235230800000000000000
+      internalID: 3626279059790341635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_41
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d151c0f147dfbbd0800000000000000
+      internalID: -2612132580639551020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11b72330b5f59260800000000000000
+      internalID: 7103854124368113950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_43
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9238eed9d6c021dd0800000000000000
+      internalID: -2516935576806063319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_44
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3e99e91ec8f2de0800000000000000
+      internalID: -1355710062158814279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_45
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad64e3cb3b8bdb50800000000000000
+      internalID: 6619037166156934571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_46
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a870a1f03a5c2f7b0800000000000000
+      internalID: -5191870116281055350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_47
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d83db6ff3804a30800000000000000
+      internalID: 4197499985758227784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb220b534cddd72e0800000000000000
+      internalID: -2126299614264941893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_49
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64335080b51f7e180800000000000000
+      internalID: -9086028349917809850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_50
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fa8b316abcd47a0800000000000000
+      internalID: -6391228382012985563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_51
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecaf124113837cef0800000000000000
+      internalID: -88039884268111154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_52
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06bc979dfc97bff0800000000000000
+      internalID: -20375060315589109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_53
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2e07a080f59bbf0800000000000000
+      internalID: -308110611358621015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c891fc3434fa854f0800000000000000
+      internalID: -839728627069281908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_55
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ea1d3ad5707fde0800000000000000
+      internalID: -1299561868711317973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_56
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20175e7f8467f0420800000000000000
+      internalID: 2598425565784797442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_57
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fd81131663813c0800000000000000
+      internalID: -4388698045809107057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_58
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c74521f39f8265c0800000000000000
+      internalID: -4223655634951387198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_59
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e571dad5e47617f70800000000000000
+      internalID: 9183234701461886814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cef939c19baf4ba0800000000000000
+      internalID: -6102470327429103934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_61
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bade99c68d1d020800000000000000
+      internalID: 2364909240296778540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_62
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0184db3aa603d1960800000000000000
+      internalID: 7574263382878799888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_63
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77906e17a97de1640800000000000000
+      internalID: 5052712890292111735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_64
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a32f665f43698990800000000000000
+      internalID: -7383260921693527134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_65
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41560294bb9ae8a0800000000000000
+      internalID: -6275031930941058738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0e84bce740f6330800000000000000
+      internalID: 3706185960972148929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_67
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfe0bf7da8f0ccb0800000000000000
+      internalID: -4845599774995320904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_68
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82970bcb256b24380800000000000000
+      internalID: -8988421439808833240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_69
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c9d8284ea531140800000000000000
+      internalID: 4689191574512180229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_70
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93dad8382bfcdb00800000000000000
+      internalID: 854834179464680350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_71
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e7c5c11bf54d280800000000000000
+      internalID: -9019478939426586999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8f4c9bb10129580800000000000000
+      internalID: -8821971008798525205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_73
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e009544c2018eb0800000000000000
+      internalID: -4719487892503654785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_74
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937f6d2c304a09760800000000000000
+      internalID: 7462644918613636921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_75
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aef312cb16861050800000000000000
+      internalID: 5770947426300198562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_76
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5fcda05e89cf4c0800000000000000
+      internalID: -4252355838647405069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_77
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1000
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7d8e6666b0a6c60800000000000000
+      internalID: 7812069038068652008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8b596fef1e24710800000000000000
+      internalID: 1676150496510195953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_79
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f26fe1ae28ebb00800000000000000
+      internalID: 846257722045640596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_80
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9585696f2f08a0fe0800000000000000
+      internalID: -1222022567870179239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_81
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f698a6171eb83d60800000000000000
+      internalID: 7870249355203614457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_82
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d709b0e70115d10800000000000000
+      internalID: 2112487833759415667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_83
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 500
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c24d105d5428980800000000000000
+      internalID: -8538185162380006322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2ae7f34c08e7a60800000000000000
+      internalID: 7673712395453113062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_85
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d558213cc4ad2a0800000000000000
+      internalID: -6711967893929239262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_86
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed691f9929118be40800000000000000
+      internalID: 5672303052018783966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_87
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002815bfbc875dac0800000000000000
+      internalID: -3831023090518621696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_88
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18246d3fcbf2ef6d0800000000000000
+      internalID: -2954871816917204351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GD2DAnimationUI_89
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 800
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0641e1916cab9eb0800000000000000
+      internalID: -4711983050053827058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fea2970d3605af448b043e37466ae47, type: 3}
+  m_Name: AK-58
+  m_EditorClassIdentifier: 
+  _itemName: AK58
+  _itemColor: {r: 0.029853262, g: 0.7169812, b: 0.0033819948, a: 1}
+  _itemSpriteUI: {fileID: 4393296399024053427, guid: f582596d4f5686448870e67b55ba5124, type: 3}
+  internalId: 4deef92a-f3f5-4c6e-92d3-66093979ee78
+  createdAtTicks: 637649466912511451
+  _type: 1
+  _animatorController: {fileID: 9100000, guid: 1f4a3d638bddd76409605afc49816a9b, type: 2}
+  _mainSprite: {fileID: 0}
+  _firstHandPosition: {x: 0, y: 0}
+  _secondHandPosition: {x: -0.05, y: 2}
+  _bulletSpawnPosition: {x: -0.2, y: 4}
+  _bulletData: {fileID: 0}
+  _bulletSpeed: 75
+  _damage: 4
+  _critChance: 25
+  _fireRate: 0.25
+  _bulletScaleFactor: 1.1
+  _isStartingWeapon: 0

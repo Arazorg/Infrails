@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1267829d08f5341a5dd3c6c848ba68, type: 3}
+  m_Name: AmplificationsLootbox
+  m_EditorClassIdentifier: 
+  _typeOfLootbox: 0
+  _animatorController: {fileID: 9100000, guid: 4e023564d3f194b4192ecd4a46bce6fa, type: 2}
+  _mainSprite: {fileID: -7013124428788275369, guid: 996ac52a8e95c4343bc45622f4fd5e3e, type: 3}
+  _lootboxColor: {r: 0.14117648, g: 0.41176474, b: 0.8000001, a: 1}
+  _nameKey: AmplificationsLootbox
+  _price: 1000
+  _isAdLootbox: 0

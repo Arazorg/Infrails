@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2397c163b6f7bb4eba9d53d0292a821, type: 3}
+  m_Name: CaveGolem
+  m_EditorClassIdentifier: 
+  _animatorController: {fileID: 9100000, guid: 1f2a38b6f1614d346806dc9f5de1a97f, type: 2}
+  _unitColor: {r: 0.5882353, g: 0.5568628, b: 0.43137258, a: 1}
+  _colliderSize: {x: 4, y: 7}
+  _colliderOffset: {x: 0, y: 3.5}
+  _unitName: CaveGolem
+  _maxHealth: 15
+  _type: 1
+  _isMove: 0
+  _isStaticScale: 1
+  _enemyElement: 4
+  _bulletData: {fileID: 0}
+  _damage: 1
+  _fireRate: 1
+  _weaponData: {fileID: 11400000, guid: f291c77e2afd5024c8c1159f747a2831, type: 2}
+  _weaponSpawnPosition: {x: -0.175, y: 3.25}

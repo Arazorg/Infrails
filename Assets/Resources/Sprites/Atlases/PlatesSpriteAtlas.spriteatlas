@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlatesSpriteAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 100
+      m_CrunchedCompression: 1
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ac068b491b7294e4ca1be9061b79909b, type: 3}
+    - {fileID: 2800000, guid: 5f1ba102c29c9064cb5cd2c183d04ee1, type: 3}
+    - {fileID: 2800000, guid: 95a0d4487f8d2a34d949485477495895, type: 3}
+    - {fileID: 2800000, guid: 3ed87070c9a599149952729269f2ba4c, type: 3}
+    - {fileID: 2800000, guid: 1439aa9f878d8aa4fa9c9a3cc5ac8d37, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3ed87070c9a599149952729269f2ba4c, type: 3}
+  - {fileID: 21300000, guid: 5f1ba102c29c9064cb5cd2c183d04ee1, type: 3}
+  - {fileID: 21300000, guid: 95a0d4487f8d2a34d949485477495895, type: 3}
+  - {fileID: 21300000, guid: ac068b491b7294e4ca1be9061b79909b, type: 3}
+  - {fileID: 21300000, guid: 1439aa9f878d8aa4fa9c9a3cc5ac8d37, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - SpacePlateSprite
+  - ForestPlateSprite
+  - HellPlateSprite
+  - CavePlateSprite
+  - UnderwaterPlateSprite
+  m_RenderDataMap: {}
+  m_Tag: PlatesSpriteAtlas
+  m_IsVariant: 0

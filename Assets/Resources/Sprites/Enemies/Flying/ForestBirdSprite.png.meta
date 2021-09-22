@@ -1,0 +1,838 @@
+fileFormatVersion: 2
+guid: 29e508121c589ba438779316af0f42e7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7765309492338683727
+    second: ForestBirdSprite_0
+  - first:
+      213: 5186440666549276642
+    second: ForestBirdSprite_1
+  - first:
+      213: 7647355959825952582
+    second: ForestBirdSprite_2
+  - first:
+      213: -4261328631885313073
+    second: ForestBirdSprite_3
+  - first:
+      213: -1395384503345433347
+    second: ForestBirdSprite_4
+  - first:
+      213: 5301069986028994221
+    second: ForestBirdSprite_5
+  - first:
+      213: 7890760162030546696
+    second: ForestBirdSprite_6
+  - first:
+      213: 3413585792675078381
+    second: ForestBirdSprite_7
+  - first:
+      213: -4504293705122867103
+    second: ForestBirdSprite_8
+  - first:
+      213: 4034047675506162662
+    second: ForestBirdSprite_9
+  - first:
+      213: -8277612230446279195
+    second: ForestBirdSprite_10
+  - first:
+      213: -8877812957332776751
+    second: ForestBirdSprite_11
+  - first:
+      213: -260839294479727012
+    second: ForestBirdSprite_12
+  - first:
+      213: 8147814833036800804
+    second: ForestBirdSprite_13
+  - first:
+      213: 5454600807103002643
+    second: ForestBirdSprite_14
+  - first:
+      213: -5898736072923297717
+    second: ForestBirdSprite_15
+  - first:
+      213: -6702645052825465801
+    second: ForestBirdSprite_16
+  - first:
+      213: 3396619938936524332
+    second: ForestBirdSprite_17
+  - first:
+      213: 4362079470424358263
+    second: ForestBirdSprite_18
+  - first:
+      213: 353952511674975891
+    second: ForestBirdSprite_19
+  - first:
+      213: 8909517656453652857
+    second: ForestBirdSprite_20
+  - first:
+      213: -3638703935476312246
+    second: ForestBirdSprite_21
+  - first:
+      213: -7499750620515544127
+    second: ForestBirdSprite_22
+  - first:
+      213: -6250080674471865970
+    second: ForestBirdSprite_23
+  - first:
+      213: 6632301389780413354
+    second: ForestBirdSprite_24
+  - first:
+      213: 6607645676477300467
+    second: ForestBirdSprite_25
+  - first:
+      213: 8172794474097092523
+    second: ForestBirdSprite_26
+  - first:
+      213: -7407813986227319575
+    second: ForestBirdSprite_27
+  - first:
+      213: 4917960041089395648
+    second: ForestBirdSprite_28
+  - first:
+      213: 679926258711246293
+    second: ForestBirdSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestBirdSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fe0d547dbe3cb60800000000000000
+      internalID: 7765309492338683727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef4f4aae40f9f740800000000000000
+      internalID: 5186440666549276642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f64606abdd02a60800000000000000
+      internalID: 7647355959825952582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb4641df28bcd4c0800000000000000
+      internalID: -4261328631885313073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1800
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4b201ff2992ace0800000000000000
+      internalID: -1395384503345433347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae3eb6e01f219940800000000000000
+      internalID: 5301069986028994221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_6
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f62a17f8c918d60800000000000000
+      internalID: 7890760162030546696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_7
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0e7b6413e7f5f20800000000000000
+      internalID: 3413585792675078381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1689f1e6db88d71c0800000000000000
+      internalID: -4504293705122867103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_9
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1440
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebf881dcf0dbf730800000000000000
+      internalID: 4034047675506162662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e512d77883002d80800000000000000
+      internalID: -8277612230446279195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8d1d7e62cabc480800000000000000
+      internalID: -8877812957332776751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56821d2b00516cf0800000000000000
+      internalID: -260839294479727012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42331d2fb6ad21170800000000000000
+      internalID: 8147814833036800804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_14
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1080
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318feeac882a2bb40800000000000000
+      internalID: 5454600807103002643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48cf956bca732ea0800000000000000
+      internalID: -5898736072923297717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c0fca26db6bf2a0800000000000000
+      internalID: -6702645052825465801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_17
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e0251a6d7332f20800000000000000
+      internalID: 3396619938936524332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_18
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dfaa4ca28398c30800000000000000
+      internalID: 4362079470424358263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_19
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 720
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3968ebd1fed79e400800000000000000
+      internalID: 353952511674975891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971adf89a17f4ab70800000000000000
+      internalID: 8909517656453652857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_21
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a475e13ac0ab08dc0800000000000000
+      internalID: -3638703935476312246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_22
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3d728cb888be790800000000000000
+      internalID: -7499750620515544127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81129cadb04349a0800000000000000
+      internalID: -6250080674471865970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_24
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 360
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabe03d79faaa0c50800000000000000
+      internalID: 6632301389780413354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe3314ebb213bb50800000000000000
+      internalID: 6607645676477300467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_26
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba725dad5499b6170800000000000000
+      internalID: 8172794474097092523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec00c48d68223990800000000000000
+      internalID: -7407813986227319575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_28
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbe2b4d99a104440800000000000000
+      internalID: 4917960041089395648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestBirdSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 520
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5b1f374559f6900800000000000000
+      internalID: 679926258711246293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

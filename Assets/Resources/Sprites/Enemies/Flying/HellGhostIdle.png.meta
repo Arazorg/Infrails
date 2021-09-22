@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: 6e863445eb0bb0c4ea021a0ec03ddc19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8829292229923645865
+    second: HellGhostIdle_0
+  - first:
+      213: -4558301921581282457
+    second: HellGhostIdle_1
+  - first:
+      213: 4518460070179368129
+    second: HellGhostIdle_2
+  - first:
+      213: -8173663866569917035
+    second: HellGhostIdle_3
+  - first:
+      213: 4548031967557083648
+    second: HellGhostIdle_4
+  - first:
+      213: 5987504874233680856
+    second: HellGhostIdle_5
+  - first:
+      213: 8915534097893715594
+    second: HellGhostIdle_6
+  - first:
+      213: 8777217947684052187
+    second: HellGhostIdle_7
+  - first:
+      213: -4332083463120485836
+    second: HellGhostIdle_8
+  - first:
+      213: -8509628719348715860
+    second: HellGhostIdle_9
+  - first:
+      213: -3458815732843932321
+    second: HellGhostIdle_10
+  - first:
+      213: 7557623806722294144
+    second: HellGhostIdle_11
+  - first:
+      213: 1893280285641357468
+    second: HellGhostIdle_12
+  - first:
+      213: 565228864219354068
+    second: HellGhostIdle_13
+  - first:
+      213: 5755771211304512120
+    second: HellGhostIdle_14
+  - first:
+      213: 7442622552958805153
+    second: HellGhostIdle_15
+  - first:
+      213: 7717289455830967017
+    second: HellGhostIdle_16
+  - first:
+      213: 6334515417617627874
+    second: HellGhostIdle_17
+  - first:
+      213: -5182963990762246021
+    second: HellGhostIdle_18
+  - first:
+      213: -2459085252521454746
+    second: HellGhostIdle_19
+  - first:
+      213: 2441365622842845695
+    second: HellGhostIdle_20
+  - first:
+      213: 4969934894460960977
+    second: HellGhostIdle_21
+  - first:
+      213: -4728245048429678128
+    second: HellGhostIdle_22
+  - first:
+      213: 9155979384787382969
+    second: HellGhostIdle_23
+  - first:
+      213: 4005688556726877169
+    second: HellGhostIdle_24
+  - first:
+      213: 5073345972690051655
+    second: HellGhostIdle_25
+  - first:
+      213: 1201114206881433585
+    second: HellGhostIdle_26
+  - first:
+      213: -7506586688146489344
+    second: HellGhostIdle_27
+  - first:
+      213: 5842699896240860755
+    second: HellGhostIdle_28
+  - first:
+      213: 5574351937587814530
+    second: HellGhostIdle_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HellGhostIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2200
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756d8491f7d087580800000000000000
+      internalID: -8829292229923645865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_1
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 2200
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bca21ad88adb0c0800000000000000
+      internalID: -4558301921581282457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_2
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2200
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cce3d67e7bc4be30800000000000000
+      internalID: 4518460070179368129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2200
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d77afe400519e80800000000000000
+      internalID: -8173663866569917035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_4
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 2200
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0026c5d5afadd1f30800000000000000
+      internalID: 4548031967557083648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_5
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2200
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d35e9fb5f3e71350800000000000000
+      internalID: 5987504874233680856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1650
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e66d786075abb70800000000000000
+      internalID: 8915534097893715594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1650
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc14ef3831fec970800000000000000
+      internalID: 8777217947684052187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_8
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1650
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4320c5bea0951e3c0800000000000000
+      internalID: -4332083463120485836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_9
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1650
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caee1c404c9b7e980800000000000000
+      internalID: -8509628719348715860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_10
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1650
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f551e44aa61dfffc0800000000000000
+      internalID: -3458815732843932321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_11
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1650
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081c7b96fc212e860800000000000000
+      internalID: 7557623806722294144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9837e58368464a10800000000000000
+      internalID: 1893280285641357468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1100
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3979448a818d700800000000000000
+      internalID: 565228864219354068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_14
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1100
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87aa93adb6b90ef40800000000000000
+      internalID: 5755771211304512120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_15
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1100
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4ab6a77c1894760800000000000000
+      internalID: 7442622552958805153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_16
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1100
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e22ca34fd1591b60800000000000000
+      internalID: 7717289455830967017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_17
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1100
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ea755be538b8e750800000000000000
+      internalID: 6334515417617627874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70b9fef5b96218b0800000000000000
+      internalID: -5182963990762246021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 550
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6639e0bddf29fddd0800000000000000
+      internalID: -2459085252521454746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_20
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 550
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9e56c591971e120800000000000000
+      internalID: 2441365622842845695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_21
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 550
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d00a256471c8f440800000000000000
+      internalID: 4969934894460960977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_22
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 550
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d179550e26e16eb0800000000000000
+      internalID: -4728245048429678128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_23
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 550
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b23d017db2901f70800000000000000
+      internalID: 9155979384787382969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb7d80f480179730800000000000000
+      internalID: 4005688556726877169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_25
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 0
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74269dc4845286640800000000000000
+      internalID: 5073345972690051655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_26
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7c7d3e1073ba010800000000000000
+      internalID: 1201114206881433585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_27
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0004a51cd2f33d790800000000000000
+      internalID: -7506586688146489344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_28
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ee5a48990751150800000000000000
+      internalID: 5842699896240860755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellGhostIdle_29
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 420
+        height: 550
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280aee49d831c5d40800000000000000
+      internalID: 5574351937587814530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: 18a4a5fd8f2766849b4bc33be5670288
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1646334969417813104
+    second: DailyPresentWithRewardSprite_0
+  - first:
+      213: -3845237424658160168
+    second: DailyPresentWithRewardSprite_1
+  - first:
+      213: 5619270651365459650
+    second: DailyPresentWithRewardSprite_2
+  - first:
+      213: -1142694334635423374
+    second: DailyPresentWithRewardSprite_3
+  - first:
+      213: 4457408957945659211
+    second: DailyPresentWithRewardSprite_4
+  - first:
+      213: 3276887984752609003
+    second: DailyPresentWithRewardSprite_5
+  - first:
+      213: 5294319256399525539
+    second: DailyPresentWithRewardSprite_6
+  - first:
+      213: 7760669290641474
+    second: DailyPresentWithRewardSprite_7
+  - first:
+      213: 4558947421684768058
+    second: DailyPresentWithRewardSprite_8
+  - first:
+      213: -587713883972275769
+    second: DailyPresentWithRewardSprite_9
+  - first:
+      213: 7886758292130600554
+    second: DailyPresentWithRewardSprite_10
+  - first:
+      213: -3742087623157114952
+    second: DailyPresentWithRewardSprite_11
+  - first:
+      213: -3979586862547107674
+    second: DailyPresentWithRewardSprite_12
+  - first:
+      213: -4082833902848991747
+    second: DailyPresentWithRewardSprite_13
+  - first:
+      213: 7888938826142379805
+    second: DailyPresentWithRewardSprite_14
+  - first:
+      213: -5780713594459971284
+    second: DailyPresentWithRewardSprite_15
+  - first:
+      213: -5432701102781700889
+    second: DailyPresentWithRewardSprite_16
+  - first:
+      213: -1233293120692792643
+    second: DailyPresentWithRewardSprite_17
+  - first:
+      213: -4397679046016130694
+    second: DailyPresentWithRewardSprite_18
+  - first:
+      213: 6373638658784836953
+    second: DailyPresentWithRewardSprite_19
+  - first:
+      213: -1771536054661108684
+    second: DailyPresentWithRewardSprite_20
+  - first:
+      213: -7896393692620497554
+    second: DailyPresentWithRewardSprite_21
+  - first:
+      213: -8587938302542923579
+    second: DailyPresentWithRewardSprite_22
+  - first:
+      213: 2549817107704940226
+    second: DailyPresentWithRewardSprite_23
+  - first:
+      213: -2058365079182661877
+    second: DailyPresentWithRewardSprite_24
+  - first:
+      213: 2554817319946624535
+    second: DailyPresentWithRewardSprite_25
+  - first:
+      213: -4277811311482854599
+    second: DailyPresentWithRewardSprite_26
+  - first:
+      213: 940435394947266647
+    second: DailyPresentWithRewardSprite_27
+  - first:
+      213: 677675001075233856
+    second: DailyPresentWithRewardSprite_28
+  - first:
+      213: 6754473697145941317
+    second: DailyPresentWithRewardSprite_29
+  - first:
+      213: 5428092854919447945
+    second: DailyPresentWithRewardSprite_30
+  - first:
+      213: 6264718446841032599
+    second: DailyPresentWithRewardSprite_31
+  - first:
+      213: 6812619974942361968
+    second: DailyPresentWithRewardSprite_32
+  - first:
+      213: -5574874289859638283
+    second: DailyPresentWithRewardSprite_33
+  - first:
+      213: -509304068218367422
+    second: DailyPresentWithRewardSprite_34
+  - first:
+      213: -8108740190505281261
+    second: DailyPresentWithRewardSprite_35
+  - first:
+      213: 8410069940256420729
+    second: DailyPresentWithRewardSprite_36
+  - first:
+      213: 2183936805796350092
+    second: DailyPresentWithRewardSprite_37
+  - first:
+      213: -3494347936445758678
+    second: DailyPresentWithRewardSprite_38
+  - first:
+      213: -828709176309617069
+    second: DailyPresentWithRewardSprite_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2520
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0933c86611b0729e0800000000000000
+      internalID: -1646334969417813104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2520
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5663a6fe8f2aac0800000000000000
+      internalID: -3845237424658160168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2520
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c68a6f92e8abfd40800000000000000
+      internalID: 5619270651365459650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2520
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27944319e855420f0800000000000000
+      internalID: -1142694334635423374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2520
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fbef4b4d5ebdd30800000000000000
+      internalID: 4457408957945659211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2520
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6cceba248d97d20800000000000000
+      internalID: 3276887984752609003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2520
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6343d2053397940800000000000000
+      internalID: 5294319256399525539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 2520
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248b940a9429b1000800000000000000
+      internalID: 7760669290641474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1890
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d14339682a44f30800000000000000
+      internalID: 4558947421684768058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1890
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1744c165508d7f0800000000000000
+      internalID: -587713883972275769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1890
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a669fcf71e4637d60800000000000000
+      internalID: 7886758292130600554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1890
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b79557122f611cc0800000000000000
+      internalID: -3742087623157114952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1890
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0811155daa5c8c0800000000000000
+      internalID: -3979586862547107674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_13
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1890
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd93c7723cd657c0800000000000000
+      internalID: -4082833902848991747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1890
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fe003a0142b7d60800000000000000
+      internalID: 7888938826142379805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_15
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1890
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2121f50d97c6cfa0800000000000000
+      internalID: -5780713594459971284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1260
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4e2d5712b2b94b0800000000000000
+      internalID: -5432701102781700889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1260
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db25c25e07672eee0800000000000000
+      internalID: -1233293120692792643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1260
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71a702253e48f2c0800000000000000
+      internalID: -4397679046016130694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1260
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d31975796b37850800000000000000
+      internalID: 6373638658784836953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1260
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ca023285d3a67e0800000000000000
+      internalID: -1771536054661108684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_21
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1260
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d58b006cf5a6290800000000000000
+      internalID: -7896393692620497554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1260
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c835fb5d9381d880800000000000000
+      internalID: -8587938302542923579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_23
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1260
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c687f26625c26320800000000000000
+      internalID: 2549817107704940226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07af3dbdd73f63e0800000000000000
+      internalID: -2058365079182661877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_25
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 630
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e1f6501d8847320800000000000000
+      internalID: 2554817319946624535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_26
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 630
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933aaeae64922a4c0800000000000000
+      internalID: -4277811311482854599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 630
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758390252091d0d00800000000000000
+      internalID: 940435394947266647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_28
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 630
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0447040b2d5976900800000000000000
+      internalID: 677675001075233856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 630
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d6a137a06bcbd50800000000000000
+      internalID: 6754473697145941317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_30
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 630
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9854f4931b5745b40800000000000000
+      internalID: 5428092854919447945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_31
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 630
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79febc94c30c0f650800000000000000
+      internalID: 6264718446841032599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0798b2cb5c94b8e50800000000000000
+      internalID: 6812619974942361968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_33
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb457dce5112a2b0800000000000000
+      internalID: -5574874289859638283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242de2bf5a69ee8f0800000000000000
+      internalID: -509304068218367422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_35
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319dff832c7f77f80800000000000000
+      internalID: -8108740190505281261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_36
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973bc2d5d0296b470800000000000000
+      internalID: 8410069940256420729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_37
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88846134f6ee4e10800000000000000
+      internalID: 2183936805796350092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_38
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23088ec015918fc0800000000000000
+      internalID: -3494347936445758678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DailyPresentWithRewardSprite_39
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 400
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e65f31565df74f0800000000000000
+      internalID: -828709176309617069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

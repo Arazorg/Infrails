@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LobbyDecorations2Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+    - {fileID: 2800000, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 3276887984752609003, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 5294319256399525539, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 7760669290641474, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -1646334969417813104, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -3845237424658160168, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 5619270651365459650, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -1142694334635423374, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -1233293120692792643, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -5432701102781700889, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -5780713594459971284, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 7888938826142379805, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -4082833902848991747, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -3979586862547107674, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 677675001075233856, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -3742087623157114952, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 6754473697145941317, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 7886758292130600554, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -828709176309617069, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -8587938302542923579, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -3494347936445758678, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 2549817107704940226, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -1771536054661108684, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 6373638658784836953, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -7896393692620497554, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -8108740190505281261, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -4397679046016130694, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -4277811311482854599, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -509304068218367422, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 940435394947266647, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 2183936805796350092, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -2058365079182661877, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 8410069940256420729, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 2554817319946624535, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 6264718446841032599, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 5428092854919447945, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -5574874289859638283, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 6812619974942361968, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 4558947421684768058, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -587713883972275769, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: 4457408957945659211, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  - {fileID: -2483935270275612479, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: 4041874341907179470, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: 1949139725468690636, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: 1860355244130747959, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: -8490934450971404267, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: 7452868913881585600, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: -4634219596112211595, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: 219243461710610546, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: -4226784190740011466, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: 7546620679664142960, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - DailyPresentWithRewardSprite_5
+  - DailyPresentWithRewardSprite_6
+  - DailyPresentWithRewardSprite_7
+  - DailyPresentWithRewardSprite_0
+  - DailyPresentWithRewardSprite_1
+  - DailyPresentWithRewardSprite_2
+  - DailyPresentWithRewardSprite_3
+  - DailyPresentWithRewardSprite_17
+  - DailyPresentWithRewardSprite_16
+  - DailyPresentWithRewardSprite_15
+  - DailyPresentWithRewardSprite_14
+  - DailyPresentWithRewardSprite_13
+  - DailyPresentWithRewardSprite_12
+  - DailyPresentWithRewardSprite_28
+  - DailyPresentWithRewardSprite_11
+  - DailyPresentWithRewardSprite_29
+  - DailyPresentWithRewardSprite_10
+  - DailyPresentWithRewardSprite_39
+  - DailyPresentWithRewardSprite_22
+  - DailyPresentWithRewardSprite_38
+  - DailyPresentWithRewardSprite_23
+  - DailyPresentWithRewardSprite_20
+  - DailyPresentWithRewardSprite_19
+  - DailyPresentWithRewardSprite_21
+  - DailyPresentWithRewardSprite_35
+  - DailyPresentWithRewardSprite_18
+  - DailyPresentWithRewardSprite_26
+  - DailyPresentWithRewardSprite_34
+  - DailyPresentWithRewardSprite_27
+  - DailyPresentWithRewardSprite_37
+  - DailyPresentWithRewardSprite_24
+  - DailyPresentWithRewardSprite_36
+  - DailyPresentWithRewardSprite_25
+  - DailyPresentWithRewardSprite_31
+  - DailyPresentWithRewardSprite_30
+  - DailyPresentWithRewardSprite_33
+  - DailyPresentWithRewardSprite_32
+  - DailyPresentWithRewardSprite_8
+  - DailyPresentWithRewardSprite_9
+  - DailyPresentWithRewardSprite_4
+  - TV_Sprite_2
+  - TV_Sprite_3
+  - TV_Sprite_0
+  - TV_Sprite_1
+  - TV_Sprite_6
+  - TV_Sprite_7
+  - TV_Sprite_4
+  - TV_Sprite_5
+  - TV_Sprite_8
+  - TV_Sprite_9
+  m_RenderDataMap: {}
+  m_Tag: LobbyDecorations2Atlas
+  m_IsVariant: 0

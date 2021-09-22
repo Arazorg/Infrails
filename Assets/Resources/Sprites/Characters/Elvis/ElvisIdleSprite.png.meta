@@ -1,0 +1,838 @@
+fileFormatVersion: 2
+guid: aa6c2a382ec665e4f993c2f0c6447abe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1976204493621572080
+    second: ElvisIdleSprite_0
+  - first:
+      213: -4492531121059740766
+    second: ElvisIdleSprite_1
+  - first:
+      213: -9150609262757142505
+    second: ElvisIdleSprite_2
+  - first:
+      213: 7073642344598569066
+    second: ElvisIdleSprite_3
+  - first:
+      213: -7266042955558851469
+    second: ElvisIdleSprite_4
+  - first:
+      213: -4337112542870666126
+    second: ElvisIdleSprite_5
+  - first:
+      213: 5332408543737216609
+    second: ElvisIdleSprite_6
+  - first:
+      213: 4458775166671666234
+    second: ElvisIdleSprite_7
+  - first:
+      213: -7982012905983385027
+    second: ElvisIdleSprite_8
+  - first:
+      213: 1625602500563592224
+    second: ElvisIdleSprite_9
+  - first:
+      213: -4324639672525864193
+    second: ElvisIdleSprite_10
+  - first:
+      213: -1362148768456280835
+    second: ElvisIdleSprite_11
+  - first:
+      213: -4897714662298891496
+    second: ElvisIdleSprite_12
+  - first:
+      213: 2918387429567679820
+    second: ElvisIdleSprite_13
+  - first:
+      213: 930761086654378436
+    second: ElvisIdleSprite_14
+  - first:
+      213: -6034701054161213401
+    second: ElvisIdleSprite_15
+  - first:
+      213: 4292298734806075581
+    second: ElvisIdleSprite_16
+  - first:
+      213: -6003433673967637356
+    second: ElvisIdleSprite_17
+  - first:
+      213: 7560143450960840617
+    second: ElvisIdleSprite_18
+  - first:
+      213: 900609536495740637
+    second: ElvisIdleSprite_19
+  - first:
+      213: 951455416590924132
+    second: ElvisIdleSprite_20
+  - first:
+      213: -4649829445317679006
+    second: ElvisIdleSprite_21
+  - first:
+      213: -7369938324633723287
+    second: ElvisIdleSprite_22
+  - first:
+      213: -1654048154465929103
+    second: ElvisIdleSprite_23
+  - first:
+      213: 3312148803970443410
+    second: ElvisIdleSprite_24
+  - first:
+      213: 5792632537735415433
+    second: ElvisIdleSprite_25
+  - first:
+      213: 4541117731374356929
+    second: ElvisIdleSprite_26
+  - first:
+      213: 7562964210681058208
+    second: ElvisIdleSprite_27
+  - first:
+      213: -1170557406017675532
+    second: ElvisIdleSprite_28
+  - first:
+      213: -2743171394491459208
+    second: ElvisIdleSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 115
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ElvisIdleSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f138dd3483ec6b10800000000000000
+      internalID: 1976204493621572080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3c8d27fb257a1c0800000000000000
+      internalID: -4492531121059740766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_2
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71026f68b51820180800000000000000
+      internalID: -9150609262757142505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_3
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6085f11c30aa2260800000000000000
+      internalID: 7073642344598569066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c6f27dd64d92b90800000000000000
+      internalID: -7266042955558851469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2748d4b0f1b7fc3c0800000000000000
+      internalID: -4337112542870666126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ef6b67155800a40800000000000000
+      internalID: 5332408543737216609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c3cc6f360c0ed30800000000000000
+      internalID: 4458775166671666234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_8
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32e6427d813a3190800000000000000
+      internalID: -7982012905983385027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_9
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 1840
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02464188cdc4f8610800000000000000
+      internalID: 1625602500563592224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2c889712bcbf3c0800000000000000
+      internalID: -4324639672525864193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_11
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df47dec79eca81de0800000000000000
+      internalID: -1362148768456280835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_12
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bc37eb672d70cb0800000000000000
+      internalID: -4897714662298891496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_13
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dc858a7e1308820800000000000000
+      internalID: 2918387429567679820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c17ac4e64abaec00800000000000000
+      internalID: 930761086654378436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728ab0d4d5f604ca0800000000000000
+      internalID: -6034701054161213401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db889fd25fe419b30800000000000000
+      internalID: 4292298734806075581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_17
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c6a8e81e48faca0800000000000000
+      internalID: -6003433673967637356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_18
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7448dc9660be860800000000000000
+      internalID: 7560143450960840617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_19
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 920
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd668201a9b9f7c00800000000000000
+      internalID: 900609536495740637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469f58d09af343d00800000000000000
+      internalID: 951455416590924132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_21
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26820bd51cc787fb0800000000000000
+      internalID: -4649829445317679006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_22
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e5baf2428b8b990800000000000000
+      internalID: -7369938324633723287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_23
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178faaf87f3ab09e0800000000000000
+      internalID: -1654048154465929103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298a4e7e9cd17fd20800000000000000
+      internalID: 3312148803970443410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_25
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986c6163a90936050800000000000000
+      internalID: 5792632537735415433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9dbcd448a450f30800000000000000
+      internalID: 4541117731374356929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_27
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a313aa11eb05f860800000000000000
+      internalID: 7562964210681058208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_28
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe1d19bd3851cfe0800000000000000
+      internalID: -1170557406017675532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElvisIdleSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 0
+        width: 310
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879d251962c4ee9d0800000000000000
+      internalID: -2743171394491459208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

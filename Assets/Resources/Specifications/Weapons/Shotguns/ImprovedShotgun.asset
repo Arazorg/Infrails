@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fea2970d3605af448b043e37466ae47, type: 3}
+  m_Name: ImprovedShotgun
+  m_EditorClassIdentifier: 
+  _itemName: ImprovedShotgun
+  _itemColor: {r: 0.03137255, g: 0.7176471, b: 0.003921569, a: 1}
+  _itemSpriteUI: {fileID: 1664391633767755978, guid: f582596d4f5686448870e67b55ba5124, type: 3}
+  internalId: 6e5fd808-f97d-4893-8b00-93be63ee09f5
+  createdAtTicks: 637649466913911001
+  _type: 0
+  _animatorController: {fileID: 9100000, guid: 728100d801704f142b51d6f52c7ef320, type: 2}
+  _mainSprite: {fileID: 0}
+  _firstHandPosition: {x: 0, y: 0}
+  _secondHandPosition: {x: -0.15, y: 3.65}
+  _bulletSpawnPosition: {x: -0.4, y: 4.8}
+  _bulletData: {fileID: 0}
+  _bulletSpeed: 115
+  _damage: 2
+  _critChance: 32
+  _fireRate: 0.2
+  _bulletScaleFactor: 0.9
+  _isStartingWeapon: 0

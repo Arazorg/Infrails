@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9535cff2ccc5c314ca6cf9009a3dcddb, type: 3}
+  m_Name: Cave
+  m_EditorClassIdentifier: 
+  _biomeName: Cave
+  _biomeColor: {r: 1, g: 0.66279554, b: 0, a: 1}
+  _biomeUISprite: {fileID: 5514989659066590100, guid: 650020d50336f424f9013d90401c15e5, type: 3}
+  _floorSprite: {fileID: 21300000, guid: 27df46533e379204a8a2443e6fb971ca, type: 3}
+  _endWallSprite: {fileID: 21300000, guid: 4c269fbbc02266e4cb615b362dbe194c, type: 3}
+  _plateSprite: {fileID: 21300000, guid: ac068b491b7294e4ca1be9061b79909b, type: 3}
+  _endWallFloorSprite: {fileID: 21300000, guid: c74bdf2d50104b94182d94f5edfaaa82, type: 3}
+  _railsPrefabs:
+  - {fileID: 8234576571042399698, guid: 2776898a24dd5434c8d00e543ab2beb5, type: 3}
+  - {fileID: 8004946298980230640, guid: b90a5a4b58710fb429bbcdf81b2c820c, type: 3}
+  - {fileID: 2569659692824900551, guid: 6e5f74f071b394345a44ca3d0775744f, type: 3}
+  - {fileID: 995593894863701420, guid: 28aa36f08b5e5304c81739a439f11ae1, type: 3}
+  _flyingEnemiesData:
+  - {fileID: 11400000, guid: 6a6e6ce38e25238468f24f9441472419, type: 2}
+  _staticEnemiesData:
+  - {fileID: 11400000, guid: 6733bdbf144c11e42be3d318fc9de641, type: 2}
+  _eggData: {fileID: 11400000, guid: b41d84cd96adf1b47925041d2b3f5a37, type: 2}
+  _maneCrystalData: {fileID: 11400000, guid: ef46e381328a5f74aa1a0bc570fbbe54, type: 2}
+  _globalLightsIntensity: 1

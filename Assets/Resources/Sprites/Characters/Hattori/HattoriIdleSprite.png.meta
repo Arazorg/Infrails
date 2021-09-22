@@ -1,0 +1,838 @@
+fileFormatVersion: 2
+guid: 8d7e639d45ed8d64095c95e1c85e178a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8001495171213063506
+    second: HattoriIdleSprite_0
+  - first:
+      213: -2348352268296417700
+    second: HattoriIdleSprite_1
+  - first:
+      213: 1081329322037831488
+    second: HattoriIdleSprite_2
+  - first:
+      213: 5940404227474290520
+    second: HattoriIdleSprite_3
+  - first:
+      213: 8969068826843766830
+    second: HattoriIdleSprite_4
+  - first:
+      213: 1651794054642357055
+    second: HattoriIdleSprite_5
+  - first:
+      213: 586660987138963038
+    second: HattoriIdleSprite_6
+  - first:
+      213: -8618746591665495853
+    second: HattoriIdleSprite_7
+  - first:
+      213: 6379262714839532826
+    second: HattoriIdleSprite_8
+  - first:
+      213: 8671318351620356440
+    second: HattoriIdleSprite_9
+  - first:
+      213: -4330268559467004707
+    second: HattoriIdleSprite_10
+  - first:
+      213: -5538746022725079000
+    second: HattoriIdleSprite_11
+  - first:
+      213: 238726016955254886
+    second: HattoriIdleSprite_12
+  - first:
+      213: -4065476944169777198
+    second: HattoriIdleSprite_13
+  - first:
+      213: 8991640593705675450
+    second: HattoriIdleSprite_14
+  - first:
+      213: -4431152439171852917
+    second: HattoriIdleSprite_15
+  - first:
+      213: -169239030212982081
+    second: HattoriIdleSprite_16
+  - first:
+      213: 2371207930726101345
+    second: HattoriIdleSprite_17
+  - first:
+      213: 3663770073919345237
+    second: HattoriIdleSprite_18
+  - first:
+      213: -5084212072033095851
+    second: HattoriIdleSprite_19
+  - first:
+      213: 7871432280227980095
+    second: HattoriIdleSprite_20
+  - first:
+      213: 5997195441737524387
+    second: HattoriIdleSprite_21
+  - first:
+      213: 6650197868329835098
+    second: HattoriIdleSprite_22
+  - first:
+      213: -8064251112691151721
+    second: HattoriIdleSprite_23
+  - first:
+      213: 50167829183887948
+    second: HattoriIdleSprite_24
+  - first:
+      213: 3657057015166076610
+    second: HattoriIdleSprite_25
+  - first:
+      213: -8210459770563533652
+    second: HattoriIdleSprite_26
+  - first:
+      213: 4163855994246549244
+    second: HattoriIdleSprite_27
+  - first:
+      213: -6126581152800544646
+    second: HattoriIdleSprite_28
+  - first:
+      213: -3110498494426679496
+    second: HattoriIdleSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 115
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HattoriIdleSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2557828e6750b0f60800000000000000
+      internalID: 8001495171213063506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e85b8dd0af86fd0800000000000000
+      internalID: -2348352268296417700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_2
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047674d0a47a10f00800000000000000
+      internalID: 1081329322037831488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_3
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85775d8db2e807250800000000000000
+      internalID: 5940404227474290520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e206d0ee398887c70800000000000000
+      internalID: 8969068826843766830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f335f0de0f95ce610800000000000000
+      internalID: 1651794054642357055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e567ffd3f0d342800800000000000000
+      internalID: 586660987138963038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_7
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d06ba293af046880800000000000000
+      internalID: -8618746591665495853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_8
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1587eee3a1b78850800000000000000
+      internalID: 6379262714839532826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_9
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 1720
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85938a22916b65870800000000000000
+      internalID: 8671318351620356440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc3dea10bbc7e3c0800000000000000
+      internalID: -4330268559467004707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_11
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8203d5e76db6223b0800000000000000
+      internalID: -5538746022725079000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_12
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668034f2c00205300800000000000000
+      internalID: 238726016955254886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_13
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7483452468497c0800000000000000
+      internalID: -4065476944169777198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba2fcfea79b8cc70800000000000000
+      internalID: 8991640593705675450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b855e8575526182c0800000000000000
+      internalID: -4431152439171852917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_16
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba060aaffdb6adf0800000000000000
+      internalID: -169239030212982081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_17
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161b48fbc0938e020800000000000000
+      internalID: 2371207930726101345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_18
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5525ba2887358d230800000000000000
+      internalID: 3663770073919345237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_19
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 860
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fe6bbce004179b0800000000000000
+      internalID: -5084212072033095851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33288844f1fc3d60800000000000000
+      internalID: 7871432280227980095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_21
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a46b51da715a3350800000000000000
+      internalID: 5997195441737524387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_22
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a1cdb1abf3a4c50800000000000000
+      internalID: 6650197868329835098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_23
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79cce78d656061090800000000000000
+      internalID: -8064251112691151721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a78a5ff5b32b000800000000000000
+      internalID: 50167829183887948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_25
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c60358baf970c230800000000000000
+      internalID: 3657057015166076610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4ecece6569e0e80800000000000000
+      internalID: -8210459770563533652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_27
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe42f837fcf8c930800000000000000
+      internalID: 4163855994246549244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_28
+      rect:
+        serializedVersion: 2
+        x: 2480
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7868bbc6e20afaa0800000000000000
+      internalID: -6126581152800544646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HattoriIdleSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 0
+        width: 310
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8377f45791a45d4d0800000000000000
+      internalID: -3110498494426679496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

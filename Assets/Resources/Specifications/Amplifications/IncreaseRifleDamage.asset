@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a392d1af4fdd44ea5c17c010d1eae4, type: 3}
+  m_Name: IncreaseRifleDamage
+  m_EditorClassIdentifier: 
+  _itemName: IncreaseRifleDamage
+  _itemColor: {r: 1, g: 0.59607846, b: 0.0627451, a: 1}
+  _itemSpriteUI: {fileID: 4833722169136144061, guid: fbed23d75146c474bb785b2f2fca607c, type: 3}
+  internalId: 43c39dcd-7bcd-4e23-b7c9-7b8158b4e02f
+  createdAtTicks: 637649467077095564
+  _amplificationType: 2
+  _amplificationIncreaseType: 1
+  _amplificationPowers: 04000000090000000e000000

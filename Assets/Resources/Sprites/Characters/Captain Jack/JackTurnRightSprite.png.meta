@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: df4e4b9c8e3f38b419e90cf0e8b9d099
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8046738139735344027
+    second: CaptainJackTurnRight_0
+  - first:
+      213: -2545484897616282679
+    second: CaptainJackTurnRight_1
+  - first:
+      213: 266475227435552625
+    second: CaptainJackTurnRight_2
+  - first:
+      213: 7716403846844143568
+    second: CaptainJackTurnRight_3
+  - first:
+      213: -7162574329955452163
+    second: CaptainJackTurnRight_4
+  - first:
+      213: 5590315867139345834
+    second: CaptainJackTurnRight_5
+  - first:
+      213: 6880445447652851093
+    second: CaptainJackTurnRight_6
+  - first:
+      213: 605631378582307828
+    second: CaptainJackTurnRight_7
+  - first:
+      213: -3604130562424900433
+    second: CaptainJackTurnRight_8
+  - first:
+      213: 7274951572468165603
+    second: CaptainJackTurnRight_9
+  - first:
+      213: 4528699690115505524
+    second: CaptainJackTurnRight_10
+  - first:
+      213: -7216911340469673231
+    second: CaptainJackTurnRight_11
+  - first:
+      213: -2992518333888774676
+    second: CaptainJackTurnRight_12
+  - first:
+      213: 7718036805231897832
+    second: CaptainJackTurnRight_13
+  - first:
+      213: 4075328793579612497
+    second: CaptainJackTurnRight_0
+  - first:
+      213: -823730017366604762
+    second: CaptainJackTurnRight_1
+  - first:
+      213: 8316492010189991936
+    second: CaptainJackTurnRight_2
+  - first:
+      213: 6163380783169331629
+    second: CaptainJackTurnRight_3
+  - first:
+      213: 7289131681829487787
+    second: CaptainJackTurnRight_4
+  - first:
+      213: -4058916232746645921
+    second: CaptainJackTurnRight_5
+  - first:
+      213: -7541778198660745004
+    second: CaptainJackTurnRight_6
+  - first:
+      213: 6904674386901601866
+    second: CaptainJackTurnRight_7
+  - first:
+      213: -4660756446815735772
+    second: CaptainJackTurnRight_8
+  - first:
+      213: 4861701399288325797
+    second: CaptainJackTurnRight_9
+  - first:
+      213: -927124274639123880
+    second: CaptainJackTurnRight_10
+  - first:
+      213: 3697888664738532760
+    second: CaptainJackTurnRight_11
+  - first:
+      213: -7706012504593966588
+    second: CaptainJackTurnRight_12
+  - first:
+      213: -4126400654980243534
+    second: CaptainJackTurnRight_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 115
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 970
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159eb3c12f97e8830800000000000000
+      internalID: 4075328793579612497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_1
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 970
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624890cd9e58194f0800000000000000
+      internalID: -823730017366604762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_2
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 970
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000bfbcab6d1a6370800000000000000
+      internalID: 8316492010189991936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_3
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 970
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1e644da2ab88550800000000000000
+      internalID: 6163380783169331629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_4
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 970
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba40e7825a2382560800000000000000
+      internalID: 7289131681829487787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_5
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 970
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56c11ef035dba7c0800000000000000
+      internalID: -4058916232746645921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_6
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 970
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d87a06bfa8365790800000000000000
+      internalID: -7541778198660745004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e0209b5c452df50800000000000000
+      internalID: 6904674386901601866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_8
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420bfe294baa15fb0800000000000000
+      internalID: -4660756446815735772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_9
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 0
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6a99c0aab387340800000000000000
+      internalID: 4861701399288325797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_10
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 0
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a4e7362613223f0800000000000000
+      internalID: -927124274639123880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_11
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 0
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d0fa8f52a815330800000000000000
+      internalID: 3697888664738532760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_12
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 0
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a55fc847ebe0590800000000000000
+      internalID: -7706012504593966588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaptainJackTurnRight_13
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 0
+        width: 760
+        height: 970
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf96f687741cb6c0800000000000000
+      internalID: -4126400654980243534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

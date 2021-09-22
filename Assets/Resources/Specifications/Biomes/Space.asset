@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9535cff2ccc5c314ca6cf9009a3dcddb, type: 3}
+  m_Name: Space
+  m_EditorClassIdentifier: 
+  _biomeName: Space
+  _biomeColor: {r: 0.55522346, g: 0, b: 1, a: 1}
+  _biomeUISprite: {fileID: -5361053338457389582, guid: 650020d50336f424f9013d90401c15e5, type: 3}
+  _floorSprite: {fileID: 21300000, guid: f9660bc6c830d1e4ba457d2f5297b39c, type: 3}
+  _endWallSprite: {fileID: 21300000, guid: 3fb5c3618c380de4ca11693df2c995a7, type: 3}
+  _plateSprite: {fileID: 21300000, guid: 3ed87070c9a599149952729269f2ba4c, type: 3}
+  _endWallFloorSprite: {fileID: 21300000, guid: 356ab8998f830c240b01982f7f2ef8fb, type: 3}
+  _railsPrefabs:
+  - {fileID: 6617669757322569, guid: d46c2aa41455e2047beaef4cb46b3552, type: 3}
+  - {fileID: 9051657697354099817, guid: 4753848094521c64a8a186bee00eb81b, type: 3}
+  - {fileID: 3014218591174028382, guid: 9ac8cbed87af4d846b5c85fcd0b871fc, type: 3}
+  - {fileID: 7534123875376570097, guid: b91ea51392765964e96cabab08e0fb87, type: 3}
+  _flyingEnemiesData: []
+  _staticEnemiesData: []
+  _eggData: {fileID: 0}
+  _maneCrystalData: {fileID: 0}
+  _globalLightsIntensity: 1

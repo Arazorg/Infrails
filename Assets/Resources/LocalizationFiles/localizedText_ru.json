@@ -1,0 +1,1029 @@
+{
+  "items": [
+  
+	{
+      "key": "Empty",
+      "value": ""
+    },
+	
+    {
+      "key": "Back",
+      "value": "Назад"
+    },
+	
+	{
+      "key": "Close",
+      "value": "Закрыть"
+    },
+	
+	{
+      "key": "Thanks",
+      "value": "Благодарности"
+    },
+	
+	{
+      "key": "NoInternet",
+      "value": "Нет связи"
+    },
+	
+	{
+      "key": "ShareMessage",
+      "value": "Смотри как далеко я добрался! Заходи в Infrails и попробуй повторить!"
+    },
+
+	{
+      "key": "Finish",
+      "value": "Завершить"
+    },
+	
+	{
+      "key": "ChangeMusic",
+      "value": "Сменить музыку"
+    },	
+	
+	{
+      "key": "YourWeapon",
+      "value": "Твое оружие"
+    },	
+	
+	{
+      "key": "YourAmplifications",
+      "value": "Твои усиления"
+    },
+	
+	{
+      "key": "AdsUnavailable",
+      "value": "Пытаемся получить доступ к рекламе..."
+    },	
+	
+    {
+      "key": "ClickToContinue",
+      "value": "Нажми чтобы продолжить"
+    },
+	
+    {
+      "key": "Confirm",
+      "value": "Выбрать"
+    },
+	
+	{
+      "key": "Play",
+      "value": "Играть"
+    },
+	
+    {
+      "key": "Exit",
+      "value": "Выйти"
+    },
+	
+	{
+      "key": "DoubleReward",
+      "value": "Удвоить выигрыш"
+    },
+	
+	{
+      "key": "Health",
+      "value": "к здоровью"
+    },
+	
+    {
+      "key": "Armor",
+      "value": "к броне"
+    },
+	
+	{
+      "key": "Damage",
+      "value": "к урону"
+    },
+	
+    {
+      "key": "Time",
+      "value": "к времени действия"
+    },
+	
+	{
+      "key": "Resistance",
+      "value": "к сопротивлению"
+    },
+	
+	{
+      "key": "Chance",
+      "value": "процентов"
+    },
+
+	{
+      "key": "WantToExit",
+      "value": "Ты действительно хочешь выйти?"
+    },
+	
+	{
+      "key": "SkipTutorial",
+      "value": "Пропустить обучение"
+    },
+	
+    {
+      "key": "ChooseLanguage",
+      "value": "Выбери язык"
+    },
+	
+	{
+      "key": "ChooseCharacter",
+      "value": "Выбери\nперсонажа"
+    },
+	
+    {
+      "key": "No",
+      "value": "Нет"
+    },
+	
+    {
+      "key": "Yes",
+      "value": "Да"
+    },
+	
+    {
+      "key": "On",
+      "value": "Вкл"
+    },
+	
+    {
+      "key": "Off",
+      "value": "Выкл"
+    },
+	
+	{
+      "key": "Get",
+      "value": "Получить"
+    },
+	
+	{
+      "key": "AllLootsReceived",
+      "value": "Весь лут из этого сундука получен\nно вскоре мы добавим новый"
+    },
+	
+	{
+      "key": "AllAdsRewardsReceived",
+      "value": "Все награды получены, приходи завтра"
+    },
+	
+	{
+      "key": "TimeHasNotBeenChanged",
+      "value": "Мы не обнаружили перевода времени благодарим за честность"
+    },
+	
+	{
+      "key": "Open",
+      "value": "Открыть"
+    },
+	
+	{
+      "key": "Settings",
+      "value": "Настройки"
+    },
+	
+	{
+      "key": "Buy",
+      "value": "Купить"
+    },
+	
+	{
+      "key": "Shop",
+      "value": "Магазин"
+    },
+	
+	{
+      "key": "MoneyShop",
+      "value": "Магазин монет"
+    },
+	
+	{
+      "key": "GoToShop",
+      "value": "В магазин"
+    },
+	
+	{
+      "key": "Share",
+      "value": "Поделиться"
+    },
+	
+	{
+      "key": "Show",
+      "value": "Посмотреть"
+    },
+	
+	{
+      "key": "SaveMe",
+      "value": "Спаси меня!"
+    },
+	
+	{
+      "key": "NoInternetAccess",
+      "value": "Похоже у тебя нет доступа в интернет..."
+    },
+	
+	{
+      "key": "GoToLobby",
+      "value": "В лобби"
+    },
+	
+	{
+      "key": "FinishGame",
+      "value": "Закончить игру"
+    },
+	
+	{
+      "key": "Free",
+      "value": "Бесплатно!"
+    },
+	
+	{
+      "key": "GameOver",
+      "value": "Игра окончена"
+    },
+	
+	{
+      "key": "Loading",
+      "value": "Загрузка..."
+    },
+	
+	{
+      "key": "YouEarned",
+      "value": "Ты заработал"
+    },
+	
+	{
+      "key": "YouKilled",
+      "value": "Ты уничтожил"
+    },
+	
+	{
+      "key": "PlayTime",
+      "value": "Время в игре"
+    },
+	
+	{
+      "key": "AmplificationLevel",
+      "value": "Уровень усиления - "
+    },
+	
+	{
+      "key": "Level",
+      "value": "Уровень - "
+    },
+	
+	{
+      "key": "RepeatOpening",
+      "value": "Еще раз"
+    },
+	
+	{
+      "key": "AdsLootbox",
+      "value": "Сундук с монетами"
+    },
+	
+	{
+      "key": "AdsLootboxDescription",
+      "value": "Получи монеты за просмотр рекламы"
+    },
+	
+	{
+      "key": "BuffsLootbox",
+      "value": "Сундук с бафами"
+    },
+	
+	{
+      "key": "BuffsLootboxDescription",
+      "value": "Получи временные баффы за просмотр рекламы"
+    },
+	
+	{
+      "key": "SkillLootbox",
+      "value": "Сундук со способностями"
+    },
+	
+	{
+      "key": "SkillLootboxDescription",
+      "value": "Обучи персонажей новым скиллам!"
+    },
+	
+	{
+      "key": "ResetTimeLootbox",
+      "value": "Сундук сброса времени"
+    },
+	
+	{
+      "key": "ResetTimeLootboxDescription",
+      "value": "Если ты перематывал время для получения новых наград, тебе сюда"
+    },
+	
+	{
+      "key": "WeaponLootbox",
+      "value": "Сундук с оружием"
+    },
+	
+	{
+      "key": "WeaponLootboxDescription",
+      "value": "Хочешь новую пушку?\nТебе сюда!"
+    },
+	
+	{
+      "key": "AmplificationsLootbox",
+      "value": "Сундук с усилениями"
+    },
+	
+	{
+      "key": "AmplificationsLootboxDescription",
+      "value": "Разнообразные усиления для разных стилей игры"
+    },
+	
+	{
+      "key": "LoadingHint0",
+      "value": "От выбора стихии зависит твоя жизнь, помни об этом"
+    },
+	
+	{
+      "key": "LoadingHint1",
+      "value": "Будь аккуратнее с яйцами..."
+    },
+	
+	{
+      "key": "LoadingHint2",
+      "value": "У всех врагов есть свои слабости.\nНе стоит пытаться утопить рыб"
+    },
+	
+	{
+      "key": "LoadingHint3",
+      "value": "Тише едешь?\nВряд ли будешь дальше"
+    },
+	
+	{
+      "key": "LoadingHint4",
+      "value": "Подходи к выбору усилений с умом"
+    },
+	
+	{
+      "key": "LoadingHint5",
+      "value": "ЭКСПЕРЕМЕНТИРУЙ!"
+    },
+	
+	{
+      "key": "GetAmplificationsInShop",
+      "value": "Открой пассивные навыки персонажей в магазине"
+    },
+	
+	{
+      "key": "IncreaseHP",
+      "value": "Увеличение здоровья"
+    },
+	
+	{
+      "key": "IncreaseArmor",
+      "value": "Увеличение брони"
+    },
+	
+	{
+      "key": "IncreaseFirstAidKitHeal",
+      "value": "Усиленное лечение от аптечки"
+    },
+	
+	{
+      "key": "IncreaseRepairKitHeal",
+      "value": "Усиленное восстановление брони ремонтным набором"
+    },
+
+	{
+      "key": "IncreaseLaserDamage",
+      "value": "Увеличение урона лазеров"
+    },
+	
+	{
+      "key": "IncreaseShotgunDamage",
+      "value": "Увеличение урона дробовиков"
+    },
+
+	{
+      "key": "IncreaseCannonDamage",
+      "value": "Увеличение урона пушек"
+    },
+	
+	{
+      "key": "IncreaseCrossbowDamage",
+      "value": "Увеличение урона арбалетов"
+    },
+	
+	{
+      "key": "IncreaseRifleDamage",
+      "value": "Увеличение урона штурмовых винтовок"
+    },
+		
+	{
+      "key": "IncreaseSkillDuration",
+      "value": "Увеличение длительности скилла"
+    },
+	
+	{
+      "key": "IncreaseFireResistance",
+      "value": "Защита от огненной стихии"
+    },
+	
+	{
+      "key": "IncreaseWaterResistance",
+      "value": "Защита от водной стихии"
+    },
+	
+	{
+      "key": "IncreaseEarthResistance",
+      "value": "Защита от землянной стихии"
+    },
+	
+	{
+      "key": "IncreaseNatureResistance",
+      "value": "Защита от природной стихии"
+    },
+	
+	{
+      "key": "IncreaseVoidResistance",
+      "value": "Защита от стихии пустоты"
+    },
+	
+	{
+      "key": "IncreaseMoney",
+      "value": "Больше монет с монстров"
+    },
+	
+	{
+      "key": "IncreaseRicochetChance",
+      "value": "Шанс рикошета пули"
+    },
+	
+	{
+      "key": "IncreaseCritChance",
+      "value": "Увеличение шанса крита"
+    },
+	
+	{
+      "key": "Jonh",
+      "value": "Джон"
+    },	
+	
+	{
+      "key": "JonhDescription",
+      "value": "Оружейник из далеких земель, женат на своей пушке"
+    },	
+	
+	{
+      "key": "JonhFirstSkill",
+      "value": "С двух рук"
+    },
+		
+	{
+      "key": "JonhFirstSkillDescription",
+      "value": "Джон достает второе оружие, берегись!"
+    },
+	
+	{
+      "key": "JonhSecondSkill",
+      "value": "БЕРСЕРК!"
+    },
+	
+	{
+      "key": "JonhSecondSkillDescription",
+      "value": "Оружие усиляется получая энергию ярости Джона"
+    },
+	
+	{
+      "key": "Stiven",
+      "value": "Стивен"
+    },
+	
+	{
+      "key": "StivenDescription",
+      "value": "Величайший алхимик современности, может синтезировать взрывчатку из воздуха"
+    },
+	
+	{
+      "key": "StivenFirstSkill",
+      "value": "Гранатовый дождь"
+    },
+	
+	{
+      "key": "StivenFirstSkillDescription",
+      "value": "Чувствуешь запах пороха? Время взорвать тут все!"
+    },
+	
+	{
+      "key": "StivenSecondSkill",
+      "value": "Разрывные пули"
+    },
+	
+	{
+      "key": "StivenSecondSkillDescription",
+      "value": "Стивен начиняет свои пули взрывчаткой"
+    },
+	
+	{
+      "key": "Jack",
+      "value": "Джек"
+    },
+	
+	{
+      "key": "JackDescription",
+      "value": "Пират-вампир, вечно голоден, будь начеку рядом с ним"
+    },
+	
+	{
+      "key": "JackFirstSkill",
+      "value": "Жажда моря"
+    },
+	
+	{
+      "key": "JackFirstSkillDescription",
+      "value": "Джек забирает жизненные силы своих врагов"
+    },
+	
+	{
+      "key": "JackSecondSkill",
+      "value": "Сила ночи"
+    },
+	
+	{
+      "key": "JackSecondSkillDescription",
+      "value": "Темные силы исцеляют Джона"
+    },
+	
+	{
+      "key": "ZXC88",
+      "value": "ZXC-88"
+    },
+	
+	{
+      "key": "ZXC88Description",
+      "value": "Робот-врач, прислан к нам из будущего для спасения человечества от пандемии"
+    },
+	
+	{
+      "key": "ZXC88FirstSkill",
+      "value": "Укол адреналина"
+    },
+	
+	{
+      "key": "ZXC88FirstSkillDescription",
+      "value": "Ускорение и лечение, а что тебе еще нужно?"
+    },
+	
+	{
+      "key": "ZXC88SecondSkill",
+      "value": "Аптечки из будущего"
+    },
+	
+	{
+      "key": "ZXC88SecondSkillDescription",
+      "value": "Аптечки исцеляют в два раза больше здоровья"
+    },
+	
+	{
+      "key": "Hattori",
+      "value": "Хаттори"
+    },
+	
+	{
+      "key": "HattoriDescription",
+      "value": "Говорят ему сотни лет, единственный на планете владеет древней магией"
+    },
+	
+	{
+      "key": "HattoriFirstSkill",
+      "value": "Щит страданий"
+    },
+	
+	{
+      "key": "HattoriFirstSkillDescription",
+      "value": "Хаттори активирует щит отражающий пули врагов"
+    },
+	
+	{
+      "key": "HattoriSecondSkill",
+      "value": "Поглощение"
+    },
+	
+	{
+      "key": "HattoriSecondSkillDescription",
+      "value": "Пули попадающие в Хаттори исцеляют его"
+    },
+	
+	{
+      "key": "Elvis",
+      "value": "Элвис"
+    },
+	
+	{
+      "key": "ElvisDescription",
+      "value": "Неотразимый маэстро! Самый популярный человек на планете!"
+    },
+	
+	{
+      "key": "ElvisFirstSkill",
+      "value": "Блеск софитов"
+    },
+	
+	{
+      "key": "ElvisFirstSkillDescription",
+      "value": "Элвис очаровывает врагов превращая их в союзников"
+    },
+	
+	{
+      "key": "ElvisSecondSkill",
+      "value": "Помощь фанатов"
+    },
+	
+	{
+      "key": "ElvisSecondSkillDescription",
+      "value": "Поддержка фанатов Элвиса увеличивает шанс и урон крита"
+    },
+	
+	{
+      "key": "FakeAK",
+      "value": "Поддельный АК"
+    },
+	
+	{
+      "key": "FakeAKDescription",
+      "value": "Был заказан в интернет магазине.\nПродавец утверждал, что это превосходное оружие, все оказалось немного иначе..."
+    },
+	
+	{
+      "key": "WeakLaser",
+      "value": "Слабый лазер"
+    },
+	
+	{
+      "key": "WeakLaserDescription",
+      "value": "Бракованный лазер, неизвестно коим образом он попал к нам в ящик"
+    },
+	
+	{
+      "key": "WornRifle",
+      "value": "Поношенная винтовка"
+    },
+	
+	{
+      "key": "WornRifleDescription",
+      "value": "С этой винтовкой прошли огонь, воду и медные трубы, результат на лицо"
+    },
+	
+	{
+      "key": "OldCrossbow",
+      "value": "Старый арбалет"
+    },
+	
+	{
+      "key": "OldCrossbowDescription",
+      "value": "Настолько древний, что с него сыпется песок"
+    },
+	
+	{
+      "key": "BrokenPirateCannon",
+      "value": "Сломанная пиратская пушка"
+    },
+	
+	{
+      "key": "BrokenPirateCannonDescription",
+      "value": "Говорят она сломалась после того, как на нее сел Джек.\nДжек все отрицает..."
+    },
+	
+	{
+      "key": "CheapShotgun",
+      "value": "Дешевый дробовик"
+    },
+	
+	{
+      "key": "CheapShotgunDescription",
+      "value": "Самое дешевое оружие в мире, комментарии излишни"
+    },
+	
+	{
+      "key": "AK58",
+      "value": "AK-58"
+    },
+	
+	{
+      "key": "AK58Description",
+      "value": "Модернезированная версия того самого автомата, неплохое оружие"
+    },
+	
+	{
+      "key": "AK2078",
+      "value": "AK-2078"
+    },
+	
+	{
+      "key": "AK2078Description",
+      "value": "АК из будущего, огромная боевая мощь и небольшая отдача, отлично подходит для уничтожения врагов"
+    },
+	
+	{
+      "key": "ImprovedCrossbow",
+      "value": "Улучшеный арбалет"
+    },
+	
+	{
+      "key": "ImprovedCrossbowDescription",
+      "value": "Арбалет в отлином состоянии, укреплен зачарованными пластинами"
+    },
+	
+	{
+      "key": "AmazingCrossbow",
+      "value": "Восхитительный арбалет"
+    },
+	
+	{
+      "key": "AmazingCrossbowDescription",
+      "value": "Произведение искусства, выкован тысячителетия назад по утерянной технологии"
+    },
+	
+	{
+      "key": "GreatLaser",
+      "value": "Отличный лазер"
+    },
+	
+	{
+      "key": "GreatLaserDescription",
+      "value": "Хороший лазер с родной планеты ZXC-88"
+    },
+	
+	{
+      "key": "LegendaryLaser",
+      "value": "Легендарный лазер"
+    },
+	
+	{
+      "key": "LegendaryLaserDescription",
+      "value": "Говорят к его созданию приложил руку один из примархов великого Империума"
+    },
+	
+	{
+      "key": "CrazyPirateCannon",
+      "value": "Сумашедшая пиратская пушка"
+    },
+	
+	{
+      "key": "CrazyPirateCannonDescription",
+      "value": "Разрушительное магическое оружие с очень скверным характером\nБудь аккуратен!"
+    },
+	
+	{
+      "key": "GreatPirateCannon",
+      "value": "Отличная пушка"
+    },
+	
+	{
+      "key": "GreatPirateCannonDescription",
+      "value": "Это оружие можно достать лишь в тайных пиратских бухтах.\nНа абордаж!"
+    },
+	
+	{
+      "key": "N527",
+      "value": "N-527"
+    },
+	
+	{
+      "key": "N527Description",
+      "value": "Штурмовая винтовка стоящая на вооружении у лучших подразделений спецназа"
+    },
+	
+	{
+      "key": "RifleFN",
+      "value": "Rifle-FN"
+    },
+	
+	{
+      "key": "RifleFNDescription",
+      "value": "Отличное оружие! Неплохой и урон и высокая точность спасут тебя из любой передряги"
+    },
+	
+	{
+      "key": "ImprovedShotgun",
+      "value": "Улучшенный дробовик"
+    },
+	
+	{
+      "key": "ImprovedShotgunDescription",
+      "value": "Убойный дробовик в хорошем состоянии\nНе подходи близко!"
+    },
+	
+	{
+      "key": "WildShotgun",
+      "value": "Дикий дробовик"
+    },
+	
+	{
+      "key": "WildShotgunDescription",
+      "value": "Дробовик попавший в наше время из будущего, обладает разрушительной силой"
+    },
+	
+	{
+      "key": "Fire",
+      "value": "Огонь"
+    },
+	
+	{
+      "key": "Water",
+      "value": "Вода"
+    },
+	
+	{
+      "key": "Earth",
+      "value": "Земля"
+    },
+	
+	{
+      "key": "Void",
+      "value": "Пустота"
+    },
+	
+	{
+      "key": "Nature",
+      "value": "Природа"
+    },
+	
+	{
+      "key": "TutorialPhrase0",
+      "value": "Привет!\nМеня зовут Кейн, я твой гид"
+    },
+	
+	{
+      "key": "TutorialPhrase1",
+      "value": "Сейчас ты попадешь на нашу базу"
+    },
+	
+	{
+      "key": "TutorialPhrase2",
+      "value": "Здесь можно получить ежедневные награды"
+    },
+	
+	{
+      "key": "TutorialPhrase3",
+      "value": "А также выбрать персонажа для игры"
+    },
+	
+	{
+      "key": "TutorialPhrase4",
+      "value": "Как будет время, загляни в магазин"
+    },
+	
+	{
+      "key": "TutorialPhrase5",
+      "value": "Пока ты не получишь усиления и оружие оттуда\nони не будут попадаться во время игры"
+    },
+	
+	{
+      "key": "TutorialPhrase6",
+      "value": "Выбирай персонажа и заходи в игру\nя буду ждать тебя там"
+    },
+	
+	{
+      "key": "TutorialPhrase7",
+      "value": "Смотри, все просто, враги хотят тебя убить!"
+    },
+	
+	{
+      "key": "TutorialPhrase8",
+      "value": "Не дай им этого сделать!"
+    },
+	
+	{
+      "key": "TutorialPhrase9",
+      "value": "Разрушай все аптечки на своем пути"
+    },
+	
+	{
+      "key": "TutorialPhrase10",
+      "value": "А так же ремонтные наборы"
+    },
+	
+	{
+      "key": "TutorialPhrase11",
+      "value": "Eсли броня упадет до нуля, вагонетка замедлится"
+    },
+	
+	{
+      "key": "TutorialPhrase12",
+      "value": "А вот с яйцами будь аккуратнее, из них появляются новые враги!"
+    },
+	
+	{
+      "key": "TutorialPhrase13",
+      "value": "Чтобы уничтожить врагов нужно будет постараться"
+    },
+	
+	{
+      "key": "TutorialPhrase14",
+      "value": "У всех врагов есть сопротивление к различным стихиям"
+    },
+	
+	{
+      "key": "TutorialPhrase15",
+      "value": "Разрушая кристаллы, твое оружие будет получать силу этой стихии"
+    },
+	
+	{
+      "key": "TutorialPhrase16",
+      "value": "Вот схема"
+    },
+
+	{
+      "key": "TutorialPhrase17",
+      "value": "Ты же понимаешь что нельзя потушить огонь - огнем\nТак что смотри куда стреляешь!"
+    },
+	
+	{
+      "key": "TutorialPhrase18",
+      "value": "На этом все, с остальным сам разберешься\nУдачи!"
+    },
+	
+	{
+      "key": "TutorialPhrase19",
+      "value": "Ну ладно...\nУвидимся в игре"
+    },
+	
+	{
+      "key": "TutorialPhrase20",
+      "value": "Хочешь разобраться сам?\nХорошо...\nУдачи!"
+    },
+	
+	{
+      "key": "Cave",
+      "value": "Пещера"
+    },
+	
+	{
+      "key": "Space",
+      "value": "Космос"
+    },
+	
+	{
+      "key": "Forest",
+      "value": "Лес"
+    },
+	
+	{
+      "key": "Hell",
+      "value": "Ад"
+    },
+
+	{
+      "key": "Underwater",
+      "value": "Океан"
+    },
+		
+	{
+      "key": "Money500",
+      "value": "500\nмонет"
+    },
+	
+	{
+      "key": "Money375",
+      "value": "375\nмонет"
+    },
+	
+	{
+      "key": "Money300",
+      "value": "300\nмонет"
+    },
+	
+	{
+      "key": "Money225",
+      "value": "225\nмонет"
+    },
+	
+	{
+      "key": "Money150",
+      "value": "150\nмонет"
+    },
+	
+	{
+      "key": "Money500Description",
+      "value": "Денег много не бывает"
+    },
+	
+	{
+      "key": "Money375Description",
+      "value": "Ощутимая сумма, скорее беги в магазин"
+    },
+	
+	{
+      "key": "Money300Description",
+      "value": "Ты стал немного богаче"
+    },
+	
+	{
+      "key": "Money225Description",
+      "value": "Небольшая кучка монет"
+    },
+	
+	{
+      "key": "Money150Description",
+      "value": "Немного, но деньги лишними не бывают"
+    }
+  ]
+}

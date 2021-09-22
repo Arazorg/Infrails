@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a392d1af4fdd44ea5c17c010d1eae4, type: 3}
+  m_Name: IncreaseHP
+  m_EditorClassIdentifier: 
+  _itemName: IncreaseHP
+  _itemColor: {r: 1, g: 0.21176472, b: 0.2901961, a: 1}
+  _itemSpriteUI: {fileID: -4357102018593699992, guid: fbed23d75146c474bb785b2f2fca607c, type: 3}
+  _isStartingItem: 1
+  _amplificationType: 0
+  _amplificationIncreaseType: 1
+  _amplificationPowers: 020000000500000007000000

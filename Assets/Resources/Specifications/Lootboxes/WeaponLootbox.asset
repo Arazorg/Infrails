@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1267829d08f5341a5dd3c6c848ba68, type: 3}
+  m_Name: WeaponLootbox
+  m_EditorClassIdentifier: 
+  _typeOfLootbox: 1
+  _animatorController: {fileID: 9100000, guid: afc38f9a1d5bf5f4da50cc8557ebcf75, type: 2}
+  _mainSprite: {fileID: -3437069213696776466, guid: b130403f1199b2247a7bfc90a330f2c2, type: 3}
+  _lootboxColor: {r: 0.8862746, g: 0.17254902, b: 0.17254902, a: 1}
+  _nameKey: WeaponLootbox
+  _price: 2000
+  _isAdLootbox: 0

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67afa476323ab046bfe49ccf5691b88, type: 3}
+  m_Name: CaveBird
+  m_EditorClassIdentifier: 
+  _animatorController: {fileID: 9100000, guid: 87d3f7edbb409dd4d98a53126890ae94, type: 2}
+  _unitColor: {r: 0.44705886, g: 0.2392157, b: 0.14901961, a: 1}
+  _colliderSize: {x: 5, y: 3}
+  _colliderOffset: {x: 0, y: 0}
+  _unitName: Cave Bird
+  _maxHealth: 12
+  _type: 0
+  _isMove: 1
+  _isStaticScale: 0
+  _enemyElement: 4
+  _bulletData: {fileID: 11400000, guid: 5f7cd1fed4f5e4f4580dcec6a7060bc6, type: 2}
+  _damage: 2
+  _fireRate: 0.9
+  _bulletSpawnPosition: {x: -2.5, y: -0.95}

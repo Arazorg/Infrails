@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UIElementsAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 7c92ecc3645bc424989ebeb75808173e, type: 3}
+    - {fileID: 2800000, guid: f189fe268ecc28544b20b3ea03055028, type: 3}
+    - {fileID: 2800000, guid: ba3be6113d8fb3b4eb8f1d328c059154, type: 3}
+    - {fileID: 2800000, guid: 43f797331eba1634fb3f0f97b5636e48, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ba3be6113d8fb3b4eb8f1d328c059154, type: 3}
+  - {fileID: -8649881253981000740, guid: 43f797331eba1634fb3f0f97b5636e48, type: 3}
+  - {fileID: 5996755124013523725, guid: 43f797331eba1634fb3f0f97b5636e48, type: 3}
+  - {fileID: -470251781541652376, guid: 43f797331eba1634fb3f0f97b5636e48, type: 3}
+  - {fileID: 1671874615025731853, guid: 43f797331eba1634fb3f0f97b5636e48, type: 3}
+  - {fileID: 21300000, guid: 7c92ecc3645bc424989ebeb75808173e, type: 3}
+  - {fileID: -1100466605624018576, guid: f189fe268ecc28544b20b3ea03055028, type: 3}
+  - {fileID: 5477049453870246855, guid: f189fe268ecc28544b20b3ea03055028, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - FireRateImage
+  - DonationMoneyUISprite_3
+  - DonationMoneyUISprite_2
+  - DonationMoneyUISprite_1
+  - DonationMoneyUISprite_0
+  - LockUISprite
+  - NextPrevButtonsUI_1
+  - NextPrevButtonsUI_0
+  m_RenderDataMap: {}
+  m_Tag: UIElementsAtlas
+  m_IsVariant: 0

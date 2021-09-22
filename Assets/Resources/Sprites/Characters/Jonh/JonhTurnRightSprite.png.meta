@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: 8094f976dadf2b24d8f7d3c02c5d22fd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7495243734057014499
+    second: JonhTurnRight_0
+  - first:
+      213: 1669937955058534405
+    second: JonhTurnRight_1
+  - first:
+      213: -4572016726853550991
+    second: JonhTurnRight_2
+  - first:
+      213: -2149897523959323674
+    second: JonhTurnRight_3
+  - first:
+      213: 4064672638664563446
+    second: JonhTurnRight_4
+  - first:
+      213: 3376090601134497958
+    second: JonhTurnRight_5
+  - first:
+      213: -2993801195060311126
+    second: JonhTurnRight_6
+  - first:
+      213: 3483253100388516930
+    second: JonhTurnRight_7
+  - first:
+      213: 1114972501061983167
+    second: JonhTurnRight_8
+  - first:
+      213: 4350856495812097425
+    second: JonhTurnRight_9
+  - first:
+      213: 7586072281258450723
+    second: JonhTurnRight_10
+  - first:
+      213: -1181901791828028141
+    second: JonhTurnRight_11
+  - first:
+      213: 6963050960355595691
+    second: JonhTurnRight_12
+  - first:
+      213: 3785546331335275590
+    second: JonhTurnRight_13
+  - first:
+      213: -3624778993001054122
+    second: JonhTurnRight_14
+  - first:
+      213: -1826376447690971162
+    second: JonhTurnRight_15
+  - first:
+      213: 1486304610520277454
+    second: JonhTurnRight_16
+  - first:
+      213: 4161052163762654799
+    second: JonhTurnRight_17
+  - first:
+      213: 2277286233466841627
+    second: JonhTurnRight_18
+  - first:
+      213: -2663944832662657991
+    second: JonhTurnRight_19
+  - first:
+      213: -878883213479624056
+    second: JonhTurnRight_20
+  - first:
+      213: -4911691404914493023
+    second: JonhTurnRight_21
+  - first:
+      213: 8677035670214416121
+    second: JonhTurnRight_22
+  - first:
+      213: -6639738840756111087
+    second: JonhTurnRight_23
+  - first:
+      213: 5896503851877124796
+    second: JonhTurnRight_24
+  - first:
+      213: -1900186594115285316
+    second: JonhTurnRight_25
+  - first:
+      213: 8700924790349192125
+    second: JonhTurnRight_26
+  - first:
+      213: -2097915920189624219
+    second: JonhTurnRight_27
+  - first:
+      213: -6421275372689125864
+    second: JonhTurnRight_28
+  - first:
+      213: 4463356582437602211
+    second: JonhTurnRight_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 115
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JonhTurnRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b2f8e098b8bf790800000000000000
+      internalID: -7495243734057014499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508c430f8bfcc2710800000000000000
+      internalID: 1669937955058534405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cffb0b20fec80c0800000000000000
+      internalID: -4572016726853550991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3a9e4b7970a22e0800000000000000
+      internalID: -2149897523959323674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fad9d3ba3e986830800000000000000
+      internalID: 4064672638664563446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a02822b3884ade20800000000000000
+      internalID: 3376090601134497958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_6
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab4a48cca1e376d0800000000000000
+      internalID: -2993801195060311126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_7
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2448f6f5d30075030800000000000000
+      internalID: 3483253100388516930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_8
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbd024159d297f00800000000000000
+      internalID: 1114972501061983167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_9
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 1840
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195b49d5ee8516c30800000000000000
+      internalID: 4350856495812097425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fd8dc0c84274960800000000000000
+      internalID: 7586072281258450723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31551b2159a099fe0800000000000000
+      internalID: -1181901791828028141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba510f4e4f9b1a060800000000000000
+      internalID: 6963050960355595691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_13
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644b508e456f88430800000000000000
+      internalID: 3785546331335275590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_14
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650cfd4f5b232bdc0800000000000000
+      internalID: -3624778993001054122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_15
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e76d312c4867a6e0800000000000000
+      internalID: -1826376447690971162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_16
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec126122b2a60a410800000000000000
+      internalID: 1486304610520277454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_17
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e81f095e60fb930800000000000000
+      internalID: 4161052163762654799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_18
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1aada583cb8a9f10800000000000000
+      internalID: 2277286233466841627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_19
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 920
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934a7e3f944c70bd0800000000000000
+      internalID: -2663944832662657991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8824e75bf549dc3f0800000000000000
+      internalID: -878883213479624056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a97bb3c0ba26dbb0800000000000000
+      internalID: -4911691404914493023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6168a18f50b6870800000000000000
+      internalID: 8677035670214416121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_23
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1193e5304b8ead3a0800000000000000
+      internalID: -6639738840756111087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbacbd3230794d150800000000000000
+      internalID: 5896503851877124796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe8cca3c5e21a5e0800000000000000
+      internalID: -1900186594115285316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_26
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb57225ff4efb870800000000000000
+      internalID: 8700924790349192125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_27
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560f578f594b2e2e0800000000000000
+      internalID: -2097915920189624219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_28
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e86e5e11c03e6a0800000000000000
+      internalID: -6421275372689125864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JonhTurnRight_29
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 0
+        width: 480
+        height: 920
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a34812f92701fd30800000000000000
+      internalID: 4463356582437602211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
