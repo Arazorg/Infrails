@@ -72,7 +72,7 @@ public abstract class Weapon : MonoBehaviour
         if (Time.time > _timeToShoot && _isAttack)
         {
             _timeToShoot = Time.time + CurrentWeaponData.FireRate;
-            //Shoot();
+            Shoot();
         }
     }
 }

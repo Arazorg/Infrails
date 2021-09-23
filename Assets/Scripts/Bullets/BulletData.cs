@@ -5,36 +5,25 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Bullets/Standart Bullet", fileName = "New Bullet")]
 public class BulletData : ScriptableObject
 {
-    [SerializeField] private List<BulletElement> bulletsSprites;
-    [SerializeField] private string bulletTag;
-    [SerializeField] private Vector2 colliderSize;
-    [SerializeField] private Vector2 colliderOffset;
+    [SerializeField] private List<BulletElement> _bulletsSpritesByElements;
+    [SerializeField] private Vector2 _colliderSize;
+    [SerializeField] private Vector2 _colliderOffset;
+    [SerializeField] private string _bulletTag;
 
-    public List<BulletElement> BulletsSprites
-    {
-        get { return bulletsSprites; }
-    }
+    public List<BulletElement> BulletsSpritesByElements => _bulletsSpritesByElements;
 
-    public string BulletTag
-    {
-        get { return bulletTag; }
-    }
+    public Vector2 ColliderSize => _colliderSize;
 
-    public Vector2 ColliderSize
-    {
-        get { return colliderSize; }
-    }
+    public Vector2 ColliderOffset => _colliderOffset;
 
-    public Vector2 ColliderOffset
-    {
-        get { return colliderOffset; }
-    }
+    public string BulletTag => _bulletTag;
+
 
     [Serializable]
     public struct BulletElement
     {
-        public ElementsResistance.Elements element;
-        public Sprite bulletSprite;
-        public Color bulletColor;
+        public ElementsResistance.Elements Element;
+        public Sprite BulletSprite;
+        public Color BulletColor;
     }
 }

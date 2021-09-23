@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Elements Resistance/Standart Elements Resistance", fileName = "New Elements Resistance")]
 public class ElementsResistance : ScriptableObject
 {
-    [SerializeField] private Elements element;
-    [SerializeField] private List<DamageMultiplier> damageMultipliers;
+    [SerializeField] private Elements _element;
+    [SerializeField] private List<DamageMultiplier> _damageMultipliers;
 
     public enum Elements
     {
@@ -20,14 +20,6 @@ public class ElementsResistance : ScriptableObject
 
     public float GetDamageMultiplierByType(Elements currentElement)
     {
-        foreach (var damageMultiplier in damageMultipliers)
-        {
-            if (damageMultiplier.Element == currentElement)
-            {
-                return damageMultiplier.Multiplier;
-            } 
-        }
-
         return 1;
     }
 

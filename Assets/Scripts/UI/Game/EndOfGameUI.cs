@@ -175,7 +175,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
         _doubleRewardButton.HideImmediate();
         _goToLobbyButton.HideImmediate();
         _shareButton.HideImmediate();
-        yield return _shareButton.GetComponent<ShareButton>().Share();
+        yield return _shareButton.GetComponent<ShareButtonUI>().Share();
         _doubleRewardButton.ShowImmediate();
         _goToLobbyButton.ShowImmediate();
         _shareButton.ShowImmediate();

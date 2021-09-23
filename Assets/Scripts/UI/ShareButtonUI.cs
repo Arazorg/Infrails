@@ -2,7 +2,7 @@ using System.Collections;
 using System.IO;
 using UnityEngine;
 
-public class ShareButton : MonoBehaviour
+public class ShareButtonUI : MonoBehaviour
 {
     private const string ShareMessageKey = "ShareMessage";
 
