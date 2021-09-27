@@ -181,6 +181,8 @@ MonoBehaviour:
   _trolleyImage: {fileID: 1861092819}
   _characterImage: {fileID: 1730604967}
   _weaponImage: {fileID: 666471451}
+  _defaultTrolleySprite: {fileID: -7084692875550051492, guid: 903e137c900815642ae3d4e9b97dfead, type: 3}
+  _trolleyForSupportSprite: {fileID: 5829951427685968646, guid: a03af7b6d74e77d4f9f960f1c09f3fc4, type: 3}
 --- !u!1 &233058381
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +502,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 189.25
+  m_fontSize: 193.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -970,7 +972,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.1
+  m_fontSize: 44
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

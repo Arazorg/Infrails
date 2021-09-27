@@ -42,7 +42,7 @@ public class LobbyUI : BaseUI, IUIPanel
         StopAllCoroutines();
         StartCoroutine(EnableBackButton());
         Show();
-        LobbyEnvironmentManager.Instance.SetSelectableCharacterСlickability(true);
+        LobbyEnvironmentManager.Instance.SetLobbyObjectsСlickability(true);
     }
 
     public void OnHide()

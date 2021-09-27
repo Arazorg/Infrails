@@ -245,7 +245,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52.7
+  m_fontSize: 55.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3649,6 +3649,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 882569041}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayEffect
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 188922b66e8b16240af718ee0d1183af, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &222229917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,7 +4262,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.4787234, y: 1}
+    m_SensorSize: {x: 0.4864865, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5147,6 +5159,7 @@ GameObject:
   - component: {fileID: 349954220}
   - component: {fileID: 349954221}
   - component: {fileID: 349954222}
+  - component: {fileID: 349954223}
   m_Layer: 0
   m_Name: AmplificationsChest
   m_TagString: Untagged
@@ -5263,18 +5276,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1120305505}
-          m_TargetAssemblyTypeName: LobbyEnvironmentManager, Assembly-CSharp
-          m_MethodName: OpenAvailableAmplificationsUI
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 882569041}
           m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
           m_MethodName: PlayEffect
@@ -5287,6 +5288,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &349954223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349954218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1358bdb54e1af4ba50463483c0f03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &368080004
 GameObject:
   m_ObjectHideFlags: 0
@@ -13354,7 +13367,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
   - Name: LobbyCat
     Clip: {fileID: 8300000, guid: a2c324f5a43313e41bcd7ba24cd5275c, type: 3}
-    volume: 0.7
+    volume: 0.4
     pitch: 1.2
     isLoop: 0
     audioSource: {fileID: 0}
@@ -14763,6 +14776,7 @@ GameObject:
   - component: {fileID: 1041847396}
   - component: {fileID: 1041847397}
   - component: {fileID: 1041847398}
+  - component: {fileID: 1041847399}
   m_Layer: 0
   m_Name: WeaponsChest
   m_TagString: Untagged
@@ -14879,18 +14893,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1120305505}
-          m_TargetAssemblyTypeName: LobbyEnvironmentManager, Assembly-CSharp
-          m_MethodName: OpenAvailableWeaponsUI
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 882569041}
           m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
           m_MethodName: PlayEffect
@@ -14903,6 +14905,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1041847399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041847394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17f383cd03926343a01e1a5e4d411d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1048498781
 GameObject:
   m_ObjectHideFlags: 0
@@ -16040,6 +16054,17 @@ MonoBehaviour:
   _lobbyUICameraOffset: {x: 0, y: 50, z: -10}
   _selectionUICameraSize: 10
   _lobbyUICameraSize: 44
+  _clickableObjects:
+  - {fileID: 2123988001}
+  - {fileID: 884080456}
+  - {fileID: 1153952940}
+  - {fileID: 229760091}
+  - {fileID: 330743262}
+  - {fileID: 630137554}
+  - {fileID: 1297733687}
+  - {fileID: 2130995339}
+  - {fileID: 1041847394}
+  - {fileID: 349954218}
 --- !u!1 &1122846483
 GameObject:
   m_ObjectHideFlags: 0
@@ -18624,6 +18649,7 @@ GameObject:
   - component: {fileID: 1297733690}
   - component: {fileID: 1297733689}
   - component: {fileID: 1297733692}
+  - component: {fileID: 1297733693}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -18639,7 +18665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297733687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 73, z: 0}
+  m_LocalPosition: {x: 4, y: 72.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1055968383}
@@ -18759,18 +18785,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1120305505}
-          m_TargetAssemblyTypeName: LobbyEnvironmentManager, Assembly-CSharp
-          m_MethodName: OpenSupportUsUI
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 882569041}
           m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
           m_MethodName: PlayEffect
@@ -18783,6 +18797,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1297733693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297733687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13627e96bc420d74a9c065675b26a54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1317978649
 GameObject:
   m_ObjectHideFlags: 0
@@ -20379,7 +20405,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.5
+  m_fontSize: 44.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20463,7 +20489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: 691597.06}
+  m_AnchoredPosition: {x: 25, y: 773459.56}
   m_SizeDelta: {x: -50, y: 800}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1419937059
@@ -30970,10 +30996,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvasAnimator: {fileID: 6318946032024977387}
+  _timerText: {fileID: 1870178973}
   _moneyImage: {fileID: 6693104226593561318}
   _timerImage: {fileID: 897157900}
   _timeUnloadedImage: {fileID: 321589505}
-  _timerText: {fileID: 1870178973}
   _timerClip: {fileID: 8300000, guid: c5e2a73ad4706440f93bf05df0b465fe, type: 3}
   _rewardClip: {fileID: 8300000, guid: c853a41582998e849838e3f6f6959785, type: 3}
 --- !u!1 &2133871883

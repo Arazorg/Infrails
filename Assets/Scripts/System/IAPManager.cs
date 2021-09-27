@@ -81,7 +81,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         else if (string.Equals(args.purchasedProduct.definition.id, TrolleyForSupport, StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-            PlayerProgress.Instance.SetSupportTrolleyAvailable();
+            PlayerProgress.Instance.SupportDonate();
         }
         else
         {

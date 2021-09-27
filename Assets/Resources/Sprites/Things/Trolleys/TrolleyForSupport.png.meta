@@ -1,61 +1,61 @@
 fileFormatVersion: 2
-guid: f95bcec6448dc074dae0f9a613b1f4bb
+guid: a03af7b6d74e77d4f9f960f1c09f3fc4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9179577352428288452
-    second: WoodenTrolleyRotation_0
+      213: 5829951427685968646
+    second: TrolleyForSupport_0
   - first:
-      213: -2563563874076112953
-    second: WoodenTrolleyRotation_1
+      213: 6711198553851914470
+    second: TrolleyForSupport_1
   - first:
-      213: 9156348021106133479
-    second: WoodenTrolleyRotation_2
+      213: 32225937285303060
+    second: TrolleyForSupport_2
   - first:
-      213: -6089312842233089237
-    second: WoodenTrolleyRotation_3
+      213: 7957538018290335955
+    second: TrolleyForSupport_3
   - first:
-      213: -1098269341158939098
-    second: WoodenTrolleyRotation_4
+      213: 414015942455417070
+    second: TrolleyForSupport_4
   - first:
-      213: 1337392846104317778
-    second: WoodenTrolleyRotation_5
+      213: -985048058376360860
+    second: TrolleyForSupport_5
   - first:
-      213: 247315946687967555
-    second: WoodenTrolleyRotation_6
+      213: -5494422928172791952
+    second: TrolleyForSupport_6
   - first:
-      213: -6112189263941633226
-    second: WoodenTrolleyRotation_7
+      213: 5111656042207739053
+    second: TrolleyForSupport_7
   - first:
-      213: 1217297988925009693
-    second: WoodenTrolleyRotation_8
+      213: 7414373772719829705
+    second: TrolleyForSupport_8
   - first:
-      213: 6960103778389468980
-    second: WoodenTrolleyRotation_9
+      213: 3763384421891014787
+    second: TrolleyForSupport_9
   - first:
-      213: -4248343506330593969
-    second: WoodenTrolleyRotation_10
+      213: 5797203172168239967
+    second: TrolleyForSupport_10
   - first:
-      213: -6104305518684696226
-    second: WoodenTrolleyRotation_11
+      213: 5652209844642187481
+    second: TrolleyForSupport_11
   - first:
-      213: 2482111886695939980
-    second: WoodenTrolleyRotation_12
+      213: 2542476981320914093
+    second: TrolleyForSupport_12
   - first:
-      213: -7207464091155929838
-    second: WoodenTrolleyRotation_13
+      213: 7656972501020142247
+    second: TrolleyForSupport_13
   - first:
-      213: -8245598964604921452
-    second: WoodenTrolleyRotation_14
+      213: -187611683554962328
+    second: TrolleyForSupport_14
   - first:
-      213: 6456888334545470682
-    second: WoodenTrolleyRotation_15
+      213: -2680888878210114671
+    second: TrolleyForSupport_15
   - first:
-      213: 8831960014638135720
-    second: WoodenTrolleyRotation_16
+      213: 6405903506030995709
+    second: TrolleyForSupport_16
   - first:
-      213: 7022384141514617706
-    second: WoodenTrolleyRotation_17
+      213: 4435838726253368631
+    second: TrolleyForSupport_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,6 +142,18 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -157,7 +169,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_0
+      name: TrolleyForSupport_0
       rect:
         serializedVersion: 2
         x: 0
@@ -171,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c975bf67f8646f70800000000000000
-      internalID: 9179577352428288452
+      spriteID: 60be0016fe528e050800000000000000
+      internalID: 5829951427685968646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_1
+      name: TrolleyForSupport_1
       rect:
         serializedVersion: 2
         x: 660
@@ -192,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c74ba62d346c6cd0800000000000000
-      internalID: -2563563874076112953
+      spriteID: 6e8657bf687f22d50800000000000000
+      internalID: 6711198553851914470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_2
+      name: TrolleyForSupport_2
       rect:
         serializedVersion: 2
         x: 1320
@@ -213,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e9c1e54302e11f70800000000000000
-      internalID: 9156348021106133479
+      spriteID: 41bc178b15d727000800000000000000
+      internalID: 32225937285303060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_3
+      name: TrolleyForSupport_3
       rect:
         serializedVersion: 2
         x: 1980
@@ -234,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b23f8788b3a6e7ba0800000000000000
-      internalID: -6089312842233089237
+      spriteID: 3d08cd2baaade6e60800000000000000
+      internalID: 7957538018290335955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_4
+      name: TrolleyForSupport_4
       rect:
         serializedVersion: 2
         x: 2640
@@ -255,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 626e4846ad922c0f0800000000000000
-      internalID: -1098269341158939098
+      spriteID: ee8576d5e41eeb500800000000000000
+      internalID: 414015942455417070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_5
+      name: TrolleyForSupport_5
       rect:
         serializedVersion: 2
         x: 3300
@@ -276,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25f423d25bf5f8210800000000000000
-      internalID: 1337392846104317778
+      spriteID: 46ce9c982086452f0800000000000000
+      internalID: -985048058376360860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_6
+      name: TrolleyForSupport_6
       rect:
         serializedVersion: 2
         x: 0
@@ -297,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34130ad0b84ae6300800000000000000
-      internalID: 247315946687967555
+      spriteID: 077cf702573efb3b0800000000000000
+      internalID: -5494422928172791952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_7
+      name: TrolleyForSupport_7
       rect:
         serializedVersion: 2
         x: 660
@@ -318,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63b7dca8f342d2ba0800000000000000
-      internalID: -6112189263941633226
+      spriteID: dac75c1761040f640800000000000000
+      internalID: 5111656042207739053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_8
+      name: TrolleyForSupport_8
       rect:
         serializedVersion: 2
         x: 1320
@@ -339,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1f2ca74216b4e010800000000000000
-      internalID: 1217297988925009693
+      spriteID: 9c230fac9a525e660800000000000000
+      internalID: 7414373772719829705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_9
+      name: TrolleyForSupport_9
       rect:
         serializedVersion: 2
         x: 1980
@@ -360,14 +372,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43722ce9281479060800000000000000
-      internalID: 6960103778389468980
+      spriteID: 3808d04413a3a3430800000000000000
+      internalID: 3763384421891014787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_10
+      name: TrolleyForSupport_10
       rect:
         serializedVersion: 2
         x: 2640
@@ -381,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f45d355f61ada05c0800000000000000
-      internalID: -4248343506330593969
+      spriteID: f5b0bd7f19dc37050800000000000000
+      internalID: 5797203172168239967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_11
+      name: TrolleyForSupport_11
       rect:
         serializedVersion: 2
         x: 3300
@@ -402,14 +414,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5197560976294ba0800000000000000
-      internalID: -6104305518684696226
+      spriteID: 9d80dd138eea07e40800000000000000
+      internalID: 5652209844642187481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_12
+      name: TrolleyForSupport_12
       rect:
         serializedVersion: 2
         x: 0
@@ -423,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8f39433c9b327220800000000000000
-      internalID: 2482111886695939980
+      spriteID: da49d390851b84320800000000000000
+      internalID: 2542476981320914093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_13
+      name: TrolleyForSupport_13
       rect:
         serializedVersion: 2
         x: 660
@@ -444,14 +456,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 215644b8891f9fb90800000000000000
-      internalID: -7207464091155929838
+      spriteID: 7aa6d3adbe7034a60800000000000000
+      internalID: 7656972501020142247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_14
+      name: TrolleyForSupport_14
       rect:
         serializedVersion: 2
         x: 1320
@@ -465,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4991562cd6fb19d80800000000000000
-      internalID: -8245598964604921452
+      spriteID: 8645ef5fa28756df0800000000000000
+      internalID: -187611683554962328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_15
+      name: TrolleyForSupport_15
       rect:
         serializedVersion: 2
         x: 1980
@@ -486,14 +498,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad442feeab97b9950800000000000000
-      internalID: 6456888334545470682
+      spriteID: 19b9dfbe4c19bcad0800000000000000
+      internalID: -2680888878210114671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_16
+      name: TrolleyForSupport_16
       rect:
         serializedVersion: 2
         x: 2640
@@ -507,14 +519,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a9b5fee6dc619a70800000000000000
-      internalID: 8831960014638135720
+      spriteID: df8286e7c4756e850800000000000000
+      internalID: 6405903506030995709
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WoodenTrolleyRotation_17
+      name: TrolleyForSupport_17
       rect:
         serializedVersion: 2
         x: 3300
@@ -528,8 +540,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a63b057ab25847160800000000000000
-      internalID: 7022384141514617706
+      spriteID: 735d047c1d34f8d30800000000000000
+      internalID: 4435838726253368631
       vertices: []
       indices: 
       edges: []

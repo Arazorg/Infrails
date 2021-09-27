@@ -18,7 +18,7 @@ public class LobbyStopPoint : MonoBehaviour
             else if(_isSetCharactersClickable)
             {
                 if(PlayerProgress.Instance.IsLobbyTutorialCompleted)
-                    LobbyEnvironmentManager.Instance.SetSelectableCharacterСlickability(true);
+                    LobbyEnvironmentManager.Instance.SetLobbyObjectsСlickability(true);
                 else
                     UIManager.Instance.UIStackPush(_tutorialUI);
             }

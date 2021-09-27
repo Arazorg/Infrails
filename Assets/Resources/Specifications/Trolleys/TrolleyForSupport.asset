@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: TrolleyForSupport
   m_EditorClassIdentifier: 
   _itemName: TrolleyForSupport
-  _itemColor: {r: 0.7176471, g: 0.9333334, b: 0.9686275, a: 1}
-  _itemSpriteUI: {fileID: -8515071313363045957, guid: b6e9848833138b949a232450f847e90a, type: 3}
+  _itemColor: {r: 0.97647065, g: 0.52156866, b: 0.10980393, a: 1}
+  _itemSpriteUI: {fileID: 5829951427685968646, guid: a03af7b6d74e77d4f9f960f1c09f3fc4, type: 3}
   _isStartingItem: 0
   _animatorController: {fileID: 9100000, guid: dc371301c7f4a2b479086247f2310e33, type: 2}
-  _colliderSize: {x: 4, y: 4}
+  _colliderSize: {x: 5, y: 5}
   _colliderOffset: {x: 0, y: 0}
-  _speed: 27
+  _speed: 29

@@ -47,8 +47,10 @@ public class SupportUsUI : BaseUI, IUIPanel
     public void ShowReward()
     {
         PlayerProgress.Instance.OnSupportDonateComplete -= ShowReward;
-        if(!PlayerProgress.Instance.GetTrolleyForSupportAvailability())
+
+        if (!PlayerProgress.Instance.GetTrolleyForSupportAvailability())
         {
+            PlayerProgress.Instance.SetTrolleyForSupportAvailable();
             _shopLootPanelUI.InitLootbox(_trolleysLootboxData);
             UIManager.Instance.UIStackPush(_shopLootPanelUI);
             OnGetTrolleyForSupport?.Invoke(_trolleyForSupportData);

@@ -24,7 +24,10 @@ public class PlayerProgress : MonoBehaviour
 
     public int PlayerMoney
     {
-        get { return _playerProgressData.PlayerMoney; }
+        get 
+        { 
+            return _playerProgressData.PlayerMoney; 
+        }
         set
         {
             _playerProgressData.PlayerMoney = value;
@@ -42,9 +45,8 @@ public class PlayerProgress : MonoBehaviour
         CreateStartPlayerProgressData();
         string currentPlayerProgress = _saveSystem.Load(PlayerProgressFile);
         if (currentPlayerProgress != string.Empty)
-        {
             WriteCurrentProgress(currentPlayerProgress);
-        }
+
         Save();
     }
 
@@ -71,12 +73,19 @@ public class PlayerProgress : MonoBehaviour
         return _playerProgressData.TrolleyForSupportAvailability.IsAvailable;
     }
 
-    public void SetSupportTrolleyAvailable()
+    public void SetTrolleyForSupportAvailable()
     {
-        OnSupportDonateComplete?.Invoke();
         _playerProgressData.TrolleyForSupportAvailability.IsAvailable = true;
+        PlayerPrefs.SetInt(GameConstants.TrolleyForSupportKey, 1);
+        PlayerPrefs.Save();
         Save();
     }
+
+    public void SupportDonate()
+    {
+        OnSupportDonateComplete?.Invoke();
+    }
+
 
     #region Characters
     public bool GetCharacterAvailability(string characterName)
@@ -130,7 +139,7 @@ public class PlayerProgress : MonoBehaviour
         {
             var data = GetAmplificationDataByName(amplification.Name);
             data.Level = GetAmplificationLevelByName(amplification.Name).Level;
-            if(isAvailable)
+            if (isAvailable)
             {
                 if (data.Level != 0)
                 {
@@ -139,7 +148,7 @@ public class PlayerProgress : MonoBehaviour
             }
             else
             {
-                if(data.Level != 3)
+                if (data.Level != 3)
                 {
                     amplificationsData.Add(data);
                 }
@@ -187,7 +196,7 @@ public class PlayerProgress : MonoBehaviour
                 return GetUnavailableSkillsData().Cast<ItemData>().ToList();
             default:
                 return null;
-        }   
+        }
     }
 
     public bool CheckLootsAvailability(LootboxData lootboxData)
@@ -227,9 +236,7 @@ public class PlayerProgress : MonoBehaviour
         var charactersData = Resources.LoadAll<CharacterData>(charactersDataPath);
 
         foreach (var character in charactersData)
-        {
             _playerProgressData.CharactersAvailabilities.Add(new CharacterAvailability(character.UnitName, false));
-        }
     }
 
     private void LoadWeapons()
@@ -241,9 +248,7 @@ public class PlayerProgress : MonoBehaviour
         {
             var weaponAvailability = new ItemAvailability(weapon.ItemName, false);
             if (weapon.IsStartingItem)
-            {
                 weaponAvailability.IsAvailable = true;
-            }
 
             _playerProgressData.WeaponsAvailabilities.Add(weaponAvailability);
         }
@@ -259,9 +264,7 @@ public class PlayerProgress : MonoBehaviour
         {
             var amplificationAvailability = new AmplificationLevel(amplification.ItemName);
             if (amplification.IsStartingItem)
-            {
                 amplificationAvailability.IncrementLevel();
-            }
 
             _playerProgressData.AmplificationsLevels.Add(amplificationAvailability);
         }
@@ -274,9 +277,7 @@ public class PlayerProgress : MonoBehaviour
         _skillsData = skillsData;
 
         foreach (var skill in skillsData)
-        {
             _playerProgressData.SkillsAvailabilities.Add(new ItemAvailability(skill.ItemName, false));
-        }
     }
 
     private void WriteCurrentProgress(string currentPlayerProgress)
@@ -286,45 +287,37 @@ public class PlayerProgress : MonoBehaviour
         _playerProgressData.IsLobbyTutorialCompleted = tempData.IsLobbyTutorialCompleted;
         _playerProgressData.IsGameTutorialCompleted = tempData.IsGameTutorialCompleted;
         _playerProgressData.TrolleyForSupportAvailability.IsAvailable = tempData.TrolleyForSupportAvailability.IsAvailable;
+        if (_playerProgressData.TrolleyForSupportAvailability.IsAvailable)
+            PlayerPrefs.SetInt(GameConstants.TrolleyForSupportKey, 1);
 
         foreach (var character in tempData.CharactersAvailabilities)
         {
             if (GetCharacterByName(character.Name) != null && character.IsAvailable)
-            {
                 SetCharacterAvailable(character.Name);
-            }
 
             foreach (var skill in character.Skills)
             {
                 if (skill.IsAvailable)
-                {
                     SetSkillAvailable(character.Name, skill.Name);
-                }
             }
         }
 
         foreach (var amplification in tempData.AmplificationsLevels)
         {
             if (GetAmplificationLevelByName(amplification.Name) != null && amplification.Level != 0)
-            {
                 SetAmplificationLevel(amplification.Name, amplification.Level);
-            }
         }
 
         foreach (var weapon in tempData.WeaponsAvailabilities)
         {
             if (GetWeaponByName(weapon.Name) != null && weapon.IsAvailable)
-            {
                 SetWeaponAvailable(weapon.Name);
-            }
         }
 
         foreach (var skill in tempData.SkillsAvailabilities)
         {
             if (GetWeaponByName(skill.Name) != null && skill.IsAvailable)
-            {
                 GetSkillByName(skill.Name).IsAvailable = true;
-            }
         }
     }
 
@@ -334,10 +327,9 @@ public class PlayerProgress : MonoBehaviour
         foreach (var skill in _skillsData)
         {
             if (!GetSkillByName(skill.ItemName).IsAvailable)
-            {
                 skills.Add(skill);
-            }
         }
+
         return skills;
     }
 

@@ -27,6 +27,8 @@ public class LobbyEnvironmentManager : MonoBehaviour
     [SerializeField] private float _selectionUICameraSize;
     [SerializeField] private float _lobbyUICameraSize;
 
+    [SerializeField] private List<GameObject> _clickableObjects;
+
     private TrolleyMovement _trolleyMovement;
     private List<SelectableCharacter> _selectableCharacters = new List<SelectableCharacter>();
     private SelectableCharacter _currentSelectableCharacter;
@@ -65,22 +67,22 @@ public class LobbyEnvironmentManager : MonoBehaviour
         _currentSelectableCharacter = currentSelectableCharacter;
         _currentSelectableCharacter.Teleport(TeleportToTrolley, _trolleyMovement.transform);
         SetCameraParams(GameConstants.CameraToCharacter, GameConstants.OpenCharacterSelectionUI);
-        SetSelectableCharacterСlickability(false);
+        SetLobbyObjectsСlickability(false);
         _characterSelectionUI.SetCharacterData(currentSelectableCharacter.Data);
         UIManager.Instance.UIStackPush(_characterSelectionUI);
     }
 
     public void CancelCharacterSelection()
     {
-        SetSelectableCharacterСlickability(true);
+        SetLobbyObjectsСlickability(true);
         _currentSelectableCharacter.Teleport(TeleportToStartPoint);
         SetCameraParams(GameConstants.CameraToLobby, GameConstants.CloseCharacterSelectionUI);
     }
 
-    public void SetSelectableCharacterСlickability(bool isClickable)
+    public void SetLobbyObjectsСlickability(bool isClickable)
     {
-        foreach (var character in GetComponentsInChildren<SelectableCharacter>())
-            character.IsClickable = isClickable;
+        foreach (var clickableObject in GetComponentsInChildren(typeof(IClickable)))
+            (clickableObject as IClickable).IsClickable = isClickable;        
     }
 
     public void MoveTrolleyToGame()

@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class SelectableCharacter : MonoBehaviour, IPointerDownHandler
+public class SelectableCharacter : MonoBehaviour, IPointerDownHandler, IClickable
 {
     [SerializeField] private CharacterData _data;
     [SerializeField] private GameObject _teleportaionPrefab;
@@ -21,6 +21,7 @@ public class SelectableCharacter : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+
         if (_isClickable)
             _chooseCharacterEvent.Invoke(this);
     }

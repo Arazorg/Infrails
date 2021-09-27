@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,10 @@ public class LoadingUI : MonoBehaviour
     [SerializeField] private Image _characterImage;
     [SerializeField] private Image _weaponImage;
 
+    [Header("Sprites")]
+    [SerializeField] private Sprite _defaultTrolleySprite;
+    [SerializeField] private Sprite _trolleyForSupportSprite;
+
     private void Start()
     {
         SetUI();
@@ -28,6 +33,7 @@ public class LoadingUI : MonoBehaviour
     {
         if (CurrentGameInfo.Instance == null)
         {
+            SetTrolleySprite();
             _titleText.text = GameName;
             _sideText.text = AnyReferenceText;
         }
@@ -47,4 +53,32 @@ public class LoadingUI : MonoBehaviour
             }
         }
     }
+
+    private void SetTrolleySprite()
+    {
+        if (GetTrolleyForSupportAvailability())
+            _trolleyImage.sprite = _trolleyForSupportSprite;
+        else
+            _trolleyImage.sprite = _defaultTrolleySprite;
+    }
+
+
+    private bool GetTrolleyForSupportAvailability()
+    {
+        string playerProgressFile = "PlayerProgress.txt";
+        if (File.Exists($"{Application.persistentDataPath}/{playerProgressFile}"))
+        {
+            int trolleyAvailability = PlayerPrefs.GetInt(GameConstants.TrolleyForSupportKey, 0);
+            if (trolleyAvailability == 1)
+                return true;
+            else
+                return false;
+        }
+        else
+        {
+            PlayerPrefs.DeleteAll();
+            return false;
+        }
+    }
 }
+

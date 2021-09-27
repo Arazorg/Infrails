@@ -31,10 +31,6 @@
     public const string ShotgunSound = "Shotgun";
     public const string LaserSound = "Laser";
 
-    // SceneParams
-    public const bool OpenWithLoadingScene = true;
-    public const bool OpenWithoutLoadingScene = false;
-
     // Items
     public const bool Available = true;
     public const bool Unavailable = false;
@@ -48,5 +44,8 @@
 
     public const int NumberLevelInGame = 10;
     public const int NumberBiomeInLevel = 5;
+
+    // Player Prefs Keys
+    public const string TrolleyForSupportKey = "TrolleyForSupport";
 }
 

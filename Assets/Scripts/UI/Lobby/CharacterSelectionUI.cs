@@ -68,7 +68,7 @@ public class CharacterSelectionUI : BaseUI, IUIPanel
     private void Close()
     {
         if (!LobbyEnvironmentManager.Instance.IsCharacterConfirmed)
-            LobbyEnvironmentManager.Instance.CancelCharacterSelection();           
+            LobbyEnvironmentManager.Instance.CancelCharacterSelection();
 
         Hide();
     }
