@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class LoaderCallback : MonoBehaviour
 {
-    [SerializeField] private SafeArea safeArea;
+    [SerializeField] private SafeArea _safeArea;
 
-    private bool isFirstUpdate = true;
+    private bool _isFirstUpdate = true;
 
     void Awake()
     {
@@ -15,14 +15,14 @@ public class LoaderCallback : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        safeArea.Init();
+        _safeArea.Init();
     }
 
     private void Update()
     {
-        if (isFirstUpdate)
+        if (_isFirstUpdate)
         {
-            isFirstUpdate = false;
+            _isFirstUpdate = false;
             Loader.LoaderCallback();
         }
     }

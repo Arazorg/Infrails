@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class LootboxInfoPanelUI : MonoBehaviour
 {
     [SerializeField] private Image _lootboxImage;
+
+    [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _lootboxNameText;
     [SerializeField] private TextMeshProUGUI _lootboxDescriptionText;
     [SerializeField] private TextMeshProUGUI _lootboxPriceText;

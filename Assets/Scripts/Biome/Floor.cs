@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class Floor : MonoBehaviour, IUpdateable
+public class Floor : MonoBehaviour
 {
     [SerializeField] private Transform _nextFloorSpawnPoint;
     [SerializeField] private Light2D _floorLight;
@@ -18,30 +18,22 @@ public class Floor : MonoBehaviour, IUpdateable
         _neededGlobalLigthIntensity = neededGlobalLigthIntensity;
 
         if (neededGlobalLigthIntensity == 0)
-        {
             _lightOnOffDuration = 3f;
-        }
         else
-        {
             _lightOnOffDuration = 1f;
-        }
     }
 
-    public void Tick()
+    private void Update()
     {
         SetLightsIntensity();
-    }
-
-    private void Start()
-    {
-        UpdateManager.Instance.Register(this);
     }
 
     private void SetLightsIntensity()
     {
         if (_timeElapsedLightIntensity < _lightOnOffDuration)
         {
-            _floorLight.intensity = Mathf.Lerp(_floorLight.intensity, _neededGlobalLigthIntensity, _timeElapsedLightIntensity / _lightOnOffDuration);
+            float t = _timeElapsedLightIntensity / _lightOnOffDuration;
+            _floorLight.intensity = Mathf.Lerp(_floorLight.intensity, _neededGlobalLigthIntensity, t);
             _timeElapsedLightIntensity += Time.deltaTime;
         }
     }

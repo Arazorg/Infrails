@@ -10,13 +10,18 @@ public class LobbyEnvironmentManager : MonoBehaviour
     private const bool TeleportToTrolley = true;
     private const bool TeleportToStartPoint = false;
 
+    [Header("UI scripts")]
     [SerializeField] private CharacterSelectionUI _characterSelectionUI;
     [SerializeField] private AvailableItemsUI _availableItemsUI;
-    [SerializeField] private CameraManager _cameraManager;
+    [SerializeField] private SupportUsUI _supportUsUI;
+
+    [Header("Rails points")]
     [SerializeField] private Transform _trolleySpawnPoint;
     [SerializeField] private Rail _charZoneStopRail;
     [SerializeField] private Rail _goToGameRail;
-    [SerializeField] private TrolleyData _lobbyTrolleyData;
+
+    [Header("Camera parametrs")]
+    [SerializeField] private CameraManager _cameraManager;
     [SerializeField] private Vector3 _selectionUICameraOffset;
     [SerializeField] private Vector3 _lobbyUICameraOffset;
     [SerializeField] private float _selectionUICameraSize;
@@ -44,9 +49,9 @@ public class LobbyEnvironmentManager : MonoBehaviour
 
     public void StartSpawn()
     {
-        _trolleyMovement = CharacterSpawner.Instance.SpawnTrolley(_lobbyTrolleyData, _trolleySpawnPoint).GetComponent<TrolleyMovement>();
+        var trolley = CharacterSpawner.Instance.SpawnTrolleyLobby(_trolleySpawnPoint);
+        _trolleyMovement = trolley.GetComponent<TrolleyMovement>();
         _trolleyMovement.NextRail = _charZoneStopRail;
-        GameStates.isOpen = true;
         StartCoroutine(ShowingCharacters());
     }
 
@@ -75,15 +80,12 @@ public class LobbyEnvironmentManager : MonoBehaviour
     public void SetSelectableCharacterСlickability(bool isClickable)
     {
         foreach (var character in GetComponentsInChildren<SelectableCharacter>())
-        {
             character.IsClickable = isClickable;
-        }
     }
 
     public void MoveTrolleyToGame()
     {
-        var trolleyMovement = _trolleyMovement.GetComponent<TrolleyMovement>();
-        trolleyMovement.NextRail = _goToGameRail;
+        _trolleyMovement.NextRail = _goToGameRail;
     }
 
     public void OpenAvailableAmplificationsUI()
@@ -98,16 +100,25 @@ public class LobbyEnvironmentManager : MonoBehaviour
         _availableItemsUI.Init(AvailableItemsUI.TypeOfPanel.Weapon);
     }
 
+    public void OpenSupportUsUI()
+    {
+        _supportUsUI.OnGetTrolleyForSupport += ChangeTrolley;
+        UIManager.Instance.UIStackPush(_supportUsUI);
+    }
+
     private void Awake()
     {
         if (Instance != null)
-        {
             Destroy(gameObject);
-        }
         else
-        {
             Instance = this;
-        }
+    }
+
+    private void ChangeTrolley(TrolleyData trolleyData)
+    {
+        _supportUsUI.OnGetTrolleyForSupport -= ChangeTrolley;
+        _trolleyMovement.GetComponent<Animator>().runtimeAnimatorController = trolleyData.AnimatorController;
+        CurrentGameInfo.Instance.TrolleyData = trolleyData;
     }
 
     private void Start()
@@ -134,9 +145,7 @@ public class LobbyEnvironmentManager : MonoBehaviour
         _selectableCharacters = GetComponentsInChildren<SelectableCharacter>().ToList();
 
         foreach (var character in _selectableCharacters)
-        {
             character.SetCharacterVisiblity(false);
-        }
     }
 
     private void SetCameraParams(bool toCharacter, bool isOpenSelectionUI)
@@ -144,13 +153,9 @@ public class LobbyEnvironmentManager : MonoBehaviour
         if (toCharacter)
         {
             if (isOpenSelectionUI)
-            {
                 _cameraManager.SetCameraParams(_charZoneStopRail.transform, _selectionUICameraSize, _selectionUICameraOffset);
-            }
             else
-            {
                 _cameraManager.SetCameraParams(_trolleyMovement.transform, _lobbyUICameraSize, new Vector3(0, 0, -10));
-            }
         }
         else
         {

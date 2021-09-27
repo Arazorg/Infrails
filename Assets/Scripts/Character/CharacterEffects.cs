@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class CharacterEffects : MonoBehaviour
 {
+    [Header("Prefabs")]
     [SerializeField] private GameObject _teleportaionPrefab;
     [SerializeField] private GameObject _explosionPrefab;
+
+    [Header("Audio Clips")]
     [SerializeField] private AudioClip _deathClip;
     [SerializeField] private AudioClip _teleportationEffectClip;
 
@@ -30,8 +33,6 @@ public class CharacterEffects : MonoBehaviour
         GetComponent<BoxCollider2D>().enabled = isState;
         GetComponent<SpriteRenderer>().enabled = isState;
         foreach (var spriteRenderer in GetComponentsInChildren<SpriteRenderer>())
-        {
             spriteRenderer.enabled = isState;
-        }
     }
 }

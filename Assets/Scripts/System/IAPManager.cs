@@ -10,6 +10,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     private const string Coins75000 = "Coins75000";
     private const string Coins200000 = "Coins200000";
     private const string Coins400000 = "Coins400000";
+    private const string TrolleyForSupport = "TrolleyForSupport";
 
     private static IStoreController StoreController;
     private static IExtensionProvider StoreExtensionProvider;
@@ -26,6 +27,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         builder.AddProduct(Coins75000, ProductType.Consumable);
         builder.AddProduct(Coins200000, ProductType.Consumable);
         builder.AddProduct(Coins400000, ProductType.Consumable);
+        builder.AddProduct(TrolleyForSupport, ProductType.NonConsumable);
         UnityPurchasing.Initialize(this, builder);
     }
 
@@ -49,6 +51,11 @@ public class IAPManager : MonoBehaviour, IStoreListener
         BuyProductID(Coins400000);
     }
 
+    public void BuyTrolleyForSupport()
+    {
+        BuyProductID(TrolleyForSupport);
+    }
+
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
     {
         if (string.Equals(args.purchasedProduct.definition.id, Coins25000, StringComparison.Ordinal))
@@ -70,6 +77,11 @@ public class IAPManager : MonoBehaviour, IStoreListener
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             PlayerProgress.Instance.PlayerMoney += 400000;
+        }
+        else if (string.Equals(args.purchasedProduct.definition.id, TrolleyForSupport, StringComparison.Ordinal))
+        {
+            Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
+            PlayerProgress.Instance.SetSupportTrolleyAvailable();
         }
         else
         {

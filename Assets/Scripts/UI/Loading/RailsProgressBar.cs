@@ -9,7 +9,7 @@ public class RailsProgressBar : MonoBehaviour
     private Vector2 finishPosition;
     private Vector2 rightCornerOfRailsAnchor = new Vector2(1, 0.5f);
 
-    private void Awake()
+    private void Start()
     {
         SetTrolleyParams();
     }

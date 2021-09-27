@@ -40,9 +40,7 @@ public class TrolleyMovement : MonoBehaviour
                 if (Vector2.Distance(transform.position, _nextRail.transform.position) < DistanceForGetNewPosition)
                 {
                     if (_nextRail != null && _previousRail != null)
-                    {
                         Turn(_previousRail, _nextRail.NextRail.RailTransform);
-                    }
 
                     transform.position = _nextRail.RailTransform.position;
                     _previousRail = _nextRail.RailTransform;
@@ -56,23 +54,15 @@ public class TrolleyMovement : MonoBehaviour
     {
         if ((transform.position.x > previousRail.position.x && transform.position.y > nextRail.position.y)
                 || (transform.position.y > previousRail.position.y && transform.position.x > nextRail.position.x))
-        {
             _animator.Play(TurnLeftAnimationKey);
-        }
         else if ((transform.position.x > previousRail.position.x && transform.position.y < nextRail.position.y)
                     || (transform.position.x > nextRail.position.x && transform.position.y < previousRail.position.y))
-        {
             _animator.Play(TurnLeftAnimationKey);
-        }
         else if ((transform.position.y > previousRail.position.y && transform.position.x < nextRail.position.x)
                 || (transform.position.x < previousRail.position.x && transform.position.y > nextRail.position.y))
-        {
             _animator.Play(TurnRightAnimationKey);
-        }
         else if ((transform.position.x < previousRail.position.x && transform.position.y < nextRail.position.y)
                     || (transform.position.x < nextRail.position.x && transform.position.y < previousRail.position.y))
-        {
             _animator.Play(TurnRightAnimationKey);
-        }
     }
 }

@@ -3,13 +3,19 @@ using UnityEngine;
 
 public class CharacterSelectionUI : BaseUI, IUIPanel
 {
+    [Header("UI Scripts")]
     [SerializeField] private DonationUI _donationUI;
     [SerializeField] private CharacterInfoPanelUI _characterInfoPanelUI;
-    [SerializeField] private SkillPanelUI _skillPanelUI;  
+    [SerializeField] private SkillPanelUI _skillPanelUI;
+
+    [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _moneyText;
     [SerializeField] private TextMeshProUGUI _characterPriceText;
+
+    [Header("Animations UI Scripts")]
     [SerializeField] private AnimationsUI _confirmButton;
     [SerializeField] private AnimationsUI _buyCharacterButton;
+
     [SerializeField] private AudioClip _buyCharacterClip;
 
     private CharacterData _currentCharacterData;
@@ -62,9 +68,7 @@ public class CharacterSelectionUI : BaseUI, IUIPanel
     private void Close()
     {
         if (!LobbyEnvironmentManager.Instance.IsCharacterConfirmed)
-        {
             LobbyEnvironmentManager.Instance.CancelCharacterSelection();           
-        }
 
         Hide();
     }

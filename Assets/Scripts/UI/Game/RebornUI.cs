@@ -7,10 +7,14 @@ public class RebornUI : BaseUI, IUIPanel
 {
     private const int CostOfResurrection = 200;
 
+    [Header("UI Scripts")]
     [SerializeField] private DonationUI _donationUI;
     [SerializeField] private EndOfGameUI _endOfGameUI;
+
     [SerializeField] private TextMeshProUGUI _moneyText;
     [SerializeField] private AnimationsUI _adsUnavailableText;
+
+    [Header("Audio Clips")]
     [SerializeField] private AudioClip _moneyClip;
     [SerializeField] private AudioClip _clickClip;
 

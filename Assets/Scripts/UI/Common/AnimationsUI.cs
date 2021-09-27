@@ -30,23 +30,18 @@ public class AnimationsUI : MonoBehaviour
     public void Show()
     {
         if (_isMoving)
-        {
             MoveToPosition(_finishPosition);
-        }
         else if (_isResizing)
-        {
             transform.LeanScale(new Vector3(1, 1, 1), _timeOfScaling).setIgnoreTimeScale(true);
-        }
     }
 
     public void ShowImmediate()
     {
         if (_isMoving)
         {
-            if(_rectTransform == null)
-            {               
+            if (_rectTransform == null)
                 SetStartParams();
-            }
+
             MoveToPosition(_finishPosition);
             _rectTransform.anchoredPosition = _finishPosition;
         }
@@ -55,13 +50,9 @@ public class AnimationsUI : MonoBehaviour
     public void Hide()
     {
         if (_isMoving)
-        {
             MoveToPosition(_startPosition);
-        }
         else if (_isResizing)
-        {
             transform.LeanScale(Vector3.zero, _timeOfScaling).setIgnoreTimeScale(true);
-        }
     }
 
     public void HideImmediate()
@@ -69,9 +60,8 @@ public class AnimationsUI : MonoBehaviour
         if (_isMoving)
         {
             if (_rectTransform == null)
-            {
                 SetStartParams();
-            }
+
             MoveToPosition(_startPosition);
             _rectTransform.anchoredPosition = _startPosition;
         }
@@ -85,13 +75,9 @@ public class AnimationsUI : MonoBehaviour
     {
         var canvasGroup = GetComponent<CanvasGroup>();
         if (alpha == 0)
-        {
             canvasGroup.blocksRaycasts = false;
-        }
         else
-        {
             canvasGroup.blocksRaycasts = true;
-        }
 
         StartCoroutine(Fading(alpha));
     }
@@ -100,13 +86,9 @@ public class AnimationsUI : MonoBehaviour
     {
         var canvasGroup = GetComponent<CanvasGroup>();
         if (alpha == 0)
-        {
             canvasGroup.blocksRaycasts = false;
-        }
         else
-        {
             canvasGroup.blocksRaycasts = true;
-        }
 
         canvasGroup.LeanAlpha(alpha, 0).setIgnoreTimeScale(true);
     }
@@ -120,13 +102,9 @@ public class AnimationsUI : MonoBehaviour
         float minletterDelay = 0.02f;
 
         if (_letterPrintDelay > maxletterDelay)
-        {
             _letterPrintDelay = maxletterDelay;
-        }
         else if (_letterPrintDelay < minletterDelay)
-        {
             _letterPrintDelay = minletterDelay;
-        }
 
         foreach (char letter in printableText.ToCharArray())
         {
@@ -153,9 +131,8 @@ public class AnimationsUI : MonoBehaviour
     private void MoveToPosition(Vector3 position)
     {
         if (_rectTransform == null)
-        {
             SetStartParams();
-        }
+
         LeanTween.moveX(_rectTransform, position.x, _timeOfMovement).setEaseOutQuart().setIgnoreTimeScale(true);
         LeanTween.moveY(_rectTransform, position.y, _timeOfMovement).setEaseOutQuart().setIgnoreTimeScale(true);
     }
@@ -165,9 +142,7 @@ public class AnimationsUI : MonoBehaviour
         _rectTransform = GetComponent<RectTransform>();
         _text = GetComponent<TextMeshProUGUI>();
         if (_isBlink)
-        {
             StartCoroutine(BlinkText(_timeOfBlink));
-        }
     }
 
     private IEnumerator Fading(float alpha)
@@ -177,9 +152,7 @@ public class AnimationsUI : MonoBehaviour
         if (alpha == 0)
         {
             while (canvasGroup.alpha != 0)
-            {
                 yield return null;
-            }
         }
 
         yield break;
@@ -194,9 +167,7 @@ public class AnimationsUI : MonoBehaviour
             Color startValue = _text.color;
             Color endValue = transparentColor;
             if (startValue.a == 0)
-            {
                 endValue = new Color(1, 1, 1, 1);
-            }
 
             while (time < duration)
             {

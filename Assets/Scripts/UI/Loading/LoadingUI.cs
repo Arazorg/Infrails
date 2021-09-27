@@ -10,19 +10,23 @@ public class LoadingUI : MonoBehaviour
     private const string HintKey = "LoadingHint";
     private const int CountOfHints = 5;
 
+    [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _titleText;
     [SerializeField] private TextMeshProUGUI _sideText;
+
+    [Header("Images")]
+    [SerializeField] private Image _trolleyImage;
     [SerializeField] private Image _characterImage;
     [SerializeField] private Image _weaponImage;
 
-    private void Awake()
+    private void Start()
     {
         SetUI();
     }
 
     private void SetUI()
     {
-        if (!GameStates.isOpen)
+        if (CurrentGameInfo.Instance == null)
         {
             _titleText.text = GameName;
             _sideText.text = AnyReferenceText;
@@ -37,6 +41,7 @@ public class LoadingUI : MonoBehaviour
             {
                 _characterImage.color = Color.white;
                 _weaponImage.color = Color.white;
+                _trolleyImage.sprite = CurrentGameInfo.Instance.TrolleyData.ItemSpriteUI;
                 _characterImage.sprite = CurrentGameInfo.Instance.CharacterData.CharacterSprite;
                 _weaponImage.sprite = CurrentGameInfo.Instance.CharacterData.CharacterStartWeapon.MainSprite;
             }

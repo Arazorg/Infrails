@@ -6,77 +6,42 @@ public class BiomeData : ScriptableObject
 {
     [SerializeField] private string _biomeName;
     [SerializeField] private Color _biomeColor;
+    [SerializeField] private List<GameObject> _railsPrefabs;
+
+    [Header("Sprites")]
     [SerializeField] private Sprite _biomeUISprite;
     [SerializeField] private Sprite _floorSprite;
     [SerializeField] private Sprite _endWallSprite;
     [SerializeField] private Sprite _plateSprite;
     [SerializeField] private Sprite _endWallFloorSprite;
-    [SerializeField] private List<GameObject> _railsPrefabs;
+
+    [Header("Enemies Data")]
     [SerializeField] private List<EnemyData> _flyingEnemiesData;
     [SerializeField] private List<EnemyData> _staticEnemiesData;
     [SerializeField] private EnemyData _eggData;
     [SerializeField] private EnemyData _maneCrystalData;
-    [SerializeField] private float _globalLightsIntensity;
 
-    public string BiomeName
-    {
-        get { return _biomeName; }
-    }
+    public string BiomeName => _biomeName;
 
     public Sprite BiomeUISprite => _biomeUISprite;
-    
-    public Sprite FloorSprite
-    {
-        get { return _floorSprite; }
-    }
-    
-    public Sprite EndWallSprite
-    {
-        get { return _endWallSprite; }
-    }
-   
-    public Sprite PlateSprite
-    {
-        get { return _plateSprite; }
-    }
-    
-    public Sprite EndWallFloorSprite
-    {
-        get { return _endWallFloorSprite; }
-    }
 
-    public Color BiomeColor
-    {
-        get { return _biomeColor; }
-    }
+    public Sprite FloorSprite => _floorSprite;
 
-    public List<GameObject> RailsPrefabs
-    {
-        get { return _railsPrefabs; }
-    }
-  
-    public List<EnemyData> FlyingEnemiesData
-    {
-        get { return _flyingEnemiesData; }
-    }
+    public Sprite EndWallSprite => _endWallSprite;
 
-    public List<EnemyData> StaticEnemiesData
-    {
-        get { return _staticEnemiesData; }
-    }
+    public Sprite PlateSprite => _plateSprite;
 
-    public EnemyData EggData
-    {
-        get { return _eggData; }
-    }
+    public Sprite EndWallFloorSprite => _endWallFloorSprite;
 
-    public EnemyData ManeCrystalData
-    {
-        get { return _maneCrystalData; }
-    }
+    public Color BiomeColor => _biomeColor;
 
-    public float GlobalLightsIntensity
-    {
-        get { return _globalLightsIntensity; }
-    }
+    public List<GameObject> RailsPrefabs => _railsPrefabs;
+
+    public List<EnemyData> FlyingEnemiesData => _flyingEnemiesData;
+
+    public List<EnemyData> StaticEnemiesData => _staticEnemiesData;
+
+    public EnemyData EggData => _eggData;
+
+    public EnemyData ManeCrystalData => _maneCrystalData;
 }

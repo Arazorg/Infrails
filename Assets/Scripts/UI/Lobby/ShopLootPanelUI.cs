@@ -6,10 +6,13 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
 {
     private const string AnimatorOpenKey = "isOpen";
 
+    [Header("UI Scripts")]
     [SerializeField] private DonationUI _donationUI;
     [SerializeField] private WeaponInfoPanelUI _weaponInfoPanelUI;
     [SerializeField] private AmplificationInfoPanelUI _amplificationInfoPanelUI;
     [SerializeField] private LootInfoPanelUI _lootInfoPanelUI;
+
+    [Header("Animations UI Scripts")]
     [SerializeField] private AnimationsUI _lootbox;
     [SerializeField] private AnimationsUI _lootPanel;
     [SerializeField] private AnimationsUI _weaponCharacteristicsPanel;
@@ -18,13 +21,17 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
     [SerializeField] private AnimationsUI _topGoToShopUIButton;
     [SerializeField] private AnimationsUI _leftGoToShopUIButton;
     [SerializeField] private AnimationsUI _descriptionText;
+
+    [Header("Data")]
     [SerializeField] private List<MoneyReward> _adMoneyRewards;
+    [SerializeField] private ItemData _trolleyForSupportData;
+
+    [Header("Audio Clips")]
     [SerializeField] private AudioClip _chestRotationClip;
     [SerializeField] private AudioClip _chestOpenClip;
     [SerializeField] private AudioClip _moneyClip;
     [SerializeField] private AudioClip _clickClip;
 
-    private AdsRewards _adsRewards;
     private LootboxData _lootboxData;
     private Animator _lootboxAnimator;
     private bool _isActive;
@@ -148,11 +155,6 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
         UIManager.Instance.UIStackPop();
     }
 
-    private void Start()
-    {
-        _adsRewards = new AdsRewards();
-    }
-
     private void Close()
     {
         _isPopAvailable = true;
@@ -188,6 +190,8 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
                 return amplificationData;
             case LootboxData.Type.Money:
                 return GetMoneyReward();
+            case LootboxData.Type.Support:
+                return _trolleyForSupportData;
         }
 
         return null;
@@ -196,9 +200,9 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
     private ItemData GetMoneyReward()
     {
         int number = DailyRewardsManager.Instance.NumberOfMoneyRewards;
-        PlayerProgress.Instance.PlayerMoney += _adMoneyRewards[number-1].Money;
+        PlayerProgress.Instance.PlayerMoney += _adMoneyRewards[number - 1].Money;
         DailyRewardsManager.Instance.NumberOfMoneyRewards -= 1;
-        return _adMoneyRewards[number-1];
+        return _adMoneyRewards[number - 1];
     }
 
     private void SetLootUI(ItemData lootData)
@@ -208,17 +212,11 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
         Show();
 
         if (lootData is WeaponData)
-        {
             ShowWeaponLootInfo(lootData);
-        }
         else if (lootData is AmplificationData)
-        {
             ShowAmplificationsLootInfo(lootData);
-        }
         else
-        {
             _descriptionText.Show();
-        }
     }
 
     private void ShowWeaponLootInfo(ItemData lootData)

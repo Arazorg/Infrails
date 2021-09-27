@@ -14,32 +14,22 @@ public class GlobalVolumeManager : MonoBehaviour
         float _enableDFFocusDistance = 0.5f;
 
         if (!_volume)
-        {
             _volume = GetComponent<Volume>();
-        }
             
         if (_volume.profile.TryGet(out DepthOfField dofComponent))
         {
             if (isState)
-            {
                 dofComponent.focusDistance.value =_enableDFFocusDistance ;
-            }
             else
-            {
                 dofComponent.focusDistance.value = _disableDFFocusDistance;
-            }
         }
     }
 
     private void Awake()
     {
         if (Instance != null)
-        {
             Destroy(gameObject);
-        }
         else
-        {
             Instance = this;
-        }
     }
 }

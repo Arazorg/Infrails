@@ -60,13 +60,9 @@ public class PauseUI : BaseUI, IUIPanel
     {
         _isSettingsPanelOpen = !_isSettingsPanelOpen;
         if (_isSettingsPanelOpen)
-        {
             _settingsUI.Show();
-        }
         else
-        {
             _settingsUI.Hide();
-        }
     }
 
     public void ShowExitUI()

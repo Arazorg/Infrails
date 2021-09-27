@@ -1,15 +1,19 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
 
 public class CharacterControlUI : BaseUI, IUIPanel
 {
+    [Header("UI Scripts")]
     [SerializeField] private Joystick _joystick;
     [SerializeField] private PauseUI _pauseUI;
     [SerializeField] private RebornUI _rebornUI;
+
+    [Header("Bars")]
     [SerializeField] private BarUI _healthBar;
     [SerializeField] private BarUI _armorBar;
+
+    [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _moneyText;
 
     private bool _isActive;
@@ -60,11 +64,6 @@ public class CharacterControlUI : BaseUI, IUIPanel
         StopAllCoroutines();
         StartCoroutine(EnableBackButton());
         Show();
-    }
-
-    public void GetDamage()
-    {
-        _character.Damage(3);
     }
 
     public void OpenPauseUI()

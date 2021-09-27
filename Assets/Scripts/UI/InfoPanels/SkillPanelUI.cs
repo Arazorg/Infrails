@@ -8,12 +8,17 @@ public class SkillPanelUI : MonoBehaviour
     private const string NoSkillLocalizationKey = "GetAmplificationsInShop";
 
     [SerializeField] private ShopMainPanelUI _shopMainPanelUI;
-    [SerializeField] private Image _skillPanel;
+
+    [Header("Localized Texts")]
     [SerializeField] private LocalizedText _skillNameText;
     [SerializeField] private LocalizedText _skillDescriptionText;
+
+    [Header("Skill Panel")]
+    [SerializeField] private Image _skillPanel;
     [SerializeField] private List<Image> _skillImages;
     [SerializeField] private List<Image> _skillLockImages;
     [SerializeField] private List<Sprite> _skillPanelSprites;
+
     [SerializeField] private AnimationsUI _goToShopButton;
 
     private CharacterData _currentCharacterData;
@@ -48,9 +53,7 @@ public class SkillPanelUI : MonoBehaviour
         _skillDescriptionText.SetLocalization(NoSkillLocalizationKey);
         _skillNameText.SetEmptyText();
         for (int i = 0; i < _currentCharacterData.CharacterSkills.Count; i++)
-        {
             _skillImages[i].sprite = _currentCharacterData.CharacterSkills[i].ItemSpriteUI;
-        }
 
         CheckSkillsAvailability();
     }
@@ -75,16 +78,13 @@ public class SkillPanelUI : MonoBehaviour
                 _skillImages[numberOfSkill].raycastTarget = false;
                 _skillLockImages[numberOfSkill].enabled = true;
             }
+
             numberOfSkill++;
         }
 
-        if(countOfAvailableSkills == 2)
-        {
+        if (countOfAvailableSkills == 2)
             ChooseSkillPanel(0);
-        }
-        else if(countOfAvailableSkills == 0)
-        {
+        else if (countOfAvailableSkills == 0)
             _goToShopButton.Show();
-        }
     }
 }

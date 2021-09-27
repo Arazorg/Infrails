@@ -3,22 +3,26 @@ using System.Collections.Generic;
 [System.Serializable]
 public class PlayerProgressData
 {
+    private const string TrolleyForSupportName = "TrolleyForSupport";
+
     public int PlayerMoney;
     public bool IsLobbyTutorialCompleted;
     public bool IsGameTutorialCompleted;
-    public List<CharacterAvailability> CharactersAvailabilities;
+    public ItemAvailability TrolleyForSupportAvailability;
+    public List<ItemAvailability> SkillsAvailabilities;
     public List<ItemAvailability> WeaponsAvailabilities;
     public List<AmplificationLevel> AmplificationsLevels;
-    public List<ItemAvailability> SkillsAvailabilities;
+    public List<CharacterAvailability> CharactersAvailabilities;
 
     public PlayerProgressData()
     {
-        PlayerMoney = 3250;
+        PlayerMoney = 1250;
         IsLobbyTutorialCompleted = false;
         IsGameTutorialCompleted = false;
-        CharactersAvailabilities = new List<CharacterAvailability>();
+        TrolleyForSupportAvailability = new ItemAvailability(TrolleyForSupportName, false);
+        SkillsAvailabilities = new List<ItemAvailability>();
         WeaponsAvailabilities = new List<ItemAvailability>();
         AmplificationsLevels = new List<AmplificationLevel>();
-        SkillsAvailabilities = new List<ItemAvailability>();
+        CharactersAvailabilities = new List<CharacterAvailability>();
     }
 }

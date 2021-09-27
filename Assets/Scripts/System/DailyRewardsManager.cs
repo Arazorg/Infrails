@@ -10,9 +10,10 @@ public class DailyRewardsManager : MonoBehaviour
     private const int MaxNumberOfMoneyRewards = 5;
     private const int MaxNumberOfAmplificationsRewards = 10;
 
-    public delegate void DailyRewardAvailable();
-
-    public event DailyRewardAvailable OnDailyRewardAvailable;
+    private DailyRewardsData _dailyRewardsData;
+    private SaveSystem _saveSystem;
+    private TimeSpan timeToAdsRewards;
+    private TimeSpan timeToDailyReward;
 
     public int NumberOfMoneyRewards
     {
@@ -30,6 +31,7 @@ public class DailyRewardsManager : MonoBehaviour
             }
         }
     }
+
     public int NumberOfAmplificationRewards
     {
         get
@@ -61,10 +63,9 @@ public class DailyRewardsManager : MonoBehaviour
         }
     }
 
-    private DailyRewardsData _dailyRewardsData;
-    private SaveSystem _saveSystem;
-    private TimeSpan timeToAdsRewards;
-    private TimeSpan timeToDailyReward;
+    public event DailyRewardAvailable OnDailyRewardAvailable;
+
+    public delegate void DailyRewardAvailable();
 
     public DateTime GetDailyRewardSavedTime()
     {
@@ -147,6 +148,7 @@ public class DailyRewardsManager : MonoBehaviour
             _dailyRewardsData.NumberOfMoneyRewards = dailyRewardsData.NumberOfMoneyRewards;
             _dailyRewardsData.NumberOfAmplificationRewards = dailyRewardsData.NumberOfAmplificationRewards;
         }
+
         Save();
         CheckAdsRewardsAvailability();
     }
@@ -165,7 +167,7 @@ public class DailyRewardsManager : MonoBehaviour
         }
         else if (GetAdsRewardsSavedTime().Ticks > timeToAdsRewards.Ticks)
         {
-            if(DateTime.Now < GetAdsRewardsSavedTime() - timeToAdsRewards)
+            if (DateTime.Now < GetAdsRewardsSavedTime() - timeToAdsRewards)
                 IsTimeChanged = true;
         }
     }
@@ -188,6 +190,4 @@ public class DailyRewardsManager : MonoBehaviour
             }
         }
     }
-
-
 }

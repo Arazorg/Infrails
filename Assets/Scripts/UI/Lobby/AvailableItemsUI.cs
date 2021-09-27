@@ -101,15 +101,14 @@ public class AvailableItemsUI : BaseUI, IUIPanel
             infoPanel.SetPanelInfo(data);
             _infoPanels.Add(infoPanel);
         }
+
         _content.anchoredPosition = new Vector2(_content.anchoredPosition.x, -_content.sizeDelta.y);
     }
 
     private void DestroyPreviousPanels()
     {
         foreach (var infoPanel in _infoPanels)
-        {
             infoPanel.DestroyPanel();
-        }
 
         _infoPanels.Clear();
     }

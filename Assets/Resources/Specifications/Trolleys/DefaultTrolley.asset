@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ebabd08c44a36844b594976e3a72b79, type: 3}
+  m_Name: DefaultTrolley
+  m_EditorClassIdentifier: 
+  _itemName: Trolley
+  _itemColor: {r: 1, g: 0.7241974, b: 0, a: 1}
+  _itemSpriteUI: {fileID: -7084692875550051492, guid: 903e137c900815642ae3d4e9b97dfead, type: 3}
+  _isStartingItem: 0
+  _animatorController: {fileID: 9100000, guid: f884a90aed0f58e499d9b8fa93792c31, type: 2}
+  _colliderSize: {x: 4, y: 4}
+  _colliderOffset: {x: 0, y: 0}
+  _speed: 25

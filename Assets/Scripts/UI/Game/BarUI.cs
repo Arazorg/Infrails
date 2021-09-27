@@ -8,8 +8,8 @@ public class BarUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _textValue;
     [SerializeField] private Type _type;
 
-    private int minValue, maxValue;
-    private float currentPercent;
+    private int _minValue, _maxValue;
+    private float _currentPercent;
 
     public enum Type
     {
@@ -19,8 +19,8 @@ public class BarUI : MonoBehaviour
 
     public void Init(Character character, int maxValue, int minValue)
     {
-        this.minValue = minValue;
-        this.maxValue = maxValue;
+        _minValue = minValue;
+        _maxValue = maxValue;
         switch (_type)
         {
             case Type.Health:
@@ -36,8 +36,8 @@ public class BarUI : MonoBehaviour
 
     public void SetValue(int value)
     {
-        currentPercent = value / (float)(maxValue - minValue);
-        _textValue.text = string.Format("{0} / {1}", value, maxValue - minValue);
-        _barImage.fillAmount = currentPercent;
+        _currentPercent = value / (float)(_maxValue - _minValue);
+        _textValue.text = string.Format("{0} / {1}", value, _maxValue - _minValue);
+        _barImage.fillAmount = _currentPercent;
     }
 }

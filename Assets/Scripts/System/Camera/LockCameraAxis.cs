@@ -1,12 +1,9 @@
 using UnityEngine;
 using Cinemachine;
 
-/// <summary>
-/// An add-on module for Cinemachine Virtual Camera that locks the camera's Z co-ordinate
-/// </summary>
 [ExecuteInEditMode]
 [SaveDuringPlay]
-[AddComponentMenu("")] // Hide in menu
+[AddComponentMenu("")]
 
 public class LockCameraAxis : CinemachineExtension
 {

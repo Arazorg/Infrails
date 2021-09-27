@@ -6,6 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public static EnemySpawner Instance;
 
+    [Header("Enemies Prefabs")]
     [SerializeField] private GameObject _flyingEnemyPrefab;
     [SerializeField] private GameObject _staticEnemyPrefab;
     [SerializeField] private GameObject _destroyableObjectPrefab;

@@ -54,13 +54,9 @@ public class SettingsUI : MonoBehaviour
     private void SetParentUISettingsState()
     {
         if(GetComponentInParent<PauseUI>() != null)
-        {
             GetComponentInParent<PauseUI>().IsSettingsPanelOpen = false;
-        }
         else if(GetComponentInParent<LobbyUI>() != null)
-        {
             GetComponentInParent<LobbyUI>().IsSettingsPanelOpen = false;
-        }
     }
 
 }

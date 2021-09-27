@@ -24,18 +24,19 @@ public class Biome : MonoBehaviour
         return nextLevelSpawnPosition;
     }
 
+    public void SetNextBiomeData(BiomeData nextBiomeData)
+    {
+        _endWall.GetComponent<EndWall>().SetEndWallEnvironment(nextBiomeData, _biomeData.EndWallFloorSprite);
+    }
+
     public void SetBiomeLightsState(bool isState)
     {
         foreach (var floor in GetComponentsInChildren<Floor>())
         {
             if (isState)
-            {
-                floor.SetNeedLightsIntensity(_biomeData.GlobalLightsIntensity);
-            }
+                floor.SetNeedLightsIntensity(1f);
             else
-            {
                 floor.SetNeedLightsIntensity(0f);
-            }
         }
 
         float endWallLightIntensity = 0.75f;
@@ -43,32 +44,21 @@ public class Biome : MonoBehaviour
         if (endWallScript != null)
         {
             if (isState)
-            {
                 endWallScript.SetNeedLightsIntensity(endWallLightIntensity);
-            }
             else
-            {
                 endWallScript.SetNeedLightsIntensity(0f);
-            }
         }            
     }
 
     public void SpawnDestroyableObjects()
     {
         foreach (var railsPattern in _currentRailsPatterns)
-        {
             EnemySpawner.Instance.SpawnDestroyableObjects(railsPattern.DestroyableObjectsSpawnPoints);
-        }
     }
 
     public void DestroyLevel()
     {
         Destroy(gameObject, 5f);
-    }
-
-    public void SetNextBiomeData(BiomeData nextBiomeData)
-    {
-        _endWall.GetComponent<EndWall>().SetEndWallEnvironment(nextBiomeData, _biomeData.EndWallFloorSprite);
     }
 
     private Vector3 CreateEnvironment(int lengthOfLevel)
@@ -95,19 +85,15 @@ public class Biome : MonoBehaviour
             }
 
             if (i == 0)
-            {
                 LevelSpawner.Instance.CurrentBiomeStartRail = railsPattern.GetComponent<RailsPattern>().FirstRail;
-            }
                 
             _lastRail = railsPattern.GetComponent<RailsPattern>().LastRail;
 
             if (i == 0 && LevelSpawner.Instance.CurrentBiomeFinishRail != null)
-            {
                 LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail = railsPattern.GetComponent<RailsPattern>().FirstRail;
-            }
         }
 
-        var nextLevelSpawnPosition = CreateEndWall(nextFloorSpawnPosition);
+        Vector3 nextLevelSpawnPosition = CreateEndWall(nextFloorSpawnPosition);
         return nextLevelSpawnPosition;
     }
 
@@ -116,9 +102,8 @@ public class Biome : MonoBehaviour
         int countOfRailsPatterns = _biomeData.RailsPrefabs.Count;
         int currentRailsPatternNumber = Random.Range(0, countOfRailsPatterns);
         while (currentRailsPatternNumber == lastRailsPatternNumber)
-        {
             currentRailsPatternNumber = Random.Range(0, countOfRailsPatterns);
-        }
+
         return currentRailsPatternNumber;
     }
 
@@ -134,6 +119,7 @@ public class Biome : MonoBehaviour
         var endWallFinishRail = _endWall.GetComponent<EndWall>().FinishRail;
         _lastRail.NextRail = endWallFinishRail;
         LevelSpawner.Instance.CurrentBiomeFinishRail = endWallFinishRail.GetComponent<Rail>();
+
         return _endWall.GetComponent<EndWall>().NextLevelSpawnPoint.position;
     }
 }

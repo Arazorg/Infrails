@@ -11,20 +11,13 @@ public class SelectableCharacter : MonoBehaviour, IPointerDownHandler
     [SerializeField] private AudioClip _teleportationEffectClip;
 
     private Transform _startParent;
-    private Transform _weapon;
     private Vector3 _startPosition;
     private Vector3 _startScale;
     private bool _isClickable;
 
-    public CharacterData Data
-    {
-        get { return _data; }
-    }
+    public CharacterData Data => _data;
 
-    public bool IsClickable
-    {
-        set { _isClickable = value; }
-    }
+    public bool IsClickable { get => _isClickable; set => _isClickable = value; }
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -45,9 +38,7 @@ public class SelectableCharacter : MonoBehaviour, IPointerDownHandler
         }
 
         if(isState && !startSpriteRendererState)
-        {
             SpawnTeleportationEffect();
-        }
     }
 
     public void Teleport(bool toTrolley, Transform teleportPoint = null)

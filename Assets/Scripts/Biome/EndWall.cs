@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class EndWall : MonoBehaviour, IUpdateable
+public class EndWall : MonoBehaviour
 {
+    [Header("Sprite Renderers")]
     [SerializeField] private SpriteRenderer _endWallFloor;
     [SerializeField] private SpriteRenderer _plateSpriteRenderer;
+
     [SerializeField] private Transform _nextLevelSpawnPoint;
     [SerializeField] private Rail _finishRail;
 
@@ -14,6 +16,7 @@ public class EndWall : MonoBehaviour, IUpdateable
     private float _timeElapsedLightIntensity = float.PositiveInfinity;
 
     public Transform NextLevelSpawnPoint => _nextLevelSpawnPoint;
+
     public Rail FinishRail => _finishRail;
 
     public void SetEndWallEnvironment(BiomeData nextLevelData, Sprite endWallFloorSprite)
@@ -22,7 +25,6 @@ public class EndWall : MonoBehaviour, IUpdateable
         _nextLevelLight.color = nextLevelData.BiomeColor;
         _plateSpriteRenderer.sprite = nextLevelData.PlateSprite;
         _endWallFloor.sprite = endWallFloorSprite;
-        UpdateManager.Instance.Register(this);
     }
 
     public void SetNeedLightsIntensity(float neededGlobalLigthIntensity)
@@ -30,17 +32,15 @@ public class EndWall : MonoBehaviour, IUpdateable
         _timeElapsedLightIntensity = 0;
         _neededLigthIntensity = neededGlobalLigthIntensity;
 
+        float disableDuration = 2f;
+        float enableDuration = 1f;
         if (neededGlobalLigthIntensity == 0)
-        {
-            _lightOnOffDuration = 2f;
-        }
-        else
-        {
-            _lightOnOffDuration = 1f;
-        }
+            _lightOnOffDuration = disableDuration;
+        else        
+            _lightOnOffDuration = enableDuration;
     }
 
-    public void Tick()
+    private void Update()
     {
         SetLightsIntensity();
     }

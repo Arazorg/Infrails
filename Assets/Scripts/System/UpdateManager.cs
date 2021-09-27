@@ -20,21 +20,15 @@ public class UpdateManager : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-        {
             Destroy(gameObject);
-        }
         else
-        {
             Instance = this;
-        }
     }
 
     private void Update()
     {
         var e = _table.GetEnumerator();
         while (e.MoveNext() && e.Current != null)
-        {
             e.Current.Tick();
-        }
     }
 }

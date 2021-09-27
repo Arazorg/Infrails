@@ -33,7 +33,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
-    - {fileID: 2800000, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+    - {fileID: 2800000, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -79,16 +79,16 @@ SpriteAtlas:
   - {fileID: 4558947421684768058, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
   - {fileID: -587713883972275769, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
   - {fileID: 4457408957945659211, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
-  - {fileID: -2483935270275612479, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: 4041874341907179470, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: 1949139725468690636, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: 1860355244130747959, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: -8490934450971404267, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: 7452868913881585600, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: -4634219596112211595, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: 219243461710610546, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: -4226784190740011466, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
-  - {fileID: 7546620679664142960, guid: f684c68e14c6a6444838d76fb9ced84b, type: 3}
+  - {fileID: -5450701543261256429, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: 7688864592788846062, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: 3115997897859195460, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: 8148990139987418108, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: 667902686546696274, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: -4091246379783136483, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: -459841454506105729, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: -7564292130366407193, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: 2248732669605659134, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
+  - {fileID: 456603117155389666, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
   m_PackedSpriteNamesToIndex:
   - DailyPresentWithRewardSprite_5
   - DailyPresentWithRewardSprite_6
@@ -130,16 +130,16 @@ SpriteAtlas:
   - DailyPresentWithRewardSprite_8
   - DailyPresentWithRewardSprite_9
   - DailyPresentWithRewardSprite_4
-  - TV_Sprite_2
-  - TV_Sprite_3
-  - TV_Sprite_0
-  - TV_Sprite_1
-  - TV_Sprite_6
-  - TV_Sprite_7
-  - TV_Sprite_4
-  - TV_Sprite_5
-  - TV_Sprite_8
-  - TV_Sprite_9
+  - TVSprite_9
+  - TVSprite_8
+  - TVSprite_3
+  - TVSprite_2
+  - TVSprite_1
+  - TVSprite_0
+  - TVSprite_7
+  - TVSprite_6
+  - TVSprite_5
+  - TVSprite_4
   m_RenderDataMap: {}
   m_Tag: LobbyDecorations2Atlas
   m_IsVariant: 0

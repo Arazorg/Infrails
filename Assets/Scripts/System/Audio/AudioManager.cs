@@ -43,6 +43,7 @@ public class AudioManager : MonoBehaviour
             if (currentAudio != null)
             {
                 currentAudio.audioSource.pitch = currentAudio.pitch;
+                currentAudio.audioSource.volume = currentAudio.volume;
                 currentAudio.audioSource.PlayOneShot(currentAudio.Clip);
             }
             else
@@ -55,9 +56,7 @@ public class AudioManager : MonoBehaviour
     public void StopAllEffects()
     {
         foreach (AudioSource audioSorce in _currentAudioSorces)
-        {
             audioSorce.Stop();
-        }
     }
 
     public void NextBackgroundMusic()
@@ -76,13 +75,9 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-        {
             Destroy(gameObject);
-        }
         else
-        {
             Instance = this;
-        }
 
         InitializeSources();
     }
@@ -114,7 +109,7 @@ public class AudioManager : MonoBehaviour
 
     private Audio GetBackgroundMusic()
     {
-        if(_musicList.Count != 1)
+        if (_musicList.Count != 1)
         {
             int number = Random.Range(0, _musicList.Count);
             while (_backgroundMusicNumber == number)

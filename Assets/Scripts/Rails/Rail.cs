@@ -11,7 +11,6 @@ public class Rail : MonoBehaviour
     [SerializeField] private Rail _nextRail;
     [SerializeField] private Sprite _horizontalRailSprite;
     [SerializeField] private bool _isLobby;
-    [SerializeField] private bool _isStart;
     [SerializeField] private bool _isFinish;
 
     private Biome _currentBiome;
@@ -20,11 +19,7 @@ public class Rail : MonoBehaviour
 
     public event ReachedEndOfLevel OnReachedEndOfLevel;
 
-    public Rail NextRail
-    {
-        get { return _nextRail; }
-        set { _nextRail = value; }
-    }
+    public Rail NextRail { get => _nextRail; set => _nextRail = value; }
 
     public Transform RailTransform => transform;
 
@@ -70,9 +65,7 @@ public class Rail : MonoBehaviour
         if (collision.CompareTag(TrolleyTag))
         {
             if (_isFinish)
-            {
                 EnterFinishRail();
-            }
         }
     }
 

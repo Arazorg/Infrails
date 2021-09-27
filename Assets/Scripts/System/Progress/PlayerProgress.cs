@@ -8,7 +8,7 @@ public class PlayerProgress : MonoBehaviour
 
     private const string PlayerProgressFile = "PlayerProgress.txt";
 
-    private PlayerProgressData _playerProgressData;
+    public PlayerProgressData _playerProgressData;
     private SaveSystem _saveSystem;
     private List<AmplificationData> _amplificationsData = new List<AmplificationData>();
     private List<WeaponData> _weaponsData = new List<WeaponData>();
@@ -16,13 +16,17 @@ public class PlayerProgress : MonoBehaviour
 
     public delegate void MoneyUpdate();
 
+    public delegate void SupportDonateComplete();
+
     public event MoneyUpdate OnMoneyUpdate;
+
+    public event SupportDonateComplete OnSupportDonateComplete;
 
     public int PlayerMoney
     {
         get { return _playerProgressData.PlayerMoney; }
-        set 
-        { 
+        set
+        {
             _playerProgressData.PlayerMoney = value;
             OnMoneyUpdate?.Invoke();
             Save();
@@ -59,6 +63,18 @@ public class PlayerProgress : MonoBehaviour
     public void SetGameTutorialComplete()
     {
         _playerProgressData.IsGameTutorialCompleted = true;
+        Save();
+    }
+
+    public bool GetTrolleyForSupportAvailability()
+    {
+        return _playerProgressData.TrolleyForSupportAvailability.IsAvailable;
+    }
+
+    public void SetSupportTrolleyAvailable()
+    {
+        OnSupportDonateComplete?.Invoke();
+        _playerProgressData.TrolleyForSupportAvailability.IsAvailable = true;
         Save();
     }
 
@@ -169,9 +185,9 @@ public class PlayerProgress : MonoBehaviour
                 return GetWeaponsData(GameConstants.Unavailable).Cast<ItemData>().ToList();
             case LootboxData.Type.Skill:
                 return GetUnavailableSkillsData().Cast<ItemData>().ToList();
-        }
-
-        return null;
+            default:
+                return null;
+        }   
     }
 
     public bool CheckLootsAvailability(LootboxData lootboxData)
@@ -265,12 +281,13 @@ public class PlayerProgress : MonoBehaviour
 
     private void WriteCurrentProgress(string currentPlayerProgress)
     {
-        var playerProgressData = JsonUtility.FromJson<PlayerProgressData>(currentPlayerProgress);
-        _playerProgressData.PlayerMoney = playerProgressData.PlayerMoney;
-        _playerProgressData.IsLobbyTutorialCompleted = playerProgressData.IsLobbyTutorialCompleted;
-        _playerProgressData.IsGameTutorialCompleted = playerProgressData.IsGameTutorialCompleted;
+        var tempData = JsonUtility.FromJson<PlayerProgressData>(currentPlayerProgress);
+        _playerProgressData.PlayerMoney = tempData.PlayerMoney;
+        _playerProgressData.IsLobbyTutorialCompleted = tempData.IsLobbyTutorialCompleted;
+        _playerProgressData.IsGameTutorialCompleted = tempData.IsGameTutorialCompleted;
+        _playerProgressData.TrolleyForSupportAvailability.IsAvailable = tempData.TrolleyForSupportAvailability.IsAvailable;
 
-        foreach (var character in playerProgressData.CharactersAvailabilities)
+        foreach (var character in tempData.CharactersAvailabilities)
         {
             if (GetCharacterByName(character.Name) != null && character.IsAvailable)
             {
@@ -286,7 +303,7 @@ public class PlayerProgress : MonoBehaviour
             }
         }
 
-        foreach (var amplification in playerProgressData.AmplificationsLevels)
+        foreach (var amplification in tempData.AmplificationsLevels)
         {
             if (GetAmplificationLevelByName(amplification.Name) != null && amplification.Level != 0)
             {
@@ -294,7 +311,7 @@ public class PlayerProgress : MonoBehaviour
             }
         }
 
-        foreach (var weapon in playerProgressData.WeaponsAvailabilities)
+        foreach (var weapon in tempData.WeaponsAvailabilities)
         {
             if (GetWeaponByName(weapon.Name) != null && weapon.IsAvailable)
             {
@@ -302,7 +319,7 @@ public class PlayerProgress : MonoBehaviour
             }
         }
 
-        foreach (var skill in playerProgressData.SkillsAvailabilities)
+        foreach (var skill in tempData.SkillsAvailabilities)
         {
             if (GetWeaponByName(skill.Name) != null && skill.IsAvailable)
             {

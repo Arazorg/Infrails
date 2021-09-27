@@ -10,7 +10,8 @@ public class LootboxData : ScriptableObject
         Skill,
         Buff,
         Money,
-        ResetTime
+        ResetTime,
+        Support
     }
 
     [SerializeField] private Type _typeOfLootbox;

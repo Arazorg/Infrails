@@ -1,5 +1,4 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class SwitchableButton : MonoBehaviour
@@ -15,18 +14,12 @@ public class SwitchableButton : MonoBehaviour
     public void SetButtonState(bool isState)
     {
         if (isState)
-        {
             image.sprite = _onSprite;
-        }                   
         else
-        {
             image.sprite = _offSprite;
-        }
-            
+
         if (_isSetText)
-        {
             SetText(isState);
-        }
     }
 
     private void Start()
@@ -41,13 +34,9 @@ public class SwitchableButton : MonoBehaviour
         if (localizedText != null)
         {
             if (isState)
-            {
                 localizedText.SetLocalization(_onLocalizationKey);
-            }
             else
-            {
                 localizedText.SetLocalization(_offLocalizationKey);
-            }
-        }       
+        }
     }
 }

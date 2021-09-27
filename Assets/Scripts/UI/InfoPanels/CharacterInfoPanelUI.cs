@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CharacterInfoPanelUI : MonoBehaviour
 {
+    [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _characterNameText;
     [SerializeField] private TextMeshProUGUI _characterDescriptionText;
     [SerializeField] private TextMeshProUGUI _characterHealthText;

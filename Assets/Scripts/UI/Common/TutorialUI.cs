@@ -8,9 +8,6 @@ using UnityEngine.UI;
 
 public class TutorialUI : BaseUI, IUIPanel
 {
-    public delegate void TutorialFinish();
-    public event TutorialFinish OnTutorialFinish;
-
     private const string LobbySceneName = "Lobby";
     private const string GameSceneName = "Game";
 
@@ -25,12 +22,15 @@ public class TutorialUI : BaseUI, IUIPanel
     private bool _isPopAvailable;
     private bool _isPhraseSpeedUp;
 
+    public delegate void TutorialFinish();
+
+    public event TutorialFinish OnTutorialFinish;
+
     public bool IsActive { get => _isActive; set => _isActive = value; }
 
     public bool IsBackButtonEnabled { get => _isBackButtonEnabled; set => _isBackButtonEnabled = value; }
 
     public bool IsPopAvailable { get => _isPopAvailable; set => _isPopAvailable = value; }
-
     public void OnPush()
     {
         Open();
@@ -112,7 +112,7 @@ public class TutorialUI : BaseUI, IUIPanel
         switch (SceneManager.GetActiveScene().name)
         {
             case LobbySceneName:
-                StartCoroutine(TutorialTextPrinting(lobbyStartIndex, lobbyFinishIndex));              
+                StartCoroutine(TutorialTextPrinting(lobbyStartIndex, lobbyFinishIndex));
                 break;
             case GameSceneName:
                 StartCoroutine(TutorialTextPrinting(gameStartIndex, gameFinishIndex));
@@ -138,17 +138,13 @@ public class TutorialUI : BaseUI, IUIPanel
             yield return StartCoroutine(_tutorialText.TypingText(printableText, timeOfTyping));
             _guideAnimator.SetBool(animatorKey, false);
 
-            if(_allTutorialItems[i].PhraseSprite == null)
+            if (_allTutorialItems[i].PhraseSprite == null)
             {
-                if(_isPhraseSpeedUp)
-                {
-                    yield return new WaitForSeconds(delayBetweenPhrasesSpeedUp);                 
-                }
+                if (_isPhraseSpeedUp)
+                    yield return new WaitForSeconds(delayBetweenPhrasesSpeedUp);
                 else
-                {
                     yield return new WaitForSeconds(delayBetweenPhrases);
-                }  
-            }         
+            }
             else
             {
                 yield return StartCoroutine(ShowPhraseImage(i, _allTutorialItems[i].ShowTime));

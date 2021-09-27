@@ -52,13 +52,9 @@ public class CharacterControl : MonoBehaviour
         if (_isControl)
         {
             if (_joystick.Horizontal > 0 && !_isFacingRight)
-            {
                 Flip();
-            }
             else if (_joystick.Horizontal < 0 && _isFacingRight)
-            {
                 Flip();
-            }
         }
     }
 

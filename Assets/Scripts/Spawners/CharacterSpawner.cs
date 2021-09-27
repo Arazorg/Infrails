@@ -4,17 +4,33 @@ public class CharacterSpawner : MonoBehaviour
 {
     public static CharacterSpawner Instance;
 
-    [SerializeField] private CameraManager _cameraManager;
+    private const int LobbyTrolleySpeed = 55;
+
+    [Header ("Prefabs")]
     [SerializeField] private GameObject _characterPrefab;
     [SerializeField] private GameObject _trolleyPrefab;
-    [SerializeField] private TrolleyData _lobbyTrolleyData;
+
+    [Header("Trolleys data")]
+    [SerializeField] private TrolleyData _defaultTrolleyData;
+    [SerializeField] private TrolleyData _trolleyForSupportData;
+
+    [Header("Camera")]
+    [SerializeField] private CameraManager _cameraManager;
     [SerializeField] private Vector3 _gameCameraOffset;
     [SerializeField] private float _gameCameraSize;
 
-    public Transform SpawnTrolley(TrolleyData trolleyData, Transform spawnPoint)
+    public Transform SpawnTrolleyLobby(Transform spawnPoint)
+    {
+        Transform trolley = SpawnTrolley(spawnPoint);
+        trolley.GetComponent<TrolleyMovement>().Speed = LobbyTrolleySpeed;
+        CurrentGameInfo.Instance.TrolleyData = GetTrolleyData();
+        return trolley;
+    }
+
+    public Transform SpawnTrolley(Transform spawnPoint)
     {
         Transform trolley = Instantiate(_trolleyPrefab, spawnPoint.position, Quaternion.identity).transform;
-        trolley.GetComponent<Trolley>().Init(trolleyData);
+        trolley.GetComponent<Trolley>().Init(GetTrolleyData());
         return trolley;
     }
 
@@ -32,12 +48,16 @@ public class CharacterSpawner : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-        {
             Destroy(gameObject);
-        }
         else
-        {
             Instance = this;
-        }
+    }
+
+    private TrolleyData GetTrolleyData()
+    {
+        if (PlayerProgress.Instance.GetTrolleyForSupportAvailability())
+            return _trolleyForSupportData;
+        else
+            return _defaultTrolleyData;
     }
 }

@@ -23,7 +23,10 @@ public class LevelSpawner : MonoBehaviour
 
     public Rail CurrentBiomeFinishRail
     {
-        get { return _currentBiomeFinishRail; }
+        get 
+        { 
+            return _currentBiomeFinishRail; 
+        }
         set
         {
             _currentBiomeFinishRail = value;
@@ -47,7 +50,7 @@ public class LevelSpawner : MonoBehaviour
     {
         float countBiomesInLevel = 5;
 
-        if(_biomesCounter == countBiomesInLevel)
+        if (_biomesCounter == countBiomesInLevel)
         {
             _levelCounter++;
             _biomesCounter = 0;
@@ -56,9 +59,7 @@ public class LevelSpawner : MonoBehaviour
         else
         {
             if (_currentBiome != null)
-            {
                 _currentBiome.DestroyLevel();
-            }
 
             GetBiomeData();
             var level = Instantiate(_levelPrefab, _nextBiomeSpawnPosition, Quaternion.identity);
@@ -67,7 +68,7 @@ public class LevelSpawner : MonoBehaviour
             _biomesCounter++;
         }
 
-        if(_biomesCounter == countBiomesInLevel)
+        if (_biomesCounter == countBiomesInLevel)
         {
             GetBiomesOfCurrentLevel();
             GetBiomeData();
@@ -83,13 +84,9 @@ public class LevelSpawner : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-        {
             Destroy(gameObject);
-        }          
         else
-        {
             Instance = this;
-        }            
     }
 
     private void GetBiomesOfCurrentLevel()
@@ -101,28 +98,21 @@ public class LevelSpawner : MonoBehaviour
         {
             var biomeData = _biomesData[Random.Range(0, _biomesData.Count)];
             while (_currentLevelBiomes.Contains(biomeData))
-            {
                 biomeData = _biomesData[Random.Range(0, _biomesData.Count)];
-            }
+
             _currentLevelBiomes.Add(biomeData);
         }
     }
 
     private void GetBiomeData()
     {
-        if(_nextBiomeData != null)
-        {
+        if (_nextBiomeData != null)
             _currentBiomeData = _nextBiomeData;
-        }
         else
-        {
             _currentBiomeData = _currentLevelBiomes[Random.Range(0, _currentLevelBiomes.Count)];
-        }
 
         _nextBiomeData = _currentLevelBiomes[Random.Range(0, _currentLevelBiomes.Count)];
         while (_currentBiomeData == _nextBiomeData)
-        {
             _nextBiomeData = _currentLevelBiomes[Random.Range(0, _currentLevelBiomes.Count)];
-        }
     }
 }

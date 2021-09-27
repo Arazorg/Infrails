@@ -20,17 +20,15 @@ public class SaveSystem
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
-                {
                     json += line;
-                }
             }
+
             if (string.IsNullOrEmpty(json))
-            {
                 return string.Empty;
-            }
 
             return json;
         }
+
         return string.Empty;
     }
 }

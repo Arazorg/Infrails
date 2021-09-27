@@ -28,18 +28,14 @@ public class BaseUI : MonoBehaviour
         foreach (var elementOfUI in GetComponentsInChildren<AnimationsUI>())
         {
             if (elementOfUI.IsShowOnStart)
-            {
                 elementOfUI.Show();
-            }
         }
     }
 
     public void Hide()
     {
         foreach (var elementOfUI in GetComponentsInChildren<AnimationsUI>())
-        {
             elementOfUI.Hide();
-        }
 
         SetBackgroundState(false);
         SetUIState(false);
@@ -55,19 +51,13 @@ public class BaseUI : MonoBehaviour
     private void SetUIState(bool isState)
     {
         if (_canvasGroup == null)
-        {
             _canvasGroup = GetComponent<CanvasGroup>();
-        }
 
         _canvasGroup.blocksRaycasts = isState;
         if (isState)
-        {
             _canvasGroup.LeanAlpha(1, 0).setIgnoreTimeScale(true);
-        }
         else
-        {
             _canvasGroup.LeanAlpha(0, 0).setIgnoreTimeScale(true);
-        }
     }
 
     private void SetBackgroundState(bool isState)
@@ -95,12 +85,8 @@ public class BaseUI : MonoBehaviour
     private void SetFadeBackground(bool isState)
     {
         if (isState)
-        {
             Background.SetTransparencyImmediate(BackgroundAlpha);
-        }
         else
-        {
             Background.SetTransparencyImmediate(0);
-        }
     }
 }

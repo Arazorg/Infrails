@@ -3,10 +3,13 @@ using UnityEngine;
 
 public class LobbyUI : BaseUI, IUIPanel
 {
+    [Header("UI Scripts")]
     [SerializeField] private ExitUI _exitUI;
     [SerializeField] private ShopMainPanelUI _shopMainPanelUI;
     [SerializeField] private ThanksUI _thanksUI;
     [SerializeField] private SettingsUI _settingsUI;
+
+    [Header("Animations UI Scripts")]
     [SerializeField] private AnimationsUI _lobbyButtonsPanel;
     [SerializeField] private AnimationsUI _localizationPanel;
 
@@ -55,9 +58,7 @@ public class LobbyUI : BaseUI, IUIPanel
         _isPopAvailable = false;
 
         if (PlayerProgress.Instance.IsLobbyTutorialCompleted)
-        {
             OnShow();
-        }
     }
 
     public void Close()

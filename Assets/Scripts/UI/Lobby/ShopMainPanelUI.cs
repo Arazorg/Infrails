@@ -1,22 +1,26 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Advertisements;
-using UnityEngine.UI;
 
 public class ShopMainPanelUI : BaseUI, IUIPanel
 {
+    [Header("UI Scripts")]
     [SerializeField] private DonationUI _donationUI;
     [SerializeField] private ShopLootPanelUI _lootPanelUI;
     [SerializeField] private LootboxInfoPanelUI _lootboxInfoPanelUI;
+
+    [Header("Animations UI Scripts")]
     [SerializeField] private AnimationsUI _openLootboxButton;
     [SerializeField] private AnimationsUI _showAdButton;
     [SerializeField] private AnimationsUI _lootboxInfoText;
     [SerializeField] private AnimationsUI _prevButton;
     [SerializeField] private AnimationsUI _nextButton;
+
     [SerializeField] private TextMeshProUGUI _moneyText;
     [SerializeField] private List<LootboxData> _lootboxesData;
+
+    [Header("Audio Clips")]
     [SerializeField] private AudioClip _moneyClip;
     [SerializeField] private AudioClip _clickClip;
 
@@ -167,12 +171,12 @@ public class ShopMainPanelUI : BaseUI, IUIPanel
             if (PlayerProgress.Instance.CheckLootsAvailability(_lootboxesData[_lootboxCounter]))
             {
                 _openLootboxButton.Show();
-            }
+            }    
             else
             {
                 string allLootsReceivedKey = "AllLootsReceived";
                 SetLootboxInfoText(allLootsReceivedKey);
-            }
+            }              
         }
     }
 

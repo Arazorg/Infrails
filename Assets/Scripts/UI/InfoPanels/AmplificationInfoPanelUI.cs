@@ -5,8 +5,12 @@ using UnityEngine.UI;
 public class AmplificationInfoPanelUI : MonoBehaviour, IInfoPanel
 {
     [SerializeField] private Image _image;
+
+    [Header("Localized Texts")]
     [SerializeField] private LocalizedText _nameText;
     [SerializeField] private LocalizedText _powerTypeText;
+
+    [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _levelValueText;
     [SerializeField] private TextMeshProUGUI _powerValueText;
 

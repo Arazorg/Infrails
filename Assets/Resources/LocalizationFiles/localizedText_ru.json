@@ -1024,6 +1024,36 @@
 	{
       "key": "Money150Description",
       "value": "Немного, но деньги лишними не бывают"
+    },
+	
+	{
+      "key": "SupportUsReward",
+      "value": "Сделай пожертвование на корм для котика Тима\n\nИ получи уникальную награду!"
+    },
+	
+	{
+      "key": "SupportUsNotReward",
+      "value": "Ты уже получил свою награду\n\nНо ты можешь покормить Тима из любви к котикам!"
+    },
+	
+	{
+      "key": "CatHouse",
+      "value": "Кошкин дом"
+    },
+	
+	{
+      "key": "Support",
+      "value": "Поддержать"
+    },
+	
+	{
+      "key": "TrolleyForSupport",
+      "value": "Вагонетка донатера"
+    },
+	
+	{
+      "key": "TrolleyForSupportDescription",
+      "value": "Современный дизайн и повышенная скорость"
     }
   ]
 }

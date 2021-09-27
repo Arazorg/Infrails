@@ -35,9 +35,7 @@ public static class Loader
         yield return new WaitForSeconds(loadDelay);
         loadingAsyncOperation = SceneManager.LoadSceneAsync(scene.ToString());
         while (!loadingAsyncOperation.isDone)
-        {
             yield return null;
-        }
     }
 
     public static float GetLoadingProgress()

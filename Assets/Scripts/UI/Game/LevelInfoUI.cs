@@ -8,8 +8,10 @@ public class LevelInfoUI : MonoBehaviour
 {
     private const string LevelKey = "Level";
 
+    [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _levelText;
     [SerializeField] private TextMeshProUGUI _biomesText;
+
     [SerializeField] private List<Image> _levelsImages;
     [SerializeField] private float _showingTime;
 

@@ -38,7 +38,7 @@ public class GameStartupManager : MonoBehaviour
     {
         LevelSpawner.Instance.ShowLevelUI();
         PlayerProgress.Instance.SetGameTutorialComplete();
-        Transform trolley = CharacterSpawner.Instance.SpawnTrolley(_gameTrolleyData, _trolleySpawnPoint);
+        Transform trolley = CharacterSpawner.Instance.SpawnTrolley(_trolleySpawnPoint);
         Character character = CharacterSpawner.Instance.SpawnCharacter(CurrentGameInfo.Instance.CharacterData, trolley).GetComponent<Character>();
         InitUI(character);
         trolley.GetComponent<TrolleyMovement>().NextRail = LevelSpawner.Instance.CurrentBiomeStartRail;

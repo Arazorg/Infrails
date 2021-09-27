@@ -1,0 +1,1284 @@
+fileFormatVersion: 2
+guid: 14b9ac40e8140e74db49cd1d14cba19a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 828634048631067986
+    second: SupportLootboxOpeningUISprite_0
+  - first:
+      213: -3057649059015023091
+    second: SupportLootboxOpeningUISprite_1
+  - first:
+      213: 2186294700002225311
+    second: SupportLootboxOpeningUISprite_2
+  - first:
+      213: -6805436753493654440
+    second: SupportLootboxOpeningUISprite_3
+  - first:
+      213: 5271710022418400272
+    second: SupportLootboxOpeningUISprite_4
+  - first:
+      213: -5155653273646492037
+    second: SupportLootboxOpeningUISprite_5
+  - first:
+      213: -9152829699028234094
+    second: SupportLootboxOpeningUISprite_6
+  - first:
+      213: 9028379658116856355
+    second: SupportLootboxOpeningUISprite_7
+  - first:
+      213: 778681808079378387
+    second: SupportLootboxOpeningUISprite_8
+  - first:
+      213: -1233633236545326007
+    second: SupportLootboxOpeningUISprite_9
+  - first:
+      213: -5974230184748879895
+    second: SupportLootboxOpeningUISprite_10
+  - first:
+      213: 7815870450873758224
+    second: SupportLootboxOpeningUISprite_11
+  - first:
+      213: -8717654436883057506
+    second: SupportLootboxOpeningUISprite_12
+  - first:
+      213: -611477802954801153
+    second: SupportLootboxOpeningUISprite_13
+  - first:
+      213: -47118303622827163
+    second: SupportLootboxOpeningUISprite_14
+  - first:
+      213: -7580350465079129671
+    second: SupportLootboxOpeningUISprite_15
+  - first:
+      213: 7215815302561909991
+    second: SupportLootboxOpeningUISprite_16
+  - first:
+      213: -6714329702626281051
+    second: SupportLootboxOpeningUISprite_17
+  - first:
+      213: -5102734946964525919
+    second: SupportLootboxOpeningUISprite_18
+  - first:
+      213: -6399741238185218996
+    second: SupportLootboxOpeningUISprite_19
+  - first:
+      213: 1297023422840833264
+    second: SupportLootboxOpeningUISprite_20
+  - first:
+      213: 3939612117945231487
+    second: SupportLootboxOpeningUISprite_21
+  - first:
+      213: 890215692436323455
+    second: SupportLootboxOpeningUISprite_22
+  - first:
+      213: 7642090173581358927
+    second: SupportLootboxOpeningUISprite_23
+  - first:
+      213: -3133275741510299295
+    second: SupportLootboxOpeningUISprite_24
+  - first:
+      213: 1394926909082682183
+    second: SupportLootboxOpeningUISprite_25
+  - first:
+      213: 2856983087682177925
+    second: SupportLootboxOpeningUISprite_26
+  - first:
+      213: -2850065452184752002
+    second: SupportLootboxOpeningUISprite_27
+  - first:
+      213: -2546396918912247909
+    second: SupportLootboxOpeningUISprite_28
+  - first:
+      213: 7635617153565418872
+    second: SupportLootboxOpeningUISprite_29
+  - first:
+      213: 4538318536051353218
+    second: SupportLootboxOpeningUISprite_30
+  - first:
+      213: 7967117852184872279
+    second: SupportLootboxOpeningUISprite_31
+  - first:
+      213: 7395070797781699570
+    second: SupportLootboxOpeningUISprite_32
+  - first:
+      213: -9221754231260497161
+    second: SupportLootboxOpeningUISprite_33
+  - first:
+      213: 7746249908343509495
+    second: SupportLootboxOpeningUISprite_34
+  - first:
+      213: -1550293068699577318
+    second: SupportLootboxOpeningUISprite_35
+  - first:
+      213: 176809762832197226
+    second: SupportLootboxOpeningUISprite_36
+  - first:
+      213: -332214783216661050
+    second: SupportLootboxOpeningUISprite_37
+  - first:
+      213: -6404721794626078138
+    second: SupportLootboxOpeningUISprite_38
+  - first:
+      213: -4743141423676258262
+    second: SupportLootboxOpeningUISprite_39
+  - first:
+      213: 4521283567912925319
+    second: SupportLootboxOpeningUISprite_40
+  - first:
+      213: -2191923214592121118
+    second: SupportLootboxOpeningUISprite_41
+  - first:
+      213: -8598456112966188060
+    second: SupportLootboxOpeningUISprite_42
+  - first:
+      213: -9177418612425482003
+    second: SupportLootboxOpeningUISprite_43
+  - first:
+      213: 6897495402048816848
+    second: SupportLootboxOpeningUISprite_44
+  - first:
+      213: 771974870263961219
+    second: SupportLootboxOpeningUISprite_45
+  - first:
+      213: -6172140389633729705
+    second: SupportLootboxOpeningUISprite_46
+  - first:
+      213: -1192607436430306438
+    second: SupportLootboxOpeningUISprite_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4500
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255d275e646ef7b00800000000000000
+      internalID: 828634048631067986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_1
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4500
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d062a95816c0195d0800000000000000
+      internalID: -3057649059015023091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_2
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4500
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ca3f73277475e10800000000000000
+      internalID: 2186294700002225311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_3
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 4500
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8548f96545b3e81a0800000000000000
+      internalID: -6805436753493654440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_4
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4500
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0148d1da550e82940800000000000000
+      internalID: 5271710022418400272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_5
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 4500
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b769837d9a07378b0800000000000000
+      internalID: -5155653273646492037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_6
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 4500
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290d6cbe1ed9af080800000000000000
+      internalID: -9152829699028234094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_7
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 4500
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32afa63f67f3b4d70800000000000000
+      internalID: 9028379658116856355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d751a39afe6eca00800000000000000
+      internalID: 778681808079378387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3600
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944b9908b1141eee0800000000000000
+      internalID: -1233633236545326007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef60afbc45471da0800000000000000
+      internalID: -5974230184748879895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_11
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3600
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0127dcac3cc877c60800000000000000
+      internalID: 7815870450873758224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_12
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3600
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e943afe4a7ba40780800000000000000
+      internalID: -8717654436883057506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_13
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3600
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffb7de8d289387f0800000000000000
+      internalID: -611477802954801153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_14
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 3600
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563742a072a985ff0800000000000000
+      internalID: -47118303622827163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_15
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 3600
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9cdf71a6f2dc690800000000000000
+      internalID: -7580350465079129671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecc70269c9b32460800000000000000
+      internalID: 7215815302561909991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_17
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a93b12a5b8e1d2a0800000000000000
+      internalID: -6714329702626281051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_18
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ac2537e9917f29b0800000000000000
+      internalID: -5102734946964525919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_19
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c2d8b404d8f27a0800000000000000
+      internalID: -6399741238185218996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f40acf5ee3fff110800000000000000
+      internalID: 1297023422840833264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_21
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7823fa29505ca630800000000000000
+      internalID: 3939612117945231487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_22
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c3529a47eaa5c00800000000000000
+      internalID: 890215692436323455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_23
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47f1d9f5882e0a60800000000000000
+      internalID: 7642090173581358927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1611eeb505e5484d0800000000000000
+      internalID: -3133275741510299295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_25
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743c18712a6cb5310800000000000000
+      internalID: 1394926909082682183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_26
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b48963bfa06a720800000000000000
+      internalID: 2856983087682177925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_27
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e703aef42988278d0800000000000000
+      internalID: -2850065452184752002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_28
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97161f5e7169acd0800000000000000
+      internalID: -2546396918912247909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_29
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875652f885927f960800000000000000
+      internalID: 7635617153565418872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_30
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28669ead9a85bfe30800000000000000
+      internalID: 4538318536051353218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_31
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75507279973e09e60800000000000000
+      internalID: 7967117852184872279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb84a6b5b190a660800000000000000
+      internalID: 7395070797781699570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_33
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa33c7b26fb50080800000000000000
+      internalID: -9221754231260497161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_34
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f197301045308b60800000000000000
+      internalID: 7746249908343509495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_35
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a145966faa04c7ae0800000000000000
+      internalID: -1550293068699577318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_36
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a662f62ea87247200800000000000000
+      internalID: 176809762832197226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_37
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdcc313a6cb36bf0800000000000000
+      internalID: -332214783216661050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_38
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a3c12267bdd17a0800000000000000
+      internalID: -6404721794626078138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_39
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a280652610afc2eb0800000000000000
+      internalID: -4743141423676258262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788b2424373debe30800000000000000
+      internalID: 4521283567912925319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_41
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6ed4b1379b491e0800000000000000
+      internalID: -2191923214592121118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_42
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e34dd9c8b52ca880800000000000000
+      internalID: -8598456112966188060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_43
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de02253656243a080800000000000000
+      internalID: -9177418612425482003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_44
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6820f0683d8bf50800000000000000
+      internalID: 6897495402048816848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_45
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3869c9ded0b96ba00800000000000000
+      internalID: 771974870263961219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_46
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b5a0c5407285aa0800000000000000
+      internalID: -6172140389633729705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SupportLootboxOpeningUISprite_47
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a731513fad1037fe0800000000000000
+      internalID: -1192607436430306438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

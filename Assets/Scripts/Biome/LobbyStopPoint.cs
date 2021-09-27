@@ -2,28 +2,25 @@
 
 public class LobbyStopPoint : MonoBehaviour
 {
-    [SerializeField] private bool isGoToGame;
-    [SerializeField] private bool isSetCharactersClickable;
     [SerializeField] private TutorialUI _tutorialUI;
+    [SerializeField] private bool _isGoToGame;
+    [SerializeField] private bool _isSetCharactersClickable;
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag.Contains("Trolley"))
+        string trolleyTag = "Trolley";
+        if (collision.tag.Contains(trolleyTag))
         {
-            if (isGoToGame)
+            if (_isGoToGame)
             {
                 Loader.Load(Loader.Scene.Game);
             }
-            else if(isSetCharactersClickable)
+            else if(_isSetCharactersClickable)
             {
                 if(PlayerProgress.Instance.IsLobbyTutorialCompleted)
-                {
                     LobbyEnvironmentManager.Instance.SetSelectableCharacterСlickability(true);
-                }
                 else
-                {
                     UIManager.Instance.UIStackPush(_tutorialUI);
-                }
             }
         }
     }

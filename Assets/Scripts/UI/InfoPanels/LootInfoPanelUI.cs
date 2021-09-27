@@ -5,6 +5,8 @@ using UnityEngine.UI;
 public class LootInfoPanelUI : MonoBehaviour
 {
     [SerializeField] private Image _lootImage;
+
+    [Header("Localized Texts")]
     [SerializeField] private LocalizedText _lootNameText;
     [SerializeField] private LocalizedText _descriptionText;
 
