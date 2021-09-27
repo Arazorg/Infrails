@@ -17,12 +17,12 @@ public class ShopMainPanelUI : BaseUI, IUIPanel
     [SerializeField] private AnimationsUI _prevButton;
     [SerializeField] private AnimationsUI _nextButton;
 
-    [SerializeField] private TextMeshProUGUI _moneyText;
-    [SerializeField] private List<LootboxData> _lootboxesData;
-
     [Header("Audio Clips")]
     [SerializeField] private AudioClip _moneyClip;
     [SerializeField] private AudioClip _clickClip;
+
+    [SerializeField] private TextMeshProUGUI _moneyText;
+    [SerializeField] private List<LootboxData> _lootboxesData;
 
     private int _lootboxCounter;
     private bool _isActive;

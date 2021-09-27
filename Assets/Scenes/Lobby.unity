@@ -245,7 +245,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55.45
+  m_fontSize: 48.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1637,6 +1637,8 @@ MonoBehaviour:
   _lootboxInfoText: {fileID: 466940811}
   _prevButton: {fileID: 580538844}
   _nextButton: {fileID: 579020380}
+  _moneyClip: {fileID: 8300000, guid: c853a41582998e849838e3f6f6959785, type: 3}
+  _clickClip: {fileID: 8300000, guid: 188922b66e8b16240af718ee0d1183af, type: 3}
   _moneyText: {fileID: 825466750}
   _lootboxesData:
   - {fileID: 11400000, guid: 4d46a2ca1ce4423488cffe9579f9f050, type: 2}
@@ -1645,8 +1647,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 049c520c453939a448ca2604948c176f, type: 2}
   - {fileID: 11400000, guid: 46bd61145816f1f47b0cd22e2a8c60ab, type: 2}
   - {fileID: 11400000, guid: 880cf0922a99c4d489db91549d7b63fc, type: 2}
-  _moneyClip: {fileID: 8300000, guid: c853a41582998e849838e3f6f6959785, type: 3}
-  _clickClip: {fileID: 8300000, guid: 188922b66e8b16240af718ee0d1183af, type: 3}
 --- !u!225 &98992927
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4262,7 +4262,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.4864865, y: 1}
+    m_SensorSize: {x: 0.46632123, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -17249,6 +17249,7 @@ MonoBehaviour:
   CountOfEarnedMoney: 0
   CountOfKilledEnemies: 0
   ReachedBiomeNumber: 0
+  _analyticsManager: {fileID: 1551482053}
 --- !u!4 &1189586083
 Transform:
   m_ObjectHideFlags: 0
@@ -20405,7 +20406,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 38.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20489,7 +20490,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: 773459.56}
+  m_AnchoredPosition: {x: 25, y: 836640.5}
   m_SizeDelta: {x: -50, y: 800}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1419937059
@@ -22854,6 +22855,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: No
   isLocalizeOnStart: 0
+--- !u!1 &1551482052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551482054}
+  - component: {fileID: 1551482053}
+  m_Layer: 0
+  m_Name: AnalyticsManagerHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1551482053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551482052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c2c4ec77d355429eadf8b40d536b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1551482054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551482052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1552178280
 GameObject:
   m_ObjectHideFlags: 0
@@ -30469,7 +30513,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.05
+  m_fontSize: 46.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

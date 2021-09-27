@@ -12,10 +12,13 @@ public class CurrentGameInfo : MonoBehaviour
     public int CountOfKilledEnemies;
     public int ReachedBiomeNumber;
 
+    [SerializeField] private AnalyticsManager _analyticsManager;
+
     public void AddResultsToProgress()
     {
         PlayerProgress.Instance.PlayerMoney += CountOfEarnedMoney;
         PlayerProgress.Instance.Save();
+        _analyticsManager.OnPlayerDead(ReachedBiomeNumber, CharacterData.UnitName);
     }
 
     public void CreateNewGame()

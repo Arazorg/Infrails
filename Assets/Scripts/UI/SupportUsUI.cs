@@ -5,9 +5,14 @@ public class SupportUsUI : BaseUI, IUIPanel
     private const string SupportUsRewardKey = "SupportUsReward";
     private const string SupportUsNotRewardKey = "SupportUsNotReward";
 
+    [Header("UI Scripts")]
     [SerializeField] private ShopLootPanelUI _shopLootPanelUI;
+
+    [Header("Data")]
     [SerializeField] private LootboxData _trolleysLootboxData;
     [SerializeField] private TrolleyData _trolleyForSupportData;
+
+    [Header("Localized Texts")]
     [SerializeField] private LocalizedText _supportText;
 
     public delegate void GetTrolleyForSupport(TrolleyData trolleyData);
