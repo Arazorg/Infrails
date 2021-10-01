@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3471b72a961df40be855c1896c0249, type: 3}
   m_Name: Jonh
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
   _animatorController: {fileID: 9100000, guid: 7b8cda5a55fea6649a281db96bfa37ca, type: 2}
   _unitColor: {r: 0.9803922, g: 0.5372549, b: 0.17254902, a: 1}
   _colliderSize: {x: 2, y: 8}

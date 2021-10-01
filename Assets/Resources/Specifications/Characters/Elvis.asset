@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3471b72a961df40be855c1896c0249, type: 3}
   m_Name: Elvis
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
   _animatorController: {fileID: 9100000, guid: b8f632715f3600444af7b011e1071b44, type: 2}
   _unitColor: {r: 0.95294124, g: 0.95294124, b: 0.93725497, a: 1}
   _colliderSize: {x: 2, y: 8}
@@ -24,7 +23,7 @@ MonoBehaviour:
   _hands:
   - {fileID: -181752066830021287, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   - {fileID: 7939743101258286451, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
-  _characterStartWeapon: {fileID: 11400000, guid: c3c27f60a57d7e94abf8ebb82ea0114b, type: 2}
+  _characterStartWeapon: {fileID: 11400000, guid: bde09297632e3c74e846c303f90a8677, type: 2}
   _characterSkills:
   - {fileID: 11400000, guid: fc0ce0ddde7e07c4eb77cfcbd2ab5112, type: 2}
   - {fileID: 11400000, guid: 5b71c1fc726402d4fa319cb5f9632228, type: 2}

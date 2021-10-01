@@ -4,26 +4,23 @@ using UnityEngine;
 
 public abstract class Weapon : MonoBehaviour
 {
+    [SerializeField] private Transform _bulletSpawnPoint;
+    [SerializeField] private List<SpriteRenderer> _handsSpriteRenderer;
+
     protected WeaponData CurrentWeaponData;
-    protected ElementsResistance.Elements CurrentElement;
-    protected BulletSpawner BulletSpawner;
+    protected Element.Type CurrentElement;
+    protected BulletFactory Factory;
 
     private Animator _animator;
+    private BulletFactory _bulletFactory;
     private bool _isAttack;
     private float _timeToShoot = 0;
 
-    public bool IsAttack => _isAttack;
+    public bool IsAttack { get => _isAttack; set => _isAttack = value; }
 
     public abstract void Shoot();
 
-    public void Init(WeaponData data)
-    {
-        GetComponents();
-        CurrentWeaponData = data;
-        CurrentElement = GetRandomElement<ElementsResistance.Elements>();
-        BulletSpawner.BulletSpawnPosition = data.BulletSpawnPosition;
-        _animator.runtimeAnimatorController = data.Animator;
-    }
+    public  abstract void Init(WeaponData weaponData);
 
     public void SetParentAndOffset(Transform parent, Vector3 offset)
     {
@@ -33,19 +30,10 @@ public abstract class Weapon : MonoBehaviour
 
     public void SetHands(List<Sprite> hands)
     {
-        for (int i = 1; i < 3; i++)
+        for (int i = 0; i < _handsSpriteRenderer.Count; i++)
         {
-            var hand = transform.GetChild(i);
-            hand.GetComponent<SpriteRenderer>().sprite = hands[i - 1];
-            switch (i)
-            {
-                case 1:
-                    hand.localPosition = CurrentWeaponData.FirstHandPosition;
-                    break;
-                case 2:
-                    hand.localPosition = CurrentWeaponData.SecondHandPosition;
-                    break;
-            }
+            _handsSpriteRenderer[i].sprite = hands[i];
+            _handsSpriteRenderer[i].transform.localPosition = CurrentWeaponData.HandsPositions[i];
         }
     }
 
@@ -55,10 +43,27 @@ public abstract class Weapon : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, weaponAngle));
     }
 
+    protected void OnInit()
+    {
+        GetComponents();
+        CurrentElement = GetRandomElement<Element.Type>();
+        _animator.runtimeAnimatorController = CurrentWeaponData.Animator;
+        _bulletSpawnPoint.localPosition = CurrentWeaponData.BulletSpawnPosition;
+    }
+
+    protected GameObject SpawnBullet()
+    {
+        var bullet = _bulletFactory.GetBullet(CurrentWeaponData.BulletData.Prefab, _bulletSpawnPoint);
+        bullet.transform.localScale = new Vector2(CurrentWeaponData.BulletScaleFactor, CurrentWeaponData.BulletScaleFactor);
+        bullet.Init(CurrentWeaponData.BulletData, CurrentWeaponData.Damage, CurrentWeaponData.CritChance, CurrentElement);
+        bullet.BulletSpeed = CurrentWeaponData.BulletSpeed;
+        return bullet.gameObject;
+    }
+
     private void GetComponents()
     {
         _animator = GetComponent<Animator>();
-        BulletSpawner = GetComponent<BulletSpawner>();
+        _bulletFactory = GetComponent<BulletFactory>();
     }
 
     private T GetRandomElement<T>()

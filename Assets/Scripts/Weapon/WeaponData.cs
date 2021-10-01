@@ -1,27 +1,31 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 [CreateAssetMenu(menuName = "Weapons/Standart Weapon", fileName = "New  Weapon")]
 public class WeaponData : ItemData
 {
+    [Header("Weapon Stats")]
     [SerializeField] private Weapon _prefab;
     [SerializeField] private WeaponType _type;
-    [SerializeField] private RuntimeAnimatorController _animatorController;
-    [SerializeField] private Sprite _mainSprite;
-    [SerializeField] private Vector2 _firstHandPosition;
-    [SerializeField] private Vector2 _secondHandPosition;
-    [SerializeField] private Vector2 _bulletSpawnPosition;
-    [SerializeField] private BulletData _bulletData;
     [SerializeField] private int _bulletSpeed;
     [SerializeField] private int _damage;
     [SerializeField] private int _critChance;
     [SerializeField] private float _fireRate;
     [SerializeField] private float _bulletScaleFactor;
 
+    [Header("Render")]
+    [SerializeField] private RuntimeAnimatorController _animatorController;
+    [SerializeField] private Sprite _mainSprite;
+    [SerializeField] private List<Vector2> _handsPositions;
+
+    [Header("Bullet")]
+    [SerializeField] private Vector2 _bulletSpawnPosition;
+    [SerializeField] private BulletData _bulletData;
+
     public enum WeaponType
     {
         Shotgun,
         Rifle,
-        Laser,
         BurstRifle
     }
 
@@ -33,9 +37,7 @@ public class WeaponData : ItemData
 
     public Sprite MainSprite => _mainSprite;
 
-    public Vector2 FirstHandPosition => _firstHandPosition;
-
-    public Vector2 SecondHandPosition => _secondHandPosition;
+    public List<Vector2> HandsPositions => _handsPositions;
 
     public Vector2 BulletSpawnPosition => _bulletSpawnPosition;
 

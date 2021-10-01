@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9329260c36bc814aa8c0aef43658167, type: 3}
+  m_Name: ShotgunBullet
+  m_EditorClassIdentifier: 
+  _prefab: {fileID: -8750298439887257948, guid: a122a8d404688e44caf47f811dba38cf, type: 3}
+  _type: 0
+  _bulletsSpritesByElements:
+  - Element: 1
+    BulletSprite: {fileID: 8816132927017595113, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
+    BulletColor: {r: 0.63529414, g: 0.9960785, b: 0.25490198, a: 1}
+  - Element: 2
+    BulletSprite: {fileID: 7264198967502737319, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
+    BulletColor: {r: 0.97647065, g: 0.5372549, b: 0.13725491, a: 1}
+  - Element: 3
+    BulletSprite: {fileID: 2222432888146529503, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
+    BulletColor: {r: 1, g: 0.2901961, b: 0.043137256, a: 1}
+  - Element: 4
+    BulletSprite: {fileID: 8079980659486662007, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
+    BulletColor: {r: 0.1764706, g: 0.6627451, b: 1, a: 1}
+  - Element: 5
+    BulletSprite: {fileID: 2242523131768097658, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
+    BulletColor: {r: 0.69411767, g: 0.33333334, b: 1, a: 1}
+  _colliderSize: {x: 1, y: 2}
+  _colliderOffset: {x: 0, y: 1}
+  _bulletTag: PlayerBullet

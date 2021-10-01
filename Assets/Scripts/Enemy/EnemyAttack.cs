@@ -8,9 +8,8 @@ public class EnemyAttack : MonoBehaviour
     private BulletData bulletData;
     private bool isAttack;
     private int damage;
-    private ElementsResistance.Elements element;
+    private Element.Type element;
 
-    private BulletSpawner bulletSpawner;
     private float timeToShoot;
 
     public Transform Target
@@ -33,7 +32,7 @@ public class EnemyAttack : MonoBehaviour
         set { damage = value; }
     }
 
-    public ElementsResistance.Elements Element
+    public Element.Type Element
     {
         set { element = value; }
     }
@@ -41,7 +40,6 @@ public class EnemyAttack : MonoBehaviour
 
     private void Start()
     {
-        bulletSpawner = GetComponent<BulletSpawner>();
         timeToShoot = Time.time + Random.Range(1f, 2f);
     }
 
@@ -56,9 +54,9 @@ public class EnemyAttack : MonoBehaviour
 
     private void Shoot()
     {
-        var bullet = bulletSpawner.SpawnBullet(bulletData, damage, 0, element);
-        Quaternion dir = Quaternion.AngleAxis(0, Vector3.forward);
-        Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
-        bulletRb.AddForce(dir * (target.transform.position - bulletSpawnPoint.position + new Vector3(0, Random.Range(1, 3f), 0)).normalized * 100, ForceMode2D.Impulse);
+        //var bullet = bulletSpawner.SpawnBullet(bulletData, damage, 0, element);
+        //Quaternion dir = Quaternion.AngleAxis(0, Vector3.forward);
+        //Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
+       // bulletRb.AddForce(dir * (target.transform.position - bulletSpawnPoint.position + new Vector3(0, Random.Range(1, 3f), 0)).normalized * 100, ForceMode2D.Impulse);
     }
 }

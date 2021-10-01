@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class AttackingEnemyData : EnemyData
 {
-    [SerializeField] private ElementsResistance.Elements _enemyElement;
+    [SerializeField] private Element.Type _enemyElement;
     [SerializeField] private BulletData _bulletData;
     [SerializeField] private int _damage;
     [SerializeField] private float _fireRate;
 
-    public ElementsResistance.Elements EnemyElement
+    public Element.Type EnemyElement
     {
         get { return _enemyElement; }
     }

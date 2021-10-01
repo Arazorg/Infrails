@@ -2,9 +2,8 @@
 
 public class DestroyOnAnimationEnd : MonoBehaviour
 {
-    public void DestroyParent()
+    public void Destroy()
     {
-        var parent = transform.parent.gameObject;
-        Destroy(parent);
+        Destroy(gameObject);
     }
 }

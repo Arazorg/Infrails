@@ -7,6 +7,7 @@ public class Character : MonoBehaviour
     private BoxCollider2D _boxCollider2D;
     private CharacterData _characterData;
     private CharacterEffects _characterEffects;
+    private CharacterControl _characterControl;
 
     private int _health;
     private int _armor;
@@ -45,9 +46,9 @@ public class Character : MonoBehaviour
         _boxCollider2D.offset = _characterData.ColliderSize;
         _health = _characterData.MaxHealth;
         _armor = _characterData.MaxArmor;
+        _characterControl.SpawnWeapon(data);
         _isDeath = false;
         _isCanReborn = true;
-        GetComponent<CharacterControl>().SpawnWeapon(_characterData, data.WeaponSpawnPoint);
     }
 
     public void Heal(int heal)
@@ -110,6 +111,7 @@ public class Character : MonoBehaviour
         _animator = GetComponent<Animator>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _characterEffects = GetComponent<CharacterEffects>();
+        _characterControl = GetComponent<CharacterControl>();
     }
 
     private IEnumerator Death()
@@ -159,8 +161,8 @@ public class Character : MonoBehaviour
                     _animator.Play(turnLeftAnimatorKey);
             }
 
-            // Damage(collision.GetComponent<Bullet>().Damage);
-            // collision.GetComponent<Bullet>().DestroyBullet();
+            Damage(collision.GetComponent<Bullet>().Damage);
+            collision.GetComponent<Bullet>().BulletHit(collision);
         }
     }
 }

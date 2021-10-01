@@ -55,19 +55,15 @@ public abstract class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(PlayerBulletTag))
+        if (collision.transform.CompareTag(PlayerBulletTag))
         {
-            Bullet bullet = collision.GetComponent<Bullet>();
+            Bullet bullet = collision.transform.GetComponent<Bullet>();
             if (Random.Range(0, 1f) > bullet.CritChance)
-            {
                 GetDamage(bullet.Damage * 2);
-            }
             else
-            {
                 GetDamage(bullet.Damage);
-            }
 
-            bullet.DestroyBullet();
+            bullet.BulletHit(collision);
         }
     }
 }

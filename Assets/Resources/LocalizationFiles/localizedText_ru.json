@@ -652,13 +652,13 @@
     },
 	
 	{
-      "key": "WeakLaser",
-      "value": "Слабый лазер"
+      "key": "WeakRocketLauncher",
+      "value": "Слабая ракетная установка"
     },
 	
 	{
-      "key": "WeakLaserDescription",
-      "value": "Бракованный лазер, неизвестно коим образом он попал к нам в ящик"
+      "key": "WeakRocketLauncherDescription",
+      "value": "Бракованная ракетная установка, неизвестно коим образом она попала к нам в ящик"
     },
 	
 	{
@@ -742,22 +742,22 @@
     },
 	
 	{
-      "key": "GreatLaser",
+      "key": "GreatRocketLauncher",
       "value": "Отличный лазер"
     },
 	
 	{
-      "key": "GreatLaserDescription",
-      "value": "Хороший лазер с родной планеты ZXC-88"
+      "key": "GreatRocketLauncherDescription",
+      "value": "Хорошая ракетница с родной планеты ZXC-88"
     },
 	
 	{
-      "key": "LegendaryLaser",
-      "value": "Легендарный лазер"
+      "key": "LegendaryRocketLauncher",
+      "value": "Легендарная ракетная установка"
     },
 	
 	{
-      "key": "LegendaryLaserDescription",
+      "key": "LegendaryRocketLauncherDescription",
       "value": "Говорят к его созданию приложил руку один из примархов великого Империума"
     },
 	

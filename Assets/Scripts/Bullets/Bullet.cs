@@ -1,57 +1,73 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public abstract class Bullet : MonoBehaviour
 {
-    [SerializeField] private GameObject _explosionPrefab;
+    protected BoxCollider2D BoxCollider2D;
+    protected Rigidbody2D Rigidbody;
+    protected BulletData Data;
 
-    private BulletData _data;
-    private BoxCollider2D _boxCollider2D;
+    [SerializeField] protected GameObject ExplosionPrefab;
+    
     private int _damage;
+    private int _bulletSpeed;
     private float _critChance;
 
     public int Damage => _damage;
 
+    public int BulletSpeed { get => _bulletSpeed;  set => _bulletSpeed = value; }
+
     public float CritChance => _critChance;
 
-    public void Init(BulletData data, int damage, float critChance, ElementsResistance.Elements element)
-    {
-        float delayToDestroy = 5f;
 
-        _data = data;
+    public void Init(BulletData data, int damage, float critChance, Element.Type elementType)
+    {
+        Data = data;
         _damage = damage;
         _critChance = critChance;
-        GetComponent<SpriteRenderer>().sprite = GetSpriteByElement(element);
-        GetComponent<BoxCollider2D>().size = _data.ColliderSize;
-        GetComponent<BoxCollider2D>().offset = _data.ColliderOffset;
-        SetParticle(GetColorByElement(element));
-        Destroy(gameObject, delayToDestroy);
+        Rigidbody = GetComponent<Rigidbody2D>();
+        SetBoxColliderParams();
+        SetSpriteByElementType(elementType);
+        SetParticleColor(GetColorByElementType(elementType));
     }
 
-    public void DestroyBullet()
+    public abstract void BulletHit(Collider2D collision);
+
+    protected void DestroyBullet()
     {
-        _boxCollider2D.enabled = false;
-        GameObject explosion = Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
-        Destroy(explosion, explosion.GetComponent<ParticleSystem>().main.startLifetimeMultiplier);
         Destroy(gameObject);
     }
 
-    private void SetParticle(Color color)
+    protected void SpawnExplosionParticle()
     {
-        var particleSettings = _explosionPrefab.GetComponent<ParticleSystem>().main;
+        BoxCollider2D.enabled = false;
+        GameObject explosion = Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
+        Destroy(explosion, explosion.GetComponent<ParticleSystem>().main.startLifetimeMultiplier);
+    }
+
+    private void SetBoxColliderParams()
+    {
+        BoxCollider2D = GetComponent<BoxCollider2D>();
+        BoxCollider2D.size = Data.ColliderSize;
+        BoxCollider2D.offset = Data.ColliderOffset;
+    }
+
+    private void SetSpriteByElementType(Element.Type element)
+    {
+        var sprite = Data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletSprite;
+        GetComponent<SpriteRenderer>().sprite = sprite;
+    }
+
+    private void SetParticleColor(Color color)
+    {
+        var particleSettings = ExplosionPrefab.GetComponent<ParticleSystem>().main;
         particleSettings.startColor = color;
-        gameObject.tag = _data.BulletTag;
+        gameObject.tag = Data.BulletTag;
     }
 
-
-    private Sprite GetSpriteByElement(ElementsResistance.Elements element)
+    private Color GetColorByElementType(Element.Type element)
     {
-        return _data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletSprite;
-    }
-
-    private Color GetColorByElement(ElementsResistance.Elements element)
-    {
-        return _data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletColor;
+        return Data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletColor;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -59,12 +75,10 @@ public class Bullet : MonoBehaviour
         string obstacleTag = "Obstacle";
         string bulletTag = "Bullet";
 
-        if (!collision.tag.Contains(bulletTag))
+        if (!collision.transform.tag.Contains(bulletTag))
         {
-            if (collision.CompareTag(obstacleTag))
-            {
-                DestroyBullet();
-            }              
+            if (collision.transform.CompareTag(obstacleTag))
+                BulletHit(collision);
         }
     }
 

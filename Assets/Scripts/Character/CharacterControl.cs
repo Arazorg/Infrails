@@ -17,10 +17,11 @@ public class CharacterControl : MonoBehaviour
         }
     }
 
-    public void SpawnWeapon(CharacterData data, Vector2 weaponOffset)
+    public void SpawnWeapon(CharacterData data)
     {
-        _weapon  = WeaponSpawner.Instance.SpawnWeapon(data.CharacterStartWeapon);
-        _weapon.SetParentAndOffset(transform, weaponOffset);
+        _weapon = GetComponent<WeaponFactory>().GetWeapon(data.CharacterStartWeapon.Prefab, transform);
+        _weapon.Init(data.CharacterStartWeapon);
+        _weapon.SetParentAndOffset(transform, data.WeaponSpawnPoint);
         _weapon.SetHands(data.Hands);
         _isFacingRight = true;
     }

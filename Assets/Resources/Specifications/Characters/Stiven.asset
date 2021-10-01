@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e3471b72a961df40be855c1896c0249, type: 3}
   m_Name: Stiven
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
   _animatorController: {fileID: 9100000, guid: 133d9d6787e29634aadd4294da17298b, type: 2}
   _unitColor: {r: 0.6745098, g: 0.95294124, b: 0.18039216, a: 1}
   _colliderSize: {x: 2, y: 8}
@@ -24,7 +23,7 @@ MonoBehaviour:
   _hands:
   - {fileID: -1345993671369762542, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   - {fileID: 245713717398041214, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
-  _characterStartWeapon: {fileID: 11400000, guid: 0dbd00dfd5a27844885bf1ccc2514249, type: 2}
+  _characterStartWeapon: {fileID: 11400000, guid: aa24049d3506052448be5154a28a4989, type: 2}
   _characterSkills:
   - {fileID: 11400000, guid: f4f7d06f22a3137428d1901981a78c62, type: 2}
   - {fileID: 11400000, guid: 3f31c5ed4667ce74e92e5e07f8526735, type: 2}

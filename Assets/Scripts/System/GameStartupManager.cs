@@ -6,9 +6,6 @@ public class GameStartupManager : MonoBehaviour
 {
     [SerializeField] private TutorialUI _tutorialUI;
     [SerializeField] private Transform _trolleySpawnPoint;
-    [SerializeField] private CinemachineVirtualCamera _cinemachineVirtualCamera;
-    [SerializeField] private TrolleyData _gameTrolleyData;
-    [SerializeField] private Audio _gameBackgroundMusic;
 
     private void Awake()
     {

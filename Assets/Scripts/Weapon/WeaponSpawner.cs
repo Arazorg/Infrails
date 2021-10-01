@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class WeaponSpawner : MonoBehaviour
 {
@@ -23,8 +22,6 @@ public class WeaponSpawner : MonoBehaviour
                 return weapon.AddComponent<Rifle>();
             case WeaponData.WeaponType.Shotgun:
                 return weapon.AddComponent<Shotgun>();
-            case WeaponData.WeaponType.Laser:
-                return weapon.AddComponent<Laser>();
             case WeaponData.WeaponType.BurstRifle:
                 return weapon.AddComponent<BurstRifle>();
             default:
