@@ -10,7 +10,6 @@ public class Element : ScriptableObject
 
     public enum Type
     {
-        Default,
         Nature,
         Earth,
         Fire,

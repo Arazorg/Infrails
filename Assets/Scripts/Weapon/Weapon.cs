@@ -8,7 +8,7 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] private List<SpriteRenderer> _handsSpriteRenderer;
 
     protected WeaponData CurrentWeaponData;
-    protected Element.Type CurrentElement;
+    protected Element.Type CurrentElement = Element.Type.Fire;
     protected BulletFactory Factory;
 
     private Animator _animator;
@@ -20,7 +20,7 @@ public abstract class Weapon : MonoBehaviour
 
     public abstract void Shoot();
 
-    public  abstract void Init(WeaponData weaponData);
+    public abstract void Init(WeaponData weaponData);
 
     public void SetParentAndOffset(Transform parent, Vector3 offset)
     {

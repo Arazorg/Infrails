@@ -23,10 +23,13 @@ public class BurstRifle : Weapon
         for (int i = 0; i < _burstRifleData.NumberOfBullets; i++)
         {
             GameObject bullet = SpawnBullet();
+
             Quaternion dir = Quaternion.AngleAxis(0, Vector3.forward);
             Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
             bulletRb.AddForce(dir * transform.up * CurrentWeaponData.BulletSpeed, ForceMode2D.Impulse);
             bullet.transform.rotation = Quaternion.Euler(0, 0, dir.eulerAngles.z + transform.rotation.eulerAngles.z);
+            AudioManager.Instance.PlayEffect(CurrentWeaponData.WeaponAudioClip);
+
             float shootDelay = 0.125f;
             yield return new WaitForSeconds(shootDelay);
         }

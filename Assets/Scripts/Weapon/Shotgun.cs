@@ -28,5 +28,7 @@ public class Shotgun : Weapon
             bulletRb.AddForce(dir * transform.up * speed, ForceMode2D.Impulse);
             bullet.transform.rotation = Quaternion.Euler(0, 0, dir.eulerAngles.z + transform.rotation.eulerAngles.z);
         }
+
+        AudioManager.Instance.PlayEffect(CurrentWeaponData.WeaponAudioClip);
     }
 }

@@ -13310,66 +13310,77 @@ MonoBehaviour:
     volume: 0.9
     pitch: 1.15
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: Money
     Clip: {fileID: 8300000, guid: c853a41582998e849838e3f6f6959785, type: 3}
     volume: 0.9
     pitch: 1
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: ClickUI_2
     Clip: {fileID: 8300000, guid: 20174afe7b00c654cbd4ec87c7ae96a0, type: 3}
     volume: 0.9
     pitch: 1
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: ClickUI_3
     Clip: {fileID: 8300000, guid: efda1ca363d7719488b96644c5f25425, type: 3}
     volume: 0.9
     pitch: 1
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: DailyPresentTimer
     Clip: {fileID: 8300000, guid: c5e2a73ad4706440f93bf05df0b465fe, type: 3}
     volume: 0.9
     pitch: 1.25
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: DailyPresentReward
     Clip: {fileID: 8300000, guid: c853a41582998e849838e3f6f6959785, type: 3}
     volume: 0.9
     pitch: 1
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: ChesRotationUI
     Clip: {fileID: 8300000, guid: 26fb7c969dc2b2e41a59562c2ddc51a2, type: 3}
     volume: 1
     pitch: 1
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: GetRewardUI
     Clip: {fileID: 8300000, guid: 835c4709f64608145a489572c0c411a3, type: 3}
     volume: 0.9
     pitch: 1
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: TeleportationEffect
     Clip: {fileID: 8300000, guid: 24eb1c3c6c031dc4d9a37e9e0c32e584, type: 3}
     volume: 0.4
     pitch: 0.8
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: NextLootboxUI
     Clip: {fileID: 8300000, guid: 0e25096e6ce86164da5eb31d88e39e59, type: 3}
     volume: 0.8
     pitch: 1.1
     isLoop: 0
+    IsPitch: 0
     audioSource: {fileID: 0}
   - Name: LobbyCat
     Clip: {fileID: 8300000, guid: a2c324f5a43313e41bcd7ba24cd5275c, type: 3}
     volume: 0.4
     pitch: 1.2
     isLoop: 0
+    IsPitch: 1
     audioSource: {fileID: 0}
   _musicList:
   - Name: LobbyBackgroundMusic
@@ -13377,6 +13388,7 @@ MonoBehaviour:
     volume: 0.8
     pitch: 1
     isLoop: 1
+    IsPitch: 0
     audioSource: {fileID: 0}
 --- !u!4 &882569042
 Transform:
@@ -20490,7 +20502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: 1190752}
+  m_AnchoredPosition: {x: 25, y: 1192118.5}
   m_SizeDelta: {x: -50, y: 800}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1419937059

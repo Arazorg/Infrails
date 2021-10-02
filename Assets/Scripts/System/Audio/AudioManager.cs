@@ -42,7 +42,16 @@ public class AudioManager : MonoBehaviour
             Audio currentAudio = _audioList.Where(s => s.Clip == clip).FirstOrDefault();
             if (currentAudio != null)
             {
-                currentAudio.audioSource.pitch = currentAudio.pitch;
+                if (!currentAudio.IsPitch)
+                {
+                    currentAudio.audioSource.pitch = currentAudio.pitch;
+                }                   
+                else
+                {
+                    float pitchSpread = 0.085f;
+                    currentAudio.audioSource.pitch = currentAudio.pitch + Random.Range(-pitchSpread, pitchSpread);
+                }                 
+
                 currentAudio.audioSource.volume = currentAudio.volume;
                 currentAudio.audioSource.PlayOneShot(currentAudio.Clip);
             }

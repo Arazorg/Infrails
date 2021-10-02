@@ -17,17 +17,18 @@ MonoBehaviour:
   _itemSpriteUI: {fileID: 4393296399024053427, guid: f582596d4f5686448870e67b55ba5124, type: 3}
   _isStartingItem: 0
   _prefab: {fileID: -5247871744309800004, guid: 008e1332d2aba204296da860a77c094c, type: 3}
+  _weaponAudioClip: {fileID: 8300000, guid: c0c9fec1d5181cd4d965b57ad29f30f5, type: 3}
+  _animatorController: {fileID: 9100000, guid: 1f4a3d638bddd76409605afc49816a9b, type: 2}
+  _mainSprite: {fileID: 8858057472952624966, guid: fe2a2e28841f5ea4c9f86abd0555056b, type: 3}
+  _handsPositions:
+  - {x: 0, y: 0}
+  - {x: -0.05, y: 2}
   _type: 2
   _bulletSpeed: 105
   _damage: 5
   _critChance: 22
   _fireRate: 1.2
   _bulletScaleFactor: 1.2
-  _animatorController: {fileID: 9100000, guid: 1f4a3d638bddd76409605afc49816a9b, type: 2}
-  _mainSprite: {fileID: 8858057472952624966, guid: fe2a2e28841f5ea4c9f86abd0555056b, type: 3}
-  _handsPositions:
-  - {x: 0, y: 0}
-  - {x: -0.05, y: 2}
   _bulletSpawnPosition: {x: -0.225, y: 4}
   _bulletData: {fileID: 11400000, guid: bc9532ac9eb791549b683b8e7e763923, type: 2}
   _numberOfBullets: 4

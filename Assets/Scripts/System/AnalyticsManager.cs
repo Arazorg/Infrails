@@ -4,6 +4,8 @@ using UnityEngine.Analytics;
 
 public class AnalyticsManager : MonoBehaviour
 {
+    public static AnalyticsManager Instance;
+
     public void OnPlayerDead(int biomeNumber, string characterName)
     {
         Analytics.CustomEvent("Player Dead", new Dictionary<string, object>()
@@ -15,6 +17,11 @@ public class AnalyticsManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null)
+            Destroy(gameObject);
+        else
+            Instance = this;
+
         DontDestroyOnLoad(gameObject);
     }
 }

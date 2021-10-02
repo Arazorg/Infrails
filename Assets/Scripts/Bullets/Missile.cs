@@ -3,6 +3,7 @@ using UnityEngine;
 public class Missile : Bullet
 {
     [SerializeField] private GameObject _explosionPrefab;
+    [SerializeField] private AudioClip _explosionAudioClip;
 
     public override void BulletHit(Collider2D collision)
     {
@@ -16,6 +17,7 @@ public class Missile : Bullet
         GameObject explosion = Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
         float explosionDamageRadius = 5f;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(explosion.transform.position, explosionDamageRadius);
+        AudioManager.Instance.PlayEffect(_explosionAudioClip);
         ExplosionDamage(colliders);
     }
 

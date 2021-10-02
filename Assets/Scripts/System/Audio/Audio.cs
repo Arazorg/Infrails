@@ -13,6 +13,7 @@ public class Audio
     public float pitch;
 
     public bool isLoop;
+    public bool IsPitch;
 
     [HideInInspector]
     public AudioSource audioSource;
