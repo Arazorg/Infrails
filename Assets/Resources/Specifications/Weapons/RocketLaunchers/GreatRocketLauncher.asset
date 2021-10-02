@@ -17,7 +17,7 @@ MonoBehaviour:
   _itemSpriteUI: {fileID: -510978566862926569, guid: f582596d4f5686448870e67b55ba5124, type: 3}
   _isStartingItem: 0
   _prefab: {fileID: -4369186634672922947, guid: 206378425c4d5ff40a4f4a2a419d495f, type: 3}
-  _weaponAudioClip: {fileID: 8300000, guid: ab3d0b27b367b674d802afe6843a2ef0, type: 3}
+  _weaponAudioClip: {fileID: 8300000, guid: 4986937ffc80b144ba867a5dc128e91d, type: 3}
   _animatorController: {fileID: 9100000, guid: 4a7c42acee641594aa65625a3f469333, type: 2}
   _mainSprite: {fileID: -2924542264012099435, guid: fe2a2e28841f5ea4c9f86abd0555056b, type: 3}
   _handsPositions:
