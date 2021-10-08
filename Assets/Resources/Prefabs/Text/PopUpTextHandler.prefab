@@ -51,6 +51,7 @@ MeshRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -167,11 +168,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 5
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 764345317993895077}
   m_maskType: 0
-  _SortingLayerID: 0
-  _SortingOrder: 5
 --- !u!95 &764345317993895083
 Animator:
   serializedVersion: 3
@@ -226,7 +228,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 764345318319219465}
-  - component: {fileID: 6990174130736874807}
   m_Layer: 0
   m_Name: PopUpTextHandler
   m_TagString: Untagged
@@ -249,15 +250,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6990174130736874807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764345318319219464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd4db4c9e8ab1fd4788f2799b757ef4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
