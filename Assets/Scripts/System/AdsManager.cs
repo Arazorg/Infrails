@@ -9,7 +9,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
     private const string VideoId = "video";
 #if UNITY_IOS
     private const string GameId = "4101012";
-#elif UNITY_ANDROID
+#elif UNITY_ANDROID || UNITY_EDITOR
     private const string GameId = "4101013";
 #endif
 
