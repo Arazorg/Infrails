@@ -15,19 +15,19 @@ MonoBehaviour:
   _prefab: {fileID: 6693109889255811938, guid: 93b031435276ecf4699f9368dcdd9007, type: 3}
   _type: 3
   _bulletsSpritesByElements:
-  - Element: 1
+  - Element: 0
     BulletSprite: {fileID: 9175666691527990346, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
     BulletColor: {r: 0.63529414, g: 0.9960785, b: 0.25490198, a: 1}
-  - Element: 2
+  - Element: 1
     BulletSprite: {fileID: -3176160374402934670, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
     BulletColor: {r: 0.97647065, g: 0.5372549, b: 0.13725491, a: 1}
-  - Element: 3
+  - Element: 2
     BulletSprite: {fileID: 2237199716150873365, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
     BulletColor: {r: 1, g: 0.2901961, b: 0.043137256, a: 1}
-  - Element: 4
+  - Element: 3
     BulletSprite: {fileID: -3315442901898919976, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
     BulletColor: {r: 0.1764706, g: 0.6627451, b: 1, a: 1}
-  - Element: 5
+  - Element: 4
     BulletSprite: {fileID: 5897446223153650885, guid: 4001e1de5691d2943980a8de1702030c, type: 3}
     BulletColor: {r: 0.69411767, g: 0.33333334, b: 1, a: 1}
   _colliderSize: {x: 1.35, y: 3}

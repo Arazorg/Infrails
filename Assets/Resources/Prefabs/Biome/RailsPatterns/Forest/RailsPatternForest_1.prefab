@@ -153,7 +153,7 @@ MonoBehaviour:
   - {fileID: 8812478278344456944}
   - {fileID: 4708729107753214029}
   _firstRail: {fileID: 699051591650747790}
-  _lastRail: {fileID: 8096350795737695650}
+  _lastRail: {fileID: 4450506517671892419}
 --- !u!1 &2355266724443069832
 GameObject:
   m_ObjectHideFlags: 0

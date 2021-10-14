@@ -36,23 +36,26 @@ SpriteAtlas:
     - {fileID: 2800000, guid: 17145f9c6e438b742a6b7d51bb9824a3, type: 3}
     - {fileID: 2800000, guid: b6dc3299fd917f8459cd89e8a39bfc8a, type: 3}
     - {fileID: 2800000, guid: 1de3081a45bb36b44b1ade4ee64c4b2e, type: 3}
-    - {fileID: 2800000, guid: c1ec9991bbcb5504ea74e2e9c875b7d3, type: 3}
+    - {fileID: 5613500441129615719, guid: 137a6a9d621c52c45b1c0fbbb4f0db16, type: 3}
+    - {fileID: 4475213505378293746, guid: 137a6a9d621c52c45b1c0fbbb4f0db16, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: c1ec9991bbcb5504ea74e2e9c875b7d3, type: 3}
   - {fileID: 21300000, guid: 9088df082f03787489eea4e5e94cfdd1, type: 3}
   - {fileID: 21300000, guid: b6dc3299fd917f8459cd89e8a39bfc8a, type: 3}
   - {fileID: 21300000, guid: 1de3081a45bb36b44b1ade4ee64c4b2e, type: 3}
   - {fileID: 21300000, guid: 17145f9c6e438b742a6b7d51bb9824a3, type: 3}
+  - {fileID: 4475213505378293746, guid: 137a6a9d621c52c45b1c0fbbb4f0db16, type: 3}
+  - {fileID: 5613500441129615719, guid: 137a6a9d621c52c45b1c0fbbb4f0db16, type: 3}
   m_PackedSpriteNamesToIndex:
-  - ShopSprite
   - HealingStationSprite
   - RepairKitStationSprite
   - WeaponStandSprite
   - PotionStationSprite
+  - ChestsSprite_1
+  - ChestsSprite_0
   m_RenderDataMap: {}
   m_Tag: LobbyDecorationsAtlas
   m_IsVariant: 0

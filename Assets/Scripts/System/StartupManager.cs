@@ -5,7 +5,6 @@ public class StartupManager : MonoBehaviour
 {
     private void Awake()
     {
-        QualitySettings.vSyncCount = 1;
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 

@@ -23,7 +23,7 @@ MonoBehaviour:
   _hands:
   - {fileID: -181752066830021287, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   - {fileID: 7939743101258286451, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
-  _characterStartWeapon: {fileID: 11400000, guid: dcf36aef760f3ce4282855bf00de6fe0, type: 2}
+  _characterStartWeapon: {fileID: 11400000, guid: 0f7dc5edf42507644b01415af36f41c8, type: 2}
   _characterSkills:
   - {fileID: 11400000, guid: a319f815b35d6a04385594aae934fed3, type: 2}
   - {fileID: 11400000, guid: 180dce92d784b9a42ba55e2b0c03870e, type: 2}

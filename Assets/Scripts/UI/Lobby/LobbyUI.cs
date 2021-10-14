@@ -43,6 +43,7 @@ public class LobbyUI : BaseUI, IUIPanel
         StartCoroutine(EnableBackButton());
         Show();
         LobbyEnvironmentManager.Instance.SetLobbyObjectsСlickability(true);
+        _isSettingsPanelOpen = false;
     }
 
     public void OnHide()

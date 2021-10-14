@@ -121,7 +121,7 @@ MonoBehaviour:
   - {fileID: 9055483404498817606}
   - {fileID: 4861479279190442351}
   _firstRail: {fileID: 1637689460028393524}
-  _lastRail: {fileID: 8022527751443638296}
+  _lastRail: {fileID: 43631865380990844}
 --- !u!1 &1937940917555221621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,7 +1353,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7198180418225225310, guid: fbec0084e1556f84d9620e8e40ba7a94, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fbec0084e1556f84d9620e8e40ba7a94, type: 3}
 --- !u!4 &1946566362958079148 stripped
 Transform:

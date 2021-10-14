@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LobbyDecorations2Atlas
+  m_Name: LobbyDecorationsAtlas2
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -32,13 +32,14 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
+    - {fileID: 2800000, guid: c1ec9991bbcb5504ea74e2e9c875b7d3, type: 3}
     - {fileID: 2800000, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
-    - {fileID: 2800000, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: c1ec9991bbcb5504ea74e2e9c875b7d3, type: 3}
   - {fileID: 3276887984752609003, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
   - {fileID: 5294319256399525539, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
   - {fileID: 7760669290641474, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
@@ -79,17 +80,8 @@ SpriteAtlas:
   - {fileID: 4558947421684768058, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
   - {fileID: -587713883972275769, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
   - {fileID: 4457408957945659211, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
-  - {fileID: -5450701543261256429, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: 7688864592788846062, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: 3115997897859195460, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: 8148990139987418108, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: 667902686546696274, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: -4091246379783136483, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: -459841454506105729, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: -7564292130366407193, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: 2248732669605659134, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
-  - {fileID: 456603117155389666, guid: 358e7a1f137ac3341b384738e716d283, type: 3}
   m_PackedSpriteNamesToIndex:
+  - ShopSprite
   - DailyPresentWithRewardSprite_5
   - DailyPresentWithRewardSprite_6
   - DailyPresentWithRewardSprite_7
@@ -130,16 +122,6 @@ SpriteAtlas:
   - DailyPresentWithRewardSprite_8
   - DailyPresentWithRewardSprite_9
   - DailyPresentWithRewardSprite_4
-  - TVSprite_9
-  - TVSprite_8
-  - TVSprite_3
-  - TVSprite_2
-  - TVSprite_1
-  - TVSprite_0
-  - TVSprite_7
-  - TVSprite_6
-  - TVSprite_5
-  - TVSprite_4
   m_RenderDataMap: {}
-  m_Tag: LobbyDecorations2Atlas
+  m_Tag: LobbyDecorationsAtlas2
   m_IsVariant: 0

@@ -10,19 +10,18 @@ public class GlobalVolumeManager : MonoBehaviour
 
     public void SetDepthOfFieldState(bool isState)
     {
-        float _disableDFFocusDistance = 5;
-        float _enableDFFocusDistance = 0.5f;
-
+        /*
         if (!_volume)
             _volume = GetComponent<Volume>();
             
         if (_volume.profile.TryGet(out DepthOfField dofComponent))
         {
             if (isState)
-                dofComponent.focusDistance.value =_enableDFFocusDistance ;
+                dofComponent.active = true;           
             else
-                dofComponent.focusDistance.value = _disableDFFocusDistance;
+                dofComponent.active = false;   
         }
+        */
     }
 
     private void Awake()
