@@ -8,6 +8,8 @@ public class LevelSpawner : MonoBehaviour
     [SerializeField] private GameObject _levelPrefab;
     [SerializeField] private List<BiomeData> _biomesData;
     [SerializeField] private LevelInfoUI _levelInfoUI;
+    [SerializeField] private LevelInfoPanelUI _pauseLevelInfoPanel;
+    [SerializeField] private LevelInfoPanelUI _levelInfoPanel;
 
     private List<BiomeData> _currentLevelBiomes;
     private BiomeData _currentBiomeData;
@@ -18,6 +20,10 @@ public class LevelSpawner : MonoBehaviour
     private Vector3 _nextBiomeSpawnPosition = Vector3.zero;
     private int _levelCounter = 1;
     private int _biomesCounter = 0;
+
+    public delegate void LevelSpawned(int levelNumber, List<BiomeData> currentLevelBiomes);
+
+    public event LevelSpawned OnLevelSpawned;
 
     public Rail CurrentBiomeStartRail { get => _currentBiomeStartRail; set => _currentBiomeStartRail = value; }
 
@@ -43,7 +49,8 @@ public class LevelSpawner : MonoBehaviour
     public void LevelSpawn()
     {
         SpawnBiome();
-        _levelInfoUI.Show(_levelCounter, _currentLevelBiomes);
+        OnLevelSpawned?.Invoke(_levelCounter, _currentLevelBiomes);
+        _levelInfoUI.Show();
     }
 
     public void SpawnBiome()
@@ -78,7 +85,9 @@ public class LevelSpawner : MonoBehaviour
 
     public void ShowLevelUI()
     {
-        _levelInfoUI.Show(_levelCounter, _currentLevelBiomes);
+        _pauseLevelInfoPanel.SetLevelInfoPanel(_levelCounter, _currentLevelBiomes);
+        _levelInfoPanel.SetLevelInfoPanel(_levelCounter, _currentLevelBiomes);
+        _levelInfoUI.Show();
     }
 
     private void Awake()

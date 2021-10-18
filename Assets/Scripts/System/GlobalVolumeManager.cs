@@ -4,24 +4,41 @@ using UnityEngine.Rendering.Universal;
 
 public class GlobalVolumeManager : MonoBehaviour
 {
+    private const float UIRenderScale = 0.25f;
+    private const float DefaultRenderScale = 1f;
+
     public static GlobalVolumeManager Instance;
+
+    [SerializeField] private UniversalRenderPipelineAsset _universalRenderPipelineAsset;
+    [SerializeField] private VolumeProfile _UIVolumeProfile;
+    [SerializeField] private VolumeProfile _defaultVolumeProfile;
+    [SerializeField] private UniversalAdditionalCameraData _universalAdditionalCameraData;
 
     private Volume _volume;
 
-    public void SetDepthOfFieldState(bool isState)
+    private void Start()
     {
-        /*
+        _universalAdditionalCameraData.renderPostProcessing = false;
+        _universalRenderPipelineAsset.renderScale = 1f;
+    }
+
+    public void SetVolumeProfile(bool isUIProfile)
+    {
         if (!_volume)
             _volume = GetComponent<Volume>();
             
-        if (_volume.profile.TryGet(out DepthOfField dofComponent))
+        if(isUIProfile)
         {
-            if (isState)
-                dofComponent.active = true;           
-            else
-                dofComponent.active = false;   
+            _universalAdditionalCameraData.renderPostProcessing = true;
+            _universalRenderPipelineAsset.renderScale = UIRenderScale;
+            _volume.profile = _UIVolumeProfile;
         }
-        */
+        else
+        {
+            _universalAdditionalCameraData.renderPostProcessing = false;
+            _volume.profile = _defaultVolumeProfile;
+            _universalRenderPipelineAsset.renderScale = DefaultRenderScale;
+        }
     }
 
     private void Awake()

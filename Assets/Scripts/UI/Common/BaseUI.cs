@@ -79,7 +79,7 @@ public class BaseUI : MonoBehaviour
 
     private void SetBlurBackground(bool isState)
     {
-        //GlobalVolumeManager.Instance.SetDepthOfFieldState(isState);
+        GlobalVolumeManager.Instance.SetVolumeProfile(isState);
     }
 
     private void SetFadeBackground(bool isState)

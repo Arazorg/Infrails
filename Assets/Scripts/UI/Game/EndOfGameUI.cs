@@ -24,6 +24,9 @@ public class EndOfGameUI : BaseUI, IUIPanel
     [SerializeField] private AnimationsUI _doubleRewardButton;
     [SerializeField] private AnimationsUI _goToLobbyButton;
 
+    [Header("Audio Clips")]
+    [SerializeField] private AudioClip _defeatAudioClip;
+
     private Vector2 _centerAnchor = new Vector2(0.5f, 0.5f);
     private Vector2 _startPosition;
     private Vector2 _finishPosition;
@@ -85,6 +88,8 @@ public class EndOfGameUI : BaseUI, IUIPanel
         yield return new WaitForSeconds(moveTrolleyDelay);
         SetTrolleyMovementParams();
         CurrentGameInfo.Instance.AddResultsToProgress();
+        AudioManager.Instance.PlayEffect(_defeatAudioClip);
+        AudioManager.Instance.StopMusic();
     }
 
     private void SetUI()
@@ -97,7 +102,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
 
     private void SetFlagPosition()
     {
-        float edgeOffset = Screen.safeArea.width / 10f; // indent = 10% of safeArea
+        float edgeOffset = Screen.safeArea.width / 9f; // indent = 11.1% of safeArea
         float numberBiomeInGame = GameConstants.NumberBiomeInLevel * GameConstants.NumberLevelInGame;
         float oneBiomeOffset = (Screen.safeArea.width - (edgeOffset * 2)) / numberBiomeInGame;
         float startX = -((Screen.safeArea.width - (edgeOffset * 2)) / 2);

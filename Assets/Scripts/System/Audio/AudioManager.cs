@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     private List<AudioSource> _currentAudioSorces;
     private Audio _currentBackgroundMusic;
     private int _backgroundMusicNumber = -1;
+    private bool _isMusicLoop;
 
     public void StartAudio()
     {
@@ -25,6 +26,7 @@ public class AudioManager : MonoBehaviour
         if (SettingsInfo.Instance.IsMusic)
         {
             StopMusic();
+            _isMusicLoop = true;
             _currentBackgroundMusic = GetBackgroundMusic();
             SetMusicSource();
         }
@@ -32,6 +34,7 @@ public class AudioManager : MonoBehaviour
 
     public void StopMusic()
     {
+        _isMusicLoop = false;
         _musicSource.Stop();
     }
 
@@ -106,7 +109,7 @@ public class AudioManager : MonoBehaviour
 
     private void Update()
     {
-        if (!_musicSource.isPlaying)
+        if (!_musicSource.isPlaying && _isMusicLoop)
             PlayMusic();
     }
 

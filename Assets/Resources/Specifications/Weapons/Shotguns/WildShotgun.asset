@@ -34,4 +34,4 @@ MonoBehaviour:
   _minNumberOfBullets: 7
   _maxNumberOfBullets: 9
   _scatterAngle: 15
-  _bulletSpeedSpread: 0.2
+  _bulletSpeedSpread: 0.05

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfLootbox: 2
   _animatorController: {fileID: 9100000, guid: 4e960c209cf0c464ba697e9049f5eabb, type: 2}
-  _mainSprite: {fileID: 185252386763167412, guid: dec73b7bd3998bd4c8e783ec0f992fe0, type: 3}
+  _mainSprite: {fileID: -8376952462570093067, guid: 4ea3f31f642b99e4897d9b2d16ae349b, type: 3}
   _lootboxColor: {r: 0.5921569, g: 0.17254902, b: 0.8745099, a: 1}
   _nameKey: SkillLootbox
   _price: 4000

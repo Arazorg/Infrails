@@ -5,6 +5,7 @@ public class PauseUI : BaseUI, IUIPanel
 {
     [SerializeField] private ExitUI _exitUI;
     [SerializeField] private SettingsUI _settingsUI;
+    [SerializeField] private AnimationsUI _settingsButton;
 
     private bool _isSettingsPanelOpen;
     private bool _isActive;
@@ -19,7 +20,13 @@ public class PauseUI : BaseUI, IUIPanel
 
     public bool IsSettingsPanelOpen
     {
-        set { _isSettingsPanelOpen = value; }
+        set
+        {
+            _isSettingsPanelOpen = value;
+
+            if (_isSettingsPanelOpen)
+                _settingsButton.Show();
+        }
     }
 
     public void OnPush()
@@ -60,9 +67,15 @@ public class PauseUI : BaseUI, IUIPanel
     {
         _isSettingsPanelOpen = !_isSettingsPanelOpen;
         if (_isSettingsPanelOpen)
+        {
+            _settingsButton.Hide();
             _settingsUI.Show();
+        }
         else
+        {
+            _settingsButton.Show();
             _settingsUI.Hide();
+        }
     }
 
     public void ShowExitUI()

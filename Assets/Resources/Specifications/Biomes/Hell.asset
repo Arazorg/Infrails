@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _biomeName: Hell
   _biomeColor: {r: 0.8784314, g: 0.18640064, b: 0.047058802, a: 1}
-  _biomeUISprite: {fileID: -7773296453831191921, guid: 650020d50336f424f9013d90401c15e5, type: 3}
-  _floorSprite: {fileID: 21300000, guid: a09a537e95f67004498a261a1c8e8dde, type: 3}
-  _endWallSprite: {fileID: 21300000, guid: 191ee110c5d03294dbd3fd2fcf24c86c, type: 3}
-  _plateSprite: {fileID: 21300000, guid: 95a0d4487f8d2a34d949485477495895, type: 3}
-  _endWallFloorSprite: {fileID: 21300000, guid: 547d632667360c549a21fbecd4809884, type: 3}
   _railsPrefabs:
   - {fileID: 2663089264523063040, guid: 128c30d44cf997847a1509db517dd406, type: 3}
   - {fileID: 5717875129759168619, guid: 102f92d8a89be1841b5652aad589f145, type: 3}
   - {fileID: 5436093036560242003, guid: e4d8df3a6491af84780a06033c03ef8a, type: 3}
   - {fileID: 4028318593928992615, guid: 3d676c880ba41544a8c5941608d6f0a4, type: 3}
-  _flyingEnemiesData: []
+  _biomeUISprite: {fileID: -7773296453831191921, guid: 650020d50336f424f9013d90401c15e5, type: 3}
+  _floorSprite: {fileID: 21300000, guid: a09a537e95f67004498a261a1c8e8dde, type: 3}
+  _endWallSprite: {fileID: 21300000, guid: 191ee110c5d03294dbd3fd2fcf24c86c, type: 3}
+  _plateSprite: {fileID: 21300000, guid: 95a0d4487f8d2a34d949485477495895, type: 3}
+  _endWallFloorSprite: {fileID: 21300000, guid: 547d632667360c549a21fbecd4809884, type: 3}
+  _flyingEnemiesData:
+  - {fileID: 11400000, guid: 7c42c7df15ab5ac49a2f565840896d2f, type: 2}
   _staticEnemiesData: []
-  _eggData: {fileID: 0}
-  _maneCrystalData: {fileID: 0}
-  _globalLightsIntensity: 1
+  _eggData: {fileID: 11400000, guid: a1965df3f24e5f845a427e2e804952b4, type: 2}
+  _maneCrystalData: {fileID: 11400000, guid: 758186f48ef6aa9419c51c191a4a730d, type: 2}

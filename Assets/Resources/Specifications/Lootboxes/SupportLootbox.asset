@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfLootbox: 6
   _animatorController: {fileID: 9100000, guid: 1abefca8683c17242ab6161ed8af34c4, type: 2}
-  _mainSprite: {fileID: -2682389275861998022, guid: fd79b4fae56f38d4b838cb4340752e7e, type: 3}
+  _mainSprite: {fileID: -7837980799168685538, guid: 4ea3f31f642b99e4897d9b2d16ae349b, type: 3}
   _lootboxColor: {r: 0.4901961, g: 0.5019608, b: 0.7254902, a: 1}
   _nameKey: SupportLootbox
   _price: 0

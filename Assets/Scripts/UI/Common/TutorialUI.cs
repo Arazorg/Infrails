@@ -13,7 +13,7 @@ public class TutorialUI : BaseUI, IUIPanel
 
     [SerializeField] private AnimationsUI _tutorialText;
     [SerializeField] private AnimationsUI _phraseImage;
-    [SerializeField] private Button _finishButton;
+    [SerializeField] private AnimationsUI _finishButton;
     [SerializeField] private Animator _guideAnimator;
 
     private List<TutorialItem> _allTutorialItems = new List<TutorialItem>();
@@ -64,7 +64,7 @@ public class TutorialUI : BaseUI, IUIPanel
 
         StopAllCoroutines();
         _phraseImage.Hide();
-        _finishButton.interactable = false;
+        _finishButton.Hide();
         switch (SceneManager.GetActiveScene().name)
         {
             case LobbySceneName:

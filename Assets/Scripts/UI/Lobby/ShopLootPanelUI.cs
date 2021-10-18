@@ -79,7 +79,7 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
         _lootboxAnimator.SetBool(AnimatorOpenKey, true);
         _lootbox.Show();
         Background.SetTransparencyImmediate(BackgroundAlpha);
-        //GlobalVolumeManager.Instance.SetDepthOfFieldState(true);
+        GlobalVolumeManager.Instance.SetVolumeProfile(true);
         AudioManager.Instance.PlayEffect(_chestRotationClip);
     }
 

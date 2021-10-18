@@ -77,6 +77,11 @@ public class CharacterControlUI : BaseUI, IUIPanel
         UIManager.Instance.UIStackPush(_rebornUI);
     }
 
+    public void DamageCharacter()
+    {
+        _character.Damage(6);
+    }
+
     private void Close()
     {
         _isBackButtonEnabled = false;

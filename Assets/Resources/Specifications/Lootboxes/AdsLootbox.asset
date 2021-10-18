@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfLootbox: 4
   _animatorController: {fileID: 9100000, guid: c17799818f4abe043986f8e0f4f01f13, type: 2}
-  _mainSprite: {fileID: -2682389275861998022, guid: fd79b4fae56f38d4b838cb4340752e7e, type: 3}
+  _mainSprite: {fileID: -8941634179299819544, guid: 4ea3f31f642b99e4897d9b2d16ae349b, type: 3}
   _lootboxColor: {r: 0.3019608, g: 0.5647059, b: 0.8862746, a: 1}
   _nameKey: AdsLootbox
   _price: 0

@@ -23,7 +23,7 @@ public class CameraManager : MonoBehaviour
     {
         _cinemachineVirtualCamera.m_LookAt = target;
         _cinemachineVirtualCamera.m_Follow = target;
-        _needOrtographicSize = ortographicSize;
+        _cinemachineVirtualCamera.m_Lens.OrthographicSize = ortographicSize;
         _cinemachineTransposer.m_FollowOffset = offset;
         _resizingSpeed = resizingSpeed;
     }
@@ -39,7 +39,7 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
-        ChangeOrtographicSize();
+        //ChangeOrtographicSize();
         Shaking();
     }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfLootbox: 5
   _animatorController: {fileID: 9100000, guid: bf03f9bad7bbf85468f021ae439c48bc, type: 2}
-  _mainSprite: {fileID: -1646334969417813104, guid: 18a4a5fd8f2766849b4bc33be5670288, type: 3}
+  _mainSprite: {fileID: 5564819348497533603, guid: 4ea3f31f642b99e4897d9b2d16ae349b, type: 3}
   _lootboxColor: {r: 0.98823535, g: 0.70980394, b: 0.10980393, a: 1}
   _nameKey: ResetTimeLootbox
   _price: 0

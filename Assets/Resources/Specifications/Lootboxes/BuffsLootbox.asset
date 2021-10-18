@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfLootbox: 3
   _animatorController: {fileID: 9100000, guid: 983a6c8c45462274180060de916c4d94, type: 2}
-  _mainSprite: {fileID: 6553197240761450208, guid: 677b410e70fccad4087c02d1216ed499, type: 3}
+  _mainSprite: {fileID: -4100254392297414108, guid: 4ea3f31f642b99e4897d9b2d16ae349b, type: 3}
   _lootboxColor: {r: 0.19215688, g: 0.8588236, b: 0.5254902, a: 1}
   _nameKey: BuffsLootbox
   _price: 0

@@ -19,4 +19,4 @@ MonoBehaviour:
   _animatorController: {fileID: 9100000, guid: dc371301c7f4a2b479086247f2310e33, type: 2}
   _colliderSize: {x: 5, y: 5}
   _colliderOffset: {x: 0, y: 0}
-  _speed: 29
+  _speed: 30
