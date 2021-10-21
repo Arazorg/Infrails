@@ -4,9 +4,9 @@ using UnityEngine;
 public class FlyingEnemyData : AttackingEnemyData
 {
     [SerializeField] private Vector2 _bulletSpawnPosition;
+    [SerializeField] private Bullet _bulletPrefab;
 
-    public Vector2 BulletSpawnPosition
-    {
-        get { return _bulletSpawnPosition; }
-    }
+    public Vector2 BulletSpawnPosition => _bulletSpawnPosition;
+
+    public Bullet BulletPrefab => _bulletPrefab;
 }

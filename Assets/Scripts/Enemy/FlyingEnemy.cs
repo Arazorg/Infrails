@@ -2,28 +2,31 @@
 
 public class FlyingEnemy : Enemy
 {
-    public override void Death()
+    private EnemyMovement _enemyMovement;
+
+    public override void Init(EnemyData data, Transform spawnPoint, GameObject target)
     {
-        
+        Data = data;
+        Target = target;
+        Target.GetComponent<Character>().OnCharacterDeath += Death;
+        _enemyMovement = GetComponent<EnemyMovement>();
+        OnInit();
+        SetScale();       
     }
 
-    private void SetScaleFactorParams()
+    protected override void Death()
+    {
+        Target.GetComponent<Character>().OnCharacterDeath -= Death;
+        SpawnExplosionParticle();
+        Destroy(gameObject);
+    }
+
+    private void SetScale()
     {
         float minScale = 0.9f;
         float maxScale = 1.35f;
         float scaleFactor = Random.Range(minScale, maxScale);
-
         transform.localScale *= scaleFactor;
-        boxCollider2D.size = data.ColliderSize * scaleFactor;
-        boxCollider2D.offset = data.ColliderOffset;
-        _health = (int)(data.MaxHealth * scaleFactor);
-    }
-
-    private void InitMovementScript(Transform characterTransform, Transform spawnPoint)
-    {
-        var movementScript = gameObject.AddComponent<EnemyMovement>();
-        movementScript.Target = characterTransform;
-        movementScript.SpawnPoint = spawnPoint;
-        movementScript.IsChase = true;
+        Health = (int)(Data.MaxHealth * scaleFactor);
     }
 }

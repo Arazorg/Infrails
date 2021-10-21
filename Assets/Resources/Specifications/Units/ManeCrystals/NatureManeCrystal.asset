@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8bca4e862db19459806063576e46cf, type: 3}
   m_Name: NatureManeCrystal
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
   _animatorController: {fileID: 9100000, guid: e608ed05a69846348bec9ca104b35008, type: 2}
   _unitColor: {r: 0.6901961, g: 0.9176471, b: 0.36862746, a: 1}
-  _colliderSize: {x: 0, y: 5}
-  _colliderOffset: {x: 3, y: 2.5}
+  _colliderSize: {x: 2.5, y: 5}
+  _colliderOffset: {x: 0, y: 2.5}
   _unitName: NatureManeCrystal
   _maxHealth: 1
-  _type: 6
-  _isMove: 0
-  _isStaticScale: 1
+  _prefab: {fileID: 4937442529647204405, guid: 833682859b440184b883d85c27fa89c4, type: 3}
+  _enemyElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}

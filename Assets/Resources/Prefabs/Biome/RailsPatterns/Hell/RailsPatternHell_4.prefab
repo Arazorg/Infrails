@@ -496,6 +496,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4060649444844859350, guid: fbec0084e1556f84d9620e8e40ba7a94, type: 3}
+      propertyPath: _isSpawnEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4060649444844859350, guid: fbec0084e1556f84d9620e8e40ba7a94, type: 3}
       propertyPath: availableNextRails.Array.size
       value: 1
       objectReference: {fileID: 0}

@@ -25,6 +25,8 @@ public class LevelSpawner : MonoBehaviour
 
     public event LevelSpawned OnLevelSpawned;
 
+    public BiomeData CurrentBiomeData => _currentBiomeData;
+
     public Rail CurrentBiomeStartRail { get => _currentBiomeStartRail; set => _currentBiomeStartRail = value; }
 
     public Rail CurrentBiomeFinishRail
@@ -69,6 +71,7 @@ public class LevelSpawner : MonoBehaviour
                 _currentBiome.DestroyLevel();
 
             GetBiomeData();
+            EnemiesManager.Instance.SetEnemiesData(_currentBiomeData);
             var level = Instantiate(_levelPrefab, _nextBiomeSpawnPosition, Quaternion.identity);
             _currentBiome = level.GetComponent<Biome>();
             _nextBiomeSpawnPosition = _currentBiome.Init(_currentBiomeData, _nextBiomeData);
@@ -83,7 +86,7 @@ public class LevelSpawner : MonoBehaviour
         }
     }
 
-    public void ShowLevelUI()
+    public void InitLevelUI()
     {
         _pauseLevelInfoPanel.SetLevelInfoPanel(_levelCounter, _currentLevelBiomes);
         _levelInfoPanel.SetLevelInfoPanel(_levelCounter, _currentLevelBiomes);

@@ -20,7 +20,7 @@ public abstract class Bullet : MonoBehaviour
     public float CritChance => _critChance;
 
 
-    public void Init(BulletData data, int damage, float critChance, Element.Type elementType)
+    public void Init(BulletData data, int damage, float critChance, Element.Type elementType = Element.Type.Earth)
     {
         Data = data;
         _damage = damage;
@@ -54,8 +54,15 @@ public abstract class Bullet : MonoBehaviour
 
     private void SetSpriteByElementType(Element.Type element)
     {
-        var sprite = Data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletSprite;
-        GetComponent<SpriteRenderer>().sprite = sprite;
+        if(Data.BulletsSpritesByElements.Count != 0)
+        {
+            var sprite = Data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletSprite;
+            GetComponent<SpriteRenderer>().sprite = sprite;
+        }       
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = Data.MainSprite;
+        }
     }
 
     private void SetParticleColor(Color color)

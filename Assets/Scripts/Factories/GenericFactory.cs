@@ -7,7 +7,7 @@ public class GenericFactory<T> : MonoBehaviour where T : MonoBehaviour
         return Instantiate(prefab, pointToSpawn);
     }
 
-    public T GetNewInstanceToPosition(T prefab, Vector3 spawnPosition)
+    public T GetNewInstanceByPosition(T prefab, Vector3 spawnPosition)
     {
         return Instantiate(prefab, spawnPosition, Quaternion.identity);
     }

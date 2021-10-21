@@ -1,58 +1,60 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Egg : Enemy
 {
-    private const float WiggleDuration = 0.33f;
+    private const float SwayDuration = 0.5f;
 
-    private Transform shadowTransform;
-    private float wiggleTime = 0;
-    private float startAngle;
-    private float finishAngle;
+    [SerializeField] private Transform _shadowTransform;
 
-    public override void Death()
+    private float _swayTime = float.MaxValue;
+    private float _angleFactor = 1f;
+
+    public override void Init(EnemyData data, Transform spawnPoint, GameObject target)
     {
-        EnemySpawner.Instance.SpawnEnemiesFromEgg(transform.parent);
+        Data = data;
+        Target = target;
+        OnInit();
+    }
+
+    protected override void Death()
+    {
+        EnemiesManager.Instance.SpawnFlyingEnemies(new List<Transform>() { transform });
+        SpawnExplosionParticle();
         Destroy(gameObject);
     }
 
     private void Start()
     {
-        shadowTransform = transform.GetChild(0);
-        GetSideOfWiggle();
+        SetAngleFactor();
+        _swayTime = 0;
     }
 
-    private void GetSideOfWiggle()
+    private void Update()
     {
-        startAngle = 0;
-        if (Random.Range(0, 2) % 2 == 0)
-        {
-            finishAngle = 10;
-        }           
-        else
-        {
-            finishAngle = -10;
-        }     
+        Sway();
     }
 
-    private void FixedUpdate()
+    private void Sway()
     {
-        EggWiggle();
-    }
-
-    private void EggWiggle()
-    {
-        if (wiggleTime < WiggleDuration)
+        if (_swayTime <= SwayDuration)
         {
-            float z = Mathf.Lerp(startAngle, finishAngle, wiggleTime / WiggleDuration);
-            transform.rotation = Quaternion.Euler(0, 0, z);
-            shadowTransform.rotation = Quaternion.Euler(new Vector3(0, 0, -transform.rotation.z));
-            wiggleTime += Time.fixedDeltaTime;
+            float angle = 10;
+            float currentAngle = Mathf.Lerp(angle * _angleFactor, angle * -_angleFactor, _swayTime / SwayDuration);
+            transform.rotation = Quaternion.Euler(0, 0, currentAngle);
+            _shadowTransform.localRotation = Quaternion.Euler(new Vector3(0, 0, -currentAngle));
+            _swayTime += Time.deltaTime;
         }
         else
         {
-            wiggleTime = 0;
-            startAngle = finishAngle;
-            finishAngle *= -1;
+            _angleFactor *= -1;
+            _swayTime = 0;
         }
+    }
+
+    private void SetAngleFactor()
+    {
+        if (Random.Range(0, 2) == 0)
+            _angleFactor *= -1;
     }
 }

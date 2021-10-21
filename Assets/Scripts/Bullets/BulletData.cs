@@ -7,6 +7,7 @@ public class BulletData : ScriptableObject
 {
     [SerializeField] private Bullet _prefab;
     [SerializeField] private BulletType _type;
+    [SerializeField] private Sprite _mainSprite;
     [SerializeField] private List<BulletElement> _bulletsSpritesByElements;
     [SerializeField] private Vector2 _colliderSize;
     [SerializeField] private Vector2 _colliderOffset;
@@ -26,6 +27,8 @@ public class BulletData : ScriptableObject
     public BulletType Type => _type;
 
     public List<BulletElement> BulletsSpritesByElements => _bulletsSpritesByElements;
+
+    public Sprite MainSprite => _mainSprite;
 
     public Vector2 ColliderSize => _colliderSize;
 

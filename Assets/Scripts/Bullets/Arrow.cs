@@ -5,12 +5,14 @@ public class Arrow : Bullet
 {
     public override void BulletHit(Collider2D collision)
     {
-        StickArrow(collision.transform);
+        DestroyBullet();
+        //StickArrow(collision.transform);
     }
 
     private void StickArrow(Transform target)
     {
         transform.parent = target;
+        
         Rigidbody.Sleep();
         StartCoroutine(DelayToDestroy());
     }

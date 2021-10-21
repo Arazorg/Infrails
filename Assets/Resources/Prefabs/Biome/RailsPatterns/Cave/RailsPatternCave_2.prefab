@@ -415,9 +415,7 @@ MonoBehaviour:
   - {fileID: 0}
   _destroyableObjectsSpawnPoints:
   - {fileID: 4088057635606038075}
-  - {fileID: 0}
   - {fileID: 6043356566530047124}
-  - {fileID: 0}
   _firstRail: {fileID: 8393718510622713960}
   _lastRail: {fileID: 4615236489283819557}
 --- !u!1 &8217537628632638905
@@ -1695,6 +1693,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4060649444844859350, guid: fbec0084e1556f84d9620e8e40ba7a94, type: 3}
       propertyPath: isSpawnEnemies
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4060649444844859350, guid: fbec0084e1556f84d9620e8e40ba7a94, type: 3}
+      propertyPath: _isSpawnEnemies
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4060649444844859350, guid: fbec0084e1556f84d9620e8e40ba7a94, type: 3}

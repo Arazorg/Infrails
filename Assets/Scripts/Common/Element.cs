@@ -7,9 +7,15 @@ public class Element : ScriptableObject
 {
     [SerializeField] private Type _type;
     [SerializeField] private List<ElementResistance> _elementsResistances;
+    [SerializeField] private Sprite _elementSpriteUI;
+
+    public Type ElementType => _type;
+
+    public Sprite ElementSpriteUI => _elementSpriteUI;
 
     public enum Type
     {
+        None,
         Nature,
         Earth,
         Fire,

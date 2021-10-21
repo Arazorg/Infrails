@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class Rail : MonoBehaviour
@@ -12,6 +10,7 @@ public class Rail : MonoBehaviour
     [SerializeField] private Sprite _horizontalRailSprite;
     [SerializeField] private bool _isLobby;
     [SerializeField] private bool _isFinish;
+    [SerializeField] private bool _isSpawnEnemies;
 
     private Biome _currentBiome;
 
@@ -22,6 +21,8 @@ public class Rail : MonoBehaviour
     public Rail NextRail { get => _nextRail; set => _nextRail = value; }
 
     public Transform RailTransform => transform;
+
+    public bool IsSpawnEnemies => _isSpawnEnemies;
 
     private void Start()
     {
@@ -66,13 +67,14 @@ public class Rail : MonoBehaviour
         {
             if (_isFinish)
                 EnterFinishRail();
+            else if (_isSpawnEnemies)
+                EnemiesManager.Instance.SpawnFlyingEnemies(GetComponentInParent<RailsPattern>().FlyingEnemiesSpawnPoints);
         }
     }
 
     private void EnterFinishRail()
     {
         CurrentGameInfo.Instance.ReachedBiomeNumber++;
-        EnemySpawner.Instance.MoveEnemiesToSpawnPoints();
         OnReachedEndOfLevel?.Invoke();
         _currentBiome.SetBiomeLightsState(GameConstants.TurnOff);
     }

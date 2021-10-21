@@ -2,62 +2,81 @@
 
 public class ManeCrystal : Enemy
 {
-    private const float wiggleDuration = 0.5f;
+    private const float SwayDuration = 0.5f;
 
-    private Transform shadowTransform;
-    private Vector3 crystalShadowOffset = new Vector3(0, -2, 0);
-    private Vector3 startPosition;
-    private Vector3 startOffset;
-    private Vector3 finishOffset;
-    private float wiggleTime = 0;
+    [SerializeField] private Transform _shadowTransform;
+
+    private Character _character;
+    private Vector3 _startPosition;
+    private Vector3 _shadowStartPosition;
+    private Vector3 _startOffset;
+    private Vector3 _finishOffset;
+    private float _swayTime = float.MaxValue;
+    private float _offsetFactorY = 0.8f;
+
+    public override void Init(EnemyData data, Transform spawnPoint, GameObject target)
+    {
+        Data = data;   
+        OnInit();
+        if (target == null)
+            EnemiesManager.Instance.OnTargetInit += GetCharacter;
+        else
+            _character = target.GetComponent<Character>();
+    }
+
+    protected override void Death()
+    {
+        _character.SetWeaponElement(Data.EnemyElement);
+        SpawnExplosionParticle();
+        Destroy(gameObject);
+    }
+
 
     private void Start()
     {
-        shadowTransform = transform.GetChild(0);
-        startPosition = transform.position;
-        SetStartOffset();
+        _startPosition = transform.position;
+        _shadowStartPosition = _shadowTransform.position;
+        SetOffsetFactor();
+        SetOffsets();
+        _swayTime = 0;
     }
 
-    private void SetStartOffset()
-    {       
-        if (Random.Range(0, 10) % 2 == 0)
-        {
-            startOffset = new Vector3(0, 1f, 0);
-            finishOffset = new Vector3(0, -1f, 0);
-        }            
-        else
-        {
-            startOffset = new Vector3(0, -1f, 0);
-            finishOffset = new Vector3(0, 1f, 0);
-        }
-        transform.position += startOffset;
-    }
-
-    private void FixedUpdate()
+    private void Update()
     {
-        ManeCrystalWiggle();
+        Sway();
     }
 
-    private void ManeCrystalWiggle()
+    private void Sway()
     {
-        if (wiggleTime < wiggleDuration)
+        if (_swayTime <= SwayDuration)
         {
-            Vector3 currentPosition = Vector3.Lerp(startPosition + startOffset, startPosition + finishOffset, wiggleTime / wiggleDuration);
-            transform.position = currentPosition;
-            shadowTransform.position = transform.parent.position + crystalShadowOffset;
-            wiggleTime += Time.fixedDeltaTime;
+            _swayTime += Time.deltaTime;
+            transform.position = Vector3.Lerp(_startPosition + _startOffset, _startPosition + _finishOffset, _swayTime / SwayDuration);
+            _shadowTransform.position = _shadowStartPosition;
         }
         else
         {
-            wiggleTime = 0;
-            startOffset = finishOffset;
-            finishOffset *= -1;
+            _offsetFactorY *= -1;
+            SetOffsets();
+            _swayTime = 0;
         }
     }
 
-    public override void Death()
+    private void SetOffsetFactor()
     {
-        
-        Destroy(gameObject);
+        if (Random.Range(0, 2) == 0)
+            _offsetFactorY *= -1;
+    }
+
+    private void SetOffsets()
+    {
+        _startOffset = new Vector3(0, _offsetFactorY, 0);
+        _finishOffset = new Vector3(0, -_offsetFactorY, 0);
+    }
+
+    private void GetCharacter(GameObject target)
+    {
+        EnemiesManager.Instance.OnTargetInit -= GetCharacter;
+        _character = target.GetComponent<Character>();
     }
 }

@@ -17,7 +17,6 @@ MonoBehaviour:
   _colliderSize: {x: 3, y: 4}
   _colliderOffset: {x: 0, y: 2}
   _unitName: SpaceEgg
-  _maxHealth: 1
-  _type: 2
-  _isMove: 0
-  _isStaticScale: 1
+  _maxHealth: 0
+  _prefab: {fileID: 943679413235862005, guid: 8c6ea78d5cebd20439287d11139550ea, type: 3}
+  _enemyElement: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterControlUI : BaseUI, IUIPanel
 {
@@ -15,6 +16,10 @@ public class CharacterControlUI : BaseUI, IUIPanel
 
     [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _moneyText;
+
+    [Header("Images")]
+    [SerializeField] private Image _elementOutlineImage;
+    [SerializeField] private Image _elementImage;
 
     private bool _isActive;
     private bool _isBackButtonEnabled;
@@ -56,6 +61,8 @@ public class CharacterControlUI : BaseUI, IUIPanel
         _character = character;
         character.OnCharacterDeath += OpenRebornUI;
         character.OnMoneyChanged += SetMoneyText;
+        character.OnElementChanged += SetElementImage;
+        //обновление стихии с новым уровнем
     }
 
     public void Open()
@@ -96,6 +103,17 @@ public class CharacterControlUI : BaseUI, IUIPanel
     private void SetMoneyText(int money)
     {
         _moneyText.text = money.ToString();
+    }
+
+    private void SetElementImage(Element element)
+    {
+        _elementImage.sprite = element.ElementSpriteUI;
+        _elementOutlineImage.color = Color.white;
+
+        if(element.GetElementInteractionByType(LevelSpawner.Instance.CurrentBiomeData.BiomeElement.ElementType) < 1)
+            _elementOutlineImage.color = Color.red;
+        else
+            _elementOutlineImage.color = Color.green;
     }
 
     private void BackButtonClick()

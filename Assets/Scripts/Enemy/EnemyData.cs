@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
+[CreateAssetMenu(menuName = "Enemies/Standart Enemy", fileName = "New Enemy")]
 public class EnemyData : UnitData
 {
-    [SerializeField] private EnemyType _type;
-    [SerializeField] private bool _isMove;
-    [SerializeField] private bool _isStaticScale;
+    [SerializeField] private Enemy _prefab;
+    [SerializeField] private Element _enemyElement;
 
     public enum EnemyType
     {
@@ -17,18 +17,7 @@ public class EnemyData : UnitData
         ManeCrystal
     }
 
-    public EnemyType Type
-    {
-        get { return _type; }
-    }
+    public Enemy Prefab => _prefab;
 
-    public bool IsMove
-    {
-        get { return _isMove; }
-    }
-
-    public bool IsStaticScale
-    {
-        get { return _isStaticScale; }
-    }
+    public Element EnemyElement => _enemyElement;
 }

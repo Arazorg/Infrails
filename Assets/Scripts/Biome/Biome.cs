@@ -20,7 +20,6 @@ public class Biome : MonoBehaviour
         Vector3 nextLevelSpawnPosition = CreateEnvironment(Random.Range(minLengthOfLevel, maxLenghtOfLevel));
         SetNextBiomeData(nextBiomeData);
         SetBiomeLightsState(true);
-        SpawnDestroyableObjects();
         return nextLevelSpawnPosition;
     }
 
@@ -50,12 +49,6 @@ public class Biome : MonoBehaviour
         }            
     }
 
-    public void SpawnDestroyableObjects()
-    {
-        foreach (var railsPattern in _currentRailsPatterns)
-            EnemySpawner.Instance.SpawnDestroyableObjects(railsPattern.DestroyableObjectsSpawnPoints);
-    }
-
     public void DestroyLevel()
     {
         Destroy(gameObject, 5f);
@@ -76,7 +69,7 @@ public class Biome : MonoBehaviour
             int currentRailsPatternNumber = GetRailsPatternNumber(lastRailsPatternNumber);
             lastRailsPatternNumber = currentRailsPatternNumber;
             GameObject railsPattern = Instantiate(_biomeData.RailsPrefabs[currentRailsPatternNumber], floor.transform);
-
+            
             _currentRailsPatterns.Add(railsPattern.GetComponent<RailsPattern>());
             if (_lastRail != null)
             {
@@ -91,6 +84,8 @@ public class Biome : MonoBehaviour
 
             if (i == 0 && LevelSpawner.Instance.CurrentBiomeFinishRail != null)
                 LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail = railsPattern.GetComponent<RailsPattern>().FirstRail;
+
+            EnemiesManager.Instance.SpawnDestroyableObjects(railsPattern.GetComponent<RailsPattern>().DestroyableObjectsSpawnPoints);
         }
 
         Vector3 nextLevelSpawnPosition = CreateEndWall(nextFloorSpawnPosition);

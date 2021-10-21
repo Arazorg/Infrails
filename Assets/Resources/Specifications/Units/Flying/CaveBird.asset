@@ -17,12 +17,11 @@ MonoBehaviour:
   _colliderSize: {x: 5, y: 3}
   _colliderOffset: {x: 0, y: 0}
   _unitName: Cave Bird
-  _maxHealth: 12
-  _type: 0
-  _isMove: 1
-  _isStaticScale: 0
-  _enemyElement: 4
+  _maxHealth: 4
+  _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
+  _enemyElement: {fileID: 11400000, guid: 38675b82c5e3f834e89d54b880214369, type: 2}
   _bulletData: {fileID: 11400000, guid: 5f7cd1fed4f5e4f4580dcec6a7060bc6, type: 2}
-  _damage: 2
+  _damage: 1
   _fireRate: 0.9
   _bulletSpawnPosition: {x: -2.5, y: -0.95}
+  _bulletPrefab: {fileID: 6440016302738299195, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}

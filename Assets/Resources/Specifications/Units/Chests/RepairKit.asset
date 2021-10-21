@@ -17,7 +17,6 @@ MonoBehaviour:
   _colliderSize: {x: 4.5, y: 3}
   _colliderOffset: {x: 0, y: 0.25}
   _unitName: RepairKit
-  _maxHealth: 1
-  _type: 3
-  _isMove: 0
-  _isStaticScale: 1
+  _maxHealth: 0
+  _prefab: {fileID: -2282956761525133315, guid: 02d3933721bfb9146ac7efeab9bafe25, type: 3}
+  _enemyElement: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a33ade8a44692e4d84414aba57f5432, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: 
-  _type: 3
+  _type: 4
   _elementsResistances:
   - ElementType: 2
     Resistance: 2
@@ -20,3 +20,4 @@ MonoBehaviour:
     Resistance: 1.25
   - ElementType: 4
     Resistance: 0.5
+  _elementSpriteUI: {fileID: -2644280992343800, guid: 650020d50336f424f9013d90401c15e5, type: 3}

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9329260c36bc814aa8c0aef43658167, type: 3}
   m_Name: EnemyBullet4
   m_EditorClassIdentifier: 
-  bulletsSprites:
-  - element: 0
-    bulletSprite: {fileID: -8392359652682649586, guid: c545d606719b0b3479b54901901b39f6, type: 3}
-    bulletColor: {r: 1, g: 0, b: 0, a: 1}
-  bulletTag: EnemyBullet
-  colliderSize: {x: 1.5, y: 1.5}
-  colliderOffset: {x: 0, y: 0}
+  _prefab: {fileID: 6440016302738299195, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}
+  _type: 0
+  _mainSprite: {fileID: -8392359652682649586, guid: c545d606719b0b3479b54901901b39f6, type: 3}
+  _bulletsSpritesByElements: []
+  _colliderSize: {x: 1.56, y: 1.56}
+  _colliderOffset: {x: 0, y: 0}
+  _bulletTag: EnemyBullet

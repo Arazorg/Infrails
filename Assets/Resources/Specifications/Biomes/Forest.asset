@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 7809658171277856376, guid: 156c3acc9b0e4ac468511f5908433ced, type: 3}
   - {fileID: 4935777026521638266, guid: b63cea9fef5218f498fce9d3f9b47c72, type: 3}
   - {fileID: 6078561680904602029, guid: c3feec9f24a1e964f90ff37734ebc18e, type: 3}
-  _biomeUISprite: {fileID: -8860250130876099183, guid: 650020d50336f424f9013d90401c15e5, type: 3}
+  _biomeElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}
   _floorSprite: {fileID: 21300000, guid: 29e7682e4e3cdcc4db49c77acb72b280, type: 3}
   _endWallSprite: {fileID: 21300000, guid: 3d7758dffe7dcea4a9ff224f0c6b2962, type: 3}
   _plateSprite: {fileID: 21300000, guid: 5f1ba102c29c9064cb5cd2c183d04ee1, type: 3}
@@ -28,4 +28,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 05eeda21f044fc5468807e678694d51c, type: 2}
   _staticEnemiesData: []
   _eggData: {fileID: 11400000, guid: e728541701a88764aa8666e2a968bb74, type: 2}
-  _maneCrystalData: {fileID: 11400000, guid: ec323dde17149bc4d8af88e556655a6e, type: 2}
+  _mainManeCrystalData: {fileID: 11400000, guid: ec323dde17149bc4d8af88e556655a6e, type: 2}

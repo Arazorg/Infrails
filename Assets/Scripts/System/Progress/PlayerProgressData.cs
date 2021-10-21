@@ -16,7 +16,7 @@ public class PlayerProgressData
 
     public PlayerProgressData()
     {
-        PlayerMoney = 1250;
+        PlayerMoney = 50000;
         IsLobbyTutorialCompleted = false;
         IsGameTutorialCompleted = false;
         TrolleyForSupportAvailability = new ItemAvailability(TrolleyForSupportName, false);

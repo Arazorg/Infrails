@@ -14,20 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 8254745096853595179, guid: ef4b2ee3227b1524786f0f43839faab2, type: 3}
   _type: 2
+  _mainSprite: {fileID: 0}
   _bulletsSpritesByElements:
-  - Element: 0
+  - Element: 1
     BulletSprite: {fileID: -1461590914025265322, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
     BulletColor: {r: 0.7176471, g: 0.62352943, b: 0.6039216, a: 1}
-  - Element: 1
+  - Element: 2
     BulletSprite: {fileID: -8238186848048912356, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
     BulletColor: {r: 0.5529412, g: 0.43137258, b: 0.30588236, a: 1}
-  - Element: 2
+  - Element: 3
     BulletSprite: {fileID: 1936476534038261649, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
     BulletColor: {r: 0.97647065, g: 0.6745098, b: 0.003921569, a: 1}
-  - Element: 3
+  - Element: 4
     BulletSprite: {fileID: -3181535333269857129, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
     BulletColor: {r: 0.10196079, g: 0.29411766, b: 0.6862745, a: 1}
-  - Element: 4
+  - Element: 5
     BulletSprite: {fileID: 998226675439371719, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
     BulletColor: {r: 0.5882353, g: 0.30588236, b: 0.7058824, a: 1}
   _colliderSize: {x: 1.16, y: 2.22}

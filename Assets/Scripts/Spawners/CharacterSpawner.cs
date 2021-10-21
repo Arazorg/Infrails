@@ -6,7 +6,7 @@ public class CharacterSpawner : MonoBehaviour
 
     private const int LobbyTrolleySpeed = 55;
 
-    [Header ("Prefabs")]
+    [Header("Prefabs")]
     [SerializeField] private GameObject _characterPrefab;
     [SerializeField] private GameObject _trolleyPrefab;
 
@@ -36,13 +36,13 @@ public class CharacterSpawner : MonoBehaviour
 
     public GameObject SpawnCharacter(CharacterData data, Transform spawnPoint)
     {
-        GameObject characterObject = Instantiate(_characterPrefab, spawnPoint);
-        var character = characterObject.GetComponent<Character>();
+        GameObject characterGameObject = Instantiate(_characterPrefab, spawnPoint);
+        var character = characterGameObject.GetComponent<Character>();
         character.Init(data);
         _cameraManager.Init();
-        _cameraManager.SetCameraParams(characterObject.transform, _gameCameraSize, _gameCameraOffset);
-        EnemySpawner.Instance.CharacterObject = characterObject;
-        return characterObject;
+        _cameraManager.SetCameraParams(characterGameObject.transform, _gameCameraSize, _gameCameraOffset);
+        EnemiesManager.Instance.Target = characterGameObject;
+        return characterGameObject;
     }
 
     private void Awake()

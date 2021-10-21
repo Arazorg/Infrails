@@ -17,12 +17,11 @@ MonoBehaviour:
   _colliderSize: {x: 4.75, y: 3}
   _colliderOffset: {x: 0.25, y: 0}
   _unitName: Underwater Fish
-  _maxHealth: 12
-  _type: 0
-  _isMove: 1
-  _isStaticScale: 0
-  _enemyElement: 3
+  _maxHealth: 4
+  _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
+  _enemyElement: {fileID: 11400000, guid: 97a0ce2a93f544643877c903e109af8f, type: 2}
   _bulletData: {fileID: 11400000, guid: 5f7cd1fed4f5e4f4580dcec6a7060bc6, type: 2}
-  _damage: 2
+  _damage: 1
   _fireRate: 1.5
   _bulletSpawnPosition: {x: -2.9, y: -1.2}
+  _bulletPrefab: {fileID: 6440016302738299195, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}

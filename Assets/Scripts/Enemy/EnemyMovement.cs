@@ -3,15 +3,14 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-#pragma warning disable 0649
     [SerializeField] private Transform enemyShadowTransform;
-#pragma warning restore 0649
 
     public Transform Target
     {
         set { target = value; }
     }
-    public Transform target;
+
+    private Transform target;
 
     public Transform SpawnPoint
     {

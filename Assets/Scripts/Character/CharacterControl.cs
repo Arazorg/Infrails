@@ -3,15 +3,19 @@ using UnityEngine;
 public class CharacterControl : MonoBehaviour
 {
     private Joystick _joystick;
-    private Weapon _weapon;
+    private Weapon _currentWeapon;
+    private Character _character;
+
     private bool _isFacingRight;
     private bool _isControl;
     private float _weaponAngle;
 
+    public Weapon CurrentWeapon { get => _currentWeapon; set => _currentWeapon = value; }
+
     public Joystick Joystick
     {
-        set 
-        { 
+        set
+        {
             _joystick = value;
             _isControl = true;
         }
@@ -19,11 +23,16 @@ public class CharacterControl : MonoBehaviour
 
     public void SpawnWeapon(CharacterData data)
     {
-        _weapon = GetComponent<WeaponFactory>().GetWeapon(data.CharacterStartWeapon.Prefab, transform);
-        _weapon.Init(data.CharacterStartWeapon);
-        _weapon.SetParentAndOffset(transform, data.WeaponSpawnPoint);
-        _weapon.SetHands(data.Hands);
+        _currentWeapon = GetComponent<WeaponFactory>().GetWeapon(data.CharacterStartWeapon.Prefab, transform);
+        _currentWeapon.Init(data.CharacterStartWeapon);
+        _currentWeapon.SetParentAndOffset(transform, data.WeaponSpawnPoint);
+        _currentWeapon.SetHands(data.Hands);
         _isFacingRight = true;
+    }
+
+    private void Start()
+    {
+        _character = GetComponent<Character>();
     }
 
     private void Update()
@@ -39,11 +48,13 @@ public class CharacterControl : MonoBehaviour
             if (_joystick.Horizontal != 0f && _joystick.Vertical != 0f)
             {
                 _weaponAngle = -Mathf.Atan2(_joystick.Horizontal, _joystick.Vertical) * Mathf.Rad2Deg;
-                _weapon.RotateAndAttack(true, _weaponAngle);
+                _currentWeapon.Rotate(_weaponAngle);
+                _currentWeapon.IsAttack = true && (!_character.IsDeath);
             }
             else
             {
-                _weapon.RotateAndAttack(false, _weaponAngle);
+                _currentWeapon.Rotate(_weaponAngle);
+                _currentWeapon.IsAttack = false;
             }
         }
     }

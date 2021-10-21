@@ -7,9 +7,9 @@ public class BiomeData : ScriptableObject
     [SerializeField] private string _biomeName;
     [SerializeField] private Color _biomeColor;
     [SerializeField] private List<GameObject> _railsPrefabs;
+    [SerializeField] private Element _biomeElement;
 
     [Header("Sprites")]
-    [SerializeField] private Sprite _biomeUISprite;
     [SerializeField] private Sprite _floorSprite;
     [SerializeField] private Sprite _endWallSprite;
     [SerializeField] private Sprite _plateSprite;
@@ -19,11 +19,11 @@ public class BiomeData : ScriptableObject
     [SerializeField] private List<EnemyData> _flyingEnemiesData;
     [SerializeField] private List<EnemyData> _staticEnemiesData;
     [SerializeField] private EnemyData _eggData;
-    [SerializeField] private EnemyData _maneCrystalData;
+    [SerializeField] private EnemyData _mainManeCrystalData;
 
     public string BiomeName => _biomeName;
 
-    public Sprite BiomeUISprite => _biomeUISprite;
+    public Element BiomeElement => _biomeElement;
 
     public Sprite FloorSprite => _floorSprite;
 
@@ -43,5 +43,5 @@ public class BiomeData : ScriptableObject
 
     public EnemyData EggData => _eggData;
 
-    public EnemyData ManeCrystalData => _maneCrystalData;
+    public EnemyData MainManeCrystalData => _mainManeCrystalData;
 }

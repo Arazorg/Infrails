@@ -12,13 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8bca4e862db19459806063576e46cf, type: 3}
   m_Name: FireManeCrystal
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 0}
   _animatorController: {fileID: 9100000, guid: e3f08ec79ee222a40826703d05739951, type: 2}
   _unitColor: {r: 0.9490197, g: 0.654902, b: 0, a: 1}
-  _colliderSize: {x: 0, y: 5}
-  _colliderOffset: {x: 3, y: 2.5}
+  _colliderSize: {x: 2.5, y: 5}
+  _colliderOffset: {x: 0, y: 2.5}
   _unitName: FireManeCrystal
   _maxHealth: 1
-  _type: 6
-  _isMove: 0
-  _isStaticScale: 1
+  _prefab: {fileID: 4937442529647204405, guid: 833682859b440184b883d85c27fa89c4, type: 3}
+  _enemyElement: {fileID: 11400000, guid: be21b1baa80e3024dac96d96a8788132, type: 2}

@@ -17,12 +17,11 @@ MonoBehaviour:
   _colliderSize: {x: 3.5, y: 4}
   _colliderOffset: {x: -0.25, y: 0}
   _unitName: Hell Bird
-  _maxHealth: 17
-  _type: 0
-  _isMove: 1
-  _isStaticScale: 0
-  _enemyElement: 2
+  _maxHealth: 4
+  _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
+  _enemyElement: {fileID: 11400000, guid: be21b1baa80e3024dac96d96a8788132, type: 2}
   _bulletData: {fileID: 11400000, guid: 0987a87c1c4294b41b0d4981ae50479b, type: 2}
   _damage: 1
   _fireRate: 1
   _bulletSpawnPosition: {x: -2.85, y: -1.25}
+  _bulletPrefab: {fileID: 6440016302738299195, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}

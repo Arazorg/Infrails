@@ -245,7 +245,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52.7
+  m_fontSize: 46.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -386,6 +386,7 @@ MonoBehaviour:
   _horizontalRailSprite: {fileID: 0}
   _isLobby: 1
   _isFinish: 0
+  _isSpawnEnemies: 0
 --- !u!1 &24726522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,6 +1762,7 @@ MonoBehaviour:
   _horizontalRailSprite: {fileID: 0}
   _isLobby: 1
   _isFinish: 0
+  _isSpawnEnemies: 0
 --- !u!61 &105225365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4249,7 +4251,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.4787234, y: 1}
+    m_SensorSize: {x: 0.46220303, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10846,7 +10848,7 @@ MonoBehaviour:
   _backgroundType: 2
   _tutorialText: {fileID: 1521059609}
   _phraseImage: {fileID: 1894415002}
-  _finishButton: {fileID: 0}
+  _finishButton: {fileID: 1898406481}
   _guideAnimator: {fileID: 2015826521}
 --- !u!1 &714095241
 GameObject:
@@ -20297,7 +20299,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.5
+  m_fontSize: 37.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20381,7 +20383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: 1368267.6}
+  m_AnchoredPosition: {x: 25, y: 1368860.9}
   m_SizeDelta: {x: -50, y: 800}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1419937059
@@ -22892,6 +22894,7 @@ MonoBehaviour:
   _horizontalRailSprite: {fileID: 0}
   _isLobby: 1
   _isFinish: 0
+  _isSpawnEnemies: 0
 --- !u!61 &1552178284
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30348,7 +30351,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.05
+  m_fontSize: 46.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

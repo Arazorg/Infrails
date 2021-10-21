@@ -17,7 +17,6 @@ MonoBehaviour:
   _colliderSize: {x: 4.5, y: 3}
   _colliderOffset: {x: 0, y: 0.25}
   _unitName: FirstAidKit
-  _maxHealth: 1
-  _type: 3
-  _isMove: 0
-  _isStaticScale: 1
+  _maxHealth: 0
+  _prefab: {fileID: -4153376179917395174, guid: f148e96d5937d2242b69f713eab3c73e, type: 3}
+  _enemyElement: 0

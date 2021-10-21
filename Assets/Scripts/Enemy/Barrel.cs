@@ -2,16 +2,15 @@
 
 public class Barrel : Enemy
 {
-    public override void Death()
+    public override void Init(EnemyData data, Transform spawnPoint, GameObject target)
     {
-        isDeath = true;
-        Explosion();
-        Destroy(gameObject, 0.33f);
+        Data = data;
+        OnInit();
     }
 
-    private void Explosion()
+    protected override void Death()
     {
-        string explosionAnimationKey = "Explosion";
-        GetComponent<Animator>().Play(explosionAnimationKey);
+        SpawnExplosionParticle();
+        Destroy(gameObject);
     }
 }

@@ -4,43 +4,74 @@ public abstract class Enemy : MonoBehaviour
 {
     private const string PlayerBulletTag = "PlayerBullet";
 
-    protected BoxCollider2D boxCollider2D;
-    protected EnemyData data;
-    protected bool isDeath;
-    protected Character characterScript;
-    protected int _health;
+    [SerializeField] protected GameObject ExplosionPrefab;
 
-    private Animator animator;
+    protected BoxCollider2D BoxCollider2D;
+    protected Character CharacterScript;
+    protected int Health;
+
+    private EnemyData _data;
+    private Animator _animator;
+    private GameObject _target;
     private bool _isGetDamage;
 
-    public void Init(EnemyData data, GameObject character =  null, Transform spawnPoint = null)
-    {
-        InitComponents();
-        animator.runtimeAnimatorController = data.AnimatorController;
-        boxCollider2D.size = data.ColliderSize;
-        boxCollider2D.offset = data.ColliderOffset;
-        _health = data.MaxHealth;
-    }
+    public EnemyData Data { get => _data; set => _data = value; }
+
+    public GameObject Target { get => _target; set => _target = value; }
 
     public void GetDamage(int damage)
     {
         if (_isGetDamage)
         {
-            _health -= damage;
-            if (_health < 0)
+            Health -= damage;
+            if (Health < 0)
             {
-                _health = 0;
+                Health = 0;
                 Death();
             }
         }
     }
 
-    public abstract void Death();
+    public abstract void Init(EnemyData data, Transform spawnPoint, GameObject target);
+
+    protected abstract void Death();
+
+    protected void OnInit()
+    {
+        InitComponents();
+        _animator.runtimeAnimatorController = Data.AnimatorController;
+        BoxCollider2D.size = Data.ColliderSize;
+        BoxCollider2D.offset = Data.ColliderOffset;
+        Health = Data.MaxHealth;
+    }
+
+    protected void SpawnExplosionParticle()
+    {
+        SetParticleColor(Data.UnitColor);
+        GameObject explosion = Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
+        Destroy(explosion, explosion.GetComponent<ParticleSystem>().main.startLifetimeMultiplier);
+    }
 
     private void InitComponents()
     {
-        animator = GetComponent<Animator>();
-        boxCollider2D = GetComponent<BoxCollider2D>();
+        _animator = GetComponent<Animator>();
+        BoxCollider2D = GetComponent<BoxCollider2D>();
+    }
+
+    private void SetParticleColor(Color color)
+    {
+        var particleSettings = ExplosionPrefab.GetComponent<ParticleSystem>().main;
+        particleSettings.startColor = color;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.CompareTag(PlayerBulletTag))
+        {
+            Bullet bullet = collision.transform.GetComponent<Bullet>();
+            GetDamage(bullet.Damage);
+            bullet.BulletHit(collision);
+        }
     }
 
     private void OnBecameVisible()
@@ -51,19 +82,5 @@ public abstract class Enemy : MonoBehaviour
     private void OnBecameInvisible()
     {
         _isGetDamage = false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.transform.CompareTag(PlayerBulletTag))
-        {
-            Bullet bullet = collision.transform.GetComponent<Bullet>();
-            if (Random.Range(0, 1f) > bullet.CritChance)
-                GetDamage(bullet.Damage * 2);
-            else
-                GetDamage(bullet.Damage);
-
-            bullet.BulletHit(collision);
-        }
     }
 }

@@ -23,6 +23,8 @@ public class Character : MonoBehaviour
 
     public delegate void MoneyChanged(int money);
 
+    public delegate void ElementChanged(Element element);
+
     public event HealthChanged OnHealthChanged;
 
     public event ArmorChanged OnArmorChanged;
@@ -30,6 +32,12 @@ public class Character : MonoBehaviour
     public event CharacterDeath OnCharacterDeath;
 
     public event MoneyChanged OnMoneyChanged;
+
+    public event ElementChanged OnElementChanged;
+
+    public Transform CharacterTransform => transform;
+
+    public bool IsDeath => _isDeath;
 
     public bool IsCanReborn => _isCanReborn;
 
@@ -43,7 +51,7 @@ public class Character : MonoBehaviour
         _characterData = data;
         _animator.runtimeAnimatorController = _characterData.AnimatorController;
         _boxCollider2D.size = _characterData.ColliderSize;
-        _boxCollider2D.offset = _characterData.ColliderSize;
+        _boxCollider2D.offset = _characterData.ColliderOffset;
         _health = _characterData.MaxHealth;
         _armor = _characterData.MaxArmor;
         _characterControl.SpawnWeapon(data);
@@ -106,6 +114,12 @@ public class Character : MonoBehaviour
         Heal(_characterData.MaxHealth);
     }
 
+    public void SetWeaponElement(Element element)
+    {
+        OnElementChanged?.Invoke(element);
+        _characterControl.CurrentWeapon.SetElement(element.ElementType);
+    }
+
     private void GetComponents()
     {
         _animator = GetComponent<Animator>();
@@ -140,29 +154,34 @@ public class Character : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string turnLeftAnimatorKey = "TurnLeft";
-        string turnRightAnimatorKey = "TurnRight";
         string enemyBulletTag = "EnemyBullet";
 
         if (collision.CompareTag(enemyBulletTag))
         {
-            if (collision.transform.position.x >= transform.position.x)
-            {
-                if (transform.localScale.x == 1)
-                    _animator.Play(turnLeftAnimatorKey);
-                else
-                    _animator.Play(turnRightAnimatorKey);
-            }
-            else if (collision.transform.position.x < transform.position.x)
-            {
-                if (transform.localScale.x == 1)
-                    _animator.Play(turnRightAnimatorKey);
-                else
-                    _animator.Play(turnLeftAnimatorKey);
-            }
-
+            BendOver(collision.transform);
             Damage(collision.GetComponent<Bullet>().Damage);
             collision.GetComponent<Bullet>().BulletHit(collision);
+        }
+    }
+
+    private void BendOver(Transform hitPoint)
+    {
+        string turnLeftAnimatorKey = "TurnLeft";
+        string turnRightAnimatorKey = "TurnRight";
+
+        if (hitPoint.position.x >= transform.position.x)
+        {
+            if (transform.localScale.x == 1)
+                _animator.Play(turnLeftAnimatorKey);
+            else
+                _animator.Play(turnRightAnimatorKey);
+        }
+        else if (hitPoint.position.x < transform.position.x)
+        {
+            if (transform.localScale.x == 1)
+                _animator.Play(turnRightAnimatorKey);
+            else
+                _animator.Play(turnLeftAnimatorKey);
         }
     }
 }

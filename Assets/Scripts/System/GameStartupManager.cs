@@ -33,7 +33,7 @@ public class GameStartupManager : MonoBehaviour
 
     private void StartGame()
     {
-        LevelSpawner.Instance.ShowLevelUI();
+        LevelSpawner.Instance.InitLevelUI();
         PlayerProgress.Instance.SetGameTutorialComplete();
         Transform trolley = CharacterSpawner.Instance.SpawnTrolley(_trolleySpawnPoint);
         Character character = CharacterSpawner.Instance.SpawnCharacter(CurrentGameInfo.Instance.CharacterData, trolley).GetComponent<Character>();

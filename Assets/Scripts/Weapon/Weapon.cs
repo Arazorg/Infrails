@@ -8,15 +8,17 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] private List<SpriteRenderer> _handsSpriteRenderer;
 
     protected WeaponData CurrentWeaponData;
-    protected Element.Type CurrentElement = Element.Type.Fire;
     protected BulletFactory Factory;
 
     private Animator _animator;
     private BulletFactory _bulletFactory;
+    private Element.Type _currentElement;
     private bool _isAttack;
     private float _timeToShoot = 0;
 
     public bool IsAttack { get => _isAttack; set => _isAttack = value; }
+
+    public Element.Type CurrentElement { get => _currentElement; set => _currentElement = value; }
 
     public abstract void Shoot();
 
@@ -37,10 +39,14 @@ public abstract class Weapon : MonoBehaviour
         }
     }
 
-    public void RotateAndAttack(bool isState, float weaponAngle)
+    public void Rotate(float weaponAngle)
     {
-        _isAttack = isState;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, weaponAngle));
+    }
+
+    public void SetElement(Element.Type element)
+    {
+        CurrentElement = element;
     }
 
     protected void OnInit()
@@ -69,7 +75,7 @@ public abstract class Weapon : MonoBehaviour
     private T GetRandomElement<T>()
     {
         var elements = Enum.GetValues(typeof(T));
-        return (T)elements.GetValue(UnityEngine.Random.Range(0, elements.Length));
+        return (T)elements.GetValue(UnityEngine.Random.Range(1, elements.Length));
     }
 
     private void FixedUpdate()

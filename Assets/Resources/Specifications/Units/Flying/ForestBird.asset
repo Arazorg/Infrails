@@ -17,12 +17,11 @@ MonoBehaviour:
   _colliderSize: {x: 5, y: 3}
   _colliderOffset: {x: 0, y: 0}
   _unitName: Forest Bird
-  _maxHealth: 10
-  _type: 0
-  _isMove: 1
-  _isStaticScale: 0
-  _enemyElement: 1
+  _maxHealth: 6
+  _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
+  _enemyElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}
   _bulletData: {fileID: 11400000, guid: 4416db79a65a5b442961f9a6da0b8e57, type: 2}
   _damage: 1
   _fireRate: 0.5
   _bulletSpawnPosition: {x: -2.6, y: -0.95}
+  _bulletPrefab: {fileID: 6440016302738299195, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}
