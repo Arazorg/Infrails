@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LevelSpawner : MonoBehaviour
@@ -11,9 +12,8 @@ public class LevelSpawner : MonoBehaviour
     [SerializeField] private LevelInfoPanelUI _pauseLevelInfoPanel;
     [SerializeField] private LevelInfoPanelUI _levelInfoPanel;
 
-    private List<BiomeData> _currentLevelBiomes;
+    private List<BiomeData> _currentLevelBiomesData;
     private BiomeData _currentBiomeData;
-    private BiomeData _nextBiomeData;
     private Biome _currentBiome;
     private Rail _currentBiomeFinishRail;
     private Rail _currentBiomeStartRail;
@@ -25,15 +25,19 @@ public class LevelSpawner : MonoBehaviour
 
     public event LevelSpawned OnLevelSpawned;
 
+    public delegate void BiomeSpawned();
+
+    public event BiomeSpawned OnBiomeSpawned;
+
     public BiomeData CurrentBiomeData => _currentBiomeData;
 
     public Rail CurrentBiomeStartRail { get => _currentBiomeStartRail; set => _currentBiomeStartRail = value; }
 
     public Rail CurrentBiomeFinishRail
     {
-        get 
-        { 
-            return _currentBiomeFinishRail; 
+        get
+        {
+            return _currentBiomeFinishRail;
         }
         set
         {
@@ -51,15 +55,13 @@ public class LevelSpawner : MonoBehaviour
     public void LevelSpawn()
     {
         SpawnBiome();
-        OnLevelSpawned?.Invoke(_levelCounter, _currentLevelBiomes);
+        OnLevelSpawned?.Invoke(_levelCounter, _currentLevelBiomesData.Distinct().ToList());
         _levelInfoUI.Show();
     }
 
     public void SpawnBiome()
     {
-        float countBiomesInLevel = 5;
-
-        if (_biomesCounter == countBiomesInLevel)
+        if (_biomesCounter == _currentLevelBiomesData.Count)
         {
             _levelCounter++;
             _biomesCounter = 0;
@@ -70,26 +72,27 @@ public class LevelSpawner : MonoBehaviour
             if (_currentBiome != null)
                 _currentBiome.DestroyLevel();
 
-            GetBiomeData();
+            _currentBiomeData = _currentLevelBiomesData[_biomesCounter];
             EnemiesManager.Instance.SetEnemiesData(_currentBiomeData);
             var level = Instantiate(_levelPrefab, _nextBiomeSpawnPosition, Quaternion.identity);
             _currentBiome = level.GetComponent<Biome>();
-            _nextBiomeSpawnPosition = _currentBiome.Init(_currentBiomeData, _nextBiomeData);
+            var nextBiomeData = _currentLevelBiomesData[(_biomesCounter + 1) % _currentLevelBiomesData.Count];
+            _nextBiomeSpawnPosition = _currentBiome.Init(_currentBiomeData, nextBiomeData);
+            OnBiomeSpawned?.Invoke();
             _biomesCounter++;
         }
 
-        if (_biomesCounter == countBiomesInLevel)
+        if (_biomesCounter == _currentLevelBiomesData.Count)
         {
             GetBiomesOfCurrentLevel();
-            GetBiomeData();
-            _currentBiome.SetNextBiomeData(_nextBiomeData);
+            _currentBiome.SetNextBiomeData(_currentLevelBiomesData[0]);
         }
     }
 
     public void InitLevelUI()
     {
-        _pauseLevelInfoPanel.SetLevelInfoPanel(_levelCounter, _currentLevelBiomes);
-        _levelInfoPanel.SetLevelInfoPanel(_levelCounter, _currentLevelBiomes);
+        _pauseLevelInfoPanel.SetLevelInfoPanel(_levelCounter, _currentLevelBiomesData.Distinct().ToList());
+        _levelInfoPanel.SetLevelInfoPanel(_levelCounter, _currentLevelBiomesData.Distinct().ToList());
         _levelInfoUI.Show();
     }
 
@@ -103,28 +106,28 @@ public class LevelSpawner : MonoBehaviour
 
     private void GetBiomesOfCurrentLevel()
     {
-        _currentLevelBiomes = new List<BiomeData>();
-
-        float countBiomesDataInLevel = 3;
-        while (_currentLevelBiomes.Count != countBiomesDataInLevel)
+        int numberBiomesDataInLevel = 3;
+        List<BiomeData> biomes = new List<BiomeData>();
+        while (biomes.Count != numberBiomesDataInLevel)
         {
             var biomeData = _biomesData[Random.Range(0, _biomesData.Count)];
-            while (_currentLevelBiomes.Contains(biomeData))
+            while (biomes.Contains(biomeData))
                 biomeData = _biomesData[Random.Range(0, _biomesData.Count)];
 
-            _currentLevelBiomes.Add(biomeData);
+            biomes.Add(biomeData);
         }
-    }
 
-    private void GetBiomeData()
-    {
-        if (_nextBiomeData != null)
-            _currentBiomeData = _nextBiomeData;
-        else
-            _currentBiomeData = _currentLevelBiomes[Random.Range(0, _currentLevelBiomes.Count)];
+        float numberBiomesInLevel = 5;
+        _currentLevelBiomesData = new List<BiomeData>();
+        int previousDataNumber = -1;
+        while (_currentLevelBiomesData.Count != numberBiomesInLevel)
+        {
+            int dataNumber = Random.Range(0, biomes.Count);
+            while(dataNumber == previousDataNumber)
+                dataNumber = Random.Range(0, biomes.Count);
 
-        _nextBiomeData = _currentLevelBiomes[Random.Range(0, _currentLevelBiomes.Count)];
-        while (_currentBiomeData == _nextBiomeData)
-            _nextBiomeData = _currentLevelBiomes[Random.Range(0, _currentLevelBiomes.Count)];
+            _currentLevelBiomesData.Add(biomes[dataNumber]);
+            previousDataNumber = dataNumber;
+        }
     }
 }

@@ -18,7 +18,7 @@ public class RepairKit : Enemy
 
     protected override void Death()
     {
-        _character.HealArmor(RepairValue);
+        _character.RepairArmor(RepairValue);
         SpawnExplosionParticle();
         Destroy(gameObject);
     }

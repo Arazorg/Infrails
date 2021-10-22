@@ -60,7 +60,7 @@ public class TutorialUI : BaseUI, IUIPanel
     public void FinishTutorial()
     {
         int lobbyFinishPhraseNumber = 7;
-        int gameFinishPhraseNumber = 20;
+        int gameFinishPhraseNumber = 21;
 
         StopAllCoroutines();
         _phraseImage.Hide();
@@ -107,7 +107,7 @@ public class TutorialUI : BaseUI, IUIPanel
         int lobbyStartIndex = 0;
         int lobbyFinishIndex = 6;
         int gameStartIndex = 8;
-        int gameFinishIndex = 19;
+        int gameFinishIndex = 20;
 
         switch (SceneManager.GetActiveScene().name)
         {

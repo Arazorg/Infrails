@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Item_29
   m_EditorClassIdentifier: 
   _phraseKey: TutorialPhrase18
-  _phraseSprite: {fileID: 0}
-  _phraseImageSize: {x: 0, y: 0}
-  _showTime: 0
+  _phraseSprite: {fileID: 21300000, guid: 507e1ae8fdd6ca648861595e7172c05c, type: 3}
+  _phraseImageSize: {x: 400, y: 400}
+  _showTime: 2

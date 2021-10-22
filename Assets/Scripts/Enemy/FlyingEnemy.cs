@@ -10,6 +10,7 @@ public class FlyingEnemy : Enemy
         Target = target;
         Target.GetComponent<Character>().OnCharacterDeath += Death;
         _enemyMovement = GetComponent<EnemyMovement>();
+        _enemyMovement.Init(spawnPoint, target.transform);
         OnInit();
         SetScale();       
     }

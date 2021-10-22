@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class Character : MonoBehaviour
@@ -8,6 +9,7 @@ public class Character : MonoBehaviour
     private CharacterData _characterData;
     private CharacterEffects _characterEffects;
     private CharacterControl _characterControl;
+    private Element _currentElement;
 
     private int _health;
     private int _armor;
@@ -45,6 +47,8 @@ public class Character : MonoBehaviour
 
     public int MaxArmor => _characterData.MaxArmor;
 
+    public Element CurrentElement => _currentElement;
+
     public void Init(CharacterData data)
     {
         GetComponents();
@@ -53,10 +57,10 @@ public class Character : MonoBehaviour
         _boxCollider2D.size = _characterData.ColliderSize;
         _boxCollider2D.offset = _characterData.ColliderOffset;
         _health = _characterData.MaxHealth;
-        _armor = _characterData.MaxArmor;
-        _characterControl.SpawnWeapon(data);
+        _armor = _characterData.MaxArmor; 
         _isDeath = false;
         _isCanReborn = true;
+        SpawnWeapon();
     }
 
     public void Heal(int heal)
@@ -64,7 +68,6 @@ public class Character : MonoBehaviour
         _health += heal;
         if (_health > _characterData.MaxHealth)
             _health = _characterData.MaxHealth;
-
         OnHealthChanged?.Invoke(_health);
     }
 
@@ -88,7 +91,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void HealArmor(int heal)
+    public void RepairArmor(int heal)
     {
         _armor += heal;
         if (_armor > _characterData.MaxArmor)
@@ -110,14 +113,15 @@ public class Character : MonoBehaviour
         _characterEffects.SetCharacterVisibility(true);
         _characterEffects.SpawnRebornEffect(_characterData.TeleportationAnimatorController);
         GetComponentInParent<TrolleyMovement>().IsMove = true;
-        HealArmor(_characterData.MaxArmor);
+        RepairArmor(_characterData.MaxArmor);
         Heal(_characterData.MaxHealth);
     }
 
     public void SetWeaponElement(Element element)
     {
-        OnElementChanged?.Invoke(element);
+        _currentElement = element;
         _characterControl.CurrentWeapon.SetElement(element.ElementType);
+        OnElementChanged?.Invoke(element);
     }
 
     private void GetComponents()
@@ -126,6 +130,13 @@ public class Character : MonoBehaviour
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _characterEffects = GetComponent<CharacterEffects>();
         _characterControl = GetComponent<CharacterControl>();
+    }
+
+    private void SpawnWeapon()
+    {
+        _currentElement = LevelSpawner.Instance.CurrentBiomeData.BiomeElement;
+        _characterControl.SpawnWeapon(_characterData, _currentElement.ElementType);
+        OnElementChanged?.Invoke(_currentElement);
     }
 
     private IEnumerator Death()

@@ -52,7 +52,6 @@ public abstract class Weapon : MonoBehaviour
     protected void OnInit()
     {
         GetComponents();
-        CurrentElement = GetRandomElement<Element.Type>();
         _animator.runtimeAnimatorController = CurrentWeaponData.Animator;
         _bulletSpawnPoint.localPosition = CurrentWeaponData.BulletSpawnPosition;
     }
@@ -70,12 +69,6 @@ public abstract class Weapon : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         _bulletFactory = GetComponent<BulletFactory>();
-    }
-
-    private T GetRandomElement<T>()
-    {
-        var elements = Enum.GetValues(typeof(T));
-        return (T)elements.GetValue(UnityEngine.Random.Range(1, elements.Length));
     }
 
     private void FixedUpdate()

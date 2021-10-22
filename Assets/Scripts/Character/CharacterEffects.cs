@@ -2,30 +2,32 @@ using UnityEngine;
 
 public class CharacterEffects : MonoBehaviour
 {
-    [Header("Prefabs")]
-    [SerializeField] private GameObject _teleportaionPrefab;
-    [SerializeField] private GameObject _explosionPrefab;
-
-    [Header("Audio Clips")]
-    [SerializeField] private AudioClip _deathClip;
-    [SerializeField] private AudioClip _teleportationEffectClip;
+    [SerializeField] private CharacterEffectData _deathEffectData;
+    [SerializeField] private CharacterEffectData _rebornEffectData;
+    [SerializeField] private CharacterEffectData _healingEffectData;
+    [SerializeField] private CharacterEffectData _repairArmorEffectData;
 
     public void SpawnDeathEffect(Color color)
     {
-        AudioManager.Instance.PlayEffect(_deathClip);
-        GameObject explosion = Instantiate(_explosionPrefab, transform.position, Quaternion.identity);
-        var settings = explosion.GetComponent<ParticleSystem>().main;
+        var effect = SpawnEffect(_deathEffectData);
+        var settings = effect.GetComponent<ParticleSystem>().main;
         settings.startColor = new ParticleSystem.MinMaxGradient(color);
-        Destroy(explosion, settings.startLifetimeMultiplier);
     }
 
     public void SpawnRebornEffect(RuntimeAnimatorController animator)
     {
-        AudioManager.Instance.PlayEffect(_teleportationEffectClip);
-        Vector3 teleportationEffectOffset = new Vector3(0, 4, 0);
-        var teleportationEffect = Instantiate(_teleportaionPrefab, transform.position + teleportationEffectOffset, Quaternion.identity, transform);
-        teleportationEffect.GetComponent<Animator>().runtimeAnimatorController = animator;
-        Destroy(teleportationEffect, 0.5f);
+        var effect = SpawnEffect(_rebornEffectData);
+        effect.GetComponent<Animator>().runtimeAnimatorController = animator;
+    }
+
+    public void SpawnHealingEffect()
+    {
+        SpawnEffect(_healingEffectData);
+    }
+
+    public void SpawnRepairArmorEffect()
+    {
+        SpawnEffect(_repairArmorEffectData);
     }
 
     public void SetCharacterVisibility(bool isState)
@@ -34,5 +36,15 @@ public class CharacterEffects : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = isState;
         foreach (var spriteRenderer in GetComponentsInChildren<SpriteRenderer>())
             spriteRenderer.enabled = isState;
+    }
+
+    private GameObject SpawnEffect(CharacterEffectData data)
+    {
+        AudioManager.Instance.PlayEffect(data.EffectAudioClip);
+        var effectPosition = transform.position + data.EffectOffset;
+        var effect = Instantiate(data.Prefab, effectPosition, Quaternion.identity, transform);
+        effect.GetComponent<SpriteRenderer>().color = data.EffectColor;
+        Destroy(effect, data.DestroyDelay);
+        return effect;
     }
 }

@@ -5,81 +5,67 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private Transform enemyShadowTransform;
 
-    public Transform Target
-    {
-        set { target = value; }
-    }
-
-    private Transform target;
-
-    public Transform SpawnPoint
-    {
-        set { spawnPoint = value; }
-    }
-    private Transform spawnPoint;
+    private Transform _target;
+    private Transform _spawnPoint;
+    private EnemyAttack _enemyAttack;
+    private Vector3 _needPosition;
+    private Quaternion _needQuaternion;
+    private Quaternion _startShadowQuaternion;
+    private bool _isFacingRight;
+    private bool _isChase;
 
     public bool IsChase
     {
         set
         {
-            isChase = value;
-            if (isChase)
+            _isChase = value;
+            if (_isChase)
                 StartCoroutine(GetNextPoint());
             else
                 StopCoroutine(GetNextPoint());
         }
     }
-    private bool isChase;
 
-    public bool IsMove
+    public void Init(Transform spawnPoint, Transform target)
     {
-        set
-        {
-            isMove = value;
-        }
-    }
-    private bool isMove = true;
-
-    private Vector3 needPosition;
-    private Quaternion needQuaternion;
-    private Quaternion startShadowQuaternion;
-    private bool isFacingRight;
-
-    void Start()
-    {
-        startShadowQuaternion = enemyShadowTransform.rotation;
+        _spawnPoint = spawnPoint;
+        _target = target;
+        _isChase = true;
+        StartCoroutine(GetNextPoint());
+        LevelSpawner.Instance.OnBiomeSpawned += MoveToSpawnPoint;
     }
 
-    void FixedUpdate()
+    private void Start()
+    {
+        _startShadowQuaternion = enemyShadowTransform.rotation;
+    }
+
+    private void Update()
     {
         FlipToTarget();
         MoveToTarget();
         RotateToTarget();
-        enemyShadowTransform.rotation = startShadowQuaternion;
+        enemyShadowTransform.rotation = _startShadowQuaternion;
     }
 
     private void MoveToTarget()
     {
         float minDistanceX = 10f;
-        if (target != null && isChase)
+        if (_target != null && _isChase)
         {
-            if (System.Math.Abs(target.position.x - transform.position.x) < minDistanceX)
+            if (System.Math.Abs(_target.position.x - transform.position.x) < minDistanceX)
                 GetNextPoint();
-            SetStateOfAttack();
         }
 
-        if (isMove)
-            transform.position = Vector3.Lerp(transform.position, needPosition, Time.fixedDeltaTime / 0.33f);
-        else
-            GetComponent<EnemyAttack>().IsAttack = false;
+        transform.position = Vector3.Lerp(transform.position, _needPosition, Time.fixedDeltaTime / 0.66f);
     }
 
-    public void MoveToSpawnPoint()
+    private void MoveToSpawnPoint()
     {
         StopCoroutine(GetNextPoint());
-        isChase = false;
-        target = spawnPoint;
-        needPosition = spawnPoint.position;
+        _isChase = false;
+        _target = _spawnPoint;
+        _needPosition = _spawnPoint.position;
         Destroy(gameObject, 2f);
     }
 
@@ -87,7 +73,8 @@ public class EnemyMovement : MonoBehaviour
     {
         float minDistance = 2f;
         float maxDistance = 7f;
-        var distance = transform.position.y - target.position.y;
+
+        var distance = transform.position.y - _target.position.y;
         if (minDistance < distance && distance < maxDistance)
             GetComponent<EnemyAttack>().IsAttack = true;
         else
@@ -98,58 +85,65 @@ public class EnemyMovement : MonoBehaviour
     {
         float minDistanceX = 15f;
 
-        if (target != null)
+        if (_target != null)
         {
             while (true)
             {
-                if (target.position.x > spawnPoint.position.x)
+                if (_target.position.x > _spawnPoint.position.x)
                 {
-                    needPosition.x = target.position.x + Random.Range(-10f, 0f) + -minDistanceX;
-                    needPosition.y = target.position.y + Random.Range(-5f, 35f);
+                    _needPosition.x = _target.position.x + Random.Range(-5f, 0f) + -minDistanceX;
+                    _needPosition.y = _target.position.y + Random.Range(-3f, 30f);
                 }
-                else if (target.position.x < spawnPoint.position.x)
+                else if (_target.position.x < _spawnPoint.position.x)
                 {
-                    needPosition.x = target.position.x + Random.Range(0f, 10f) + minDistanceX;
-                    needPosition.y = target.position.y + Random.Range(-5f, 35f);
+                    _needPosition.x = _target.position.x + Random.Range(0f, 5f) + minDistanceX;
+                    _needPosition.y = _target.position.y + Random.Range(-3f, 30f);
                 }
+
                 yield return new WaitForSeconds(0.85f + Random.Range(-0.1f, 0.1f));
 
-                if (Random.Range(0, 100) < 15f)
-                    spawnPoint.position = new Vector3(spawnPoint.position.x * -1, spawnPoint.position.y, spawnPoint.position.z);
+                if (Random.Range(0, 100) < 25f)
+                    _spawnPoint.position = new Vector3(_spawnPoint.position.x * -1, _spawnPoint.position.y, _spawnPoint.position.z);
             }
         }
+
         yield return null;
     }
 
     private void RotateToTarget()
     {
-        if (target != null)
+        if (_target != null)
         {
-            if (transform.position.y < target.position.y)
-                needQuaternion = Quaternion.Euler(new Vector3(0, 0, Random.Range(-15, -5)));
+            if (transform.position.y < _target.position.y)
+                _needQuaternion = Quaternion.Euler(new Vector3(0, 0, Random.Range(-15, -5)));
             else
-                needQuaternion = Quaternion.Euler(new Vector3(0, 0, Random.Range(5, 15)));
+                _needQuaternion = Quaternion.Euler(new Vector3(0, 0, Random.Range(5, 15)));
 
-            transform.rotation = Quaternion.Lerp(transform.rotation, needQuaternion, Time.deltaTime / 0.4f);
+            transform.rotation = Quaternion.Lerp(transform.rotation, _needQuaternion, Time.deltaTime / 0.4f);
         }
     }
 
     private void FlipToTarget()
     {
-        if (target != null)
+        if (_target != null)
         {
-            if (target.position.x < transform.position.x && isFacingRight)
+            if (_target.position.x < transform.position.x && _isFacingRight)
                 Flip();
-            else if (target.position.x > transform.position.x && !isFacingRight)
+            else if (_target.position.x > transform.position.x && !_isFacingRight)
                 Flip();
         }
     }
 
     private void Flip()
     {
-        isFacingRight = !isFacingRight;
+        _isFacingRight = !_isFacingRight;
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    private void OnDestroy()
+    {
+        LevelSpawner.Instance.OnBiomeSpawned -= MoveToSpawnPoint;
     }
 }

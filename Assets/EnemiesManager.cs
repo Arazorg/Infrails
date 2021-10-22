@@ -43,9 +43,11 @@ public class EnemiesManager : MonoBehaviour
 
     public void SpawnDestroyableObjects(List<Transform> spawnPoints)
     {
+        float previousDataNumber = -1;
+
         foreach (var spawnPoint in spawnPoints)
         {
-            float maneCrystalSpawnChance = 0.33f;
+            float maneCrystalSpawnChance = 0.3f;
 
             if (Random.Range(0f, 1f) < maneCrystalSpawnChance)
             {
@@ -53,7 +55,7 @@ public class EnemiesManager : MonoBehaviour
             }
             else
             {
-                float eggSpawnChance = 0.33f;
+                float eggSpawnChance = 0.3f;
 
                 if (Random.Range(0f, 1f) < eggSpawnChance)
                 {
@@ -62,7 +64,11 @@ public class EnemiesManager : MonoBehaviour
                 else
                 {
                     int dataNumber = Random.Range(0, _destroyableObjectsData.Count);
+                    while (dataNumber == previousDataNumber)
+                        dataNumber = Random.Range(0, _destroyableObjectsData.Count);
+
                     SpawnEnemy(_destroyableObjectsData[dataNumber], spawnPoint);
+                    previousDataNumber = dataNumber;
                 }
             }
         }
@@ -96,7 +102,7 @@ public class EnemiesManager : MonoBehaviour
 
     private void SpawnManeCrystal(Transform spawnPoint)
     {
-        float spawnChanceMainManeCrystal = 0.35f;
+        float spawnChanceMainManeCrystal = 0.25f;
 
         if (Random.Range(0f, 1f) < spawnChanceMainManeCrystal)
         {

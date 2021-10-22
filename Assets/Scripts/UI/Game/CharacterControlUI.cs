@@ -59,10 +59,8 @@ public class CharacterControlUI : BaseUI, IUIPanel
         _armorBar.Init(character, character.MaxArmor, 0);
         character.GetComponent<CharacterControl>().Joystick = _joystick;
         _character = character;
-        character.OnCharacterDeath += OpenRebornUI;
-        character.OnMoneyChanged += SetMoneyText;
-        character.OnElementChanged += SetElementImage;
-        //обновление стихии с новым уровнем
+        SubscribeToEvents();
+        SetElementImage(LevelSpawner.Instance.CurrentBiomeData.BiomeElement);
     }
 
     public void Open()
@@ -89,6 +87,14 @@ public class CharacterControlUI : BaseUI, IUIPanel
         _character.Damage(6);
     }
 
+    private void SubscribeToEvents()
+    {
+        _character.OnCharacterDeath += OpenRebornUI;
+        _character.OnMoneyChanged += SetMoneyText;
+        _character.OnElementChanged += SetElementImage;
+        LevelSpawner.Instance.OnBiomeSpawned += SetElementOutlineImage;
+    }
+
     private void Close()
     {
         _isBackButtonEnabled = false;
@@ -108,11 +114,17 @@ public class CharacterControlUI : BaseUI, IUIPanel
     private void SetElementImage(Element element)
     {
         _elementImage.sprite = element.ElementSpriteUI;
-        _elementOutlineImage.color = Color.white;
+        SetElementOutlineImage();
+    }
 
-        if(element.GetElementInteractionByType(LevelSpawner.Instance.CurrentBiomeData.BiomeElement.ElementType) < 1)
+    private void SetElementOutlineImage()
+    {
+        _elementOutlineImage.color = Color.white;
+        float interaction = LevelSpawner.Instance.CurrentBiomeData.BiomeElement.GetElementInteractionByType(_character.CurrentElement.ElementType);
+
+        if (interaction < 1)
             _elementOutlineImage.color = Color.red;
-        else
+        else if (interaction > 1)
             _elementOutlineImage.color = Color.green;
     }
 

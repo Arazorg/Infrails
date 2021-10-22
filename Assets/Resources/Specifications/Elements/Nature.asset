@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 1
   _elementsResistances:
-  - ElementType: 1
-    Resistance: 1.25
-  - ElementType: 2
-    Resistance: 0.5
-  - ElementType: 5
+  - ElementType: 3
     Resistance: 2
+  - ElementType: 5
+    Resistance: 0.5
   _elementSpriteUI: {fileID: -8860250130876099183, guid: 650020d50336f424f9013d90401c15e5, type: 3}

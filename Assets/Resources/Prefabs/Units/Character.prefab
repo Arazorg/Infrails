@@ -170,10 +170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d901fe703c43f74789be1feceaffbcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _teleportaionPrefab: {fileID: 9143566227808018754, guid: 01a3d56933c02c144811d930dde573cb, type: 3}
-  _explosionPrefab: {fileID: 5163298580439651614, guid: a9f67f73d7fce044b80f61ce3ceab4b5, type: 3}
-  _deathClip: {fileID: 8300000, guid: e52fd79bac282844fbf056c7c4ef506b, type: 3}
-  _teleportationEffectClip: {fileID: 8300000, guid: 24eb1c3c6c031dc4d9a37e9e0c32e584, type: 3}
+  _deathEffectData: {fileID: 11400000, guid: b74409b690314f946a3b9948060d8a97, type: 2}
+  _rebornEffectData: {fileID: 11400000, guid: b154c8bffc633cc4a80b79a8f38e7711, type: 2}
+  _healingEffectData: {fileID: 11400000, guid: dbdfcea9d4ce5e9428aedf855837910f, type: 2}
+  _repairArmorEffectData: {fileID: 11400000, guid: c415e4dda8b3edc4ab1e93e9ae9e9f22, type: 2}
 --- !u!114 &6056885939663891284
 MonoBehaviour:
   m_ObjectHideFlags: 0

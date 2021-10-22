@@ -21,12 +21,13 @@ public class CharacterControl : MonoBehaviour
         }
     }
 
-    public void SpawnWeapon(CharacterData data)
+    public void SpawnWeapon(CharacterData data, Element.Type element)
     {
         _currentWeapon = GetComponent<WeaponFactory>().GetWeapon(data.CharacterStartWeapon.Prefab, transform);
         _currentWeapon.Init(data.CharacterStartWeapon);
         _currentWeapon.SetParentAndOffset(transform, data.WeaponSpawnPoint);
         _currentWeapon.SetHands(data.Hands);
+        _currentWeapon.CurrentElement = element;
         _isFacingRight = true;
     }
 
