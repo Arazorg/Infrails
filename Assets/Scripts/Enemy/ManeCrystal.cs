@@ -14,14 +14,11 @@ public class ManeCrystal : Enemy
     private float _swayTime = float.MaxValue;
     private float _offsetFactorY = 0.8f;
 
-    public override void Init(EnemyData data, Transform spawnPoint, GameObject target)
+    public override void Init(EnemyData data, Transform spawnPoint, GameObject player)
     {
         Data = data;   
-        OnInit();
-        if (target == null)
-            EnemiesManager.Instance.OnTargetInit += GetCharacter;
-        else
-            _character = target.GetComponent<Character>();
+        OnInit(player);
+        TryGetTarget(player);
     }
 
     protected override void Death()
@@ -30,7 +27,6 @@ public class ManeCrystal : Enemy
         SpawnExplosionParticle();
         Destroy(gameObject);
     }
-
 
     private void Start()
     {
@@ -74,9 +70,21 @@ public class ManeCrystal : Enemy
         _finishOffset = new Vector3(0, -_offsetFactorY, 0);
     }
 
-    private void GetCharacter(GameObject target)
+    private void TryGetTarget(GameObject target)
     {
-        EnemiesManager.Instance.OnTargetInit -= GetCharacter;
+        if (target == null)
+        {
+            EnemiesManager.Instance.OnTargetInit += OnTargetInit;
+        }
+        else
+        {
+            _character = target.GetComponent<Character>();
+        }
+    }
+
+    private void OnTargetInit(GameObject target)
+    {
+        EnemiesManager.Instance.OnTargetInit -= OnTargetInit;
         _character = target.GetComponent<Character>();
     }
 }

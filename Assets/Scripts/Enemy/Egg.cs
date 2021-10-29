@@ -14,7 +14,7 @@ public class Egg : Enemy
     {
         Data = data;
         Target = target;
-        OnInit();
+        OnInit(target);
     }
 
     protected override void Death()

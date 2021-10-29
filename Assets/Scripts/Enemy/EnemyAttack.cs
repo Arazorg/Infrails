@@ -61,7 +61,7 @@ public class EnemyAttack : MonoBehaviour
     private void Shoot()
     {
         var bullet = Factory.GetBullet(_data.BulletData.Prefab, bulletSpawnPoint);
-        bullet.Init(_data.BulletData, _data.Damage, 0.33f);
+        //bullet.Init(_data.BulletData, _data.Damage, 0.33f);
         Quaternion dir = Quaternion.AngleAxis(0, Vector3.forward);
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
         bulletRb.AddForce(dir * (GetComponent<FlyingEnemy>().Target.transform.position - bulletSpawnPoint.position + new Vector3(0, Random.Range(1, 3f), 0)).normalized * 100, ForceMode2D.Impulse);

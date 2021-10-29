@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class StaticEnemyWeaponData : ScriptableObject
 {
-    [SerializeField] private Sprite _weaponSprite;
-    [SerializeField] private Vector2 _bulletSpawnPosition;
+    [SerializeField] private Sprite _mainSprite;
+    [SerializeField] private RuntimeAnimatorController _laserAnimatorController;
+    [SerializeField] private Vector3 _laserSpawnPosition;
+
+    public Sprite MainSprite => _mainSprite;
+
+    public RuntimeAnimatorController LaserAnimatorController => _laserAnimatorController;
+
+    public Vector3 LaserSpawnPosition => _laserSpawnPosition;
 }

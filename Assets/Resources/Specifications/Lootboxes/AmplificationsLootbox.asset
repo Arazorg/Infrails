@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeOfLootbox: 0
   _animatorController: {fileID: 9100000, guid: 4e023564d3f194b4192ecd4a46bce6fa, type: 2}
-  _mainSprite: {fileID: -7013124428788275369, guid: 996ac52a8e95c4343bc45622f4fd5e3e, type: 3}
+  _mainSprite: {fileID: 21300000, guid: 7194885404aab0143bc62a5b1733b49c, type: 3}
   _lootboxColor: {r: 0.14117648, g: 0.41176474, b: 0.8000001, a: 1}
   _nameKey: AmplificationsLootbox
   _price: 1000

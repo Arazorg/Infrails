@@ -60,7 +60,7 @@ public class Character : MonoBehaviour
         _armor = _characterData.MaxArmor; 
         _isDeath = false;
         _isCanReborn = true;
-        SpawnWeapon();
+        SpawnStartWeapon();
     }
 
     public void Heal(int heal)
@@ -132,10 +132,10 @@ public class Character : MonoBehaviour
         _characterControl = GetComponent<CharacterControl>();
     }
 
-    private void SpawnWeapon()
+    private void SpawnStartWeapon()
     {
         _currentElement = LevelSpawner.Instance.CurrentBiomeData.BiomeElement;
-        _characterControl.SpawnWeapon(_characterData, _currentElement.ElementType);
+        _characterControl.SpawnStartWeapon(_characterData, _currentElement.ElementType);
         OnElementChanged?.Invoke(_currentElement);
     }
 

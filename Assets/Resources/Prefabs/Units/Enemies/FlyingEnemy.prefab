@@ -97,8 +97,6 @@ GameObject:
   - component: {fileID: 7840118869621860419}
   - component: {fileID: 4259251500015338125}
   - component: {fileID: -5208608225304156181}
-  - component: {fileID: -1979366978246152714}
-  - component: {fileID: 1831625872103353973}
   - component: {fileID: 858444541982329040}
   m_Layer: 10
   m_Name: FlyingEnemy
@@ -253,34 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: becf123b44977044b84b03000bc086c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data: {fileID: 0}
   ExplosionPrefab: {fileID: 1965604789713830089, guid: 99fa1967bf5884540ade6d232cbc56b3, type: 3}
---- !u!114 &-1979366978246152714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7102638976997577026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2db6df74aeaa12a4da2eb70afe9027f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyShadowTransform: {fileID: 4477460722921648329}
---- !u!114 &1831625872103353973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7102638976997577026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f807c57b45a94a748aeee45cf3625fc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpawnPoint: {fileID: 2242755433908633005}
 --- !u!114 &858444541982329040
 MonoBehaviour:
   m_ObjectHideFlags: 0

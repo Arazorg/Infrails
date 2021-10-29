@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class CharacterEffects : MonoBehaviour
 {
-    [SerializeField] private CharacterEffectData _deathEffectData;
-    [SerializeField] private CharacterEffectData _rebornEffectData;
-    [SerializeField] private CharacterEffectData _healingEffectData;
-    [SerializeField] private CharacterEffectData _repairArmorEffectData;
+    [SerializeField] private EffectData _deathEffectData;
+    [SerializeField] private EffectData _rebornEffectData;
 
     public void SpawnDeathEffect(Color color)
     {
@@ -20,16 +18,6 @@ public class CharacterEffects : MonoBehaviour
         effect.GetComponent<Animator>().runtimeAnimatorController = animator;
     }
 
-    public void SpawnHealingEffect()
-    {
-        SpawnEffect(_healingEffectData);
-    }
-
-    public void SpawnRepairArmorEffect()
-    {
-        SpawnEffect(_repairArmorEffectData);
-    }
-
     public void SetCharacterVisibility(bool isState)
     {
         GetComponent<BoxCollider2D>().enabled = isState;
@@ -38,7 +26,7 @@ public class CharacterEffects : MonoBehaviour
             spriteRenderer.enabled = isState;
     }
 
-    private GameObject SpawnEffect(CharacterEffectData data)
+    private GameObject SpawnEffect(EffectData data)
     {
         AudioManager.Instance.PlayEffect(data.EffectAudioClip);
         var effectPosition = transform.position + data.EffectOffset;

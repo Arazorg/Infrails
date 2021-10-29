@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Weapon : MonoBehaviour
@@ -9,6 +8,7 @@ public abstract class Weapon : MonoBehaviour
 
     protected WeaponData CurrentWeaponData;
     protected BulletFactory Factory;
+    protected MonobehaviourPool<Bullet> _bulletsPool;
 
     private Animator _animator;
     private BulletFactory _bulletFactory;
@@ -54,14 +54,14 @@ public abstract class Weapon : MonoBehaviour
         GetComponents();
         _animator.runtimeAnimatorController = CurrentWeaponData.Animator;
         _bulletSpawnPoint.localPosition = CurrentWeaponData.BulletSpawnPosition;
+        _bulletsPool = new MonobehaviourPool<Bullet>(0, true, _bulletFactory, CurrentWeaponData.BulletData.Prefab, _bulletSpawnPoint);
     }
 
     protected GameObject SpawnBullet()
     {
-        var bullet = _bulletFactory.GetBullet(CurrentWeaponData.BulletData.Prefab, _bulletSpawnPoint);
-        bullet.transform.localScale = new Vector2(CurrentWeaponData.BulletScaleFactor, CurrentWeaponData.BulletScaleFactor);
-        bullet.Init(CurrentWeaponData.BulletData, CurrentWeaponData.Damage, CurrentWeaponData.CritChance, CurrentElement);
-        bullet.BulletSpeed = CurrentWeaponData.BulletSpeed;
+        var bullet = _bulletsPool.GetFreeElement();
+        bullet.transform.position = _bulletSpawnPoint.position;
+        bullet.Init(CurrentWeaponData.BulletData, CurrentWeaponData, CurrentElement);
         return bullet.gameObject;
     }
 

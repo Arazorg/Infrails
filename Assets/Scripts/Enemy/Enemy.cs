@@ -5,19 +5,30 @@ public abstract class Enemy : MonoBehaviour
     private const string PlayerBulletTag = "PlayerBullet";
 
     [SerializeField] protected GameObject ExplosionPrefab;
+    [SerializeField] protected Transform _lighthingLaserPoint;
 
     protected BoxCollider2D BoxCollider2D;
-    protected Character CharacterScript;
     protected int Health;
 
     private EnemyData _data;
     private Animator _animator;
     private GameObject _target;
+    private GameObject _player;
     private bool _isGetDamage;
 
     public EnemyData Data { get => _data; set => _data = value; }
 
+    public GameObject Player { get => _player; set => _player = value; }
+
     public GameObject Target { get => _target; set => _target = value; }
+
+    public Transform Transform => transform;
+
+    public Transform LighthingLaserPoint => _lighthingLaserPoint;
+
+    public bool IsGetDamage => _isGetDamage;
+
+    public abstract void Init(EnemyData data, Transform spawnPoint, GameObject player);
 
     public void GetDamage(int damage)
     {
@@ -32,13 +43,18 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
-    public abstract void Init(EnemyData data, Transform spawnPoint, GameObject target);
+    public void DestroyWithoutDeathEffect()
+    {
+        SpawnExplosionParticle();
+        Destroy(gameObject);
+    }
 
     protected abstract void Death();
 
-    protected void OnInit()
+    protected void OnInit(GameObject player)
     {
         InitComponents();
+        _player = player;
         _animator.runtimeAnimatorController = Data.AnimatorController;
         BoxCollider2D.size = Data.ColliderSize;
         BoxCollider2D.offset = Data.ColliderOffset;

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbab8db5603cf824f9c66b71fd14ef32, type: 3}
+  m_Name: UnderwaterHydraWeapon
+  m_EditorClassIdentifier: 
+  _mainSprite: {fileID: -8497876050921808386, guid: d778f0b5bf305664e958fdd21651dbc3, type: 3}
+  _laserAnimatorController: {fileID: 9100000, guid: e64b739bb3c6f6e468be830251185b0f, type: 2}
+  _laserSpawnPosition: {x: -0.5, y: 4.3, z: 0}

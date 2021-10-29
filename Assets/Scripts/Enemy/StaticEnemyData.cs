@@ -5,14 +5,11 @@ public class StaticEnemyData : AttackingEnemyData
 {
     [SerializeField] private StaticEnemyWeaponData _weaponData;
     [SerializeField] private Vector2 _weaponSpawnPosition;
+    [SerializeField] private RuntimeAnimatorController _teleportationAnimatorController;
 
-    public StaticEnemyWeaponData WeaponData
-    {
-        get { return _weaponData; }
-    }
+    public StaticEnemyWeaponData WeaponData => _weaponData;
 
-    public Vector2 WeaponSpawnPosition
-    {
-        get { return _weaponSpawnPosition; }
-    }
+    public Vector2 WeaponSpawnPosition => _weaponSpawnPosition;
+
+    public RuntimeAnimatorController TeleportationAnimatorController => _teleportationAnimatorController;
 }

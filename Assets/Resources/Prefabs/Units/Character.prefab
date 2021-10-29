@@ -170,10 +170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d901fe703c43f74789be1feceaffbcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deathEffectData: {fileID: 11400000, guid: b74409b690314f946a3b9948060d8a97, type: 2}
-  _rebornEffectData: {fileID: 11400000, guid: b154c8bffc633cc4a80b79a8f38e7711, type: 2}
-  _healingEffectData: {fileID: 11400000, guid: dbdfcea9d4ce5e9428aedf855837910f, type: 2}
-  _repairArmorEffectData: {fileID: 11400000, guid: c415e4dda8b3edc4ab1e93e9ae9e9f22, type: 2}
+  _deathEffectData: {fileID: 11400000, guid: a0e9752521dcf8b4695ed21c154d42f9, type: 2}
+  _rebornEffectData: {fileID: 11400000, guid: d34dfeb6bb662114b876a95838c97050, type: 2}
 --- !u!114 &6056885939663891284
 MonoBehaviour:
   m_ObjectHideFlags: 0

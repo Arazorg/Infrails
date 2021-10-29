@@ -32,7 +32,6 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 2800000, guid: 65df3a2519ca69149ac8c94604855e26, type: 3}
     - {fileID: 2800000, guid: c0f4277978dfbce488811782b233a782, type: 3}
     - {fileID: 2800000, guid: 724807f2acfba374396698b8877f6038, type: 3}
     - {fileID: 2800000, guid: d006980f2e82cea46a4ced469b831c96, type: 3}
@@ -49,7 +48,6 @@ SpriteAtlas:
   - {fileID: -8390201763323756293, guid: 724807f2acfba374396698b8877f6038, type: 3}
   - {fileID: 6470230617541638842, guid: 724807f2acfba374396698b8877f6038, type: 3}
   - {fileID: 683573488496570904, guid: 724807f2acfba374396698b8877f6038, type: 3}
-  - {fileID: 21300000, guid: 65df3a2519ca69149ac8c94604855e26, type: 3}
   - {fileID: 21300000, guid: 26b265a63eeebbb41a4674cb43debcf3, type: 3}
   - {fileID: -2514711054726758372, guid: c0f4277978dfbce488811782b233a782, type: 3}
   - {fileID: 7227000963349284165, guid: c0f4277978dfbce488811782b233a782, type: 3}
@@ -66,7 +64,6 @@ SpriteAtlas:
   - ManeCrystalsSprite_0
   - ManeCrystalsSprite_3
   - ManeCrystalsSprite_2
-  - BarrelSprite
   - EnemyShadowSprite
   - LaserObstacleSprite_1
   - LaserObstacleSprite_0

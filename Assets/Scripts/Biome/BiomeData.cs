@@ -17,7 +17,7 @@ public class BiomeData : ScriptableObject
 
     [Header("Enemies Data")]
     [SerializeField] private List<EnemyData> _flyingEnemiesData;
-    [SerializeField] private List<EnemyData> _staticEnemiesData;
+    [SerializeField] private EnemyData _staticEnemyData;
     [SerializeField] private EnemyData _eggData;
     [SerializeField] private EnemyData _mainManeCrystalData;
 
@@ -39,7 +39,7 @@ public class BiomeData : ScriptableObject
 
     public List<EnemyData> FlyingEnemiesData => _flyingEnemiesData;
 
-    public List<EnemyData> StaticEnemiesData => _staticEnemiesData;
+    public EnemyData StaticEnemyData => _staticEnemyData;
 
     public EnemyData EggData => _eggData;
 

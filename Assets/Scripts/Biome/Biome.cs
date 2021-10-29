@@ -8,7 +8,7 @@ public class Biome : MonoBehaviour
     [SerializeField] private Transform _levelFloorsParentObject;
 
     private BiomeData _biomeData;
-    private List<RailsPattern> _currentRailsPatterns = new List<RailsPattern>();
+    private List<Transform> _staticEnemyTeleportationPoints = new List<Transform>();
     private Rail _lastRail;
     private GameObject _endWall;
 
@@ -51,45 +51,51 @@ public class Biome : MonoBehaviour
 
     public void DestroyLevel()
     {
-        Destroy(gameObject, 5f);
+        float destroyDelay = 5;
+        Destroy(gameObject, destroyDelay);
     }
 
     private Vector3 CreateEnvironment(int lengthOfLevel)
     {
         Vector3 nextFloorSpawnPosition = transform.position;
         int lastRailsPatternNumber = Random.Range(0, _biomeData.RailsPrefabs.Count);
-        _currentRailsPatterns.Clear();
 
         for (int i = 0; i < lengthOfLevel; i++)
         {
             GameObject floor = Instantiate(_floorPrefab, nextFloorSpawnPosition, Quaternion.identity, _levelFloorsParentObject);
             floor.GetComponent<SpriteRenderer>().sprite = _biomeData.FloorSprite;
             nextFloorSpawnPosition += floor.GetComponent<Floor>().NextFloorSpawnPoint.localPosition;
-
-            int currentRailsPatternNumber = GetRailsPatternNumber(lastRailsPatternNumber);
-            lastRailsPatternNumber = currentRailsPatternNumber;
-            GameObject railsPattern = Instantiate(_biomeData.RailsPrefabs[currentRailsPatternNumber], floor.transform);
-            
-            _currentRailsPatterns.Add(railsPattern.GetComponent<RailsPattern>());
-            if (_lastRail != null)
-            {
-                var railsPatternScript = railsPattern.GetComponent<RailsPattern>();
-                _lastRail.NextRail = railsPatternScript.FirstRail;     
-            }
-
-            if (i == 0)
-                LevelSpawner.Instance.CurrentBiomeStartRail = railsPattern.GetComponent<RailsPattern>().FirstRail;
-                
-            _lastRail = railsPattern.GetComponent<RailsPattern>().LastRail;
-
-            if (i == 0 && LevelSpawner.Instance.CurrentBiomeFinishRail != null)
-                LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail = railsPattern.GetComponent<RailsPattern>().FirstRail;
-
-            EnemiesManager.Instance.SpawnDestroyableObjects(railsPattern.GetComponent<RailsPattern>().DestroyableObjectsSpawnPoints);
+            lastRailsPatternNumber = SpawnRailsPattern(floor, i, lastRailsPatternNumber);
         }
 
+        EnemiesManager.Instance.SpawnStaticEnemy(_staticEnemyTeleportationPoints);
         Vector3 nextLevelSpawnPosition = CreateEndWall(nextFloorSpawnPosition);
         return nextLevelSpawnPosition;
+    }
+
+    private int SpawnRailsPattern(GameObject floor, int numberOfBiome, int lastRailsPatternNumber)
+    {
+        int currentRailsPatternNumber = GetRailsPatternNumber(lastRailsPatternNumber);
+        lastRailsPatternNumber = currentRailsPatternNumber;
+        RailsPattern railsPattern = Instantiate(_biomeData.RailsPrefabs[currentRailsPatternNumber], floor.transform).GetComponent<RailsPattern>();
+        foreach (var point in railsPattern.StaticEnemiesSpawnPoints)
+            _staticEnemyTeleportationPoints.Add(point);
+        
+
+        if (_lastRail != null)
+            _lastRail.NextRail = railsPattern.FirstRail;
+
+        if (numberOfBiome == 0)
+            LevelSpawner.Instance.CurrentBiomeStartRail = railsPattern.FirstRail;
+
+        _lastRail = railsPattern.LastRail;
+
+        if (numberOfBiome == 0 && LevelSpawner.Instance.CurrentBiomeFinishRail != null)
+            LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail = railsPattern.FirstRail;
+
+        EnemiesManager.Instance.SpawnDestroyableObjects(railsPattern.DestroyableObjectsSpawnPoints);
+
+        return lastRailsPatternNumber;
     }
 
     private int GetRailsPatternNumber(int lastRailsPatternNumber)
