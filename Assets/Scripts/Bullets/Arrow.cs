@@ -5,8 +5,8 @@ public class Arrow : Bullet
 {
     public override void BulletHit(Collider2D collision)
     {
+        SpawnExplosionParticle();
         DestroyBullet();
-        //StickArrow(collision.transform);
     }
 
     private void StickArrow(Transform target)

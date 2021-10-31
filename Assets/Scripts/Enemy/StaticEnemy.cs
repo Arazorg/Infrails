@@ -9,18 +9,20 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     private StaticEnemyData _staticEnemyData;
     private StaticEnemyMovement _enemyMovement;
     private StaticEnemyAttack _enemyAttack;
+    private Transform _characterTransform;
+    private bool _isEndOfBiomeReached;
 
-    public override void Init(EnemyData data, Transform spawnPoint, GameObject player)
+    public override void Init(EnemyData data, Transform spawnPoint, GameObject character)
     {
         Data = data;
         _staticEnemyData = Data as StaticEnemyData;
         InitComponents();
-        TryGetTarget(player);
+        TryGetCharacter(character);
         InitStates();
-        OnInit(player);
+        OnInit();
     }
 
-    public void InitScripts(List<Transform> teleportationPoints, List<Enemy> targets)
+    public void InitScripts(List<Transform> teleportationPoints, List<IEnemyLaserTarget> targets)
     {
         _enemyMovement.Init(_staticEnemyData, teleportationPoints);
         _enemyAttack.Init(_staticEnemyData, targets);
@@ -32,6 +34,11 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _currentState.Stop();
         _currentState = state;
         _currentState.Start();
+    }
+
+    public void Idle()
+    {
+        _currentState.Idle();
     }
 
     public void Attack()
@@ -46,13 +53,20 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     public void MoveToNextPoint()
     {
-        _enemyMovement.Move();
+        if (!_enemyMovement.Move())
+            _isEndOfBiomeReached = true;
     }
 
-    public void AttackTarget()
+    public void StartAttack()
     {
-        _enemyAttack.OnTargetIsNull += OnTargetIsNull;
-        _enemyAttack.Attack();
+        _enemyAttack.OnTargetBecameNull += OnTargetBecameNull;
+        _enemyAttack.StartAttack();
+    }
+
+    public void StopAttack()
+    {
+        _enemyAttack.OnTargetBecameNull -= OnTargetBecameNull;
+        _enemyAttack.StopAttack();
     }
 
     protected override void Death()
@@ -68,16 +82,18 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyMovement = GetComponent<StaticEnemyMovement>();
     }
 
-    private void TryGetTarget(GameObject target)
+    private void TryGetCharacter(GameObject character)
     {
-        if (target == null)
+        if (character == null)
         {
-            EnemiesManager.Instance.OnTargetInit += OnTargetInit;
+            EnemiesManager.Instance.OnCharacterAvailable += OnCharacterAvailable;
         }
         else
         {
-            Target = target;
-            Target.GetComponent<Character>().OnCharacterDeath += Death;
+            Target = character;
+            _characterTransform = character.transform;
+            _enemyAttack.Character = character.GetComponent<Character>();
+            character.GetComponent<Character>().OnCharacterDeath += Death;
         }
     }
 
@@ -85,33 +101,55 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     {
         _allStates = new List<BaseEnemyState>()
         {
-            new EnemyIdleState(this, this),
+            new EnemyIdleState(this),
             new EnemyMovementState(this, this),
             new EnemyAttackState(this, this),
-            new EnemyTransformationState(this)
         };
 
         _currentState = _allStates[0];
     }
 
-    private void OnTargetInit(GameObject target)
+    private void Update()
     {
-        EnemiesManager.Instance.OnTargetInit -= OnTargetInit;
-        Target = target;
-        Target.GetComponent<Character>().OnCharacterDeath += Death;
-        Player = target;
+        CheckDistanceToCharacter();
     }
 
-    private void OnTargetIsNull()
+    private void CheckDistanceToCharacter()
     {
-        if (Player.transform.position.y > transform.position.y)
-            Move();
-        else
-            Attack();
+        float distanceToMoveY = 12.5f;
+        if (_characterTransform != null)
+        {
+            float distanceY = transform.position.y - _characterTransform.position.y;
+            if (distanceY < distanceToMoveY && !_isEndOfBiomeReached)
+                Move();
+        }
+    }
+
+    private void OnCharacterAvailable(GameObject character)
+    {
+        EnemiesManager.Instance.OnCharacterAvailable -= OnCharacterAvailable;
+        Target = character;
+        _characterTransform = character.transform;
+        _enemyAttack.Character = character.GetComponent<Character>();
+        character.GetComponent<Character>().OnCharacterDeath += Death;
+    }
+
+    private void OnTargetBecameNull()
+    {
+        _enemyAttack.OnTargetBecameNull -= OnTargetBecameNull;
+        Attack();
     }
 
     private void OnBecameVisible()
     {
+        IsGetDamage = true;
         Attack();
+    }
+
+    private void OnBecameInvisible()
+    {
+        IsGetDamage = false;
+        _enemyAttack.OnTargetBecameNull -= OnTargetBecameNull;
+        Idle();
     }
 }

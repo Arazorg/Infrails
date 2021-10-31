@@ -119,15 +119,7 @@ public class LevelSpawner : MonoBehaviour
 
         float numberBiomesInLevel = 5;
         _currentLevelBiomesData = new List<BiomeData>();
-        int previousDataNumber = -1;
-        while (_currentLevelBiomesData.Count != numberBiomesInLevel)
-        {
-            int dataNumber = Random.Range(0, biomes.Count);
-            while(dataNumber == previousDataNumber)
-                dataNumber = Random.Range(0, biomes.Count);
-
-            _currentLevelBiomesData.Add(biomes[dataNumber]);
-            previousDataNumber = dataNumber;
-        }
+        for (int i = 0; i < numberBiomesInLevel; i++)
+            _currentLevelBiomesData.Add(biomes[i % numberBiomesDataInLevel]);
     }
 }

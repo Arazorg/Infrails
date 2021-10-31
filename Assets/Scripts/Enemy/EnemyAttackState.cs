@@ -9,14 +9,19 @@ public class EnemyAttackState : BaseEnemyState
         _attackingEnemy = attackingEnemy;
     }
 
+    public override void Idle()
+    {
+        StateSwitcher.SwitchState<EnemyIdleState>();
+    }
+
     public override void Start()
     {
-        _attackingEnemy.AttackTarget();
+        _attackingEnemy.StartAttack();
     }
 
     public override void Attack()
     {
-        _attackingEnemy.AttackTarget();
+        _attackingEnemy.StartAttack();
     }
 
     public override void Move()
@@ -24,7 +29,8 @@ public class EnemyAttackState : BaseEnemyState
         StateSwitcher.SwitchState<EnemyMovementState>();
     }
 
-    public override void Transform() { }
-
-    public override void Stop() { }
+    public override void Stop()
+    {
+        _attackingEnemy.StopAttack();
+    }
 }

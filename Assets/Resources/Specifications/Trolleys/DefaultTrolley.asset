@@ -20,3 +20,4 @@ MonoBehaviour:
   _colliderSize: {x: 5, y: 5}
   _colliderOffset: {x: 0, y: 0}
   _speed: 25
+  _speedDebuffByEnemyLaser: 6

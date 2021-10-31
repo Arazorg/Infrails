@@ -11,26 +11,28 @@ public class EnemiesManager : MonoBehaviour
     [SerializeField] private List<EnemyData> _destroyableObjectsData;
 
     private List<EnemyData> _flyingEnemiesData = new List<EnemyData>();
+    private List<IEnemyLaserTarget> _staticEnemyTargets = new List<IEnemyLaserTarget>();
     private EnemyData _staticEnemyData;
     private EnemyData _eggData;
     private EnemyData _mainManeCrystalData;
-    private List<Enemy> _currentDestroyableObjects = new List<Enemy>();
-    private GameObject _player;
+    private GameObject _character;
 
-    public delegate void TargetInit(GameObject target);
+    private StaticEnemy _currentStaticEnemy;
 
-    public event TargetInit OnTargetInit;
+    public delegate void CharacterAvailable(GameObject character);
 
-    public GameObject Player
+    public event CharacterAvailable OnCharacterAvailable;
+
+    public GameObject Character
     {
         get
         {
-            return _player;
+            return _character;
         }
         set
         {
-            _player = value;
-            OnTargetInit?.Invoke(_player);
+            _character = value;
+            OnCharacterAvailable?.Invoke(_character);
         }
     }
 
@@ -40,7 +42,7 @@ public class EnemiesManager : MonoBehaviour
         _staticEnemyData = biomeData.StaticEnemyData;
         _mainManeCrystalData = biomeData.MainManeCrystalData;
         _eggData = biomeData.EggData;
-        _currentDestroyableObjects.Clear();
+        _staticEnemyTargets.Clear();
     }
 
     public void SpawnDestroyableObjects(List<Transform> spawnPoints)
@@ -61,7 +63,7 @@ public class EnemiesManager : MonoBehaviour
 
                 if (Random.Range(0f, 1f) < eggSpawnChance)
                 {
-                    _currentDestroyableObjects.Add(SpawnEnemy(_eggData, spawnPoint));
+                    _staticEnemyTargets.Add(SpawnEnemy(_eggData, spawnPoint) as Egg);
                 }
                 else
                 {
@@ -69,7 +71,7 @@ public class EnemiesManager : MonoBehaviour
                     while (dataNumber == previousDataNumber)
                         dataNumber = Random.Range(0, _destroyableObjectsData.Count);
 
-                    _currentDestroyableObjects.Add(SpawnEnemy(_destroyableObjectsData[dataNumber], spawnPoint));
+                    _staticEnemyTargets.Add(SpawnEnemy(_destroyableObjectsData[dataNumber], spawnPoint) as DestroyableKit);
                     previousDataNumber = dataNumber;
                 }
             }
@@ -78,8 +80,11 @@ public class EnemiesManager : MonoBehaviour
 
     public void SpawnStaticEnemy(List<Transform> teleportationPoints)
     {
-        StaticEnemy staticEnemy = SpawnEnemy(_staticEnemyData, teleportationPoints[0]) as StaticEnemy;
-        staticEnemy.InitScripts(teleportationPoints, _currentDestroyableObjects);
+        if (_currentStaticEnemy != null)
+            Destroy(_currentStaticEnemy.gameObject);
+
+        _currentStaticEnemy = SpawnEnemy(_staticEnemyData, teleportationPoints[1]) as StaticEnemy;
+        _currentStaticEnemy.InitScripts(teleportationPoints, _staticEnemyTargets);
     }
 
     public void SpawnFlyingEnemies(List<Transform> spawnPoints)
@@ -105,7 +110,7 @@ public class EnemiesManager : MonoBehaviour
 
         if (Random.Range(0f, 1f) < spawnChanceMainManeCrystal)
         {
-            _currentDestroyableObjects.Add(SpawnEnemy(_mainManeCrystalData, spawnPoint));
+            _staticEnemyTargets.Add(SpawnEnemy(_mainManeCrystalData, spawnPoint) as ManeCrystal);
         }
         else
         {
@@ -117,7 +122,7 @@ public class EnemiesManager : MonoBehaviour
     private Enemy SpawnEnemy(EnemyData data, Transform spawnPoint)
     {
         Enemy enemy = _enemyFactory.GetEnemy(data.Prefab, spawnPoint);
-        enemy.Init(data, spawnPoint, _player);
+        enemy.Init(data, spawnPoint, _character);
         return enemy;
     }
 }

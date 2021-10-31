@@ -78,7 +78,7 @@ public class Biome : MonoBehaviour
         int currentRailsPatternNumber = GetRailsPatternNumber(lastRailsPatternNumber);
         lastRailsPatternNumber = currentRailsPatternNumber;
         RailsPattern railsPattern = Instantiate(_biomeData.RailsPrefabs[currentRailsPatternNumber], floor.transform).GetComponent<RailsPattern>();
-        foreach (var point in railsPattern.StaticEnemiesSpawnPoints)
+        foreach (var point in railsPattern.StaticEnemiesTeleportationPoints)
             _staticEnemyTeleportationPoints.Add(point);
         
 

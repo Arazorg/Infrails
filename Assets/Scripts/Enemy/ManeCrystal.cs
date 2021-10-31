@@ -1,29 +1,47 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
-public class ManeCrystal : Enemy
+public class ManeCrystal : Enemy, IEnemyLaserTarget
 {
     private const float SwayDuration = 0.5f;
 
     [SerializeField] private Transform _shadowTransform;
+    [SerializeField] private Transform _laserAttackPoint;
 
-    private Character _character;
+    private Character _characterScript;
+    private Coroutine _destroyByLaserCoroutine;
     private Vector3 _startPosition;
     private Vector3 _shadowStartPosition;
     private Vector3 _startOffset;
     private Vector3 _finishOffset;
     private float _swayTime = float.MaxValue;
     private float _offsetFactorY = 0.8f;
+    private float _timeToDestroyByLaser = 0;
 
-    public override void Init(EnemyData data, Transform spawnPoint, GameObject player)
+    public Transform LaserAttackPoint => _laserAttackPoint;
+
+    public bool IsVisible => IsGetDamage;
+
+    public override void Init(EnemyData data, Transform spawnPoint, GameObject character)
     {
-        Data = data;   
-        OnInit(player);
-        TryGetTarget(player);
+        Data = data;
+        OnInit();
+        TryGetCharacter(character);
+    }
+
+    public void StartLaserInteraction()
+    {
+        _destroyByLaserCoroutine = StartCoroutine(DestroyByLaser());
+    }
+
+    public void StopLaserInteraction()
+    {
+        StopCoroutine(_destroyByLaserCoroutine);
     }
 
     protected override void Death()
     {
-        _character.SetWeaponElement(Data.EnemyElement);
+        _characterScript.SetWeaponElement(Data.EnemyElement);
         SpawnExplosionParticle();
         Destroy(gameObject);
     }
@@ -70,21 +88,34 @@ public class ManeCrystal : Enemy
         _finishOffset = new Vector3(0, -_offsetFactorY, 0);
     }
 
-    private void TryGetTarget(GameObject target)
+    private void TryGetCharacter(GameObject character)
     {
-        if (target == null)
+        if (character == null)
         {
-            EnemiesManager.Instance.OnTargetInit += OnTargetInit;
+            EnemiesManager.Instance.OnCharacterAvailable += OnCharacterAvailable;
         }
         else
         {
-            _character = target.GetComponent<Character>();
+            _characterScript = character.GetComponent<Character>();
         }
     }
 
-    private void OnTargetInit(GameObject target)
+    private void OnCharacterAvailable(GameObject character)
     {
-        EnemiesManager.Instance.OnTargetInit -= OnTargetInit;
-        _character = target.GetComponent<Character>();
+        EnemiesManager.Instance.OnCharacterAvailable -= OnCharacterAvailable;
+        _characterScript = character.GetComponent<Character>();
+    }
+
+    private IEnumerator DestroyByLaser()
+    {
+        float timeToDestroyByLaser = 1.75f;
+        while (_timeToDestroyByLaser < timeToDestroyByLaser)
+        {
+            _timeToDestroyByLaser += Time.deltaTime;
+            yield return null;
+        }
+
+        SpawnExplosionParticle();
+        Destroy(gameObject);
     }
 }

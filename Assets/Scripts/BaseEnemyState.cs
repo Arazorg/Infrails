@@ -7,13 +7,13 @@ public abstract class BaseEnemyState
         StateSwitcher = stateSwitcher;
     }
 
+    public abstract void Idle();
+
     public abstract void Start();
 
     public abstract void Move(); 
 
     public abstract void Attack(); 
-
-    public abstract void Transform();
 
     public abstract void Stop();
 }

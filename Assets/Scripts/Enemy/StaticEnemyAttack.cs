@@ -1,36 +1,38 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class StaticEnemyAttack : MonoBehaviour
 {
-    [SerializeField] private EnemyLightningLaser _weapon;
+    [SerializeField] private StaticEnemyWeapon _weapon;
 
     private StaticEnemyData _staticEnemyData;
-    private List<Enemy> _targets;
-    private Enemy _currentTarget;
-    private bool _isAttack;
+    private List<IEnemyLaserTarget> _availableTargets;
+    private IEnemyLaserTarget _currentTarget;
+    private IEnemyLaserTarget _character;
     private bool _isFacingRight;
 
-    public delegate void TargetIsNull();
+    public delegate void TargetBecameNull();
 
-    public event TargetIsNull OnTargetIsNull;
+    public event TargetBecameNull OnTargetBecameNull;
 
-    public void Init(StaticEnemyData staticEnemyData, List<Enemy> targets)
+    public IEnemyLaserTarget Character { set => _character = value; }
+
+    public void Init(StaticEnemyData staticEnemyData, List<IEnemyLaserTarget> targets)
     {
         _staticEnemyData = staticEnemyData;
-        _targets = targets;
+        _availableTargets = targets;
         InitWeapon();
-        _isAttack = false;
         _isFacingRight = true;
     }
 
-    public void Attack()
+    public void StartAttack()
     {
         SetTarget();
-        TurnToTarget();
-        _weapon.SetTarget(_currentTarget);
+    }
+
+    public void StopAttack()
+    {
+        _weapon.DestroyLaser();
     }
 
     private void InitWeapon()
@@ -39,32 +41,61 @@ public class StaticEnemyAttack : MonoBehaviour
         _weapon.InitWeapon(_staticEnemyData.WeaponData);
     }
 
-    private void Update()
-    {
-        if (_currentTarget == null && _isAttack)
-        {
-            Debug.Log("NULKLLL");
-            _isAttack = false;
-            _targets.Remove(_currentTarget);
-            OnTargetIsNull?.Invoke();
-        }          
-    }
-
     private void SetTarget()
     {
-        var targets = _targets.Where(s => s == s.IsGetDamage);
-        _currentTarget = targets.FirstOrDefault();
+        _availableTargets.RemoveAll(s => s == null);
+        _currentTarget = GetNearestTarget();
+        if (_currentTarget == null)
+            _currentTarget = _character;
+
+        _weapon.SetTarget(_currentTarget);
+    }
+
+    private IEnemyLaserTarget GetNearestTarget()
+    {
+        float smallestDistance = float.MaxValue;
+        float minDistance = 15f;
+        float maxDistance = 45f;
+
+        IEnemyLaserTarget target = null;
+        foreach (var availableTarget in _availableTargets.FindAll(s => s.IsVisible))
+        {
+            float distance = Vector2.Distance(availableTarget.LaserAttackPoint.position, transform.position);
+            if (distance < smallestDistance && distance > minDistance && distance < maxDistance)
+            {
+                smallestDistance = distance;
+                target = availableTarget;
+            }
+        }
+
+        return target;
+    }
+
+    private void Update()
+    {
+        Attack();
+    }
+
+    private void Attack()
+    {
         if(_currentTarget != null)
-            _isAttack = true;
+        {
+            if (_currentTarget.LaserAttackPoint == null)
+            {
+                OnTargetBecameNull?.Invoke();
+            }
+            else
+                TurnToTarget();
+        }      
     }
 
     private void TurnToTarget()
     {
-        if(_currentTarget != null)
+        if (_currentTarget.LaserAttackPoint != null)
         {
-            if (_currentTarget.transform.position.x > transform.position.x && !_isFacingRight)
+            if (_currentTarget.Transform.position.x > transform.position.x && !_isFacingRight)
                 Flip();
-            else if (_currentTarget.transform.position.x < transform.position.x && _isFacingRight)
+            else if (_currentTarget.Transform.position.x < transform.position.x && _isFacingRight)
                 Flip();
         }
     }

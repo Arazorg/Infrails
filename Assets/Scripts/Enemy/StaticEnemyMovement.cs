@@ -17,13 +17,16 @@ public class StaticEnemyMovement : MonoBehaviour
         _teleportationPointsCounter = 1;
     }
 
-    public void Move()
+    public bool Move()
     {
         if(TrySetNextPoint())
         {
             transform.position = _currentNextPoint.position;
             SpawnTeleportationEffect();
+            return true;
         }
+
+        return false;
     }
 
     private bool TrySetNextPoint()
@@ -32,7 +35,6 @@ public class StaticEnemyMovement : MonoBehaviour
         {
             _currentNextPoint = _teleportationPoints[_teleportationPointsCounter];
             _teleportationPointsCounter++;
-            Debug.Log(_currentNextPoint.gameObject);
             return true;
         }
 

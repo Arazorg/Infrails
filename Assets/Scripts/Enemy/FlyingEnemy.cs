@@ -15,7 +15,7 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         Target = target;
         Target.GetComponent<Character>().OnCharacterDeath += Death;
         InitStates();
-        OnInit(target);
+        OnInit();
         SetScale();       
     }
 
@@ -30,11 +30,6 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     public void Move()
     {
         _currentState.Move();
-    }
-
-    public void Transformation()
-    {
-        _currentState.Transform();
     }
 
     public void Attack()
@@ -65,7 +60,6 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         {
             new EnemyMovementState(this, this),
             new EnemyAttackState(this, this),
-            new EnemyTransformationState(this)
         };
 
         _currentState = _allStates[0];
@@ -86,6 +80,16 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     }
 
     public void MoveToNextPoint()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void StopAttack()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void StartAttack()
     {
         throw new System.NotImplementedException();
     }

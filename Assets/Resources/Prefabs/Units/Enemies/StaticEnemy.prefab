@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 7
   m_Sprite: {fileID: 7486952325750429690, guid: 4334d37d2ea121245ac9abc3eb9411cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -170,7 +170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExplosionPrefab: {fileID: 1965604789713830089, guid: 99fa1967bf5884540ade6d232cbc56b3, type: 3}
-  _lighthingLaserPoint: {fileID: 0}
 --- !u!114 &7186090722435102707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad875b8187a764a468c0faaa986982bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weapon: {fileID: 5344065003786093320}
+  _weapon: {fileID: 6021166559970917652}
 --- !u!114 &6838999033671868283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2254703540264715926}
   - component: {fileID: 1171832437567733882}
-  - component: {fileID: 5344065003786093320}
+  - component: {fileID: 6021166559970917652}
   m_Layer: 10
   m_Name: Weapon
   m_TagString: Untagged
@@ -416,7 +415,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 8
   m_Sprite: {fileID: -2509403871126074280, guid: d778f0b5bf305664e958fdd21651dbc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -428,7 +427,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5344065003786093320
+--- !u!114 &6021166559970917652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -437,7 +436,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6334329356744379928}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b05d8f28c2218c4e9f8b4d2e0fab92f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ac0779ac5cccdb478e985adaf72aaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _weaponSprite: {fileID: 1171832437567733882}

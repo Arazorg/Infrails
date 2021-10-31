@@ -1,14 +1,16 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviour, IEnemyLaserTarget
 {
+    [SerializeField] private Transform _laserAttackPoint;
+
     private Animator _animator;
     private BoxCollider2D _boxCollider2D;
     private CharacterData _characterData;
     private CharacterEffects _characterEffects;
     private CharacterControl _characterControl;
+    private TrolleyMovement _trolleyMovement;
     private Element _currentElement;
 
     private int _health;
@@ -48,6 +50,12 @@ public class Character : MonoBehaviour
     public int MaxArmor => _characterData.MaxArmor;
 
     public Element CurrentElement => _currentElement;
+
+    public Transform Transform => transform;
+
+    public Transform LaserAttackPoint => _laserAttackPoint;
+
+    public bool IsVisible => true;
 
     public void Init(CharacterData data)
     {
@@ -112,7 +120,7 @@ public class Character : MonoBehaviour
         _isCanReborn = false;
         _characterEffects.SetCharacterVisibility(true);
         _characterEffects.SpawnRebornEffect(_characterData.TeleportationAnimatorController);
-        GetComponentInParent<TrolleyMovement>().IsMove = true;
+        _trolleyMovement.IsMove = true;
         RepairArmor(_characterData.MaxArmor);
         Heal(_characterData.MaxHealth);
     }
@@ -124,12 +132,25 @@ public class Character : MonoBehaviour
         OnElementChanged?.Invoke(element);
     }
 
+    public void StartLaserInteraction()
+    {
+        _characterEffects.SpawnDizzinesEffect();
+        _trolleyMovement.StartSpeedDebaff();
+    }
+
+    public void StopLaserInteraction()
+    {
+        _characterEffects.DestroyDizzinesEffect();
+        _trolleyMovement.StopSpeedDebaff();
+    }
+
     private void GetComponents()
     {
         _animator = GetComponent<Animator>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _characterEffects = GetComponent<CharacterEffects>();
         _characterControl = GetComponent<CharacterControl>();
+        _trolleyMovement = GetComponentInParent<TrolleyMovement>();
     }
 
     private void SpawnStartWeapon()

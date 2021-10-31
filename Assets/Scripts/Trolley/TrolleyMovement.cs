@@ -7,16 +7,35 @@ public class TrolleyMovement : MonoBehaviour
     private const float DistanceForGetNewPosition = 0.01f;
 
     private Animator _animator;
-    public Rail _nextRail;
+    private Rail _nextRail;
     private Transform _previousRail;
-    private bool _isMove;
     private int _speed;
+    private int _startSpeed;
+    private int _speedDebuff;
+    private bool _isMove;
+
+    public int Speed { set => _speed = value; }
 
     public Rail NextRail { get => _nextRail; set => _nextRail = value; }
 
     public bool IsMove { get => _isMove; set => _isMove = value; }
 
-    public int Speed { get => _speed; set => _speed = value; }
+    public void Init(int speed, int speedDebuff)
+    {
+        _speed = speed;
+        _startSpeed = speed;
+        _speedDebuff = speedDebuff;
+    }
+
+    public void StartSpeedDebaff()
+    {
+        _speed -= _speedDebuff;
+    }
+
+    public void StopSpeedDebaff()
+    {
+        _speed = _startSpeed;
+    }
 
     private void Start()
     {

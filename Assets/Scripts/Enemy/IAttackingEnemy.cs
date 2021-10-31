@@ -1,4 +1,6 @@
 ﻿public interface IAttackingEnemy
 {
-    void AttackTarget();
+    void StartAttack();
+
+    void StopAttack();
 }

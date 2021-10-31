@@ -41,7 +41,7 @@ public class CharacterSpawner : MonoBehaviour
         character.Init(data);
         _cameraManager.Init();
         _cameraManager.SetCameraParams(characterGameObject.transform, _gameCameraSize, _gameCameraOffset);
-        EnemiesManager.Instance.Player = characterGameObject;
+        EnemiesManager.Instance.Character = characterGameObject;
         return characterGameObject;
     }
 

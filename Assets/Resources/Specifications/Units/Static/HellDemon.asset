@@ -17,7 +17,7 @@ MonoBehaviour:
   _colliderSize: {x: 4.152752, y: 4.9804173}
   _colliderOffset: {x: 0.060440063, y: 4.5097914}
   _unitName: HellDemon
-  _maxHealth: 10
+  _maxHealth: 63
   _prefab: {fileID: 775310967722176096, guid: ce3b153b5b3cede4698c7ceb4ff5abda, type: 3}
   _enemyElement: {fileID: 11400000, guid: be21b1baa80e3024dac96d96a8788132, type: 2}
   _bulletData: {fileID: 0}

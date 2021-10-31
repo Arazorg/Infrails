@@ -5,7 +5,7 @@ public class RailsPattern : MonoBehaviour
 {
     [Header("Enemies Spawn Points")]
     [SerializeField] private List<Transform> _flyingEnemiesSpawnPoints;
-    [SerializeField] private List<Transform> _staticEnemiesSpawnPoints;
+    [SerializeField] private List<Transform> _staticEnemiesTeleportationPoints;
     [SerializeField] private List<Transform> _destroyableObjectsSpawnPoints;
 
     [Header("Rails")]
@@ -14,7 +14,7 @@ public class RailsPattern : MonoBehaviour
 
     public List<Transform> FlyingEnemiesSpawnPoints => _flyingEnemiesSpawnPoints;
 
-    public List<Transform> StaticEnemiesSpawnPoints => _staticEnemiesSpawnPoints;
+    public List<Transform> StaticEnemiesTeleportationPoints => _staticEnemiesTeleportationPoints;
 
     public List<Transform> DestroyableObjectsSpawnPoints => _destroyableObjectsSpawnPoints;
 

@@ -7,6 +7,7 @@ public class TrolleyData : ItemData
     [SerializeField] private Vector2 _colliderSize;
     [SerializeField] private Vector2 _colliderOffset;
     [SerializeField] private int _speed;
+    [SerializeField] private int _speedDebuffByEnemyLaser;
 
     public RuntimeAnimatorController AnimatorController => _animatorController;
 
@@ -15,4 +16,6 @@ public class TrolleyData : ItemData
     public Vector2 ColliderOffset => _colliderOffset;
 
     public int Speed => _speed;
+
+    public int SpeedDebuffByEnemyLaser => _speedDebuffByEnemyLaser;
 }
