@@ -16,12 +16,6 @@ public class LevelInfoPanelUI : MonoBehaviour
 
     public void SetLevelInfoPanel(int levelNumber, List<BiomeData> currentBiomesData)
     {
-        foreach (var item in currentBiomesData)
-        {
-            Debug.Log(item);
-        }
-        Debug.Log(currentBiomesData.Count);
-
         _levelText.text = $"{LocalizationManager.GetLocalizedText(LevelKey)}{levelNumber}";
         int biomesCounter = 0;
         string biomesText = "";

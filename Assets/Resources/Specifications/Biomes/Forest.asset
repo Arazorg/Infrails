@@ -26,6 +26,7 @@ MonoBehaviour:
   _endWallFloorSprite: {fileID: 21300000, guid: 08212ff9239d68e48884cb445e750a05, type: 3}
   _flyingEnemiesData:
   - {fileID: 11400000, guid: 05eeda21f044fc5468807e678694d51c, type: 2}
+  - {fileID: 11400000, guid: 737a71ee118e0a647b5984049893fcdf, type: 2}
   _staticEnemyData: {fileID: 11400000, guid: 19c57f6e0332b7a4fbdfab7cd409dd38, type: 2}
   _eggData: {fileID: 11400000, guid: e728541701a88764aa8666e2a968bb74, type: 2}
   _mainManeCrystalData: {fileID: 11400000, guid: 758186f48ef6aa9419c51c191a4a730d, type: 2}

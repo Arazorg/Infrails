@@ -6,9 +6,11 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
     private const int HealValue = 5;
     private const int RepairValue = 3;
 
+    [SerializeField] private GameObject _destructionEffectPrefab;
     [SerializeField] private Transform _laserAttackPoint;
-    [SerializeField] private KitType _type;
+    [SerializeField] private KitType _type;  
 
+    private GameObject _destructionEffect;
     private Character _characterScript;
     private Coroutine _destroyByLaserCoroutine;
     private float _timeToDestroyByLaser = 0;
@@ -32,11 +34,13 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
 
     public void StartLaserInteraction()
     {
+        SpawnDestructionEffect();
         _destroyByLaserCoroutine = StartCoroutine(DestroyByLaser());
     }
 
     public void StopLaserInteraction()
     {
+        Destroy(_destructionEffect);
         StopCoroutine(_destroyByLaserCoroutine);
     }
 
@@ -84,5 +88,12 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
 
         SpawnExplosionParticle();
         Destroy(gameObject);
+    }
+
+    private void SpawnDestructionEffect()
+    {
+        _destructionEffect = Instantiate(_destructionEffectPrefab, _laserAttackPoint);
+        var settings = _destructionEffect.GetComponent<ParticleSystem>().main;
+        settings.startColor = new ParticleSystem.MinMaxGradient(Data.UnitColor);
     }
 }

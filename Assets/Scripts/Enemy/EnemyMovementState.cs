@@ -11,8 +11,7 @@ public class EnemyMovementState : BaseEnemyState
 
     public override void Start()
     {
-        _movableEnemy.MoveToNextPoint();
-        StateSwitcher.SwitchState<EnemyAttackState>();
+        _movableEnemy.StartMove();
     }
 
     public override void Idle() 
@@ -22,8 +21,7 @@ public class EnemyMovementState : BaseEnemyState
 
     public override void Move()
     {
-        _movableEnemy.MoveToNextPoint();
-        StateSwitcher.SwitchState<EnemyAttackState>();
+        _movableEnemy.StartMove();
     }
 
     public override void Attack()

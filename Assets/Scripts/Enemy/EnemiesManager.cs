@@ -12,6 +12,7 @@ public class EnemiesManager : MonoBehaviour
 
     private List<EnemyData> _flyingEnemiesData = new List<EnemyData>();
     private List<IEnemyLaserTarget> _staticEnemyTargets = new List<IEnemyLaserTarget>();
+    private List<FlyingEnemy> _currentFlyingEnemies = new List<FlyingEnemy>();
     private EnemyData _staticEnemyData;
     private EnemyData _eggData;
     private EnemyData _mainManeCrystalData;
@@ -38,6 +39,7 @@ public class EnemiesManager : MonoBehaviour
 
     public void SetEnemiesData(BiomeData biomeData)
     {
+        _currentFlyingEnemies.Clear();
         _flyingEnemiesData = biomeData.FlyingEnemiesData;
         _staticEnemyData = biomeData.StaticEnemyData;
         _mainManeCrystalData = biomeData.MainManeCrystalData;
@@ -63,7 +65,7 @@ public class EnemiesManager : MonoBehaviour
 
                 if (Random.Range(0f, 1f) < eggSpawnChance)
                 {
-                    _staticEnemyTargets.Add(SpawnEnemy(_eggData, spawnPoint) as Egg);
+                    _staticEnemyTargets.Add(SpawnEnemyToParent(_eggData, spawnPoint) as Egg);
                 }
                 else
                 {
@@ -71,7 +73,7 @@ public class EnemiesManager : MonoBehaviour
                     while (dataNumber == previousDataNumber)
                         dataNumber = Random.Range(0, _destroyableObjectsData.Count);
 
-                    _staticEnemyTargets.Add(SpawnEnemy(_destroyableObjectsData[dataNumber], spawnPoint) as DestroyableKit);
+                    _staticEnemyTargets.Add(SpawnEnemyToParent(_destroyableObjectsData[dataNumber], spawnPoint) as DestroyableKit);
                     previousDataNumber = dataNumber;
                 }
             }
@@ -83,17 +85,29 @@ public class EnemiesManager : MonoBehaviour
         if (_currentStaticEnemy != null)
             Destroy(_currentStaticEnemy.gameObject);
 
-        _currentStaticEnemy = SpawnEnemy(_staticEnemyData, teleportationPoints[1]) as StaticEnemy;
+        _currentStaticEnemy = SpawnEnemyToParent(_staticEnemyData, teleportationPoints[1]) as StaticEnemy;
         _currentStaticEnemy.InitScripts(teleportationPoints, _staticEnemyTargets);
     }
 
     public void SpawnFlyingEnemies(List<Transform> spawnPoints)
     {
+        float maxNumberOfEnemies = 12;
         foreach (var spawnPoint in spawnPoints)
         {
-            int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
-            SpawnEnemy(_flyingEnemiesData[dataNumber], spawnPoint);
+            if (_currentFlyingEnemies.Count <= maxNumberOfEnemies && spawnPoint != null)
+            {
+                int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
+                FlyingEnemy enemy = SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint) as FlyingEnemy;
+                enemy.OnEnemyDeath += RemoveFlyingEnemyFromList;
+                _currentFlyingEnemies.Add(enemy);
+            }
         }
+    }
+
+    public void SpawnEnemyFromEgg(Transform spawnPoint)
+    {
+        int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
+        SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint);
     }
 
     private void Awake()
@@ -110,19 +124,32 @@ public class EnemiesManager : MonoBehaviour
 
         if (Random.Range(0f, 1f) < spawnChanceMainManeCrystal)
         {
-            _staticEnemyTargets.Add(SpawnEnemy(_mainManeCrystalData, spawnPoint) as ManeCrystal);
+            _staticEnemyTargets.Add(SpawnEnemyToParent(_mainManeCrystalData, spawnPoint) as ManeCrystal);
         }
         else
         {
             int dataNumber = Random.Range(0, _maneCrystalsData.Count);
-            SpawnEnemy(_maneCrystalsData[dataNumber], spawnPoint);
+            SpawnEnemyToParent(_maneCrystalsData[dataNumber], spawnPoint);
         }
     }
 
-    private Enemy SpawnEnemy(EnemyData data, Transform spawnPoint)
+    private Enemy SpawnEnemyToParent(EnemyData data, Transform spawnPoint)
     {
         Enemy enemy = _enemyFactory.GetEnemy(data.Prefab, spawnPoint);
         enemy.Init(data, spawnPoint, _character);
         return enemy;
+    }
+
+    private Enemy SpawnEnemyByPosition(EnemyData data, Transform spawnPoint)
+    {
+        Enemy enemy = _enemyFactory.GetEnemyByPosition(data.Prefab, spawnPoint.position);
+        enemy.Init(data, spawnPoint, _character);
+        return enemy;
+    }
+
+    private void RemoveFlyingEnemyFromList(FlyingEnemy enemy)
+    {
+        enemy.OnEnemyDeath -= RemoveFlyingEnemyFromList;
+        _currentFlyingEnemies.Remove(enemy);
     }
 }

@@ -17,7 +17,7 @@ MonoBehaviour:
   _colliderSize: {x: 4.152752, y: 5.3384647}
   _colliderOffset: {x: 0.060439944, y: 4.3307676}
   _unitName: CaveGolem
-  _maxHealth: 63
+  _maxHealth: 36
   _prefab: {fileID: 775310967722176096, guid: ce3b153b5b3cede4698c7ceb4ff5abda, type: 3}
   _enemyElement: {fileID: 11400000, guid: 38675b82c5e3f834e89d54b880214369, type: 2}
   _bulletData: {fileID: 0}

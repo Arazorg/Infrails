@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a67afa476323ab046bfe49ccf5691b88, type: 3}
-  m_Name: UnderwaterFish
+  m_Name: ForestBee
   m_EditorClassIdentifier: 
-  _animatorController: {fileID: 9100000, guid: 395751fc5743479459ddd1670e5405b3, type: 2}
-  _unitColor: {r: 0.25490198, g: 0.49411768, b: 0.87843144, a: 1}
-  _colliderSize: {x: 4.75, y: 3}
-  _colliderOffset: {x: 0.25, y: 0}
-  _unitName: Underwater Fish
-  _maxHealth: 4
+  _animatorController: {fileID: 9100000, guid: 6aa176cad6377cc49ac09dceb49085a1, type: 2}
+  _unitColor: {r: 0.9058824, g: 0.67058825, b: 0.15294118, a: 1}
+  _colliderSize: {x: 2, y: 3.35}
+  _colliderOffset: {x: 0, y: 1.75}
+  _unitName: ForestBee
+  _maxHealth: 7
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
-  _enemyElement: {fileID: 11400000, guid: 97a0ce2a93f544643877c903e109af8f, type: 2}
-  _bulletData: {fileID: 11400000, guid: 5f7cd1fed4f5e4f4580dcec6a7060bc6, type: 2}
-  _damage: 1
-  _fireRate: 0.33
-  _bulletSpawnPosition: {x: -2.9, y: -1.2}
+  _enemyElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}
+  _isSpriteFacingRight: 1
+  _bulletData: {fileID: 11400000, guid: 4416db79a65a5b442961f9a6da0b8e57, type: 2}
+  _damage: 2
+  _fireRate: 0.6
+  _bulletSpawnPosition: {x: 1.8, y: 0.375}
   _bulletPrefab: {fileID: 6440016302738299195, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}

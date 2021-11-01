@@ -5,6 +5,7 @@ public class EnemyData : UnitData
 {
     [SerializeField] private Enemy _prefab;
     [SerializeField] private Element _enemyElement;
+    [SerializeField] private bool _isSpriteFacingRight;
 
     public enum EnemyType
     {
@@ -20,4 +21,6 @@ public class EnemyData : UnitData
     public Enemy Prefab => _prefab;
 
     public Element EnemyElement => _enemyElement;
+
+    public bool IsSpriteFacingRight => _isSpriteFacingRight;
 }

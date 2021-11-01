@@ -41,20 +41,25 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _currentState.Idle();
     }
 
-    public void Attack()
-    {
-        _currentState.Attack();
-    }
-
     public void Move()
     {
         _currentState.Move();
     }
 
-    public void MoveToNextPoint()
+    public void StartMove()
     {
+        _enemyMovement.OnReachedNextPoint += Attack;
         if (!_enemyMovement.Move())
+        {
             _isEndOfBiomeReached = true;
+            Attack();
+        }
+    }
+
+    public void Attack()
+    {
+        _enemyMovement.OnReachedNextPoint -= Attack;
+        _currentState.Attack();
     }
 
     public void StartAttack()
@@ -151,5 +156,10 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         IsGetDamage = false;
         _enemyAttack.OnTargetBecameNull -= OnTargetBecameNull;
         Idle();
+    }
+
+    private void OnDestroy()
+    {
+        Target.GetComponent<Character>().OnCharacterDeath -= Death;
     }
 }

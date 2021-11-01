@@ -10,14 +10,11 @@ public abstract class Bullet : MonoBehaviour
     protected BulletData Data;
 
     private int _damage;
-    private int _bulletSpeed;
     private float _critChance;
 
     public int Damage => _damage;
 
     public float CritChance => _critChance;
-
-    public int BulletSpeed => _bulletSpeed;
 
     public void Init(BulletData data, WeaponData weaponData, Element.Type elementType)
     {
@@ -27,6 +24,16 @@ public abstract class Bullet : MonoBehaviour
         SetParticleColor(GetColorByElementType(elementType));
         SetCharacteristics(weaponData);
         transform.localScale = new Vector2(weaponData.BulletScaleFactor, weaponData.BulletScaleFactor);
+    }
+
+    public void Init(BulletData data, AttackingEnemyData enemyData)
+    {
+
+        Data = data;
+        SetBulletPhysic();
+        SetSpriteByElement(Element.Type.None);
+        SetParticleColor(Color.red);
+        _damage = enemyData.Damage;
     }
 
     public abstract void BulletHit(Collider2D collision);
@@ -74,7 +81,6 @@ public abstract class Bullet : MonoBehaviour
     {
         _damage = weaponData.Damage;
         _critChance = weaponData.CritChance;
-        _bulletSpeed = weaponData.BulletSpeed;
     }
 
     private Color GetColorByElementType(Element.Type element)

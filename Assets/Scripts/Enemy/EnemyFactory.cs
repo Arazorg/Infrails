@@ -6,4 +6,9 @@ public class EnemyFactory : GenericFactory<Enemy>
     {
         return GetNewInstanceToParent(enemyPrefab, spawnPoint);
     }
+
+    public Enemy GetEnemyByPosition(Enemy enemyPrefab, Vector3 position)
+    {
+        return GetNewInstanceByPosition(enemyPrefab, position);
+    }
 }

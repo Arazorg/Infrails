@@ -6,9 +6,11 @@ public class Egg : Enemy, IEnemyLaserTarget
 {
     private const float SwayDuration = 0.5f;
 
+    [SerializeField] private GameObject _destructionEffectPrefab;
     [SerializeField] private Transform _shadowTransform;
     [SerializeField] private Transform _laserAttackPoint;
 
+    private GameObject _destructionEffect;
     private Coroutine _destroyByLaserCoroutine;
     private float _swayTime = float.MaxValue;
     private float _angleFactor = 1f;
@@ -27,17 +29,19 @@ public class Egg : Enemy, IEnemyLaserTarget
 
     public void StartLaserInteraction()
     {
+        SpawnDestructionEffect();
         _destroyByLaserCoroutine = StartCoroutine(DestroyByLaser());
     }
 
     public void StopLaserInteraction()
     {
+        Destroy(_destructionEffect);
         StopCoroutine(_destroyByLaserCoroutine);
     }
 
     protected override void Death()
     {
-        EnemiesManager.Instance.SpawnFlyingEnemies(new List<Transform>() { transform });
+        EnemiesManager.Instance.SpawnEnemyFromEgg(transform.parent);
         SpawnExplosionParticle();
         Destroy(gameObject);
     }
@@ -86,5 +90,12 @@ public class Egg : Enemy, IEnemyLaserTarget
         }          
 
         Death();
+    }
+
+    private void SpawnDestructionEffect()
+    {
+        _destructionEffect = Instantiate(_destructionEffectPrefab, _laserAttackPoint);
+        var settings = _destructionEffect.GetComponent<ParticleSystem>().main;
+        settings.startColor = new ParticleSystem.MinMaxGradient(Data.UnitColor);
     }
 }

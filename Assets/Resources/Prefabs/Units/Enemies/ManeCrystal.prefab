@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExplosionPrefab: {fileID: 1965604789713830089, guid: 99fa1967bf5884540ade6d232cbc56b3, type: 3}
+  _destructionEffectPrefab: {fileID: 4020237234510910174, guid: 12cb825221feb9e48b1ff6a6d3c94a86, type: 3}
   _shadowTransform: {fileID: 1933899335477625661}
   _laserAttackPoint: {fileID: 4177363295417267911}
 --- !u!1 &2767976192225529487

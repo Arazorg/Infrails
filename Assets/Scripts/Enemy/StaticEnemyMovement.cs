@@ -10,6 +10,11 @@ public class StaticEnemyMovement : MonoBehaviour
     private Transform _currentNextPoint;
     private int _teleportationPointsCounter;
 
+    public delegate void ReachedNextPoint();
+
+    public event ReachedNextPoint OnReachedNextPoint;
+
+
     public void Init(StaticEnemyData staticEnemyData, List<Transform> teleportationPoints)
     {
         _staticEnemyData = staticEnemyData;
@@ -22,6 +27,7 @@ public class StaticEnemyMovement : MonoBehaviour
         if(TrySetNextPoint())
         {
             transform.position = _currentNextPoint.position;
+            OnReachedNextPoint?.Invoke();
             SpawnTeleportationEffect();
             return true;
         }

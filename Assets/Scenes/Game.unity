@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.2
+  m_fontSize: 68.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5015,8 +5015,8 @@ RectTransform:
   - {fileID: 764274892}
   - {fileID: 1506443876}
   - {fileID: 717947521}
-  - {fileID: 1801150560}
   - {fileID: 2140195661}
+  - {fileID: 1801150560}
   m_Father: {fileID: 935513233}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6160,8 +6160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 500, y: -150}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 500, y: -155}
+  m_SizeDelta: {x: 175, y: 175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717947522
 MonoBehaviour:
@@ -6175,8 +6175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16925b018da76fb4fade15466fd63b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startPosition: {x: 500, y: -150}
-  _finishPosition: {x: -135, y: -150}
+  _startPosition: {x: 500, y: -155}
+  _finishPosition: {x: -135, y: -155}
   _isShowOnStart: 1
   _isMoving: 1
   _isResizing: 0
@@ -6964,14 +6964,14 @@ MonoBehaviour:
   m_Follow: {fileID: 2080777537}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 44
+    OrthographicSize: 48
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.4864865, y: 1}
+    m_SensorSize: {x: 0.4787234, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10415,7 +10415,7 @@ MonoBehaviour:
   _trolleyForSupportData: {fileID: 11400000, guid: 54cfea7a3e044bb4495aa22b3dbb42d6, type: 2}
   _cameraManager: {fileID: 2016901170}
   _gameCameraOffset: {x: 0, y: 10, z: -10}
-  _gameCameraSize: 44
+  _gameCameraSize: 48
 --- !u!4 &1191767548
 Transform:
   m_ObjectHideFlags: 0
@@ -14153,7 +14153,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 566710716}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -14224,7 +14224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3996724562619157430, guid: 9cd60225d3332fe4592b1e62486c5d46, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b921dbce6baeba04f86070515fc18259, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -15286,7 +15286,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.7
+  m_fontSize: 42.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15917,7 +15917,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 44
+  orthographic size: 48
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -16998,7 +16998,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 566710716}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

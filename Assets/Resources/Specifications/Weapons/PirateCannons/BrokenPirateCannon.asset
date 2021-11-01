@@ -24,7 +24,7 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: -0.05, y: 3.25}
   _type: 1
-  _bulletSpeed: 80
+  _bulletSpeed: 105
   _damage: 8
   _critChance: 15
   _fireRate: 1.25
