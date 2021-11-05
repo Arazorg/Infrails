@@ -20,9 +20,10 @@ MonoBehaviour:
   _maxHealth: 36
   _prefab: {fileID: 775310967722176096, guid: ce3b153b5b3cede4698c7ceb4ff5abda, type: 3}
   _enemyElement: {fileID: 11400000, guid: b0060368cc8aaac4fa11cc08484aff62, type: 2}
-  _bulletData: {fileID: 0}
-  _damage: 1
-  _fireRate: 1
-  _weaponData: {fileID: 11400000, guid: 6cfb7faa0df363e43ad128d378aeaf7c, type: 2}
-  _weaponSpawnPosition: {x: 0, y: 2.2}
+  _isSpriteFacingRight: 0
+  _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
+  _weaponData: {fileID: 11400000, guid: 0cc04c62e9b8b1042acc0befffed0959, type: 2}
+  _laserAnimatorController: {fileID: 9100000, guid: 102f70961abaec14899428b318feaaa1, type: 2}
   _teleportationAnimatorController: {fileID: 9100000, guid: ef6c560428405544db93c6e0f0dbc608, type: 2}
+  _weaponSpawnPosition: {x: 0, y: 2.2}

@@ -4,7 +4,6 @@ public class SimpleBullet : Bullet
 {
     public override void BulletHit(Collider2D collision)
     {
-        SpawnExplosionParticle();
-        DestroyBullet();
+        HideBullet();
     }
 }

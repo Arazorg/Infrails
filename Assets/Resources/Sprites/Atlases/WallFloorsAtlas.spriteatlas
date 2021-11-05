@@ -48,11 +48,11 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 08212ff9239d68e48884cb445e750a05, type: 3}
   - {fileID: 21300000, guid: c74bdf2d50104b94182d94f5edfaaa82, type: 3}
   m_PackedSpriteNamesToIndex:
-  - UnderwaterWallFloorSprite
-  - HellWallFloorSprite
-  - SpaceWallFloorSprite
-  - ForestWallFloorSprite
-  - CaveWallFloorSprite
+  - UnderwaterEndWallFloorSprite
+  - HellEndWallFloorSprite
+  - SpaceEndWallFloorSprite
+  - ForestEndWallFloorSprite
+  - CaveEndWallFloorSprite
   m_RenderDataMap: {}
   m_Tag: WallFloorsAtlas
   m_IsVariant: 0

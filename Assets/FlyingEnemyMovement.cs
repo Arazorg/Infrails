@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FlyingEnemyMovement : MonoBehaviour
 {
-    private const int Speed = 50;
+    private const int Speed = 37;
 
     [SerializeField] private Transform enemyShadowTransform;
 
@@ -58,10 +58,10 @@ public class FlyingEnemyMovement : MonoBehaviour
     private void SetNextPoint()
     {
         float minDistanceX = 12.5f;
-        float minOffsetX = 5f;
+        float minOffsetX = 7.5f;
         float maxOffsetX = 10;
         float minOffsetY = 15;
-        float maxOffsetY = 65;
+        float maxOffsetY = 50;
 
         if (_target != null)
         {

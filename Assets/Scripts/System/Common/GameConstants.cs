@@ -20,6 +20,8 @@
     public const bool CharacterIsNotControl = false;
     public const bool TeleportToTrolley = true;
     public const bool TeleportToStartPoint = false;
+    public const bool DeathWithEffect = true;
+    public const bool DeathWithoutEffect = false;
 
     // Lights
     public const bool TurnOn = true;

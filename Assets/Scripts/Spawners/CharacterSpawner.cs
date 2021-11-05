@@ -34,15 +34,14 @@ public class CharacterSpawner : MonoBehaviour
         return trolley;
     }
 
-    public GameObject SpawnCharacter(CharacterData data, Transform spawnPoint)
+    public Character SpawnCharacter(CharacterData data, Transform spawnPoint)
     {
-        GameObject characterGameObject = Instantiate(_characterPrefab, spawnPoint);
-        var character = characterGameObject.GetComponent<Character>();
+        var character = Instantiate(_characterPrefab, spawnPoint).GetComponent<Character>();
         character.Init(data);
         _cameraManager.Init();
-        _cameraManager.SetCameraParams(characterGameObject.transform, _gameCameraSize, _gameCameraOffset);
-        EnemiesManager.Instance.Character = characterGameObject;
-        return characterGameObject;
+        _cameraManager.SetCameraParams(character.Transform, _gameCameraSize, _gameCameraOffset);
+        EnemiesManager.Instance.Character = character;
+        return character;
     }
 
     private void Awake()

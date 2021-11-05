@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fea2970d3605af448b043e37466ae47, type: 3}
+  m_Name: UnderwaterMedusaWeapon
+  m_EditorClassIdentifier: 
+  _itemName: 
+  _itemColor: {r: 0, g: 0, b: 0, a: 0}
+  _itemSpriteUI: {fileID: 0}
+  _isStartingItem: 0
+  _prefab: {fileID: 0}
+  _weaponAudioClip: {fileID: 8300000, guid: 7ca8d26a2b9c7c044b9f325517d182b4, type: 3}
+  _animatorController: {fileID: 0}
+  _mainSprite: {fileID: 0}
+  _handsPositions: []
+  _type: 0
+  _bulletSpeed: 80
+  _damage: 2
+  _critChance: 15
+  _fireRate: 0.6
+  _bulletScaleFactor: 1
+  _bulletSpawnPosition: {x: 1.65, y: 1.35}
+  _bulletData: {fileID: 11400000, guid: 4416db79a65a5b442961f9a6da0b8e57, type: 2}

@@ -8,7 +8,7 @@ public class Missile : Bullet
     public override void BulletHit(Collider2D collision)
     {
         SpawnExplosion();
-        DestroyBullet();
+        HideBullet();
     }
 
     private void SpawnExplosion()

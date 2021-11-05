@@ -24,10 +24,10 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: -0.05, y: 2}
   _type: 2
-  _bulletSpeed: 90
+  _bulletSpeed: 105
   _damage: 4
   _critChance: 10
-  _fireRate: 1.5
+  _fireRate: 1
   _bulletScaleFactor: 1
   _bulletSpawnPosition: {x: -0.15, y: 3.9}
   _bulletData: {fileID: 11400000, guid: bc9532ac9eb791549b683b8e7e763923, type: 2}

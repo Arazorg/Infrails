@@ -39,8 +39,6 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
 
     public event ElementChanged OnElementChanged;
 
-    public Transform CharacterTransform => transform;
-
     public bool IsDeath => _isDeath;
 
     public bool IsCanReborn => _isCanReborn;
@@ -166,7 +164,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         if (!_isDeath)
         {
             _isDeath = true;
-            GetComponentInParent<TrolleyMovement>().IsMove = false;
+            _trolleyMovement.IsMove = false;
             Camera.main.GetComponent<CameraManager>().ShakeCameraOnce(.3f, 25);
             OnCharacterDeath?.Invoke();
             yield return new WaitForSeconds(hideCharacterDelay);
@@ -186,13 +184,11 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string enemyBulletTag = "EnemyBullet";
-
-        if (collision.CompareTag(enemyBulletTag))
+        if (collision.TryGetComponent(out Bullet bullet))
         {
             BendOver(collision.transform);
-            Damage(collision.GetComponent<Bullet>().Damage);
-            collision.GetComponent<Bullet>().BulletHit(collision);
+            Damage(bullet.Damage);
+            bullet.BulletHit(collision);
         }
     }
 

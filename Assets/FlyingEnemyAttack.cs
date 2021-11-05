@@ -3,16 +3,16 @@ using UnityEngine;
 
 public class FlyingEnemyAttack : MonoBehaviour
 {
-    private const float EnemyBulletSpeed = 90;
+    [SerializeField] private Transform _bulletSpawnPoint;
 
-    [SerializeField] private Transform bulletSpawnPoint;
-
-    protected BulletFactory _bulletFactory;
+    private BulletFactory _bulletFactory;
+    private MonobehaviourPool<Bullet> _bulletsPool;
     private Transform _target;
     private AttackingEnemyData _data;
     private float _needAngleZ;
     private float _stopAttackTime;
     private bool _isFacingRight;
+    
 
     public delegate void AttackFinished();
 
@@ -23,13 +23,14 @@ public class FlyingEnemyAttack : MonoBehaviour
         _target = target;
         _data = data as AttackingEnemyData;
         _isFacingRight = data.IsSpriteFacingRight;
+        _bulletSpawnPoint.localPosition = _data.WeaponData.BulletSpawnPosition;
         _bulletFactory = GetComponent<BulletFactory>();
-        bulletSpawnPoint.localPosition = (_data as FlyingEnemyData).BulletSpawnPosition;
+        _bulletsPool = new MonobehaviourPool<Bullet>(0, true, _bulletFactory, _data.WeaponData.BulletData.Prefab, _bulletSpawnPoint);
     }
 
     public void StartAttack()
     {
-        float attackDuration = 1f;
+        float attackDuration = 1.5f;
         _stopAttackTime = Time.time + attackDuration;
         _needAngleZ = GetNeedAngle();
         StartCoroutine(Attacking());
@@ -40,6 +41,12 @@ public class FlyingEnemyAttack : MonoBehaviour
         StopCoroutine(Attacking());
     }
 
+    public void DestroyPoolBullets()
+    {
+        foreach (var bullet  in _bulletsPool.Pool)
+            bullet.DestroyBullet();
+    }
+
     private IEnumerator Attacking()
     {        
         while (true)
@@ -47,7 +54,7 @@ public class FlyingEnemyAttack : MonoBehaviour
             if (Time.time > _stopAttackTime)
                 break;
 
-            yield return new WaitForSeconds(_data.FireRate);
+            yield return new WaitForSeconds(_data.WeaponData.FireRate);
             Shoot();
         }
 
@@ -57,21 +64,25 @@ public class FlyingEnemyAttack : MonoBehaviour
 
     private void Shoot()
     {
-        var bullet = _bulletFactory.GetBullet(_data.BulletData.Prefab, bulletSpawnPoint);
-        bullet.Init(_data.BulletData, _data);
+        AudioManager.Instance.PlayEffect(_data.WeaponData.WeaponAudioClip);
+        var bullet = _bulletsPool.GetFreeElement();
+        bullet.transform.position = _bulletSpawnPoint.position;
+        bullet.Init(_data.WeaponData, Element.Type.None);
         Quaternion dir = Quaternion.AngleAxis(0, Vector3.forward);
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
         Vector3 vectorToTarget = (transform.right * -GetFacingDirectionFactor()).normalized;
-        bulletRb.AddForce(dir * vectorToTarget * EnemyBulletSpeed, ForceMode2D.Impulse);
+        bulletRb.AddForce(dir * vectorToTarget * _data.WeaponData.BulletSpeed, ForceMode2D.Impulse);
     }
 
     private float GetNeedAngle()
     {
+        float minAngle = 12.5f;
+        float maxAngle = 17.5f;
         float angleZ;
         if (transform.position.y > _target.position.y)
-            angleZ = Random.Range(10, 15);
+            angleZ = Random.Range(minAngle, maxAngle);
         else
-            angleZ = Random.Range(-15, 10);
+            angleZ = Random.Range(-maxAngle, minAngle);
 
         return angleZ;
     }

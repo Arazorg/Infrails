@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class MonobehaviourPool<T> where T : MonoBehaviour
     private GenericFactory<T> _currentFactory;
     private T _prefab;
     private bool _isAutoExpand;
+
+    public List<T> Pool => _pool;
 
     public MonobehaviourPool(int number, bool isAutoExpand, GenericFactory<T> factory, T prefab)
     {

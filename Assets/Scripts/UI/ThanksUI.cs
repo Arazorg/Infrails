@@ -1,10 +1,15 @@
+using System.Collections;
 using UnityEngine;
 
 public class ThanksUI : BaseUI, IUIPanel
 {
+    [SerializeField] private AnimationsUI _musicPanel;
+
+    private Coroutine _showingCoroutine;
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
+    private bool _isFirstMusicPanel;
 
     public bool IsActive { get => _isActive; set => _isActive = value; }
     public bool IsBackButtonEnabled { get => _isBackButtonEnabled; set => _isBackButtonEnabled = value; }
@@ -29,8 +34,10 @@ public class ThanksUI : BaseUI, IUIPanel
     {
         Open();
     }
+
     public void Close()
     {
+        StopCoroutine(_showingCoroutine);
         UIManager.Instance.UIStackPop();
     }
 
@@ -43,6 +50,22 @@ public class ThanksUI : BaseUI, IUIPanel
     {
         _isPopAvailable = true;
         _isBackButtonEnabled = true;
+        _isFirstMusicPanel = true;
         Show();
+        _showingCoroutine = StartCoroutine(ShowingMusicPanels());
+    }
+
+    private IEnumerator ShowingMusicPanels()
+    {
+        float showingDuration = 3f;
+        while(true)
+        {
+            if (_isFirstMusicPanel)
+                _musicPanel.Hide();
+            else
+                _musicPanel.Show();
+            _isFirstMusicPanel = !_isFirstMusicPanel;
+            yield return new WaitForSeconds(showingDuration);
+        }     
     }
 }

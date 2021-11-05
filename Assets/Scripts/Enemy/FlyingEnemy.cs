@@ -16,16 +16,16 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     public Transform NextPoint { get; set; }
 
-    public override void Init(EnemyData data, Transform spawnPoint, GameObject target)
+    public override void Init(EnemyData data, Transform spawnPoint, Character character)
     {
         Data = data;
-        Target = target;
-        Target.GetComponent<Character>().OnCharacterDeath += Death;
-        LevelSpawner.Instance.OnBiomeSpawned += Death;
-        InitComponents(spawnPoint, target);
+        Character = character;
+        Character.OnCharacterDeath += OnDestroyingEvent;
+        LevelSpawner.Instance.OnBiomeSpawned += OnDestroyingEvent;
+        InitComponents(spawnPoint);
         InitStates();
         OnInit();
-        SetScale();       
+        SetScale();
         Move();
     }
 
@@ -67,22 +67,27 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyAttack.StopAttack();
     }
 
-    protected override void Death()
+    protected override void Death(bool isDeathWithEffect)
     {
-        LevelSpawner.Instance.OnBiomeSpawned -= Death;
+        LevelSpawner.Instance.OnBiomeSpawned -= OnDestroyingEvent;
+        Character.OnCharacterDeath -= OnDestroyingEvent;
+        _enemyAttack.DestroyPoolBullets();
+
+        if (isDeathWithEffect)
+            SpawnCoin();
+
         OnEnemyDeath?.Invoke(this);
-        Target.GetComponent<Character>().OnCharacterDeath -= Death;
         SpawnExplosionParticle();
         Destroy(gameObject);
     }
 
-    private void InitComponents(Transform spawnPoint, GameObject target)
+    private void InitComponents(Transform spawnPoint)
     {
         _enemy = GetComponent<Enemy>();
         _enemyMovement = GetComponent<FlyingEnemyMovement>();
         _enemyAttack = GetComponent<FlyingEnemyAttack>();
-        _enemyMovement.Init(spawnPoint.position, target.transform);
-        _enemyAttack.Init(target.transform, Data);
+        _enemyMovement.Init(spawnPoint.position, Character.Transform);
+        _enemyAttack.Init(Character.Transform, Data);
     }
 
     private void InitStates()
@@ -109,7 +114,7 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     {
         float attackChance = 0.4f;
         _enemyMovement.OnReachedNextPoint -= SetNextState;
- 
+
         if (Random.value < attackChance && _enemy.IsGetDamage && CheckDistanceToTarget())
             StartAttack();
         else
@@ -118,10 +123,23 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     private bool CheckDistanceToTarget()
     {
-        float distanceY = transform.position.y - Target.transform.position.y;
+        float distanceY = transform.position.y - Character.Transform.position.y;
         float minDistanceToAttack = 17.5f;
         float maxDistanceToAttack = 35f;
 
         return distanceY > minDistanceToAttack && distanceY < maxDistanceToAttack;
     }
+
+    private void SpawnCoin()
+    {
+        var coinPrefab = (Data as AttackingEnemyData).CoinPrefab;
+        Coin coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+        coin.Init(Character.Transform);
+    }
+
+    private void OnDestroyingEvent()
+    {
+        Death(GameConstants.DeathWithoutEffect);
+    }
+
 }

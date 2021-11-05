@@ -8,10 +8,9 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
 
     [SerializeField] private GameObject _destructionEffectPrefab;
     [SerializeField] private Transform _laserAttackPoint;
-    [SerializeField] private KitType _type;  
+    [SerializeField] private KitType _type;
 
     private GameObject _destructionEffect;
-    private Character _characterScript;
     private Coroutine _destroyByLaserCoroutine;
     private float _timeToDestroyByLaser = 0;
 
@@ -25,7 +24,7 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
 
     public bool IsVisible => IsGetDamage;
 
-    public override void Init(EnemyData data, Transform spawnPoint, GameObject character)
+    public override void Init(EnemyData data, Transform spawnPoint, Character character)
     {
         Data = data;
         OnInit();
@@ -44,37 +43,35 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
         StopCoroutine(_destroyByLaserCoroutine);
     }
 
-    protected override void Death()
+    protected override void Death(bool isDeathWithEffect)
     {
-        ChooseActionByType();
+        if (isDeathWithEffect)
+            ChooseActionByType();
+
         SpawnExplosionParticle();
         Destroy(gameObject);
     }
 
-    private void TryGetCharacter(GameObject character)
+    private void TryGetCharacter(Character character)
     {
         if (character == null)
-        {
             EnemiesManager.Instance.OnCharacterAvailable += OnCharacterAvailable;
-        }
         else
-        {
-            _characterScript = character.GetComponent<Character>();
-        }
+            Character = character;
     }
 
-    private void OnCharacterAvailable(GameObject character)
+    private void OnCharacterAvailable(Character character)
     {
         EnemiesManager.Instance.OnCharacterAvailable -= OnCharacterAvailable;
-        _characterScript = character.GetComponent<Character>();
+        Character = character;
     }
 
     private void ChooseActionByType()
     {
         if (_type == KitType.FirstAidKit)
-            _characterScript.Heal(HealValue);
+            Character.Heal(HealValue);
         else if (_type == KitType.RepairKit)
-            _characterScript.RepairArmor(RepairValue);
+            Character.RepairArmor(RepairValue);
     }
 
     private IEnumerator DestroyByLaser()
@@ -86,8 +83,7 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
             yield return null;
         }
 
-        SpawnExplosionParticle();
-        Destroy(gameObject);
+        Death(GameConstants.DeathWithoutEffect);
     }
 
     private void SpawnDestructionEffect()

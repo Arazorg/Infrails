@@ -19,5 +19,5 @@ MonoBehaviour:
   _animatorController: {fileID: 9100000, guid: f884a90aed0f58e499d9b8fa93792c31, type: 2}
   _colliderSize: {x: 5, y: 5}
   _colliderOffset: {x: 0, y: 0}
-  _speed: 25
-  _speedDebuffByEnemyLaser: 6
+  _speed: 26
+  _speedDebuffByEnemyLaser: 7

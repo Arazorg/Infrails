@@ -10,7 +10,6 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
     [SerializeField] private Transform _laserAttackPoint;
 
     private GameObject _destructionEffect;
-    private Character _characterScript;
     private Coroutine _destroyByLaserCoroutine;
     private Vector3 _startPosition;
     private Vector3 _shadowStartPosition;
@@ -24,7 +23,7 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
 
     public bool IsVisible => IsGetDamage;
 
-    public override void Init(EnemyData data, Transform spawnPoint, GameObject character)
+    public override void Init(EnemyData data, Transform spawnPoint, Character character)
     {
         Data = data;
         OnInit();
@@ -43,9 +42,12 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
         StopCoroutine(_destroyByLaserCoroutine);
     }
 
-    protected override void Death()
+    protected override void Death(bool isDeathWithEffect)
     {
-        _characterScript.SetWeaponElement(Data.EnemyElement);
+        if (isDeathWithEffect)
+            Character.SetWeaponElement(Data.EnemyElement);
+
+        AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
         SpawnExplosionParticle();
         Destroy(gameObject);
     }
@@ -92,22 +94,18 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
         _finishOffset = new Vector3(0, -_offsetFactorY, 0);
     }
 
-    private void TryGetCharacter(GameObject character)
+    private void TryGetCharacter(Character character)
     {
         if (character == null)
-        {
             EnemiesManager.Instance.OnCharacterAvailable += OnCharacterAvailable;
-        }
         else
-        {
-            _characterScript = character.GetComponent<Character>();
-        }
+            Character = character;
     }
 
-    private void OnCharacterAvailable(GameObject character)
+    private void OnCharacterAvailable(Character character)
     {
         EnemiesManager.Instance.OnCharacterAvailable -= OnCharacterAvailable;
-        _characterScript = character.GetComponent<Character>();
+        Character = character;
     }
 
     private IEnumerator DestroyByLaser()
@@ -119,8 +117,7 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
             yield return null;
         }
 
-        SpawnExplosionParticle();
-        Destroy(gameObject);
+        Death(GameConstants.DeathWithoutEffect);
     }
 
     private void SpawnDestructionEffect()

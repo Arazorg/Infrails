@@ -8,11 +8,11 @@ public class StaticEnemyWeapon : MonoBehaviour
 
     private IEnemyLaserTarget _currentTarget;
 
-    public void InitWeapon(StaticEnemyWeaponData weaponData)
+    public void InitWeapon(StaticEnemyData enemyData)
     {
-        _weaponSprite.sprite = weaponData.MainSprite;
-        _laserSpawnPoint.localPosition = weaponData.LaserSpawnPosition;
-        _laserSpriteRenderer.GetComponent<Animator>().runtimeAnimatorController = weaponData.LaserAnimatorController;
+        _weaponSprite.sprite = enemyData.WeaponData.MainSprite;
+        _laserSpawnPoint.localPosition = enemyData.WeaponData.BulletSpawnPosition;
+        _laserSpriteRenderer.GetComponent<Animator>().runtimeAnimatorController = enemyData.LaserAnimatorController;
     }
 
     public void SetTarget(IEnemyLaserTarget target)

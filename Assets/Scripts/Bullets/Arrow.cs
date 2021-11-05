@@ -5,8 +5,7 @@ public class Arrow : Bullet
 {
     public override void BulletHit(Collider2D collision)
     {
-        SpawnExplosionParticle();
-        DestroyBullet();
+        HideBullet();
     }
 
     private void StickArrow(Transform target)
@@ -21,7 +20,6 @@ public class Arrow : Bullet
     {
         float delay = 1.25f;
         yield return new WaitForSeconds(delay);
-        SpawnExplosionParticle();
-        DestroyBullet();
+        HideBullet();
     }
 }

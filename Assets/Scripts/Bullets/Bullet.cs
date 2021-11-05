@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public abstract class Bullet : MonoBehaviour
     protected Rigidbody2D Rigidbody;
     protected BulletData Data;
 
+    private Coroutine _destroyCoroutine;
     private int _damage;
     private float _critChance;
 
@@ -16,9 +18,9 @@ public abstract class Bullet : MonoBehaviour
 
     public float CritChance => _critChance;
 
-    public void Init(BulletData data, WeaponData weaponData, Element.Type elementType)
+    public void Init(WeaponData weaponData, Element.Type elementType)
     {
-        Data = data;
+        Data = weaponData.BulletData;
         SetBulletPhysic();
         SetSpriteByElement(elementType);
         SetParticleColor(GetColorByElementType(elementType));
@@ -26,24 +28,21 @@ public abstract class Bullet : MonoBehaviour
         transform.localScale = new Vector2(weaponData.BulletScaleFactor, weaponData.BulletScaleFactor);
     }
 
-    public void Init(BulletData data, AttackingEnemyData enemyData)
-    {
-
-        Data = data;
-        SetBulletPhysic();
-        SetSpriteByElement(Element.Type.None);
-        SetParticleColor(Color.red);
-        _damage = enemyData.Damage;
-    }
-
     public abstract void BulletHit(Collider2D collision);
 
-    protected void DestroyBullet()
+    public void DestroyBullet()
     {
+        float destroyDelay = 2f;
+        Destroy(gameObject, destroyDelay);
+    }
+
+    protected void HideBullet()
+    {
+        SpawnExplosionParticle();
         gameObject.SetActive(false);
     }
 
-    protected void SpawnExplosionParticle()
+    private void SpawnExplosionParticle()
     {
         GameObject explosion = Instantiate(ExplosionPrefab, transform.position, Quaternion.identity);
         Destroy(explosion, explosion.GetComponent<ParticleSystem>().main.startLifetimeMultiplier);
@@ -86,6 +85,13 @@ public abstract class Bullet : MonoBehaviour
     private Color GetColorByElementType(Element.Type element)
     {
         return Data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletColor;
+    }
+
+    private IEnumerator StartDestroy()
+    {
+        float destroyDelay = 2f;
+        yield return new WaitForSeconds(destroyDelay);
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

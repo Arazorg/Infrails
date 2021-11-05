@@ -20,8 +20,8 @@ MonoBehaviour:
   - {fileID: 5436093036560242003, guid: e4d8df3a6491af84780a06033c03ef8a, type: 3}
   - {fileID: 4028318593928992615, guid: 3d676c880ba41544a8c5941608d6f0a4, type: 3}
   _biomeElement: {fileID: 11400000, guid: be21b1baa80e3024dac96d96a8788132, type: 2}
-  _floorSprite: {fileID: 21300000, guid: a09a537e95f67004498a261a1c8e8dde, type: 3}
-  _endWallSprite: {fileID: 21300000, guid: 191ee110c5d03294dbd3fd2fcf24c86c, type: 3}
+  _floorSprite: {fileID: 21300000, guid: d0c68597bd77b6248b007a6e14201795, type: 3}
+  _endWallSprite: {fileID: 21300000, guid: 3e9488f2c1a5d52418ae7806fc35e047, type: 3}
   _plateSprite: {fileID: 21300000, guid: 95a0d4487f8d2a34d949485477495895, type: 3}
   _endWallFloorSprite: {fileID: 21300000, guid: 547d632667360c549a21fbecd4809884, type: 3}
   _flyingEnemiesData:

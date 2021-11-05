@@ -12,7 +12,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     private Transform _characterTransform;
     private bool _isEndOfBiomeReached;
 
-    public override void Init(EnemyData data, Transform spawnPoint, GameObject character)
+    public override void Init(EnemyData data, Transform spawnPoint, Character character)
     {
         Data = data;
         _staticEnemyData = Data as StaticEnemyData;
@@ -74,9 +74,12 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyAttack.StopAttack();
     }
 
-    protected override void Death()
+    protected override void Death(bool isDeathWithEffect)
     {
-        Target.GetComponent<Character>().OnCharacterDeath -= Death;
+        Character.OnCharacterDeath -= OnCharacterDeath;
+        if (isDeathWithEffect)
+            SpawnCoin();
+
         SpawnExplosionParticle();
         Destroy(gameObject);
     }
@@ -87,7 +90,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyMovement = GetComponent<StaticEnemyMovement>();
     }
 
-    private void TryGetCharacter(GameObject character)
+    private void TryGetCharacter(Character character)
     {
         if (character == null)
         {
@@ -95,10 +98,10 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         }
         else
         {
-            Target = character;
-            _characterTransform = character.transform;
-            _enemyAttack.Character = character.GetComponent<Character>();
-            character.GetComponent<Character>().OnCharacterDeath += Death;
+            Character = character;
+            _characterTransform = Character.Transform;
+            _enemyAttack.Character = Character;
+            Character.OnCharacterDeath += OnCharacterDeath;
         }
     }
 
@@ -130,19 +133,30 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         }
     }
 
-    private void OnCharacterAvailable(GameObject character)
+    private void OnCharacterAvailable(Character character)
     {
-        EnemiesManager.Instance.OnCharacterAvailable -= OnCharacterAvailable;
-        Target = character;
-        _characterTransform = character.transform;
-        _enemyAttack.Character = character.GetComponent<Character>();
-        character.GetComponent<Character>().OnCharacterDeath += Death;
+        Character = character;
+        _characterTransform = Character.Transform;
+        _enemyAttack.Character = Character;
+        Character.OnCharacterDeath += OnCharacterDeath;
+    }
+
+    private void SpawnCoin()
+    {
+        var coinPrefab = (Data as AttackingEnemyData).CoinPrefab;
+        Coin coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+        coin.Init(Character.Transform);
     }
 
     private void OnTargetBecameNull()
     {
         _enemyAttack.OnTargetBecameNull -= OnTargetBecameNull;
         Attack();
+    }
+
+    private void OnCharacterDeath()
+    {
+        Death(GameConstants.DeathWithoutEffect);
     }
 
     private void OnBecameVisible()
@@ -160,6 +174,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     private void OnDestroy()
     {
-        Target.GetComponent<Character>().OnCharacterDeath -= Death;
+        if (Character.Transform != null)
+            Character.OnCharacterDeath -= OnCharacterDeath;
     }
 }

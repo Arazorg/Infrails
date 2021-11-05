@@ -20,3 +20,5 @@ MonoBehaviour:
   _maxHealth: 1
   _prefab: {fileID: 4937442529647204405, guid: 833682859b440184b883d85c27fa89c4, type: 3}
   _enemyElement: {fileID: 11400000, guid: 97a0ce2a93f544643877c903e109af8f, type: 2}
+  _isSpriteFacingRight: 0
+  _deathAudioClip: {fileID: 8300000, guid: c41125653cd80c0448a9d987023abd75, type: 3}

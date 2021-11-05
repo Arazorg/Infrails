@@ -38,7 +38,7 @@ public class StaticEnemyAttack : MonoBehaviour
     private void InitWeapon()
     {
         _weapon.transform.localPosition = _staticEnemyData.WeaponSpawnPosition;
-        _weapon.InitWeapon(_staticEnemyData.WeaponData);
+        _weapon.InitWeapon(_staticEnemyData);
     }
 
     private void SetTarget()

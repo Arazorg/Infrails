@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Weapons/Standart Weapon", fileName = "New  Weapon")]
 public class WeaponData : ItemData
 {
     [Header("Weapon Resources")]

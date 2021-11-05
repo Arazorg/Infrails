@@ -30,7 +30,7 @@ public class BurstRifle : Weapon
             bullet.transform.rotation = Quaternion.Euler(0, 0, dir.eulerAngles.z + transform.rotation.eulerAngles.z);
             AudioManager.Instance.PlayEffect(CurrentWeaponData.WeaponAudioClip);
 
-            float shootDelay = 0.125f;
+            float shootDelay = 0.1f;
             yield return new WaitForSeconds(shootDelay);
         }
     }

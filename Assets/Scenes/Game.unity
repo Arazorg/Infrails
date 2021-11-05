@@ -2142,7 +2142,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 68.65
+  m_fontSize: 71.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6971,7 +6971,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.4787234, y: 1}
+    m_SensorSize: {x: 0.4864865, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8955,140 +8955,182 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _audioList:
-  - Name: ClickUI
-    Clip: {fileID: 8300000, guid: 188922b66e8b16240af718ee0d1183af, type: 3}
-    volume: 0.75
-    pitch: 1.15
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: ClickUI_2
-    Clip: {fileID: 8300000, guid: 20174afe7b00c654cbd4ec87c7ae96a0, type: 3}
-    volume: 0.8
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: ClickUI_3
-    Clip: {fileID: 8300000, guid: efda1ca363d7719488b96644c5f25425, type: 3}
-    volume: 0.8
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: CharacterDeath
-    Clip: {fileID: 8300000, guid: e52fd79bac282844fbf056c7c4ef506b, type: 3}
-    volume: 1
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: Money
-    Clip: {fileID: 8300000, guid: c853a41582998e849838e3f6f6959785, type: 3}
-    volume: 0.9
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: TeleportationEffect
-    Clip: {fileID: 8300000, guid: 24eb1c3c6c031dc4d9a37e9e0c32e584, type: 3}
-    volume: 0.8
-    pitch: 0.8
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: BarrelExplosion
-    Clip: {fileID: 8300000, guid: a1314b70568824c4a83ed71cd3ddd60b, type: 3}
-    volume: 0.8
-    pitch: 1
-    isLoop: 0
-    IsPitch: 1
-    audioSource: {fileID: 0}
-  - Name: BurstRifleShot
-    Clip: {fileID: 8300000, guid: c0c9fec1d5181cd4d965b57ad29f30f5, type: 3}
-    volume: 0.8
-    pitch: 1
-    isLoop: 0
-    IsPitch: 1
-    audioSource: {fileID: 0}
-  - Name: CrossbowShot
-    Clip: {fileID: 8300000, guid: ab3d0b27b367b674d802afe6843a2ef0, type: 3}
-    volume: 1
-    pitch: 1
-    isLoop: 0
-    IsPitch: 1
-    audioSource: {fileID: 0}
-  - Name: MissileExplosion
-    Clip: {fileID: 8300000, guid: 933739e26641f4944931317a4338f726, type: 3}
-    volume: 0.9
-    pitch: 1
-    isLoop: 0
-    IsPitch: 1
-    audioSource: {fileID: 0}
-  - Name: ShotgunShot
-    Clip: {fileID: 8300000, guid: cd56ace093d16374e84b2b6c8dff7457, type: 3}
-    volume: 0.95
-    pitch: 1
-    isLoop: 0
-    IsPitch: 1
-    audioSource: {fileID: 0}
-  - Name: RifleShot
-    Clip: {fileID: 8300000, guid: 8dd4cb342ba7d8948a3afc1b81b8c2d2, type: 3}
-    volume: 0.6
-    pitch: 2
-    isLoop: 0
-    IsPitch: 1
-    audioSource: {fileID: 0}
-  - Name: RockeyLauncherShot
-    Clip: {fileID: 8300000, guid: 4986937ffc80b144ba867a5dc128e91d, type: 3}
-    volume: 1
-    pitch: 0.5
-    isLoop: 0
-    IsPitch: 1
-    audioSource: {fileID: 0}
-  - Name: PirateCannonShot
-    Clip: {fileID: 8300000, guid: 79d560eb373045c4fb4eee621ce5d42f, type: 3}
-    volume: 0.8
-    pitch: 1
-    isLoop: 0
-    IsPitch: 1
-    audioSource: {fileID: 0}
-  - Name: DefeatUI
-    Clip: {fileID: 8300000, guid: 505f76d48a35bce45a4bb9425085d4f0, type: 3}
-    volume: 0.8
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
+  - _name: ClickUI
+    _clip: {fileID: 8300000, guid: 188922b66e8b16240af718ee0d1183af, type: 3}
+    _volume: 0.9
+    _pitch: 1.15
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: Money
+    _clip: {fileID: 8300000, guid: c853a41582998e849838e3f6f6959785, type: 3}
+    _volume: 0.9
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: ClickUI_2
+    _clip: {fileID: 8300000, guid: 20174afe7b00c654cbd4ec87c7ae96a0, type: 3}
+    _volume: 0.9
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: ClickUI_3
+    _clip: {fileID: 8300000, guid: efda1ca363d7719488b96644c5f25425, type: 3}
+    _volume: 0.9
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: CharacterDeath
+    _clip: {fileID: 8300000, guid: e52fd79bac282844fbf056c7c4ef506b, type: 3}
+    _volume: 1
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: TeleportationEffect
+    _clip: {fileID: 8300000, guid: 24eb1c3c6c031dc4d9a37e9e0c32e584, type: 3}
+    _volume: 0.8
+    _pitch: 0.8
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: BurstRifleShot
+    _clip: {fileID: 8300000, guid: c0c9fec1d5181cd4d965b57ad29f30f5, type: 3}
+    _volume: 0.4
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: CrossbowShot
+    _clip: {fileID: 8300000, guid: ab3d0b27b367b674d802afe6843a2ef0, type: 3}
+    _volume: 0.6
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: MissileExplosion
+    _clip: {fileID: 8300000, guid: 933739e26641f4944931317a4338f726, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: ShotgunShot
+    _clip: {fileID: 8300000, guid: cd56ace093d16374e84b2b6c8dff7457, type: 3}
+    _volume: 0.7
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: RifleShot
+    _clip: {fileID: 8300000, guid: 8dd4cb342ba7d8948a3afc1b81b8c2d2, type: 3}
+    _volume: 0.275
+    _pitch: 2
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: RocketLauncherShot
+    _clip: {fileID: 8300000, guid: 4986937ffc80b144ba867a5dc128e91d, type: 3}
+    _volume: 0.8
+    _pitch: 0.5
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: DefeatUI
+    _clip: {fileID: 8300000, guid: 505f76d48a35bce45a4bb9425085d4f0, type: 3}
+    _volume: 0.9
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: PirateCannonShot
+    _clip: {fileID: 8300000, guid: 79d560eb373045c4fb4eee621ce5d42f, type: 3}
+    _volume: 0.7
+    _pitch: 1.1
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: ManeCrystalDestroy
+    _clip: {fileID: 8300000, guid: c41125653cd80c0448a9d987023abd75, type: 3}
+    _volume: 0.7
+    _pitch: 1.75
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: EnemyShot
+    _clip: {fileID: 8300000, guid: 7ca8d26a2b9c7c044b9f325517d182b4, type: 3}
+    _volume: 0.35
+    _pitch: 1.8
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: AttackingEnemyDestroy
+    _clip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+    _volume: 0.65
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: DestroyableKit
+    _clip: {fileID: 8300000, guid: dc288ee8b0066ba4bab34b4d15a465f3, type: 3}
+    _volume: 0.8
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
+  - _name: EggDestroy
+    _clip: {fileID: 8300000, guid: 2fbb4a7001d7e3b46b366b8519f541a1, type: 3}
+    _volume: 0.8
+    _pitch: 1.25
+    _isLoop: 0
+    _isRandomPitch: 1
+    _audioSource: {fileID: 0}
   _musicList:
-  - Name: GameBackgroundMusic_1
-    Clip: {fileID: 8300000, guid: 1e1fcd17062f53e469c95cc2ae4e4ca7, type: 3}
-    volume: 0.7
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: GameBackgroundMusic_2
-    Clip: {fileID: 8300000, guid: 473db1bbf388f3b4db4d0fd3d9e959c1, type: 3}
-    volume: 0.8
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: GameBackgroundMusic_3
-    Clip: {fileID: 8300000, guid: 03c607cefe18f394e99d391d5507ec53, type: 3}
-    volume: 0.7
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
-  - Name: GameBackgroundMusic_4
-    Clip: {fileID: 8300000, guid: 1dd6ca25f83fee546bef06ec5467348f, type: 3}
-    volume: 0.7
-    pitch: 1
-    isLoop: 0
-    IsPitch: 0
-    audioSource: {fileID: 0}
+  - _name: GameBackgroundMusic_1
+    _clip: {fileID: 8300000, guid: 1e1fcd17062f53e469c95cc2ae4e4ca7, type: 3}
+    _volume: 0.5
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: GameBackgroundMusic_2
+    _clip: {fileID: 8300000, guid: 473db1bbf388f3b4db4d0fd3d9e959c1, type: 3}
+    _volume: 0.5
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: GameBackgroundMusic_3
+    _clip: {fileID: 8300000, guid: 03c607cefe18f394e99d391d5507ec53, type: 3}
+    _volume: 0.5
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: GameBackgroundMusic_4
+    _clip: {fileID: 8300000, guid: 1dd6ca25f83fee546bef06ec5467348f, type: 3}
+    _volume: 0.6
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: GameBackgroundMusic_5
+    _clip: {fileID: 8300000, guid: 475a115642e2f08469ab3f44eb53adcc, type: 3}
+    _volume: 0.5
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
+  - _name: GameBackgroundMusic_6
+    _clip: {fileID: 8300000, guid: 0023b28a0f569774688d58082209657d, type: 3}
+    _volume: 0.65
+    _pitch: 1
+    _isLoop: 0
+    _isRandomPitch: 0
+    _audioSource: {fileID: 0}
 --- !u!4 &1066618292
 Transform:
   m_ObjectHideFlags: 0
@@ -9101,7 +9143,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1084629294
 GameObject:
@@ -13760,7 +13802,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1745095043
 GameObject:
@@ -15286,7 +15328,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.5
+  m_fontSize: 44.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

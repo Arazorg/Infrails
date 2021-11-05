@@ -16,15 +16,15 @@ public class EnemiesManager : MonoBehaviour
     private EnemyData _staticEnemyData;
     private EnemyData _eggData;
     private EnemyData _mainManeCrystalData;
-    private GameObject _character;
+    private Character _character;
 
     private StaticEnemy _currentStaticEnemy;
 
-    public delegate void CharacterAvailable(GameObject character);
+    public delegate void CharacterAvailable(Character character);
 
     public event CharacterAvailable OnCharacterAvailable;
 
-    public GameObject Character
+    public Character Character
     {
         get
         {
@@ -101,7 +101,7 @@ public class EnemiesManager : MonoBehaviour
                 enemy.OnEnemyDeath += RemoveFlyingEnemyFromList;
                 _currentFlyingEnemies.Add(enemy);
             }
-        }
+        }     
     }
 
     public void SpawnEnemyFromEgg(Transform spawnPoint)

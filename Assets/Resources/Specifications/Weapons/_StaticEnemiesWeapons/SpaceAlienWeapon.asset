@@ -9,9 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbab8db5603cf824f9c66b71fd14ef32, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fea2970d3605af448b043e37466ae47, type: 3}
   m_Name: SpaceAlienWeapon
   m_EditorClassIdentifier: 
+  _itemName: 
+  _itemColor: {r: 0, g: 0, b: 0, a: 0}
+  _itemSpriteUI: {fileID: 0}
+  _isStartingItem: 0
+  _prefab: {fileID: 0}
+  _weaponAudioClip: {fileID: 0}
+  _animatorController: {fileID: 0}
   _mainSprite: {fileID: -4651590876649088828, guid: d778f0b5bf305664e958fdd21651dbc3, type: 3}
-  _laserAnimatorController: {fileID: 9100000, guid: 102f70961abaec14899428b318feaaa1, type: 2}
-  _laserSpawnPosition: {x: -0.71, y: 5.08, z: 0}
+  _handsPositions: []
+  _type: 0
+  _bulletSpeed: 0
+  _damage: 0
+  _critChance: 0
+  _fireRate: 0
+  _bulletScaleFactor: 0
+  _bulletSpawnPosition: {x: -0.71, y: 5.08}
+  _bulletData: {fileID: 0}

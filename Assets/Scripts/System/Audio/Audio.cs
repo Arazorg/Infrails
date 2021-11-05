@@ -4,17 +4,31 @@ using UnityEngine;
 [Serializable]
 public class Audio
 {
-    public string Name;
-    public AudioClip Clip;
+    [SerializeField] private string _name;
+    [SerializeField] private AudioClip _clip;
 
     [Range(0f, 1f)]
-    public float volume;
+    [SerializeField] private float _volume;
     [Range(.1f, 3f)]
-    public float pitch;
+    [SerializeField] private float _pitch;
 
-    public bool isLoop;
-    public bool IsPitch;
+    [SerializeField] private bool _isLoop;
+    [SerializeField] private bool _isRandomPitch;
 
     [HideInInspector]
-    public AudioSource audioSource;
+    [SerializeField] private AudioSource _audioSource;
+
+    public string Name => _name;
+
+    public AudioClip Clip => _clip;
+
+    public float Volume => _volume;
+
+    public float Pitch => _pitch;
+
+    public bool IsLoop => _isLoop;
+
+    public bool IsRandomPitch => _isRandomPitch;
+
+    public AudioSource AudioSource { get => _audioSource; set => _audioSource = value; }
 }

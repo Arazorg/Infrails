@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Egg : Enemy, IEnemyLaserTarget
@@ -14,16 +13,16 @@ public class Egg : Enemy, IEnemyLaserTarget
     private Coroutine _destroyByLaserCoroutine;
     private float _swayTime = float.MaxValue;
     private float _angleFactor = 1f;
-    private float _timeToDestroyByLaser = 0; 
+    private float _timeToDestroyByLaser = 0;
 
     public Transform LaserAttackPoint => _laserAttackPoint;
 
     public bool IsVisible => IsGetDamage;
 
-    public override void Init(EnemyData data, Transform spawnPoint, GameObject target)
+    public override void Init(EnemyData data, Transform spawnPoint, Character character)
     {
         Data = data;
-        Target = target;
+        Character = character;
         OnInit();
     }
 
@@ -39,9 +38,10 @@ public class Egg : Enemy, IEnemyLaserTarget
         StopCoroutine(_destroyByLaserCoroutine);
     }
 
-    protected override void Death()
+    protected override void Death(bool isDeathWithEffect)
     {
         EnemiesManager.Instance.SpawnEnemyFromEgg(transform.parent);
+        AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
         SpawnExplosionParticle();
         Destroy(gameObject);
     }
@@ -86,10 +86,10 @@ public class Egg : Enemy, IEnemyLaserTarget
         while (_timeToDestroyByLaser < timeToDestroyByLaser)
         {
             _timeToDestroyByLaser += Time.deltaTime;
-            yield return null;  
-        }          
+            yield return null;
+        }
 
-        Death();
+        Death(GameConstants.DeathWithEffect);
     }
 
     private void SpawnDestructionEffect()

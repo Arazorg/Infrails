@@ -45,18 +45,18 @@ public class AudioManager : MonoBehaviour
             Audio currentAudio = _audioList.Where(s => s.Clip == clip).FirstOrDefault();
             if (currentAudio != null)
             {
-                if (!currentAudio.IsPitch)
+                if (!currentAudio.IsRandomPitch)
                 {
-                    currentAudio.audioSource.pitch = currentAudio.pitch;
+                    currentAudio.AudioSource.pitch = currentAudio.Pitch;
                 }                   
                 else
                 {
-                    float pitchSpread = 0.085f;
-                    currentAudio.audioSource.pitch = currentAudio.pitch + Random.Range(-pitchSpread, pitchSpread);
-                }                 
+                    float pitchSpread = 0.25f;
+                    currentAudio.AudioSource.pitch = currentAudio.Pitch + Random.Range(-pitchSpread, pitchSpread);
+                }
 
-                currentAudio.audioSource.volume = currentAudio.volume;
-                currentAudio.audioSource.PlayOneShot(currentAudio.Clip);
+                currentAudio.AudioSource.volume = currentAudio.Volume;
+                currentAudio.AudioSource.PlayOneShot(currentAudio.Clip);
             }
             else
             {
@@ -100,10 +100,11 @@ public class AudioManager : MonoBehaviour
         _musicSource = gameObject.AddComponent<AudioSource>();
         foreach (var audio in _audioList)
         {
-            audio.audioSource = gameObject.AddComponent<AudioSource>();
-            audio.audioSource.clip = audio.Clip;
-            audio.audioSource.volume = audio.volume;
-            audio.audioSource.pitch = audio.pitch;
+            audio.AudioSource = gameObject.AddComponent<AudioSource>();
+            audio.AudioSource.clip = audio.Clip;
+            audio.AudioSource.volume = audio.Volume;
+            audio.AudioSource.reverbZoneMix = 0;
+            audio.AudioSource.pitch = audio.Pitch;
         }
     }
 
@@ -115,6 +116,7 @@ public class AudioManager : MonoBehaviour
 
     private void SetMusicSource()
     {
+        _musicSource.volume = _currentBackgroundMusic.Volume;
         _musicSource.clip = _currentBackgroundMusic.Clip;
         _musicSource.Play();
     }

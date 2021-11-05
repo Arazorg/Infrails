@@ -110,8 +110,7 @@ public class Biome : MonoBehaviour
 
     private Vector3 CreateEndWall(Vector3 nextFloorSpawnPosition)
     {
-        Vector3 endWallOffset = new Vector3(0, 0.25f, 0);
-        Vector3 endWallPosition = nextFloorSpawnPosition + endWallOffset;
+        Vector3 endWallPosition = nextFloorSpawnPosition;
 
         _endWall = Instantiate(_endWallPrefab, transform);
         _endWall.transform.position = endWallPosition;

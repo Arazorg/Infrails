@@ -2,22 +2,10 @@ using UnityEngine;
 
 public class AttackingEnemyData : EnemyData
 {
-    [SerializeField] private BulletData _bulletData;
-    [SerializeField] private int _damage;
-    [SerializeField] private float _fireRate;
+    [SerializeField] private Coin _coinPrefab;
+    [SerializeField] private WeaponData _weaponData;
 
-    public BulletData BulletData
-    {
-        get { return _bulletData; }
-    }
+    public Coin CoinPrefab => _coinPrefab;
 
-    public int Damage
-    {
-        get { return _damage; }
-    }
-
-    public float FireRate
-    {
-        get { return _fireRate; }
-    }
+    public WeaponData WeaponData => _weaponData;
 }

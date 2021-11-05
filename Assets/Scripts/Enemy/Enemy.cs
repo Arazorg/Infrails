@@ -7,22 +7,22 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] protected GameObject ExplosionPrefab;
 
     protected BoxCollider2D BoxCollider2D;
+    protected Character Character;
     protected int Health;
 
     private EnemyData _data;
     private Animator _animator;
-    private GameObject _target;
+    
     private bool _isGetDamage;
+    private bool _isDeath;
 
     public EnemyData Data { get => _data; set => _data = value; }
-
-    public GameObject Target { get => _target; set => _target = value; }
 
     public Transform Transform => transform;
 
     public bool IsGetDamage { get => _isGetDamage; set => _isGetDamage = value; }
 
-    public abstract void Init(EnemyData data, Transform spawnPoint, GameObject player);
+    public abstract void Init(EnemyData data, Transform spawnPoint, Character character);
 
     public void GetDamage(int damage)
     {
@@ -32,18 +32,16 @@ public abstract class Enemy : MonoBehaviour
             if (Health < 0)
             {
                 Health = 0;
-                Death();
+                if (!_isDeath)
+                {
+                    _isDeath = true;
+                    Death(GameConstants.DeathWithEffect);
+                }                   
             }
         }
     }
 
-    public void DestroyWithoutDeathEffect()
-    {
-        SpawnExplosionParticle();
-        Destroy(gameObject);
-    }
-
-    protected abstract void Death();
+    protected abstract void Death(bool isDeathWithEffect = false);
 
     protected void OnInit()
     {
@@ -52,6 +50,7 @@ public abstract class Enemy : MonoBehaviour
         BoxCollider2D.size = Data.ColliderSize;
         BoxCollider2D.offset = Data.ColliderOffset;
         Health = Data.MaxHealth;
+        _isDeath = false;
     }
 
     protected void SpawnExplosionParticle()

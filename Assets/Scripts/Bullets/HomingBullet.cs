@@ -22,7 +22,6 @@ public class HomingBullet : Bullet, IUpdateable
 
     public override void BulletHit(Collider2D collision)
     {
-        SpawnExplosionParticle();
-        DestroyBullet();
+        HideBullet();
     }
 }

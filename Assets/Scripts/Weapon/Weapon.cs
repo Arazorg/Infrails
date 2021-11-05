@@ -61,7 +61,7 @@ public abstract class Weapon : MonoBehaviour
     {
         var bullet = _bulletsPool.GetFreeElement();
         bullet.transform.position = _bulletSpawnPoint.position;
-        bullet.Init(CurrentWeaponData.BulletData, CurrentWeaponData, CurrentElement);
+        bullet.Init(CurrentWeaponData, CurrentElement);
         return bullet.gameObject;
     }
 

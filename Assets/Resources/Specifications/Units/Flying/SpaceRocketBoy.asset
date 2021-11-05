@@ -21,8 +21,6 @@ MonoBehaviour:
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: b0060368cc8aaac4fa11cc08484aff62, type: 2}
   _isSpriteFacingRight: 1
-  _bulletData: {fileID: 11400000, guid: b0c534d88d8285747bb2eb960ff3909b, type: 2}
-  _damage: 2
-  _fireRate: 0.5
-  _bulletSpawnPosition: {x: 2.125, y: 1.9}
-  _bulletPrefab: {fileID: 6440016302738299195, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}
+  _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
+  _weaponData: {fileID: 11400000, guid: 5f8d1a6aa9d04d14e9435115899bb3cb, type: 2}
