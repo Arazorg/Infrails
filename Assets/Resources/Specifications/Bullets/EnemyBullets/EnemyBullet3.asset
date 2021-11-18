@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9329260c36bc814aa8c0aef43658167, type: 3}
   m_Name: EnemyBullet3
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 6440016302738299195, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}
+  _prefab: {fileID: -875689083714259047, guid: 9a0882b92334bfc4fa671b36bae287d4, type: 3}
   _type: 0
   _mainSprite: {fileID: 4407533109776081695, guid: c545d606719b0b3479b54901901b39f6, type: 3}
   _bulletsSpritesByElements: []

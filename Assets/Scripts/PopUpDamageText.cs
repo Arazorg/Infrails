@@ -1,0 +1,61 @@
+using System.Collections;
+using TMPro;
+using UnityEngine;
+
+public class PopUpDamageText : MonoBehaviour
+{
+    private const string ShowPopUp = "ShowText";
+    private const string HidePopUp = "HideText";
+
+    [SerializeField] private TextMeshPro _text;
+    [SerializeField] private Animator _animator;
+
+    private float _startSize;
+    private float _currentPopUpDamage;
+    private float _popUpTextFinishTime;
+
+    public void ShowPopUpText(int damage, Vector3 offset)
+    {
+        float showTime = 1.25f;
+        _popUpTextFinishTime = Time.time + showTime;
+        _text.fontSize = _startSize / Mathf.Abs(transform.parent.localScale.x);
+        transform.localPosition = offset;
+
+        if (_currentPopUpDamage == 0)
+        {
+            _animator.Play(ShowPopUp);
+            StartCoroutine(ShowingPopUpText());
+        }
+
+        _currentPopUpDamage += damage;
+        _text.text = _currentPopUpDamage.ToString();
+    }
+
+    private void Start()
+    {
+        _startSize = _text.fontSize;
+    }
+
+    private IEnumerator ShowingPopUpText()
+    {
+        while (Time.time < _popUpTextFinishTime)
+            yield return null;
+
+        _animator.Play(HidePopUp);
+        _currentPopUpDamage = 0;
+        _popUpTextFinishTime = 0;
+    }
+
+    private void Update()
+    {
+        SetScale();
+    }
+
+    private void SetScale()
+    {
+        if (transform.parent.localScale.x < 0 && transform.localScale.x > 0)
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, 1);
+        else if (transform.parent.localScale.x > 0 && transform.localScale.x < 0)
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, 1);
+    }
+}

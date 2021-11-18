@@ -1,25 +1,24 @@
-using System.Collections;
 using UnityEngine;
 
 public class Arrow : Bullet
 {
-    public override void BulletHit(Collider2D collision)
+    [SerializeField] private StickedArrow _stickedArrowPrefab;
+
+    public override void BulletHit(Transform target)
     {
+        StickArrow(target);
         HideBullet();
     }
 
     private void StickArrow(Transform target)
     {
-        transform.parent = target;
-        
-        Rigidbody.Sleep();
-        StartCoroutine(DelayToDestroy());
-    }
-
-    private IEnumerator DelayToDestroy()
-    {
-        float delay = 1.25f;
-        yield return new WaitForSeconds(delay);
-        HideBullet();
+        if(target.TryGetComponent(out Enemy enemy))
+        {
+            Vector3 spawnPosition = enemy.ArrowSpawnPoint.position;
+            enemy.ArrowHitEffect();
+            var stickedArrow = Instantiate(_stickedArrowPrefab, spawnPosition, transform.rotation, target);
+            var arrowSprite = GetComponent<SpriteRenderer>().sprite;
+            stickedArrow.Init(Data as ArrowData, arrowSprite, target.transform.localScale);
+        }
     }
 }

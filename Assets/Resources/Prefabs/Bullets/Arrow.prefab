@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 7
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -146,3 +146,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExplosionPrefab: {fileID: 2544862634589987017, guid: 3032e71e60d67f54d96c7a801e20396f, type: 3}
+  _stickedArrowPrefab: {fileID: 1039050950013335045, guid: bb4703b806846e247bfb4fd8136b9649, type: 3}

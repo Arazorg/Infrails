@@ -38,7 +38,7 @@ public class CharacterSpawner : MonoBehaviour
     {
         var character = Instantiate(_characterPrefab, spawnPoint).GetComponent<Character>();
         character.Init(data);
-        _cameraManager.Init();
+        _cameraManager.Init(character);
         _cameraManager.SetCameraParams(character.Transform, _gameCameraSize, _gameCameraOffset);
         EnemiesManager.Instance.Character = character;
         return character;

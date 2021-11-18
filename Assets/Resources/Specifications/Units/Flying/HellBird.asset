@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: f63f805a4940d334e8e0106be94be81c, type: 2}
   _unitColor: {r: 0.7490196, g: 0.26666668, b: 0.15294118, a: 1}
-  _colliderSize: {x: 3.5, y: 4}
-  _colliderOffset: {x: -0.25, y: 0}
+  _colliderOffset: {x: -0.25, y: -0.1}
+  _colliderSize: {x: 1.95, y: 1.75}
   _unitName: Hell Bird
-  _maxHealth: 4
+  _maxHealth: 6
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: be21b1baa80e3024dac96d96a8788132, type: 2}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: -0.2, y: 2.75}
+  _center: {x: -0.1, y: 0.4}
+  _isFlipX: 0
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 144cc549b5ba7fe418bd2934315fe4f1, type: 2}

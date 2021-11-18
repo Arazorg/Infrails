@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: e608ed05a69846348bec9ca104b35008, type: 2}
   _unitColor: {r: 0.6901961, g: 0.9176471, b: 0.36862746, a: 1}
-  _colliderSize: {x: 2.5, y: 5}
   _colliderOffset: {x: 0, y: 2.5}
+  _colliderSize: {x: 2.5, y: 5}
   _unitName: NatureManeCrystal
   _maxHealth: 1
   _prefab: {fileID: 4937442529647204405, guid: 833682859b440184b883d85c27fa89c4, type: 3}
   _enemyElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: c41125653cd80c0448a9d987023abd75, type: 3}
+  _popUpTextOffset: {x: 0, y: 0}
+  _center: {x: 0, y: 2.35}
+  _isFlipX: 0

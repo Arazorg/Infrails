@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 7cd5f1ab93540d1458021529660e0529, type: 2}
   _unitColor: {r: 0.23529413, g: 0.5019608, b: 0.61960787, a: 1}
-  _colliderSize: {x: 3, y: 4}
   _colliderOffset: {x: 0, y: 2}
+  _colliderSize: {x: 3, y: 4}
   _unitName: UnderwaterEgg
   _maxHealth: 0
   _prefab: {fileID: 943679413235862005, guid: 8c6ea78d5cebd20439287d11139550ea, type: 3}
   _enemyElement: {fileID: 0}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 2fbb4a7001d7e3b46b366b8519f541a1, type: 3}
+  _popUpTextOffset: {x: 0, y: 0}
+  _center: {x: 0, y: 1.75}
+  _isFlipX: 0

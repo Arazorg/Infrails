@@ -29,7 +29,7 @@ public class WeaponInfoPanelUI : MonoBehaviour, IInfoPanel
 
         var weaponData = itemData as WeaponData;
         _weaponDamageText.text = weaponData.Damage.ToString();
-        _weaponCritChanceText.text = weaponData.CritChance.ToString();
+        _weaponCritChanceText.text = $"{weaponData.CritChance * 100}%";
         _weaponFireRateText.text = weaponData.FireRate.ToString();
     }
 }

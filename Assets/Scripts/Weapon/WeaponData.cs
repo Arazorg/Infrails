@@ -15,9 +15,12 @@ public class WeaponData : ItemData
     [SerializeField] private WeaponType _type;
     [SerializeField] private int _bulletSpeed;
     [SerializeField] private int _damage;
-    [SerializeField] private int _critChance;
+    [SerializeField] private float _critChance;
     [SerializeField] private float _fireRate;
     [SerializeField] private float _bulletScaleFactor;
+    [SerializeField] private float _scatter;
+    [SerializeField] private int _startPrice;
+    [SerializeField] private int _level;
 
     [Header("Bullet")]
     [SerializeField] private Vector2 _bulletSpawnPosition;
@@ -48,11 +51,17 @@ public class WeaponData : ItemData
 
     public int Damage => _damage;
 
-    public int CritChance => _critChance;
+    public float CritChance => _critChance;
 
     public float FireRate => _fireRate;
 
     public int BulletSpeed => _bulletSpeed;
 
     public float BulletScaleFactor => _bulletScaleFactor;
+
+    public float Scatter => _scatter;
+
+    public int StartPrice => _startPrice;
+
+    public int Level => _level;
 }

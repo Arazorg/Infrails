@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9329260c36bc814aa8c0aef43658167, type: 3}
+  m_Script: {fileID: 11500000, guid: a628c1a295dc87d4e8a9f067a711e537, type: 3}
   m_Name: Arrow
   m_EditorClassIdentifier: 
   _prefab: {fileID: 8254745096853595179, guid: ef4b2ee3227b1524786f0f43839faab2, type: 3}
-  _type: 2
+  _type: 3
   _mainSprite: {fileID: 0}
   _bulletsSpritesByElements:
   - Element: 1
@@ -34,3 +34,14 @@ MonoBehaviour:
   _colliderSize: {x: 1.16, y: 2.22}
   _colliderOffset: {x: 0, y: 4.44}
   _bulletTag: PlayerBullet
+  _stickedArrowsSprites:
+  - ArrowSprite: {fileID: -1461590914025265322, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
+    StickedArrowSprite: {fileID: 7768333932581837884, guid: 26407a5a340b94749afdfaa93a66e7e3, type: 3}
+  - ArrowSprite: {fileID: 1936476534038261649, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
+    StickedArrowSprite: {fileID: -8860490364226879661, guid: 26407a5a340b94749afdfaa93a66e7e3, type: 3}
+  - ArrowSprite: {fileID: -3181535333269857129, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
+    StickedArrowSprite: {fileID: 7066300610623358832, guid: 26407a5a340b94749afdfaa93a66e7e3, type: 3}
+  - ArrowSprite: {fileID: -8238186848048912356, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
+    StickedArrowSprite: {fileID: 1707196827941835285, guid: 26407a5a340b94749afdfaa93a66e7e3, type: 3}
+  - ArrowSprite: {fileID: 998226675439371719, guid: 85fc35d8334004047a6a5bf4153b1c7e, type: 3}
+    StickedArrowSprite: {fileID: 5391756844007617289, guid: 26407a5a340b94749afdfaa93a66e7e3, type: 3}

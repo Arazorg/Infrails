@@ -3,14 +3,12 @@ using UnityEngine;
 public class CharacterControl : MonoBehaviour
 {
     private Joystick _joystick;
-    private Weapon _currentWeapon;
     private Character _character;
+    private CharacterWeapon _characterWeapon;
 
     private bool _isFacingRight;
     private bool _isControl;
     private float _weaponAngle;
-
-    public Weapon CurrentWeapon { get => _currentWeapon; set => _currentWeapon = value; }
 
     public Joystick Joystick
     {
@@ -21,24 +19,11 @@ public class CharacterControl : MonoBehaviour
         }
     }
 
-    public void SpawnStartWeapon(CharacterData data, Element.Type element)
-    {
-        _currentWeapon = GetComponent<WeaponFactory>().GetWeapon(data.CharacterStartWeapon.Prefab, transform);
-        _currentWeapon.Init(data.CharacterStartWeapon);
-        _currentWeapon.SetParentAndOffset(transform, data.WeaponSpawnPoint);
-        _currentWeapon.SetHands(data.Hands);
-        _currentWeapon.CurrentElement = element;
-        _isFacingRight = true;
-    }
-
-    public void SpawnWeapon(WeaponData data)
-    {
-        _currentWeapon.Init(data);
-    }
-
     private void Start()
     {
+        _isFacingRight = true;
         _character = GetComponent<Character>();
+        _characterWeapon = GetComponent<CharacterWeapon>();
     }
 
     private void Update()
@@ -54,13 +39,13 @@ public class CharacterControl : MonoBehaviour
             if (_joystick.Horizontal != 0f && _joystick.Vertical != 0f)
             {
                 _weaponAngle = -Mathf.Atan2(_joystick.Horizontal, _joystick.Vertical) * Mathf.Rad2Deg;
-                _currentWeapon.Rotate(_weaponAngle);
-                _currentWeapon.IsAttack = true && (!_character.IsDeath);
+                _characterWeapon.CurrentWeapon.Rotate(_weaponAngle);
+                _characterWeapon.CurrentWeapon.IsAttack = true && (!_character.IsDeath);
             }
             else
             {
-                _currentWeapon.Rotate(_weaponAngle);
-                _currentWeapon.IsAttack = false;
+                _characterWeapon.CurrentWeapon.Rotate(_weaponAngle);
+                _characterWeapon.CurrentWeapon.IsAttack = false;
             }
         }
     }

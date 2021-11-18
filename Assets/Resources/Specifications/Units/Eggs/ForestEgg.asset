@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 9d4bb0c8d80bea4418fd08d486ac3a0a, type: 2}
   _unitColor: {r: 0.8470589, g: 0.7411765, b: 0.58431375, a: 1}
-  _colliderSize: {x: 3, y: 4}
   _colliderOffset: {x: 0, y: 2}
+  _colliderSize: {x: 3, y: 4}
   _unitName: ForestEgg
   _maxHealth: 0
   _prefab: {fileID: 943679413235862005, guid: 8c6ea78d5cebd20439287d11139550ea, type: 3}
   _enemyElement: {fileID: 0}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 2fbb4a7001d7e3b46b366b8519f541a1, type: 3}
+  _popUpTextOffset: {x: 0, y: 0}
+  _center: {x: 0, y: 1.75}
+  _isFlipX: 0

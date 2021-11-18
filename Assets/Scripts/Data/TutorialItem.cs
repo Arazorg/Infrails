@@ -1,6 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Tutorial Items/Standart Tutorial Item", fileName = "New Tutorial Item")]
+[CreateAssetMenu(menuName = "Tutorial Items/Standart Tutorial Item", 
+    fileName = "New Tutorial Item")]
 public class TutorialItem : ScriptableObject
 {
     [SerializeField] private string _phraseKey;
@@ -15,5 +16,4 @@ public class TutorialItem : ScriptableObject
     public Vector2 PhraseImageSize => _phraseImageSize;
 
     public float ShowTime => _showTime;
-
 }

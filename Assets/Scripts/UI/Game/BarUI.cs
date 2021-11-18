@@ -31,13 +31,13 @@ public class BarUI : MonoBehaviour
                 break;
         }
 
-        SetValue(maxValue);
+        SetValue(maxValue, maxValue);
     }
 
-    public void SetValue(int value)
+    public void SetValue(int health, int value)
     {
-        _currentPercent = value / (float)(_maxValue - _minValue);
-        _textValue.text = string.Format("{0} / {1}", value, _maxValue - _minValue);
+        _currentPercent = health / (float)(_maxValue - _minValue);
+        _textValue.text = string.Format("{0} / {1}", health, _maxValue - _minValue);
         _barImage.fillAmount = _currentPercent;
     }
 }

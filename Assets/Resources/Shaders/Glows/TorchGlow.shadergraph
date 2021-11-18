@@ -671,6 +671,8 @@
         "m_GuidSerialized": "5a441793-1fbb-4ab7-a256-ba171c536c83"
     },
     "m_Name": "Emission",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Texture2D_C79B9C6E",
     "m_OverrideReferenceName": "_Emission",
     "m_GeneratePropertyBlock": true,
@@ -1032,6 +1034,8 @@
         "m_GuidSerialized": "6f4cdbe8-6020-498f-9c4b-260ac251c402"
     },
     "m_Name": "Color",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_CBE408DB",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1293,6 +1297,8 @@
         "m_GuidSerialized": "354683f9-c3ba-4e1e-a81f-eb484a16db8f"
     },
     "m_Name": "MainTex",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Texture2D_3B02C0DF",
     "m_OverrideReferenceName": "_MainTex",
     "m_GeneratePropertyBlock": true,

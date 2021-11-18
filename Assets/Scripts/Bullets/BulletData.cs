@@ -15,6 +15,7 @@ public class BulletData : ScriptableObject
 
     public enum BulletType
     {
+        EnemyBullet,
         SimpleBullet,
         HomingBullet,
         Arrow,

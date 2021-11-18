@@ -26,9 +26,12 @@ MonoBehaviour:
   _type: 2
   _bulletSpeed: 105
   _damage: 4
-  _critChance: 10
+  _critChance: 0.1
   _fireRate: 1
   _bulletScaleFactor: 1
+  _scatter: 0
+  _startPrice: 0
+  _level: 0
   _bulletSpawnPosition: {x: -0.15, y: 3.9}
   _bulletData: {fileID: 11400000, guid: bc9532ac9eb791549b683b8e7e763923, type: 2}
   _numberOfBullets: 3

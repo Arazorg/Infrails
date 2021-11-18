@@ -14,14 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: fbc6e9eefb829c8489a6d018a6dcdcfd, type: 2}
   _unitColor: {r: 0.427451, g: 0.23529413, b: 0.13725491, a: 1}
-  _colliderSize: {x: 3.5, y: 5}
   _colliderOffset: {x: 0, y: 4.5}
+  _colliderSize: {x: 3.5, y: 5}
   _unitName: ForestBush
   _maxHealth: 36
   _prefab: {fileID: 775310967722176096, guid: ce3b153b5b3cede4698c7ceb4ff5abda, type: 3}
   _enemyElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: 0, y: 10}
+  _center: {x: -0.1, y: 3.75}
+  _isFlipX: 0
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 31e320ee07ca17443b3792f6e831622a, type: 2}
   _laserAnimatorController: {fileID: 9100000, guid: 93500209205194b4f9d8cf7a5d7853d0, type: 2}

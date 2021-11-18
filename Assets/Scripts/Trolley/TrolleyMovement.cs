@@ -7,16 +7,26 @@ public class TrolleyMovement : MonoBehaviour
     private const float DistanceForGetNewPosition = 0.01f;
 
     private Animator _animator;
-    private Rail _nextRail;
     private Transform _previousRail;
+    private Rail _nextRail;
+
     private int _speed;
     private int _startSpeed;
     private int _speedDebuff;
     private bool _isMove;
 
-    public int Speed { set => _speed = value; }
+    public Character Character 
+    {
+        set
+        {         
+            value.OnCharacterDeath += StopTrolley;
+            value.OnCharacterReborn += StartTrolley;
+        }
+    }
 
     public Rail NextRail { get => _nextRail; set => _nextRail = value; }
+
+    public int Speed { set => _speed = value; }
 
     public bool IsMove { get => _isMove; set => _isMove = value; }
 
@@ -83,5 +93,15 @@ public class TrolleyMovement : MonoBehaviour
         else if ((transform.position.x < previousRail.position.x && transform.position.y < nextRail.position.y)
                     || (transform.position.x < nextRail.position.x && transform.position.y < previousRail.position.y))
             _animator.Play(TurnRightAnimationKey);
+    }
+
+    private void StartTrolley()
+    {
+        _isMove = true;
+    }
+
+    private void StopTrolley()
+    {
+        _isMove = false;
     }
 }

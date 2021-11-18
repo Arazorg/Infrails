@@ -1059,6 +1059,11 @@
 	{
       "key": "TrolleyForSupportDescription",
       "value": "Современный дизайн и повышенная скорость"
+    },
+	
+	{
+      "key": "ClickToInfo",
+      "value": "Нажми для получения подробной информации"
     }
   ]
 }

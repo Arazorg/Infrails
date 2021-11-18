@@ -161,8 +161,7 @@ public class LobbyEnvironmentManager : MonoBehaviour
         }
         else
         {
-            float resizingSpeed = 2.75f;
-            _cameraManager.SetCameraParams(_trolleySpawnPoint, _lobbyUICameraSize, _lobbyUICameraOffset, resizingSpeed);
+            _cameraManager.SetCameraParams(_trolleySpawnPoint, _lobbyUICameraSize, _lobbyUICameraOffset);
         }
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +15,9 @@ public class TutorialUI : BaseUI, IUIPanel
     [SerializeField] private AnimationsUI _finishButton;
     [SerializeField] private Animator _guideAnimator;
 
-    private List<TutorialItem> _allTutorialItems = new List<TutorialItem>();
+    private List<TutorialItem> _lobbyItems = new List<TutorialItem>();
+    private List<TutorialItem> _gameItems = new List<TutorialItem>();
+
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
@@ -31,6 +32,7 @@ public class TutorialUI : BaseUI, IUIPanel
     public bool IsBackButtonEnabled { get => _isBackButtonEnabled; set => _isBackButtonEnabled = value; }
 
     public bool IsPopAvailable { get => _isPopAvailable; set => _isPopAvailable = value; }
+
     public void OnPush()
     {
         Open();
@@ -59,41 +61,36 @@ public class TutorialUI : BaseUI, IUIPanel
 
     public void FinishTutorial()
     {
-        int lobbyFinishPhraseNumber = 7;
-        int gameFinishPhraseNumber = 21;
-
         StopAllCoroutines();
         _phraseImage.Hide();
         _finishButton.Hide();
         switch (SceneManager.GetActiveScene().name)
         {
             case LobbySceneName:
-                StartCoroutine(TutorialTextPrinting(lobbyFinishPhraseNumber, lobbyFinishPhraseNumber));
+                StartCoroutine(ShowLastPhrase(_lobbyItems[_lobbyItems.Count - 1]));
                 PlayerProgress.Instance.SetLobbyTutorialComplete();
                 break;
             case GameSceneName:
-                StartCoroutine(TutorialTextPrinting(gameFinishPhraseNumber, gameFinishPhraseNumber));
+                StartCoroutine(ShowLastPhrase(_gameItems[_gameItems.Count - 1]));
                 PlayerProgress.Instance.SetGameTutorialComplete();
                 break;
         }
     }
 
-    private void Start()
-    {
-        GetAllTutorialItems();
-    }
-
-    private void GetAllTutorialItems()
-    {
-        string tutorialItemsPath = "Specifications/TutorialItems";
-        _allTutorialItems = Resources.LoadAll<TutorialItem>(tutorialItemsPath).ToList();
-    }
-
     private void Open()
     {
         _isBackButtonEnabled = false;
+        GetAllTutorialItems();
         Show();
         ChooseTutorial();
+    }
+    private void GetAllTutorialItems()
+    {
+        string tutorialLobbyItemsPath = "Specifications/TutorialItems/Lobby";
+        string tutorialGameItemsPath = "Specifications/TutorialItems/Game";
+
+        _lobbyItems = Resources.LoadAll<TutorialItem>(tutorialLobbyItemsPath).ToList();
+        _gameItems = Resources.LoadAll<TutorialItem>(tutorialGameItemsPath).ToList();
     }
 
     private void Close()
@@ -104,64 +101,71 @@ public class TutorialUI : BaseUI, IUIPanel
 
     private void ChooseTutorial()
     {
-        int lobbyStartIndex = 0;
-        int lobbyFinishIndex = 6;
-        int gameStartIndex = 8;
-        int gameFinishIndex = 20;
-
         switch (SceneManager.GetActiveScene().name)
         {
             case LobbySceneName:
-                StartCoroutine(TutorialTextPrinting(lobbyStartIndex, lobbyFinishIndex));
+                StartCoroutine(TutorialTextPrinting(_lobbyItems));
                 break;
             case GameSceneName:
-                StartCoroutine(TutorialTextPrinting(gameStartIndex, gameFinishIndex));
+                StartCoroutine(TutorialTextPrinting(_gameItems));
                 break;
         }
     }
 
-    private IEnumerator TutorialTextPrinting(int startNumberOfPhrase, int finishNumberOfPhrase)
+    private IEnumerator TutorialTextPrinting(List<TutorialItem> tutorialItems)
     {
         float startDelay = 0.33f;
-        float delayBetweenPhrases = 2f;
-        float delayBetweenPhrasesSpeedUp = 0.5f;
-        string animatorKey = "isSpeaking";
-        float timeOfTyping = 1.5f;
-
         yield return new WaitForSeconds(startDelay);
 
-        for (int i = startNumberOfPhrase; i <= finishNumberOfPhrase; i++)
-        {
-            _isPhraseSpeedUp = false;
-            string printableText = LocalizationManager.GetLocalizedText(_allTutorialItems[i].PhraseKey);
-            _guideAnimator.SetBool(animatorKey, true);
-            yield return StartCoroutine(_tutorialText.TypingText(printableText, timeOfTyping));
-            _guideAnimator.SetBool(animatorKey, false);
+        for (int i = 0; i < tutorialItems.Count - 1; i++)
+            yield return StartCoroutine(ShowPhrase(tutorialItems[i]));
 
-            if (_allTutorialItems[i].PhraseSprite == null)
-            {
-                if (_isPhraseSpeedUp)
-                    yield return new WaitForSeconds(delayBetweenPhrasesSpeedUp);
-                else
-                    yield return new WaitForSeconds(delayBetweenPhrases);
-            }
-            else
-            {
-                yield return StartCoroutine(ShowPhraseImage(i, _allTutorialItems[i].ShowTime));
-            }
-        }
 
         PlayerProgress.Instance.SetLobbyTutorialComplete();
         UIManager.Instance.UIStackPop();
         OnTutorialFinish?.Invoke();
     }
 
-    private IEnumerator ShowPhraseImage(int numberOfPhrase, float showTime, bool isBreak = false)
+    private IEnumerator ShowPhrase(TutorialItem tutorialItem)
     {
-        _phraseImage.GetComponent<Image>().sprite = _allTutorialItems[numberOfPhrase].PhraseSprite;
-        _phraseImage.GetComponent<RectTransform>().sizeDelta = _allTutorialItems[numberOfPhrase].PhraseImageSize;
+        float timeOfTyping = 1.5f;
+        float delayBetweenPhrases = 2f;
+        float delayBetweenPhrasesSpeedUp = 0.5f;
+        string animatorKey = "isSpeaking";
+
+        _isPhraseSpeedUp = false;
+        string printableText = LocalizationManager.GetLocalizedText(tutorialItem.PhraseKey);
+        _guideAnimator.SetBool(animatorKey, true);
+        yield return StartCoroutine(_tutorialText.TypingText(printableText, timeOfTyping));
+        _guideAnimator.SetBool(animatorKey, false);
+
+        if (tutorialItem.PhraseSprite == null)
+        {
+            if (_isPhraseSpeedUp)
+                yield return new WaitForSeconds(delayBetweenPhrasesSpeedUp);
+            else
+                yield return new WaitForSeconds(delayBetweenPhrases);
+        }
+        else
+        {
+            yield return StartCoroutine(ShowPhraseImage(tutorialItem));
+        }
+    }
+
+    private IEnumerator ShowPhraseImage(TutorialItem tutorialItem)
+    {
+        _phraseImage.GetComponent<Image>().sprite = tutorialItem.PhraseSprite;
+        _phraseImage.GetComponent<RectTransform>().sizeDelta = tutorialItem.PhraseImageSize;
         _phraseImage.Show();
-        yield return new WaitForSeconds(showTime);
+        yield return new WaitForSeconds(tutorialItem.ShowTime);
         _phraseImage.Hide();
+    }
+
+    private IEnumerator ShowLastPhrase(TutorialItem tutorialItem)
+    {
+        yield return StartCoroutine(ShowPhrase(tutorialItem));
+        PlayerProgress.Instance.SetLobbyTutorialComplete();
+        UIManager.Instance.UIStackPop();
+        OnTutorialFinish?.Invoke();
     }
 }

@@ -20,7 +20,7 @@ public class HomingBullet : Bullet, IUpdateable
        // Rigidbody.velocity = transform.up * BulletSpeed;
     }
 
-    public override void BulletHit(Collider2D collision)
+    public override void BulletHit(Transform target)
     {
         HideBullet();
     }

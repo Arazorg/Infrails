@@ -14,14 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 1f2a38b6f1614d346806dc9f5de1a97f, type: 2}
   _unitColor: {r: 0.5882353, g: 0.5568628, b: 0.43137258, a: 1}
-  _colliderSize: {x: 4.152752, y: 5.3384647}
   _colliderOffset: {x: 0.060439944, y: 4.3307676}
+  _colliderSize: {x: 4.152752, y: 5.3384647}
   _unitName: CaveGolem
   _maxHealth: 36
   _prefab: {fileID: 775310967722176096, guid: ce3b153b5b3cede4698c7ceb4ff5abda, type: 3}
   _enemyElement: {fileID: 11400000, guid: 38675b82c5e3f834e89d54b880214369, type: 2}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: 0, y: 10}
+  _center: {x: 0, y: 3.75}
+  _isFlipX: 0
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 1a55d2f659c633c4e8c71f647e60fabe, type: 2}
   _laserAnimatorController: {fileID: 9100000, guid: 74dcdcca5931d51449305e0c025a2925, type: 2}

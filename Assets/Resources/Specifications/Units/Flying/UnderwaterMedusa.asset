@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: UnderwaterMedusa
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 7199aeb59d9f4494ca16a21f15826cb8, type: 2}
-  _unitColor: {r: 0.76470596, g: 0.54509807, b: 0.82745105, a: 1}
-  _colliderSize: {x: 2.4, y: 3}
-  _colliderOffset: {x: 0, y: 2.65}
+  _unitColor: {r: 0.56078434, g: 0.4039216, b: 0.6039216, a: 1}
+  _colliderOffset: {x: 0, y: 2.45}
+  _colliderSize: {x: 2.45, y: 2.65}
   _unitName: UnderwaterMedusa
-  _maxHealth: 7
+  _maxHealth: 6
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 97a0ce2a93f544643877c903e109af8f, type: 2}
-  _isSpriteFacingRight: 1
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: 0, y: 5.75}
+  _center: {x: -0.05, y: 2.35}
+  _isFlipX: 1
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 213051b6e9fdc62409db71d3f6e6e081, type: 2}

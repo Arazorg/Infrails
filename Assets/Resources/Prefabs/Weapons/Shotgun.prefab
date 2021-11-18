@@ -359,6 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e8ad47242fa45e41af6d005a34b89e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shotEffect: {fileID: 6489101537328117748, guid: 0fb0e611e672fa94ebd48e12c9b6c71e, type: 3}
   _bulletSpawnPoint: {fileID: 1610447051908499959}
   _handsSpriteRenderer:
   - {fileID: 8288792921309373738}

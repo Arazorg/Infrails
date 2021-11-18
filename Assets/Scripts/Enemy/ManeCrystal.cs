@@ -11,6 +11,7 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
 
     private GameObject _destructionEffect;
     private Coroutine _destroyByLaserCoroutine;
+    private CharacterWeapon _characterWeapon;
     private Vector3 _startPosition;
     private Vector3 _shadowStartPosition;
     private Vector3 _startOffset;
@@ -45,7 +46,7 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
     protected override void Death(bool isDeathWithEffect)
     {
         if (isDeathWithEffect)
-            Character.SetWeaponElement(Data.EnemyElement);
+            _characterWeapon.SetWeaponElement(Data.EnemyElement);
 
         AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
         SpawnExplosionParticle();
@@ -97,15 +98,16 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
     private void TryGetCharacter(Character character)
     {
         if (character == null)
-            EnemiesManager.Instance.OnCharacterAvailable += OnCharacterAvailable;
+            EnemiesManager.Instance.OnCharacterAvailable += SetCharacter;   
         else
-            Character = character;
+            SetCharacter(character);            
     }
 
-    private void OnCharacterAvailable(Character character)
+    private void SetCharacter(Character character)
     {
-        EnemiesManager.Instance.OnCharacterAvailable -= OnCharacterAvailable;
+        EnemiesManager.Instance.OnCharacterAvailable -= SetCharacter;
         Character = character;
+        _characterWeapon = Character.GetComponent<CharacterWeapon>();
     }
 
     private IEnumerator DestroyByLaser()

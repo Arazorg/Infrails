@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 9c325595905ac2f459ebd37dffa12534, type: 2}
   _unitColor: {r: 0.4901961, g: 0.72156864, b: 0.7294118, a: 1}
-  _colliderSize: {x: 2.5, y: 3.5}
-  _colliderOffset: {x: -0.25, y: 2.75}
+  _colliderOffset: {x: -0.3, y: 2.5}
+  _colliderSize: {x: 1.85, y: 3.56}
   _unitName: CaveGhost
   _maxHealth: 6
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 38675b82c5e3f834e89d54b880214369, type: 2}
-  _isSpriteFacingRight: 1
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: 0.1, y: 6.25}
+  _center: {x: 0.1, y: 2.2}
+  _isFlipX: 1
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 06d9e1a0bc216f3439e865d8eb9e9aea, type: 2}

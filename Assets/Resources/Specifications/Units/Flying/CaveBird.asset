@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 87d3f7edbb409dd4d98a53126890ae94, type: 2}
   _unitColor: {r: 0.44705886, g: 0.2392157, b: 0.14901961, a: 1}
-  _colliderSize: {x: 5, y: 3}
   _colliderOffset: {x: 0, y: 0}
+  _colliderSize: {x: 1.75, y: 1.75}
   _unitName: Cave Bird
-  _maxHealth: 4
+  _maxHealth: 6
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 38675b82c5e3f834e89d54b880214369, type: 2}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: -0.1, y: 3}
+  _center: {x: 0.05, y: -0.2}
+  _isFlipX: 0
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 199db631eb58c6046a4cfde43dd980d9, type: 2}

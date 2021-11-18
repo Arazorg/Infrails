@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 6aa176cad6377cc49ac09dceb49085a1, type: 2}
   _unitColor: {r: 0.9058824, g: 0.67058825, b: 0.15294118, a: 1}
-  _colliderSize: {x: 2, y: 3.35}
-  _colliderOffset: {x: 0, y: 1.75}
+  _colliderOffset: {x: 0.05, y: 1.75}
+  _colliderSize: {x: 1.8, y: 3.2}
   _unitName: ForestBee
-  _maxHealth: 7
+  _maxHealth: 6
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}
-  _isSpriteFacingRight: 1
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: -0.05, y: 5.5}
+  _center: {x: -0.05, y: 1.6}
+  _isFlipX: 1
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: cf60789849d766e459ac20c19bf7de83, type: 2}

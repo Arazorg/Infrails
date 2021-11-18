@@ -3,18 +3,22 @@ using UnityEngine;
 
 public abstract class Weapon : MonoBehaviour
 {
+    [SerializeField] private GameObject _shotEffect;
     [SerializeField] private Transform _bulletSpawnPoint;
     [SerializeField] private List<SpriteRenderer> _handsSpriteRenderer;
 
-    protected WeaponData CurrentWeaponData;
     protected BulletFactory Factory;
     protected MonobehaviourPool<Bullet> _bulletsPool;
 
     private Animator _animator;
     private BulletFactory _bulletFactory;
+    private WeaponData _currentWeaponData;
     private Element.Type _currentElement;
+    private Color _elementColor;
     private bool _isAttack;
     private float _timeToShoot = 0;
+
+    public WeaponData CurrentWeaponData { get => _currentWeaponData; set => _currentWeaponData = value; }
 
     public bool IsAttack { get => _isAttack; set => _isAttack = value; }
 
@@ -61,7 +65,7 @@ public abstract class Weapon : MonoBehaviour
     {
         var bullet = _bulletsPool.GetFreeElement();
         bullet.transform.position = _bulletSpawnPoint.position;
-        bullet.Init(CurrentWeaponData, CurrentElement);
+        _elementColor = bullet.Init(CurrentWeaponData, CurrentElement);
         return bullet.gameObject;
     }
 
@@ -76,7 +80,16 @@ public abstract class Weapon : MonoBehaviour
         if (Time.time > _timeToShoot && _isAttack)
         {
             _timeToShoot = Time.time + CurrentWeaponData.FireRate;
+            SpawnShotEffect();
             Shoot();
         }
+    }
+
+    private void SpawnShotEffect()
+    {
+        var shotEffect = Instantiate(_shotEffect, _bulletSpawnPoint.position, transform.rotation, transform);
+        var particleSettings = shotEffect.GetComponent<ParticleSystem>().main;
+        particleSettings.startColor = _elementColor;
+        Destroy(shotEffect, shotEffect.GetComponent<ParticleSystem>().main.startLifetimeMultiplier);
     }
 }

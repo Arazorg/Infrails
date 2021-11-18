@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 395751fc5743479459ddd1670e5405b3, type: 2}
   _unitColor: {r: 0.25490198, g: 0.49411768, b: 0.87843144, a: 1}
-  _colliderSize: {x: 4.75, y: 3}
-  _colliderOffset: {x: 0.25, y: 0}
+  _colliderOffset: {x: -0.45, y: 0.1}
+  _colliderSize: {x: 3.2, y: 2}
   _unitName: Underwater Fish
-  _maxHealth: 4
+  _maxHealth: 6
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 97a0ce2a93f544643877c903e109af8f, type: 2}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: -0.35, y: 2.75}
+  _center: {x: -0.35, y: 0.05}
+  _isFlipX: 0
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 7cd18f6fcc2205647be71124fe34de3e, type: 2}

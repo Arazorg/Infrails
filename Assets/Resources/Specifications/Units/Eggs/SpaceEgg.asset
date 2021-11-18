@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: a9b49e00e1291c74783065898ffa672f, type: 2}
   _unitColor: {r: 0.6392157, g: 0.19215688, b: 0.627451, a: 1}
-  _colliderSize: {x: 3, y: 4}
   _colliderOffset: {x: 0, y: 2}
+  _colliderSize: {x: 3, y: 4}
   _unitName: SpaceEgg
   _maxHealth: 0
   _prefab: {fileID: 943679413235862005, guid: 8c6ea78d5cebd20439287d11139550ea, type: 3}
   _enemyElement: {fileID: 0}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 2fbb4a7001d7e3b46b366b8519f541a1, type: 3}
+  _popUpTextOffset: {x: 0, y: 0}
+  _center: {x: 0, y: 1.75}
+  _isFlipX: 0

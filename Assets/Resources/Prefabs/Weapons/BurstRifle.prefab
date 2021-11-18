@@ -165,7 +165,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.33, y: 5.19}
+  m_Size: {x: 1.6201862, y: 5.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -214,6 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 463b88edbf3072e429aa97711c6be26e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shotEffect: {fileID: 6489101537328117748, guid: 0fb0e611e672fa94ebd48e12c9b6c71e, type: 3}
   _bulletSpawnPoint: {fileID: 2465984311320459334}
   _handsSpriteRenderer:
   - {fileID: 3021152124460994876}

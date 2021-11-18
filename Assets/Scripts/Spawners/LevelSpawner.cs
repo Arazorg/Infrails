@@ -19,6 +19,7 @@ public class LevelSpawner : MonoBehaviour
     private Rail _currentBiomeStartRail;
     private Vector3 _nextBiomeSpawnPosition = Vector3.zero;
     private int _levelCounter = 1;
+    public int _itemsLevel = 1;
     private int _biomesCounter = 0;
 
     public delegate void LevelSpawned(int levelNumber, List<BiomeData> currentLevelBiomes);
@@ -64,6 +65,10 @@ public class LevelSpawner : MonoBehaviour
         if (_biomesCounter == _currentLevelBiomesData.Count)
         {
             _levelCounter++;
+            if (_levelCounter == 3)
+                _itemsLevel = 2;
+            else if (_levelCounter == 6)
+                _itemsLevel = 3;
             _biomesCounter = 0;
             LevelSpawn();
         }

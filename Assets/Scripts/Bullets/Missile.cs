@@ -5,7 +5,7 @@ public class Missile : Bullet
     [SerializeField] private GameObject _explosionPrefab;
     [SerializeField] private AudioClip _explosionAudioClip;
 
-    public override void BulletHit(Collider2D collision)
+    public override void BulletHit(Transform target)
     {
         SpawnExplosion();
         HideBullet();

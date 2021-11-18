@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Linq;
 using UnityEngine;
 
@@ -10,7 +9,6 @@ public abstract class Bullet : MonoBehaviour
     protected Rigidbody2D Rigidbody;
     protected BulletData Data;
 
-    private Coroutine _destroyCoroutine;
     private int _damage;
     private float _critChance;
 
@@ -18,17 +16,19 @@ public abstract class Bullet : MonoBehaviour
 
     public float CritChance => _critChance;
 
-    public void Init(WeaponData weaponData, Element.Type elementType)
+    public Color Init(WeaponData weaponData, Element.Type elementType)
     {
         Data = weaponData.BulletData;
         SetBulletPhysic();
         SetSpriteByElement(elementType);
-        SetParticleColor(GetColorByElementType(elementType));
+        Color elementColor = GetColorByElementType(elementType);
+        SetParticleColor(elementColor);
         SetCharacteristics(weaponData);
         transform.localScale = new Vector2(weaponData.BulletScaleFactor, weaponData.BulletScaleFactor);
+        return elementColor;
     }
 
-    public abstract void BulletHit(Collider2D collision);
+    public abstract void BulletHit(Transform target);
 
     public void DestroyBullet()
     {
@@ -99,7 +99,7 @@ public abstract class Bullet : MonoBehaviour
         string obstacleTag = "Obstacle";
 
         if (collision.transform.CompareTag(obstacleTag))
-            BulletHit(collision);
+            BulletHit(collision.transform);
     }
 
     private void OnBecameInvisible()

@@ -39,6 +39,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats: []
     m_Colors:
     - Color_CBE408DB: {r: 3.3243575, g: 0.7484156, b: 0, a: 1}

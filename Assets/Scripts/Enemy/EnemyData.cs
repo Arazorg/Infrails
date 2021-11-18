@@ -5,8 +5,10 @@ public class EnemyData : UnitData
 {
     [SerializeField] private Enemy _prefab;
     [SerializeField] private Element _enemyElement;
-    [SerializeField] private bool _isSpriteFacingRight;
     [SerializeField] private AudioClip _deathAudioClip;
+    [SerializeField] private Vector2 _popUpTextOffset;
+    [SerializeField] private Vector2 _center;
+    [SerializeField] private bool _isFlipX;
 
     public enum EnemyType
     {
@@ -14,8 +16,6 @@ public class EnemyData : UnitData
         Static,
         Egg,
         Chest,
-        Obstacle,
-        Barrel,
         ManeCrystal
     }
 
@@ -23,7 +23,11 @@ public class EnemyData : UnitData
 
     public Element EnemyElement => _enemyElement;
 
-    public bool IsSpriteFacingRight => _isSpriteFacingRight;
-
     public AudioClip DeathAudioClip => _deathAudioClip;
+
+    public Vector2 PopUpTextOffset => _popUpTextOffset;
+
+    public Vector2 Center => _center;
+
+    public bool IsFlipX => _isFlipX;
 }

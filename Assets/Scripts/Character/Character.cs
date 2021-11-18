@@ -9,9 +9,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
     private BoxCollider2D _boxCollider2D;
     private CharacterData _characterData;
     private CharacterEffects _characterEffects;
-    private CharacterControl _characterControl;
     private TrolleyMovement _trolleyMovement;
-    private Element _currentElement;
 
     private int _health;
     private int _armor;
@@ -19,41 +17,36 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
     private bool _isDeath;
     private bool _isCanReborn;
 
+    public delegate void CharacterReborn();
+    public event CharacterReborn OnCharacterReborn;
+
     public delegate void CharacterDeath();
-
-    public delegate void HealthChanged(int health);
-
-    public delegate void ArmorChanged(int armor);
-
-    public delegate void MoneyChanged(int money);
-
-    public delegate void ElementChanged(Element element);
-
-    public event HealthChanged OnHealthChanged;
-
-    public event ArmorChanged OnArmorChanged;
-
     public event CharacterDeath OnCharacterDeath;
 
+    public delegate void HealthChanged(int health, int value);
+    public event HealthChanged OnHealthChanged;
+
+    public delegate void ArmorChanged(int armor, int value);
+    public event ArmorChanged OnArmorChanged;
+
+    public delegate void MoneyChanged(int money);
     public event MoneyChanged OnMoneyChanged;
 
-    public event ElementChanged OnElementChanged;
-
-    public bool IsDeath => _isDeath;
-
-    public bool IsCanReborn => _isCanReborn;
-
-    public int MaxHealth => _characterData.MaxHealth;
-
-    public int MaxArmor => _characterData.MaxArmor;
-
-    public Element CurrentElement => _currentElement;
+    public CharacterData CharacterData => _characterData;
 
     public Transform Transform => transform;
 
     public Transform LaserAttackPoint => _laserAttackPoint;
 
+    public int MaxHealth => _characterData.MaxHealth;
+
+    public int MaxArmor => _characterData.MaxArmor;
+
     public bool IsVisible => true;
+
+    public bool IsDeath => _isDeath;
+
+    public bool IsCanReborn => _isCanReborn;
 
     public void Init(CharacterData data)
     {
@@ -66,7 +59,9 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         _armor = _characterData.MaxArmor; 
         _isDeath = false;
         _isCanReborn = true;
-        SpawnStartWeapon();
+        GetComponentInParent<TrolleyMovement>().Character = this;
+        GetComponent<CharacterWeapon>().Init(_characterData);
+        GetComponent<CharacterAmplifications>().Init();
     }
 
     public void Heal(int heal)
@@ -74,12 +69,12 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         _health += heal;
         if (_health > _characterData.MaxHealth)
             _health = _characterData.MaxHealth;
-        OnHealthChanged?.Invoke(_health);
+
+        OnHealthChanged?.Invoke(_health, heal);
     }
 
     public void Damage(int damage)
     {
-        Camera.main.GetComponent<CameraManager>().ShakeCameraOnce(.1f, 6);
         if (_armor <= 0)
         {
             _health -= damage;
@@ -89,11 +84,11 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
                 StartCoroutine(Death());
             }
 
-            OnHealthChanged?.Invoke(_health);
+            OnHealthChanged?.Invoke(_health, -damage);
         }
         else
         {
-            DamageArmor(damage);
+            DamageArmor();
         }
     }
 
@@ -103,7 +98,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         if (_armor > _characterData.MaxArmor)
             _armor = _characterData.MaxArmor;
 
-        OnArmorChanged?.Invoke(_armor);
+        OnArmorChanged?.Invoke(_armor, heal);
     }
 
     public void AddMoney(int money)
@@ -116,18 +111,9 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
     {
         _isDeath = false;
         _isCanReborn = false;
-        _characterEffects.SetCharacterVisibility(true);
-        _characterEffects.SpawnRebornEffect(_characterData.TeleportationAnimatorController);
-        _trolleyMovement.IsMove = true;
         RepairArmor(_characterData.MaxArmor);
         Heal(_characterData.MaxHealth);
-    }
-
-    public void SetWeaponElement(Element element)
-    {
-        _currentElement = element;
-        _characterControl.CurrentWeapon.SetElement(element.ElementType);
-        OnElementChanged?.Invoke(element);
+        OnCharacterReborn?.Invoke();
     }
 
     public void StartLaserInteraction()
@@ -147,15 +133,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         _animator = GetComponent<Animator>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _characterEffects = GetComponent<CharacterEffects>();
-        _characterControl = GetComponent<CharacterControl>();
         _trolleyMovement = GetComponentInParent<TrolleyMovement>();
-    }
-
-    private void SpawnStartWeapon()
-    {
-        _currentElement = LevelSpawner.Instance.CurrentBiomeData.BiomeElement;
-        _characterControl.SpawnStartWeapon(_characterData, _currentElement.ElementType);
-        OnElementChanged?.Invoke(_currentElement);
     }
 
     private IEnumerator Death()
@@ -164,31 +142,27 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         if (!_isDeath)
         {
             _isDeath = true;
-            _trolleyMovement.IsMove = false;
-            Camera.main.GetComponent<CameraManager>().ShakeCameraOnce(.3f, 25);
             OnCharacterDeath?.Invoke();
             yield return new WaitForSeconds(hideCharacterDelay);
-            _characterEffects.SetCharacterVisibility(false);
-            _characterEffects.SpawnDeathEffect(_characterData.UnitColor);
         }
     }
 
-    private void DamageArmor(int damage)
+    private void DamageArmor()
     {
-        _armor -= damage;
+        _armor -= 1;
         if (_armor < 0)
             _armor = 0;
 
-        OnArmorChanged?.Invoke(_armor);
+        OnArmorChanged?.Invoke(_armor, -1);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Bullet bullet))
+        if (collision.TryGetComponent(out EnemyBullet bullet))
         {
             BendOver(collision.transform);
             Damage(bullet.Damage);
-            bullet.BulletHit(collision);
+            bullet.BulletHit(transform);
         }
     }
 

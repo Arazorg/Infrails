@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: e9c4fa71126871a4bac5e7ef1d3ecb28, type: 2}
   _unitColor: {r: 1, g: 0.95294124, b: 0.9294118, a: 1}
-  _colliderSize: {x: 5, y: 3}
-  _colliderOffset: {x: 0, y: 0}
+  _colliderOffset: {x: -0.15, y: 0}
+  _colliderSize: {x: 1.75, y: 1.65}
   _unitName: Forest Bird
-  _maxHealth: 3
+  _maxHealth: 6
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}
-  _isSpriteFacingRight: 0
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _popUpTextOffset: {x: -0.1, y: 3}
+  _center: {x: 0.15, y: -0.15}
+  _isFlipX: 0
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 60ffb0980d33d944fbf31eb5eaff1b76, type: 2}
