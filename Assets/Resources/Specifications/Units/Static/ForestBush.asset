@@ -23,9 +23,10 @@ MonoBehaviour:
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
   _popUpTextOffset: {x: 0, y: 10}
   _center: {x: -0.1, y: 3.75}
-  _isFlipX: 0
+  _isFlipX: 1
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 31e320ee07ca17443b3792f6e831622a, type: 2}
+  _dizzinesEffectOffset: {x: 0, y: 8, z: 0}
   _laserAnimatorController: {fileID: 9100000, guid: 93500209205194b4f9d8cf7a5d7853d0, type: 2}
   _teleportationAnimatorController: {fileID: 9100000, guid: b07bc71b398d46c4cb90c4026451b9fa, type: 2}
   _weaponSpawnPosition: {x: 0, y: 2.74}

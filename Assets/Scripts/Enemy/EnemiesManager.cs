@@ -98,7 +98,7 @@ public class EnemiesManager : MonoBehaviour
             {
                 int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
                 FlyingEnemy enemy = SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint) as FlyingEnemy;
-                enemy.OnEnemyDeath += RemoveFlyingEnemyFromList;
+                enemy.OnFlyingEnemyDeath += RemoveFlyingEnemyFromList;
                 _currentFlyingEnemies.Add(enemy);
             }
         }     
@@ -149,7 +149,7 @@ public class EnemiesManager : MonoBehaviour
 
     private void RemoveFlyingEnemyFromList(FlyingEnemy enemy)
     {
-        enemy.OnEnemyDeath -= RemoveFlyingEnemyFromList;
+        enemy.OnFlyingEnemyDeath -= RemoveFlyingEnemyFromList;
         _currentFlyingEnemies.Remove(enemy);
     }
 }

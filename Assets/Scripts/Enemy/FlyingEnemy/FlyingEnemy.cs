@@ -1,18 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwitcher
+public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwitcher, IDebuffVisitor
 {
     private BaseEnemyState _currentState;
     private List<BaseEnemyState> _allStates;
     private FlyingEnemyMovement _enemyMovement;
     private FlyingEnemyAttack _enemyAttack;
+    private EnemyDebuffs _enemyDebuffs;
     private Enemy _enemy;
 
-    public delegate void EnemyDeath(FlyingEnemy enemy);
+    public delegate void FlyingEnemyDeath(FlyingEnemy enemy);
 
-    public event EnemyDeath OnEnemyDeath;
+    public event FlyingEnemyDeath OnFlyingEnemyDeath;
 
     public Transform NextPoint { get; set; }
 
@@ -20,8 +22,8 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     {
         Data = data;
         Character = character;
-        Character.OnCharacterDeath += OnDestroyingEvent;
-        LevelSpawner.Instance.OnBiomeSpawned += OnDestroyingEvent;
+        Character.OnCharacterDeath += DeathWithoutEffect;
+        LevelSpawner.Instance.OnBiomeSpawned += DeathWithoutEffect;
         InitComponents(spawnPoint);
         InitStates();
         OnInit();
@@ -35,6 +37,11 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _currentState.Stop();
         _currentState = state;
         _currentState.Start();
+    }
+
+    public void Idle()
+    {
+        _currentState.Idle();
     }
 
     public void Move()
@@ -67,23 +74,39 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyAttack.StopAttack();
     }
 
+    public void StartStunning()
+    {
+        _enemyDebuffs.StartStunning();
+    }
+
+    public void StartBleeding()
+    {
+        _enemyDebuffs.StartBleeding();
+    }
+
+    public override void BulletHit(Bullet bullet)
+    {
+        GetDamage(bullet.Damage);
+        bullet.Accept(Transform, this);
+    }
+
     protected override void Death(bool isDeathWithEffect)
     {
-        LevelSpawner.Instance.OnBiomeSpawned -= OnDestroyingEvent;
-        Character.OnCharacterDeath -= OnDestroyingEvent;
+        LevelSpawner.Instance.OnBiomeSpawned -= DeathWithoutEffect;
+        Character.OnCharacterDeath -= DeathWithoutEffect;
         _enemyAttack.DestroyPoolBullets();
 
         if (isDeathWithEffect)
             SpawnCoin();
 
-        OnEnemyDeath?.Invoke(this);
-        SpawnExplosionParticle();
+        OnFlyingEnemyDeath?.Invoke(this);
         Destroy(gameObject);
     }
 
     private void InitComponents(Transform spawnPoint)
     {
         _enemy = GetComponent<Enemy>();
+        _enemyDebuffs = GetComponent<EnemyDebuffs>();
         _enemyMovement = GetComponent<FlyingEnemyMovement>();
         _enemyAttack = GetComponent<FlyingEnemyAttack>();
         _enemyMovement.Init(spawnPoint.position, Character.Transform);
@@ -96,6 +119,7 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         {
             new EnemyMovementState(this, this),
             new EnemyAttackState(this, this),
+            new EnemyIdleState(this)
         };
 
         _currentState = _allStates[0];
@@ -137,9 +161,8 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         coin.Init(Character.Transform);
     }
 
-    private void OnDestroyingEvent()
+    private void DeathWithoutEffect()
     {
         Death(GameConstants.DeathWithoutEffect);
     }
-
 }

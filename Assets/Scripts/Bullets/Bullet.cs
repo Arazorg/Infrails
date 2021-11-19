@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 
-public abstract class Bullet : MonoBehaviour
+public abstract class Bullet : MonoBehaviour, IHit
 {
     [SerializeField] protected GameObject ExplosionPrefab;
 
@@ -28,7 +27,9 @@ public abstract class Bullet : MonoBehaviour
         return elementColor;
     }
 
-    public abstract void BulletHit(Transform target);
+    public abstract void Accept(Transform target);
+
+    public abstract void Accept(Transform target, IDebuffVisitor hitableVisitor);
 
     public void DestroyBullet()
     {
@@ -87,19 +88,10 @@ public abstract class Bullet : MonoBehaviour
         return Data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletColor;
     }
 
-    private IEnumerator StartDestroy()
-    {
-        float destroyDelay = 2f;
-        yield return new WaitForSeconds(destroyDelay);
-        Destroy(gameObject);
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string obstacleTag = "Obstacle";
-
-        if (collision.transform.CompareTag(obstacleTag))
-            BulletHit(collision.transform);
+        if (collision.TryGetComponent(out EndWall endWall))
+            HideBullet();
     }
 
     private void OnBecameInvisible()

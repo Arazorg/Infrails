@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: e29bb0e7d6c2af34ea9342dbd9bbd82f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2124328557242015471
+    second: WindBirdIdle_0
+  - first:
+      213: 4345421066873964461
+    second: WindBirdIdle_1
+  - first:
+      213: -7313792504517258143
+    second: WindBirdIdle_2
+  - first:
+      213: -179915270288446764
+    second: WindBirdIdle_3
+  - first:
+      213: 505127704525241724
+    second: WindBirdIdle_4
+  - first:
+      213: -1142098222112545357
+    second: WindBirdIdle_5
+  - first:
+      213: -2512305646081025227
+    second: WindBirdIdle_6
+  - first:
+      213: -648106619609642739
+    second: WindBirdIdle_7
+  - first:
+      213: 3211400602805666393
+    second: WindBirdIdle_8
+  - first:
+      213: -7859514919012127251
+    second: WindBirdIdle_9
+  - first:
+      213: -5157453953913734706
+    second: WindBirdIdle_10
+  - first:
+      213: 69086639373477338
+    second: WindBirdIdle_11
+  - first:
+      213: -5614576088421249745
+    second: WindBirdIdle_12
+  - first:
+      213: -6984895559202268306
+    second: WindBirdIdle_13
+  - first:
+      213: -1453894545926350985
+    second: WindBirdIdle_14
+  - first:
+      213: 1607179107948903357
+    second: WindBirdIdle_15
+  - first:
+      213: 5536702980220168936
+    second: WindBirdIdle_16
+  - first:
+      213: 7206602633643023099
+    second: WindBirdIdle_17
+  - first:
+      213: -3418472471432850231
+    second: WindBirdIdle_18
+  - first:
+      213: 840712595361432477
+    second: WindBirdIdle_19
+  - first:
+      213: 839283484591187651
+    second: WindBirdIdle_20
+  - first:
+      213: 6718375046830825947
+    second: WindBirdIdle_21
+  - first:
+      213: -6230604335842067556
+    second: WindBirdIdle_22
+  - first:
+      213: 4042840284195067294
+    second: WindBirdIdle_23
+  - first:
+      213: 7029124453639183140
+    second: WindBirdIdle_24
+  - first:
+      213: -452988992415699678
+    second: WindBirdIdle_25
+  - first:
+      213: -7134889796370752427
+    second: WindBirdIdle_26
+  - first:
+      213: 721533572991091926
+    second: WindBirdIdle_27
+  - first:
+      213: 472529238113443234
+    second: WindBirdIdle_28
+  - first:
+      213: -5127119894768637553
+    second: WindBirdIdle_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WindBirdIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1112f5fae6ed482e0800000000000000
+      internalID: -2124328557242015471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da78582ff690e4c30800000000000000
+      internalID: 4345421066873964461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_2
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164955f9770308a90800000000000000
+      internalID: -7313792504517258143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dae9c0d300d08df0800000000000000
+      internalID: -179915270288446764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_4
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d7f6298f2920700800000000000000
+      internalID: 505127704525241724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b56064d7b37620f0800000000000000
+      internalID: -1142098222112545357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_6
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bd12e535f722dd0800000000000000
+      internalID: -2512305646081025227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_7
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09869996767107f0800000000000000
+      internalID: -648106619609642739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_8
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95205b165df219c20800000000000000
+      internalID: 3211400602805666393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_9
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded266992d46de290800000000000000
+      internalID: -7859514919012127251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9b98b44fa0d68b0800000000000000
+      internalID: -5157453953913734706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5e496bee175f000800000000000000
+      internalID: 69086639373477338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_12
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2dcf3d7bc40512b0800000000000000
+      internalID: -5614576088421249745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_13
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b9b881f7aa01f90800000000000000
+      internalID: -6984895559202268306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_14
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7779e211d9ab2dbe0800000000000000
+      internalID: -1453894545926350985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb39bb22e8dd4610800000000000000
+      internalID: 1607179107948903357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_16
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eaaeda960256dc40800000000000000
+      internalID: 5536702980220168936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_17
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfadfafb9eef20460800000000000000
+      internalID: 7206602633643023099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_18
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c41bc926652f80d0800000000000000
+      internalID: -3418472471432850231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_19
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9307b4b6afcaab00800000000000000
+      internalID: 840712595361432477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6e8ece1ebb5ab00800000000000000
+      internalID: 839283484591187651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_21
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1233672867c3d50800000000000000
+      internalID: 6718375046830825947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_22
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bff122e527889a0800000000000000
+      internalID: -6230604335842067556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_23
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95161f81dd0b1830800000000000000
+      internalID: 4042840284195067294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_24
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bdc2dd2777c8160800000000000000
+      internalID: 7029124453639183140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d66e359e8a6b9f0800000000000000
+      internalID: -452988992415699678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_26
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c13cf4887cbfc90800000000000000
+      internalID: -7134889796370752427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_27
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d407a736f6630a00800000000000000
+      internalID: 721533572991091926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_28
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2addcb7a6d2ce8600800000000000000
+      internalID: 472529238113443234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WindBirdIdle_29
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f892a7fce9fc8d8b0800000000000000
+      internalID: -5127119894768637553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

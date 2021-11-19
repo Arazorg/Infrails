@@ -31,6 +31,12 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
         TryGetCharacter(character);
     }
 
+    public override void BulletHit(Bullet bullet)
+    {
+        GetDamage(bullet.Damage);
+        bullet.Accept(Transform);
+    }
+
     public void StartLaserInteraction()
     {
         SpawnDestructionEffect();
@@ -48,7 +54,6 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
         if (isDeathWithEffect)
             ChooseActionByType();
 
-        SpawnExplosionParticle();
         Destroy(gameObject);
     }
 

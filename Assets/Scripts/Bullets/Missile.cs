@@ -5,7 +5,14 @@ public class Missile : Bullet
     [SerializeField] private GameObject _explosionPrefab;
     [SerializeField] private AudioClip _explosionAudioClip;
 
-    public override void BulletHit(Transform target)
+
+    public override void Accept(Transform target)
+    {
+        SpawnExplosion();
+        HideBullet();
+    }
+
+    public override void Accept(Transform target, IDebuffVisitor hitableVisitor)
     {
         SpawnExplosion();
         HideBullet();

@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9329260c36bc814aa8c0aef43658167, type: 3}
   m_Name: BurstRifleBullet
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 1941940118919244265, guid: 5bfec0b57a5f6624f93b877e3b7d4446, type: 3}
-  _type: 1
+  _prefab: {fileID: -8750298439887257948, guid: a122a8d404688e44caf47f811dba38cf, type: 3}
   _mainSprite: {fileID: 0}
   _bulletsSpritesByElements:
   - Element: 1

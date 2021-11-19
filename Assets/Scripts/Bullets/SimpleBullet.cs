@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class SimpleBullet : Bullet
 {
-    public override void BulletHit(Transform target)
+    public override void Accept(Transform target)
+    {
+        HideBullet();
+    }
+
+    public override void Accept(Transform target, IDebuffVisitor hitableVisitor)
     {
         HideBullet();
     }

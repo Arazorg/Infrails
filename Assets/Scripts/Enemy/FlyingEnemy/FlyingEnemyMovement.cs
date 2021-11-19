@@ -29,6 +29,11 @@ public class FlyingEnemyMovement : MonoBehaviour
         _isMove = true;
     }
 
+    public void StopMove()
+    {
+        _isMove = false;
+    }
+
     private void Update()
     {
         FixShadowRotation();
@@ -39,7 +44,6 @@ public class FlyingEnemyMovement : MonoBehaviour
     {
         enemyShadowTransform.rotation = _startShadowQuaternion;
     }
-
 
     private void MoveToNextPoint()
     {

@@ -10,16 +10,27 @@ public class PopUpDamageText : MonoBehaviour
     [SerializeField] private TextMeshPro _text;
     [SerializeField] private Animator _animator;
 
+    private Enemy _enemy;
+    private Vector3 _offset;
     private float _startSize;
     private float _currentPopUpDamage;
     private float _popUpTextFinishTime;
 
-    public void ShowPopUpText(int damage, Vector3 offset)
+
+    private void Start()
+    {
+        _startSize = _text.fontSize;
+        _enemy = GetComponentInParent<Enemy>();
+        _enemy.OnEnemyDamage += ShowPopUpText;
+        _offset = _enemy.Data.PopUpTextOffset;    
+    }
+
+    private void ShowPopUpText(int damage)
     {
         float showTime = 1.25f;
         _popUpTextFinishTime = Time.time + showTime;
         _text.fontSize = _startSize / Mathf.Abs(transform.parent.localScale.x);
-        transform.localPosition = offset;
+        transform.localPosition = _offset;
 
         if (_currentPopUpDamage == 0)
         {
@@ -29,11 +40,6 @@ public class PopUpDamageText : MonoBehaviour
 
         _currentPopUpDamage += damage;
         _text.text = _currentPopUpDamage.ToString();
-    }
-
-    private void Start()
-    {
-        _startSize = _text.fontSize;
     }
 
     private IEnumerator ShowingPopUpText()

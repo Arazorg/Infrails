@@ -1,15 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwitcher
+public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwitcher, IDebuffVisitor
 {
     private BaseEnemyState _currentState;
     private List<BaseEnemyState> _allStates;
     private StaticEnemyData _staticEnemyData;
     private StaticEnemyMovement _enemyMovement;
     private StaticEnemyAttack _enemyAttack;
+    private EnemyDebuffs _enemyDebuffs;
     private Transform _characterTransform;
+
     private bool _isEndOfBiomeReached;
 
     public override void Init(EnemyData data, Transform spawnPoint, Character character)
@@ -74,13 +77,28 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyAttack.StopAttack();
     }
 
+    public void StartStunning()
+    {
+        _enemyDebuffs.StartStunning();
+    }
+
+    public void StartBleeding()
+    {
+        _enemyDebuffs.StartBleeding();
+    }
+
+    public override void BulletHit(Bullet bullet)
+    {
+        GetDamage(bullet.Damage);
+        bullet.Accept(Transform, this);
+    }
+
     protected override void Death(bool isDeathWithEffect)
     {
         Character.OnCharacterDeath -= DeathWithoutEffect;
         if (isDeathWithEffect)
             SpawnCoin();
 
-        SpawnExplosionParticle();
         Destroy(gameObject);
     }
 
@@ -88,6 +106,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     {
         _enemyAttack = GetComponent<StaticEnemyAttack>();
         _enemyMovement = GetComponent<StaticEnemyMovement>();
+        _enemyDebuffs = GetComponent<EnemyDebuffs>();
     }
 
     private void TryGetCharacter(Character character)

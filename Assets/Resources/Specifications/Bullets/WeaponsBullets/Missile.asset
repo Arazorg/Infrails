@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Missile
   m_EditorClassIdentifier: 
   _prefab: {fileID: 6693109889255811938, guid: 93b031435276ecf4699f9368dcdd9007, type: 3}
-  _type: 3
   _mainSprite: {fileID: 0}
   _bulletsSpritesByElements:
   - Element: 1

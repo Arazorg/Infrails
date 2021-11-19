@@ -31,6 +31,12 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
         TryGetCharacter(character);
     }
 
+    public override void BulletHit(Bullet bullet)
+    {
+        GetDamage(bullet.Damage);
+        bullet.Accept(Transform);
+    }
+
     public void StartLaserInteraction()
     {
         SpawnDestructionEffect();
@@ -49,7 +55,7 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
             _characterWeapon.SetWeaponElement(Data.EnemyElement);
 
         AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
-        SpawnExplosionParticle();
+
         Destroy(gameObject);
     }
 

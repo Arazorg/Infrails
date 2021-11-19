@@ -38,11 +38,16 @@ public class Egg : Enemy, IEnemyLaserTarget
         StopCoroutine(_destroyByLaserCoroutine);
     }
 
+    public override void BulletHit(Bullet bullet)
+    {
+        GetDamage(bullet.Damage);
+        bullet.Accept(Transform);
+    }
+
     protected override void Death(bool isDeathWithEffect)
     {
         EnemiesManager.Instance.SpawnEnemyFromEgg(transform.parent);
         AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
-        SpawnExplosionParticle();
         Destroy(gameObject);
     }
 

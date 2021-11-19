@@ -21,8 +21,9 @@ MonoBehaviour:
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 97a0ce2a93f544643877c903e109af8f, type: 2}
   _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
-  _popUpTextOffset: {x: -0.35, y: 2.75}
+  _popUpTextOffset: {x: -0.35, y: 3.15}
   _center: {x: -0.35, y: 0.05}
   _isFlipX: 0
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: 7cd18f6fcc2205647be71124fe34de3e, type: 2}
+  _dizzinesEffectOffset: {x: -0.65, y: 1.2, z: 0}
