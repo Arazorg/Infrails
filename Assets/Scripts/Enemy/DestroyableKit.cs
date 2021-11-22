@@ -31,7 +31,7 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
         TryGetCharacter(character);
     }
 
-    public override void BulletHit(Bullet bullet)
+    public override void BulletHit(PlayerBullet bullet)
     {
         GetDamage(bullet.Damage);
         bullet.Accept(Transform);
@@ -53,7 +53,7 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
     {
         if (isDeathWithEffect)
             ChooseActionByType();
-
+        AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
         Destroy(gameObject);
     }
 

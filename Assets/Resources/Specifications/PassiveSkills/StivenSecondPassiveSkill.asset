@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba608c501ebd3c44c9ecf484a78656fa, type: 3}
+  m_Name: StivenSecondPassiveSkill
+  m_EditorClassIdentifier: 
+  _itemName: StivenSecondPassiveSkill
+  _itemColor: {r: 1, g: 0.59607846, b: 0.0627451, a: 1}
+  _itemSpriteUI: {fileID: -3144922177066859936, guid: 50d390587fab476488db5ee70c9e9dd9, type: 3}
+  _isStartingItem: 0
+  _ownerData: {fileID: 11400000, guid: 95e42799629487641872b07aa30c5134, type: 2}
+  _skillCooldown: 6

@@ -10,6 +10,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
     [SerializeField] private TextMeshProUGUI _countOfKilledEnemyText;
     [SerializeField] private TextMeshProUGUI _playTimeText;
     [SerializeField] private TextMeshProUGUI _reachedLevelText;
+    [SerializeField] private TextMeshProUGUI _doubleMoneyText;
 
     [Header("Images")]
     [SerializeField] private Image _characterImage;
@@ -23,6 +24,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
     [SerializeField] private AnimationsUI _shareButton;
     [SerializeField] private AnimationsUI _doubleRewardButton;
     [SerializeField] private AnimationsUI _goToLobbyButton;
+    [SerializeField] private AnimationsUI _doubleMoneyImage;
 
     [Header("Audio Clips")]
     [SerializeField] private AudioClip _defeatAudioClip;
@@ -35,6 +37,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
+    private bool _isDoubleRewardAvailable = true;
 
     public bool IsActive { get => _isActive; set => _isActive = value; }
 
@@ -81,13 +84,14 @@ public class EndOfGameUI : BaseUI, IUIPanel
 
     private IEnumerator Open()
     {
+        CurrentGameInfo.Instance.AddResultsToProgress();
         _isPopAvailable = false;
         SetUI();
         Show();
+        _doubleRewardButton.Show();
         float moveTrolleyDelay = 0.5f;
         yield return new WaitForSeconds(moveTrolleyDelay);
         SetTrolleyMovementParams();
-        CurrentGameInfo.Instance.AddResultsToProgress();
         AudioManager.Instance.PlayEffect(_defeatAudioClip);
         AudioManager.Instance.StopMusic();
     }
@@ -115,6 +119,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
         float playTimeSeconds = (Time.time - CurrentGameInfo.Instance.GameStartTime);
         _playTimeText.text = string.Format("{0:00}:{1:00}", (int)(playTimeSeconds / 60), (int)(playTimeSeconds % 60));
         _countOfEarnedMoneyText.text = string.Format("+{0}", CurrentGameInfo.Instance.CountOfEarnedMoney.ToString());
+        _doubleMoneyText.text = string.Format("+{0}", CurrentGameInfo.Instance.CountOfEarnedMoney.ToString());
         _countOfKilledEnemyText.text = CurrentGameInfo.Instance.CountOfKilledEnemies.ToString();
     }
 
@@ -173,6 +178,8 @@ public class EndOfGameUI : BaseUI, IUIPanel
         AdsManager.Instance.OnFinishAd -= DoubleReward;
         PlayerProgress.Instance.PlayerMoney += CurrentGameInfo.Instance.CountOfEarnedMoney;
         _countOfEarnedMoneyText.text = (CurrentGameInfo.Instance.CountOfEarnedMoney * 2).ToString();
+        _doubleRewardButton.Hide();
+        _doubleMoneyImage.Show();
     }
 
     private IEnumerator Sharing()
@@ -181,7 +188,10 @@ public class EndOfGameUI : BaseUI, IUIPanel
         _goToLobbyButton.HideImmediate();
         _shareButton.HideImmediate();
         yield return _shareButton.GetComponent<ShareButtonUI>().Share();
-        _doubleRewardButton.ShowImmediate();
+        if (_isDoubleRewardAvailable)
+            _doubleRewardButton.ShowImmediate();
+        else
+            _doubleMoneyImage.ShowImmediate();
         _goToLobbyButton.ShowImmediate();
         _shareButton.ShowImmediate();
     }

@@ -13,11 +13,13 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     private EnemyDebuffs _enemyDebuffs;
     private Transform _characterTransform;
 
+    private bool _isMove;
     private bool _isEndOfBiomeReached;
 
     public override void Init(EnemyData data, Transform spawnPoint, Character character)
     {
         Data = data;
+        _isMove = true;
         _staticEnemyData = Data as StaticEnemyData;
         InitComponents();
         TryGetCharacter(character);
@@ -51,12 +53,18 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     public void StartMove()
     {
+        _isMove = true;
         _enemyMovement.OnReachedNextPoint += Attack;
         if (!_enemyMovement.Move())
         {
             _isEndOfBiomeReached = true;
             Attack();
         }
+    }
+
+    public void StopMove()
+    {
+        _isMove = false;
     }
 
     public void Attack()
@@ -67,6 +75,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     public void StartAttack()
     {
+        _isMove = true;
         _enemyAttack.OnTargetBecameNull += OnTargetBecameNull;
         _enemyAttack.StartAttack();
     }
@@ -79,7 +88,9 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     public void StartStunning()
     {
-        _enemyDebuffs.StartStunning();
+        _isMove = false;
+        _currentState.Stun();
+        _enemyDebuffs.StartStunning(this);
     }
 
     public void StartBleeding()
@@ -87,9 +98,10 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyDebuffs.StartBleeding();
     }
 
-    public override void BulletHit(Bullet bullet)
+    public override void BulletHit(PlayerBullet bullet)
     {
-        GetDamage(bullet.Damage);
+        int damageWithResistance = (int)(bullet.Damage * Data.EnemyElement.GetElementInteractionByType(bullet.ElementType));
+        GetDamage(damageWithResistance);
         bullet.Accept(Transform, this);
     }
 
@@ -97,8 +109,12 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     {
         Character.OnCharacterDeath -= DeathWithoutEffect;
         if (isDeathWithEffect)
+        {          
             SpawnCoin();
-
+            CurrentGameInfo.Instance.AddEnemyDeath();
+            AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
+        }         
+        
         Destroy(gameObject);
     }
 
@@ -131,6 +147,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
             new EnemyIdleState(this),
             new EnemyMovementState(this, this),
             new EnemyAttackState(this, this),
+            new EnemyStunnedState(this)
         };
 
         _currentState = _allStates[0];
@@ -144,7 +161,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     private void CheckDistanceToCharacter()
     {
         float distanceToMoveY = 12.5f;
-        if (_characterTransform != null)
+        if (_characterTransform != null && _isMove)
         {
             float distanceY = transform.position.y - _characterTransform.position.y;
             if (distanceY < distanceToMoveY && !_isEndOfBiomeReached)

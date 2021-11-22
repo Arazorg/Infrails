@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Missile : Bullet
+public class Missile : PlayerBullet
 {
     [SerializeField] private GameObject _explosionPrefab;
     [SerializeField] private AudioClip _explosionAudioClip;

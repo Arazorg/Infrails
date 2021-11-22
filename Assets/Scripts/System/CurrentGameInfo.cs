@@ -16,6 +16,8 @@ public class CurrentGameInfo : MonoBehaviour
 
     public void AddResultsToProgress()
     {
+        int numberMoneyForBiome = 5;
+        CountOfEarnedMoney += ReachedBiomeNumber * numberMoneyForBiome;
         PlayerProgress.Instance.PlayerMoney += CountOfEarnedMoney;
         PlayerProgress.Instance.Save();
         _analyticsManager.OnPlayerDead(ReachedBiomeNumber, CharacterData.UnitName);
@@ -29,6 +31,12 @@ public class CurrentGameInfo : MonoBehaviour
         ReachedBiomeNumber = 1;
         CountOfKilledEnemies = 0;
         CountOfEarnedMoney = 0;
+    }
+
+    public void AddEnemyDeath()
+    {
+        CountOfEarnedMoney++;
+        CountOfKilledEnemies++;
     }
 
     private void Awake()

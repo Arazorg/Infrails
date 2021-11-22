@@ -9,6 +9,7 @@ public class FlyingEnemyAttack : MonoBehaviour
     private MonobehaviourPool<Bullet> _bulletsPool;
     private Transform _target;
     private AttackingEnemyData _data;
+    private Coroutine _attackCoroutine;
     private float _needAngleZ;
     private float _stopAttackTime;
     private bool _isFacingRight;
@@ -33,12 +34,13 @@ public class FlyingEnemyAttack : MonoBehaviour
         float attackDuration = 1.5f;
         _stopAttackTime = Time.time + attackDuration;
         _needAngleZ = GetNeedAngle();
-        StartCoroutine(Attacking());
+        _attackCoroutine = StartCoroutine(Attacking());
     }
 
     public void StopAttack()
     {
-        StopCoroutine(Attacking());
+        _stopAttackTime = float.MinValue;
+        StopCoroutine(_attackCoroutine);
     }
 
     public void DestroyPoolBullets()
@@ -52,7 +54,7 @@ public class FlyingEnemyAttack : MonoBehaviour
         while (true)
         {
             if (Time.time > _stopAttackTime)
-                break;
+                break;              
 
             yield return new WaitForSeconds(_data.WeaponData.FireRate);
             Shoot();

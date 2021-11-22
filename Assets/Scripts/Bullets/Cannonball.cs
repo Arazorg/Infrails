@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Cannonball : Bullet
+public class Cannonball : PlayerBullet
 {
     public override void Accept(Transform target)
     {

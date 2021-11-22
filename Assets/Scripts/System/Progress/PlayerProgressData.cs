@@ -9,7 +9,7 @@ public class PlayerProgressData
     public bool IsLobbyTutorialCompleted;
     public bool IsGameTutorialCompleted;
     public ItemAvailability TrolleyForSupportAvailability;
-    public List<ItemAvailability> SkillsAvailabilities;
+    public List<ItemAvailability> PassiveSkillsAvailabilities;
     public List<ItemAvailability> WeaponsAvailabilities;
     public List<AmplificationLevel> AmplificationsLevels;
     public List<CharacterAvailability> CharactersAvailabilities;
@@ -20,7 +20,7 @@ public class PlayerProgressData
         IsLobbyTutorialCompleted = false;
         IsGameTutorialCompleted = false;
         TrolleyForSupportAvailability = new ItemAvailability(TrolleyForSupportName, false);
-        SkillsAvailabilities = new List<ItemAvailability>();
+        PassiveSkillsAvailabilities = new List<ItemAvailability>();
         WeaponsAvailabilities = new List<ItemAvailability>();
         AmplificationsLevels = new List<AmplificationLevel>();
         CharactersAvailabilities = new List<CharacterAvailability>();

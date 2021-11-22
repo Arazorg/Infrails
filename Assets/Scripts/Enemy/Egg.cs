@@ -38,7 +38,7 @@ public class Egg : Enemy, IEnemyLaserTarget
         StopCoroutine(_destroyByLaserCoroutine);
     }
 
-    public override void BulletHit(Bullet bullet)
+    public override void BulletHit(PlayerBullet bullet)
     {
         GetDamage(bullet.Damage);
         bullet.Accept(Transform);

@@ -162,7 +162,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         {
             BendOver(collision.transform);
             Damage(bullet.Damage);
-            bullet.Accept(transform);
+            bullet.HideBullet();
         }
     }
 

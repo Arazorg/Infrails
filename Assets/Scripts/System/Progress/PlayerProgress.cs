@@ -12,7 +12,7 @@ public class PlayerProgress : MonoBehaviour
     private SaveSystem _saveSystem;
     private List<AmplificationData> _amplificationsData = new List<AmplificationData>();
     private List<WeaponData> _weaponsData = new List<WeaponData>();
-    private List<SkillData> _skillsData = new List<SkillData>();
+    private List<PassiveSkillData> _passiveSkillsData = new List<PassiveSkillData>();
 
     public delegate void MoneyUpdate();
 
@@ -170,15 +170,15 @@ public class PlayerProgress : MonoBehaviour
     }
     #endregion Amplifications
 
-    #region Skills
-    public bool GetSkillAvailability(string characterName, string skillName)
+    #region PassiveSkills
+    public bool GetPassiveSkillAvailability(string characterName, string skillName)
     {
         return GetCharacterByName(characterName).GetSkillAvailability(skillName);
     }
 
-    public void SetSkillAvailable(string characterName, string skillName)
+    public void SetPassiveSkillAvailable(string characterName, string skillName)
     {
-        GetSkillByName(skillName).IsAvailable = true;
+        GetPassiveSkillByName(skillName).IsAvailable = true;
         GetCharacterByName(characterName).AddSkill(skillName);
         Save();
     }
@@ -193,7 +193,7 @@ public class PlayerProgress : MonoBehaviour
             case LootboxData.Type.Weapon:
                 return GetWeaponsData(GameConstants.Unavailable).Cast<ItemData>().ToList();
             case LootboxData.Type.Skill:
-                return GetUnavailableSkillsData().Cast<ItemData>().ToList();
+                return GetUnavailablePassiveSkillsData().Cast<ItemData>().ToList();
             default:
                 return null;
         }
@@ -226,7 +226,7 @@ public class PlayerProgress : MonoBehaviour
         LoadCharacters();
         LoadAmplifications();
         LoadWeapons();
-        LoadSkills();
+        LoadPassiveSkills();
         GetCharacterByName(startAvailableCharacterName).IsAvailable = true;
     }
 
@@ -270,14 +270,14 @@ public class PlayerProgress : MonoBehaviour
         }
     }
 
-    private void LoadSkills()
+    private void LoadPassiveSkills()
     {
-        string skillsDataPath = "Specifications/Skills";
-        var skillsData = Resources.LoadAll<SkillData>(skillsDataPath).ToList();
-        _skillsData = skillsData;
-
-        foreach (var skill in skillsData)
-            _playerProgressData.SkillsAvailabilities.Add(new ItemAvailability(skill.ItemName, false));
+        string passiveSkillsDataPath = "Specifications/PassiveSkills";
+        
+        var passiveSkillsData = Resources.LoadAll<PassiveSkillData>(passiveSkillsDataPath).ToList();
+        _passiveSkillsData = passiveSkillsData;
+        foreach (var skill in passiveSkillsData)
+            _playerProgressData.PassiveSkillsAvailabilities.Add(new ItemAvailability(skill.ItemName, false));
     }
 
     private void WriteCurrentProgress(string currentPlayerProgress)
@@ -295,10 +295,10 @@ public class PlayerProgress : MonoBehaviour
             if (GetCharacterByName(character.Name) != null && character.IsAvailable)
                 SetCharacterAvailable(character.Name);
 
-            foreach (var skill in character.Skills)
+            foreach (var skill in character.PassiveSkills)
             {
                 if (skill.IsAvailable)
-                    SetSkillAvailable(character.Name, skill.Name);
+                    SetPassiveSkillAvailable(character.Name, skill.Name);
             }
         }
 
@@ -314,19 +314,19 @@ public class PlayerProgress : MonoBehaviour
                 SetWeaponAvailable(weapon.Name);
         }
 
-        foreach (var skill in tempData.SkillsAvailabilities)
+        foreach (var skill in tempData.PassiveSkillsAvailabilities)
         {
             if (GetWeaponByName(skill.Name) != null && skill.IsAvailable)
-                GetSkillByName(skill.Name).IsAvailable = true;
+                GetPassiveSkillByName(skill.Name).IsAvailable = true;
         }
     }
 
-    private List<SkillData> GetUnavailableSkillsData()
+    private List<PassiveSkillData> GetUnavailablePassiveSkillsData()
     {
-        List<SkillData> skills = new List<SkillData>();
-        foreach (var skill in _skillsData)
+        List<PassiveSkillData> skills = new List<PassiveSkillData>();
+        foreach (var skill in _passiveSkillsData)
         {
-            if (!GetSkillByName(skill.ItemName).IsAvailable)
+            if (!GetPassiveSkillByName(skill.ItemName).IsAvailable)
                 skills.Add(skill);
         }
 
@@ -343,9 +343,9 @@ public class PlayerProgress : MonoBehaviour
         return _playerProgressData.WeaponsAvailabilities.Where(s => s.Name == weaponName).FirstOrDefault();
     }
 
-    private ItemAvailability GetSkillByName(string skillName)
+    private ItemAvailability GetPassiveSkillByName(string skillName)
     {
-        return _playerProgressData.SkillsAvailabilities.Where(s => s.Name == skillName).FirstOrDefault();
+        return _playerProgressData.PassiveSkillsAvailabilities.Where(s => s.Name == skillName).FirstOrDefault();
     }
     private AmplificationLevel GetAmplificationLevelByName(string amplificationName)
     {

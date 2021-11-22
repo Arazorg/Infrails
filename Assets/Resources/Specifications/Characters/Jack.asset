@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: b4bf532289bf3944ea0c267621568270, type: 2}
   _unitColor: {r: 0.28627452, g: 0.15294118, b: 0.08235294, a: 1}
-  _colliderSize: {x: 3, y: 8}
   _colliderOffset: {x: 0, y: 4}
+  _colliderSize: {x: 3, y: 8}
   _unitName: Jack
   _maxHealth: 12
   _characterSprite: {fileID: -6738928098258932849, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: -181752066830021287, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   - {fileID: 7939743101258286451, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   _characterStartWeapon: {fileID: 11400000, guid: 0f7dc5edf42507644b01415af36f41c8, type: 2}
-  _characterSkills:
+  _characterPassiveSkills:
   - {fileID: 11400000, guid: a319f815b35d6a04385594aae934fed3, type: 2}
   - {fileID: 11400000, guid: 180dce92d784b9a42ba55e2b0c03870e, type: 2}
   _weaponSpawnPoint: {x: 0, y: 3.5}

@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class Arrow : Bullet
+public class Arrow : PlayerBullet
 {
     [SerializeField] private StickedArrow _stickedArrowPrefab;
 
     public override void Accept(Transform target)
     {
+        StickArrow(target);
         HideBullet();
     }
 
@@ -24,6 +25,10 @@ public class Arrow : Bullet
             stickedArrow.transform.localPosition = enemy.Data.Center;
             var arrowSprite = GetComponent<SpriteRenderer>().sprite;
             stickedArrow.Init(Data as ArrowData, arrowSprite, target.transform.localScale);
+        }
+        else if(target.TryGetComponent(out EndWall endWall))
+        {
+            Instantiate(_stickedArrowPrefab, transform.position, transform.rotation, target);
         }
     }
 }

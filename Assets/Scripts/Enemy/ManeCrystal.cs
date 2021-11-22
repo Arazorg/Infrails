@@ -31,7 +31,7 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
         TryGetCharacter(character);
     }
 
-    public override void BulletHit(Bullet bullet)
+    public override void BulletHit(PlayerBullet bullet)
     {
         GetDamage(bullet.Damage);
         bullet.Accept(Transform);

@@ -17,10 +17,10 @@ MonoBehaviour:
   _colliderOffset: {x: -0.3, y: 2.5}
   _colliderSize: {x: 1.85, y: 3.56}
   _unitName: CaveGhost
-  _maxHealth: 6
+  _maxHealth: 8
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 38675b82c5e3f834e89d54b880214369, type: 2}
-  _deathAudioClip: {fileID: 8300000, guid: 7a513054d2c1b484986dd943c7e3efda, type: 3}
+  _deathAudioClip: {fileID: 8300000, guid: 23ebce12323562d49b37381fcc721674, type: 3}
   _popUpTextOffset: {x: 0.1, y: 6.25}
   _center: {x: 0.1, y: 2.2}
   _isFlipX: 1

@@ -9,7 +9,7 @@ public class CharacterData : UnitData
     [SerializeField] private RuntimeAnimatorController _teleportationAnimatorController;
     [SerializeField] private List<Sprite> _hands;
     [SerializeField] private WeaponData _characterStartWeapon;
-    [SerializeField] private List<SkillData> _characterSkills;
+    [SerializeField] private List<PassiveSkillData> _characterPassiveSkills;
     [SerializeField] private Vector2 _weaponSpawnPoint;
     [SerializeField] private int _maxArmor;
     [SerializeField] private int _price;
@@ -22,7 +22,7 @@ public class CharacterData : UnitData
 
     public WeaponData CharacterStartWeapon => _characterStartWeapon;
 
-    public List<SkillData> CharacterSkills => _characterSkills;
+    public List<PassiveSkillData> CharacterPassiveSkills => _characterPassiveSkills;
 
     public Vector2 WeaponSpawnPoint => _weaponSpawnPoint;
 

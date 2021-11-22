@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: b8f632715f3600444af7b011e1071b44, type: 2}
   _unitColor: {r: 0.95294124, g: 0.95294124, b: 0.93725497, a: 1}
-  _colliderSize: {x: 2, y: 8}
   _colliderOffset: {x: 0, y: 4}
+  _colliderSize: {x: 2, y: 8}
   _unitName: Elvis
   _maxHealth: 15
   _characterSprite: {fileID: -3068220478561629229, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: -181752066830021287, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   - {fileID: 7939743101258286451, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   _characterStartWeapon: {fileID: 11400000, guid: bde09297632e3c74e846c303f90a8677, type: 2}
-  _characterSkills:
+  _characterPassiveSkills:
   - {fileID: 11400000, guid: fc0ce0ddde7e07c4eb77cfcbd2ab5112, type: 2}
   - {fileID: 11400000, guid: 5b71c1fc726402d4fa319cb5f9632228, type: 2}
   _weaponSpawnPoint: {x: 0, y: 4}

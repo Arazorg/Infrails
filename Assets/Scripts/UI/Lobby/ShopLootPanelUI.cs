@@ -182,7 +182,7 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
                 return weaponData;
             case LootboxData.Type.Skill:
                 var skillData = loots[Random.Range(0, loots.Count)];
-                PlayerProgress.Instance.SetSkillAvailable((skillData as SkillData).OwnerData.UnitName, skillData.ItemName);
+                PlayerProgress.Instance.SetPassiveSkillAvailable((skillData as PassiveSkillData).OwnerData.UnitName, skillData.ItemName);
                 return skillData;
             case LootboxData.Type.Amplification:
                 var amplificationData = loots[Random.Range(0, loots.Count)];

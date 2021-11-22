@@ -6,7 +6,7 @@ public class CharacterSelectionUI : BaseUI, IUIPanel
     [Header("UI Scripts")]
     [SerializeField] private DonationUI _donationUI;
     [SerializeField] private CharacterInfoPanelUI _characterInfoPanelUI;
-    [SerializeField] private SkillPanelUI _skillPanelUI;
+    [SerializeField] private PassiveSkillPanelUI _passiveSkillPanelUI;
 
     [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _moneyText;
@@ -60,7 +60,7 @@ public class CharacterSelectionUI : BaseUI, IUIPanel
         _isPopAvailable = true;
         CheckCharacterAvailability();
         _characterInfoPanelUI.SetPanelInfo(_currentCharacterData);
-        _skillPanelUI.Init(_currentCharacterData);
+        _passiveSkillPanelUI.Init(_currentCharacterData);
         _moneyText.text = PlayerProgress.Instance.PlayerMoney.ToString();
         Show();       
     }

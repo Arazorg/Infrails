@@ -27,7 +27,7 @@ public abstract class Enemy : MonoBehaviour
 
     public abstract void Init(EnemyData data, Transform spawnPoint, Character character);
 
-    public abstract void BulletHit(Bullet bullet);
+    public abstract void BulletHit(PlayerBullet bullet);
 
     public void GetDamage(int damage)
     {
@@ -35,7 +35,7 @@ public abstract class Enemy : MonoBehaviour
         {
             Health -= damage;
             OnEnemyDamage?.Invoke(damage);
-            if (Health < 0)
+            if (Health <= 0)
             {
                 Health = 0;
                 if (!_isDeath)
@@ -68,7 +68,7 @@ public abstract class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Bullet bullet))
+        if (collision.TryGetComponent(out PlayerBullet bullet))
             BulletHit(bullet);
     }
 

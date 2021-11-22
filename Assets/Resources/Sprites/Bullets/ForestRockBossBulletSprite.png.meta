@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: 48956a305c896d54db934c1dd11ceef5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8505497826026545399
+    second: ForestRockBossBulletSprite_0
+  - first:
+      213: 4502473885967267998
+    second: ForestRockBossBulletSprite_1
+  - first:
+      213: -571248165544908617
+    second: ForestRockBossBulletSprite_2
+  - first:
+      213: 7181363168319203371
+    second: ForestRockBossBulletSprite_3
+  - first:
+      213: 3730778604007467777
+    second: ForestRockBossBulletSprite_4
+  - first:
+      213: 2167983721967646738
+    second: ForestRockBossBulletSprite_5
+  - first:
+      213: 4769506594608549844
+    second: ForestRockBossBulletSprite_6
+  - first:
+      213: 349348399876060891
+    second: ForestRockBossBulletSprite_7
+  - first:
+      213: 1161688461601250135
+    second: ForestRockBossBulletSprite_8
+  - first:
+      213: -8759136900862256839
+    second: ForestRockBossBulletSprite_9
+  - first:
+      213: 1934935847085484408
+    second: ForestRockBossBulletSprite_10
+  - first:
+      213: -1558275800839085308
+    second: ForestRockBossBulletSprite_11
+  - first:
+      213: -3844819994241224205
+    second: ForestRockBossBulletSprite_12
+  - first:
+      213: 4050560190639284097
+    second: ForestRockBossBulletSprite_13
+  - first:
+      213: 4060174461143061309
+    second: ForestRockBossBulletSprite_14
+  - first:
+      213: -2337028661173648196
+    second: ForestRockBossBulletSprite_15
+  - first:
+      213: -4432915637295595295
+    second: ForestRockBossBulletSprite_16
+  - first:
+      213: -368603318057584560
+    second: ForestRockBossBulletSprite_17
+  - first:
+      213: 5481852734056024216
+    second: ForestRockBossBulletSprite_18
+  - first:
+      213: 382458632792709582
+    second: ForestRockBossBulletSprite_19
+  - first:
+      213: 2063563097581115797
+    second: ForestRockBossBulletSprite_20
+  - first:
+      213: -3864947882728308226
+    second: ForestRockBossBulletSprite_21
+  - first:
+      213: 3446476780031255227
+    second: ForestRockBossBulletSprite_22
+  - first:
+      213: 6406158064267122600
+    second: ForestRockBossBulletSprite_23
+  - first:
+      213: -5372514467290755709
+    second: ForestRockBossBulletSprite_24
+  - first:
+      213: 8311505647208629382
+    second: ForestRockBossBulletSprite_25
+  - first:
+      213: -5857534177017159108
+    second: ForestRockBossBulletSprite_26
+  - first:
+      213: 1656015242660812647
+    second: ForestRockBossBulletSprite_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f94d19ac666f980800000000000000
+      internalID: -8505497826026545399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e983d87e4200c7e30800000000000000
+      internalID: 4502473885967267998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_2
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b82a1ee1d48218f0800000000000000
+      internalID: -571248165544908617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b286dbac0c359a360800000000000000
+      internalID: 7181363168319203371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b2e73bf5366c330800000000000000
+      internalID: 3730778604007467777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218f5ba65b9361e10800000000000000
+      internalID: 2167983721967646738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df86855af0b03240800000000000000
+      internalID: 4769506594608549844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6b67dc48229d400800000000000000
+      internalID: 349348399876060891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b996d30852f1010800000000000000
+      internalID: 1161688461601250135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939d615856b417680800000000000000
+      internalID: -8759136900862256839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_10
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87923b4b6e54ada10800000000000000
+      internalID: 1934935847085484408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40326ec4a64ef5ae0800000000000000
+      internalID: -1558275800839085308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1bee1069474aac0800000000000000
+      internalID: -3844819994241224205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f9468580b763830800000000000000
+      internalID: 4050560190639284097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d339b822923a85830800000000000000
+      internalID: 4060174461143061309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_15
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb486d490d4319fd0800000000000000
+      internalID: -2337028661173648196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_16
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0c8b7e6be1b72c0800000000000000
+      internalID: -4432915637295595295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_17
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058b5243c3572eaf0800000000000000
+      internalID: -368603318057584560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_18
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898c96c7404731c40800000000000000
+      internalID: 5481852734056024216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec914e4a914ce4500800000000000000
+      internalID: 382458632792709582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5995dea34bf33ac10800000000000000
+      internalID: 2063563097581115797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1c496c062fc5ac0800000000000000
+      internalID: -3864947882728308226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_22
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb225680f5854df20800000000000000
+      internalID: 3446476780031255227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_23
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a755a371de37e850800000000000000
+      internalID: 6406158064267122600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_24
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dcc7a8e8ef075b0800000000000000
+      internalID: -5372514467290755709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_25
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68406829956685370800000000000000
+      internalID: 8311505647208629382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32ae2753bbd5bea0800000000000000
+      internalID: -5857534177017159108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ForestRockBossBulletSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7671e69d6195bf610800000000000000
+      internalID: 1656015242660812647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

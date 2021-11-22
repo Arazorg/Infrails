@@ -1,15 +1,17 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-public abstract class Bullet : MonoBehaviour, IHit
+public abstract class Bullet : MonoBehaviour
 {
     [SerializeField] protected GameObject ExplosionPrefab;
 
     protected Rigidbody2D Rigidbody;
     protected BulletData Data;
-
+    private Element.Type _elementType;
     private int _damage;
     private float _critChance;
+
+    public Element.Type ElementType => _elementType;
 
     public int Damage => _damage;
 
@@ -19,6 +21,7 @@ public abstract class Bullet : MonoBehaviour, IHit
     {
         Data = weaponData.BulletData;
         SetBulletPhysic();
+        _elementType = elementType;
         SetSpriteByElement(elementType);
         Color elementColor = GetColorByElementType(elementType);
         SetParticleColor(elementColor);
@@ -27,17 +30,13 @@ public abstract class Bullet : MonoBehaviour, IHit
         return elementColor;
     }
 
-    public abstract void Accept(Transform target);
-
-    public abstract void Accept(Transform target, IDebuffVisitor hitableVisitor);
-
     public void DestroyBullet()
     {
         float destroyDelay = 2f;
         Destroy(gameObject, destroyDelay);
     }
 
-    protected void HideBullet()
+    public void HideBullet()
     {
         SpawnExplosionParticle();
         gameObject.SetActive(false);
@@ -85,7 +84,12 @@ public abstract class Bullet : MonoBehaviour, IHit
 
     private Color GetColorByElementType(Element.Type element)
     {
-        return Data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletColor;
+        var color = Color.red;
+        if (element == Element.Type.None)
+            return color;
+
+        color = Data.BulletsSpritesByElements.Where(s => s.Element == element).FirstOrDefault().BulletColor;
+        return color;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

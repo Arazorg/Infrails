@@ -7,6 +7,7 @@ public class StaticEnemyWeapon : MonoBehaviour
     [SerializeField] private SpriteRenderer _laserSpriteRenderer;
 
     private IEnemyLaserTarget _currentTarget;
+    private bool _isAttack;
 
     public void InitWeapon(StaticEnemyData enemyData)
     {
@@ -17,7 +18,7 @@ public class StaticEnemyWeapon : MonoBehaviour
 
     public void SetTarget(IEnemyLaserTarget target)
     {
-        if(_currentTarget != null && _currentTarget.LaserAttackPoint != null)
+        if (_currentTarget != null && _currentTarget.LaserAttackPoint != null)
             _currentTarget.StopLaserInteraction();
 
         _currentTarget = target;
@@ -27,6 +28,8 @@ public class StaticEnemyWeapon : MonoBehaviour
 
     public void DestroyLaser()
     {
+        if (_currentTarget.LaserAttackPoint != null)
+            _currentTarget.StopLaserInteraction();
         _laserSpriteRenderer.enabled = false;
     }
 
@@ -37,9 +40,9 @@ public class StaticEnemyWeapon : MonoBehaviour
 
     private void ShowLaser()
     {
-        if(_currentTarget != null)
+        if (_currentTarget != null)
         {
-            if (_currentTarget.LaserAttackPoint != null)
+            if (_currentTarget.LaserAttackPoint != null && _laserSpriteRenderer.enabled)
             {
                 _laserSpriteRenderer.size = new Vector2(1, GetLaserLength());
                 transform.rotation = Quaternion.Euler(new Vector3(0, 0, GetWeaponAngle()));
@@ -48,7 +51,7 @@ public class StaticEnemyWeapon : MonoBehaviour
             {
                 DestroyLaser();
             }
-        }        
+        }
     }
 
     private float GetLaserLength()

@@ -56,6 +56,13 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyMovement.StartMove();
     }
 
+    public void StopMove()
+    {
+        _enemyMovement.OnReachedNextPoint -= SetNextState;
+        _enemyAttack.OnAttackFinished -= Move;
+        _enemyMovement.StopMove();
+    }
+
     public void Attack()
     {
         _enemyMovement.OnReachedNextPoint -= SetNextState;
@@ -71,23 +78,31 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     public void StopAttack()
     {
         _enemyAttack.OnAttackFinished -= Move;
+        _enemyMovement.OnReachedNextPoint -= SetNextState;
         _enemyAttack.StopAttack();
+    }
+
+    public void Stun()
+    {
+        _currentState.Stun();
+    }
+
+    public override void BulletHit(PlayerBullet bullet)
+    {
+        int damageWithResistance = (int)(bullet.Damage * Data.EnemyElement.GetElementInteractionByType(bullet.ElementType));
+        GetDamage(damageWithResistance);
+        bullet.Accept(Transform, this);
     }
 
     public void StartStunning()
     {
-        _enemyDebuffs.StartStunning();
+        Stun();
+        _enemyDebuffs.StartStunning(this);
     }
 
     public void StartBleeding()
     {
         _enemyDebuffs.StartBleeding();
-    }
-
-    public override void BulletHit(Bullet bullet)
-    {
-        GetDamage(bullet.Damage);
-        bullet.Accept(Transform, this);
     }
 
     protected override void Death(bool isDeathWithEffect)
@@ -97,9 +112,13 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyAttack.DestroyPoolBullets();
 
         if (isDeathWithEffect)
+        {
+            AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
+            CurrentGameInfo.Instance.AddEnemyDeath();        
             SpawnCoin();
+        }            
 
-        OnFlyingEnemyDeath?.Invoke(this);
+        OnFlyingEnemyDeath?.Invoke(this);       
         Destroy(gameObject);
     }
 
@@ -119,7 +138,8 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         {
             new EnemyMovementState(this, this),
             new EnemyAttackState(this, this),
-            new EnemyIdleState(this)
+            new EnemyIdleState(this),
+            new EnemyStunnedState(this)
         };
 
         _currentState = _allStates[0];
@@ -136,13 +156,13 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     private void SetNextState()
     {
-        float attackChance = 0.75f;
+        float attackChance = 0.8f;
         _enemyMovement.OnReachedNextPoint -= SetNextState;
 
         if (Random.value < attackChance && _enemy.IsGetDamage && CheckDistanceToTarget())
-            StartAttack();
+            Attack();
         else
-            StartMove();
+            Move();
     }
 
     private bool CheckDistanceToTarget()

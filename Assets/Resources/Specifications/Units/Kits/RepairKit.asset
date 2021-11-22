@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 7f244d9f2ddfcd642a7f4ace667610d1, type: 2}
   _unitColor: {r: 0.5882353, g: 0.33333334, b: 0.1254902, a: 1}
-  _colliderSize: {x: 4.5, y: 3}
   _colliderOffset: {x: 0, y: 0.25}
+  _colliderSize: {x: 4.5, y: 3}
   _unitName: RepairKit
   _maxHealth: 0
   _prefab: {fileID: 4421379124273787276, guid: 02d3933721bfb9146ac7efeab9bafe25, type: 3}
   _enemyElement: {fileID: 0}
-  _isSpriteFacingRight: 0
-  _deathAudioClip: {fileID: 8300000, guid: dc288ee8b0066ba4bab34b4d15a465f3, type: 3}
+  _deathAudioClip: {fileID: 8300000, guid: 23ebce12323562d49b37381fcc721674, type: 3}
+  _popUpTextOffset: {x: 0, y: 0}
+  _center: {x: 0, y: 0}
+  _isFlipX: 0

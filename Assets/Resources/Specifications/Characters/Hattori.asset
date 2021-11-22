@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 3c2861b469cea4c4badaacd92d621e0b, type: 2}
   _unitColor: {r: 0.29803923, g: 0.16862746, b: 0.454902, a: 1}
-  _colliderSize: {x: 2.5, y: 7}
   _colliderOffset: {x: 0, y: 3.5}
+  _colliderSize: {x: 2.5, y: 7}
   _unitName: Hattori
   _maxHealth: 20
   _characterSprite: {fileID: -7992937385601112795, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: -835918767557897202, guid: 92480a129b5129c42b3d7f11ce42e1cc, type: 3}
   - {fileID: -2651022179980586078, guid: 92480a129b5129c42b3d7f11ce42e1cc, type: 3}
   _characterStartWeapon: {fileID: 11400000, guid: 0c8a505cb314aec48a063a21d1fbc708, type: 2}
-  _characterSkills:
+  _characterPassiveSkills:
   - {fileID: 11400000, guid: 540731d79e3922e4aae5a47a4b96550e, type: 2}
   - {fileID: 11400000, guid: 0bf56eeb73440e4479ac947ac8d7fcdd, type: 2}
   _weaponSpawnPoint: {x: 0, y: 3.5}

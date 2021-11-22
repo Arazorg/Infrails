@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 1cc319a223f7f9143923a100f0087fc1, type: 2}
   _unitColor: {r: 0.5529412, g: 0.8431373, b: 0.8941177, a: 1}
-  _colliderSize: {x: 2.5, y: 6}
   _colliderOffset: {x: 0, y: 3}
+  _colliderSize: {x: 2.5, y: 6}
   _unitName: ZXC88
   _maxHealth: 35
   _characterSprite: {fileID: -2927889975369939391, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: 2534596480368145357, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   - {fileID: -4293797822576119800, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   _characterStartWeapon: {fileID: 11400000, guid: acb3e4c443562d0408ceb189c6d5fc9f, type: 2}
-  _characterSkills:
+  _characterPassiveSkills:
   - {fileID: 11400000, guid: ad03778fb0f6cb6488eb1eabf41c309c, type: 2}
   - {fileID: 11400000, guid: 0864ba24647db4f4c8140148e5d03ac8, type: 2}
   _weaponSpawnPoint: {x: 0, y: 3}

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SimpleBullet : Bullet
+public class SimpleBullet : PlayerBullet
 {
     public override void Accept(Transform target)
     {

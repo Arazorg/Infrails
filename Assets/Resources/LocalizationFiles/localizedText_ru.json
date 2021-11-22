@@ -232,6 +232,11 @@
     },
 	
 	{
+      "key": "ForAds",
+      "value": "За рекламу!"
+    },
+	
+	{
       "key": "Free",
       "value": "Бесплатно!"
     },
@@ -467,28 +472,33 @@
     },	
 	
 	{
-      "key": "JonhDescription",
-      "value": "Оружейник из далеких земель, женат на своей пушке"
+      "key": "JonhSkill",
+      "value": "С двух рук!"
     },	
 	
 	{
-      "key": "JonhFirstSkill",
+      "key": "JonhSkillDescription",
+      "value": "Джон на время призывает копию своего оружия"
+    },	
+	
+	{
+      "key": "JonhFirstPassiveSkill",
       "value": "Сверхточность"
     },
 		
 	{
-      "key": "JonhFirstSkillDescription",
+      "key": "JonhFirstPassiveSkillDescription",
       "value": "Пули Джона всегда летят точно в цель"
     },
 	
 	{
-      "key": "JonhSecondSkill",
+      "key": "JonhSecondPassiveSkill",
       "value": "Берсерк"
     },
 	
 	{
-      "key": "JonhSecondSkillDescription",
-      "value": "Ярость Джона увеличивает шанс критического урона"
+      "key": "JonhSecondPassiveSkillDescription",
+      "value": "Ярость Джона увеличивает размер пуль и скорость стрельбы"
     },
 	
 	{
@@ -497,28 +507,33 @@
     },
 	
 	{
-      "key": "StivenDescription",
-      "value": "Величайший алхимик современности, может синтезировать взрывчатку из воздуха"
+      "key": "StivenSkill",
+      "value": "Гранатовый дождь"
     },
 	
 	{
-      "key": "StivenFirstSkill",
+      "key": "StivenSkillDescription",
+      "value": "Ожидаются взрывные осадки"
+    },
+	
+	{
+      "key": "StivenFirstPassiveSkill",
       "value": "Бум!"
     },
 	
 	{
-      "key": "StivenFirstSkillDescription",
-      "value": "Бочки получают бонус к радиусу взрыва"
+      "key": "StivenFirstPassiveSkillDescription",
+      "value": "Радиус взрывов увеличивается вдвое!"
     },
 	
 	{
-      "key": "StivenSecondSkill",
+      "key": "StivenSecondPassiveSkill",
       "value": "Разрывные пули"
     },
 	
 	{
-      "key": "StivenSecondSkillDescription",
-      "value": "Пули получают шанс взорваться при попадании во врага"
+      "key": "StivenSecondPassiveSkillDescription",
+      "value": "Пули получают шанс взорваться"
     },
 	
 	{
@@ -527,28 +542,33 @@
     },
 	
 	{
-      "key": "JackDescription",
-      "value": "Пират-вампир, вечно голоден, будь начеку рядом с ним"
+      "key": "JackSkill",
+      "value": "Трапеза"
     },
 	
 	{
-      "key": "JackFirstSkill",
+      "key": "JackSkillDescription",
+      "value": "Джек исцеляется забирая силы врагов"
+    },
+	
+	{
+      "key": "JackFirstPassiveSkill",
       "value": "Жажда моря"
     },
 	
 	{
-      "key": "JackFirstSkillDescription",
-      "value": "Джек забирает жизненные силы своих врагов"
+      "key": "JackFirstPassiveSkillDescription",
+      "value": "Джон исцеляется нанося урон"
     },
 	
 	{
-      "key": "JackSecondSkill",
+      "key": "JackSecondPassiveSkill",
       "value": "Сила ночи"
     },
 	
 	{
-      "key": "JackSecondSkillDescription",
-      "value": "Темные силы переодически исцеляют Джона"
+      "key": "JackSecondPassiveSkillDescription",
+      "value": "Силы стоящие за Джоном увеличивают длительность оглушения"
     },
 	
 	{
@@ -557,27 +577,32 @@
     },
 	
 	{
-      "key": "ZXC88Description",
-      "value": "Робот-врач, прислан к нам из будущего для спасения человечества от пандемии"
+      "key": "ZXC88Skill",
+      "value": "Шестеренки"
     },
 	
 	{
-      "key": "ZXC88FirstSkill",
+      "key": "ZXC88SkillDescription",
+      "value": "При получении урона ZXC отвечаем врагам тем же"
+    },
+	
+	{
+      "key": "ZXC88FirstPassiveSkill",
       "value": "Укол адреналина"
     },
 	
 	{
-      "key": "ZXC88FirstSkillDescription",
-      "value": "Вагонетка получает бонус к скорости"
+      "key": "ZXC88FirstPassiveSkillDescription",
+      "value": "Скорость вагонетки увеличивается"
     },
 	
 	{
-      "key": "ZXC88SecondSkill",
+      "key": "ZXC88SecondPassiveSkill",
       "value": "Аптечки из будущего"
     },
 	
 	{
-      "key": "ZXC88SecondSkillDescription",
+      "key": "ZXC88SecondPassiveSkillDescription",
       "value": "Аптечки получают бонус к исцелению"
     },
 	
@@ -587,27 +612,32 @@
     },
 	
 	{
-      "key": "HattoriDescription",
-      "value": "Говорят ему сотни лет, единственный на планете владеет древней магией"
+      "key": "HattoriSkill",
+      "value": "Грозовые тучи"
     },
 	
 	{
-      "key": "HattoriFirstSkill",
+      "key": "HattoriSkillDescription",
+      "value": "Хаттори призывает на помощь небесные силы"
+    },
+	
+	{
+      "key": "HattoriFirstPassiveSkill",
       "value": "Щит страданий"
     },
 	
 	{
-      "key": "HattoriFirstSkillDescription",
+      "key": "HattoriFirstPassiveSkillDescription",
       "value": "Враги получают часть урона нанесенного Хаттори"
     },
 	
 	{
-      "key": "HattoriSecondSkill",
+      "key": "HattoriSecondPassiveSkill",
       "value": "Поглощение"
     },
 	
 	{
-      "key": "HattoriSecondSkillDescription",
+      "key": "HattoriSecondPassiveSkillDescription",
       "value": "Пули попадающие в Хаттори исцеляют его"
     },
 	
@@ -617,27 +647,32 @@
     },
 	
 	{
-      "key": "ElvisDescription",
-      "value": "Неотразимый маэстро! Самый популярный человек на планете!"
+      "key": "ElvisSkill",
+      "value": "На чей я стороне?"
     },
 	
 	{
-      "key": "ElvisFirstSkill",
+      "key": "ElvisSkillDescription",
+      "value": "Пули врагов начинают наносить урон врагам"
+    },
+	
+	{
+      "key": "ElvisFirstPassiveSkill",
       "value": "Блеск софитов"
     },
 	
 	{
-      "key": "ElvisFirstSkillDescription",
-      "value": "Точность врагов существенно снижается"
+      "key": "ElvisFirstPassiveSkillDescription",
+      "value": "Элвис получает возможность уклониться от удара"
     },
 	
 	{
-      "key": "ElvisSecondSkill",
+      "key": "ElvisSecondPassiveSkill",
       "value": "Помощь фанатов"
     },
 	
 	{
-      "key": "ElvisSecondSkillDescription",
+      "key": "ElvisSecondPassiveSkillDescription",
       "value": "Любовь фанатов дарует Элвису второе возрождение"
     },
 	

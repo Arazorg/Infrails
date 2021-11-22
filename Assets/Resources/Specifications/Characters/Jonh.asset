@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 7b8cda5a55fea6649a281db96bfa37ca, type: 2}
   _unitColor: {r: 0.9803922, g: 0.5372549, b: 0.17254902, a: 1}
-  _colliderSize: {x: 2, y: 8}
   _colliderOffset: {x: 0, y: 4}
+  _colliderSize: {x: 2, y: 8}
   _unitName: Jonh
   _maxHealth: 22
   _characterSprite: {fileID: 5833146810797090332, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: -181752066830021287, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   - {fileID: 7939743101258286451, guid: d8bb5f0984526ea4b9565e4557d6d1ae, type: 3}
   _characterStartWeapon: {fileID: 11400000, guid: 9b4e8f3206832354bbbbd964379f4c5c, type: 2}
-  _characterSkills:
+  _characterPassiveSkills:
   - {fileID: 11400000, guid: 7aa4c858932b6b64880ddcf144309e94, type: 2}
   - {fileID: 11400000, guid: 6e00f764d2e29324482558614343396d, type: 2}
   _weaponSpawnPoint: {x: 0, y: 4}

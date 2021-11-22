@@ -85,7 +85,7 @@ public class EnemiesManager : MonoBehaviour
         if (_currentStaticEnemy != null)
             Destroy(_currentStaticEnemy.gameObject);
 
-        _currentStaticEnemy = SpawnEnemyToParent(_staticEnemyData, teleportationPoints[1]) as StaticEnemy;
+        _currentStaticEnemy = SpawnEnemyToParent(_staticEnemyData, teleportationPoints[0]) as StaticEnemy;
         _currentStaticEnemy.InitScripts(teleportationPoints, _staticEnemyTargets);
     }
 

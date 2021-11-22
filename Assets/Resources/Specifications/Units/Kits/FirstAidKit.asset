@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: f7c1e79e1767f8c4197079b758f0f535, type: 2}
   _unitColor: {r: 0.72156864, g: 0.82745105, b: 0.82745105, a: 1}
-  _colliderSize: {x: 4.5, y: 3}
   _colliderOffset: {x: 0, y: 0.25}
+  _colliderSize: {x: 4.5, y: 3}
   _unitName: FirstAidKit
   _maxHealth: 0
   _prefab: {fileID: 8784910364459435722, guid: f148e96d5937d2242b69f713eab3c73e, type: 3}
   _enemyElement: {fileID: 0}
-  _isSpriteFacingRight: 0
-  _deathAudioClip: {fileID: 8300000, guid: dc288ee8b0066ba4bab34b4d15a465f3, type: 3}
+  _deathAudioClip: {fileID: 8300000, guid: 23ebce12323562d49b37381fcc721674, type: 3}
+  _popUpTextOffset: {x: 0, y: 0}
+  _center: {x: 0, y: 0}
+  _isFlipX: 0
