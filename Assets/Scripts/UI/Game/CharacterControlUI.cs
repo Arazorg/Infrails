@@ -10,6 +10,7 @@ public class CharacterControlUI : BaseUI, IUIPanel
     [SerializeField] private RebornUI _rebornUI;
     [SerializeField] private GameShopUI _gameShopUI;
     [SerializeField] private ElementIndicatorUI _elementIndicatorUI;
+    [SerializeField] private CooldownIndicator _cooldownIndicator;
 
     [Header("Bars")]
     [SerializeField] private BarUI _healthBar;
@@ -70,6 +71,11 @@ public class CharacterControlUI : BaseUI, IUIPanel
     public void OpenPauseUI()
     {
         UIManager.Instance.UIStackPush(_pauseUI);
+    }
+
+    public void UseSkill()
+    {
+        _cooldownIndicator.SetFinishTime(Time.time + 5);
     }
 
     public void OpenRebornUI()

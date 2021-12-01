@@ -42,6 +42,8 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
 
     public int MaxArmor => _characterData.MaxArmor;
 
+    public int Money => _money;
+
     public bool IsVisible => true;
 
     public bool IsDeath => _isDeath;

@@ -20,11 +20,13 @@ public class AnimationsUI : MonoBehaviour
 
     private RectTransform _rectTransform;
     private TextMeshProUGUI _text;
+    private Coroutine _jumpCoroutine;
     private float _letterPrintDelay;
 
     public bool IsShowOnStart
     {
         get { return _isShowOnStart; }
+        set { _isShowOnStart = value; }
     }
 
     public void Show()
@@ -123,18 +125,40 @@ public class AnimationsUI : MonoBehaviour
         _text.text = "";
     }
 
+    public Coroutine StartJump(Vector2 jumpOffset)
+    { 
+        if(_jumpCoroutine == null)
+        {
+            _jumpCoroutine = StartCoroutine(Jump(jumpOffset));
+            return _jumpCoroutine;
+        }
+
+        return null;
+    }
+
+    public void StopJump()
+    {
+        if (_jumpCoroutine != null)
+            StopCoroutine(_jumpCoroutine);
+
+        _jumpCoroutine = null;
+    }
+
     private void Start()
     {
         SetStartParams();
     }
 
-    private void MoveToPosition(Vector3 position)
+    private void MoveToPosition(Vector3 position, float timeOfMovement = 0)
     {
         if (_rectTransform == null)
             SetStartParams();
 
-        LeanTween.moveX(_rectTransform, position.x, _timeOfMovement).setEaseOutQuart().setIgnoreTimeScale(true);
-        LeanTween.moveY(_rectTransform, position.y, _timeOfMovement).setEaseOutQuart().setIgnoreTimeScale(true);
+        if (timeOfMovement == 0)
+            timeOfMovement = _timeOfMovement;
+
+        LeanTween.moveX(_rectTransform, position.x, timeOfMovement).setEaseOutQuart().setIgnoreTimeScale(true);
+        LeanTween.moveY(_rectTransform, position.y, timeOfMovement).setEaseOutQuart().setIgnoreTimeScale(true);
     }
 
     private void SetStartParams()
@@ -178,5 +202,28 @@ public class AnimationsUI : MonoBehaviour
 
             _text.color = endValue;
         }
+    }
+
+    private IEnumerator Jump(Vector2 jumpOffset)
+    {
+        float duration = 1.25f;
+        float endTime = Time.realtimeSinceStartup + duration;
+        float movementDuration = 0.15f;
+        float decreaseFactor = 1.5f;
+
+        Vector2 startPosition = _rectTransform.anchoredPosition;
+
+        while(Time.realtimeSinceStartup < endTime)
+        {
+            MoveToPosition(_rectTransform.anchoredPosition + jumpOffset, movementDuration);
+            yield return new WaitForSecondsRealtime(movementDuration);
+            MoveToPosition(startPosition, movementDuration);
+            yield return new WaitForSecondsRealtime(movementDuration);
+            jumpOffset /= decreaseFactor;
+            movementDuration /= decreaseFactor;
+        }
+
+        MoveToPosition(startPosition, movementDuration);
+        _jumpCoroutine = null;
     }
 }

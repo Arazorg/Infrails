@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class ShopLootPanelUI : BaseUI, IUIPanel
 {
-    private const string AnimatorOpenKey = "isOpen";
-
     [Header("UI Scripts")]
     [SerializeField] private DonationUI _donationUI;
     [SerializeField] private WeaponInfoPanelUI _weaponInfoPanelUI;
     [SerializeField] private AmplificationInfoPanelUI _amplificationInfoPanelUI;
     [SerializeField] private LootInfoPanelUI _lootInfoPanelUI;
+    [SerializeField] private LootboxUI _lootboxUI;
 
     [Header("Animations UI Scripts")]
     [SerializeField] private AnimationsUI _lootbox;
@@ -66,18 +65,18 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
 
     public void InitLootbox(LootboxData lootboxData)
     {
-        _lootbox.gameObject.SetActive(true);
-        _lootboxAnimator = _lootbox.GetComponent<Animator>();
         _lootboxData = lootboxData;
-        _lootboxAnimator.runtimeAnimatorController = _lootboxData.AnimatorController;
+        _lootbox.gameObject.SetActive(true);
+        _lootboxUI.Init(lootboxData);
     }
 
     public void Open()
     {
         ParentCanvas.enabled = true;
-        _lootbox.gameObject.SetActive(true);
-        _lootboxAnimator.SetBool(AnimatorOpenKey, true);
+        _lootboxUI.OnAnimationEnd += ShowLoot;
+        _lootbox.gameObject.SetActive(true); 
         _lootbox.Show();
+        _lootboxUI.Open();
         Background.SetTransparencyImmediate(BackgroundAlpha);
         GlobalVolumeManager.Instance.SetVolumeProfile(true);
         AudioManager.Instance.PlayEffect(_chestRotationClip);
@@ -166,8 +165,7 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
 
     private void ResetLootbox()
     {
-        _lootbox.HideImmediate();
-        _lootboxAnimator.SetBool(AnimatorOpenKey, false);
+        _lootboxUI.ResetLootbox();
         _lootbox.gameObject.SetActive(false);
     }
 

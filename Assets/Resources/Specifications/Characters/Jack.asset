@@ -28,5 +28,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a319f815b35d6a04385594aae934fed3, type: 2}
   - {fileID: 11400000, guid: 180dce92d784b9a42ba55e2b0c03870e, type: 2}
   _weaponSpawnPoint: {x: 0, y: 3.5}
-  _maxArmor: 4
+  _maxArmor: 3
   _price: 3000

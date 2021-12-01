@@ -17,7 +17,7 @@ MonoBehaviour:
   _colliderOffset: {x: -0.25, y: -0.1}
   _colliderSize: {x: 1.95, y: 1.75}
   _unitName: Hell Bird
-  _maxHealth: 6
+  _maxHealth: 4
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: be21b1baa80e3024dac96d96a8788132, type: 2}
   _deathAudioClip: {fileID: 8300000, guid: 23ebce12323562d49b37381fcc721674, type: 3}

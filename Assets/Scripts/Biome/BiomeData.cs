@@ -8,6 +8,7 @@ public class BiomeData : ScriptableObject
     [SerializeField] private Color _biomeColor;
     [SerializeField] private List<GameObject> _railsPrefabs;
     [SerializeField] private Element _biomeElement;
+    [SerializeField] private Element _oppositeBiomeElement;
 
     [Header("Sprites")]
     [SerializeField] private Sprite _floorSprite;
@@ -24,6 +25,8 @@ public class BiomeData : ScriptableObject
     public string BiomeName => _biomeName;
 
     public Element BiomeElement => _biomeElement;
+
+    public Element OppositeBiomeElement => _oppositeBiomeElement;
 
     public Sprite FloorSprite => _floorSprite;
 

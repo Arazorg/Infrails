@@ -17,7 +17,7 @@ MonoBehaviour:
   _colliderOffset: {x: 0, y: 0}
   _colliderSize: {x: 1.75, y: 1.75}
   _unitName: Cave Bird
-  _maxHealth: 6
+  _maxHealth: 4
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: 38675b82c5e3f834e89d54b880214369, type: 2}
   _deathAudioClip: {fileID: 8300000, guid: 23ebce12323562d49b37381fcc721674, type: 3}

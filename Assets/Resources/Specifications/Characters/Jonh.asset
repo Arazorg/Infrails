@@ -17,7 +17,7 @@ MonoBehaviour:
   _colliderOffset: {x: 0, y: 4}
   _colliderSize: {x: 2, y: 8}
   _unitName: Jonh
-  _maxHealth: 22
+  _maxHealth: 18
   _characterSprite: {fileID: 5833146810797090332, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
   _teleportationAnimatorController: {fileID: 9100000, guid: b76a771cf1732fa48a32658cde3497b6, type: 2}
   _hands:
@@ -28,5 +28,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7aa4c858932b6b64880ddcf144309e94, type: 2}
   - {fileID: 11400000, guid: 6e00f764d2e29324482558614343396d, type: 2}
   _weaponSpawnPoint: {x: 0, y: 4}
-  _maxArmor: 8
+  _maxArmor: 4
   _price: 1000

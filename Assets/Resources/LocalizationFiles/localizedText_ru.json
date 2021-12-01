@@ -222,8 +222,18 @@
     },
 	
 	{
+      "key": "NoMoneyAds",
+      "value": "Награды закончились"
+    },
+	
+	{
       "key": "GoToLobby",
       "value": "В лобби"
+    },
+	
+	{
+      "key": "GoToGame",
+      "value": "В игру"
     },
 	
 	{
@@ -319,6 +329,26 @@
 	{
       "key": "ResetTimeLootboxDescription",
       "value": "Если ты перематывал время для получения новых наград, тебе сюда"
+    },
+	
+	{
+      "key": "HealPotion",
+      "value": "Зелья лечения"
+    },
+	
+	{
+      "key": "HealPotionDescription",
+      "value": "Восстаналивает\n5 здоровья"
+    },
+	
+	{
+      "key": "ElementsPotion",
+      "value": "Зелья подходящей стихии"
+    },
+	
+	{
+      "key": "ElementsPotionDescription",
+      "value": "Устанавливает самую сильную стихию для текущего биома"
     },
 	
 	{
@@ -938,7 +968,7 @@
 	
 	{
       "key": "TutorialPhrase11",
-      "value": "Eсли броня упадет до нуля, вагонетка замедлится"
+      "value": "Одна единица брони выдерживает одно попадание с любым уроном"
     },
 	
 	{

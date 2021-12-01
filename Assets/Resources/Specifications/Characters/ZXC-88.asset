@@ -17,7 +17,7 @@ MonoBehaviour:
   _colliderOffset: {x: 0, y: 3}
   _colliderSize: {x: 2.5, y: 6}
   _unitName: ZXC88
-  _maxHealth: 35
+  _maxHealth: 25
   _characterSprite: {fileID: -2927889975369939391, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
   _teleportationAnimatorController: {fileID: 9100000, guid: ef6c560428405544db93c6e0f0dbc608, type: 2}
   _hands:
@@ -28,5 +28,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ad03778fb0f6cb6488eb1eabf41c309c, type: 2}
   - {fileID: 11400000, guid: 0864ba24647db4f4c8140148e5d03ac8, type: 2}
   _weaponSpawnPoint: {x: 0, y: 3}
-  _maxArmor: 12
+  _maxArmor: 8
   _price: 5000

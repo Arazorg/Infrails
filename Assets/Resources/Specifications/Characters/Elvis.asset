@@ -17,7 +17,7 @@ MonoBehaviour:
   _colliderOffset: {x: 0, y: 4}
   _colliderSize: {x: 2, y: 8}
   _unitName: Elvis
-  _maxHealth: 15
+  _maxHealth: 14
   _characterSprite: {fileID: -3068220478561629229, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
   _teleportationAnimatorController: {fileID: 9100000, guid: 7b617865faffad84d8ec51f0accc3b57, type: 2}
   _hands:
@@ -28,5 +28,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fc0ce0ddde7e07c4eb77cfcbd2ab5112, type: 2}
   - {fileID: 11400000, guid: 5b71c1fc726402d4fa319cb5f9632228, type: 2}
   _weaponSpawnPoint: {x: 0, y: 4}
-  _maxArmor: 6
+  _maxArmor: 4
   _price: 6000

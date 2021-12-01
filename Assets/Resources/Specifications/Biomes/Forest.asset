@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 4935777026521638266, guid: b63cea9fef5218f498fce9d3f9b47c72, type: 3}
   - {fileID: 6078561680904602029, guid: c3feec9f24a1e964f90ff37734ebc18e, type: 3}
   _biomeElement: {fileID: 11400000, guid: 7e98d63c75058034ca2659878ae13970, type: 2}
+  _oppositeBiomeElement: {fileID: 11400000, guid: be21b1baa80e3024dac96d96a8788132, type: 2}
   _floorSprite: {fileID: 21300000, guid: 5b5be7cf5a4a7e8408695a257b8d0af4, type: 3}
   _endWallSprite: {fileID: 21300000, guid: 50f8eadfac3761440a3fa370c0787033, type: 3}
   _plateSprite: {fileID: 21300000, guid: 5f1ba102c29c9064cb5cd2c183d04ee1, type: 3}

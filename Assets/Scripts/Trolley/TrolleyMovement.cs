@@ -15,10 +15,10 @@ public class TrolleyMovement : MonoBehaviour
     private int _speedDebuff;
     private bool _isMove;
 
-    public Character Character 
+    public Character Character
     {
         set
-        {         
+        {
             value.OnCharacterDeath += StopTrolley;
             value.OnCharacterReborn += StartTrolley;
         }
@@ -69,7 +69,11 @@ public class TrolleyMovement : MonoBehaviour
                 if (Vector2.Distance(transform.position, _nextRail.transform.position) < DistanceForGetNewPosition)
                 {
                     if (_nextRail != null && _previousRail != null)
-                        Turn(_previousRail, _nextRail.NextRail.RailTransform);
+                    {
+                        if (_nextRail.NextRail.RailTransform != null)
+                            Turn(_previousRail, _nextRail.NextRail.RailTransform);
+                    }
+
 
                     transform.position = _nextRail.RailTransform.position;
                     _previousRail = _nextRail.RailTransform;

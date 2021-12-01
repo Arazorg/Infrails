@@ -6,11 +6,11 @@ using UnityEngine.Purchasing;
 
 public class IAPManager : MonoBehaviour, IStoreListener
 {
-    private const string Coins25000 = "Coins25000";
-    private const string Coins75000 = "Coins75000";
-    private const string Coins200000 = "Coins200000";
-    private const string Coins400000 = "Coins400000";
-    private const string TrolleyForSupport = "TrolleyForSupport";
+    private const string Coins25000 = "com.gd2d.infrails.coins25000";
+    private const string Coins75000 = "com.gd2d.infrails.coins75000";
+    private const string Coins200000 = "com.gd2d.infrails.coins200000";
+    private const string Coins400000 = "com.gd2d.infrails.coins400000";
+    private const string Trolley = "com.gd2d.infrails.trolley";
 
     private static IStoreController StoreController;
     private static IExtensionProvider StoreExtensionProvider;
@@ -27,7 +27,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         builder.AddProduct(Coins75000, ProductType.Consumable);
         builder.AddProduct(Coins200000, ProductType.Consumable);
         builder.AddProduct(Coins400000, ProductType.Consumable);
-        builder.AddProduct(TrolleyForSupport, ProductType.NonConsumable);
+        builder.AddProduct(Trolley, ProductType.NonConsumable);
         UnityPurchasing.Initialize(this, builder);
     }
 
@@ -53,7 +53,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
 
     public void BuyTrolleyForSupport()
     {
-        BuyProductID(TrolleyForSupport);
+        BuyProductID(Trolley);
     }
 
     public PurchaseProcessingResult ProcessPurchase(PurchaseEventArgs args)
@@ -78,7 +78,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             PlayerProgress.Instance.PlayerMoney += 400000;
         }
-        else if (string.Equals(args.purchasedProduct.definition.id, TrolleyForSupport, StringComparison.Ordinal))
+        else if (string.Equals(args.purchasedProduct.definition.id, Trolley, StringComparison.Ordinal))
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             PlayerProgress.Instance.SupportDonate();

@@ -17,7 +17,7 @@ MonoBehaviour:
   _colliderOffset: {x: 0, y: 4}
   _colliderSize: {x: 2, y: 8}
   _unitName: Stiven
-  _maxHealth: 16
+  _maxHealth: 19
   _characterSprite: {fileID: 7488993200127129506, guid: 99884dd01fc31844c80ec614644633e1, type: 3}
   _teleportationAnimatorController: {fileID: 9100000, guid: b07bc71b398d46c4cb90c4026451b9fa, type: 2}
   _hands:
@@ -28,5 +28,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f4f7d06f22a3137428d1901981a78c62, type: 2}
   - {fileID: 11400000, guid: 3f31c5ed4667ce74e92e5e07f8526735, type: 2}
   _weaponSpawnPoint: {x: 0, y: 4}
-  _maxArmor: 9
+  _maxArmor: 5
   _price: 1500

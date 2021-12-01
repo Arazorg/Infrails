@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Advertisements;
 
@@ -41,12 +42,12 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 
     public void OnUnityAdsDidError(string message)
     {
-        
+
     }
 
     public void OnUnityAdsDidStart(string placementId)
     {
-        
+
     }
 
     public void OnUnityAdsDidFinish(string placementId, ShowResult showResult)
@@ -80,16 +81,12 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
 
     private void Start()
     {
-        InitAds();
+        Init();
     }
 
-    private void InitAds()
+    private void Init()
     {
-        if (!_isAdsReady)
-        {
-            Advertisement.AddListener(this);
-            Advertisement.Initialize(GameId, _isTestMode);
-            _isAdsReady = true;
-        }
+        Advertisement.AddListener(this);
+        Advertisement.Initialize(GameId, _isTestMode);
     }
 }

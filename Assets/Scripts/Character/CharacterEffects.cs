@@ -67,6 +67,7 @@ public class CharacterEffects : MonoBehaviour
         if(_healingEffect == null && value > 0)
         {
             var effect = SpawnEffect(_healingEffectData);
+            effect.GetComponent<Animator>().Play("Healing");
             Destroy(effect, _healingEffectData.DestroyDelay);            
         }       
         else

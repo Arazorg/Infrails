@@ -1,32 +1,41 @@
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameShopUI : BaseUI, IUIPanel
 {
-    [Header("UI Scripts")]
-    [SerializeField] private LevelInfoUI _levelInfoUI;
-    [SerializeField] private ElementIndicatorUI _elementIndicatorUI;
-    [SerializeField] private CharacterItemsPanelUI _characterItemsPanelUI;
+    private const int HealPotionHealth = 5;
 
-    [Header("Bars")]
+    [Header("UI Scripts")]
+    [SerializeField] private GameShopProductPanel _gameShopProductPanel;
+    [SerializeField] private GameShopAdsUI _gameShopAdsUI;
     [SerializeField] private BarUI _healthBar;
     [SerializeField] private BarUI _armorBar;
+    [SerializeField] private ElementIndicatorUI _elementIndicatorUI;
 
     [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _moneyText;
 
-    [Header("Potions Data")]
-    [SerializeField] private ItemData _healPotionData;
-    [SerializeField] private ItemData _elementPotionData;
+    [Header("AnimationsUI")]
+    [SerializeField] private AnimationsUI _moneyImage;
+    [SerializeField] private AnimationsUI _prevButton;
+    [SerializeField] private AnimationsUI _nextButton;
 
-    private List<ItemData> _currentItemsData = new List<ItemData>();
+    [Header("Data")]
+    [SerializeField] private List<GameShopProductData> _products;
+
+    [Header("Animators")]
+    [SerializeField] private Animator _healingEffectAnimator;
+
+    private Character _character;
+    private CharacterWeapon _characterWeapon;
+    private CharacterAmplifications _characterAmplifications;
 
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
-    private int _itemsCounter;
+    private int _productsCounter;
 
     public bool IsActive { get => _isActive; set => _isActive = value; }
 
@@ -56,17 +65,14 @@ public class GameShopUI : BaseUI, IUIPanel
 
     public void Init(Character character)
     {
-        var characterWeapon = character.GetComponent<CharacterWeapon>();
-        var characterAmplifications = character.GetComponent<CharacterAmplifications>();
+        _character = character;
+        _characterWeapon = character.GetComponent<CharacterWeapon>();
+        _characterAmplifications = character.GetComponent<CharacterAmplifications>();
         _healthBar.Init(character, character.MaxHealth, 0);
         _armorBar.Init(character, character.MaxArmor, 0);
-        _elementIndicatorUI.Init(characterWeapon);
-        _characterItemsPanelUI.SetItems(characterWeapon.CurrentWeapon.CurrentWeaponData,
-                                            characterAmplifications.CurrentAmplificationsData);
+        _elementIndicatorUI.Init(character.GetComponent<CharacterWeapon>());
+        _gameShopAdsUI.Init(character);
         character.OnMoneyChanged += SetMoneyText;
-        //LevelSpawner.Instance.OnBiomeSpawned += GetItem;
-        //GetItem();
-        //AddPotionData();
     }
 
     public void Open()
@@ -74,72 +80,81 @@ public class GameShopUI : BaseUI, IUIPanel
         Time.timeScale = 0f;
         _isBackButtonEnabled = true;
         _isPopAvailable = true;
-        _levelInfoUI.Hide();
-        _itemsCounter = 0;
+        _productsCounter = 0;
+        SetProductInfo();
         Show();
     }
 
-    public void NextItem()
+    public void GoToGame()
     {
-        if (_itemsCounter < _currentItemsData.Count - 1)
-            _itemsCounter++;
+        UIManager.Instance.UIStackPop();
     }
 
-    public void PrevItem()
+    public void SetItem(int step)
     {
-        if (_itemsCounter > 0)
-        {
-            _itemsCounter--;
-        }
+        if (_productsCounter + step < _products.Count && _productsCounter + step >= 0)
+            _productsCounter += step;
 
+        if(step == -1)
+            _nextButton.Show();
+        else if(step == 1)
+            _prevButton.Show();
+
+        if (_productsCounter == _products.Count - 1)
+            _nextButton.HideImmediate();
+
+        if (_productsCounter == 0)
+            _prevButton.HideImmediate();
+
+        SetProductInfo();
+    }
+
+    public void BuyProduct()
+    {
+        if (_character.Money >= _products[_productsCounter].Price)
+        {
+            _character.AddMoney(-_products[_productsCounter].Price);
+            switch (_products[_productsCounter].ProductType)
+            {
+                case GameShopProductData.Type.WeaponLootbox:
+        
+                    break;
+                case GameShopProductData.Type.AmplificationLootbox:
+
+                case GameShopProductData.Type.HealPotion:
+                    _healingEffectAnimator.Play("Healing");
+                    _character.Heal(HealPotionHealth);
+                    break;
+                case GameShopProductData.Type.ElementPotion:
+                    Vector2 jumpOffset = new Vector2(0, -100);
+                    _elementIndicatorUI.GetComponent<AnimationsUI>().StartJump(jumpOffset);
+                    _characterWeapon.SetWeaponElement(LevelSpawner.Instance.CurrentBiomeData.OppositeBiomeElement);
+                    break;
+            }
+        }
+        else
+        {
+            _moneyImage.StartJump(new Vector2(75, 0));
+            _gameShopAdsUI.StartAdsButtonJump();
+        }
     }
 
     private void Close()
     {
         Time.timeScale = 1f;
         _isBackButtonEnabled = false;
+        _gameShopAdsUI.StopAdsButtonJump();
+        _moneyImage.StopJump();
         Hide();
     }
 
-    private void AddPotionData()
+    private void SetProductInfo()
     {
-        _currentItemsData[0] = _healPotionData;
-        _currentItemsData[2] = _elementPotionData;
-    }
-
-    private void SetItemInfo(ItemData itemData)
-    {
-        
+        _gameShopProductPanel.SetInfo(_products[_productsCounter]);
     }
 
     private void SetMoneyText(int money)
     {
         _moneyText.text = money.ToString();
-    }
-
-    private void GetItem()
-    {
-        if (Random.value < 0.66f)
-        {
-            _currentItemsData[1] = GetAmplificationData();
-        }
-        else
-        {
-            _currentItemsData[1] = GetWeaponData();
-        }
-    }
-
-    private AmplificationData GetAmplificationData()
-    {
-        var amplificationsData = PlayerProgress.Instance.GetAmplificationsData(GameConstants.Available);
-        var data = amplificationsData.Where(s => s.Level == LevelSpawner.Instance._itemsLevel).ToList();
-        return data[Random.Range(0, data.Count)];
-    }
-
-    private WeaponData GetWeaponData()
-    {
-        var weaponsData = PlayerProgress.Instance.GetWeaponsData(GameConstants.Available);
-        var data = weaponsData.Where(s => s.Level == LevelSpawner.Instance._itemsLevel).ToList();
-        return data[Random.Range(0, data.Count)];
     }
 }
