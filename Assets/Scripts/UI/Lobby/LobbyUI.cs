@@ -114,6 +114,11 @@ public class LobbyUI : BaseUI, IUIPanel
         }
     }
 
+    public void OpenURL(string URL)
+    {
+        Application.OpenURL(URL);
+    }
+
     private void Update()
     {
         BackButtonClick();

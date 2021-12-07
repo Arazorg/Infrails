@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _productName: ElementsPotion
   _productSprite: {fileID: 7738965069107224666, guid: d6b5b6cc0d711204ea7509bb7083f00d, type: 3}
+  _animatorController: {fileID: 0}
   _productColor: {r: 1, g: 0.29803923, b: 0.13333334, a: 1}
   _productSpriteSize: {x: 325, y: 325}
-  _productType: 2
+  _productType: 3
   _price: 35

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CharacterWeapon : MonoBehaviour
 {
+    private CharacterData _characterData;
     private Weapon _currentWeapon;
     private Element _currentElement;
 
@@ -9,16 +10,21 @@ public class CharacterWeapon : MonoBehaviour
 
     public event ElementChanged OnElementChanged;
 
+    public delegate void WeaponChanged(WeaponData weaponData);
+
+    public event WeaponChanged OnWeaponChanged;
+
     public Weapon CurrentWeapon { get => _currentWeapon; set => _currentWeapon = value; }
 
     public Element CurrentElement => _currentElement;
 
     public void Init(CharacterData characterData)
     {
+        _characterData = characterData;
         _currentElement = LevelSpawner.Instance.CurrentBiomeData.BiomeElement;
-        SpawnStartWeapon(characterData);
+        SpawnWeapon(characterData.CharacterStartWeapon);
     }
-    
+
     public void SetWeaponElement(Element element)
     {
         _currentElement = element;
@@ -26,18 +32,18 @@ public class CharacterWeapon : MonoBehaviour
         OnElementChanged?.Invoke(element);
     }
 
-    public void ChangeWeapon(WeaponData data)
+    public void SpawnWeapon(WeaponData data)
     {
-        _currentWeapon.Init(data);
-    }
+        if (_currentWeapon != null)
+            Destroy(_currentWeapon.gameObject);
 
-    private void SpawnStartWeapon(CharacterData data)
-    {
-        _currentWeapon = GetComponent<WeaponFactory>().GetWeapon(data.CharacterStartWeapon.Prefab, transform);
-        _currentWeapon.Init(data.CharacterStartWeapon);
-        _currentWeapon.SetParentAndOffset(transform, data.WeaponSpawnPoint);
-        _currentWeapon.SetHands(data.Hands);
+        _currentWeapon = GetComponent<WeaponFactory>().GetWeapon(data.Prefab, transform);
+        _currentWeapon.Init(data);
+        _currentWeapon.SetParentAndOffset(transform, _characterData.WeaponSpawnPoint);
+        _currentWeapon.SetHands(_characterData.Hands);
         _currentWeapon.CurrentElement = _currentElement.ElementType;
         OnElementChanged?.Invoke(_currentElement);
+        OnWeaponChanged?.Invoke(data);
     }
+
 }

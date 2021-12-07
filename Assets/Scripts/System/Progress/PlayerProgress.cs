@@ -121,6 +121,7 @@ public class PlayerProgress : MonoBehaviour
                 }
             }
         }
+
         return weapons;
     }
 
@@ -195,7 +196,7 @@ public class PlayerProgress : MonoBehaviour
             case LootboxData.Type.Skill:
                 return GetUnavailablePassiveSkillsData().Cast<ItemData>().ToList();
             default:
-                return null;
+                return new List<ItemData>();
         }
     }
 

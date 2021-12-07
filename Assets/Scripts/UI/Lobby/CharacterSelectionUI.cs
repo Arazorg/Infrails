@@ -62,6 +62,7 @@ public class CharacterSelectionUI : BaseUI, IUIPanel
         _characterInfoPanelUI.SetPanelInfo(_currentCharacterData);
         _passiveSkillPanelUI.Init(_currentCharacterData);
         _moneyText.text = PlayerProgress.Instance.PlayerMoney.ToString();
+        CurrentGameInfo.Instance.PassiveSkillData = null;
         Show();       
     }
 

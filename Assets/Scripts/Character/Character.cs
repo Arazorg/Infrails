@@ -13,7 +13,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
 
     private int _health;
     private int _armor;
-    private int _money;
+    private int _money = 1000;
     private bool _isDeath;
     private bool _isCanReborn;
 

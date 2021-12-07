@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _productName: HealPotion
   _productSprite: {fileID: 8539374366960869071, guid: d6b5b6cc0d711204ea7509bb7083f00d, type: 3}
+  _animatorController: {fileID: 0}
   _productColor: {r: 0.9960785, g: 0, b: 0, a: 1}
   _productSpriteSize: {x: 325, y: 325}
-  _productType: 1
+  _productType: 2
   _price: 25

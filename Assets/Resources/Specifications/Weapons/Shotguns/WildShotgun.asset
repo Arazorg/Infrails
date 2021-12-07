@@ -28,10 +28,10 @@ MonoBehaviour:
   _damage: 3
   _critChance: 0.175
   _fireRate: 0.375
-  _bulletScaleFactor: 1.5
+  _bulletScaleFactor: 1.33
   _scatter: 0
   _startPrice: 0
-  _level: 0
+  _level: 2
   _bulletSpawnPosition: {x: -0.45, y: 6.3}
   _bulletData: {fileID: 11400000, guid: 24c9f661abd6e8d42962526965a623c5, type: 2}
   _minNumberOfBullets: 7

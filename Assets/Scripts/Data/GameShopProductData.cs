@@ -5,6 +5,7 @@ public class GameShopProductData : ScriptableObject
 {
     [SerializeField] private string _productName;
     [SerializeField] private Sprite _productSprite;
+    [SerializeField] private RuntimeAnimatorController _animatorController;
     [SerializeField] private Color _productColor;
     [SerializeField] private Vector2 _productSpriteSize;
     [SerializeField] private Type _productType;
@@ -21,6 +22,8 @@ public class GameShopProductData : ScriptableObject
     public string ProductName => _productName;
 
     public Sprite ProductSprite => _productSprite;
+
+    public RuntimeAnimatorController AnimatorController => _animatorController;
 
     public Color ProductColor => _productColor;
 

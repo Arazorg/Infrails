@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class CharacterControlUI : BaseUI, IUIPanel
     [SerializeField] private GameShopUI _gameShopUI;
     [SerializeField] private ElementIndicatorUI _elementIndicatorUI;
     [SerializeField] private CooldownIndicator _cooldownIndicator;
+    [SerializeField] private List<CurrentAmplificationsPanelUI> _currentAmplificationsPanels;
 
     [Header("Bars")]
     [SerializeField] private BarUI _healthBar;
@@ -57,6 +59,9 @@ public class CharacterControlUI : BaseUI, IUIPanel
         _character = character;
         _character.GetComponent<CharacterControl>().Joystick = _joystick;
         _gameShopUI.Init(_character);
+        foreach (var panel in _currentAmplificationsPanels)
+            panel.Init(character.GetComponent<CharacterAmplifications>());
+        
         SubscribeToEvents();
     }
 

@@ -26,6 +26,8 @@ public class WeaponData : ItemData
     [SerializeField] private Vector2 _bulletSpawnPosition;
     [SerializeField] private BulletData _bulletData;
 
+    private int _starsNumber = 1;
+
     public enum WeaponType
     {
         Shotgun,
@@ -64,4 +66,6 @@ public class WeaponData : ItemData
     public int StartPrice => _startPrice;
 
     public int Level => _level;
+
+    public int StarsNumber { get => _starsNumber; set => _starsNumber = value; }
 }

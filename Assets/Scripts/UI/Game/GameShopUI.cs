@@ -10,6 +10,7 @@ public class GameShopUI : BaseUI, IUIPanel
     [Header("UI Scripts")]
     [SerializeField] private GameShopProductPanel _gameShopProductPanel;
     [SerializeField] private GameShopAdsUI _gameShopAdsUI;
+    [SerializeField] private GameShopLootUI _gameShopLootUI;
     [SerializeField] private BarUI _healthBar;
     [SerializeField] private BarUI _armorBar;
     [SerializeField] private ElementIndicatorUI _elementIndicatorUI;
@@ -30,8 +31,7 @@ public class GameShopUI : BaseUI, IUIPanel
 
     private Character _character;
     private CharacterWeapon _characterWeapon;
-    private CharacterAmplifications _characterAmplifications;
-
+            
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
@@ -45,7 +45,7 @@ public class GameShopUI : BaseUI, IUIPanel
 
     public void OnHide()
     {
-        Close();
+        Hide();
     }
 
     public void OnPop()
@@ -67,7 +67,6 @@ public class GameShopUI : BaseUI, IUIPanel
     {
         _character = character;
         _characterWeapon = character.GetComponent<CharacterWeapon>();
-        _characterAmplifications = character.GetComponent<CharacterAmplifications>();
         _healthBar.Init(character, character.MaxHealth, 0);
         _armorBar.Init(character, character.MaxArmor, 0);
         _elementIndicatorUI.Init(character.GetComponent<CharacterWeapon>());
@@ -80,9 +79,8 @@ public class GameShopUI : BaseUI, IUIPanel
         Time.timeScale = 0f;
         _isBackButtonEnabled = true;
         _isPopAvailable = true;
-        _productsCounter = 0;
-        SetProductInfo();
         Show();
+        SetItem(0);
     }
 
     public void GoToGame()
@@ -91,20 +89,21 @@ public class GameShopUI : BaseUI, IUIPanel
     }
 
     public void SetItem(int step)
-    {
+    {     
         if (_productsCounter + step < _products.Count && _productsCounter + step >= 0)
             _productsCounter += step;
 
-        if(step == -1)
-            _nextButton.Show();
-        else if(step == 1)
-            _prevButton.Show();
+        if (_productsCounter < _products.Count - 1)
+            _nextButton.ShowImmediate();
+
+        if(_productsCounter > 0)
+            _prevButton.ShowImmediate();           
 
         if (_productsCounter == _products.Count - 1)
             _nextButton.HideImmediate();
 
         if (_productsCounter == 0)
-            _prevButton.HideImmediate();
+            _prevButton.HideImmediate();        
 
         SetProductInfo();
     }
@@ -117,10 +116,13 @@ public class GameShopUI : BaseUI, IUIPanel
             switch (_products[_productsCounter].ProductType)
             {
                 case GameShopProductData.Type.WeaponLootbox:
-        
+                    _gameShopLootUI.Init(_character, _products[_productsCounter]);
+                    UIManager.Instance.UIStackPush(_gameShopLootUI);
                     break;
                 case GameShopProductData.Type.AmplificationLootbox:
-
+                    _gameShopLootUI.Init(_character, _products[_productsCounter]);
+                    UIManager.Instance.UIStackPush(_gameShopLootUI);
+                    break;
                 case GameShopProductData.Type.HealPotion:
                     _healingEffectAnimator.Play("Healing");
                     _character.Heal(HealPotionHealth);

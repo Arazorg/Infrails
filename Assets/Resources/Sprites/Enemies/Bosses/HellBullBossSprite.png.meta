@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: fbf6d690f10d2684ca0bc353fb61ec67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7239619767166768974
+    second: HellBullBossSprite_0
+  - first:
+      213: -2301735569277306260
+    second: HellBullBossSprite_1
+  - first:
+      213: -7590681437637413020
+    second: HellBullBossSprite_2
+  - first:
+      213: -8070536717354337665
+    second: HellBullBossSprite_3
+  - first:
+      213: 6505101861966189553
+    second: HellBullBossSprite_4
+  - first:
+      213: 2034494418560234582
+    second: HellBullBossSprite_5
+  - first:
+      213: -1846541583831256685
+    second: HellBullBossSprite_6
+  - first:
+      213: 3518169244752348229
+    second: HellBullBossSprite_7
+  - first:
+      213: -5808404364995903518
+    second: HellBullBossSprite_8
+  - first:
+      213: -1511306753609496643
+    second: HellBullBossSprite_9
+  - first:
+      213: -3808637851699798926
+    second: HellBullBossSprite_10
+  - first:
+      213: -3279367504703452492
+    second: HellBullBossSprite_11
+  - first:
+      213: -98721611037533886
+    second: HellBullBossSprite_12
+  - first:
+      213: 7391194087253084290
+    second: HellBullBossSprite_13
+  - first:
+      213: 7054442912898666289
+    second: HellBullBossSprite_14
+  - first:
+      213: -2205462555385545174
+    second: HellBullBossSprite_15
+  - first:
+      213: 2470252574122817848
+    second: HellBullBossSprite_16
+  - first:
+      213: 206732306836371171
+    second: HellBullBossSprite_17
+  - first:
+      213: -5738996219893267000
+    second: HellBullBossSprite_18
+  - first:
+      213: 6331913727398809073
+    second: HellBullBossSprite_19
+  - first:
+      213: -5541255867479487104
+    second: HellBullBossSprite_20
+  - first:
+      213: -6828507373317242052
+    second: HellBullBossSprite_21
+  - first:
+      213: 5499640251010118017
+    second: HellBullBossSprite_22
+  - first:
+      213: -3088685034863607498
+    second: HellBullBossSprite_23
+  - first:
+      213: 7719649310951262394
+    second: HellBullBossSprite_24
+  - first:
+      213: 6086389146014425753
+    second: HellBullBossSprite_25
+  - first:
+      213: 7674930697539897985
+    second: HellBullBossSprite_26
+  - first:
+      213: -6875806584905550318
+    second: HellBullBossSprite_27
+  - first:
+      213: 1125639495089596075
+    second: HellBullBossSprite_28
+  - first:
+      213: 7141416736192589831
+    second: HellBullBossSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HellBullBossSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8e02dcd24b78b90800000000000000
+      internalID: -7239619767166768974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a3852e1b79e00e0800000000000000
+      internalID: -2301735569277306260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467787a137b78a690800000000000000
+      internalID: -7590681437637413020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7af8577d91bfff80800000000000000
+      internalID: -8070536717354337665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f31a3e8da3c64a50800000000000000
+      internalID: 6505101861966189553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6543ccbf4e9fb3c10800000000000000
+      internalID: 2034494418560234582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39130c08634cf56e0800000000000000
+      internalID: -1846541583831256685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_7
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5440b2db94c03d030800000000000000
+      internalID: 3518169244752348229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef37981107646fa0800000000000000
+      internalID: -5808404364995903518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7057cc382c60be0800000000000000
+      internalID: -1511306753609496643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_10
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c935b8d00052bc0800000000000000
+      internalID: -3808637851699798926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_11
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba013a11a85d72d0800000000000000
+      internalID: -3279367504703452492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2491472c73541aef0800000000000000
+      internalID: -98721611037533886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_13
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28800b4bcdbc29660800000000000000
+      internalID: 7391194087253084290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fc897047a66e160800000000000000
+      internalID: 7054442912898666289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2eb1dcad7f9461e0800000000000000
+      internalID: -2205462555385545174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_16
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839b512d0a9184220800000000000000
+      internalID: 2470252574122817848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_17
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6349010f57ed200800000000000000
+      internalID: 206732306836371171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5c3f1385dfa50b0800000000000000
+      internalID: -5738996219893267000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_19
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd8606bcf97fd750800000000000000
+      internalID: 6331913727398809073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d0659b5218913b0800000000000000
+      internalID: -5541255867479487104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_21
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c334a4319b44c31a0800000000000000
+      internalID: -6828507373317242052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_22
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181f5e18ba5a25c40800000000000000
+      internalID: 5499640251010118017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_23
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631c3e94359c225d0800000000000000
+      internalID: -3088685034863607498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8c6d9d524b12b60800000000000000
+      internalID: 7719649310951262394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992abf46ea2377450800000000000000
+      internalID: 6086389146014425753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a4b9e4ec4d28a60800000000000000
+      internalID: 7674930697539897985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216b962375a3490a0800000000000000
+      internalID: -6875806584905550318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_28
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba627f928231f9f00800000000000000
+      internalID: 1125639495089596075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellBullBossSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700f9c94fa86b1360800000000000000
+      internalID: 7141416736192589831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

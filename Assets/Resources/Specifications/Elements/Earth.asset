@@ -15,7 +15,7 @@ MonoBehaviour:
   _type: 2
   _elementsResistances:
   - ElementType: 5
-    Resistance: 2
+    Resistance: 1.5
   - ElementType: 4
     Resistance: 0.5
   _elementSpriteUI: {fileID: 5514989659066590100, guid: 650020d50336f424f9013d90401c15e5, type: 3}

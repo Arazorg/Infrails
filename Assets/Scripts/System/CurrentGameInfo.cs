@@ -7,6 +7,7 @@ public class CurrentGameInfo : MonoBehaviour
     public bool IsExpert;
     public CharacterData CharacterData;
     public TrolleyData TrolleyData;
+    public PassiveSkillData PassiveSkillData;
     public float GameStartTime;
     public int CountOfEarnedMoney;
     public int CountOfKilledEnemies;
@@ -27,6 +28,7 @@ public class CurrentGameInfo : MonoBehaviour
     {
         IsExpert = false;
         CharacterData = null;
+        PassiveSkillData = null;
         TrolleyData = null;
         ReachedBiomeNumber = 1;
         CountOfKilledEnemies = 0;

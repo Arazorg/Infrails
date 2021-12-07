@@ -31,8 +31,10 @@ public class PassiveSkillPanelUI : MonoBehaviour
 
     public void ChooseSkillPanel(int numberOfSkill)
     {
-        if (PlayerProgress.Instance.GetPassiveSkillAvailability(_currentCharacterData.UnitName, _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemName))
+        if (PlayerProgress.Instance.GetPassiveSkillAvailability(_currentCharacterData.UnitName, 
+            _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemName))
         {
+            CurrentGameInfo.Instance.PassiveSkillData = _currentCharacterData.CharacterPassiveSkills[numberOfSkill];
             _skillPanel.sprite = _skillPanelSprites[numberOfSkill];
             string skillName = _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemName;
             _skillNameText.SetLocalization(skillName);

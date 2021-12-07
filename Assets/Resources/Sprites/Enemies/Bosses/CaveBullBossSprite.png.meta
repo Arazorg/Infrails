@@ -1,0 +1,930 @@
+fileFormatVersion: 2
+guid: ce03dc701aea88b40bbfaea46ecf5dc3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1152815731261956416
+    second: CaveBullIdle_0
+  - first:
+      213: 4745424269220007014
+    second: CaveBullIdle_1
+  - first:
+      213: -6460015717967249839
+    second: CaveBullIdle_2
+  - first:
+      213: 6526609177301308488
+    second: CaveBullIdle_3
+  - first:
+      213: 1518772419402007476
+    second: CaveBullIdle_4
+  - first:
+      213: -7082066058166801754
+    second: CaveBullIdle_5
+  - first:
+      213: -8647238612300697585
+    second: CaveBullIdle_6
+  - first:
+      213: -3102555995179315187
+    second: CaveBullIdle_7
+  - first:
+      213: -1763302420275627427
+    second: CaveBullIdle_8
+  - first:
+      213: 2548729945620855063
+    second: CaveBullIdle_9
+  - first:
+      213: -6775737886534349105
+    second: CaveBullIdle_10
+  - first:
+      213: 1382478099017058333
+    second: CaveBullIdle_11
+  - first:
+      213: -1339922669468170074
+    second: CaveBullIdle_12
+  - first:
+      213: -5918446318935407674
+    second: CaveBullIdle_13
+  - first:
+      213: -6056521621370709103
+    second: CaveBullIdle_14
+  - first:
+      213: -223676183968910345
+    second: CaveBullIdle_15
+  - first:
+      213: -6762575328250328662
+    second: CaveBullIdle_16
+  - first:
+      213: 1979534356585708936
+    second: CaveBullIdle_17
+  - first:
+      213: 23284024781085936
+    second: CaveBullIdle_18
+  - first:
+      213: -6691107245873875866
+    second: CaveBullIdle_19
+  - first:
+      213: -2569911908726334918
+    second: CaveBullIdle_20
+  - first:
+      213: -2986933085607845103
+    second: CaveBullIdle_21
+  - first:
+      213: 6164434658747252820
+    second: CaveBullIdle_22
+  - first:
+      213: 6688572575675119887
+    second: CaveBullIdle_23
+  - first:
+      213: -3533149429154204957
+    second: CaveBullIdle_24
+  - first:
+      213: -5880843819017939318
+    second: CaveBullIdle_25
+  - first:
+      213: 1292221247604343787
+    second: CaveBullIdle_26
+  - first:
+      213: 6457997719171524510
+    second: CaveBullIdle_27
+  - first:
+      213: 6458430127319162871
+    second: CaveBullIdle_28
+  - first:
+      213: 4551923908508899092
+    second: CaveBullIdle_29
+  - first:
+      213: -6342562791725109157
+    second: CaveBullBossSprite_0
+  - first:
+      213: -6492643680490233830
+    second: CaveBullBossSprite_1
+  - first:
+      213: 1684415541164184525
+    second: CaveBullBossSprite_2
+  - first:
+      213: -8834382645137843741
+    second: CaveBullBossSprite_3
+  - first:
+      213: -4597319860168140456
+    second: CaveBullBossSprite_4
+  - first:
+      213: -4597923246645409811
+    second: CaveBullBossSprite_5
+  - first:
+      213: 6984602687602342611
+    second: CaveBullBossSprite_6
+  - first:
+      213: 6323588804450258296
+    second: CaveBullBossSprite_7
+  - first:
+      213: 6607706727114421854
+    second: CaveBullBossSprite_8
+  - first:
+      213: 4450660107159873633
+    second: CaveBullBossSprite_9
+  - first:
+      213: 6187177609507628833
+    second: CaveBullBossSprite_10
+  - first:
+      213: 9170780923289720391
+    second: CaveBullBossSprite_11
+  - first:
+      213: -3476535301283843849
+    second: CaveBullBossSprite_12
+  - first:
+      213: -4527682617127047770
+    second: CaveBullBossSprite_13
+  - first:
+      213: -2199614706068781032
+    second: CaveBullBossSprite_14
+  - first:
+      213: -9033923468837825783
+    second: CaveBullBossSprite_15
+  - first:
+      213: -6898096712467883709
+    second: CaveBullBossSprite_16
+  - first:
+      213: -7378185517936570838
+    second: CaveBullBossSprite_17
+  - first:
+      213: 1257322381493138173
+    second: CaveBullBossSprite_18
+  - first:
+      213: -5273808646421587474
+    second: CaveBullBossSprite_19
+  - first:
+      213: 1026911016423398371
+    second: CaveBullBossSprite_20
+  - first:
+      213: 2053314318810903199
+    second: CaveBullBossSprite_21
+  - first:
+      213: -1697834195667147691
+    second: CaveBullBossSprite_22
+  - first:
+      213: 2144621892478563797
+    second: CaveBullBossSprite_23
+  - first:
+      213: -7385922308690043843
+    second: CaveBullBossSprite_24
+  - first:
+      213: 6994633321354872858
+    second: CaveBullBossSprite_25
+  - first:
+      213: 4785503850843849980
+    second: CaveBullBossSprite_26
+  - first:
+      213: 6908941322864765164
+    second: CaveBullBossSprite_27
+  - first:
+      213: 2753324419692700654
+    second: CaveBullBossSprite_28
+  - first:
+      213: -3849957006144524418
+    second: CaveBullBossSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaveBullBossSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b507d99ceb0baf7a0800000000000000
+      internalID: -6342562791725109157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10e13bd8fe75e5a0800000000000000
+      internalID: -6492643680490233830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc31d31a20f306710800000000000000
+      internalID: 1684415541164184525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9dea27ac7f56580800000000000000
+      internalID: -8834382645137843741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_4
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85954dfd1f90330c0800000000000000
+      internalID: -4597319860168140456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_5
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 2320
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de780330b25e030c0800000000000000
+      internalID: -4597923246645409811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dab6cb632b4ee060800000000000000
+      internalID: 6984602687602342611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_7
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d05ea8386e1c750800000000000000
+      internalID: 6323588804450258296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e563d99524a43bb50800000000000000
+      internalID: 6607706727114421854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168244f69cbe3cd30800000000000000
+      internalID: 4450660107159873633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_10
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127e3f831454dd550800000000000000
+      internalID: 6187177609507628833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_11
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 1740
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746dc9d29a8254f70800000000000000
+      internalID: 9170780923289720391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0fedd109dd0cfc0800000000000000
+      internalID: -3476535301283843849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_13
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad6e6ef5a07a21c0800000000000000
+      internalID: -4527682617127047770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8188b0234166971e0800000000000000
+      internalID: -2199614706068781032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_15
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9035bd7087e01a280800000000000000
+      internalID: -9033923468837825783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_16
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349df0376990540a0800000000000000
+      internalID: -6898096712467883709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_17
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 1160
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e857cdc5b6b9990800000000000000
+      internalID: -7378185517936570838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2fb0d5b08e27110800000000000000
+      internalID: 1257322381493138173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_19
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee958a85afaafc6b0800000000000000
+      internalID: -5273808646421587474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb1adde022504e00800000000000000
+      internalID: 1026911016423398371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_21
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9272f87e76de7c10800000000000000
+      internalID: 2053314318810903199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_22
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554afb76bc41078e0800000000000000
+      internalID: -1697834195667147691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_23
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 580
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5f5be9f3a33cd10800000000000000
+      internalID: 2144621892478563797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c95e3eaceef7990800000000000000
+      internalID: -7385922308690043843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18c77552fde11160800000000000000
+      internalID: 6994633321354872858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4cfccc566896240800000000000000
+      internalID: 4785503850843849980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce82f5b278d71ef50800000000000000
+      internalID: 6908941322864765164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_28
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee32133d8f5c53620800000000000000
+      internalID: 2753324419692700654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveBullBossSprite_29
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 520
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7faa383084329ac0800000000000000
+      internalID: -3849957006144524418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

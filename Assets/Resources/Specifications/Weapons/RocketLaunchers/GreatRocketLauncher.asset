@@ -31,6 +31,6 @@ MonoBehaviour:
   _bulletScaleFactor: 1.35
   _scatter: 0
   _startPrice: 0
-  _level: 0
+  _level: 1
   _bulletSpawnPosition: {x: -0.45, y: 3.35}
   _bulletData: {fileID: 11400000, guid: bf5ca763bef2b4c4596ff001422d1dfa, type: 2}

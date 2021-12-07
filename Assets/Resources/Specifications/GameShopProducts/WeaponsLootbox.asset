@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _productName: WeaponLootbox
   _productSprite: {fileID: -875052934587353447, guid: 4ea3f31f642b99e4897d9b2d16ae349b, type: 3}
+  _animatorController: {fileID: 9100000, guid: afc38f9a1d5bf5f4da50cc8557ebcf75, type: 2}
   _productColor: {r: 0.82745105, g: 0.09411766, b: 0.09411766, a: 1}
   _productSpriteSize: {x: 275, y: 275}
+  _productType: 0
   _price: 75
