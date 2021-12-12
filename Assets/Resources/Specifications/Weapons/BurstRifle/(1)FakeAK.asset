@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc906e8ed775237429411374be1ec885, type: 3}
+  m_Name: (1)FakeAK
+  m_EditorClassIdentifier: 
+  _itemName: FakeAK
+  _itemColor: {r: 1, g: 1, b: 1, a: 1}
+  _itemSpriteUI: {fileID: 6190084930851905708, guid: b1be3ff174357bb4eb40a4bfc6a87f47, type: 3}
+  _isStartingItem: 1
+  _prefab: {fileID: -5247871744309800004, guid: 008e1332d2aba204296da860a77c094c, type: 3}
+  _weaponAudioClip: {fileID: 8300000, guid: c0c9fec1d5181cd4d965b57ad29f30f5, type: 3}
+  _animatorController: {fileID: 9100000, guid: 710c73490e15c6f49aa65a075dcd3e5f, type: 2}
+  _mainSprite: {fileID: 8776372612516091539, guid: 802ac1866975a1f4b99ec2a73d60fc61, type: 3}
+  _handsPositions:
+  - {x: 0, y: 0}
+  - {x: -0.05, y: 2}
+  _bulletSpeed: 115
+  _damage: 3
+  _critChance: 0.1
+  _fireRate: 0.95
+  _bulletScaleFactor: 1
+  _scatter: 15
+  _level: 0
+  _bulletSpawnPosition: {x: -0.15, y: 3.9}
+  _bulletData: {fileID: 11400000, guid: bc9532ac9eb791549b683b8e7e763923, type: 2}
+  _numberOfBullets: 3
+  _shotsDelay: 0.16499999

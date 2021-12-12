@@ -9,6 +9,7 @@ public abstract class Weapon : MonoBehaviour
 
     protected BulletFactory Factory;
     protected MonobehaviourPool<Bullet> _bulletsPool;
+    protected WeaponCharacteristics WeaponCharacteristics;
 
     private Animator _animator;
     private BulletFactory _bulletFactory;
@@ -65,7 +66,7 @@ public abstract class Weapon : MonoBehaviour
     {
         var bullet = _bulletsPool.GetFreeElement();
         bullet.transform.position = _bulletSpawnPoint.position;
-        _elementColor = bullet.Init(CurrentWeaponData, CurrentElement);
+        _elementColor = bullet.Init(CurrentWeaponData, WeaponCharacteristics, CurrentElement);
         return bullet.gameObject;
     }
 

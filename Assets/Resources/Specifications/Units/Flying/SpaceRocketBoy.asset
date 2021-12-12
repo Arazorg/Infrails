@@ -25,5 +25,5 @@ MonoBehaviour:
   _center: {x: 1, y: 2.2}
   _isFlipX: 1
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
-  _weaponData: {fileID: 11400000, guid: 5f8d1a6aa9d04d14e9435115899bb3cb, type: 2}
+  _weaponData: {fileID: 11400000, guid: e0cc7df6364f83d45a56d6805febdcca, type: 2}
   _dizzinesEffectOffset: {x: 1, y: 3.75, z: 0}

@@ -3122,7 +3122,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72.4
+  m_fontSize: 68.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11834,7 +11834,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5625, y: 1}
+    m_SensorSize: {x: 0.4787234, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12018,7 +12018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 500}
+  m_AnchoredPosition: {x: 0, y: 600}
   m_SizeDelta: {x: 800, y: 225}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &811035267
@@ -18885,7 +18885,7 @@ RectTransform:
   m_GameObject: {fileID: 1339208734}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 522273059}
   - {fileID: 326121882}
@@ -26298,7 +26298,7 @@ GameObject:
   - component: {fileID: 1932663361}
   - component: {fileID: 1932663362}
   m_Layer: 0
-  m_Name: EnemyManagerHandler
+  m_Name: EnemiesManagerHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26349,9 +26349,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ec323dde17149bc4d8af88e556655a6e, type: 2}
   - {fileID: 11400000, guid: 369ec2010db9c1b4aa9ae1e68088ee82, type: 2}
   - {fileID: 11400000, guid: 4aa5695272635464fb5382419e3b3235, type: 2}
-  _destroyableObjectsData:
-  - {fileID: 11400000, guid: 12b3dca7958218b4ea83630b5fe5c79d, type: 2}
-  - {fileID: 11400000, guid: b1bb57c6208700a47afdba3c859afaf5, type: 2}
+  _firstAidKitData: {fileID: 11400000, guid: 12b3dca7958218b4ea83630b5fe5c79d, type: 2}
+  _repairKitData: {fileID: 11400000, guid: b1bb57c6208700a47afdba3c859afaf5, type: 2}
 --- !u!1 &1936587321
 GameObject:
   m_ObjectHideFlags: 0
@@ -26615,7 +26614,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 66.25
+  m_fontSize: 42.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

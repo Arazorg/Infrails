@@ -3,11 +3,13 @@
 public class Shotgun : Weapon
 {
     private ShotgunData _shotgunData;
+    private ShotgunCharacteristics _shotgunCharacteristics;
 
     public override void Init(WeaponData weaponData)
     {
         CurrentWeaponData = weaponData;
         _shotgunData = weaponData as ShotgunData;
+        WeaponCharacteristics = new ShotgunCharacteristics(_shotgunData);
         OnInit();
     }
 
@@ -19,7 +21,7 @@ public class Shotgun : Weapon
         {
             var bullet = SpawnBullet();
 
-            float angle = Random.Range(-_shotgunData.ScatterAngle, _shotgunData.ScatterAngle);
+            float angle = Random.Range(-_shotgunData.Scatter, _shotgunData.Scatter);
             float speedFactor = Random.Range((1 - _shotgunData.BulletSpeedSpread), (1 + _shotgunData.BulletSpeedSpread));
             float speed = CurrentWeaponData.BulletSpeed * speedFactor;
 

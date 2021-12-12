@@ -5,6 +5,7 @@ public class Rifle : Weapon
     public override void Init(WeaponData weaponData)
     {
         CurrentWeaponData = weaponData;
+        WeaponCharacteristics = new RifleCharacteristics(weaponData);
         OnInit();
     }
 

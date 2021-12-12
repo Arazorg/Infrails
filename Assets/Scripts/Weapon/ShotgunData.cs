@@ -5,14 +5,11 @@ public class ShotgunData : WeaponData
 {
     [SerializeField] private int _minNumberOfBullets;
     [SerializeField] private int _maxNumberOfBullets;
-    [SerializeField] private float _scatterAngle;
     [SerializeField] private float _bulletSpeedSpread;
 
     public int MinNumberOfBullets => _minNumberOfBullets;
 
     public int MaxNumberOfBullets => _maxNumberOfBullets;
-
-    public float ScatterAngle => _scatterAngle;
 
     public float BulletSpeedSpread => _bulletSpeedSpread;
 }

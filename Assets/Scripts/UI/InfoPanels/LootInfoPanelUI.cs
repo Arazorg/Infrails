@@ -15,7 +15,7 @@ public class LootInfoPanelUI : MonoBehaviour
     [SerializeField] private LocalizedText _lootNameText;
     [SerializeField] private LocalizedText _descriptionText;
 
-    public void SetInfoPanel(ItemData lootData)
+    public void SetInfoPanel(ItemData lootData, WeaponCharacteristics weaponCharacteristics = null)
     {
         GetComponent<AnimationsUI>().Show();
         _lootImage.sprite = lootData.ItemSpriteUI;
@@ -24,17 +24,28 @@ public class LootInfoPanelUI : MonoBehaviour
         _descriptionText.SetLocalization(string.Format("{0}Description", lootData.ItemName));
 
         if (lootData is WeaponData)
-            ShowWeaponLootInfo(lootData);
+        {
+            if (weaponCharacteristics != null)
+                ShowWeaponLootInfo(lootData, weaponCharacteristics);
+            else
+                ShowWeaponLootInfo(lootData);
+        }
+
         else if (lootData is AmplificationData)
             ShowAmplificationsLootInfo(lootData);
         else
             _descriptionText.GetComponent<AnimationsUI>().Show();
     }
 
-    private void ShowWeaponLootInfo(ItemData lootData)
+    private void ShowWeaponLootInfo(ItemData lootData, WeaponCharacteristics weaponCharacteristics = null)
     {
         _weaponInfoPanelUI.GetComponent<AnimationsUI>().Show();
-        _weaponInfoPanelUI.SetPanelInfo(lootData);
+
+        if (weaponCharacteristics != null)
+            _weaponInfoPanelUI.SetPanelInfo(lootData, weaponCharacteristics);
+        else
+            _weaponInfoPanelUI.SetPanelInfo(lootData);
+
         _descriptionText.GetComponent<AnimationsUI>().Show();
     }
 

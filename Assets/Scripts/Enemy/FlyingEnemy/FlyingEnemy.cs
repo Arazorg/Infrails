@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -147,16 +146,19 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     private void SetScale()
     {
-        float minScale = 1.2f;
-        float maxScale = 1.75f;
+        float healthForLevel = 0.75f;
+        float scaleForBiome = 0.0125f;
+        float biomeScaleFactor = scaleForBiome * CurrentGameInfo.Instance.ReachedBiomeNumber;
+        float minScale = 1.2f + biomeScaleFactor;
+        float maxScale = 1.5f + biomeScaleFactor;
         float scaleFactor = Random.Range(minScale, maxScale);
         transform.localScale *= scaleFactor;
-        Health = (int)(Data.MaxHealth * scaleFactor);
+        Health = (int)(Data.MaxHealth * scaleFactor + (healthForLevel * CurrentGameInfo.Instance.ReachedBiomeNumber));
     }
 
     private void SetNextState()
     {
-        float attackChance = 0.8f;
+        float attackChance = 0.9f;
         _enemyMovement.OnReachedNextPoint -= SetNextState;
 
         if (Random.value < attackChance && _enemy.IsGetDamage && CheckDistanceToTarget())

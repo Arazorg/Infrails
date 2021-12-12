@@ -3,14 +3,14 @@ using UnityEngine;
 
 public class GameShopWeaponStarsUI : MonoBehaviour
 {
-    public void Show(int starNumber)
+    public void Show(WeaponData weaponData)
     {
         string startAnimatorKey = "Start";
         foreach (var starAnimator in GetComponentsInChildren<Animator>())
             starAnimator.Play(startAnimatorKey);
 
         GetComponent<AnimationsUI>().Show();
-        StartCoroutine(FillStars(starNumber));
+        StartCoroutine(FillStars(weaponData.StarsNumber));
     }
 
     private IEnumerator FillStars(int starNumber)

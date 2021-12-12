@@ -25,7 +25,7 @@ MonoBehaviour:
   _center: {x: 0, y: 3.24}
   _isFlipX: 1
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
-  _weaponData: {fileID: 11400000, guid: b4ad5e29766e1f54ca657bfa69a570d8, type: 2}
+  _weaponData: {fileID: 11400000, guid: ee5d96c042e0e9f46bfdd37dc4966d91, type: 2}
   _dizzinesEffectOffset: {x: 0.25, y: 7.25, z: 0}
   _laserAnimatorController: {fileID: 9100000, guid: e64b739bb3c6f6e468be830251185b0f, type: 2}
   _teleportationAnimatorController: {fileID: 9100000, guid: 597e173249511374eb9887ebb5b02d0a, type: 2}

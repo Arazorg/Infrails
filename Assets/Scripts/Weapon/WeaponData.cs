@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Weapons/Standart Weapon", fileName = "New  Weapon")]
-public class WeaponData : ItemData
+public abstract class WeaponData : ItemData
 {
     [Header("Weapon Resources")]
     [SerializeField] private Weapon _prefab;
@@ -12,14 +11,12 @@ public class WeaponData : ItemData
     [SerializeField] private List<Vector2> _handsPositions;
 
     [Header("Weapon Stats")]
-    [SerializeField] private WeaponType _type;
     [SerializeField] private int _bulletSpeed;
     [SerializeField] private int _damage;
     [SerializeField] private float _critChance;
     [SerializeField] private float _fireRate;
     [SerializeField] private float _bulletScaleFactor;
     [SerializeField] private float _scatter;
-    [SerializeField] private int _startPrice;
     [SerializeField] private int _level;
 
     [Header("Bullet")]
@@ -28,16 +25,7 @@ public class WeaponData : ItemData
 
     private int _starsNumber = 1;
 
-    public enum WeaponType
-    {
-        Shotgun,
-        Rifle,
-        BurstRifle
-    }
-
     public Weapon Prefab => _prefab;
-
-    public WeaponType Type => _type;
 
     public RuntimeAnimatorController Animator => _animatorController;
 
@@ -51,6 +39,8 @@ public class WeaponData : ItemData
 
     public BulletData BulletData => _bulletData;
 
+    public int StarsNumber { get => _starsNumber; set => _starsNumber = value; }
+
     public int Damage => _damage;
 
     public float CritChance => _critChance;
@@ -63,9 +53,5 @@ public class WeaponData : ItemData
 
     public float Scatter => _scatter;
 
-    public int StartPrice => _startPrice;
-
     public int Level => _level;
-
-    public int StarsNumber { get => _starsNumber; set => _starsNumber = value; }
 }

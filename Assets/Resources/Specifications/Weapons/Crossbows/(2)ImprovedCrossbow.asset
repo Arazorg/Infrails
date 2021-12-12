@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3168be7c3d1be45978338b17f388e0, type: 3}
+  m_Name: (2)ImprovedCrossbow
+  m_EditorClassIdentifier: 
+  _itemName: ImprovedCrossbow
+  _itemColor: {r: 0.03137255, g: 0.7176471, b: 0.003921569, a: 1}
+  _itemSpriteUI: {fileID: -3770815978991590857, guid: f582596d4f5686448870e67b55ba5124, type: 3}
+  _isStartingItem: 0
+  _prefab: {fileID: -4369186634672922947, guid: 206378425c4d5ff40a4f4a2a419d495f, type: 3}
+  _weaponAudioClip: {fileID: 8300000, guid: ab3d0b27b367b674d802afe6843a2ef0, type: 3}
+  _animatorController: {fileID: 9100000, guid: f5d5381d24e4cb444b328ffe4099ced2, type: 2}
+  _mainSprite: {fileID: -7707025439474052951, guid: fe2a2e28841f5ea4c9f86abd0555056b, type: 3}
+  _handsPositions:
+  - {x: 0, y: 0}
+  - {x: 0, y: 2.5}
+  _bulletSpeed: 130
+  _damage: 10
+  _critChance: 0.56
+  _fireRate: 0.6
+  _bulletScaleFactor: 1.2
+  _scatter: 2
+  _level: 1
+  _bulletSpawnPosition: {x: -0.73, y: 3.63}
+  _bulletData: {fileID: 11400000, guid: 015dc9761352f7a47be43ca1ba261717, type: 2}

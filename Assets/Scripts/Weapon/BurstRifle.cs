@@ -4,11 +4,13 @@ using UnityEngine;
 public class BurstRifle : Weapon
 {
     private BurstRifleData _burstRifleData;
+    private BurstRifleCharacteristics _burstRifleCharacteristics;
 
     public override void Init(WeaponData weaponData)
     {
         CurrentWeaponData = weaponData;
         _burstRifleData = weaponData as BurstRifleData;
+        WeaponCharacteristics = new BurstRifleCharacteristics(_burstRifleData);
         OnInit();
     }
 

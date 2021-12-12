@@ -138,11 +138,25 @@ public class GameShopLootUI : BaseUI, IUIPanel
 
     private void SetLootUI(ItemData lootData)
     {
-        _lootInfoPanelUI.SetInfoPanel(lootData);
         Show();
         if (lootData is WeaponData)
         {
-            _gameShopWeaponStarsUI.Show((lootData as WeaponData).StarsNumber);
+            _gameShopWeaponStarsUI.Show(lootData as WeaponData);
+            _lootInfoPanelUI.SetInfoPanel(lootData, GetWeaponCharacteristics(lootData as WeaponData));
         }
+        else
+        {
+            _lootInfoPanelUI.SetInfoPanel(lootData);
+        }
+    }
+
+    private WeaponCharacteristics GetWeaponCharacteristics(WeaponData weaponData)
+    {
+        if (weaponData is ShotgunData)
+            return new ShotgunCharacteristics(weaponData as ShotgunData);
+        else if (weaponData is BurstRifleData)
+            return new BurstRifleCharacteristics(weaponData as BurstRifleData);
+        else
+            return new RifleCharacteristics(weaponData);
     }
 }

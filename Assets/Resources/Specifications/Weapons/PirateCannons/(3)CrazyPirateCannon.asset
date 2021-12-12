@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c23ebaaed7b49419b7ef704ab71659, type: 3}
+  m_Name: (3)CrazyPirateCannon
+  m_EditorClassIdentifier: 
+  _itemName: CrazyPirateCannon
+  _itemColor: {r: 0.49019608, g: 0, b: 0.85882354, a: 1}
+  _itemSpriteUI: {fileID: -4861750310804661400, guid: f582596d4f5686448870e67b55ba5124, type: 3}
+  _isStartingItem: 0
+  _prefab: {fileID: -4369186634672922947, guid: 206378425c4d5ff40a4f4a2a419d495f, type: 3}
+  _weaponAudioClip: {fileID: 8300000, guid: 79d560eb373045c4fb4eee621ce5d42f, type: 3}
+  _animatorController: {fileID: 9100000, guid: 63a06fe63b8fe60419b17c6bcbfd5986, type: 2}
+  _mainSprite: {fileID: 31563510677418642, guid: fe2a2e28841f5ea4c9f86abd0555056b, type: 3}
+  _handsPositions:
+  - {x: 0, y: 0}
+  - {x: -0.1, y: 2.95}
+  _bulletSpeed: 145
+  _damage: 15
+  _critChance: 0.4
+  _fireRate: 0.45
+  _bulletScaleFactor: 1.5
+  _scatter: 5
+  _level: 2
+  _bulletSpawnPosition: {x: -0.45, y: 6.23}
+  _bulletData: {fileID: 11400000, guid: fd355749ba0bd874a9a60f009bd0a980, type: 2}

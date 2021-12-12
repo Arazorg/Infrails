@@ -17,7 +17,7 @@ public abstract class Bullet : MonoBehaviour
 
     public float CritChance => _critChance;
 
-    public Color Init(WeaponData weaponData, Element.Type elementType)
+    public Color Init(WeaponData weaponData, WeaponCharacteristics weaponCharacteristics, Element.Type elementType)
     {
         Data = weaponData.BulletData;
         SetBulletPhysic();
@@ -25,8 +25,8 @@ public abstract class Bullet : MonoBehaviour
         SetSpriteByElement(elementType);
         Color elementColor = GetColorByElementType(elementType);
         SetParticleColor(elementColor);
-        SetCharacteristics(weaponData);
-        transform.localScale = new Vector2(weaponData.BulletScaleFactor, weaponData.BulletScaleFactor);
+        SetCharacteristics(weaponCharacteristics);
+        transform.localScale = new Vector2(weaponCharacteristics.BulletScaleFactor, weaponCharacteristics.BulletScaleFactor);
         return elementColor;
     }
 
@@ -76,10 +76,10 @@ public abstract class Bullet : MonoBehaviour
         gameObject.tag = Data.BulletTag;
     }
 
-    private void SetCharacteristics(WeaponData weaponData)
+    private void SetCharacteristics(WeaponCharacteristics weaponCharacteristics)
     {
-        _damage = weaponData.Damage;
-        _critChance = weaponData.CritChance;
+        _damage = weaponCharacteristics.Damage;
+        _critChance = weaponCharacteristics.CritChance;
     }
 
     private Color GetColorByElementType(Element.Type element)

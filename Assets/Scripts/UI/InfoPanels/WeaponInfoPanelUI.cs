@@ -32,4 +32,16 @@ public class WeaponInfoPanelUI : MonoBehaviour, IInfoPanel
         _weaponCritChanceText.text = $"{weaponData.CritChance * 100}%";
         _weaponFireRateText.text = weaponData.FireRate.ToString();
     }
+
+    public void SetPanelInfo(ItemData itemData, WeaponCharacteristics weaponCharacteristics)
+    {
+        _weaponImage.sprite = itemData.ItemSpriteUI;
+        _weaponNameText.SetLocalization(itemData.ItemName);
+        _weaponNameText.GetComponent<TextMeshProUGUI>().color = itemData.ItemColor;
+        _weaponDescriptionText.SetLocalization($"{itemData.ItemName}Description");
+
+        _weaponDamageText.text = weaponCharacteristics.Damage.ToString();
+        _weaponCritChanceText.text = $"{weaponCharacteristics.CritChance * 100}%";
+        _weaponFireRateText.text = weaponCharacteristics.FireRate.ToString();
+    }
 }

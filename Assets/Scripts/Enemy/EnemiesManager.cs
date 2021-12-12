@@ -8,7 +8,8 @@ public class EnemiesManager : MonoBehaviour
     [Header("Enemies Data")]
     [SerializeField] private EnemyFactory _enemyFactory;
     [SerializeField] private List<EnemyData> _maneCrystalsData;
-    [SerializeField] private List<EnemyData> _destroyableObjectsData;
+    [SerializeField] private EnemyData _firstAidKitData;
+    [SerializeField] private EnemyData _repairKitData;
 
     private List<EnemyData> _flyingEnemiesData = new List<EnemyData>();
     private List<IEnemyLaserTarget> _staticEnemyTargets = new List<IEnemyLaserTarget>();
@@ -49,8 +50,6 @@ public class EnemiesManager : MonoBehaviour
 
     public void SpawnDestroyableObjects(List<Transform> spawnPoints)
     {
-        float previousDataNumber = -1;
-
         foreach (var spawnPoint in spawnPoints)
         {
             float maneCrystalSpawnChance = 0.3f;
@@ -69,12 +68,11 @@ public class EnemiesManager : MonoBehaviour
                 }
                 else
                 {
-                    int dataNumber = Random.Range(0, _destroyableObjectsData.Count);
-                    while (dataNumber == previousDataNumber)
-                        dataNumber = Random.Range(0, _destroyableObjectsData.Count);
-
-                    _staticEnemyTargets.Add(SpawnEnemyToParent(_destroyableObjectsData[dataNumber], spawnPoint) as DestroyableKit);
-                    previousDataNumber = dataNumber;
+                    float repairKitSpawnChance = 0.25f;
+                    if (Random.Range(0f, 1f) < repairKitSpawnChance)
+                        _staticEnemyTargets.Add(SpawnEnemyToParent(_repairKitData, spawnPoint) as DestroyableKit);
+                    else
+                        _staticEnemyTargets.Add(SpawnEnemyToParent(_firstAidKitData, spawnPoint) as DestroyableKit);
                 }
             }
         }
@@ -101,7 +99,7 @@ public class EnemiesManager : MonoBehaviour
                 enemy.OnFlyingEnemyDeath += RemoveFlyingEnemyFromList;
                 _currentFlyingEnemies.Add(enemy);
             }
-        }     
+        }
     }
 
     public void SpawnEnemyFromEgg(Transform spawnPoint)

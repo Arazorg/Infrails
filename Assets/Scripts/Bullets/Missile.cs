@@ -5,7 +5,6 @@ public class Missile : PlayerBullet
     [SerializeField] private GameObject _explosionPrefab;
     [SerializeField] private AudioClip _explosionAudioClip;
 
-
     public override void Accept(Transform target)
     {
         SpawnExplosion();

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IncreaseNatureResistance
   m_EditorClassIdentifier: 
   _itemName: IncreaseNatureResistance
-  _itemColor: {r: 0.08627451, g: 0.89019614, b: 0.20392159, a: 1}
+  _itemColor: {r: 0.54509807, g: 0.73333335, b: 0.227451, a: 1}
   _itemSpriteUI: {fileID: 4767050083936066888, guid: 52fce63dabf74cd49be888c9058c80c4, type: 3}
   _isStartingItem: 1
   _amplificationType: 4

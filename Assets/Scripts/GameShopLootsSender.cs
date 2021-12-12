@@ -36,15 +36,22 @@ public class GameShopLootsSender : MonoBehaviour
 
     private WeaponData GetWeaponData(int weaponLevel)
     {
+        bool isLevelReduced = false;
+        int maxNumberStars = 5;
         var availableWeapons = GetAvailableWeapons(weaponLevel);
         while (availableWeapons.Count == 0)
         {
             weaponLevel--;
             availableWeapons = GetAvailableWeapons(weaponLevel);
+            isLevelReduced = true;
         }
 
         var weapon = availableWeapons.OrderBy(qu => Guid.NewGuid()).First();
-        weapon.StarsNumber = GetWeaponStarsNumber();
+        if (!isLevelReduced)
+            weapon.StarsNumber = GetWeaponStarsNumber();
+        else
+            weapon.StarsNumber = maxNumberStars;
+
         return weapon;
     }
 
@@ -85,7 +92,7 @@ public class GameShopLootsSender : MonoBehaviour
         float biomeForLootLevel = 15;
         int biomeForStar = 3;
         float tempStarsNumber = (CurrentGameInfo.Instance.ReachedBiomeNumber % biomeForLootLevel) / biomeForStar;
-        if ((tempStarsNumber - (int)tempStarsNumber) > 0)
+        if ((tempStarsNumber - (int)tempStarsNumber) >= 0)
             tempStarsNumber++;
 
         return (int)tempStarsNumber;

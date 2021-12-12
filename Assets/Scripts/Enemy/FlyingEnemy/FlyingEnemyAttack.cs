@@ -7,6 +7,7 @@ public class FlyingEnemyAttack : MonoBehaviour
 
     private BulletFactory _bulletFactory;
     private MonobehaviourPool<Bullet> _bulletsPool;
+    private WeaponCharacteristics _weaponCharacteristics;
     private Transform _target;
     private AttackingEnemyData _data;
     private Coroutine _attackCoroutine;
@@ -24,6 +25,7 @@ public class FlyingEnemyAttack : MonoBehaviour
         _target = target;
         _data = data as AttackingEnemyData;
         GetComponent<SpriteRenderer>().flipX = data.IsFlipX;
+        _weaponCharacteristics = new EnemyWeaponCharacteristics(_data.WeaponData);
         _bulletSpawnPoint.localPosition = _data.WeaponData.BulletSpawnPosition;
         _bulletFactory = GetComponent<BulletFactory>();
         _bulletsPool = new MonobehaviourPool<Bullet>(0, true, _bulletFactory, _data.WeaponData.BulletData.Prefab, _bulletSpawnPoint);
@@ -31,7 +33,7 @@ public class FlyingEnemyAttack : MonoBehaviour
 
     public void StartAttack()
     {
-        float attackDuration = 1.5f;
+        float attackDuration = 2f;
         _stopAttackTime = Time.time + attackDuration;
         _needAngleZ = GetNeedAngle();
         _attackCoroutine = StartCoroutine(Attacking());
@@ -69,7 +71,7 @@ public class FlyingEnemyAttack : MonoBehaviour
         AudioManager.Instance.PlayEffect(_data.WeaponData.WeaponAudioClip);
         var bullet = _bulletsPool.GetFreeElement();
         bullet.transform.position = _bulletSpawnPoint.position;
-        bullet.Init(_data.WeaponData, Element.Type.None);
+        bullet.Init(_data.WeaponData, _weaponCharacteristics, Element.Type.None);
         Quaternion dir = Quaternion.AngleAxis(0, Vector3.forward);
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
         Vector3 vectorToTarget = transform.right.normalized * GetFacingDirectionFactor();
