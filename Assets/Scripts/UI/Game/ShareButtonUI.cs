@@ -8,7 +8,7 @@ public class ShareButtonUI : MonoBehaviour
 
     public IEnumerator Share()
     {
-        string shareMessage = LocalizationManager.GetLocalizedText(ShareMessageKey);
+        string shareMessage = LocalizationManager.Instance.GetLocalizedText(ShareMessageKey);
         yield return StartCoroutine(TakeScreenshotAndShare(shareMessage));
     }
 

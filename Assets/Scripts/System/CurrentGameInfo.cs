@@ -30,7 +30,7 @@ public class CurrentGameInfo : MonoBehaviour
         CharacterData = null;
         PassiveSkillData = null;
         TrolleyData = null;
-        ReachedBiomeNumber = 1;
+        ReachedBiomeNumber = 15;
         CountOfKilledEnemies = 0;
         CountOfEarnedMoney = 0;
     }

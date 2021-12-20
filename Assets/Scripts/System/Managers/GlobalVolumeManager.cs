@@ -18,8 +18,9 @@ public class GlobalVolumeManager : MonoBehaviour
 
     private void Start()
     {
+        float standartRenderScale = 1f;
         _universalAdditionalCameraData.renderPostProcessing = false;
-        _universalRenderPipelineAsset.renderScale = 1f;
+        _universalRenderPipelineAsset.renderScale = standartRenderScale;
     }
 
     public void SetVolumeProfile(bool isUIProfile)

@@ -27,6 +27,7 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         InitStates();
         OnInit();
         SetScale();
+        SetHealth();
         Move();
     }
 
@@ -88,7 +89,7 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     public override void BulletHit(PlayerBullet bullet)
     {
-        int damageWithResistance = (int)(bullet.Damage * Data.EnemyElement.GetElementInteractionByType(bullet.ElementType));
+        int damageWithResistance = Data.EnemyElement.GetDamageWithResistance(bullet.Damage, bullet.ElementType);
         GetDamage(damageWithResistance);
         bullet.Accept(Transform, this);
     }
@@ -145,15 +146,25 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     }
 
     private void SetScale()
-    {
-        float healthForLevel = 0.75f;
-        float scaleForBiome = 0.0125f;
+    {       
+        float scaleForBiome = 0.01f;
         float biomeScaleFactor = scaleForBiome * CurrentGameInfo.Instance.ReachedBiomeNumber;
-        float minScale = 1.2f + biomeScaleFactor;
-        float maxScale = 1.5f + biomeScaleFactor;
+        float minScale = 1.1f + biomeScaleFactor;
+        float maxScale = 1.3f + biomeScaleFactor;
         float scaleFactor = Random.Range(minScale, maxScale);
-        transform.localScale *= scaleFactor;
-        Health = (int)(Data.MaxHealth * scaleFactor + (healthForLevel * CurrentGameInfo.Instance.ReachedBiomeNumber));
+        transform.localScale *= scaleFactor;   
+    }
+
+    private void SetHealth()
+    {
+        int minHealthForLevel = 1;
+        int numberBiomeForGain = 15;
+        int bonusHealthForBiomes = 17;
+
+        int healthForLevel = CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain + minHealthForLevel;
+        int bonusHealth = (CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain) * bonusHealthForBiomes;
+        float scaleFactor = transform.localScale.x;
+        Health = bonusHealth + (int)((Data.MaxHealth + (healthForLevel * CurrentGameInfo.Instance.ReachedBiomeNumber)) * scaleFactor);
     }
 
     private void SetNextState()
@@ -172,7 +183,6 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         float distanceY = transform.position.y - Character.Transform.position.y;
         float minDistanceToAttack = 17.5f;
         float maxDistanceToAttack = 35f;
-
         return distanceY > minDistanceToAttack && distanceY < maxDistanceToAttack;
     }
 

@@ -2,15 +2,20 @@
 using System.IO;
 using UnityEngine;
 
-public static class LocalizationManager
+public class LocalizationManager : MonoBehaviour
 {
-    private static Dictionary<string, string> localizedText;
-    private static string MissingTextString = "Localized text not found";
-    private static GameObject[] texts;
+    public static LocalizationManager Instance;
 
-    public static void LoadLocalizedText(string fileName)
+    private readonly string MissingTextString = "Localized text not found";
+
+    private Dictionary<string, string> _localizedTexts;
+
+    public delegate void LoadLozalization();
+    public event LoadLozalization OnLoadLozalization;
+
+    public void LoadLocalization(string fileName)
     {
-        localizedText = new Dictionary<string, string>();
+        _localizedTexts = new Dictionary<string, string>();
 
         TextAsset localizationFile = Resources.Load<TextAsset>(Path.Combine("LocalizationFiles/", fileName));
         string dataAsJson = localizationFile.text;
@@ -18,7 +23,7 @@ public static class LocalizationManager
         LocalizationData loadedData = JsonUtility.FromJson<LocalizationData>(dataAsJson);
         for (int i = 0; i < loadedData.items.Length; i++)
         {
-            localizedText.Add(loadedData.items[i].key, loadedData.items[i].value);
+            _localizedTexts.Add(loadedData.items[i].key, loadedData.items[i].value);
         }
             
         RefreshText();
@@ -26,42 +31,32 @@ public static class LocalizationManager
         SettingsInfo.Instance.Save();
     }
 
-    public static string GetLocalizedText(string key)
+    public string GetLocalizedText(string key)
     {
         string result = MissingTextString;
 
-        if (localizedText.ContainsKey(key))
-        {
-            result = localizedText[key];
-        }
+        if (_localizedTexts.ContainsKey(key))
+            result = _localizedTexts[key];
 
         return result;
     }
 
-    public static List<string> GetLocalizedTextWithKey(string key)
+    private void Awake()
     {
-        List<string> textWithKey = new List<string>();
-        foreach (var text in localizedText)
+        if (Instance != null)
         {
-            if(text.Key.ToString().Contains(key))
-            {
-                textWithKey.Add(text.Value);
-            }
-        }
-
-        return textWithKey;
+            Destroy(gameObject);
+        }          
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }    
+            
     }
 
-    private static void RefreshText()
+    private void RefreshText()
     {
-        texts = GameObject.FindGameObjectsWithTag("Text");
-        foreach (var text in texts)
-        {
-            LocalizedText localizedText = text.GetComponent<LocalizedText>();
-            if (localizedText != null)
-            {
-                localizedText.SetLocalization();
-            }  
-        }
+        OnLoadLozalization?.Invoke();
     }
 }

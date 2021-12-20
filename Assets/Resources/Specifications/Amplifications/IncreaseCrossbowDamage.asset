@@ -15,8 +15,7 @@ MonoBehaviour:
   _itemName: IncreaseCrossbowDamage
   _itemColor: {r: 0.40784317, g: 1, b: 0.38823533, a: 1}
   _itemSpriteUI: {fileID: -953287667972403004, guid: fbed23d75146c474bb785b2f2fca607c, type: 3}
-  internalId: e951bf0f-e0ef-4d47-ad6b-8c4722bb4f28
-  createdAtTicks: 637649467047046689
+  _isStartingItem: 0
   _amplificationType: 2
   _amplificationIncreaseType: 1
-  _amplificationPowers: 04000000080000000e000000
+  _amplificationPowers: 030000000800000014000000

@@ -85,7 +85,9 @@ public class StaticEnemyAttack : MonoBehaviour
                 OnTargetBecameNull?.Invoke();
             }
             else
+            {
                 TurnToTarget();
+            }        
         }      
     }
 

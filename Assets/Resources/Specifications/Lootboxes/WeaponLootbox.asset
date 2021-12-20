@@ -17,5 +17,5 @@ MonoBehaviour:
   _mainSprite: {fileID: -875052934587353447, guid: 4ea3f31f642b99e4897d9b2d16ae349b, type: 3}
   _lootboxColor: {r: 0.8862746, g: 0.17254902, b: 0.17254902, a: 1}
   _nameKey: WeaponLootbox
-  _price: 2000
+  _price: 1500
   _isAdLootbox: 0

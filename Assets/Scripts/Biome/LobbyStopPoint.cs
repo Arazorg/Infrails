@@ -8,8 +8,7 @@ public class LobbyStopPoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        string trolleyTag = "Trolley";
-        if (collision.tag.Contains(trolleyTag))
+        if (collision.TryGetComponent(out Trolley trolley))
         {
             if (_isGoToGame)
             {

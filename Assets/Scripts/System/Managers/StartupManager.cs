@@ -20,6 +20,6 @@ public class StartupManager : MonoBehaviour
     {
         SettingsInfo.Instance.Load();
         PlayerProgress.Instance.Load();
-        LocalizationManager.LoadLocalizedText(SettingsInfo.Instance.CurrentLocalization);
+        LocalizationManager.Instance.LoadLocalization(SettingsInfo.Instance.CurrentLocalization);
     }
 }

@@ -16,13 +16,13 @@ public class LevelInfoPanelUI : MonoBehaviour
 
     public void SetLevelInfoPanel(int levelNumber, List<BiomeData> currentBiomesData)
     {
-        _levelText.text = $"{LocalizationManager.GetLocalizedText(LevelKey)}{levelNumber}";
+        _levelText.text = $"{LocalizationManager.Instance.GetLocalizedText(LevelKey)}{levelNumber}";
         int biomesCounter = 0;
         string biomesText = "";
 
         foreach (var biomeData in currentBiomesData)
         {
-            biomesText += $" - {LocalizationManager.GetLocalizedText(biomeData.BiomeName)}";
+            biomesText += $" - {LocalizationManager.Instance.GetLocalizedText(biomeData.BiomeName)}";
             _biomesImages[biomesCounter].sprite = biomeData.BiomeElement.ElementSpriteUI;
             biomesCounter++;
         }

@@ -18,4 +18,4 @@ MonoBehaviour:
   _productColor: {r: 0.3019608, g: 0.5647059, b: 0.8862746, a: 1}
   _productSpriteSize: {x: 275, y: 275}
   _productType: 1
-  _price: 50
+  _price: 30

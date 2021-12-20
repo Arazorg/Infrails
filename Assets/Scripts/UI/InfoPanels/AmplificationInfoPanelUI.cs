@@ -9,22 +9,21 @@ public class AmplificationInfoPanelUI : MonoBehaviour, IInfoPanel
 
     [Header("Localized Texts")]
     [SerializeField] private LocalizedText _nameText;
-    [SerializeField] private LocalizedText _powerTypeText;
 
     [Header("Texts")]
-    [SerializeField] private TextMeshProUGUI _levelValueText;
-    [SerializeField] private TextMeshProUGUI _powerValueText;
+    [SerializeField] private TextMeshProUGUI _levelText;
+    [SerializeField] private TextMeshProUGUI _bonusText;
 
-    private AmplificationData _amplificationData;
+    private AmplificationData _data;
 
     public void SetPanelInfo(ItemData itemData)
     {
-        _amplificationData = itemData as AmplificationData;
-        _image.sprite = _amplificationData.ItemSpriteUI;
+        _data = itemData as AmplificationData;
+        _image.sprite = _data.ItemSpriteUI;
         _nameText.GetComponent<TextMeshProUGUI>().color = itemData.ItemColor;
-        _nameText.SetLocalization(_amplificationData.ItemName);
-        _levelValueText.text = (_amplificationData.Level).ToString();
-        SetPowerText(_amplificationData);
+        _nameText.SetLocalization(_data.ItemName);
+        _levelText.text = LocalizationManager.Instance.GetLocalizedText("AmplificationLevel") + (_data.Level).ToString();
+        SetBonusText(_data);
     }
 
     public void DestroyPanel()
@@ -34,27 +33,25 @@ public class AmplificationInfoPanelUI : MonoBehaviour, IInfoPanel
 
     public void DeleteAmplification()
     {
-        GetComponent<AmplificationDeletePanelUI>().DeleteAmplification(_amplificationData);
+        GetComponent<AmplificationDeletePanelUI>().DeleteAmplification(_data);
         GetComponentInParent<AmplificationsUI>().HideAmplificationPanel();
     }
 
-    private void SetPowerText(AmplificationData amplificationData)
+    private void SetBonusText(AmplificationData amplificationData)
     {
         int power = amplificationData.AmplificationPowers[amplificationData.Level - 1];
+        string powerKey = amplificationData.CurrentAmplificationType.ToString();
 
         switch (amplificationData.CurrentAmplificationIncreaseType)
         {
             case AmplificationData.AmplificationIncreaseType.Percent:
-                _powerValueText.text = string.Format("+{0}%", power);
+                _bonusText.text = string.Format("+{0}% {1}", power, LocalizationManager.Instance.GetLocalizedText(powerKey));
                 break;
             case AmplificationData.AmplificationIncreaseType.Add:
-                _powerValueText.text = string.Format("+{0}", power);
+                _bonusText.text = string.Format("+{0} {1}", power, LocalizationManager.Instance.GetLocalizedText(powerKey));
                 break;
         }
 
-        string powerKey = amplificationData.CurrentAmplificationType.ToString();
-        _powerTypeText.SetLocalization(powerKey);
-        _powerTypeText.GetComponent<TextMeshProUGUI>().color = amplificationData.ItemColor;
-        _powerValueText.color = amplificationData.ItemColor;
+        _bonusText.color = amplificationData.ItemColor;
     }
 }

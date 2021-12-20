@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Element/Standart Element", fileName = "New Element")]
 public class Element : ScriptableObject
 {
+    private const float StandartInteraction = 1;
+
     [SerializeField] private Type _type;
     [SerializeField] private List<ElementResistance> _elementsResistances;
     [SerializeField] private Sprite _elementSpriteUI;
@@ -23,13 +25,21 @@ public class Element : ScriptableObject
         Void
     }
 
-    public float GetElementInteractionByType(Type elementType)
+    public int GetDamageWithResistance(int damage, Type type)
     {
-        float standartInteraction = 1;
-        ElementResistance elementResistance = _elementsResistances.Where(s => s.ElementType == elementType).FirstOrDefault();
+        ElementResistance elementResistance = _elementsResistances.Where(s => s.ElementType == type).FirstOrDefault();
+        if (elementResistance != null)
+            return (int)(damage * elementResistance.Resistance);
+        else
+            return damage;
+    }
+
+    public float GetElementInteractionByType(Type type)
+    {
+        ElementResistance elementResistance = _elementsResistances.Where(s => s.ElementType == type).FirstOrDefault();
         if (elementResistance != null)
             return elementResistance.Resistance;
         else
-            return standartInteraction;
+            return StandartInteraction;
     }
 }

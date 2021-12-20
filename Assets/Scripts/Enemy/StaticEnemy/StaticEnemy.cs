@@ -25,6 +25,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         TryGetCharacter(character);
         InitStates();
         OnInit();
+        SetHealth();
     }
 
     public void InitScripts(List<Transform> teleportationPoints, List<IEnemyLaserTarget> targets)
@@ -100,7 +101,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     public override void BulletHit(PlayerBullet bullet)
     {
-        int damageWithResistance = (int)(bullet.Damage * Data.EnemyElement.GetElementInteractionByType(bullet.ElementType));
+        int damageWithResistance = (Data.EnemyElement.GetDamageWithResistance(bullet.Damage, bullet.ElementType));
         GetDamage(damageWithResistance);
         bullet.Accept(Transform, this);
     }
@@ -138,6 +139,18 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
             _enemyAttack.Character = Character;
             Character.OnCharacterDeath += DeathWithoutEffect;
         }
+    }
+
+    private void SetHealth()
+    {
+        int minHealthForLevel = 1;
+        int numberBiomeForGain = 8;
+        int bonusHealthForBiomes = 30;
+
+        int healthForLevel = CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain + minHealthForLevel;
+        int bonusHealth = (CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain) * bonusHealthForBiomes;
+        Health = bonusHealth + (Data.MaxHealth + (healthForLevel * CurrentGameInfo.Instance.ReachedBiomeNumber));
+        Debug.Log(Health);
     }
 
     private void InitStates()

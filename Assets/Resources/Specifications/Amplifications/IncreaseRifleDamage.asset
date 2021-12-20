@@ -15,8 +15,7 @@ MonoBehaviour:
   _itemName: IncreaseRifleDamage
   _itemColor: {r: 1, g: 0.59607846, b: 0.0627451, a: 1}
   _itemSpriteUI: {fileID: 4833722169136144061, guid: fbed23d75146c474bb785b2f2fca607c, type: 3}
-  internalId: 43c39dcd-7bcd-4e23-b7c9-7b8158b4e02f
-  createdAtTicks: 637649467077095564
+  _isStartingItem: 0
   _amplificationType: 2
   _amplificationIncreaseType: 1
-  _amplificationPowers: 04000000090000000e000000
+  _amplificationPowers: 010000000200000004000000

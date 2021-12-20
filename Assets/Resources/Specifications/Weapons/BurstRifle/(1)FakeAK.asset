@@ -33,4 +33,4 @@ MonoBehaviour:
   _bulletSpawnPosition: {x: -0.15, y: 3.9}
   _bulletData: {fileID: 11400000, guid: bc9532ac9eb791549b683b8e7e763923, type: 2}
   _numberOfBullets: 3
-  _shotsDelay: 0.16499999
+  _shotsDelay: 0.2

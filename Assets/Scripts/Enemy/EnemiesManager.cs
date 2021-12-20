@@ -52,7 +52,7 @@ public class EnemiesManager : MonoBehaviour
     {
         foreach (var spawnPoint in spawnPoints)
         {
-            float maneCrystalSpawnChance = 0.3f;
+            float maneCrystalSpawnChance = 0.4f;
 
             if (Random.Range(0f, 1f) < maneCrystalSpawnChance)
             {
@@ -60,7 +60,7 @@ public class EnemiesManager : MonoBehaviour
             }
             else
             {
-                float eggSpawnChance = 0.3f;
+                float eggSpawnChance = 0.6f;
 
                 if (Random.Range(0f, 1f) < eggSpawnChance)
                 {
@@ -68,7 +68,7 @@ public class EnemiesManager : MonoBehaviour
                 }
                 else
                 {
-                    float repairKitSpawnChance = 0.25f;
+                    float repairKitSpawnChance = 0.3f;
                     if (Random.Range(0f, 1f) < repairKitSpawnChance)
                         _staticEnemyTargets.Add(SpawnEnemyToParent(_repairKitData, spawnPoint) as DestroyableKit);
                     else

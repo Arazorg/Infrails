@@ -15,8 +15,7 @@ MonoBehaviour:
   _itemName: IncreaseShotgunDamage
   _itemColor: {r: 1, g: 0.41176474, b: 0.18039216, a: 1}
   _itemSpriteUI: {fileID: 5100069199860571404, guid: fbed23d75146c474bb785b2f2fca607c, type: 3}
-  internalId: 54019fab-2908-4bc1-9a35-483c6156f82c
-  createdAtTicks: 637649467077570844
+  _isStartingItem: 0
   _amplificationType: 2
   _amplificationIncreaseType: 1
-  _amplificationPowers: 010000000200000004000000
+  _amplificationPowers: 010000000200000003000000

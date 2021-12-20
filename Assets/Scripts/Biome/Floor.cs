@@ -14,13 +14,16 @@ public class Floor : MonoBehaviour
 
     public void SetNeedLightsIntensity(float neededGlobalLigthIntensity)
     {
+        float disableLightDuration = 3f;
+        float enableLightDuration = 1f;
+
         _timeElapsedLightIntensity = 0;
         _neededGlobalLigthIntensity = neededGlobalLigthIntensity;
 
         if (neededGlobalLigthIntensity == 0)
-            _lightOnOffDuration = 3f;
+            _lightOnOffDuration = disableLightDuration;
         else
-            _lightOnOffDuration = 1f;
+            _lightOnOffDuration = enableLightDuration;
     }
 
     private void Update()

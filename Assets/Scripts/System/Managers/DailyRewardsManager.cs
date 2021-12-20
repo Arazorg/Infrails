@@ -70,13 +70,9 @@ public class DailyRewardsManager : MonoBehaviour
     public DateTime GetDailyRewardSavedTime()
     {
         if (_dailyRewardsData.NextDailyRewardTime != string.Empty)
-        {
             return Convert.ToDateTime(_dailyRewardsData.NextDailyRewardTime);
-        }
         else
-        {
             return DateTime.MinValue;
-        }
     }
 
     public void SetDailyRewardTime(string nextTime)
@@ -116,13 +112,9 @@ public class DailyRewardsManager : MonoBehaviour
     private void Awake()
     {
         if (Instance != null)
-        {
             Destroy(gameObject);
-        }
         else
-        {
             Instance = this;
-        }
 
         _saveSystem = new SaveSystem();
     }
@@ -180,14 +172,10 @@ public class DailyRewardsManager : MonoBehaviour
             yield return new WaitForSeconds(delay);
 
             if (GetDailyRewardSavedTime() <= DateTime.Now)
-            {
                 OnDailyRewardAvailable?.Invoke();
-            }
 
             if (GetAdsRewardsSavedTime() <= DateTime.Now)
-            {
                 CheckAdsRewardsAvailability();
-            }
         }
     }
 }

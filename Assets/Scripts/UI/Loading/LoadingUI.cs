@@ -9,7 +9,7 @@ public class LoadingUI : MonoBehaviour
     private const string AnyReferenceText = "ANY REFERENCE TO LIVING PERSONS OR REAL EVENTS IS PURELY COINCIDENTAL";
     private const string LoadingKey = "Loading";
     private const string HintKey = "LoadingHint";
-    private const int CountOfHints = 5;
+    private const int NumberOfHints = 10;
 
     [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _titleText;
@@ -40,17 +40,14 @@ public class LoadingUI : MonoBehaviour
         else
         {
             _titleText.GetComponent<LocalizedText>().SetLocalization(LoadingKey);
-            int numberOfHint = Random.Range(1, CountOfHints);
+            int numberOfHint = Random.Range(0, NumberOfHints);
             _sideText.GetComponent<LocalizedText>().SetLocalization(string.Format("{0}{1}", HintKey, numberOfHint));
 
-            if (CurrentGameInfo.Instance != null)
-            {
-                _characterImage.color = Color.white;
-                _weaponImage.color = Color.white;
-                _trolleyImage.sprite = CurrentGameInfo.Instance.TrolleyData.ItemSpriteUI;
-                _characterImage.sprite = CurrentGameInfo.Instance.CharacterData.CharacterSprite;
-                _weaponImage.sprite = CurrentGameInfo.Instance.CharacterData.CharacterStartWeapon.MainSprite;
-            }
+            _characterImage.color = Color.white;
+            _weaponImage.color = Color.white;
+            _trolleyImage.sprite = CurrentGameInfo.Instance.TrolleyData.ItemSpriteUI;
+            _characterImage.sprite = CurrentGameInfo.Instance.CharacterData.CharacterSprite;
+            _weaponImage.sprite = CurrentGameInfo.Instance.CharacterData.CharacterStartWeapon.MainSprite;
         }
     }
 

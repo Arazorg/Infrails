@@ -3,14 +3,16 @@ using UnityEngine;
 
 public class Biome : MonoBehaviour
 {
+    [SerializeField] private Transform _levelFloorsParentObject;
+
+    [Header("Prefabs")]
     [SerializeField] private GameObject _floorPrefab;
     [SerializeField] private GameObject _endWallPrefab;
-    [SerializeField] private Transform _levelFloorsParentObject;
 
     private BiomeData _biomeData;
     private List<Transform> _staticEnemyTeleportationPoints = new List<Transform>();
     private Rail _lastRail;
-    private GameObject _endWall;
+    private EndWall _endWall;
 
     public Vector3 Init(BiomeData data, BiomeData nextBiomeData)
     {
@@ -19,7 +21,7 @@ public class Biome : MonoBehaviour
         int maxLenghtOfLevel = 7;
         Vector3 nextLevelSpawnPosition = CreateEnvironment(Random.Range(minLengthOfLevel, maxLenghtOfLevel));
         SetNextBiomeData(nextBiomeData);
-        SetBiomeLightsState(true);
+        SetBiomeLightsState(GameConstants.TurnOn);
         return nextLevelSpawnPosition;
     }
 
@@ -77,11 +79,10 @@ public class Biome : MonoBehaviour
     {
         int currentRailsPatternNumber = GetRailsPatternNumber(lastRailsPatternNumber);
         lastRailsPatternNumber = currentRailsPatternNumber;
-        RailsPattern railsPattern = Instantiate(_biomeData.RailsPrefabs[currentRailsPatternNumber], floor.transform).GetComponent<RailsPattern>();
+        var railsPattern = Instantiate(_biomeData.RailsPrefabs[currentRailsPatternNumber], floor.transform).GetComponent<RailsPattern>();
         foreach (var point in railsPattern.StaticEnemiesTeleportationPoints)
             _staticEnemyTeleportationPoints.Add(point);
         
-
         if (_lastRail != null)
             _lastRail.NextRail = railsPattern.FirstRail;
 
@@ -108,18 +109,12 @@ public class Biome : MonoBehaviour
         return currentRailsPatternNumber;
     }
 
-    private Vector3 CreateEndWall(Vector3 nextFloorSpawnPosition)
+    private Vector3 CreateEndWall(Vector3 endWallPosition)
     {
-        Vector3 endWallPosition = nextFloorSpawnPosition;
-
-        _endWall = Instantiate(_endWallPrefab, transform);
-        _endWall.transform.position = endWallPosition;
-        _endWall.GetComponent<SpriteRenderer>().sprite = _biomeData.EndWallSprite;
-
-        var endWallFinishRail = _endWall.GetComponent<EndWall>().FinishRail;
-        _lastRail.NextRail = endWallFinishRail;
-        LevelSpawner.Instance.CurrentBiomeFinishRail = endWallFinishRail.GetComponent<Rail>();
-
-        return _endWall.GetComponent<EndWall>().NextLevelSpawnPoint.position;
+        _endWall = Instantiate(_endWallPrefab, transform).GetComponent<EndWall>();
+        _endWall.Init(endWallPosition, _biomeData.EndWallSprite);
+        _lastRail.NextRail = _endWall.FinishRail;
+        LevelSpawner.Instance.CurrentBiomeFinishRail = _endWall.FinishRail;
+        return _endWall.NextLevelSpawnPoint.position;
     }
 }

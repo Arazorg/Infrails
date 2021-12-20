@@ -12,4 +12,10 @@ public class ShotgunData : WeaponData
     public int MaxNumberOfBullets => _maxNumberOfBullets;
 
     public float BulletSpeedSpread => _bulletSpeedSpread;
+
+    public override float GetDPS()
+    {
+        var damage = Damage * ((MinNumberOfBullets + MaxNumberOfBullets) / 2);
+        return (damage + (damage * CritChance)) / FireRate;
+    }
 }

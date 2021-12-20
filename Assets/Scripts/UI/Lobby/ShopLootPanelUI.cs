@@ -53,7 +53,6 @@ public class ShopLootPanelUI : BaseUI, IUIPanel
 
     public void InitLootbox(LootboxData lootboxData)
     {
-        Debug.Log(lootboxData.NameKey);
         _lootboxUI.Init(lootboxData);
     }
 

@@ -12,8 +12,7 @@ public class LockCameraAxis : CinemachineExtension
     [Tooltip("Lock the camera's Z position to this value")]
     public float m_XPosition = 0f;
 
-    protected override void PostPipelineStageCallback(
-        CinemachineVirtualCameraBase vcam,
+    protected override void PostPipelineStageCallback(CinemachineVirtualCameraBase vcam,
         CinemachineCore.Stage stage, ref CameraState state, float deltaTime)
     {
         if (enabled && stage == CinemachineCore.Stage.Body)

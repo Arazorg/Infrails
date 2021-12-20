@@ -15,7 +15,7 @@ public class EnemyDebuffs : MonoBehaviour
     public void StartStunning(IEnemyStateSwitcher enemyStateSwitcher)
     {
         _enemyStateSwitcher = enemyStateSwitcher;
-        float stunningDuration = 1.5f;
+        float stunningDuration = 2f;
         if (_stunningCoroutine == null)
         {
             _dizzinesEffect.SetActive(true);
@@ -69,10 +69,15 @@ public class EnemyDebuffs : MonoBehaviour
     {
         while (Time.time < _bleedingFinishTime)
         {
-            int bleedingDamage = 1;
-            float timeBetweenDamage = 0.75f;
+            float timeBetweenDamage = 1f;
+            int partOfHealth = 10;
+            int minDamage = 1;
+
             yield return new WaitForSeconds(timeBetweenDamage);
-            _enemy.GetDamage(bleedingDamage);
+            if(_enemy.Health / partOfHealth < minDamage)
+                _enemy.GetDamage(minDamage);
+            else
+                _enemy.GetDamage(_enemy.Health / partOfHealth);
         }
 
         _bleedingCoroutine = null;

@@ -16,7 +16,6 @@ public class PopUpDamageText : MonoBehaviour
     private float _currentPopUpDamage;
     private float _popUpTextFinishTime;
 
-
     private void Start()
     {
         _startSize = _text.fontSize;

@@ -14,8 +14,6 @@ public class AmplificationLevel
     {
         float maxAvailableLevel = 3;
         if(Level + 1 <= maxAvailableLevel)
-        {
             Level++;
-        }
     }
 }

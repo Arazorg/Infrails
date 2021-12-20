@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class FlyingEnemyMovement : MonoBehaviour
 {
-    private const int Speed = 30;
-
     [SerializeField] private Transform enemyShadowTransform;
 
     private Transform _target;
@@ -46,9 +44,10 @@ public class FlyingEnemyMovement : MonoBehaviour
     }
 
     private void MoveToNextPoint()
-    {
+    { 
+        int speed = 28;
         if (_isMove)
-            transform.position = Vector2.MoveTowards(transform.position, _needPosition, Speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, _needPosition, speed * Time.deltaTime);
 
         float distanceToSetNextPoint = 1f;
         if (Vector3.Distance(transform.position, _needPosition) < distanceToSetNextPoint)
@@ -80,7 +79,8 @@ public class FlyingEnemyMovement : MonoBehaviour
                 _needPosition.y = _target.position.y + Random.Range(-minOffsetY, maxOffsetY);
             }
 
-            if (Random.value < 0.25f)
+            float changeSpawnPointChance = 0.25f;
+            if (Random.value < changeSpawnPointChance)
                 _spawnPointPosition = new Vector2(_spawnPointPosition.x * -1, _spawnPointPosition.y);
         }
 

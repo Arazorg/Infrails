@@ -23,6 +23,8 @@ public abstract class WeaponData : ItemData
     [SerializeField] private Vector2 _bulletSpawnPosition;
     [SerializeField] private BulletData _bulletData;
 
+    [SerializeField] private float _DPS;
+
     private int _starsNumber = 1;
 
     public Weapon Prefab => _prefab;
@@ -54,4 +56,11 @@ public abstract class WeaponData : ItemData
     public float Scatter => _scatter;
 
     public int Level => _level;
+
+    public abstract float GetDPS();
+
+    private void OnValidate()
+    {
+        _DPS = GetDPS();
+    }
 }

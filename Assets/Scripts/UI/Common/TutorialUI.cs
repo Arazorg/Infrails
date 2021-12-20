@@ -134,7 +134,7 @@ public class TutorialUI : BaseUI, IUIPanel
         string animatorKey = "isSpeaking";
 
         _isPhraseSpeedUp = false;
-        string printableText = LocalizationManager.GetLocalizedText(tutorialItem.PhraseKey);
+        string printableText = LocalizationManager.Instance.GetLocalizedText(tutorialItem.PhraseKey);
         _guideAnimator.SetBool(animatorKey, true);
         yield return StartCoroutine(_tutorialText.TypingText(printableText, timeOfTyping));
         _guideAnimator.SetBool(animatorKey, false);

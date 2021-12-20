@@ -22,7 +22,8 @@ public class CharacterWeapon : MonoBehaviour
     {
         _characterData = characterData;
         _currentElement = LevelSpawner.Instance.CurrentBiomeData.BiomeElement;
-        characterData.CharacterStartWeapon.StarsNumber = 1;
+        int startStarsNumber = 1;
+        characterData.CharacterStartWeapon.StarsNumber = startStarsNumber;
         SpawnWeapon(characterData.CharacterStartWeapon);
     }
 
@@ -46,5 +47,4 @@ public class CharacterWeapon : MonoBehaviour
         OnElementChanged?.Invoke(_currentElement);
         OnWeaponChanged?.Invoke(data);
     }
-
 }

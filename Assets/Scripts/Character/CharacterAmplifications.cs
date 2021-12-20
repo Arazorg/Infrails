@@ -7,8 +7,9 @@ public class CharacterAmplifications : MonoBehaviour
 
     private List<AmplificationData> _currentAmplificationsData;
 
-    public delegate void AddAmplification(List<AmplificationData> currentAmplificationsData);
-    public event AddAmplification OnAddAmplification;
+    public delegate void ChangeAmplifications(List<AmplificationData> currentAmplificationsData);
+
+    public event ChangeAmplifications OnChangeAmplifications;
 
     public List<AmplificationData> CurrentAmplificationsData => _currentAmplificationsData;
 
@@ -22,7 +23,7 @@ public class CharacterAmplifications : MonoBehaviour
         if (_currentAmplificationsData.Count < MaxNumberAmplifications)
         {
             _currentAmplificationsData.Add(amplificationData);
-            OnAddAmplification?.Invoke(_currentAmplificationsData);
+            OnChangeAmplifications?.Invoke(_currentAmplificationsData);
             return true;
         }
 
@@ -44,6 +45,6 @@ public class CharacterAmplifications : MonoBehaviour
             }         
         }
 
-        OnAddAmplification?.Invoke(_currentAmplificationsData);
+        OnChangeAmplifications?.Invoke(_currentAmplificationsData);
     }
 }

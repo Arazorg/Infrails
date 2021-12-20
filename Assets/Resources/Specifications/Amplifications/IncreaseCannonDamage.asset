@@ -15,8 +15,7 @@ MonoBehaviour:
   _itemName: IncreaseCannonDamage
   _itemColor: {r: 1, g: 0.654902, b: 0.28235295, a: 1}
   _itemSpriteUI: {fileID: -684905841876487883, guid: fbed23d75146c474bb785b2f2fca607c, type: 3}
-  internalId: 0dd8b592-e9fc-4d9b-aa66-c24b1a4b968e
-  createdAtTicks: 637649466913463437
+  _isStartingItem: 0
   _amplificationType: 2
   _amplificationIncreaseType: 1
-  _amplificationPowers: 020000000400000006000000
+  _amplificationPowers: 020000000500000014000000

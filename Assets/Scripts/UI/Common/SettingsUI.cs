@@ -41,7 +41,7 @@ public class SettingsUI : MonoBehaviour
 
     public void ChangeLanguage(string fileName)
     {
-        LocalizationManager.LoadLocalizedText(fileName);
+        LocalizationManager.Instance.LoadLocalization(fileName);
     }
 
     private void SetButtons()

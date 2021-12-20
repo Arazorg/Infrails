@@ -24,7 +24,7 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: -0.05, y: 2}
   _bulletSpeed: 125
-  _damage: 5
+  _damage: 7
   _critChance: 0.25
   _fireRate: 0.75
   _bulletScaleFactor: 1.2
@@ -33,4 +33,4 @@ MonoBehaviour:
   _bulletSpawnPosition: {x: -0.225, y: 4}
   _bulletData: {fileID: 11400000, guid: bc9532ac9eb791549b683b8e7e763923, type: 2}
   _numberOfBullets: 4
-  _shotsDelay: 0.125
+  _shotsDelay: 0.175

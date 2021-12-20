@@ -27,8 +27,6 @@ public class LobbyEnvironmentManager : MonoBehaviour
     [SerializeField] private float _selectionUICameraSize;
     [SerializeField] private float _lobbyUICameraSize;
 
-    [SerializeField] private List<GameObject> _clickableObjects;
-
     private TrolleyMovement _trolleyMovement;
     private List<SelectableCharacter> _selectableCharacters = new List<SelectableCharacter>();
     private SelectableCharacter _currentSelectableCharacter;

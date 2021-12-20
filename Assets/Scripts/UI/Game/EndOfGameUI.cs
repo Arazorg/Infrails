@@ -175,23 +175,30 @@ public class EndOfGameUI : BaseUI, IUIPanel
 
     private void DoubleReward()
     {
-        AdsManager.Instance.OnFinishAd -= DoubleReward;
-        PlayerProgress.Instance.PlayerMoney += CurrentGameInfo.Instance.CountOfEarnedMoney;
-        _countOfEarnedMoneyText.text = (CurrentGameInfo.Instance.CountOfEarnedMoney * 2).ToString();
-        _doubleRewardButton.Hide();
-        _doubleMoneyImage.Show();
+        if(_isDoubleRewardAvailable)
+        {
+            AdsManager.Instance.OnFinishAd -= DoubleReward;
+            PlayerProgress.Instance.PlayerMoney += CurrentGameInfo.Instance.CountOfEarnedMoney;
+            _countOfEarnedMoneyText.text = (CurrentGameInfo.Instance.CountOfEarnedMoney * 2).ToString();
+            _isDoubleRewardAvailable = false;
+            _doubleRewardButton.Hide();
+            _doubleMoneyImage.Show();
+        }       
     }
 
     private IEnumerator Sharing()
     {
         _doubleRewardButton.HideImmediate();
+        _doubleMoneyImage.HideImmediate();
         _goToLobbyButton.HideImmediate();
         _shareButton.HideImmediate();
         yield return _shareButton.GetComponent<ShareButtonUI>().Share();
+
         if (_isDoubleRewardAvailable)
             _doubleRewardButton.ShowImmediate();
         else
             _doubleMoneyImage.ShowImmediate();
+
         _goToLobbyButton.ShowImmediate();
         _shareButton.ShowImmediate();
     }

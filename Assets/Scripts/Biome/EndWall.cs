@@ -3,12 +3,12 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class EndWall : MonoBehaviour
 {
+    [SerializeField] private Transform _nextLevelSpawnPoint;
+    [SerializeField] private Rail _finishRail;
+
     [Header("Sprite Renderers")]
     [SerializeField] private SpriteRenderer _endWallFloor;
     [SerializeField] private SpriteRenderer _plateSpriteRenderer;
-
-    [SerializeField] private Transform _nextLevelSpawnPoint;
-    [SerializeField] private Rail _finishRail;
 
     private Light2D _nextLevelLight;
     private float _lightOnOffDuration = 2f;
@@ -18,6 +18,12 @@ public class EndWall : MonoBehaviour
     public Transform NextLevelSpawnPoint => _nextLevelSpawnPoint;
 
     public Rail FinishRail => _finishRail;
+
+    public void Init(Vector3 position, Sprite sprite)
+    {
+        transform.position = position;
+        GetComponent<SpriteRenderer>().sprite = sprite;
+    }
 
     public void SetEndWallEnvironment(BiomeData nextLevelData, Sprite endWallFloorSprite)
     {

@@ -13,7 +13,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
 
     private int _health;
     private int _armor;
-    private int _money = 1000;
+    private int _money;
     private bool _isDeath;
     private bool _isCanReborn;
 
@@ -52,7 +52,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
 
     public void Init(CharacterData data)
     {
-        GetComponents();
+        SetComponents();
         _characterData = data;
         _animator.runtimeAnimatorController = _characterData.AnimatorController;
         _boxCollider2D.size = _characterData.ColliderSize;
@@ -130,7 +130,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         _trolleyMovement.StopSpeedDebaff();
     }
 
-    private void GetComponents()
+    private void SetComponents()
     {
         _animator = GetComponent<Animator>();
         _boxCollider2D = GetComponent<BoxCollider2D>();

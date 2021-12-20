@@ -28,11 +28,17 @@ public class Missile : PlayerBullet
 
     private void ExplosionDamage(Collider2D[] colliders)
     {
+        int partOfHealth = 7;
+        int minDamage = 2;
         foreach (var collider in colliders)
         {
-            var enemy = collider.GetComponent<Enemy>();
-            if (enemy != null)
-                enemy.GetDamage(Damage);
+            if (collider.TryGetComponent(out Enemy enemy))
+            {
+                if(enemy.Health / partOfHealth < 2)
+                    enemy.GetDamage(minDamage);
+                else
+                    enemy.GetDamage(enemy.Health / partOfHealth);
+            }             
         }
     }
 }

@@ -15,8 +15,6 @@ public abstract class Bullet : MonoBehaviour
 
     public int Damage => _damage;
 
-    public float CritChance => _critChance;
-
     public Color Init(WeaponData weaponData, WeaponCharacteristics weaponCharacteristics, Element.Type elementType)
     {
         Data = weaponData.BulletData;
@@ -80,6 +78,11 @@ public abstract class Bullet : MonoBehaviour
     {
         _damage = weaponCharacteristics.Damage;
         _critChance = weaponCharacteristics.CritChance;
+        if (Random.value < _critChance)
+        {
+            transform.localScale *= 1.25f;
+            _damage *= 2;
+        }         
     }
 
     private Color GetColorByElementType(Element.Type element)

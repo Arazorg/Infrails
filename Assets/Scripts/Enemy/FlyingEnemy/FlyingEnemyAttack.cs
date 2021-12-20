@@ -15,7 +15,6 @@ public class FlyingEnemyAttack : MonoBehaviour
     private float _stopAttackTime;
     private bool _isFacingRight;
 
-
     public delegate void AttackFinished();
 
     public event AttackFinished OnAttackFinished;

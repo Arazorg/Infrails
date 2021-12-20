@@ -23,10 +23,10 @@ MonoBehaviour:
   _handsPositions:
   - {x: 0, y: 0}
   - {x: -0.1, y: 2.95}
-  _bulletSpeed: 145
-  _damage: 15
+  _bulletSpeed: 175
+  _damage: 33
   _critChance: 0.4
-  _fireRate: 0.45
+  _fireRate: 0.35
   _bulletScaleFactor: 1.5
   _scatter: 5
   _level: 2

@@ -9,7 +9,6 @@ public class ArrowData : BulletData
 
     public List<ArrowsSprites> StickedArrowSprites => _stickedArrowsSprites;
 
-
     [Serializable]
     public struct ArrowsSprites
     {

@@ -47,6 +47,12 @@
     },	
 	
 	{
+      "key": "Amplifications",
+      "value": "Усиления"
+    },
+	
+	
+	{
       "key": "YourAmplifications",
       "value": "Твои усиления"
     },
@@ -222,6 +228,11 @@
     },
 	
 	{
+      "key": "NoMoney",
+      "value": "Ну как там с деньгами?"
+    },
+	
+	{
       "key": "NoMoneyAds",
       "value": "Награды закончились"
     },
@@ -245,6 +256,16 @@
       "key": "ForAds",
       "value": "За рекламу!"
     },
+	
+	{
+      "key": "Take",
+      "value": "Принять"
+    },	
+	
+	{
+      "key": "Delete",
+      "value": "Удалить"
+    },	
 	
 	{
       "key": "Free",
@@ -427,8 +448,8 @@
     },
 
 	{
-      "key": "IncreaseLaserDamage",
-      "value": "Увеличение урона лазеров"
+      "key": "IncreaseIncreaseRocketLauncherDamageDamage",
+      "value": "Увеличение урона ракетниц"
     },
 	
 	{
@@ -452,8 +473,8 @@
     },
 		
 	{
-      "key": "IncreaseSkillDuration",
-      "value": "Увеличение длительности скилла"
+      "key": "IncreaseSkillCooldown",
+      "value": "Уменьшение отката скилла"
     },
 	
 	{

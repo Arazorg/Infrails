@@ -4,10 +4,10 @@ public abstract class Enemy : MonoBehaviour
 {
     protected BoxCollider2D BoxCollider2D;
     protected Character Character;
-    protected int Health;
 
     private EnemyData _data;
     private Animator _animator;
+    private int _health;
     private bool _isGetDamage;
     private bool _isDeath;
 
@@ -25,6 +25,8 @@ public abstract class Enemy : MonoBehaviour
 
     public bool IsGetDamage { get => _isGetDamage; set => _isGetDamage = value; }
 
+    public int Health { get => _health; set => _health = value; }
+
     public abstract void Init(EnemyData data, Transform spawnPoint, Character character);
 
     public abstract void BulletHit(PlayerBullet bullet);
@@ -33,11 +35,11 @@ public abstract class Enemy : MonoBehaviour
     {
         if (_isGetDamage)
         {
-            Health -= damage;
+            _health -= damage;
             OnEnemyDamage?.Invoke(damage);
-            if (Health <= 0)
+            if (_health <= 0)
             {
-                Health = 0;
+                _health = 0;
                 if (!_isDeath)
                 {
                     _isDeath = true;
@@ -55,7 +57,7 @@ public abstract class Enemy : MonoBehaviour
         InitComponents();
         BoxCollider2D.size = Data.ColliderSize;
         BoxCollider2D.offset = Data.ColliderOffset;
-        Health = Data.MaxHealth;
+        _health = Data.MaxHealth;
         _animator.runtimeAnimatorController = Data.AnimatorController;
         _isDeath = false;
     }

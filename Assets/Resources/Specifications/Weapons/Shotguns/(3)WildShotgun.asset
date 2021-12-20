@@ -24,14 +24,15 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: -0.05, y: 3}
   _bulletSpeed: 145
-  _damage: 3
+  _damage: 6
   _critChance: 0.3
-  _fireRate: 0.75
+  _fireRate: 0.55
   _bulletScaleFactor: 1.33
   _scatter: 15
   _level: 2
   _bulletSpawnPosition: {x: -0.45, y: 6.3}
   _bulletData: {fileID: 11400000, guid: 24c9f661abd6e8d42962526965a623c5, type: 2}
-  _minNumberOfBullets: 9
-  _maxNumberOfBullets: 11
+  _DPS: 184.36363
+  _minNumberOfBullets: 12
+  _maxNumberOfBullets: 15
   _bulletSpeedSpread: 0.05

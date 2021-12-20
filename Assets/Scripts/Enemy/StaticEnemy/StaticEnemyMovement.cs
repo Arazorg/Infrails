@@ -14,7 +14,6 @@ public class StaticEnemyMovement : MonoBehaviour
 
     public event ReachedNextPoint OnReachedNextPoint;
 
-
     public void Init(StaticEnemyData staticEnemyData, List<Transform> teleportationPoints)
     {
         _staticEnemyData = staticEnemyData;

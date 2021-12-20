@@ -17,5 +17,5 @@ MonoBehaviour:
   _mainSprite: {fileID: -8376952462570093067, guid: 4ea3f31f642b99e4897d9b2d16ae349b, type: 3}
   _lootboxColor: {r: 0.5921569, g: 0.17254902, b: 0.8745099, a: 1}
   _nameKey: SkillLootbox
-  _price: 4000
+  _price: 1750
   _isAdLootbox: 0

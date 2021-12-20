@@ -21,7 +21,6 @@ public class SelectableCharacter : MonoBehaviour, IPointerDownHandler, IClickabl
 
     public void OnPointerDown(PointerEventData eventData)
     {
-
         if (_isClickable)
             _chooseCharacterEvent.Invoke(this);
     }
@@ -67,7 +66,8 @@ public class SelectableCharacter : MonoBehaviour, IPointerDownHandler, IClickabl
         AudioManager.Instance.PlayEffect(_teleportationEffectClip);
         var teleportationEffect = Instantiate(_teleportaionPrefab, transform.position + _teleportationEffectOffset, Quaternion.identity);
         teleportationEffect.GetComponent<Animator>().runtimeAnimatorController = _data.TeleportationAnimatorController;
-        Destroy(teleportationEffect, 0.5f);
+        float destroyDelay = 0.5f;
+        Destroy(teleportationEffect, destroyDelay);
     }
 
     private void Start()

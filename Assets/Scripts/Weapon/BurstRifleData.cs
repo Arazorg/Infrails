@@ -9,4 +9,10 @@ public class BurstRifleData : WeaponData
     public int NumberOfBullets => _numberOfBullets;
 
     public float ShotsDelay => _shotsDelay;
+
+    public override float GetDPS()
+    {
+        var damage = Damage * NumberOfBullets;
+        return (damage + (damage * CritChance)) / FireRate; 
+    }
 }

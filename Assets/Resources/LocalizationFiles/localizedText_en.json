@@ -30,21 +30,11 @@
       "key": "ShareMessage",
       "value": "Смотри как далеко я добрался! Заходи в Infrails и попробуй повторить!"
     },
-	
-	{
-      "key": "SpeedUp",
-      "value": "Ускорить"
-    },
-	
+
 	{
       "key": "Finish",
       "value": "Завершить"
     },
-	
-	{
-      "key": "NoAmplifications",
-      "value": "Тут пока пусто\n\n :(\n\nЗагляни в магазин, чтобы получить усиления"
-    },	
 	
 	{
       "key": "ChangeMusic",
@@ -55,6 +45,12 @@
       "key": "YourWeapon",
       "value": "Твое оружие"
     },	
+	
+	{
+      "key": "Amplifications",
+      "value": "Усиления"
+    },
+	
 	
 	{
       "key": "YourAmplifications",
@@ -232,14 +228,44 @@
     },
 	
 	{
+      "key": "NoMoney",
+      "value": "Ну как там с деньгами?"
+    },
+	
+	{
+      "key": "NoMoneyAds",
+      "value": "Награды закончились"
+    },
+	
+	{
       "key": "GoToLobby",
       "value": "В лобби"
+    },
+	
+	{
+      "key": "GoToGame",
+      "value": "В игру"
     },
 	
 	{
       "key": "FinishGame",
       "value": "Закончить игру"
     },
+	
+	{
+      "key": "ForAds",
+      "value": "За рекламу!"
+    },
+	
+	{
+      "key": "Take",
+      "value": "Принять"
+    },	
+	
+	{
+      "key": "Delete",
+      "value": "Удалить"
+    },	
 	
 	{
       "key": "Free",
@@ -327,6 +353,26 @@
     },
 	
 	{
+      "key": "HealPotion",
+      "value": "Зелья лечения"
+    },
+	
+	{
+      "key": "HealPotionDescription",
+      "value": "Восстаналивает\n5 здоровья"
+    },
+	
+	{
+      "key": "ElementsPotion",
+      "value": "Зелья подходящей стихии"
+    },
+	
+	{
+      "key": "ElementsPotionDescription",
+      "value": "Устанавливает самую сильную стихию для текущего биома"
+    },
+	
+	{
       "key": "WeaponLootbox",
       "value": "Сундук с оружием"
     },
@@ -358,7 +404,7 @@
 	
 	{
       "key": "LoadingHint2",
-      "value": "У всех врагов есть свои слабости.\nНе стоит пытаться утопить рыб"
+      "value": "У всех врагов есть свои слабости.\nНе стоит пытаться сжечь рыб"
     },
 	
 	{
@@ -373,7 +419,27 @@
 	
 	{
       "key": "LoadingHint5",
-      "value": "ЭКСПЕРЕМЕНТИРУЙ!"
+      "value": "Старайся стрелять в атакующих врагов"
+    },
+	
+	{
+      "key": "LoadingHint6",
+      "value": "Всегда открывай новое оружие на 15 и 30 уровне, враги на них становятся значительно сильней"
+    },
+	
+	{
+      "key": "LoadingHint7",
+      "value": "Молния телепортирующихся врагов замедляет вагонетку"
+    },
+	
+	{
+      "key": "LoadingHint8",
+      "value": "Ты думал тут будет подсказка?\nНет, ты не заслужил"
+    },
+	
+	{
+      "key": "LoadingHint9",
+      "value": "Старайся сперва уничтожить телепортирующегося врага"
     },
 	
 	{
@@ -402,8 +468,8 @@
     },
 
 	{
-      "key": "IncreaseLaserDamage",
-      "value": "Увеличение урона лазеров"
+      "key": "IncreaseIncreaseRocketLauncherDamageDamage",
+      "value": "Увеличение урона ракетниц"
     },
 	
 	{
@@ -427,8 +493,8 @@
     },
 		
 	{
-      "key": "IncreaseSkillDuration",
-      "value": "Увеличение длительности скилла"
+      "key": "IncreaseSkillCooldown",
+      "value": "Уменьшение отката скилла"
     },
 	
 	{
@@ -477,28 +543,33 @@
     },	
 	
 	{
-      "key": "JonhDescription",
-      "value": "Оружейник из далеких земель, женат на своей пушке"
+      "key": "JonhSkill",
+      "value": "С двух рук!"
     },	
 	
 	{
-      "key": "JonhFirstSkill",
-      "value": "С двух рук"
+      "key": "JonhSkillDescription",
+      "value": "Джон на время призывает копию своего оружия"
+    },	
+	
+	{
+      "key": "JonhFirstPassiveSkill",
+      "value": "Сверхточность"
     },
 		
 	{
-      "key": "JonhFirstSkillDescription",
-      "value": "Джон достает второе оружие, берегись!"
+      "key": "JonhFirstPassiveSkillDescription",
+      "value": "Пули Джона всегда летят точно в цель"
     },
 	
 	{
-      "key": "JonhSecondSkill",
-      "value": "БЕРСЕРК!"
+      "key": "JonhSecondPassiveSkill",
+      "value": "Берсерк"
     },
 	
 	{
-      "key": "JonhSecondSkillDescription",
-      "value": "Оружие усиляется получая энергию ярости Джона"
+      "key": "JonhSecondPassiveSkillDescription",
+      "value": "Ярость Джона увеличивает размер пуль и скорость стрельбы"
     },
 	
 	{
@@ -507,28 +578,33 @@
     },
 	
 	{
-      "key": "StivenDescription",
-      "value": "Величайший алхимик современности, может синтезировать взрывчатку из воздуха"
-    },
-	
-	{
-      "key": "StivenFirstSkill",
+      "key": "StivenSkill",
       "value": "Гранатовый дождь"
     },
 	
 	{
-      "key": "StivenFirstSkillDescription",
-      "value": "Чувствуешь запах пороха? Время взорвать тут все!"
+      "key": "StivenSkillDescription",
+      "value": "Ожидаются взрывные осадки"
     },
 	
 	{
-      "key": "StivenSecondSkill",
+      "key": "StivenFirstPassiveSkill",
+      "value": "Бум!"
+    },
+	
+	{
+      "key": "StivenFirstPassiveSkillDescription",
+      "value": "Радиус взрывов увеличивается вдвое!"
+    },
+	
+	{
+      "key": "StivenSecondPassiveSkill",
       "value": "Разрывные пули"
     },
 	
 	{
-      "key": "StivenSecondSkillDescription",
-      "value": "Стивен начиняет свои пули взрывчаткой"
+      "key": "StivenSecondPassiveSkillDescription",
+      "value": "Пули получают шанс взорваться"
     },
 	
 	{
@@ -537,28 +613,33 @@
     },
 	
 	{
-      "key": "JackDescription",
-      "value": "Пират-вампир, вечно голоден, будь начеку рядом с ним"
+      "key": "JackSkill",
+      "value": "Трапеза"
     },
 	
 	{
-      "key": "JackFirstSkill",
+      "key": "JackSkillDescription",
+      "value": "Джек исцеляется забирая силы врагов"
+    },
+	
+	{
+      "key": "JackFirstPassiveSkill",
       "value": "Жажда моря"
     },
 	
 	{
-      "key": "JackFirstSkillDescription",
-      "value": "Джек забирает жизненные силы своих врагов"
+      "key": "JackFirstPassiveSkillDescription",
+      "value": "Джон исцеляется нанося урон"
     },
 	
 	{
-      "key": "JackSecondSkill",
+      "key": "JackSecondPassiveSkill",
       "value": "Сила ночи"
     },
 	
 	{
-      "key": "JackSecondSkillDescription",
-      "value": "Темные силы исцеляют Джона"
+      "key": "JackSecondPassiveSkillDescription",
+      "value": "Силы стоящие за Джоном увеличивают длительность оглушения"
     },
 	
 	{
@@ -567,28 +648,33 @@
     },
 	
 	{
-      "key": "ZXC88Description",
-      "value": "Робот-врач, прислан к нам из будущего для спасения человечества от пандемии"
+      "key": "ZXC88Skill",
+      "value": "Шестеренки"
     },
 	
 	{
-      "key": "ZXC88FirstSkill",
+      "key": "ZXC88SkillDescription",
+      "value": "При получении урона ZXC отвечаем врагам тем же"
+    },
+	
+	{
+      "key": "ZXC88FirstPassiveSkill",
       "value": "Укол адреналина"
     },
 	
 	{
-      "key": "ZXC88FirstSkillDescription",
-      "value": "Ускорение и лечение, а что тебе еще нужно?"
+      "key": "ZXC88FirstPassiveSkillDescription",
+      "value": "Скорость вагонетки увеличивается"
     },
 	
 	{
-      "key": "ZXC88SecondSkill",
+      "key": "ZXC88SecondPassiveSkill",
       "value": "Аптечки из будущего"
     },
 	
 	{
-      "key": "ZXC88SecondSkillDescription",
-      "value": "Аптечки исцеляют в два раза больше здоровья"
+      "key": "ZXC88SecondPassiveSkillDescription",
+      "value": "Аптечки получают бонус к исцелению"
     },
 	
 	{
@@ -597,27 +683,32 @@
     },
 	
 	{
-      "key": "HattoriDescription",
-      "value": "Говорят ему сотни лет, единственный на планете владеет древней магией"
+      "key": "HattoriSkill",
+      "value": "Грозовые тучи"
     },
 	
 	{
-      "key": "HattoriFirstSkill",
+      "key": "HattoriSkillDescription",
+      "value": "Хаттори призывает на помощь небесные силы"
+    },
+	
+	{
+      "key": "HattoriFirstPassiveSkill",
       "value": "Щит страданий"
     },
 	
 	{
-      "key": "HattoriFirstSkillDescription",
-      "value": "Хаттори активирует щит отражающий пули врагов"
+      "key": "HattoriFirstPassiveSkillDescription",
+      "value": "Враги получают часть урона нанесенного Хаттори"
     },
 	
 	{
-      "key": "HattoriSecondSkill",
+      "key": "HattoriSecondPassiveSkill",
       "value": "Поглощение"
     },
 	
 	{
-      "key": "HattoriSecondSkillDescription",
+      "key": "HattoriSecondPassiveSkillDescription",
       "value": "Пули попадающие в Хаттори исцеляют его"
     },
 	
@@ -627,28 +718,33 @@
     },
 	
 	{
-      "key": "ElvisDescription",
-      "value": "Неотразимый маэстро! Самый популярный человек на планете!"
+      "key": "ElvisSkill",
+      "value": "На чей я стороне?"
     },
 	
 	{
-      "key": "ElvisFirstSkill",
+      "key": "ElvisSkillDescription",
+      "value": "Пули врагов начинают наносить урон врагам"
+    },
+	
+	{
+      "key": "ElvisFirstPassiveSkill",
       "value": "Блеск софитов"
     },
 	
 	{
-      "key": "ElvisFirstSkillDescription",
-      "value": "Элвис очаровывает врагов превращая их в союзников"
+      "key": "ElvisFirstPassiveSkillDescription",
+      "value": "Элвис получает возможность уклониться от удара"
     },
 	
 	{
-      "key": "ElvisSecondSkill",
+      "key": "ElvisSecondPassiveSkill",
       "value": "Помощь фанатов"
     },
 	
 	{
-      "key": "ElvisSecondSkillDescription",
-      "value": "Поддержка фанатов Элвиса увеличивает шанс и урон крита"
+      "key": "ElvisSecondPassiveSkillDescription",
+      "value": "Любовь фанатов дарует Элвису второе возрождение"
     },
 	
 	{
@@ -662,13 +758,13 @@
     },
 	
 	{
-      "key": "WeakLaser",
-      "value": "Слабый лазер"
+      "key": "WeakRocketLauncher",
+      "value": "Слабая ракетная установка"
     },
 	
 	{
-      "key": "WeakLaserDescription",
-      "value": "Бракованный лазер, неизвестно коим образом он попал к нам в ящик"
+      "key": "WeakRocketLauncherDescription",
+      "value": "Бракованная ракетная установка, неизвестно коим образом она попала к нам в ящик"
     },
 	
 	{
@@ -752,22 +848,22 @@
     },
 	
 	{
-      "key": "GreatLaser",
-      "value": "Отличный лазер"
+      "key": "GreatRocketLauncher",
+      "value": "Отличная ракетная установка"
     },
 	
 	{
-      "key": "GreatLaserDescription",
-      "value": "Хороший лазер с родной планеты ZXC-88"
+      "key": "GreatRocketLauncherDescription",
+      "value": "Хорошая ракетница с родной планеты ZXC-88"
     },
 	
 	{
-      "key": "LegendaryLaser",
-      "value": "Легендарный лазер"
+      "key": "LegendaryRocketLauncher",
+      "value": "Легендарная ракетная установка"
     },
 	
 	{
-      "key": "LegendaryLaserDescription",
+      "key": "LegendaryRocketLauncherDescription",
       "value": "Говорят к его созданию приложил руку один из примархов великого Империума"
     },
 	
@@ -883,7 +979,7 @@
 	
 	{
       "key": "TutorialPhrase5",
-      "value": "Пока ты не получишь усиления и оружие оттуда\nони не будут попадаться во время игры"
+      "value": "Пока ты не получишь усиления и оружие оттуда\nони не будут попадаться в магазине во время игры"
     },
 	
 	{
@@ -913,7 +1009,7 @@
 	
 	{
       "key": "TutorialPhrase11",
-      "value": "Eсли броня упадет до нуля, вагонетка замедлится"
+      "value": "Одна единица брони выдерживает одно попадание с любым уроном"
     },
 	
 	{
@@ -938,26 +1034,31 @@
 	
 	{
       "key": "TutorialPhrase16",
-      "value": "Вот схема"
+      "value": "Индикатор сверху отображает насколько стихия в твоем оружии подходит текущему биому"
     },
 
 	{
       "key": "TutorialPhrase17",
-      "value": "Ты же понимаешь что нельзя потушить огонь - огнем\nТак что смотри куда стреляешь!"
+      "value": "При зеленом цвете урон увеличится, при красном уменьшится, а белый никак не повлияет на него"
     },
 	
 	{
       "key": "TutorialPhrase18",
-      "value": "На этом все, с остальным сам разберешься\nУдачи!"
+      "value": "В игре также доступен магазин, разумная трата монет - секрет победы!"
     },
 	
 	{
       "key": "TutorialPhrase19",
-      "value": "Ну ладно...\nУвидимся в игре"
+      "value": "На этом все, с остальным сам разберешься\nУдачи!"
     },
 	
 	{
       "key": "TutorialPhrase20",
+      "value": "Ну ладно...\nУвидимся в игре"
+    },
+	
+	{
+      "key": "TutorialPhrase21",
       "value": "Хочешь разобраться сам?\nХорошо...\nУдачи!"
     },
 	
@@ -1034,6 +1135,41 @@
 	{
       "key": "Money150Description",
       "value": "Немного, но деньги лишними не бывают"
+    },
+	
+	{
+      "key": "SupportUsReward",
+      "value": "Сделай пожертвование на корм для котика Тима\n\nИ получи уникальную награду!"
+    },
+	
+	{
+      "key": "SupportUsNotReward",
+      "value": "Ты уже получил свою награду\n\nНо ты можешь покормить Тима из любви к котикам!"
+    },
+	
+	{
+      "key": "CatHouse",
+      "value": "Кошкин дом"
+    },
+	
+	{
+      "key": "Support",
+      "value": "Поддержать"
+    },
+	
+	{
+      "key": "TrolleyForSupport",
+      "value": "Вагонетка донатера"
+    },
+	
+	{
+      "key": "TrolleyForSupportDescription",
+      "value": "Современный дизайн и повышенное сопротивление к замедлению"
+    },
+	
+	{
+      "key": "ClickToInfo",
+      "value": "Нажми для получения подробной информации"
     }
   ]
 }
