@@ -12,6 +12,7 @@ public static class Loader
     {
         Lobby,
         Loading,
+        Tutorial,
         Game
     }
 

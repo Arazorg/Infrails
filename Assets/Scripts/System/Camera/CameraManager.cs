@@ -1,5 +1,6 @@
 using Cinemachine;
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class CameraManager : MonoBehaviour
@@ -21,11 +22,20 @@ public class CameraManager : MonoBehaviour
     }
 
     public void SetCameraParams(Transform target, float ortographicSize, Vector3 offset)
-    {
+    {   
         _cinemachineVirtualCamera.m_LookAt = target;
         _cinemachineVirtualCamera.m_Follow = target;
-        _cinemachineVirtualCamera.m_Lens.OrthographicSize = ortographicSize;
         _cinemachineTransposer.m_FollowOffset = offset;
+        StartCoroutine(SetSize(ortographicSize));
+    }
+
+    public void SetLobbyCameraParams(Transform target, float ortographicSize, Vector3 offset)
+    {
+        StopAllCoroutines();
+        Vector3 finishPosition = target.position + offset;
+        finishPosition.z = -10;
+        _cinemachineVirtualCamera.transform.position = finishPosition;
+        StartCoroutine(SetSize(ortographicSize));
     }
 
     public void ShakeCameraOnce(float shakeDuration, float intensity)
@@ -77,5 +87,19 @@ public class CameraManager : MonoBehaviour
         float duration = .35f;
         float intensity = 25f;
         Camera.main.GetComponent<CameraManager>().ShakeCameraOnce(duration, intensity);
+    }
+
+    private IEnumerator SetSize(float ortographicSize)
+    {
+        float duration = 0.33f;
+        float time = 0;
+        float startSize = _cinemachineVirtualCamera.m_Lens.OrthographicSize;
+
+        while (time < duration)
+        {
+            _cinemachineVirtualCamera.m_Lens.OrthographicSize = Mathf.Lerp(startSize, ortographicSize, time / duration);
+            time += Time.deltaTime;
+            yield return null;
+        }
     }
 }

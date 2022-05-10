@@ -7,12 +7,12 @@ public class LoaderCallback : MonoBehaviour
 
     private bool _isFirstUpdate = true;
 
-    void Awake()
+    private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
         _safeArea.Init();

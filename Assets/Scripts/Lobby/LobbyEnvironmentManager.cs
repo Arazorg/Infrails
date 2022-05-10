@@ -65,20 +65,22 @@ public class LobbyEnvironmentManager : MonoBehaviour
         _currentSelectableCharacter = currentSelectableCharacter;
         _currentSelectableCharacter.Teleport(TeleportToTrolley, _trolleyMovement.transform);
         SetCameraParams(GameConstants.CameraToCharacter, GameConstants.OpenCharacterSelectionUI);
-        SetLobbyObjectsСlickability(false);
+        StartCoroutine(SetLobbyObjectsСlickability(false));
         _characterSelectionUI.SetCharacterData(currentSelectableCharacter.Data);
         UIManager.Instance.UIStackPush(_characterSelectionUI);
     }
 
     public void CancelCharacterSelection()
     {
-        SetLobbyObjectsСlickability(true);
+        StartCoroutine(SetLobbyObjectsСlickability(true));
         _currentSelectableCharacter.Teleport(TeleportToStartPoint);
         SetCameraParams(GameConstants.CameraToLobby, GameConstants.CloseCharacterSelectionUI);
     }
 
-    public void SetLobbyObjectsСlickability(bool isClickable)
+    public IEnumerator SetLobbyObjectsСlickability(bool isClickable)
     {
+        float delay = 0.5f;
+        yield return new WaitForSeconds(delay);
         foreach (var clickableObject in GetComponentsInChildren(typeof(IClickable)))
             (clickableObject as IClickable).IsClickable = isClickable;        
     }
@@ -153,13 +155,13 @@ public class LobbyEnvironmentManager : MonoBehaviour
         if (toCharacter)
         {
             if (isOpenSelectionUI)
-                _cameraManager.SetCameraParams(_charZoneStopRail.transform, _selectionUICameraSize, _selectionUICameraOffset);
+                _cameraManager.SetLobbyCameraParams(_charZoneStopRail.transform, _selectionUICameraSize, _selectionUICameraOffset);
             else
-                _cameraManager.SetCameraParams(_trolleyMovement.transform, _lobbyUICameraSize, new Vector3(0, 0, -10));
+                _cameraManager.SetLobbyCameraParams(_trolleyMovement.transform, _lobbyUICameraSize, new Vector3(0, 0, -10));
         }
         else
         {
-            _cameraManager.SetCameraParams(_trolleySpawnPoint, _lobbyUICameraSize, _lobbyUICameraOffset);
+            _cameraManager.SetLobbyCameraParams(_trolleySpawnPoint, _lobbyUICameraSize, _lobbyUICameraOffset);
         }
     }
 }

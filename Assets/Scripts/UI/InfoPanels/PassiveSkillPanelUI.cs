@@ -31,16 +31,19 @@ public class PassiveSkillPanelUI : MonoBehaviour
 
     public void ChooseSkillPanel(int numberOfSkill)
     {
-        if (PlayerProgress.Instance.GetPassiveSkillAvailability(_currentCharacterData.UnitName, 
-            _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemName))
+        if(numberOfSkill < _currentCharacterData.CharacterPassiveSkills.Count)
         {
-            CurrentGameInfo.Instance.PassiveSkillData = _currentCharacterData.CharacterPassiveSkills[numberOfSkill];
-            _skillPanel.sprite = _skillPanelSprites[numberOfSkill];
-            string skillName = _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemName;
-            _skillNameText.SetLocalization(skillName);
-            _skillNameText.GetComponent<TextMeshProUGUI>().color = _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemColor;
-            _skillDescriptionText.SetLocalization(string.Format("{0}Description", skillName));
-        }
+            if (PlayerProgress.Instance.GetPassiveSkillAvailability(_currentCharacterData.UnitName,
+            _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemName))
+            {
+                CurrentGameInfo.Instance.PassiveSkillData = _currentCharacterData.CharacterPassiveSkills[numberOfSkill];
+                _skillPanel.sprite = _skillPanelSprites[numberOfSkill];
+                string skillName = _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemName;
+                _skillNameText.SetLocalization(skillName);
+                _skillNameText.GetComponent<TextMeshProUGUI>().color = _currentCharacterData.CharacterPassiveSkills[numberOfSkill].ItemColor;
+                _skillDescriptionText.SetLocalization(string.Format("{0}Description", skillName));
+            }
+        }        
     }
 
     public void GoToShop()

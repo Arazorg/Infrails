@@ -150,7 +150,6 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         int healthForLevel = CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain + minHealthForLevel;
         int bonusHealth = (CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain) * bonusHealthForBiomes;
         Health = bonusHealth + (Data.MaxHealth + (healthForLevel * CurrentGameInfo.Instance.ReachedBiomeNumber));
-        Debug.Log(Health);
     }
 
     private void InitStates()

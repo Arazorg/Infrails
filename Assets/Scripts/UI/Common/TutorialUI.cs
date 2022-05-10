@@ -84,6 +84,7 @@ public class TutorialUI : BaseUI, IUIPanel
         Show();
         ChooseTutorial();
     }
+
     private void GetAllTutorialItems()
     {
         string tutorialLobbyItemsPath = "Specifications/TutorialItems/Lobby";
@@ -119,7 +120,6 @@ public class TutorialUI : BaseUI, IUIPanel
 
         for (int i = 0; i < tutorialItems.Count - 1; i++)
             yield return StartCoroutine(ShowPhrase(tutorialItems[i]));
-
 
         PlayerProgress.Instance.SetLobbyTutorialComplete();
         UIManager.Instance.UIStackPop();

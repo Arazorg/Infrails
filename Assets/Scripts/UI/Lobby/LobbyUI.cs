@@ -42,7 +42,7 @@ public class LobbyUI : BaseUI, IUIPanel
         StopAllCoroutines();
         StartCoroutine(EnableBackButton());
         Show();
-        LobbyEnvironmentManager.Instance.SetLobbyObjectsСlickability(true);
+        StartCoroutine(LobbyEnvironmentManager.Instance.SetLobbyObjectsСlickability(true));
         _isSettingsPanelOpen = false;
     }
 

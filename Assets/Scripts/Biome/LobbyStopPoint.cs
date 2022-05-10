@@ -12,12 +12,15 @@ public class LobbyStopPoint : MonoBehaviour
         {
             if (_isGoToGame)
             {
-                Loader.Load(Loader.Scene.Game);
+                if (PlayerProgress.Instance.IsGameTutorialCompleted)
+                    Loader.Load(Loader.Scene.Game);
+                else
+                    Loader.Load(Loader.Scene.Tutorial);
             }
-            else if(_isSetCharactersClickable)
+            else if (_isSetCharactersClickable)
             {
-                if(PlayerProgress.Instance.IsLobbyTutorialCompleted)
-                    LobbyEnvironmentManager.Instance.SetLobbyObjectsСlickability(true);
+                if (PlayerProgress.Instance.IsLobbyTutorialCompleted)
+                    StartCoroutine(LobbyEnvironmentManager.Instance.SetLobbyObjectsСlickability(true));
                 else
                     UIManager.Instance.UIStackPush(_tutorialUI);
             }

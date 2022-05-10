@@ -26,7 +26,6 @@ MonoBehaviour:
   _characterStartWeapon: {fileID: 11400000, guid: bebd80d5d58c12b45a49534a00797e21, type: 2}
   _characterPassiveSkills:
   - {fileID: 11400000, guid: 7aa4c858932b6b64880ddcf144309e94, type: 2}
-  - {fileID: 11400000, guid: 6e00f764d2e29324482558614343396d, type: 2}
   _weaponSpawnPoint: {x: 0, y: 4}
   _maxArmor: 4
   _price: 0

@@ -9,7 +9,7 @@ public class LoadingUI : MonoBehaviour
     private const string AnyReferenceText = "ANY REFERENCE TO LIVING PERSONS OR REAL EVENTS IS PURELY COINCIDENTAL";
     private const string LoadingKey = "Loading";
     private const string HintKey = "LoadingHint";
-    private const int NumberOfHints = 10;
+    private const int NumberOfHints = 9;
 
     [Header("Texts")]
     [SerializeField] private TextMeshProUGUI _titleText;
