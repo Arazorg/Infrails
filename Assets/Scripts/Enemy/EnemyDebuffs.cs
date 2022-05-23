@@ -15,7 +15,7 @@ public class EnemyDebuffs : MonoBehaviour
     public void StartStunning(IEnemyStateSwitcher enemyStateSwitcher)
     {
         _enemyStateSwitcher = enemyStateSwitcher;
-        float stunningDuration = 2f;
+        float stunningDuration = 1.25f;
         if (_stunningCoroutine == null)
         {
             _dizzinesEffect.SetActive(true);

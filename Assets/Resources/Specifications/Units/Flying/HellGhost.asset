@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: HellGhost
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 305232b441bcc7c49a399fc40ca2c2a2, type: 2}
-  _unitColor: {r: 0.08627451, g: 0.09019608, b: 0.08627451, a: 1}
-  _colliderOffset: {x: 0.05, y: 2.45}
-  _colliderSize: {x: 1.75, y: 2.45}
+  _unitColor: {r: 0.94509804, g: 0.8463107, b: 0.1372549, a: 1}
+  _colliderOffset: {x: 0, y: -0.5}
+  _colliderSize: {x: 3, y: 3.25}
   _unitName: HellGhost
-  _maxHealth: 4
+  _maxHealth: 2
   _prefab: {fileID: -5208608225304156181, guid: f8cff153accef1443943fe5158f84604, type: 3}
   _enemyElement: {fileID: 11400000, guid: be21b1baa80e3024dac96d96a8788132, type: 2}
   _deathAudioClip: {fileID: 8300000, guid: 23ebce12323562d49b37381fcc721674, type: 3}
-  _popUpTextOffset: {x: 0.1, y: 6.5}
-  _center: {x: -0.125, y: 2.2}
+  _popUpTextOffset: {x: 0, y: 2.75}
+  _center: {x: 0, y: 0}
   _isFlipX: 1
   _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
   _weaponData: {fileID: 11400000, guid: e431f608f64b7914e91d29394c87a98c, type: 2}
-  _dizzinesEffectOffset: {x: -0.1, y: 3.75, z: 0}
+  _dizzinesEffectOffset: {x: 0, y: 2.3, z: 0}

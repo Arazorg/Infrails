@@ -159,7 +159,7 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     {
         int minHealthForLevel = 1;
         int numberBiomeForGain = 15;
-        int bonusHealthForBiomes = 17;
+        int bonusHealthForBiomes = 13;
 
         int healthForLevel = CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain + minHealthForLevel;
         int bonusHealth = (CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain) * bonusHealthForBiomes;

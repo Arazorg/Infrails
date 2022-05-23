@@ -11,6 +11,7 @@ public class Rail : MonoBehaviour
     [SerializeField] private bool _isLobby;
     [SerializeField] private bool _isFinish;
     [SerializeField] private bool _isSpawnEnemies;
+    [SerializeField] private bool _isSpawnBiome;
 
     private Biome _currentBiome;
 
@@ -70,6 +71,8 @@ public class Rail : MonoBehaviour
         if (collision.TryGetComponent(out Trolley trolley))
         {
             if (_isFinish)
+                _currentBiome.SetBiomeLightsState(GameConstants.TurnOff);
+            else if (_isSpawnBiome)
                 EnterFinishRail();
             else if (_isSpawnEnemies)
                 EnemiesManager.Instance.SpawnFlyingEnemies(GetComponentInParent<RailsPattern>().FlyingEnemiesSpawnPoints);
@@ -78,8 +81,7 @@ public class Rail : MonoBehaviour
 
     private void EnterFinishRail()
     {
-        CurrentGameInfo.Instance.ReachedBiomeNumber++;
+        CurrentGameInfo.Instance.AddReachedBiome();
         OnReachedEndOfLevel?.Invoke();
-        _currentBiome.SetBiomeLightsState(GameConstants.TurnOff);
     }
 }

@@ -79,7 +79,7 @@ public class CameraManager : MonoBehaviour
         float duration = .1f;
         float intensity = 7f;
         if (value < 0)
-            Camera.main.GetComponent<CameraManager>().ShakeCameraOnce(duration, intensity);
+            ShakeCameraOnce(duration, intensity);
     }
 
     private void DeathShaking()

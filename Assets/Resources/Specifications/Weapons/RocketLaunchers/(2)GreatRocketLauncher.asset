@@ -26,10 +26,11 @@ MonoBehaviour:
   _bulletSpeed: 165
   _damage: 20
   _critChance: 0.2
-  _fireRate: 0.7
+  _fireRate: 0.6
   _bulletScaleFactor: 1.2
   _scatter: 2
   _level: 1
   _bulletSpawnPosition: {x: -0.49, y: 3.34}
   _bulletData: {fileID: 11400000, guid: bf5ca763bef2b4c4596ff001422d1dfa, type: 2}
+  _DPS: 40
   _explosionRadius: 5

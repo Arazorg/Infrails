@@ -28,6 +28,6 @@ MonoBehaviour:
   _bulletScaleFactor: 1
   _scatter: 5
   _level: 0
-  _bulletSpawnPosition: {x: -2.06, y: 1.7}
+  _bulletSpawnPosition: {x: -2.05, y: -1}
   _bulletData: {fileID: 11400000, guid: 4416db79a65a5b442961f9a6da0b8e57, type: 2}
   _DPS: 1.5384616

@@ -23,16 +23,16 @@ MonoBehaviour:
   _handsPositions:
   - {x: 0, y: 0}
   - {x: -0.05, y: 3}
-  _type: 0
   _bulletSpeed: 100
   _damage: 2
   _critChance: 0.1
-  _fireRate: 1
+  _fireRate: 0.9
   _bulletScaleFactor: 1
   _scatter: 25
   _level: 0
   _bulletSpawnPosition: {x: -0.5, y: 4.8}
   _bulletData: {fileID: 11400000, guid: 24c9f661abd6e8d42962526965a623c5, type: 2}
+  _DPS: 14.666667
   _minNumberOfBullets: 5
   _maxNumberOfBullets: 7
   _bulletSpeedSpread: 0.2

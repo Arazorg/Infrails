@@ -28,7 +28,8 @@ MonoBehaviour:
   _critChance: 0.4
   _fireRate: 0.35
   _bulletScaleFactor: 1.5
-  _scatter: 5
+  _scatter: 0
   _level: 2
   _bulletSpawnPosition: {x: -0.45, y: 6.23}
   _bulletData: {fileID: 11400000, guid: fd355749ba0bd874a9a60f009bd0a980, type: 2}
+  _DPS: 132

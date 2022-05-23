@@ -89,10 +89,15 @@ public class EnemiesManager : MonoBehaviour
 
     public void SpawnFlyingEnemies(List<Transform> spawnPoints)
     {
-        float maxNumberOfEnemies = 12;
+        float maxNumberOfEnemies = 5;
+        float bonusNumbersOfEnemies = CurrentGameInfo.Instance.ReachedBiomeNumber / 5;
+
+        if (bonusNumbersOfEnemies > maxNumberOfEnemies)
+            bonusNumbersOfEnemies = maxNumberOfEnemies;
+
         foreach (var spawnPoint in spawnPoints)
         {
-            if (_currentFlyingEnemies.Count <= maxNumberOfEnemies && spawnPoint != null)
+            if (_currentFlyingEnemies.Count <= maxNumberOfEnemies + bonusNumbersOfEnemies && spawnPoint != null)
             {
                 int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
                 FlyingEnemy enemy = SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint) as FlyingEnemy;
@@ -118,7 +123,12 @@ public class EnemiesManager : MonoBehaviour
 
     private void SpawnManeCrystal(Transform spawnPoint)
     {
-        float spawnChanceMainManeCrystal = 0.25f;
+        float maxBonusChance = 0.5f;
+        float bonusChance = (1f / CurrentGameInfo.Instance.ReachedBiomeNumber);
+        if (bonusChance > maxBonusChance)
+            bonusChance = maxBonusChance;
+
+        float spawnChanceMainManeCrystal = 0.2f + bonusChance;
 
         if (Random.Range(0f, 1f) < spawnChanceMainManeCrystal)
         {

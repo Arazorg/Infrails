@@ -15,6 +15,9 @@ public class CurrentGameInfo : MonoBehaviour
 
     [SerializeField] private AnalyticsManager _analyticsManager;
 
+    public delegate void ReachedLevel();
+    public event ReachedLevel OnReachedLevel;
+
     public void AddResultsToProgress()
     {
         int numberMoneyForBiome = 5;
@@ -39,6 +42,12 @@ public class CurrentGameInfo : MonoBehaviour
     {
         CountOfEarnedMoney++;
         CountOfKilledEnemies++;
+    }
+
+    public void AddReachedBiome()
+    {
+        ReachedBiomeNumber++;
+        OnReachedLevel?.Invoke();
     }
 
     private void Awake()

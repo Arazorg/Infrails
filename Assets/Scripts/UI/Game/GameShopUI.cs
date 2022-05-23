@@ -124,7 +124,8 @@ public class GameShopUI : BaseUI, IUIPanel
                     UIManager.Instance.UIStackPush(_gameShopLootUI);
                     break;
                 case GameShopProductData.Type.HealPotion:
-                    _healingEffectAnimator.Play("Healing");
+                    string animatorKey = "Healing";
+                    _healingEffectAnimator.Play(animatorKey);
                     _character.Heal(HealPotionHealth);
                     break;
                 case GameShopProductData.Type.ElementPotion:

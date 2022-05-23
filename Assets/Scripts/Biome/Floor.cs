@@ -14,8 +14,8 @@ public class Floor : MonoBehaviour
 
     public void SetNeedLightsIntensity(float neededGlobalLigthIntensity)
     {
-        float disableLightDuration = 3f;
-        float enableLightDuration = 1f;
+        float disableLightDuration = 2f;
+        float enableLightDuration = 3.15f;
 
         _timeElapsedLightIntensity = 0;
         _neededGlobalLigthIntensity = neededGlobalLigthIntensity;

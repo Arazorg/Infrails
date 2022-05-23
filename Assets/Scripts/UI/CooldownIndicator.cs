@@ -42,6 +42,7 @@ public class CooldownIndicator : MonoBehaviour
             _timeText.text = string.Format("{0:f2}", (_finishTime - Time.time));
             yield return null;
         }
+
         _timeText.text = string.Empty;
         _image.fillAmount = 1;
     }

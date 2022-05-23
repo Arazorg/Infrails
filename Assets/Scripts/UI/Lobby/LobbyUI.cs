@@ -59,7 +59,12 @@ public class LobbyUI : BaseUI, IUIPanel
         _isPopAvailable = false;
 
         if (PlayerProgress.Instance.IsLobbyTutorialCompleted)
-            OnShow();
+        {
+            StopAllCoroutines();
+            StartCoroutine(EnableBackButton());
+            Show();
+            _isSettingsPanelOpen = false;
+        }
     }
 
     public void Close()

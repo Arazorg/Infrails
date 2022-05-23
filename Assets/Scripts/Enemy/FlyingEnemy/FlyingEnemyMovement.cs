@@ -45,7 +45,7 @@ public class FlyingEnemyMovement : MonoBehaviour
 
     private void MoveToNextPoint()
     { 
-        int speed = 28;
+        int speed = 25;
         if (_isMove)
             transform.position = Vector2.MoveTowards(transform.position, _needPosition, speed * Time.deltaTime);
 

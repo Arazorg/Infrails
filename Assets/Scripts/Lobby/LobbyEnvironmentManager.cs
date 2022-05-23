@@ -77,9 +77,8 @@ public class LobbyEnvironmentManager : MonoBehaviour
         SetCameraParams(GameConstants.CameraToLobby, GameConstants.CloseCharacterSelectionUI);
     }
 
-    public IEnumerator SetLobbyObjectsСlickability(bool isClickable)
+    public IEnumerator SetLobbyObjectsСlickability(bool isClickable, float delay = 0.33f)
     {
-        float delay = 0.5f;
         yield return new WaitForSeconds(delay);
         foreach (var clickableObject in GetComponentsInChildren(typeof(IClickable)))
             (clickableObject as IClickable).IsClickable = isClickable;        

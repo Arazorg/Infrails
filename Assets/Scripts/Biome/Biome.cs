@@ -92,7 +92,7 @@ public class Biome : MonoBehaviour
         _lastRail = railsPattern.LastRail;
 
         if (numberOfBiome == 0 && LevelSpawner.Instance.CurrentBiomeFinishRail != null)
-            LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail = railsPattern.FirstRail;
+            LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail.NextRail = railsPattern.FirstRail;
 
         EnemiesManager.Instance.SpawnDestroyableObjects(railsPattern.DestroyableObjectsSpawnPoints);
 
