@@ -7,12 +7,11 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
     private const int RepairValue = 3;
 
     [SerializeField] private GameObject _destructionEffectPrefab;
-    [SerializeField] private Transform _laserAttackPoint;
     [SerializeField] private KitType _type;
 
     private GameObject _destructionEffect;
     private Coroutine _destroyByLaserCoroutine;
-    private float _timeToDestroyByLaser = 0;
+    private float _timeToDestroyByLaser;
 
     public enum KitType
     {
@@ -20,7 +19,7 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
         RepairKit
     }
 
-    public Transform LaserAttackPoint => _laserAttackPoint;
+    public Transform LaserAttackPoint => CenterPoint;
 
     public bool IsVisible => IsGetDamage;
 
@@ -93,7 +92,7 @@ public class DestroyableKit : Enemy, IEnemyLaserTarget
 
     private void SpawnDestructionEffect()
     {
-        _destructionEffect = Instantiate(_destructionEffectPrefab, _laserAttackPoint);
+        _destructionEffect = Instantiate(_destructionEffectPrefab, CenterPoint);
         var settings = _destructionEffect.GetComponent<ParticleSystem>().main;
         settings.startColor = new ParticleSystem.MinMaxGradient(Data.UnitColor);
     }

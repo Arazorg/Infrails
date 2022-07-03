@@ -7,7 +7,6 @@ public class Egg : Enemy, IEnemyLaserTarget
 
     [SerializeField] private GameObject _destructionEffectPrefab;
     [SerializeField] private Transform _shadowTransform;
-    [SerializeField] private Transform _laserAttackPoint;
 
     private GameObject _destructionEffect;
     private Coroutine _destroyByLaserCoroutine;
@@ -15,7 +14,7 @@ public class Egg : Enemy, IEnemyLaserTarget
     private float _angleFactor = 1f;
     private float _timeToDestroyByLaser = 0;
 
-    public Transform LaserAttackPoint => _laserAttackPoint;
+    public Transform LaserAttackPoint => CenterPoint;
 
     public bool IsVisible => IsGetDamage;
 
@@ -99,7 +98,7 @@ public class Egg : Enemy, IEnemyLaserTarget
 
     private void SpawnDestructionEffect()
     {
-        _destructionEffect = Instantiate(_destructionEffectPrefab, _laserAttackPoint);
+        _destructionEffect = Instantiate(_destructionEffectPrefab, CenterPoint);
         var settings = _destructionEffect.GetComponent<ParticleSystem>().main;
         settings.startColor = new ParticleSystem.MinMaxGradient(Data.UnitColor);
     }

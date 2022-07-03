@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feec6eb7f3ddf1a4ba6c53be8b5f3a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _laserAttackPoint: {fileID: 2047499123464711465}
+  _centerPoint: {fileID: 2047499123464711465}
 --- !u!114 &1290794230084045124
 MonoBehaviour:
   m_ObjectHideFlags: 0

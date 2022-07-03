@@ -1,0 +1,930 @@
+fileFormatVersion: 2
+guid: e29bb0e7d6c2af34ea9342dbd9bbd82f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2124328557242015471
+    second: WindBirdIdle_0
+  - first:
+      213: 4345421066873964461
+    second: WindBirdIdle_1
+  - first:
+      213: -7313792504517258143
+    second: WindBirdIdle_2
+  - first:
+      213: -179915270288446764
+    second: WindBirdIdle_3
+  - first:
+      213: 505127704525241724
+    second: WindBirdIdle_4
+  - first:
+      213: -1142098222112545357
+    second: WindBirdIdle_5
+  - first:
+      213: -2512305646081025227
+    second: WindBirdIdle_6
+  - first:
+      213: -648106619609642739
+    second: WindBirdIdle_7
+  - first:
+      213: 3211400602805666393
+    second: WindBirdIdle_8
+  - first:
+      213: -7859514919012127251
+    second: WindBirdIdle_9
+  - first:
+      213: -5157453953913734706
+    second: WindBirdIdle_10
+  - first:
+      213: 69086639373477338
+    second: WindBirdIdle_11
+  - first:
+      213: -5614576088421249745
+    second: WindBirdIdle_12
+  - first:
+      213: -6984895559202268306
+    second: WindBirdIdle_13
+  - first:
+      213: -1453894545926350985
+    second: WindBirdIdle_14
+  - first:
+      213: 1607179107948903357
+    second: WindBirdIdle_15
+  - first:
+      213: 5536702980220168936
+    second: WindBirdIdle_16
+  - first:
+      213: 7206602633643023099
+    second: WindBirdIdle_17
+  - first:
+      213: -3418472471432850231
+    second: WindBirdIdle_18
+  - first:
+      213: 840712595361432477
+    second: WindBirdIdle_19
+  - first:
+      213: 839283484591187651
+    second: WindBirdIdle_20
+  - first:
+      213: 6718375046830825947
+    second: WindBirdIdle_21
+  - first:
+      213: -6230604335842067556
+    second: WindBirdIdle_22
+  - first:
+      213: 4042840284195067294
+    second: WindBirdIdle_23
+  - first:
+      213: 7029124453639183140
+    second: WindBirdIdle_24
+  - first:
+      213: -452988992415699678
+    second: WindBirdIdle_25
+  - first:
+      213: -7134889796370752427
+    second: WindBirdIdle_26
+  - first:
+      213: 721533572991091926
+    second: WindBirdIdle_27
+  - first:
+      213: 472529238113443234
+    second: WindBirdIdle_28
+  - first:
+      213: -5127119894768637553
+    second: WindBirdIdle_29
+  - first:
+      213: -3797568351780703383
+    second: SpaceBirdBossSprite_0
+  - first:
+      213: 1612889664696856061
+    second: SpaceBirdBossSprite_1
+  - first:
+      213: 2295879510306146317
+    second: SpaceBirdBossSprite_2
+  - first:
+      213: -5255602191640444991
+    second: SpaceBirdBossSprite_3
+  - first:
+      213: 5004261564884146892
+    second: SpaceBirdBossSprite_4
+  - first:
+      213: -6030531708924027788
+    second: SpaceBirdBossSprite_5
+  - first:
+      213: -4007073402247821540
+    second: SpaceBirdBossSprite_6
+  - first:
+      213: 6547882917559550632
+    second: SpaceBirdBossSprite_7
+  - first:
+      213: -9009715816668126257
+    second: SpaceBirdBossSprite_8
+  - first:
+      213: 2453754400061679805
+    second: SpaceBirdBossSprite_9
+  - first:
+      213: -3551061594771984591
+    second: SpaceBirdBossSprite_10
+  - first:
+      213: 5486090380216084884
+    second: SpaceBirdBossSprite_11
+  - first:
+      213: -3383395551944178890
+    second: SpaceBirdBossSprite_12
+  - first:
+      213: -5179150960239578018
+    second: SpaceBirdBossSprite_13
+  - first:
+      213: -3233343402101571510
+    second: SpaceBirdBossSprite_14
+  - first:
+      213: -6215198855147603385
+    second: SpaceBirdBossSprite_15
+  - first:
+      213: -644514731319048776
+    second: SpaceBirdBossSprite_16
+  - first:
+      213: -8743910649529116843
+    second: SpaceBirdBossSprite_17
+  - first:
+      213: 4224943396518618820
+    second: SpaceBirdBossSprite_18
+  - first:
+      213: -7823006630525068388
+    second: SpaceBirdBossSprite_19
+  - first:
+      213: -745796712274306712
+    second: SpaceBirdBossSprite_20
+  - first:
+      213: -8988955263304128990
+    second: SpaceBirdBossSprite_21
+  - first:
+      213: -8378603543243770760
+    second: SpaceBirdBossSprite_22
+  - first:
+      213: -907097929582853746
+    second: SpaceBirdBossSprite_23
+  - first:
+      213: -5906086862780236181
+    second: SpaceBirdBossSprite_24
+  - first:
+      213: 5000139431226324393
+    second: SpaceBirdBossSprite_25
+  - first:
+      213: -8831562990947461047
+    second: SpaceBirdBossSprite_26
+  - first:
+      213: 7390021366781830554
+    second: SpaceBirdBossSprite_27
+  - first:
+      213: -3542551692901439207
+    second: SpaceBirdBossSprite_28
+  - first:
+      213: -6904502426170364447
+    second: SpaceBirdBossSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96378d554b35c4bc0800000000000000
+      internalID: -3797568351780703383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfda726ca92226610800000000000000
+      internalID: 1612889664696856061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_2
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0845e2204a9cdf10800000000000000
+      internalID: 2295879510306146317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfb18ee6a95017b0800000000000000
+      internalID: -5255602191640444991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2000
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca5f0a2165b27540800000000000000
+      internalID: 5004261564884146892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c9ad2ac5f3f4ca0800000000000000
+      internalID: -6030531708924027788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_6
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c174a1698f30468c0800000000000000
+      internalID: -4007073402247821540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_7
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a24cf342d0ceda50800000000000000
+      internalID: 6547882917559550632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_8
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc32744433f07f280800000000000000
+      internalID: -9009715816668126257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_9
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1600
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db86ab550ac7d0220800000000000000
+      internalID: 2453754400061679805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f651c3b4818bec0800000000000000
+      internalID: -3551061594771984591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499a77e5222822c40800000000000000
+      internalID: 5486090380216084884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_12
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6330bb7eba3cb01d0800000000000000
+      internalID: -3383395551944178890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54fbc854a5ff18b0800000000000000
+      internalID: -5179150960239578018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_14
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1200
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4002e88e4bd023d0800000000000000
+      internalID: -3233343402101571510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a338e129d2fb9a0800000000000000
+      internalID: -6215198855147603385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_16
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5c83344493e07f0800000000000000
+      internalID: -644514731319048776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_17
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557df0b679367a680800000000000000
+      internalID: -8743910649529116843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_18
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6ef9962a302aa30800000000000000
+      internalID: 4224943396518618820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 800
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b1708eae81f6390800000000000000
+      internalID: -7823006630525068388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8695c3277d566a5f0800000000000000
+      internalID: -745796712274306712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_21
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22621e440d0d04380800000000000000
+      internalID: -8988955263304128990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_22
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874302b187839bb80800000000000000
+      internalID: -8378603543243770760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_23
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81c8b23d375963f0800000000000000
+      internalID: -907097929582853746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_24
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 400
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ef1634a4d590ea0800000000000000
+      internalID: -5906086862780236181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a53ba12250146540800000000000000
+      internalID: 5000139431226324393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_26
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9481719504cff6580800000000000000
+      internalID: -8831562990947461047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_27
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95e3917741ae8660800000000000000
+      internalID: 7390021366781830554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_28
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919a62a210456dec0800000000000000
+      internalID: -3542551692901439207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpaceBirdBossSprite_29
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 460
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edea4100a74e20a0800000000000000
+      internalID: -6904502426170364447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

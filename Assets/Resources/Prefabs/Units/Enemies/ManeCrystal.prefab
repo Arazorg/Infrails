@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5390112592793833631}
   - component: {fileID: 4937442529647204405}
   - component: {fileID: 4637941845627076124}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: ManeCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,9 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d078ee0b347dd6649a15e70f3e0e73f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _centerPoint: {fileID: 4177363295417267911}
   _destructionEffectPrefab: {fileID: 4020237234510910174, guid: 12cb825221feb9e48b1ff6a6d3c94a86, type: 3}
   _shadowTransform: {fileID: 1933899335477625661}
-  _laserAttackPoint: {fileID: 4177363295417267911}
 --- !u!114 &4637941845627076124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1933899335477625661}
   - component: {fileID: 7106211133588200586}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4177363295417267911}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,6 +393,10 @@ PrefabInstance:
     - target: {fileID: 1483817710457529500, guid: 853fb93f0247d98459ba620374639e50, type: 3}
       propertyPath: m_Name
       value: PopUpDamageText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483817710457529500, guid: 853fb93f0247d98459ba620374639e50, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fb93f0247d98459ba620374639e50, type: 3}

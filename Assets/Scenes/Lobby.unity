@@ -423,6 +423,7 @@ MonoBehaviour:
   _isLobby: 1
   _isFinish: 0
   _isSpawnEnemies: 0
+  _isSpawnBiome: 0
 --- !u!1 &24726522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,6 +2013,7 @@ MonoBehaviour:
   _isLobby: 1
   _isFinish: 0
   _isSpawnEnemies: 0
+  _isSpawnBiome: 0
 --- !u!61 &105225365
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21569,7 +21571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: 680995.8}
+  m_AnchoredPosition: {x: 25, y: 756148.1}
   m_SizeDelta: {x: -50, y: 800}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1419937059
@@ -24042,6 +24044,7 @@ MonoBehaviour:
   _isLobby: 1
   _isFinish: 0
   _isSpawnEnemies: 0
+  _isSpawnBiome: 0
 --- !u!61 &1552178284
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,0 +1,840 @@
+fileFormatVersion: 2
+guid: 58f56c3a650091b40b81fe07df7e88c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3551525754347526266
+    second: HellRockBossSprite_0
+  - first:
+      213: 6544272707321241571
+    second: HellRockBossSprite_1
+  - first:
+      213: -1538389239412620716
+    second: HellRockBossSprite_2
+  - first:
+      213: 4826455644160701539
+    second: HellRockBossSprite_3
+  - first:
+      213: -911437292382120893
+    second: HellRockBossSprite_4
+  - first:
+      213: 7830911284213669746
+    second: HellRockBossSprite_5
+  - first:
+      213: 7431430367587656783
+    second: HellRockBossSprite_6
+  - first:
+      213: 2936729490139121315
+    second: HellRockBossSprite_7
+  - first:
+      213: 4260821301146528424
+    second: HellRockBossSprite_8
+  - first:
+      213: 257386592858318440
+    second: HellRockBossSprite_9
+  - first:
+      213: 6178953797106088256
+    second: HellRockBossSprite_10
+  - first:
+      213: 8756649022684816466
+    second: HellRockBossSprite_11
+  - first:
+      213: -2324002148907083502
+    second: HellRockBossSprite_12
+  - first:
+      213: 2438201720927491493
+    second: HellRockBossSprite_13
+  - first:
+      213: -5557723115408009712
+    second: HellRockBossSprite_14
+  - first:
+      213: -268023075953066333
+    second: HellRockBossSprite_15
+  - first:
+      213: 1430714670757922427
+    second: HellRockBossSprite_16
+  - first:
+      213: 1616161013139536994
+    second: HellRockBossSprite_17
+  - first:
+      213: 6425667191818597937
+    second: HellRockBossSprite_18
+  - first:
+      213: 3662051396153420463
+    second: HellRockBossSprite_19
+  - first:
+      213: -983786121444971213
+    second: HellRockBossSprite_20
+  - first:
+      213: 6839536170495560742
+    second: HellRockBossSprite_21
+  - first:
+      213: 7555641717400698856
+    second: HellRockBossSprite_22
+  - first:
+      213: -2832814577004595286
+    second: HellRockBossSprite_23
+  - first:
+      213: 7912758773488833543
+    second: HellRockBossSprite_24
+  - first:
+      213: 468998876139591552
+    second: HellRockBossSprite_25
+  - first:
+      213: -4736782541497476042
+    second: HellRockBossSprite_26
+  - first:
+      213: -587555512449230762
+    second: HellRockBossSprite_27
+  - first:
+      213: 4704906927535897796
+    second: HellRockBossSprite_28
+  - first:
+      213: 2374689737435341461
+    second: HellRockBossSprite_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 45
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HellRockBossSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2150
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687e679a42276bec0800000000000000
+      internalID: -3551525754347526266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_1
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 2150
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef9a21ba5de1da50800000000000000
+      internalID: 6544272707321241571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_2
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 2150
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4520782332b86aae0800000000000000
+      internalID: -1538389239412620716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_3
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2150
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364b06236d30bf240800000000000000
+      internalID: 4826455644160701539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_4
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 2150
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34415809c9ce953f0800000000000000
+      internalID: -911437292382120893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1720
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f5723b25cfcac60800000000000000
+      internalID: 7830911284213669746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_6
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1720
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44ec11cb8eb12760800000000000000
+      internalID: 7431430367587656783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_7
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1720
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6082d69eb51c820800000000000000
+      internalID: 2936729490139121315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_8
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1720
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aaa14a066a712b30800000000000000
+      internalID: 4260821301146528424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_9
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 1720
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866a4451ebb629300800000000000000
+      internalID: 257386592858318440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1290
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0493f00bdbd00c550800000000000000
+      internalID: 6178953797106088256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_11
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1290
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25466e334edd58970800000000000000
+      internalID: 8756649022684816466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1290
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2191621db5c7fbfd0800000000000000
+      internalID: -2324002148907083502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_13
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 1290
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a511aa0c8b36d120800000000000000
+      internalID: 2438201720927491493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_14
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 1290
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016d02ac5400fd2b0800000000000000
+      internalID: -5557723115408009712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aeb536be6ac74cf0800000000000000
+      internalID: -268023075953066333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_16
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 860
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76477da96bead310800000000000000
+      internalID: 1430714670757922427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_17
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 860
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c7400f0e1cd6610800000000000000
+      internalID: 1616161013139536994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_18
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 860
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136ba3d244e8c2950800000000000000
+      internalID: 6425667191818597937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_19
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 860
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faaa2f8a75832d230800000000000000
+      internalID: 3662051396153420463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d20502cb3e852f0800000000000000
+      internalID: -983786121444971213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_21
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 430
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cc2ded8e9eaee50800000000000000
+      internalID: 6839536170495560742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_22
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 430
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef7ac74c180bd860800000000000000
+      internalID: 7555641717400698856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_23
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 430
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7b71fa622dfa8d0800000000000000
+      internalID: -2832814577004595286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_24
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 430
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704582f4e24cfcd60800000000000000
+      internalID: 7912758773488833543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0879b543ef7328600800000000000000
+      internalID: 468998876139591552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_26
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 0
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c55c30061934eb0800000000000000
+      internalID: -4736782541497476042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 0
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65814aadf5598d7f0800000000000000
+      internalID: -587555512449230762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_28
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 0
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc3d054cef2b4140800000000000000
+      internalID: 4704906927535897796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HellRockBossSprite_29
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 0
+        width: 760
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592699b0cb794f020800000000000000
+      internalID: 2374689737435341461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

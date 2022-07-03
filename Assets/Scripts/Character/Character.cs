@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour, IEnemyLaserTarget
 {
-    [SerializeField] private Transform _laserAttackPoint;
+    [SerializeField] private Transform _centerPoint;
 
     private Animator _animator;
     private BoxCollider2D _boxCollider2D;
@@ -36,7 +36,9 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
 
     public Transform Transform => transform;
 
-    public Transform LaserAttackPoint => _laserAttackPoint;
+    public Transform LaserAttackPoint => _centerPoint;
+
+    public Transform CenterPoint => _centerPoint;
 
     public int MaxHealth => _characterData.MaxHealth;
 

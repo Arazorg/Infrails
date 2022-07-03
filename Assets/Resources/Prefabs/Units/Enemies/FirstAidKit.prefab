@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6172005733414921846}
   - component: {fileID: 8784910364459435722}
   - component: {fileID: -4303262273092911378}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: FirstAidKit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9579461ca098bf641971ba40e19178eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _centerPoint: {fileID: 3999751105360766114}
   _destructionEffectPrefab: {fileID: 4020237234510910174, guid: 12cb825221feb9e48b1ff6a6d3c94a86, type: 3}
-  _laserAttackPoint: {fileID: 3999751105360766114}
   _type: 0
 --- !u!114 &-4303262273092911378
 MonoBehaviour:
@@ -194,7 +194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3999751105360766114}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,6 +309,10 @@ PrefabInstance:
     - target: {fileID: 1483817710457529500, guid: 853fb93f0247d98459ba620374639e50, type: 3}
       propertyPath: m_Name
       value: PopUpDamageText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483817710457529500, guid: 853fb93f0247d98459ba620374639e50, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fb93f0247d98459ba620374639e50, type: 3}

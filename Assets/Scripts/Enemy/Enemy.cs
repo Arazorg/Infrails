@@ -2,6 +2,8 @@
 
 public abstract class Enemy : MonoBehaviour
 {
+    [SerializeField] private Transform _centerPoint;
+
     protected BoxCollider2D BoxCollider2D;
     protected Character Character;
 
@@ -26,6 +28,8 @@ public abstract class Enemy : MonoBehaviour
     public bool IsGetDamage { get => _isGetDamage; set => _isGetDamage = value; }
 
     public int Health { get => _health; set => _health = value; }
+
+    public Transform CenterPoint => _centerPoint;
 
     public abstract void Init(EnemyData data, Transform spawnPoint, Character character);
 
@@ -57,6 +61,7 @@ public abstract class Enemy : MonoBehaviour
         InitComponents();
         BoxCollider2D.size = Data.ColliderSize;
         BoxCollider2D.offset = Data.ColliderOffset;
+        _centerPoint.localPosition = Data.Center;
         _health = Data.MaxHealth;
         _animator.runtimeAnimatorController = Data.AnimatorController;
         _isDeath = false;

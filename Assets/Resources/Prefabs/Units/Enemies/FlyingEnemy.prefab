@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498145219162831187}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4477460722921648329}
   - component: {fileID: 1979879998127330825}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 5487689627722047882}
   - component: {fileID: -5063642553746449431}
   - component: {fileID: -5434466878807436994}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: FlyingEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,6 +288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: becf123b44977044b84b03000bc086c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _centerPoint: {fileID: 498145219162831187}
 --- !u!114 &858444541982329040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2242755433908633005}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,6 +394,10 @@ PrefabInstance:
     - target: {fileID: 2323841971512746530, guid: 22bdae30149975e41a3a34cd67667b57, type: 3}
       propertyPath: m_Name
       value: EnemyDizzines
+      objectReference: {fileID: 0}
+    - target: {fileID: 2323841971512746530, guid: 22bdae30149975e41a3a34cd67667b57, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2323841971512746530, guid: 22bdae30149975e41a3a34cd67667b57, type: 3}
       propertyPath: m_IsActive
@@ -556,6 +561,10 @@ PrefabInstance:
     - target: {fileID: 1483817710457529500, guid: 853fb93f0247d98459ba620374639e50, type: 3}
       propertyPath: m_Name
       value: PopUpDamageText
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483817710457529500, guid: 853fb93f0247d98459ba620374639e50, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fb93f0247d98459ba620374639e50, type: 3}

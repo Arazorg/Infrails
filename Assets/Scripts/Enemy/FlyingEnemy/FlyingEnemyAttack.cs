@@ -8,7 +8,7 @@ public class FlyingEnemyAttack : MonoBehaviour
     private BulletFactory _bulletFactory;
     private MonobehaviourPool<Bullet> _bulletsPool;
     private WeaponCharacteristics _weaponCharacteristics;
-    private Transform _target;
+    private Character _target;
     private AttackingEnemyData _data;
     private Coroutine _attackCoroutine;
     private float _needAngleZ;
@@ -19,7 +19,7 @@ public class FlyingEnemyAttack : MonoBehaviour
 
     public event AttackFinished OnAttackFinished;
 
-    public void Init(Transform target, EnemyData data)
+    public void Init(Character target, EnemyData data)
     {
         _target = target;
         _data = data as AttackingEnemyData;
@@ -68,13 +68,14 @@ public class FlyingEnemyAttack : MonoBehaviour
     private void Shoot()
     {
         AudioManager.Instance.PlayEffect(_data.WeaponData.WeaponAudioClip);
-        var bullet = _bulletsPool.GetFreeElement();
+        var bullet = _bulletsPool.GetFreeElement() as EnemyBullet;
         bullet.transform.position = _bulletSpawnPoint.position;
         bullet.Init(_data.WeaponData, _weaponCharacteristics, Element.Type.None);
         Quaternion dir = Quaternion.AngleAxis(0, Vector3.forward);
         Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
         Vector3 vectorToTarget = transform.right.normalized * GetFacingDirectionFactor();
-        bulletRb.AddForce(dir * vectorToTarget * _data.WeaponData.BulletSpeed, ForceMode2D.Impulse);
+        //bulletRb.AddForce(dir * vectorToTarget * _data.WeaponData.BulletSpeed, ForceMode2D.Impulse);
+        bullet.Target = _target;
     }
 
     private float GetNeedAngle()
@@ -82,7 +83,7 @@ public class FlyingEnemyAttack : MonoBehaviour
         float minAngle = 12.5f;
         float maxAngle = 17.5f;
         float angleZ;
-        if (transform.position.y > _target.position.y)
+        if (transform.position.y > _target.CenterPoint.position.y)
             angleZ = Random.Range(minAngle, maxAngle);
         else
             angleZ = Random.Range(-maxAngle, minAngle);
@@ -100,9 +101,9 @@ public class FlyingEnemyAttack : MonoBehaviour
     {
         if (_target != null)
         {
-            if (_target.position.x < transform.position.x && _isFacingRight)
+            if (_target.CenterPoint.position.x < transform.position.x && _isFacingRight)
                 Flip();
-            else if (_target.position.x > transform.position.x && !_isFacingRight)
+            else if (_target.CenterPoint.position.x > transform.position.x && !_isFacingRight)
                 Flip();
         }
     }

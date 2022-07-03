@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 9c325595905ac2f459ebd37dffa12534, type: 2}
   _unitColor: {r: 0.4901961, g: 0.72156864, b: 0.7294118, a: 1}
-  _colliderOffset: {x: -0.3, y: 2.5}
+  _colliderOffset: {x: 0.3, y: 2.5}
   _colliderSize: {x: 1.85, y: 3.56}
   _unitName: CaveGhost
   _maxHealth: 2

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animatorController: {fileID: 9100000, guid: 2e4166470f99de34aaa623ec75519ad7, type: 2}
   _unitColor: {r: 0.8313726, g: 0.40784317, b: 0.86274517, a: 1}
-  _colliderOffset: {x: -0.75, y: 2.6}
+  _colliderOffset: {x: 0.75, y: 2.6}
   _colliderSize: {x: 2.35, y: 3.2}
   _unitName: SpaceRocketBoy
   _maxHealth: 2

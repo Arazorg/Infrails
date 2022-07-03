@@ -6,6 +6,7 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] private GameObject _shotEffect;
     [SerializeField] private Transform _bulletSpawnPoint;
     [SerializeField] private List<SpriteRenderer> _handsSpriteRenderer;
+    [SerializeField] private LineRenderer _lineRenderer;
 
     protected BulletFactory Factory;
     protected MonobehaviourPool<Bullet> _bulletsPool;
@@ -19,11 +20,23 @@ public abstract class Weapon : MonoBehaviour
     private bool _isAttack;
     private float _timeToShoot = 0;
 
-    public WeaponData CurrentWeaponData { get => _currentWeaponData; set => _currentWeaponData = value; }
+    public WeaponData CurrentWeaponData
+    {
+        get => _currentWeaponData;
+        set => _currentWeaponData = value;
+    }
 
-    public bool IsAttack { get => _isAttack; set => _isAttack = value; }
+    public bool IsAttack
+    {
+        get => _isAttack;
+        set => _isAttack = value;
+    }
 
-    public Element.Type CurrentElement { get => _currentElement; set => _currentElement = value; }
+    public Element.Type CurrentElement
+    {
+        get => _currentElement;
+        set => _currentElement = value;
+    }
 
     public abstract void Shoot();
 
@@ -59,7 +72,8 @@ public abstract class Weapon : MonoBehaviour
         GetComponents();
         _animator.runtimeAnimatorController = CurrentWeaponData.Animator;
         _bulletSpawnPoint.localPosition = CurrentWeaponData.BulletSpawnPosition;
-        _bulletsPool = new MonobehaviourPool<Bullet>(0, true, _bulletFactory, CurrentWeaponData.BulletData.Prefab, _bulletSpawnPoint);
+        _bulletsPool = new MonobehaviourPool<Bullet>(0, true, _bulletFactory, CurrentWeaponData.BulletData.Prefab,
+            _bulletSpawnPoint);
     }
 
     protected GameObject SpawnBullet()
@@ -78,11 +92,55 @@ public abstract class Weapon : MonoBehaviour
 
     private void FixedUpdate()
     {
+        RaycastToEnemy();
         if (Time.time > _timeToShoot && _isAttack)
         {
             _timeToShoot = Time.time + CurrentWeaponData.FireRate;
             SpawnShotEffect();
             Shoot();
+        }
+    }
+
+    private void RaycastToEnemy()
+    {
+        string layerName = "Enemy";
+        int layerMask = (LayerMask.GetMask(layerName));
+        var hit = Physics2D.Raycast(_bulletSpawnPoint.position,
+            _bulletSpawnPoint.transform.up, float.MaxValue, layerMask);
+
+        if (_isAttack)
+        {
+            if (hit.collider != null)
+            {
+                if (hit.collider.TryGetComponent(out Enemy enemy))
+                {
+                    float minLineDistance = 5;
+                    if (Vector3.Distance(_bulletSpawnPoint.position, enemy.CenterPoint.position) > minLineDistance)
+                    {
+                        _lineRenderer.startWidth = 1f;
+                        _lineRenderer.endWidth = 1f;
+                        _lineRenderer.SetPosition(0, _bulletSpawnPoint.position);
+                        _lineRenderer.SetPosition(1, enemy.CenterPoint.position);
+                    }
+                    else
+                    {
+                        _lineRenderer.startWidth = 0f;
+                        _lineRenderer.endWidth = 0f;
+                    }
+                }
+            }
+            else
+            {
+                _lineRenderer.startWidth = 1f;
+                _lineRenderer.endWidth = 1f;
+                _lineRenderer.SetPosition(0, _bulletSpawnPoint.position);
+                _lineRenderer.SetPosition(1, _bulletSpawnPoint.position + _bulletSpawnPoint.transform.up * 50f);
+            }
+        }
+        else
+        {
+            _lineRenderer.startWidth = 0f;
+            _lineRenderer.endWidth = 0f;
         }
     }
 

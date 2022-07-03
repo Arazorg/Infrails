@@ -177,9 +177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a728099957432a41930644e9e6e35c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _centerPoint: {fileID: 344797768975473579}
   _destructionEffectPrefab: {fileID: 4020237234510910174, guid: 12cb825221feb9e48b1ff6a6d3c94a86, type: 3}
   _shadowTransform: {fileID: 6350730864411059184}
-  _laserAttackPoint: {fileID: 344797768975473579}
 --- !u!114 &-6800553879967307779
 MonoBehaviour:
   m_ObjectHideFlags: 0

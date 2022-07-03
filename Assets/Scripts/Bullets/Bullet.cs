@@ -30,8 +30,7 @@ public abstract class Bullet : MonoBehaviour
 
     public void DestroyBullet()
     {
-        float destroyDelay = 2f;
-        Destroy(gameObject, destroyDelay);
+        Destroy(gameObject);
     }
 
     public void HideBullet()

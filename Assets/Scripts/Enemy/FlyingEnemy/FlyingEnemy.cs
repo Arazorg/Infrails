@@ -128,8 +128,8 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         _enemyDebuffs = GetComponent<EnemyDebuffs>();
         _enemyMovement = GetComponent<FlyingEnemyMovement>();
         _enemyAttack = GetComponent<FlyingEnemyAttack>();
-        _enemyMovement.Init(spawnPoint.position, Character.Transform);
-        _enemyAttack.Init(Character.Transform, Data);
+        _enemyMovement.Init(spawnPoint.position, Character.CenterPoint);
+        _enemyAttack.Init(Character, Data);
     }
 
     private void InitStates()
@@ -147,10 +147,10 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
 
     private void SetScale()
     {       
-        float scaleForBiome = 0.01f;
+        float scaleForBiome = 0.0085f;
         float biomeScaleFactor = scaleForBiome * CurrentGameInfo.Instance.ReachedBiomeNumber;
-        float minScale = 1.1f + biomeScaleFactor;
-        float maxScale = 1.3f + biomeScaleFactor;
+        float minScale = 1.5f + biomeScaleFactor;
+        float maxScale = 1.7f + biomeScaleFactor;
         float scaleFactor = Random.Range(minScale, maxScale);
         transform.localScale *= scaleFactor;   
     }

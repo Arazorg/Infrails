@@ -16169,27 +16169,6 @@ MonoBehaviour:
     _isLoop: 0
     _isRandomPitch: 0
     _audioSource: {fileID: 0}
-  - _name: GameBackgroundMusic_2
-    _clip: {fileID: 8300000, guid: 473db1bbf388f3b4db4d0fd3d9e959c1, type: 3}
-    _volume: 0.5
-    _pitch: 1
-    _isLoop: 0
-    _isRandomPitch: 0
-    _audioSource: {fileID: 0}
-  - _name: GameBackgroundMusic_3
-    _clip: {fileID: 8300000, guid: 03c607cefe18f394e99d391d5507ec53, type: 3}
-    _volume: 0.5
-    _pitch: 1
-    _isLoop: 0
-    _isRandomPitch: 0
-    _audioSource: {fileID: 0}
-  - _name: GameBackgroundMusic_4
-    _clip: {fileID: 8300000, guid: 1dd6ca25f83fee546bef06ec5467348f, type: 3}
-    _volume: 0.6
-    _pitch: 1
-    _isLoop: 0
-    _isRandomPitch: 0
-    _audioSource: {fileID: 0}
   - _name: GameBackgroundMusic_5
     _clip: {fileID: 8300000, guid: 475a115642e2f08469ab3f44eb53adcc, type: 3}
     _volume: 0.5

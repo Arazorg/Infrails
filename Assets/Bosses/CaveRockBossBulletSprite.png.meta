@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: dcb7e67d4ef38cb429e941b24c113967
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2561021454819937270
+    second: CaveRockBossBulletSprite_0
+  - first:
+      213: -5284652789837762680
+    second: CaveRockBossBulletSprite_1
+  - first:
+      213: -272649524677002903
+    second: CaveRockBossBulletSprite_2
+  - first:
+      213: -1829718334077362560
+    second: CaveRockBossBulletSprite_3
+  - first:
+      213: 8266923260532649810
+    second: CaveRockBossBulletSprite_4
+  - first:
+      213: -4230332337462454369
+    second: CaveRockBossBulletSprite_5
+  - first:
+      213: -3564052741524196505
+    second: CaveRockBossBulletSprite_6
+  - first:
+      213: 5095527255698405481
+    second: CaveRockBossBulletSprite_7
+  - first:
+      213: 1696910260207007521
+    second: CaveRockBossBulletSprite_8
+  - first:
+      213: 1857763094355678354
+    second: CaveRockBossBulletSprite_9
+  - first:
+      213: 1470030103403724387
+    second: CaveRockBossBulletSprite_10
+  - first:
+      213: -4331793606650635764
+    second: CaveRockBossBulletSprite_11
+  - first:
+      213: -2948633995903937100
+    second: CaveRockBossBulletSprite_12
+  - first:
+      213: -7899969968875838051
+    second: CaveRockBossBulletSprite_13
+  - first:
+      213: -3613001454446246767
+    second: CaveRockBossBulletSprite_14
+  - first:
+      213: -8066785272261234291
+    second: CaveRockBossBulletSprite_15
+  - first:
+      213: 4493137933391594731
+    second: CaveRockBossBulletSprite_16
+  - first:
+      213: 7430766403109920332
+    second: CaveRockBossBulletSprite_17
+  - first:
+      213: 8697086314713889914
+    second: CaveRockBossBulletSprite_18
+  - first:
+      213: 6579672175902667129
+    second: CaveRockBossBulletSprite_19
+  - first:
+      213: -5340903984829574987
+    second: CaveRockBossBulletSprite_20
+  - first:
+      213: 8324701251823946423
+    second: CaveRockBossBulletSprite_21
+  - first:
+      213: -1756146118355335070
+    second: CaveRockBossBulletSprite_22
+  - first:
+      213: 8891581412318151144
+    second: CaveRockBossBulletSprite_23
+  - first:
+      213: 2261345431048068964
+    second: CaveRockBossBulletSprite_24
+  - first:
+      213: 9182829236275637885
+    second: CaveRockBossBulletSprite_25
+  - first:
+      213: -832501484542063063
+    second: CaveRockBossBulletSprite_26
+  - first:
+      213: -8370059151175692565
+    second: CaveRockBossBulletSprite_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04bd434e8c657cd0800000000000000
+      internalID: -2561021454819937270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f6174794429a6b0800000000000000
+      internalID: -5284652789837762680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_2
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969b27da3ba573cf0800000000000000
+      internalID: -272649524677002903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e9c429ed88b96e0800000000000000
+      internalID: -1829718334077362560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f6679c7e20ab270800000000000000
+      internalID: 8266923260532649810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_5
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97d3bff627da45c0800000000000000
+      internalID: -4230332337462454369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_6
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 690
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76371bc2ae0f98ec0800000000000000
+      internalID: -3564052741524196505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9687933ba03f6b640800000000000000
+      internalID: 5095527255698405481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_8
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127ba5b14e2ac8710800000000000000
+      internalID: 1696910260207007521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29496e301b918c910800000000000000
+      internalID: 1857763094355678354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_10
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e728a2798966410800000000000000
+      internalID: 1470030103403724387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_11
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ad7436aa062e3c0800000000000000
+      internalID: -4331793606650635764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_12
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b55185d0095417d0800000000000000
+      internalID: -2948633995903937100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_13
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 460
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95e6ec4b2bad5290800000000000000
+      internalID: -7899969968875838051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19403c6d15a0cddc0800000000000000
+      internalID: -3613001454446246767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_15
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d813487d8850d0090800000000000000
+      internalID: -8066785272261234291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_16
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be483ae0525da5e30800000000000000
+      internalID: 4493137933391594731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_17
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e164a7ca26f1760800000000000000
+      internalID: 7430766403109920332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_18
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cbe619ce142b870800000000000000
+      internalID: 8697086314713889914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_19
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971333fbbf0bf4b50800000000000000
+      internalID: 6579672175902667129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_20
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 230
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0d3c48f1c41e5b0800000000000000
+      internalID: -5340903984829574987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba4730bea7478370800000000000000
+      internalID: 8324701251823946423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_22
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268cfb9e86ae0a7e0800000000000000
+      internalID: -1756146118355335070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_23
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e180b45f2e356b70800000000000000
+      internalID: 8891581412318151144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_24
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f921c30b9e16f10800000000000000
+      internalID: 2261345431048068964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_25
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ee745a986ff6f70800000000000000
+      internalID: 9182829236275637885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_26
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e82e28f4c5274f0800000000000000
+      internalID: -832501484542063063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaveRockBossBulletSprite_27
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 270
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee4a296c8397db80800000000000000
+      internalID: -8370059151175692565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

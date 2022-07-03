@@ -7,7 +7,6 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
 
     [SerializeField] private GameObject _destructionEffectPrefab;
     [SerializeField] private Transform _shadowTransform;
-    [SerializeField] private Transform _laserAttackPoint;
 
     private GameObject _destructionEffect;
     private Coroutine _destroyByLaserCoroutine;
@@ -18,9 +17,9 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
     private Vector3 _finishOffset;
     private float _swayTime = float.MaxValue;
     private float _offsetFactorY = 0.8f;
-    private float _timeToDestroyByLaser = 0;
+    private float _timeToDestroyByLaser;
 
-    public Transform LaserAttackPoint => _laserAttackPoint;
+    public Transform LaserAttackPoint => CenterPoint;
 
     public bool IsVisible => IsGetDamage;
 
@@ -130,7 +129,7 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
 
     private void SpawnDestructionEffect()
     {
-        _destructionEffect = Instantiate(_destructionEffectPrefab, _laserAttackPoint);
+        _destructionEffect = Instantiate(_destructionEffectPrefab, CenterPoint);
         var settings = _destructionEffect.GetComponent<ParticleSystem>().main;
         settings.startColor = new ParticleSystem.MinMaxGradient(Data.UnitColor);
     }
