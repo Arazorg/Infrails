@@ -7,6 +7,7 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
 
     [SerializeField] private GameObject _destructionEffectPrefab;
     [SerializeField] private Transform _shadowTransform;
+    [SerializeField] private PopUpDamageText _text;
 
     private GameObject _destructionEffect;
     private Coroutine _destroyByLaserCoroutine;
@@ -28,6 +29,12 @@ public class ManeCrystal : Enemy, IEnemyLaserTarget
         Data = data;
         OnInit();
         TryGetCharacter(character);
+    }
+
+    public void SetDamageX2Text()
+    {
+        string x2DamageText = "Dmg x2";
+        _text.SetText(x2DamageText);
     }
 
     public override void BulletHit(PlayerBullet bullet)

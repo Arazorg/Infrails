@@ -72,7 +72,8 @@ public class StaticEnemyWeapon : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (_currentTarget.LaserAttackPoint != null)
-            _currentTarget.StopLaserInteraction();
+        if (_currentTarget != null)
+            if (_currentTarget.LaserAttackPoint != null)
+                _currentTarget.StopLaserInteraction();
     }
 }

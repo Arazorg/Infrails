@@ -6,7 +6,6 @@ public class PauseUI : BaseUI, IUIPanel
     [SerializeField] private ExitUI _exitUI;
     [SerializeField] private SettingsUI _settingsUI;
     [SerializeField] private AnimationsUI _settingsButton;
-    [SerializeField] private LevelInfoUI _levelInfoUI;
 
     private bool _isSettingsPanelOpen;
     private bool _isActive;
@@ -57,7 +56,6 @@ public class PauseUI : BaseUI, IUIPanel
         _isPopAvailable = true;
         StartCoroutine(EnableBackButton());
         Show();
-        _levelInfoUI.Hide();
     }
 
     public void BackToGame()

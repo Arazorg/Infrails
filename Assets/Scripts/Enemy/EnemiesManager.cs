@@ -5,8 +5,9 @@ public class EnemiesManager : MonoBehaviour
 {
     public static EnemiesManager Instance;
 
-    [Header("Enemies Data")]
-    [SerializeField] private EnemyFactory _enemyFactory;
+    [Header("Enemies Data")] [SerializeField]
+    private EnemyFactory _enemyFactory;
+
     [SerializeField] private List<EnemyData> _maneCrystalsData;
     [SerializeField] private EnemyData _firstAidKitData;
     [SerializeField] private EnemyData _repairKitData;
@@ -27,10 +28,7 @@ public class EnemiesManager : MonoBehaviour
 
     public Character Character
     {
-        get
-        {
-            return _character;
-        }
+        get { return _character; }
         set
         {
             _character = value;
@@ -132,11 +130,16 @@ public class EnemiesManager : MonoBehaviour
 
         if (Random.Range(0f, 1f) < spawnChanceMainManeCrystal)
         {
-            _staticEnemyTargets.Add(SpawnEnemyToParent(_mainManeCrystalData, spawnPoint) as ManeCrystal);
+            var mainManeCrystal = SpawnEnemyToParent(_mainManeCrystalData, spawnPoint) as ManeCrystal;
+            _staticEnemyTargets.Add(mainManeCrystal);
+            mainManeCrystal.SetDamageX2Text();
         }
         else
         {
             int dataNumber = Random.Range(0, _maneCrystalsData.Count);
+            if(_maneCrystalsData[dataNumber].EnemyElement == _mainManeCrystalData.EnemyElement)
+                dataNumber = Random.Range(0, _maneCrystalsData.Count);
+            
             SpawnEnemyToParent(_maneCrystalsData[dataNumber], spawnPoint);
         }
     }

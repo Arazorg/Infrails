@@ -3,8 +3,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(Image))]
 public class CooldownIndicator : MonoBehaviour
 {
+    [SerializeField] private Button _mainButton;
     [SerializeField] private Color _startColor;
     [SerializeField] private Color _centerColor;
     [SerializeField] private Color _finishColor;
@@ -16,12 +18,12 @@ public class CooldownIndicator : MonoBehaviour
 
     public void SetFinishTime(float finishTime)
     {
+        _mainButton.enabled = false;
         _image.fillAmount = 0;
         _startTime = Time.time;
         _finishTime = finishTime;
         StartCoroutine(FillImage());
     }
-
 
     private void Start()
     {
@@ -39,11 +41,13 @@ public class CooldownIndicator : MonoBehaviour
                 _image.color = Color.Lerp(_startColor, _centerColor, amount * 2);
             else
                 _image.color = Color.Lerp(_centerColor, _finishColor, (amount - 0.5f) * 2);
+            
             _timeText.text = string.Format("{0:f2}", (_finishTime - Time.time));
             yield return null;
         }
 
         _timeText.text = string.Empty;
         _image.fillAmount = 1;
+        _mainButton.enabled = true;
     }
 }

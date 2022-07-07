@@ -61,6 +61,7 @@ public abstract class Enemy : MonoBehaviour
         InitComponents();
         BoxCollider2D.size = Data.ColliderSize;
         BoxCollider2D.offset = Data.ColliderOffset;
+        BoxCollider2D.enabled = false;
         _centerPoint.localPosition = Data.Center;
         _health = Data.MaxHealth;
         _animator.runtimeAnimatorController = Data.AnimatorController;
@@ -81,11 +82,13 @@ public abstract class Enemy : MonoBehaviour
 
     private void OnBecameVisible()
     {
+        BoxCollider2D.enabled = true;
         _isGetDamage = true;
     }
 
     private void OnBecameInvisible()
     {
+        BoxCollider2D.enabled = false;
         _isGetDamage = false;
     }
 }

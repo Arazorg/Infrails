@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(CharacterEffects))]
+[RequireComponent(typeof(CharacterAmplifications))]
 public class Character : MonoBehaviour, IEnemyLaserTarget
 {
     [SerializeField] private Transform _centerPoint;
@@ -9,6 +13,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
     private BoxCollider2D _boxCollider2D;
     private CharacterData _characterData;
     private CharacterEffects _characterEffects;
+    private CharacterAmplifications _characterAmplifications;
     private TrolleyMovement _trolleyMovement;
 
     private int _health;
@@ -32,6 +37,8 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
     public delegate void MoneyChanged(int money);
     public event MoneyChanged OnMoneyChanged;
 
+    public CharacterAmplifications CharacterAmplifications => _characterAmplifications;
+    
     public CharacterData CharacterData => _characterData;
 
     public Transform Transform => transform;
@@ -137,6 +144,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         _animator = GetComponent<Animator>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _characterEffects = GetComponent<CharacterEffects>();
+        _characterAmplifications = GetComponent<CharacterAmplifications>();
         _trolleyMovement = GetComponentInParent<TrolleyMovement>();
     }
 

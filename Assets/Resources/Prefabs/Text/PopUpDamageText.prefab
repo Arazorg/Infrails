@@ -206,3 +206,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 1483817710457529503}
   _animator: {fileID: 1483817710457529488}
+  _x2DamageColor: {r: 0.2784314, g: 0.89019614, b: 0.18039216, a: 1}

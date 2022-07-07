@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CharacterAmplifications : MonoBehaviour
 {
-    private const int MaxNumberAmplifications = 5;
+    private const int MaxNumberAmplifications = 3;
 
     private List<AmplificationData> _currentAmplificationsData;
 
@@ -11,7 +11,10 @@ public class CharacterAmplifications : MonoBehaviour
 
     public event ChangeAmplifications OnChangeAmplifications;
 
-    public List<AmplificationData> CurrentAmplificationsData => _currentAmplificationsData;
+    public List<AmplificationData> CurrentAmplificationsData
+    {
+        set { _currentAmplificationsData = value; }
+    }
 
     public void Init()
     {
@@ -22,6 +25,7 @@ public class CharacterAmplifications : MonoBehaviour
     {
         if (_currentAmplificationsData.Count < MaxNumberAmplifications)
         {
+            Debug.Log(amplificationData.ItemName);
             _currentAmplificationsData.Add(amplificationData);
             OnChangeAmplifications?.Invoke(_currentAmplificationsData);
             return true;
@@ -35,14 +39,14 @@ public class CharacterAmplifications : MonoBehaviour
         _currentAmplificationsData.Remove(amplificationData);
         for (int i = 0; i < _currentAmplificationsData.Capacity; i++)
         {
-            if(i < _currentAmplificationsData.Count - 1)
+            if (i < _currentAmplificationsData.Count - 1)
             {
                 if (_currentAmplificationsData[i] == null)
                 {
                     _currentAmplificationsData[i] = _currentAmplificationsData[i + 1];
                     _currentAmplificationsData[i + 1] = null;
                 }
-            }         
+            }
         }
 
         OnChangeAmplifications?.Invoke(_currentAmplificationsData);

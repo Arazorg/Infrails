@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class EnemyWeaponCharacteristics : WeaponCharacteristics
 {
     public EnemyWeaponCharacteristics(WeaponData weaponData) : base(weaponData)

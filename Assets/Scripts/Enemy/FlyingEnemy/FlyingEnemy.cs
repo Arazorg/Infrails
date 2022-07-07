@@ -29,6 +29,7 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         SetScale();
         SetHealth();
         Move();
+        BoxCollider2D.enabled = true;
     }
 
     public void SwitchState<T>() where T : BaseEnemyState

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class LoadingUI : MonoBehaviour
 {
     private const string GameName = "INFRAILS";
-    private const string AnyReferenceText = "ANY REFERENCE TO LIVING PERSONS OR REAL EVENTS IS PURELY COINCIDENTAL";
+    private const string AnyReferenceText = "Any similarity to actual persons, living or dead, or actual events, is purely coincidental.";
     private const string LoadingKey = "Loading";
     private const string HintKey = "LoadingHint";
     private const int NumberOfHints = 9;

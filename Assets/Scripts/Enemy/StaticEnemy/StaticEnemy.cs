@@ -26,6 +26,7 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         InitStates();
         OnInit();
         SetHealth();
+        BoxCollider2D.enabled = true;
     }
 
     public void InitScripts(List<Transform> teleportationPoints, List<IEnemyLaserTarget> targets)

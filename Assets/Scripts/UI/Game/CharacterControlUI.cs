@@ -11,7 +11,8 @@ public class CharacterControlUI : BaseUI, IUIPanel
     [SerializeField] private RebornUI _rebornUI;
     [SerializeField] private GameShopUI _gameShopUI;
     [SerializeField] private ElementIndicatorUI _elementIndicatorUI;
-    [SerializeField] private CooldownIndicator _cooldownIndicator;
+    [SerializeField] private HealingButtonUI _healingButtonUI;
+    [SerializeField] private CooldownIndicator _skillCooldownIndicator;
     [SerializeField] private List<CurrentAmplificationsPanelUI> _currentAmplificationsPanels;
 
     [Header("Bars")]
@@ -59,6 +60,7 @@ public class CharacterControlUI : BaseUI, IUIPanel
         _character = character;
         _character.GetComponent<CharacterControl>().Joystick = _joystick;
         _gameShopUI.Init(_character);
+        _healingButtonUI.Init(_character);
         foreach (var panel in _currentAmplificationsPanels)
             panel.Init(character.GetComponent<CharacterAmplifications>());
         
@@ -80,7 +82,8 @@ public class CharacterControlUI : BaseUI, IUIPanel
 
     public void UseSkill()
     {
-        _cooldownIndicator.SetFinishTime(Time.time + 5);
+        float skillCooldown = 5;
+        _skillCooldownIndicator.SetFinishTime(Time.time + skillCooldown);
     }
 
     public void OpenRebornUI()

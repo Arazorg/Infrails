@@ -9,12 +9,21 @@ public class PopUpDamageText : MonoBehaviour
 
     [SerializeField] private TextMeshPro _text;
     [SerializeField] private Animator _animator;
+    [SerializeField] private Color _x2DamageColor;
 
     private Enemy _enemy;
     private Vector3 _offset;
     private float _startSize;
     private float _currentPopUpDamage;
     private float _popUpTextFinishTime;
+
+    public void SetText(string text)
+    {
+        _text.text = text;
+        _text.colorGradient = new VertexGradient(Color.white);
+        _text.color = _x2DamageColor;
+        _animator.Play(ShowPopUp);
+    }
 
     private void Start()
     {
