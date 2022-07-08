@@ -128,9 +128,9 @@ public class TutorialUI : BaseUI, IUIPanel
 
     private IEnumerator ShowPhrase(TutorialItem tutorialItem)
     {
-        float timeOfTyping = 1.5f;
-        float delayBetweenPhrases = 2f;
-        float delayBetweenPhrasesSpeedUp = 0.5f;
+        float timeOfTyping = 2f;
+        float delayBetweenPhrases = 3f;
+        float delayBetweenPhrasesSpeedUp = 1f;
         string animatorKey = "isSpeaking";
 
         _isPhraseSpeedUp = false;

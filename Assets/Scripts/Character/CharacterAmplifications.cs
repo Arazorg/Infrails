@@ -25,7 +25,6 @@ public class CharacterAmplifications : MonoBehaviour
     {
         if (_currentAmplificationsData.Count < MaxNumberAmplifications)
         {
-            Debug.Log(amplificationData.ItemName);
             _currentAmplificationsData.Add(amplificationData);
             OnChangeAmplifications?.Invoke(_currentAmplificationsData);
             return true;

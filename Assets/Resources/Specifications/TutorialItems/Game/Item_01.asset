@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2464320170851a943ab5ee2d84ef4b23, type: 3}
   m_Name: Item_01
   m_EditorClassIdentifier: 
-  _phraseKey: TutorialPhrase8
-  _phraseSprite: {fileID: 0}
-  _phraseImageSize: {x: 0, y: 0}
-  _showTime: 0
+  _phraseKey: TutorialPhrase3
+  _phraseSprite: {fileID: -7305735468780406122, guid: 137a6a9d621c52c45b1c0fbbb4f0db16, type: 3}
+  _phraseImageSize: {x: 375, y: 375}
+  _showTime: 2

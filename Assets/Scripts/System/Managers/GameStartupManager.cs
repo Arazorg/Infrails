@@ -32,16 +32,20 @@ public class GameStartupManager : MonoBehaviour
         if (!PlayerProgress.Instance.IsGameTutorialCompleted)
         {
             UIManager.Instance.UIStackPush(_tutorialUI);
-            _tutorialUI.OnTutorialFinish += StartGame;
+            _tutorialUI.OnTutorialFinish += PushStartUI;
         }
         else
         {
-            Debug.Log("!");
-            UIManager.Instance.UIStackPush(_gameStartUI);
-            _gameStartUI.OnAmplificationsSelected += SetAmplifications;
+            PushStartUI();
         }
 
         SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void PushStartUI()
+    {
+        UIManager.Instance.UIStackPush(_gameStartUI);
+        _gameStartUI.OnAmplificationsSelected += SetAmplifications;
     }
 
     private void SetAmplifications(List<AmplificationData> amplificationsData)
