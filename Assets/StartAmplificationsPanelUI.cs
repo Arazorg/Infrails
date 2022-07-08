@@ -1,15 +1,17 @@
+using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class StartAmplificationsPanelUI : MonoBehaviour
 {
     private const int MaxAmplificationsNumber = 3;
-    
+
     [SerializeField] private RectTransform _amplificationsParentTransform;
     [SerializeField] private AmplificationImageUI _amplificationImageUIPrefab;
     [SerializeField] private AnimationsUI _playButton;
-    [SerializeField] private List<LocalizedText> _amplificationsDescrtionsTexts;
-    
+    [SerializeField] private List<TextMeshProUGUI> _amplificationsDescrtionsTexts;
+
     private List<AmplificationImageUI> _currentAmplificationsImages;
     private List<AmplificationImageUI> _selectedAmplificationsImages;
     private int _numberChangingAmplification;
@@ -37,14 +39,17 @@ public class StartAmplificationsPanelUI : MonoBehaviour
         foreach (var amplificationImage in _currentAmplificationsImages)
             amplificationImage.OnAmplificationClick -= SetAmplification;
     }
-    
+
     private void SetAmplification(AmplificationImageUI amplificationImageUI)
     {
         if (_numberSelectedAmplifications < MaxAmplificationsNumber)
         {
             _selectedAmplificationsImages.Add(amplificationImageUI);
-            _amplificationsDescrtionsTexts[_numberSelectedAmplifications]
-                .SetLocalization(amplificationImageUI.AmplificationData.ItemName);
+            _amplificationsDescrtionsTexts[_numberSelectedAmplifications].text =
+                LocalizationManager.Instance.GetLocalizedText(amplificationImageUI.AmplificationData.ItemName) 
+                + "\n" + GetBonusText(amplificationImageUI.AmplificationData);
+            _amplificationsDescrtionsTexts[_numberSelectedAmplifications].color = 
+                amplificationImageUI.AmplificationData.ItemColor;
         }
         else
         {
@@ -54,8 +59,8 @@ public class StartAmplificationsPanelUI : MonoBehaviour
         _numberSelectedAmplifications++;
         if (_numberSelectedAmplifications >= MaxAmplificationsNumber)
             _numberSelectedAmplifications = MaxAmplificationsNumber;
-        
-        if(_numberSelectedAmplifications == MaxAmplificationsNumber)
+
+        if (_numberSelectedAmplifications == MaxAmplificationsNumber)
             _playButton.Show();
     }
 
@@ -63,8 +68,29 @@ public class StartAmplificationsPanelUI : MonoBehaviour
     {
         _selectedAmplificationsImages[_numberChangingAmplification].RemoveAmplification();
         _selectedAmplificationsImages[_numberChangingAmplification] = amplificationImageUI;
-        _amplificationsDescrtionsTexts[_numberChangingAmplification].SetLocalization(
-            amplificationImageUI.AmplificationData.ItemName);
+        _amplificationsDescrtionsTexts[_numberChangingAmplification].text =
+            LocalizationManager.Instance.GetLocalizedText(amplificationImageUI.AmplificationData.ItemName) 
+            + "\n" + GetBonusText(amplificationImageUI.AmplificationData);
+        _amplificationsDescrtionsTexts[_numberChangingAmplification].color = 
+            amplificationImageUI.AmplificationData.ItemColor;
         _numberChangingAmplification = (_numberChangingAmplification + 1) % MaxAmplificationsNumber;
+    }
+
+    private string GetBonusText(AmplificationData amplificationData)
+    {
+        amplificationData.Level = 1;
+        int power = amplificationData.AmplificationPowers[amplificationData.Level - 1];
+        string powerKey = amplificationData.CurrentAmplificationType.ToString();
+
+        switch (amplificationData.CurrentAmplificationIncreaseType)
+        {
+            case AmplificationData.AmplificationIncreaseType.Percent:
+                return string.Format("+{0}% {1}", power, LocalizationManager.Instance.GetLocalizedText(powerKey));
+
+            case AmplificationData.AmplificationIncreaseType.Add:
+                return string.Format("+{0} {1}", power, LocalizationManager.Instance.GetLocalizedText(powerKey));
+        }
+        
+        return String.Empty;
     }
 }

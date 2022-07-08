@@ -84,6 +84,5 @@ public class GameStartUI : BaseUI, IUIPanel
             amplificationImage.AmplificationData.Level = 1;
             _selectedAmplifications.Add(amplificationImage.AmplificationData);
         }
-            
     }
 }
