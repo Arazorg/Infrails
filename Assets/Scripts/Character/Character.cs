@@ -14,6 +14,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
     private CharacterData _characterData;
     private CharacterEffects _characterEffects;
     private CharacterAmplifications _characterAmplifications;
+    private CharacterWeapon _characterWeapon;
     private TrolleyMovement _trolleyMovement;
 
     private int _health;
@@ -36,6 +37,8 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
 
     public delegate void MoneyChanged(int money);
     public event MoneyChanged OnMoneyChanged;
+
+    public CharacterWeapon CharacterWeapon => _characterWeapon;
 
     public CharacterAmplifications CharacterAmplifications => _characterAmplifications;
     
@@ -70,9 +73,9 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         _armor = _characterData.MaxArmor; 
         _isDeath = false;
         _isCanReborn = true;
+        _characterWeapon.Init(_characterData);
+        _characterAmplifications.Init();
         GetComponentInParent<TrolleyMovement>().Character = this;
-        GetComponent<CharacterWeapon>().Init(_characterData);
-        GetComponent<CharacterAmplifications>().Init();
     }
 
     public void Heal(int heal)
@@ -145,6 +148,7 @@ public class Character : MonoBehaviour, IEnemyLaserTarget
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _characterEffects = GetComponent<CharacterEffects>();
         _characterAmplifications = GetComponent<CharacterAmplifications>();
+        _characterWeapon = GetComponent<CharacterWeapon>();
         _trolleyMovement = GetComponentInParent<TrolleyMovement>();
     }
 

@@ -45,23 +45,24 @@ public class GameStartupManager : MonoBehaviour
     private void PushStartUI()
     {
         UIManager.Instance.UIStackPush(_gameStartUI);
-        _gameStartUI.OnAmplificationsSelected += SetAmplifications;
+        _gameStartUI.OnStartGamePanelClosed += SetAmplificationsAndWeapon;
     }
 
-    private void SetAmplifications(List<AmplificationData> amplificationsData)
+    private void SetAmplificationsAndWeapon(List<AmplificationData> amplificationsData, WeaponData weaponData)
     {
         _selectedAmplificationsData = new List<AmplificationData>();
         _selectedAmplificationsData = amplificationsData;
         StartGame();
         foreach (var amplificationData in _selectedAmplificationsData)
             _character.CharacterAmplifications.AddNewAmplification(amplificationData);
+        _character.CharacterWeapon.SpawnWeapon(weaponData);
     }
 
     private void StartGame()
     {
         UIManager.Instance.UIStackPop();
         _tutorialUI.OnTutorialFinish -= StartGame;
-        _gameStartUI.OnAmplificationsSelected -= SetAmplifications;
+        _gameStartUI.OnStartGamePanelClosed -= SetAmplificationsAndWeapon;
         PlayerProgress.Instance.SetGameTutorialComplete();
         Transform trolley = CharacterSpawner.Instance.SpawnTrolley(_trolleySpawnPoint);
         _character = CharacterSpawner.Instance.SpawnCharacter(CurrentGameInfo.Instance.CharacterData, trolley);

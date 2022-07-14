@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: (3)AmazingCrossbow
   m_EditorClassIdentifier: 
   _itemName: AmazingCrossbow
-  _itemColor: {r: 0.49019608, g: 0, b: 0.85882354, a: 1}
+  _itemColor: {r: 0.2509804, g: 0.08235294, b: 0.8392157, a: 1}
   _itemSpriteUI: {fileID: 5976073551328772092, guid: f582596d4f5686448870e67b55ba5124, type: 3}
   _isStartingItem: 0
   _prefab: {fileID: -4369186634672922947, guid: 206378425c4d5ff40a4f4a2a419d495f, type: 3}

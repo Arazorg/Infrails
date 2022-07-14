@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: (3)WildShotgun
   m_EditorClassIdentifier: 
   _itemName: WildShotgun
-  _itemColor: {r: 0.49019608, g: 0, b: 0.85882354, a: 1}
+  _itemColor: {r: 0.2509804, g: 0.08235294, b: 0.8392157, a: 1}
   _itemSpriteUI: {fileID: -7912670198609318610, guid: f582596d4f5686448870e67b55ba5124, type: 3}
   _isStartingItem: 0
   _prefab: {fileID: 7441295634186257563, guid: 1ccb3bcab5f9b0c48b3c4275e3390373, type: 3}

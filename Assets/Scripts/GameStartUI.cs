@@ -4,9 +4,12 @@ using UnityEngine;
 public class GameStartUI : BaseUI, IUIPanel
 {
     [SerializeField] private List<AmplificationData> _currentAmplifications;
+    [SerializeField] private List<WeaponData> _currentWeapons;
     [SerializeField] private StartAmplificationsPanelUI _startAmplificationsPanelUI;
+    [SerializeField] private StartWeaponsPanelUI _startWeaponsPanel;
 
-    private List<AmplificationData> _selectedAmplifications;
+    private List<AmplificationData> _selectedAmplificationsData;
+    private WeaponData _selectedWeaponData;
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
@@ -30,9 +33,9 @@ public class GameStartUI : BaseUI, IUIPanel
     }
 
 
-    public delegate void AmplificationsSelected(List<AmplificationData> amplificationsData);
+    public delegate void StartGamePanelClosed(List<AmplificationData> amplificationsData, WeaponData weaponData);
 
-    public event AmplificationsSelected OnAmplificationsSelected;
+    public event StartGamePanelClosed OnStartGamePanelClosed;
 
     public void OnPush()
     {
@@ -54,10 +57,17 @@ public class GameStartUI : BaseUI, IUIPanel
         Close();
     }
 
+    public void ShowWeaponsPanel()
+    {
+        _startAmplificationsPanelUI.Hide();
+        _startWeaponsPanel.ShowWeapons(_currentWeapons);
+    }
+
     public void GoToGame()
     {
+        _startWeaponsPanel.Hide();
         SetAmplificationsData();
-        OnAmplificationsSelected?.Invoke(_selectedAmplifications);
+        OnStartGamePanelClosed?.Invoke(_selectedAmplificationsData, _startWeaponsPanel.SelectedWeaponData);
     }
 
     private void Open()
@@ -78,11 +88,11 @@ public class GameStartUI : BaseUI, IUIPanel
 
     private void SetAmplificationsData()
     {
-        _selectedAmplifications = new List<AmplificationData>();
+        _selectedAmplificationsData = new List<AmplificationData>();
         foreach (var amplificationImage in _startAmplificationsPanelUI.SelectedAmplificationsImages)
         {
             amplificationImage.AmplificationData.Level = 1;
-            _selectedAmplifications.Add(amplificationImage.AmplificationData);
+            _selectedAmplificationsData.Add(amplificationImage.AmplificationData);
         }
     }
 }

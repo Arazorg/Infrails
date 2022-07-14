@@ -52,6 +52,11 @@
     },	
 	
 	{
+      "key": "Next",
+      "value": "Дальше"
+    },
+	
+	{
       "key": "Amplifications",
       "value": "Усиления"
     },
@@ -60,6 +65,16 @@
 	{
       "key": "YourAmplifications",
       "value": "Твои усиления"
+    },
+	
+	{
+      "key": "SelectAmplifications",
+      "value": "Выбери усиления"
+    },
+	
+	{
+      "key": "SelectWeapon",
+      "value": "Выбери оружие"
     },
 	
 	{

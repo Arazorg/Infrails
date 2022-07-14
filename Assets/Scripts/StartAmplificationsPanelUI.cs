@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(AnimationsUI))]
 public class StartAmplificationsPanelUI : MonoBehaviour
 {
     private const int MaxAmplificationsNumber = 3;
 
     [SerializeField] private RectTransform _amplificationsParentTransform;
     [SerializeField] private AmplificationImageUI _amplificationImageUIPrefab;
-    [SerializeField] private AnimationsUI _playButton;
+    [SerializeField] private AnimationsUI _nextButton;
     [SerializeField] private List<TextMeshProUGUI> _amplificationsDescrtionsTexts;
 
     private List<AmplificationImageUI> _currentAmplificationsImages;
@@ -30,14 +31,20 @@ public class StartAmplificationsPanelUI : MonoBehaviour
                 _amplificationsParentTransform);
             _currentAmplificationsImages.Add(amplificationImage);
             amplificationImage.Init(amplificationData);
-            amplificationImage.OnAmplificationClick += SetAmplification;
+            amplificationImage.OnAmplificationSelected += SetAmplification;
         }
+    }
+
+    public void Hide()
+    {
+        _nextButton.Hide();
+        GetComponent<AnimationsUI>().Hide();
     }
 
     public void UnfollowEvents()
     {
         foreach (var amplificationImage in _currentAmplificationsImages)
-            amplificationImage.OnAmplificationClick -= SetAmplification;
+            amplificationImage.OnAmplificationSelected -= SetAmplification;
     }
 
     private void SetAmplification(AmplificationImageUI amplificationImageUI)
@@ -61,7 +68,7 @@ public class StartAmplificationsPanelUI : MonoBehaviour
             _numberSelectedAmplifications = MaxAmplificationsNumber;
 
         if (_numberSelectedAmplifications == MaxAmplificationsNumber)
-            _playButton.Show();
+            _nextButton.Show();
     }
 
     private void ChangeAmplification(AmplificationImageUI amplificationImageUI)

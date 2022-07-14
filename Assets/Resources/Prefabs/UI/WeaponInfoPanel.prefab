@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 
-  isLocalizeOnStart: 0
 --- !u!1 &1207810844259466745
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +375,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   key: 
-  isLocalizeOnStart: 0
 --- !u!1 &1207810844450766670
 GameObject:
   m_ObjectHideFlags: 0

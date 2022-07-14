@@ -29,6 +29,19 @@ public class AnimationsUI : MonoBehaviour
         set { _isShowOnStart = value; }
     }
 
+    public Vector2 FinishPosition
+    {
+        get
+        {
+            return _finishPosition;
+        }
+        set
+        {
+            _finishPosition = value;
+            Show();
+        }
+    }
+
     public void Show()
     {
         if (_isMoving)

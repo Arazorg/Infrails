@@ -11,9 +11,9 @@ public class AmplificationImageUI : MonoBehaviour
 
     public AmplificationData AmplificationData => _amplificationData;
     
-    public delegate void AmplificationClick(AmplificationImageUI amplificationImageUI);
+    public delegate void AmplificationSelected(AmplificationImageUI amplificationImageUI);
 
-    public event AmplificationClick OnAmplificationClick;
+    public event AmplificationSelected OnAmplificationSelected;
     
     public void Init(AmplificationData amplificationData)
     {
@@ -21,14 +21,14 @@ public class AmplificationImageUI : MonoBehaviour
         _amplificationImage.sprite = _amplificationData.ItemSpriteUI;
     }
 
-    public void Click()
+    public void SelectAmplification()
     {
         if (!_isSelected)
         {
             _selectImage.GetComponent<Image>().color = Color.white;
             _selectImage.Show();
             _isSelected = true;
-            OnAmplificationClick?.Invoke(this);
+            OnAmplificationSelected?.Invoke(this);
         }
     }
 

@@ -64,7 +64,8 @@ public class TrolleyMovement : MonoBehaviour
         {
             if (_nextRail != null)
             {
-                transform.position = Vector2.MoveTowards(transform.position, _nextRail.transform.position, _speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, 
+                    _nextRail.transform.position, _speed * Time.deltaTime);
 
                 if (Vector2.Distance(transform.position, _nextRail.transform.position) < DistanceForGetNewPosition)
                 {

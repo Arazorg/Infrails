@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: (3)AK-2078
   m_EditorClassIdentifier: 
   _itemName: AK2078
-  _itemColor: {r: 0.49019608, g: 0, b: 0.85882354, a: 1}
+  _itemColor: {r: 0.2509804, g: 0.08235294, b: 0.8392157, a: 1}
   _itemSpriteUI: {fileID: 627343946848377922, guid: f582596d4f5686448870e67b55ba5124, type: 3}
   _isStartingItem: 0
   _prefab: {fileID: -5247871744309800004, guid: 008e1332d2aba204296da860a77c094c, type: 3}
