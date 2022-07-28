@@ -69,7 +69,7 @@ public class TrolleyMovement : MonoBehaviour
 
                 if (Vector2.Distance(transform.position, _nextRail.transform.position) < DistanceForGetNewPosition)
                 {
-                    if (_nextRail != null && _previousRail != null)
+                    if (_nextRail != null && _previousRail != null && _nextRail.NextRail != null)
                     {
                         if (_nextRail.NextRail.RailTransform != null)
                             Turn(_previousRail, _nextRail.NextRail.RailTransform);

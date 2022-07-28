@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: (3)N527
   m_EditorClassIdentifier: 
   _itemName: N527
-  _itemColor: {r: 0.2509804, g: 0.08235294, b: 0.8392157, a: 1}
-  _itemSpriteUI: {fileID: 3339731739158076776, guid: f582596d4f5686448870e67b55ba5124, type: 3}
+  _itemColor: {r: 1, g: 1, b: 1, a: 1}
+  _itemSpriteUI: {fileID: 9209163349818001336, guid: 095805c91db80ce40bc41609ef27927f, type: 3}
   _isStartingItem: 0
   _prefab: {fileID: -4369186634672922947, guid: 206378425c4d5ff40a4f4a2a419d495f, type: 3}
   _weaponAudioClip: {fileID: 8300000, guid: 8dd4cb342ba7d8948a3afc1b81b8c2d2, type: 3}

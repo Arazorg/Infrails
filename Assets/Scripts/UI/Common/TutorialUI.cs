@@ -116,20 +116,20 @@ public class TutorialUI : BaseUI, IUIPanel
     private IEnumerator TutorialTextPrinting(List<TutorialItem> tutorialItems)
     {
         float startDelay = 0.33f;
+        float phraseDelay = 2.5f;
         yield return new WaitForSeconds(startDelay);
 
         for (int i = 0; i < tutorialItems.Count - 1; i++)
-            yield return StartCoroutine(ShowPhrase(tutorialItems[i]));
+            yield return StartCoroutine(ShowPhrase(tutorialItems[i], phraseDelay));
 
         PlayerProgress.Instance.SetLobbyTutorialComplete();
         UIManager.Instance.UIStackPop();
         OnTutorialFinish?.Invoke();
     }
 
-    private IEnumerator ShowPhrase(TutorialItem tutorialItem)
+    private IEnumerator ShowPhrase(TutorialItem tutorialItem, float delayBetweenPhrases)
     {
         float timeOfTyping = 2f;
-        float delayBetweenPhrases = 3f;
         float delayBetweenPhrasesSpeedUp = 1f;
         string animatorKey = "isSpeaking";
 
@@ -163,7 +163,8 @@ public class TutorialUI : BaseUI, IUIPanel
 
     private IEnumerator ShowLastPhrase(TutorialItem tutorialItem)
     {
-        yield return StartCoroutine(ShowPhrase(tutorialItem));
+        float lastPhraseDelay = 1.5f;
+        yield return StartCoroutine(ShowPhrase(tutorialItem, lastPhraseDelay));
         PlayerProgress.Instance.SetLobbyTutorialComplete();
         UIManager.Instance.UIStackPop();
         OnTutorialFinish?.Invoke();

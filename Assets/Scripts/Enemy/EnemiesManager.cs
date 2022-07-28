@@ -19,8 +19,8 @@ public class EnemiesManager : MonoBehaviour
     private EnemyData _eggData;
     private EnemyData _mainManeCrystalData;
     private Character _character;
-
     private StaticEnemy _currentStaticEnemy;
+    private LevelData _levelData;
 
     public delegate void CharacterAvailable(Character character);
 
@@ -34,6 +34,11 @@ public class EnemiesManager : MonoBehaviour
             _character = value;
             OnCharacterAvailable?.Invoke(_character);
         }
+    }
+
+    public void SetLevelData(LevelData levelData)
+    {
+        _levelData = levelData;
     }
 
     public void SetEnemiesData(BiomeData biomeData)
@@ -82,13 +87,19 @@ public class EnemiesManager : MonoBehaviour
             Destroy(_currentStaticEnemy.gameObject);
 
         _currentStaticEnemy = SpawnEnemyToParent(_staticEnemyData, teleportationPoints[0]) as StaticEnemy;
+        _currentStaticEnemy.SetEnemyLevel(_levelData.EnemiesLevel);
         _currentStaticEnemy.InitScripts(teleportationPoints, _staticEnemyTargets);
     }
 
     public void SpawnFlyingEnemies(List<Transform> spawnPoints)
     {
-        float maxNumberOfEnemies = 5;
-        float bonusNumbersOfEnemies = CurrentGameInfo.Instance.ReachedBiomeNumber / 5;
+        int maxNumberOfEnemies = 10;
+        int levelsForBonusEnemy = 3;
+        int biomesForBonusEnemyInfiniteMode = 3;
+
+        int bonusNumbersOfEnemies = PlayerProgress.Instance.LevelNumber / levelsForBonusEnemy;
+        if (CurrentGameInfo.Instance.IsInfinite)
+            bonusNumbersOfEnemies = CurrentGameInfo.Instance.ReachedBiomeNumber / biomesForBonusEnemyInfiniteMode;
 
         if (bonusNumbersOfEnemies > maxNumberOfEnemies)
             bonusNumbersOfEnemies = maxNumberOfEnemies;
@@ -99,6 +110,7 @@ public class EnemiesManager : MonoBehaviour
             {
                 int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
                 FlyingEnemy enemy = SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint) as FlyingEnemy;
+                enemy.SetEnemyLevel(_levelData.EnemiesLevel);
                 enemy.OnFlyingEnemyDeath += RemoveFlyingEnemyFromList;
                 _currentFlyingEnemies.Add(enemy);
             }

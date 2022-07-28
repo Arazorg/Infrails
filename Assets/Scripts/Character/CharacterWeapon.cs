@@ -36,7 +36,6 @@ public class CharacterWeapon : MonoBehaviour
 
     public void SpawnWeapon(WeaponData data)
     {
-        Debug.Log(data.ItemName);
         if (_currentWeapon != null)
             Destroy(_currentWeapon.gameObject);
 

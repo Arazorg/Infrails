@@ -8,7 +8,7 @@ public class PlayerProgress : MonoBehaviour
 
     private const string PlayerProgressFile = "PlayerProgress.txt";
 
-    public PlayerProgressData _playerProgressData;
+    private PlayerProgressData _playerProgressData;
     private SaveSystem _saveSystem;
     private List<AmplificationData> _amplificationsData = new List<AmplificationData>();
     private List<WeaponData> _weaponsData = new List<WeaponData>();
@@ -32,6 +32,19 @@ public class PlayerProgress : MonoBehaviour
         {
             _playerProgressData.PlayerMoney = value;
             OnMoneyUpdate?.Invoke();
+            Save();
+        }
+    }
+
+    public int LevelNumber
+    {
+        get
+        {
+            return _playerProgressData.LevelNumber;
+        }
+        set
+        {
+            _playerProgressData.LevelNumber = value;
             Save();
         }
     }
@@ -285,6 +298,7 @@ public class PlayerProgress : MonoBehaviour
     {
         var tempData = JsonUtility.FromJson<PlayerProgressData>(currentPlayerProgress);
         _playerProgressData.PlayerMoney = tempData.PlayerMoney;
+        _playerProgressData.LevelNumber = tempData.LevelNumber;
         _playerProgressData.IsLobbyTutorialCompleted = tempData.IsLobbyTutorialCompleted;
         _playerProgressData.IsGameTutorialCompleted = tempData.IsGameTutorialCompleted;
         _playerProgressData.TrolleyForSupportAvailability.IsAvailable = tempData.TrolleyForSupportAvailability.IsAvailable;

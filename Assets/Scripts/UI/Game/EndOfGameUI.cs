@@ -11,6 +11,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
     [SerializeField] private TextMeshProUGUI _playTimeText;
     [SerializeField] private TextMeshProUGUI _reachedLevelText;
     [SerializeField] private TextMeshProUGUI _doubleMoneyText;
+    [SerializeField] private LocalizedText _resultText;
 
     [Header("Images")]
     [SerializeField] private Image _characterImage;
@@ -25,6 +26,8 @@ public class EndOfGameUI : BaseUI, IUIPanel
     [SerializeField] private AnimationsUI _doubleRewardButton;
     [SerializeField] private AnimationsUI _goToLobbyButton;
     [SerializeField] private AnimationsUI _doubleMoneyImage;
+    [SerializeField] private AnimationsUI _goToNextLevelButton;
+    [SerializeField] private AnimationsUI _retryLevelButton;
 
     [Header("Audio Clips")]
     [SerializeField] private AudioClip _defeatAudioClip;
@@ -32,18 +35,34 @@ public class EndOfGameUI : BaseUI, IUIPanel
     private Vector2 _centerAnchor = new Vector2(0.5f, 0.5f);
     private Vector2 _startPosition;
     private Vector2 _finishPosition;
-
+    private float _levelLength;
+    private float _characterPositionY;
     private bool _isTrolleyMove;
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
     private bool _isDoubleRewardAvailable = true;
+    private bool _isWin;
+    private bool _isInifinite;
 
     public bool IsActive { get => _isActive; set => _isActive = value; }
 
     public bool IsBackButtonEnabled { get => _isBackButtonEnabled; set => _isBackButtonEnabled = value; }
 
     public bool IsPopAvailable { get => _isPopAvailable; set => _isPopAvailable = value; }
+
+    public void SetInfo(bool isWin, bool isInfinite, float characterPositionY = 0)
+    {
+        _isWin = isWin;
+        _isInifinite = isInfinite;
+        _characterPositionY = characterPositionY;
+        SetResultText();
+    }
+
+    public void SetLenghtOfLevel(float length)
+    {
+        _levelLength = length;
+    }
 
     public void OnPop()
     {
@@ -76,10 +95,17 @@ public class EndOfGameUI : BaseUI, IUIPanel
         StartCoroutine(Sharing());
     }
 
+    public void GoToNextLevel()
+    {
+        Loader.Load(Loader.Scene.Game);
+    }
+
     public void ShowAds()
     {
+        /*
         AdsManager.Instance.OnFinishAd += DoubleReward;
         AdsManager.Instance.ShowRewardedVideo();
+        */
     }
 
     private IEnumerator Open()
@@ -102,16 +128,51 @@ public class EndOfGameUI : BaseUI, IUIPanel
         SetText();
         SetFlag();
         SetCharacter();
+        if (_isWin)
+            _goToNextLevelButton.Show();
+        else
+            _retryLevelButton.Show();
     }
 
     private void SetFlagPosition()
     {
         float edgeOffset = Screen.safeArea.width / 9f; // indent = 11.1% of safeArea
-        float numberBiomeInGame = GameConstants.NumberBiomeInLevel * GameConstants.NumberLevelInGame;
-        float oneBiomeOffset = (Screen.safeArea.width - (edgeOffset * 2)) / numberBiomeInGame;
         float startX = -((Screen.safeArea.width - (edgeOffset * 2)) / 2);
-        float finishX = (oneBiomeOffset * CurrentGameInfo.Instance.ReachedBiomeNumber);
-        _finishPosition = new Vector2(startX + finishX, 0);
+
+        if (_isInifinite)
+        {
+            float numberBiomeInGame = GameConstants.NumberBiomeInLevel * GameConstants.NumberLevelInGame;
+            float oneBiomeOffset = (Screen.safeArea.width - (edgeOffset * 2)) / numberBiomeInGame;
+            float finishX = (oneBiomeOffset * CurrentGameInfo.Instance.ReachedBiomeNumber);
+            _finishPosition = new Vector2(startX + finishX, 0);
+        }
+        else
+        {
+            if (_isWin)
+                _characterPositionY = _levelLength;
+
+            float finishX = (Screen.safeArea.width - (edgeOffset * 2)) * (_characterPositionY / _levelLength);
+            _finishPosition = new Vector2(startX + finishX, 0);
+        }
+    }
+
+    private void SetResultText()
+    {
+        string winKey = "LevelWin";
+        string loseKey = "LevelLose";
+        string gameOverKey = "GameOver";
+
+        if (_isInifinite)
+        {
+            _resultText.SetLocalization(gameOverKey);
+        }
+        else
+        {
+            if (_isWin)
+                _resultText.SetLocalization(winKey);
+            else
+                _resultText.SetLocalization(loseKey);
+        }
     }
 
     private void SetText()
@@ -125,16 +186,27 @@ public class EndOfGameUI : BaseUI, IUIPanel
 
     private void SetFlag()
     {
-        int reachedLevel = CurrentGameInfo.Instance.ReachedBiomeNumber / GameConstants.NumberBiomeInLevel + 1;
-        int reachedBiome = CurrentGameInfo.Instance.ReachedBiomeNumber % GameConstants.NumberBiomeInLevel;
-
-        if (reachedBiome == 0)
+        if (_isInifinite)
         {
-            reachedLevel--;
-            reachedBiome = GameConstants.NumberBiomeInLevel;
+            int reachedLevel = CurrentGameInfo.Instance.ReachedBiomeNumber / GameConstants.NumberBiomeInLevel + 1;
+            int reachedBiome = CurrentGameInfo.Instance.ReachedBiomeNumber % GameConstants.NumberBiomeInLevel;
+
+            if (reachedBiome == 0)
+            {
+                reachedLevel--;
+                reachedBiome = GameConstants.NumberBiomeInLevel;
+            }
+
+            _reachedLevelText.text = string.Format("{0}-{1}", reachedLevel, reachedBiome);
+        }
+        else
+        {
+            if (_isWin)
+                _reachedLevelText.text = "100%";
+            else
+                _reachedLevelText.text = string.Format("{0}%", (int)((_characterPositionY / _levelLength) * 100));
         }
 
-        _reachedLevelText.text = string.Format("{0}-{1}", reachedLevel, reachedBiome);
         _flag.anchorMin = _centerAnchor;
         _flag.anchorMax = _centerAnchor;
         _flag.anchoredPosition = _finishPosition;
@@ -175,7 +247,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
 
     private void DoubleReward()
     {
-        if(_isDoubleRewardAvailable)
+        if (_isDoubleRewardAvailable)
         {
             AdsManager.Instance.OnFinishAd -= DoubleReward;
             PlayerProgress.Instance.PlayerMoney += CurrentGameInfo.Instance.CountOfEarnedMoney;
@@ -183,7 +255,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
             _isDoubleRewardAvailable = false;
             _doubleRewardButton.Hide();
             _doubleMoneyImage.Show();
-        }       
+        }
     }
 
     private IEnumerator Sharing()

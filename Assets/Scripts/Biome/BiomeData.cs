@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Levels/Standart Level", fileName = "New Level")]
+[CreateAssetMenu(menuName = "Biomes/Standart Biome", fileName = "New Biome")]
 public class BiomeData : ScriptableObject
 {
     [SerializeField] private string _biomeName;

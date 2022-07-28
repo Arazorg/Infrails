@@ -1,0 +1,720 @@
+fileFormatVersion: 2
+guid: 095805c91db80ce40bc41609ef27927f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7428943558054467011
+    second: LootboxWeapons3UI_0
+  - first:
+      213: -4158785873083605506
+    second: LootboxWeapons3UI_1
+  - first:
+      213: 2719013355280668696
+    second: LootboxWeapons3UI_2
+  - first:
+      213: 8172076038448519971
+    second: LootboxWeapons3UI_3
+  - first:
+      213: 1650086159983955525
+    second: LootboxWeapons3UI_4
+  - first:
+      213: 3628893423189921524
+    second: LootboxWeapons3UI_5
+  - first:
+      213: 5128219550131662744
+    second: LootboxWeapons3UI_6
+  - first:
+      213: -8955793463557995964
+    second: LootboxWeapons3UI_7
+  - first:
+      213: -5911584000330643693
+    second: LootboxWeapons3UI_8
+  - first:
+      213: 7257632882732320052
+    second: LootboxWeapons3UI_9
+  - first:
+      213: -6542263562545599167
+    second: LootboxWeapons3UI_10
+  - first:
+      213: 5693292906294766319
+    second: LootboxWeapons3UI_11
+  - first:
+      213: 8080700980766466833
+    second: LootboxWeapons3UI_12
+  - first:
+      213: -3305903335919769539
+    second: LootboxWeapons3UI_13
+  - first:
+      213: 2853361112029753142
+    second: LootboxWeapons3UI_14
+  - first:
+      213: -5172269374307759064
+    second: LootboxWeapons3UI_15
+  - first:
+      213: 1692951254942234907
+    second: LootboxWeapons3UI_16
+  - first:
+      213: 4479843919961170539
+    second: LootboxWeapons3UI_17
+  - first:
+      213: -6756830138750762982
+    second: LootboxWeapons3UI_18
+  - first:
+      213: -4730421794924794270
+    second: LootboxWeapons3UI_19
+  - first:
+      213: -3952474742490705627
+    second: LootboxWeapons3UI_20
+  - first:
+      213: 9209163349818001336
+    second: LootboxWeapons3UI_21
+  - first:
+      213: -5524901271040816632
+    second: LootboxWeapons3UI_22
+  - first:
+      213: -5650446312942309516
+    second: LootboxWeapons3UI_23
+  - first:
+      213: -5492424588670635391
+    second: LootboxWeapons3UI_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 2264
+        width: 512
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5534a4ec8e81760800000000000000
+      internalID: 7428943558054467011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_1
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 2265
+        width: 508
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd50f958460946c0800000000000000
+      internalID: -4158785873083605506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_2
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 2265
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8181c0d9d30ebb520800000000000000
+      internalID: 2719013355280668696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_3
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 2263
+        width: 505
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b94350cdb096170800000000000000
+      internalID: 8172076038448519971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_4
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 2264
+        width: 507
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ec1a6be9846e610800000000000000
+      internalID: 1650086159983955525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_5
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1705
+        width: 514
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe8cf8775b6c5230800000000000000
+      internalID: 3628893423189921524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_6
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1705
+        width: 505
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fafc7a2881b2740800000000000000
+      internalID: 5128219550131662744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_7
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1705
+        width: 506
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4424cd27b41a6b380800000000000000
+      internalID: -8955793463557995964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_8
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1705
+        width: 505
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317c8603ca5d5fda0800000000000000
+      internalID: -5911584000330643693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_9
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 1705
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435447d77aa48b460800000000000000
+      internalID: 7257632882732320052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_10
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1147
+        width: 508
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dec77c3f53535a0800000000000000
+      internalID: -6542263562545599167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_11
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1147
+        width: 508
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea63f1ebb3a20f40800000000000000
+      internalID: 5693292906294766319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_12
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 1147
+        width: 506
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1136cb68aba642070800000000000000
+      internalID: 8080700980766466833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_13
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 1147
+        width: 505
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3829b07e621f12d0800000000000000
+      internalID: -3305903335919769539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_14
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 1147
+        width: 508
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f627a40dc299720800000000000000
+      internalID: 2853361112029753142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 587
+        width: 508
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c01cd68686838b0800000000000000
+      internalID: -5172269374307759064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_16
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 587
+        width: 505
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1932ec52329e7710800000000000000
+      internalID: 1692951254942234907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_17
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 587
+        width: 506
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62aa7a5f4a9b2e30800000000000000
+      internalID: 4479843919961170539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_18
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 587
+        width: 507
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a108b1cb9caea32a0800000000000000
+      internalID: -6756830138750762982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_19
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 587
+        width: 508
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eedbbb07a2a5eb0800000000000000
+      internalID: -4730421794924794270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_20
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 26
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521532ea92df529c0800000000000000
+      internalID: -3952474742490705627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_21
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 26
+        width: 505
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7c27046458dcf70800000000000000
+      internalID: 9209163349818001336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_22
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 26
+        width: 506
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a0280f09b9353b0800000000000000
+      internalID: -5524901271040816632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_23
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 26
+        width: 505
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f68a604059591b0800000000000000
+      internalID: -5650446312942309516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LootboxWeapons3UI_24
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 26
+        width: 508
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1827aaccfecf6c3b0800000000000000
+      internalID: -5492424588670635391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

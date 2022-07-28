@@ -18,6 +18,10 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private CameraManager _cameraManager;
     [SerializeField] private Vector3 _gameCameraOffset;
     [SerializeField] private float _gameCameraSize;
+    [SerializeField] private float _creativeCameraSize;
+
+    [Header("Other")]
+    [SerializeField] private bool _isCreative;
 
     public Transform SpawnTrolleyLobby(Transform spawnPoint)
     {
@@ -39,7 +43,10 @@ public class CharacterSpawner : MonoBehaviour
         var character = Instantiate(_characterPrefab, spawnPoint).GetComponent<Character>();
         character.Init(data);
         _cameraManager.Init(character);
-        _cameraManager.SetCameraParams(character.Transform, _gameCameraSize, _gameCameraOffset);
+        if(_isCreative)
+            _cameraManager.SetCameraParams(character.Transform, _creativeCameraSize, _gameCameraOffset);
+        else
+            _cameraManager.SetCameraParams(character.Transform, _gameCameraSize, _gameCameraOffset);
         EnemiesManager.Instance.Character = character;
         return character;
     }
@@ -54,9 +61,13 @@ public class CharacterSpawner : MonoBehaviour
 
     private TrolleyData GetTrolleyData()
     {
+        return _trolleyForSupportData;
+
+        /*
         if (PlayerProgress.Instance.GetTrolleyForSupportAvailability())
             return _trolleyForSupportData;
         else
             return _defaultTrolleyData;
+        */
     }
 }

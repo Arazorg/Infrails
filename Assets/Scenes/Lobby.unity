@@ -10337,6 +10337,8 @@ MonoBehaviour:
   _cameraManager: {fileID: 839889135}
   _gameCameraOffset: {x: 0, y: 50, z: 0}
   _gameCameraSize: 44
+  _creativeCameraSize: 0
+  _isCreative: 0
 --- !u!1 &692252360
 GameObject:
   m_ObjectHideFlags: 0
@@ -17508,17 +17510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b83d1a8975a00249be398c7ea6cb17f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerProgressData:
-    PlayerMoney: 1250
-    IsLobbyTutorialCompleted: 0
-    IsGameTutorialCompleted: 0
-    TrolleyForSupportAvailability:
-      Name: TrolleyForSupportName
-      IsAvailable: 0
-    PassiveSkillsAvailabilities: []
-    WeaponsAvailabilities: []
-    AmplificationsLevels: []
-    CharactersAvailabilities: []
 --- !u!4 &1170086407
 Transform:
   m_ObjectHideFlags: 0
@@ -17707,6 +17698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsExpert: 0
+  IsInfinite: 0
   CharacterData: {fileID: 0}
   TrolleyData: {fileID: 0}
   PassiveSkillData: {fileID: 0}
@@ -21571,7 +21563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25, y: 756148.1}
+  m_AnchoredPosition: {x: 25, y: 932525.7}
   m_SizeDelta: {x: -50, y: 800}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1419937059

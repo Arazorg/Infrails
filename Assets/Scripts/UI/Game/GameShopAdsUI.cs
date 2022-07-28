@@ -34,6 +34,7 @@ public class GameShopAdsUI : MonoBehaviour
 
     public void AddMoneyForAds()
     {
+        /*
         _isShowAd = true;
         AdsManager.Instance.OnFinishAd += AddMoney;
         if (Advertisement.IsReady())
@@ -44,6 +45,7 @@ public class GameShopAdsUI : MonoBehaviour
         {
             StartCoroutine(ShowNoInternetImage());
         }
+        */
     }
 
     public void StartAdsButtonJump()

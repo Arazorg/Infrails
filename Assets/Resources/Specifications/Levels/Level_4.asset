@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e87faa0dd98494eb26ab05d07179d1, type: 3}
+  m_Name: Level_4
+  m_EditorClassIdentifier: 
+  _biomes:
+  - {fileID: 11400000, guid: 679394eda24bca54aa83e4529d212970, type: 2}
+  - {fileID: 11400000, guid: 517e20c7cd6c1b04d96ca40488dd3844, type: 2}
+  - {fileID: 11400000, guid: 09fa8661c9baaed46a0f8a2d42016fff, type: 2}
+  _amplifications:
+  - {fileID: 11400000, guid: 0b93b523131549c419d357b0680b1fbb, type: 2}
+  - {fileID: 11400000, guid: 15f465c7dc74c59459bd04944433ac51, type: 2}
+  - {fileID: 11400000, guid: bdd98f27a47519e4daa3b2146503d7d0, type: 2}
+  - {fileID: 11400000, guid: 95b5ac8e82e3e1b498a6b0f5675cbd8c, type: 2}
+  - {fileID: 11400000, guid: b146af684149414489818a49464acd36, type: 2}
+  _weapons:
+  - {fileID: 11400000, guid: 56504f42026640e459958807c154e297, type: 2}
+  - {fileID: 11400000, guid: 12c9f06f38b6b5248a6570019f0cc5b2, type: 2}
+  _enemiesLevel: 13

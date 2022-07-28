@@ -6,6 +6,7 @@ public class PlayerProgressData
     private const string TrolleyForSupportName = "TrolleyForSupport";
 
     public int PlayerMoney;
+    public int LevelNumber;
     public bool IsLobbyTutorialCompleted;
     public bool IsGameTutorialCompleted;
     public ItemAvailability TrolleyForSupportAvailability;
@@ -17,6 +18,7 @@ public class PlayerProgressData
     public PlayerProgressData()
     {
         PlayerMoney = 50000;
+        LevelNumber = 1;
         IsLobbyTutorialCompleted = false;
         IsGameTutorialCompleted = false;
         TrolleyForSupportAvailability = new ItemAvailability(TrolleyForSupportName, false);

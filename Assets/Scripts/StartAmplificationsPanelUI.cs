@@ -10,7 +10,7 @@ public class StartAmplificationsPanelUI : MonoBehaviour
 
     [SerializeField] private RectTransform _amplificationsParentTransform;
     [SerializeField] private AmplificationImageUI _amplificationImageUIPrefab;
-    [SerializeField] private AnimationsUI _nextButton;
+    [SerializeField] private AnimationsUI _playButton;
     [SerializeField] private List<TextMeshProUGUI> _amplificationsDescrtionsTexts;
 
     private List<AmplificationImageUI> _currentAmplificationsImages;
@@ -33,11 +33,13 @@ public class StartAmplificationsPanelUI : MonoBehaviour
             amplificationImage.Init(amplificationData);
             amplificationImage.OnAmplificationSelected += SetAmplification;
         }
+
+        GetComponent<AnimationsUI>().Show();
     }
 
     public void Hide()
     {
-        _nextButton.Hide();
+        _playButton.Hide();
         GetComponent<AnimationsUI>().Hide();
     }
 
@@ -68,7 +70,7 @@ public class StartAmplificationsPanelUI : MonoBehaviour
             _numberSelectedAmplifications = MaxAmplificationsNumber;
 
         if (_numberSelectedAmplifications == MaxAmplificationsNumber)
-            _nextButton.Show();
+            _playButton.Show();
     }
 
     private void ChangeAmplification(AmplificationImageUI amplificationImageUI)
@@ -85,7 +87,8 @@ public class StartAmplificationsPanelUI : MonoBehaviour
 
     private string GetBonusText(AmplificationData amplificationData)
     {
-        amplificationData.Level = 1;
+        int levelsForAmplificationLevel = 10;
+        amplificationData.Level = (PlayerProgress.Instance.LevelNumber / levelsForAmplificationLevel) + 1;
         int power = amplificationData.AmplificationPowers[amplificationData.Level - 1];
         string powerKey = amplificationData.CurrentAmplificationType.ToString();
 

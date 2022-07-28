@@ -70,7 +70,7 @@ public class Rail : MonoBehaviour
     {
         if (collision.TryGetComponent(out Trolley trolley))
         {
-            if (_isFinish)
+            if (_isFinish && _nextRail != null)
                 _currentBiome.SetBiomeLightsState(GameConstants.TurnOff);
             else if (_isSpawnBiome)
                 EnterFinishRail();

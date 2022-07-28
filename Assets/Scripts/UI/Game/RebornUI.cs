@@ -22,12 +22,18 @@ public class RebornUI : BaseUI, IUIPanel
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
+    private bool _isGameInfinite;
 
     public bool IsActive { get => _isActive; set => _isActive = value; }
 
     public bool IsBackButtonEnabled { get => _isBackButtonEnabled; set => _isBackButtonEnabled = value; }
 
     public bool IsPopAvailable { get => _isPopAvailable; set => _isPopAvailable = value; }
+
+    public void Init(bool isGameInifinite)
+    {
+        _isGameInfinite = isGameInifinite;
+    }
 
     public void OnPush()
     {
@@ -81,6 +87,7 @@ public class RebornUI : BaseUI, IUIPanel
 
     public void RebornCharacterByAds()
     {
+        /*
         AdsManager.Instance.OnFinishAd += Reborn;
         if (_character.IsCanReborn)
         {
@@ -93,11 +100,7 @@ public class RebornUI : BaseUI, IUIPanel
                 StartCoroutine(AdsUnavailableTextShowing());
             }
         }
-    }
-
-    public void GoToEndGameUI()
-    {
-        UIManager.Instance.UIStackPush(_endOfGameUI);
+        */
     }
 
     private void Open()
@@ -126,6 +129,12 @@ public class RebornUI : BaseUI, IUIPanel
         float startDelay = 0.5f;
         yield return new WaitForSeconds(startDelay);
         GoToEndGameUI();
+    }
+
+    private void GoToEndGameUI()
+    {
+        _endOfGameUI.SetInfo(false, _isGameInfinite, _character.transform.position.y);
+        UIManager.Instance.UIStackPush(_endOfGameUI);
     }
 
     private void Reborn()

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: (2)ImprovedShotgun
   m_EditorClassIdentifier: 
   _itemName: ImprovedShotgun
-  _itemColor: {r: 0.03137255, g: 0.7176471, b: 0.003921569, a: 1}
-  _itemSpriteUI: {fileID: 1664391633767755978, guid: f582596d4f5686448870e67b55ba5124, type: 3}
+  _itemColor: {r: 1, g: 1, b: 1, a: 1}
+  _itemSpriteUI: {fileID: 5693292906294766319, guid: 095805c91db80ce40bc41609ef27927f, type: 3}
   _isStartingItem: 0
   _prefab: {fileID: 7441295634186257563, guid: 1ccb3bcab5f9b0c48b3c4275e3390373, type: 3}
   _weaponAudioClip: {fileID: 8300000, guid: cd56ace093d16374e84b2b6c8dff7457, type: 3}
@@ -32,6 +32,7 @@ MonoBehaviour:
   _level: 1
   _bulletSpawnPosition: {x: -0.4, y: 4.8}
   _bulletData: {fileID: 11400000, guid: 24c9f661abd6e8d42962526965a623c5, type: 2}
+  _DPS: 60
   _minNumberOfBullets: 9
   _maxNumberOfBullets: 12
   _bulletSpeedSpread: 0.15

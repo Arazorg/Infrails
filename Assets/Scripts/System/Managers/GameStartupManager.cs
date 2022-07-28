@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,11 +6,12 @@ public class GameStartupManager : MonoBehaviour
 {
     [SerializeField] private TutorialUI _tutorialUI;
     [SerializeField] private GameStartUI _gameStartUI;
+    [SerializeField] private CharacterControlUI _characterControlUI;
     [SerializeField] private Transform _trolleySpawnPoint;
 
     private List<AmplificationData> _selectedAmplificationsData;
     private Character _character;
-    
+
     private void Awake()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -26,9 +26,12 @@ public class GameStartupManager : MonoBehaviour
     {
         AudioManager.Instance.StartAudio();
         UIManager.Instance.StartUI();
-        LevelSpawner.Instance.StartSpawn();
-        LevelSpawner.Instance.InitLevelUI();
-        
+
+        if (CurrentGameInfo.Instance.IsInfinite)
+            LevelSpawner.Instance.StartSpawnInfinite();
+        else
+            LevelSpawner.Instance.StartSpawn();
+
         if (!PlayerProgress.Instance.IsGameTutorialCompleted)
         {
             UIManager.Instance.UIStackPush(_tutorialUI);
@@ -44,8 +47,16 @@ public class GameStartupManager : MonoBehaviour
 
     private void PushStartUI()
     {
-        UIManager.Instance.UIStackPush(_gameStartUI);
-        _gameStartUI.OnStartGamePanelClosed += SetAmplificationsAndWeapon;
+        if(CurrentGameInfo.Instance.IsInfinite)
+        {
+            UIManager.Instance.UIStackPush(_characterControlUI);
+            StartGame();
+        }
+        else
+        {
+            UIManager.Instance.UIStackPush(_gameStartUI);
+            _gameStartUI.OnStartGamePanelClosed += SetAmplificationsAndWeapon;
+        }    
     }
 
     private void SetAmplificationsAndWeapon(List<AmplificationData> amplificationsData, WeaponData weaponData)

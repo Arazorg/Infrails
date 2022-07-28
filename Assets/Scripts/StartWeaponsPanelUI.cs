@@ -5,7 +5,7 @@ using UnityEngine;
 public class StartWeaponsPanelUI : MonoBehaviour
 {
     [SerializeField] private List<StartWeaponInfoPanelUI> _weaponsPanels;
-    [SerializeField] private AnimationsUI _playButton;
+    [SerializeField] private AnimationsUI _nextButton;
 
     private WeaponData _selectedWeaponData;
 
@@ -36,16 +36,19 @@ public class StartWeaponsPanelUI : MonoBehaviour
             weaponPanel.OnWeaponSelected -= SetWeaponData;
             counter++;
         }
+
+        _nextButton.Hide();
+        GetComponent<AnimationsUI>().Hide();
     }
 
     private void SetWeaponData(WeaponData weaponData)
     {
         _selectedWeaponData = weaponData;
-        ShowPlayButton();
+        ShowNextButton();
     }
 
-    private void ShowPlayButton()
+    private void ShowNextButton()
     {
-        _playButton.Show();
+        _nextButton.Show();
     }
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemName: WeakRocketLauncher
   _itemColor: {r: 1, g: 1, b: 1, a: 1}
-  _itemSpriteUI: {fileID: -1814838387159437533, guid: b1be3ff174357bb4eb40a4bfc6a87f47, type: 3}
+  _itemSpriteUI: {fileID: 1650086159983955525, guid: 095805c91db80ce40bc41609ef27927f, type: 3}
   _isStartingItem: 1
   _prefab: {fileID: -4369186634672922947, guid: 206378425c4d5ff40a4f4a2a419d495f, type: 3}
   _weaponAudioClip: {fileID: 8300000, guid: 4986937ffc80b144ba867a5dc128e91d, type: 3}

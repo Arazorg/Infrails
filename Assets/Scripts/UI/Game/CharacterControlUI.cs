@@ -14,6 +14,8 @@ public class CharacterControlUI : BaseUI, IUIPanel
     [SerializeField] private HealingButtonUI _healingButtonUI;
     [SerializeField] private CooldownIndicator _skillCooldownIndicator;
     [SerializeField] private List<CurrentAmplificationsPanelUI> _currentAmplificationsPanels;
+    [SerializeField] private AnimationsUI _healingButton;
+    [SerializeField] private AnimationsUI _openShopButton;
 
     [Header("Bars")]
     [SerializeField] private BarUI _healthBar;
@@ -73,6 +75,10 @@ public class CharacterControlUI : BaseUI, IUIPanel
         StopAllCoroutines();
         StartCoroutine(EnableBackButton());
         Show();
+        if (CurrentGameInfo.Instance.IsInfinite)
+            _openShopButton.Show();
+        else
+            _healingButton.Show();
     }
 
     public void OpenPauseUI()

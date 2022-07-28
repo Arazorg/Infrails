@@ -3,13 +3,12 @@ using UnityEngine;
 
 public class GameStartUI : BaseUI, IUIPanel
 {
-    [SerializeField] private List<AmplificationData> _currentAmplifications;
-    [SerializeField] private List<WeaponData> _currentWeapons;
     [SerializeField] private StartAmplificationsPanelUI _startAmplificationsPanelUI;
     [SerializeField] private StartWeaponsPanelUI _startWeaponsPanel;
 
+    private List<AmplificationData> _currentAmplifications;
+    private List<WeaponData> _currentWeapons;
     private List<AmplificationData> _selectedAmplificationsData;
-    private WeaponData _selectedWeaponData;
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
@@ -37,6 +36,17 @@ public class GameStartUI : BaseUI, IUIPanel
 
     public event StartGamePanelClosed OnStartGamePanelClosed;
 
+    public void SetWeapons(List<WeaponData> weaponsData)
+    {
+        _currentWeapons = weaponsData;
+    }
+
+    public void SetAmplifications(List<AmplificationData> amplificationsData)
+    {
+        _currentAmplifications = amplificationsData;
+        //Open();
+    }
+
     public void OnPush()
     {
         Open();
@@ -57,10 +67,10 @@ public class GameStartUI : BaseUI, IUIPanel
         Close();
     }
 
-    public void ShowWeaponsPanel()
+    public void ShowAmplificaiontsPanel()
     {
-        _startAmplificationsPanelUI.Hide();
-        _startWeaponsPanel.ShowWeapons(_currentWeapons);
+        _startWeaponsPanel.Hide();
+        _startAmplificationsPanelUI.SpawnAmplifications(_currentAmplifications);
     }
 
     public void GoToGame()
@@ -75,7 +85,7 @@ public class GameStartUI : BaseUI, IUIPanel
         Time.timeScale = 0f;
         _isBackButtonEnabled = false;
         _isPopAvailable = false;
-        _startAmplificationsPanelUI.SpawnAmplifications(_currentAmplifications);
+        _startWeaponsPanel.ShowWeapons(_currentWeapons);      
         Show();
     }
 

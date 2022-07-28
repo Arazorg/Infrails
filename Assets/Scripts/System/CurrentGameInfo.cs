@@ -5,6 +5,7 @@ public class CurrentGameInfo : MonoBehaviour
     public static CurrentGameInfo Instance;
 
     public bool IsExpert;
+    public bool IsInfinite;
     public CharacterData CharacterData;
     public TrolleyData TrolleyData;
     public PassiveSkillData PassiveSkillData;
@@ -30,6 +31,7 @@ public class CurrentGameInfo : MonoBehaviour
     public void CreateNewGame()
     {
         IsExpert = false;
+        IsInfinite = false;
         CharacterData = null;
         PassiveSkillData = null;
         TrolleyData = null;

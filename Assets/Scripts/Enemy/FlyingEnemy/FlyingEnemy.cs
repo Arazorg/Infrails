@@ -24,12 +24,19 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         Character.OnCharacterDeath += DeathWithoutEffect;
         LevelSpawner.Instance.OnBiomeSpawned += DeathWithoutEffect;
         InitComponents(spawnPoint);
-        InitStates();
-        OnInit();
+        InitStates();  
         SetScale();
-        SetHealth();
         Move();
+        OnInit();
         BoxCollider2D.enabled = true;
+    }
+
+    public void SetEnemyLevel(int enemyLevel)
+    {
+        if (CurrentGameInfo.Instance.IsInfinite)
+            SetHealth(CurrentGameInfo.Instance.ReachedBiomeNumber);
+        else
+            SetHealth(enemyLevel);
     }
 
     public void SwitchState<T>() where T : BaseEnemyState
@@ -115,11 +122,11 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         if (isDeathWithEffect)
         {
             AudioManager.Instance.PlayEffect(Data.DeathAudioClip);
-            CurrentGameInfo.Instance.AddEnemyDeath();        
+            CurrentGameInfo.Instance.AddEnemyDeath();
             SpawnCoin();
-        }            
+        }
 
-        OnFlyingEnemyDeath?.Invoke(this);       
+        OnFlyingEnemyDeath?.Invoke(this);
         Destroy(gameObject);
     }
 
@@ -147,25 +154,24 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     }
 
     private void SetScale()
-    {       
+    {
         float scaleForBiome = 0.0085f;
         float biomeScaleFactor = scaleForBiome * CurrentGameInfo.Instance.ReachedBiomeNumber;
         float minScale = 1.5f + biomeScaleFactor;
         float maxScale = 1.7f + biomeScaleFactor;
         float scaleFactor = Random.Range(minScale, maxScale);
-        transform.localScale *= scaleFactor;   
+        transform.localScale *= scaleFactor;
     }
 
-    private void SetHealth()
+    private void SetHealth(int enemyLevel)
     {
         int minHealthForLevel = 1;
         int numberBiomeForGain = 15;
         int bonusHealthForBiomes = 13;
-
-        int healthForLevel = CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain + minHealthForLevel;
-        int bonusHealth = (CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain) * bonusHealthForBiomes;
+        int healthForLevel = enemyLevel / numberBiomeForGain + minHealthForLevel;
+        int bonusHealth = (enemyLevel / numberBiomeForGain) * bonusHealthForBiomes;
         float scaleFactor = transform.localScale.x;
-        Health = bonusHealth + (int)((Data.MaxHealth + (healthForLevel * CurrentGameInfo.Instance.ReachedBiomeNumber)) * scaleFactor);
+        Health = bonusHealth + (int)((Data.MaxHealth + (healthForLevel * enemyLevel)) * scaleFactor);
     }
 
     private void SetNextState()

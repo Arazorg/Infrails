@@ -22,7 +22,7 @@ public class CameraManager : MonoBehaviour
     }
 
     public void SetCameraParams(Transform target, float ortographicSize, Vector3 offset)
-    {   
+    {
         _cinemachineVirtualCamera.m_LookAt = target;
         _cinemachineVirtualCamera.m_Follow = target;
         _cinemachineTransposer.m_FollowOffset = offset;
@@ -35,6 +35,7 @@ public class CameraManager : MonoBehaviour
         Vector3 finishPosition = target.position + offset;
         finishPosition.z = -10;
         _cinemachineVirtualCamera.transform.position = finishPosition;
+        //_cinemachineVirtualCamera.m_Lens.OrthographicSize = ortographicSize;
         StartCoroutine(SetSize(ortographicSize));
     }
 

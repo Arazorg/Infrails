@@ -17,6 +17,31 @@
     },
 	
 	{
+      "key": "LevelWin",
+      "value": "Уровень пройден!"
+    },
+	
+	{
+      "key": "NextLevel",
+      "value": "Следующий уровень"
+    },
+	
+	{
+      "key": "TryAgain",
+      "value": "Попробовать снова"
+    },
+	
+	{
+      "key": "Biomes",
+      "value": "Биомы:\n"
+    },
+	
+	{
+      "key": "LevelLose",
+      "value": "Попробуй еще раз"
+    },
+	
+	{
       "key": "NewWeapon",
       "value": "Новое оружие"
     },	
@@ -69,7 +94,7 @@
 	
 	{
       "key": "SelectAmplifications",
-      "value": "Выбери усиления"
+      "value": "Выбери 3 усиления"
     },
 	
 	{

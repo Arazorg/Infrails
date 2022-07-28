@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e87faa0dd98494eb26ab05d07179d1, type: 3}
+  m_Name: Level_1
+  m_EditorClassIdentifier: 
+  _biomes:
+  - {fileID: 11400000, guid: 679394eda24bca54aa83e4529d212970, type: 2}
+  _amplifications:
+  - {fileID: 11400000, guid: edecedb62dc6a0f44a4146d1898244fc, type: 2}
+  - {fileID: 11400000, guid: 54e1330c163d631429eb32a1b4511a65, type: 2}
+  - {fileID: 11400000, guid: b146af684149414489818a49464acd36, type: 2}
+  - {fileID: 11400000, guid: e95a36514b467df4d9d5fa70aea01b48, type: 2}
+  - {fileID: 11400000, guid: 0b93b523131549c419d357b0680b1fbb, type: 2}
+  _weapons:
+  - {fileID: 11400000, guid: bde09297632e3c74e846c303f90a8677, type: 2}
+  - {fileID: 11400000, guid: bebd80d5d58c12b45a49534a00797e21, type: 2}
+  _enemiesLevel: 1

@@ -25,8 +25,15 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         TryGetCharacter(character);
         InitStates();
         OnInit();
-        SetHealth();
         BoxCollider2D.enabled = true;
+    }
+
+    public void SetEnemyLevel(int enemyLevel)
+    {
+        if (CurrentGameInfo.Instance.IsInfinite)
+            SetHealth(CurrentGameInfo.Instance.ReachedBiomeNumber);
+        else
+            SetHealth(enemyLevel);
     }
 
     public void InitScripts(List<Transform> teleportationPoints, List<IEnemyLaserTarget> targets)
@@ -142,15 +149,14 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
         }
     }
 
-    private void SetHealth()
+    private void SetHealth(int enemyLevel)
     {
         int minHealthForLevel = 1;
         int numberBiomeForGain = 8;
         int bonusHealthForBiomes = 30;
-
-        int healthForLevel = CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain + minHealthForLevel;
-        int bonusHealth = (CurrentGameInfo.Instance.ReachedBiomeNumber / numberBiomeForGain) * bonusHealthForBiomes;
-        Health = bonusHealth + (Data.MaxHealth + (healthForLevel * CurrentGameInfo.Instance.ReachedBiomeNumber));
+        int healthForLevel = enemyLevel / numberBiomeForGain + minHealthForLevel;
+        int bonusHealth = (enemyLevel / numberBiomeForGain) * bonusHealthForBiomes;
+        Health = bonusHealth + (Data.MaxHealth + (healthForLevel * enemyLevel));
     }
 
     private void InitStates()

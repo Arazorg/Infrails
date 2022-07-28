@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: (2)ImprovedCrossbow
   m_EditorClassIdentifier: 
   _itemName: ImprovedCrossbow
-  _itemColor: {r: 0.03137255, g: 0.7176471, b: 0.003921569, a: 1}
-  _itemSpriteUI: {fileID: -3770815978991590857, guid: f582596d4f5686448870e67b55ba5124, type: 3}
+  _itemColor: {r: 1, g: 1, b: 1, a: 1}
+  _itemSpriteUI: {fileID: -8955793463557995964, guid: 095805c91db80ce40bc41609ef27927f, type: 3}
   _isStartingItem: 0
   _prefab: {fileID: -4369186634672922947, guid: 206378425c4d5ff40a4f4a2a419d495f, type: 3}
   _weaponAudioClip: {fileID: 8300000, guid: ab3d0b27b367b674d802afe6843a2ef0, type: 3}
@@ -32,3 +32,4 @@ MonoBehaviour:
   _level: 1
   _bulletSpawnPosition: {x: -0.73, y: 3.63}
   _bulletData: {fileID: 11400000, guid: 015dc9761352f7a47be43ca1ba261717, type: 2}
+  _DPS: 43.333336
