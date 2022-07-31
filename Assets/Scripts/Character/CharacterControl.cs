@@ -24,6 +24,7 @@ public class CharacterControl : MonoBehaviour
         _isFacingRight = true;
         _character = GetComponent<Character>();
         _characterWeapon = GetComponent<CharacterWeapon>();
+        LevelSpawner.Instance.OnLevelFinished += DisableControl;
     }
 
     private void Update()
@@ -67,5 +68,12 @@ public class CharacterControl : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+    
+    private void DisableControl()
+    {
+        LevelSpawner.Instance.OnLevelFinished -= DisableControl;
+        _isControl = false;
+        _characterWeapon.CurrentWeapon.IsAttack = false;
     }
 }

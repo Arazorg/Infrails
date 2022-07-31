@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level_2
   m_EditorClassIdentifier: 
   _biomes:
-  - {fileID: 11400000, guid: 517e20c7cd6c1b04d96ca40488dd3844, type: 2}
+  - {fileID: 11400000, guid: 70118d01acdcf6f49976c4f1fdc823cc, type: 2}
   - {fileID: 11400000, guid: 37c5e97bd8772714b93440ca17d9fbea, type: 2}
   _amplifications:
   - {fileID: 11400000, guid: 15f465c7dc74c59459bd04944433ac51, type: 2}
@@ -25,4 +25,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0c8a505cb314aec48a063a21d1fbc708, type: 2}
   - {fileID: 11400000, guid: aa24049d3506052448be5154a28a4989, type: 2}
   _enemiesLevel: 3
+  _levelReward: 200
   _isBossLevel: 0

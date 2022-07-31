@@ -1,97 +1,97 @@
 fileFormatVersion: 2
-guid: 2ccf2c8aa3c9c884f96a86746a94927f
+guid: 5044e933d3e6d834bacbd6fc73149fd0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 247318430885554561
-    second: OctopusBossIdleSprite_0
+      213: -5148789009734600885
+    second: EvilCloudBossIdleSprite_0
   - first:
-      213: -5457187232706152010
-    second: OctopusBossIdleSprite_1
+      213: 4782671917165090342
+    second: EvilCloudBossIdleSprite_1
   - first:
-      213: -4339698624433660039
-    second: OctopusBossIdleSprite_2
+      213: 1265607689266411269
+    second: EvilCloudBossIdleSprite_2
   - first:
-      213: 8601425997447782409
-    second: OctopusBossIdleSprite_3
+      213: -8736620198623920775
+    second: EvilCloudBossIdleSprite_3
   - first:
-      213: 6240280715443781055
-    second: OctopusBossIdleSprite_4
+      213: -1112111049888308407
+    second: EvilCloudBossIdleSprite_4
   - first:
-      213: -7134565433060779883
-    second: OctopusBossIdleSprite_5
+      213: -6087769791748227031
+    second: EvilCloudBossIdleSprite_5
   - first:
-      213: 3608583260550475502
-    second: OctopusBossIdleSprite_6
+      213: 3655204669781510047
+    second: EvilCloudBossIdleSprite_6
   - first:
-      213: -3960723123547136029
-    second: OctopusBossIdleSprite_7
+      213: -171777887565156675
+    second: EvilCloudBossIdleSprite_7
   - first:
-      213: 758051529802811658
-    second: OctopusBossIdleSprite_8
+      213: 6888696162280556462
+    second: EvilCloudBossIdleSprite_8
   - first:
-      213: 7473895359769100935
-    second: OctopusBossIdleSprite_9
+      213: 5035266029250957257
+    second: EvilCloudBossIdleSprite_9
   - first:
-      213: -5705073591076459427
-    second: OctopusBossIdleSprite_10
+      213: -8741817617125197570
+    second: EvilCloudBossIdleSprite_10
   - first:
-      213: 6613923781579226922
-    second: OctopusBossIdleSprite_11
+      213: -5197455352327854373
+    second: EvilCloudBossIdleSprite_11
   - first:
-      213: -3357833198498511440
-    second: OctopusBossIdleSprite_12
+      213: -4149884798552527411
+    second: EvilCloudBossIdleSprite_12
   - first:
-      213: 4333408484304229980
-    second: OctopusBossIdleSprite_13
+      213: -2458237138192934610
+    second: EvilCloudBossIdleSprite_13
   - first:
-      213: -1720605283702493746
-    second: OctopusBossIdleSprite_14
+      213: 8118720748978179596
+    second: EvilCloudBossIdleSprite_14
   - first:
-      213: -7441359812880966900
-    second: OctopusBossIdleSprite_15
+      213: 3857833763057824255
+    second: EvilCloudBossIdleSprite_15
   - first:
-      213: -4227773571215553544
-    second: OctopusBossIdleSprite_16
+      213: 8157348636550245618
+    second: EvilCloudBossIdleSprite_16
   - first:
-      213: 2148576661182239438
-    second: OctopusBossIdleSprite_17
+      213: 9210953713588293333
+    second: EvilCloudBossIdleSprite_17
   - first:
-      213: 7380210470850741926
-    second: OctopusBossIdleSprite_18
+      213: 6754966198043473209
+    second: EvilCloudBossIdleSprite_18
   - first:
-      213: -6023276691347337537
-    second: OctopusBossIdleSprite_19
+      213: 7524279862929256995
+    second: EvilCloudBossIdleSprite_19
   - first:
-      213: 7692488939872982940
-    second: OctopusBossIdleSprite_20
+      213: 2858468041956372314
+    second: EvilCloudBossIdleSprite_20
   - first:
-      213: 6590762799190725106
-    second: OctopusBossIdleSprite_21
+      213: 7555578945153879922
+    second: EvilCloudBossIdleSprite_21
   - first:
-      213: 4172017055181929031
-    second: OctopusBossIdleSprite_22
+      213: -5007931870301033156
+    second: EvilCloudBossIdleSprite_22
   - first:
-      213: 3542280626001131946
-    second: OctopusBossIdleSprite_23
+      213: -8655655566877990112
+    second: EvilCloudBossIdleSprite_23
   - first:
-      213: -3428397416506694761
-    second: OctopusBossIdleSprite_24
+      213: -6122994978523194538
+    second: EvilCloudBossIdleSprite_24
   - first:
-      213: 1750638735324848205
-    second: OctopusBossIdleSprite_25
+      213: -2456508902939233578
+    second: EvilCloudBossIdleSprite_25
   - first:
-      213: 4949367796823291023
-    second: OctopusBossIdleSprite_26
+      213: 9184216401336769951
+    second: EvilCloudBossIdleSprite_26
   - first:
-      213: -8259445701481270656
-    second: OctopusBossIdleSprite_27
+      213: -3039968233906793767
+    second: EvilCloudBossIdleSprite_27
   - first:
-      213: 6019508293053902740
-    second: OctopusBossIdleSprite_28
+      213: 9077473222504749303
+    second: EvilCloudBossIdleSprite_28
   - first:
-      213: -5865286077654093858
-    second: OctopusBossIdleSprite_29
+      213: -6118497659876186137
+    second: EvilCloudBossIdleSprite_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -193,13 +193,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_0
+      name: EvilCloudBossIdleSprite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1650
+        y: 1700
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18927537dc6ae6300800000000000000
-      internalID: 247318430885554561
+      spriteID: b477553dca3db88b0800000000000000
+      internalID: -5148789009734600885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_1
+      name: EvilCloudBossIdleSprite_1
       rect:
         serializedVersion: 2
         x: 408
-        y: 1650
+        y: 1700
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b9b0c1102d2444b0800000000000000
-      internalID: -5457187232706152010
+      spriteID: 6269cdbd4c67f5240800000000000000
+      internalID: 4782671917165090342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_2
+      name: EvilCloudBossIdleSprite_2
       rect:
         serializedVersion: 2
         x: 816
-        y: 1650
+        y: 1700
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97f5162081b46c3c0800000000000000
-      internalID: -4339698624433660039
+      spriteID: 5073ab7ec77509110800000000000000
+      internalID: 1265607689266411269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_3
+      name: EvilCloudBossIdleSprite_3
       rect:
         serializedVersion: 2
         x: 1224
-        y: 1650
+        y: 1700
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +270,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9006fa35f576e5770800000000000000
-      internalID: 8601425997447782409
+      spriteID: 97db48bc73a41c680800000000000000
+      internalID: -8736620198623920775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_4
+      name: EvilCloudBossIdleSprite_4
       rect:
         serializedVersion: 2
         x: 1632
-        y: 1650
+        y: 1700
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbd3fbe8f3ee99650800000000000000
-      internalID: 6240280715443781055
+      spriteID: 943ee9074ecf090f0800000000000000
+      internalID: -1112111049888308407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_5
+      name: EvilCloudBossIdleSprite_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 1320
+        y: 1360
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,20 +312,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59891a70a8eecfc90800000000000000
-      internalID: -7134565433060779883
+      spriteID: 9204e78f0a5e38ba0800000000000000
+      internalID: -6087769791748227031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_6
+      name: EvilCloudBossIdleSprite_6
       rect:
         serializedVersion: 2
         x: 408
-        y: 1320
+        y: 1360
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,20 +333,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eee288b3b53441230800000000000000
-      internalID: 3608583260550475502
+      spriteID: f970da3f745e9b230800000000000000
+      internalID: 3655204669781510047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_7
+      name: EvilCloudBossIdleSprite_7
       rect:
         serializedVersion: 2
         x: 816
-        y: 1320
+        y: 1360
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ef1c4fcd4fa809c0800000000000000
-      internalID: -3960723123547136029
+      spriteID: dbe696fdbe8bd9df0800000000000000
+      internalID: -171777887565156675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_8
+      name: EvilCloudBossIdleSprite_8
       rect:
         serializedVersion: 2
         x: 1224
-        y: 1320
+        y: 1360
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,20 +375,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a09865b99d3258a00800000000000000
-      internalID: 758051529802811658
+      spriteID: ea7445669a0999f50800000000000000
+      internalID: 6888696162280556462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_9
+      name: EvilCloudBossIdleSprite_9
       rect:
         serializedVersion: 2
         x: 1632
-        y: 1320
+        y: 1360
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,20 +396,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7824a773b3c98b760800000000000000
-      internalID: 7473895359769100935
+      spriteID: 9cf481f86cbd0e540800000000000000
+      internalID: 5035266029250957257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_10
+      name: EvilCloudBossIdleSprite_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 990
+        y: 1020
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,20 +417,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5cec62bbc183d0b0800000000000000
-      internalID: -5705073591076459427
+      spriteID: ef830008133dea680800000000000000
+      internalID: -8741817617125197570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_11
+      name: EvilCloudBossIdleSprite_11
       rect:
         serializedVersion: 2
         x: 408
-        y: 990
+        y: 1020
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -438,20 +438,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2fb98423a069cb50800000000000000
-      internalID: 6613923781579226922
+      spriteID: bd6ab84f4edeed7b0800000000000000
+      internalID: -5197455352327854373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_12
+      name: EvilCloudBossIdleSprite_12
       rect:
         serializedVersion: 2
         x: 816
-        y: 990
+        y: 1020
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,20 +459,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b58b7c1f749661d0800000000000000
-      internalID: -3357833198498511440
+      spriteID: dcdab7343c5a866c0800000000000000
+      internalID: -4149884798552527411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_13
+      name: EvilCloudBossIdleSprite_13
       rect:
         serializedVersion: 2
         x: 1224
-        y: 990
+        y: 1020
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -480,20 +480,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c561e9d9e0c532c30800000000000000
-      internalID: 4333408484304229980
+      spriteID: e29565cd85692edd0800000000000000
+      internalID: -2458237138192934610
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_14
+      name: EvilCloudBossIdleSprite_14
       rect:
         serializedVersion: 2
         x: 1632
-        y: 990
+        y: 1020
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,20 +501,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecda0425c9e2f18e0800000000000000
-      internalID: -1720605283702493746
+      spriteID: c0e0071a18d7ba070800000000000000
+      internalID: 8118720748978179596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_15
+      name: EvilCloudBossIdleSprite_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 660
+        y: 680
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,20 +522,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0bdc5b1daafab890800000000000000
-      internalID: -7441359812880966900
+      spriteID: ff1f1992e57c98530800000000000000
+      internalID: 3857833763057824255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_16
+      name: EvilCloudBossIdleSprite_16
       rect:
         serializedVersion: 2
         x: 408
-        y: 660
+        y: 680
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,20 +543,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fb89e0365ee355c0800000000000000
-      internalID: -4227773571215553544
+      spriteID: 2fc289e8d59b43170800000000000000
+      internalID: 8157348636550245618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_17
+      name: EvilCloudBossIdleSprite_17
       rect:
         serializedVersion: 2
         x: 816
-        y: 660
+        y: 680
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -564,20 +564,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec25676f61741dd10800000000000000
-      internalID: 2148576661182239438
+      spriteID: 5decefcc991e3df70800000000000000
+      internalID: 9210953713588293333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_18
+      name: EvilCloudBossIdleSprite_18
       rect:
         serializedVersion: 2
         x: 1224
-        y: 660
+        y: 680
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -585,20 +585,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a64daa3256cb6660800000000000000
-      internalID: 7380210470850741926
+      spriteID: 935f620c7f57ebd50800000000000000
+      internalID: 6754966198043473209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_19
+      name: EvilCloudBossIdleSprite_19
       rect:
         serializedVersion: 2
         x: 1632
-        y: 660
+        y: 680
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -606,20 +606,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbe0a5c03c5096ca0800000000000000
-      internalID: -6023276691347337537
+      spriteID: 322f5848bac9b6860800000000000000
+      internalID: 7524279862929256995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_20
+      name: EvilCloudBossIdleSprite_20
       rect:
         serializedVersion: 2
         x: 0
-        y: 330
+        y: 340
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -627,20 +627,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9710cb2fe531ca60800000000000000
-      internalID: 7692488939872982940
+      spriteID: a5fad921a815ba720800000000000000
+      internalID: 2858468041956372314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_21
+      name: EvilCloudBossIdleSprite_21
       rect:
         serializedVersion: 2
         x: 408
-        y: 330
+        y: 340
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -648,20 +648,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f15f94b8d7177b50800000000000000
-      internalID: 6590762799190725106
+      spriteID: 27f415af40fcad860800000000000000
+      internalID: 7555578945153879922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_22
+      name: EvilCloudBossIdleSprite_22
       rect:
         serializedVersion: 2
         x: 816
-        y: 330
+        y: 340
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -669,20 +669,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74a7dfa486bf5e930800000000000000
-      internalID: 4172017055181929031
+      spriteID: c3d69534f70408ab0800000000000000
+      internalID: -5007931870301033156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_23
+      name: EvilCloudBossIdleSprite_23
       rect:
         serializedVersion: 2
         x: 1224
-        y: 330
+        y: 340
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -690,20 +690,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa9bb872675b82130800000000000000
-      internalID: 3542280626001131946
+      spriteID: 023ea1e1f1fe0e780800000000000000
+      internalID: -8655655566877990112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_24
+      name: EvilCloudBossIdleSprite_24
       rect:
         serializedVersion: 2
         x: 1632
-        y: 330
+        y: 340
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -711,20 +711,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7936040d6b2eb60d0800000000000000
-      internalID: -3428397416506694761
+      spriteID: 65bdf9f0280c60ba0800000000000000
+      internalID: -6122994978523194538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_25
+      name: EvilCloudBossIdleSprite_25
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -732,20 +732,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d40a31d87a48b4810800000000000000
-      internalID: 1750638735324848205
+      spriteID: 6d2f8bcfa2ab8edd0800000000000000
+      internalID: -2456508902939233578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_26
+      name: EvilCloudBossIdleSprite_26
       rect:
         serializedVersion: 2
         x: 408
         y: 0
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -753,20 +753,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f84f860d9cfafa440800000000000000
-      internalID: 4949367796823291023
+      spriteID: f9d9efd2824e47f70800000000000000
+      internalID: 9184216401336769951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_27
+      name: EvilCloudBossIdleSprite_27
       rect:
         serializedVersion: 2
         x: 816
         y: 0
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -774,20 +774,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 082f49915ed806d80800000000000000
-      internalID: -8259445701481270656
+      spriteID: 9d293896ffcdfc5d0800000000000000
+      internalID: -3039968233906793767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_28
+      name: EvilCloudBossIdleSprite_28
       rect:
         serializedVersion: 2
         x: 1224
         y: 0
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -795,20 +795,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49feef956e6998350800000000000000
-      internalID: 6019508293053902740
+      spriteID: 7f814852dc9a9fd70800000000000000
+      internalID: 9077473222504749303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OctopusBossIdleSprite_29
+      name: EvilCloudBossIdleSprite_29
       rect:
         serializedVersion: 2
         x: 1632
         y: 0
         width: 408
-        height: 330
+        height: 340
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -816,8 +816,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edf226353615a9ea0800000000000000
-      internalID: -5865286077654093858
+      spriteID: 7e76508abcab61ba0800000000000000
+      internalID: -6118497659876186137
       vertices: []
       indices: 
       edges: []

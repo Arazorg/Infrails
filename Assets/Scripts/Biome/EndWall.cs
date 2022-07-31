@@ -6,14 +6,16 @@ public class EndWall : MonoBehaviour
     [SerializeField] private Transform _nextLevelSpawnPoint;
     [SerializeField] private Rail _finishRail;
 
-    [Header("Sprite Renderers")]
-    [SerializeField] private SpriteRenderer _endWallFloor;
+    [Header("Sprite Renderers")] [SerializeField]
+    private SpriteRenderer _endWallFloor;
+
     [SerializeField] private SpriteRenderer _plateSpriteRenderer;
 
     private Light2D _nextLevelLight;
     private float _lightOnOffDuration = 2f;
     private float _neededLigthIntensity = 0f;
     private float _timeElapsedLightIntensity = float.PositiveInfinity;
+    private bool _isInit;
 
     public Transform NextLevelSpawnPoint => _nextLevelSpawnPoint;
 
@@ -27,6 +29,7 @@ public class EndWall : MonoBehaviour
 
     public void SetEndWallEnvironment(BiomeData nextLevelData, Sprite endWallFloorSprite)
     {
+        _isInit = true;
         _nextLevelLight = GetComponentInChildren<Light2D>();
         _nextLevelLight.color = nextLevelData.BiomeColor;
         _plateSpriteRenderer.sprite = nextLevelData.PlateSprite;
@@ -42,20 +45,22 @@ public class EndWall : MonoBehaviour
         float enableDuration = 1f;
         if (neededGlobalLigthIntensity == 0)
             _lightOnOffDuration = disableDuration;
-        else        
+        else
             _lightOnOffDuration = enableDuration;
     }
 
     private void Update()
     {
-        SetLightsIntensity();
+        if (_isInit)
+            SetLightsIntensity();
     }
 
     private void SetLightsIntensity()
     {
         if (_timeElapsedLightIntensity < _lightOnOffDuration)
         {
-            float intensity = Mathf.Lerp(_nextLevelLight.intensity, _neededLigthIntensity, _timeElapsedLightIntensity / _lightOnOffDuration);
+            float intensity = Mathf.Lerp(_nextLevelLight.intensity, _neededLigthIntensity,
+                _timeElapsedLightIntensity / _lightOnOffDuration);
             _nextLevelLight.intensity = intensity;
             _timeElapsedLightIntensity += Time.deltaTime;
         }

@@ -70,11 +70,11 @@ public class Rail : MonoBehaviour
     {
         if (collision.TryGetComponent(out Trolley trolley))
         {
-            if (_isFinish && _nextRail != null)
+            if (_isFinish && (LevelSpawner.Instance.IsBossPhase || _nextRail != null))
                 _currentBiome.SetBiomeLightsState(GameConstants.TurnOff);
             else if (_isSpawnBiome)
                 EnterFinishRail();
-            else if (_isSpawnEnemies)
+            else if (_isSpawnEnemies && !LevelSpawner.Instance.IsBossPhase)
                 EnemiesManager.Instance.SpawnFlyingEnemies(GetComponentInParent<RailsPattern>().FlyingEnemiesSpawnPoints);
         }
     }

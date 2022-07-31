@@ -25,3 +25,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 186125f0ef4bc1944a1ee8e4700bebc4, type: 2}
   - {fileID: 11400000, guid: a7a1ff1c1bf75f74cbeaeff08556ba6d, type: 2}
   _enemiesLevel: 18
+  _levelReward: 400
+  _isBossLevel: 0

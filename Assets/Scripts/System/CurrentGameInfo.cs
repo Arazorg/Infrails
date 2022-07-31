@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class CurrentGameInfo : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class CurrentGameInfo : MonoBehaviour
     [SerializeField] private AnalyticsManager _analyticsManager;
 
     public delegate void ReachedLevel();
+
     public event ReachedLevel OnReachedLevel;
 
     public void AddResultsToProgress()
@@ -25,7 +27,7 @@ public class CurrentGameInfo : MonoBehaviour
         CountOfEarnedMoney += ReachedBiomeNumber * numberMoneyForBiome;
         PlayerProgress.Instance.PlayerMoney += CountOfEarnedMoney;
         PlayerProgress.Instance.Save();
-        _analyticsManager.OnPlayerDead(ReachedBiomeNumber, CharacterData.UnitName);
+        RefreshGameStats();
     }
 
     public void CreateNewGame()
@@ -57,11 +59,19 @@ public class CurrentGameInfo : MonoBehaviour
         if (Instance != null)
         {
             Destroy(gameObject);
-        }           
+        }
         else
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    private void RefreshGameStats()
+    {
+        ReachedBiomeNumber = 0;
+        CountOfEarnedMoney = 0;
+        CountOfKilledEnemies = 0;
+        GameStartTime = 0;
     }
 }

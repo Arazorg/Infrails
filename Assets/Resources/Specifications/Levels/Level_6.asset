@@ -15,3 +15,6 @@ MonoBehaviour:
   _biomes: []
   _amplifications: []
   _weapons: []
+  _enemiesLevel: 25
+  _levelReward: 750
+  _isBossLevel: 1

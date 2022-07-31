@@ -31,3 +31,4 @@ MonoBehaviour:
   _staticEnemyData: {fileID: 11400000, guid: ab63b1622d85ecf49902527aab486ccb, type: 2}
   _eggData: {fileID: 11400000, guid: 4a56ef13215e13f409ba552bddcc1317, type: 2}
   _mainManeCrystalData: {fileID: 11400000, guid: ec323dde17149bc4d8af88e556655a6e, type: 2}
+  _minimalDamageManeCrystalData: {fileID: 11400000, guid: ef46e381328a5f74aa1a0bc570fbbe54, type: 2}

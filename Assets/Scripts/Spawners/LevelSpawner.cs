@@ -17,6 +17,7 @@ public class LevelSpawner : MonoBehaviour
     [SerializeField] private EndOfGameUI _endOfGameUI;
     [SerializeField] private RebornUI _rebornUI;
 
+    private LevelData _currentLevelData;
     private List<BiomeData> _currentLevelBiomesData;
     private BiomeData _currentBiomeData;
     private Biome _currentBiome;
@@ -24,8 +25,11 @@ public class LevelSpawner : MonoBehaviour
     private Rail _currentBiomeStartRail;
     private Vector3 _nextBiomeSpawnPosition = Vector3.zero;
     private int _levelCounter = 1;
-    private int _biomesCounter = 0;
+    private int _biomesCounter;
+    private bool _isBossPhase;
     private bool _isGameInfinite;
+
+    public bool IsBossPhase => _isBossPhase;
 
     public delegate void LevelSpawned(int levelNumber, List<BiomeData> currentLevelBiomes);
 
@@ -35,20 +39,26 @@ public class LevelSpawner : MonoBehaviour
 
     public event BiomeSpawned OnBiomeSpawned;
 
+    public delegate void LevelFinished();
+
+    public event LevelFinished OnLevelFinished;
+
     public BiomeData CurrentBiomeData => _currentBiomeData;
 
-    public Rail CurrentBiomeStartRail { get => _currentBiomeStartRail; set => _currentBiomeStartRail = value; }
+    public Rail CurrentBiomeStartRail
+    {
+        get => _currentBiomeStartRail;
+        set => _currentBiomeStartRail = value;
+    }
 
     public Rail CurrentBiomeFinishRail
     {
-        get
-        {
-            return _currentBiomeFinishRail;
-        }
+        get { return _currentBiomeFinishRail; }
         set
         {
             _currentBiomeFinishRail = value;
-            _currentBiomeFinishRail.OnReachedEndOfLevel += SpawnBiome;
+            if (!_isBossPhase)
+                _currentBiomeFinishRail.OnReachedEndOfLevel += SpawnBiome;
         }
     }
 
@@ -56,7 +66,7 @@ public class LevelSpawner : MonoBehaviour
     {
         LoadLevelBiomes();
         LevelSpawn();
-        _endOfGameUI.SetLenghtOfLevel(_nextBiomeSpawnPosition.y * NumberBiomesInLevel);
+        _endOfGameUI.SetLevelInfo(_currentLevelData, _nextBiomeSpawnPosition.y * NumberBiomesInLevel);
         InitLevelUI();
     }
 
@@ -79,6 +89,9 @@ public class LevelSpawner : MonoBehaviour
 
     public void SpawnBiome()
     {
+        if (_currentBiomeFinishRail != null)
+            _currentBiomeFinishRail.OnReachedEndOfLevel -= SpawnBiome;
+
         if (_biomesCounter == _currentLevelBiomesData.Count)
         {
             if (_isGameInfinite)
@@ -90,9 +103,23 @@ public class LevelSpawner : MonoBehaviour
             }
             else
             {
-                PlayerProgress.Instance.LevelNumber++;
-                _endOfGameUI.SetInfo(true, _isGameInfinite);
-                UIManager.Instance.UIStackPush(_endOfGameUI);
+                if (_currentLevelData.IsBossLevel)
+                {
+                    _isBossPhase = true;
+
+                    if (_currentBiome != null)
+                        _currentBiome.DestroyLevel();
+
+                    _currentBiomeData = _currentLevelBiomesData[0];
+                    SpawnCurrentBiome();
+                }
+                else
+                {
+                    PlayerProgress.Instance.LevelNumber++;
+                    _endOfGameUI.SetInfo(true, _isGameInfinite);
+                    UIManager.Instance.UIStackPush(_endOfGameUI);
+                    OnLevelFinished?.Invoke();
+                }
             }
         }
         else
@@ -101,29 +128,40 @@ public class LevelSpawner : MonoBehaviour
                 _currentBiome.DestroyLevel();
 
             _currentBiomeData = _currentLevelBiomesData[_biomesCounter];
-            EnemiesManager.Instance.SetEnemiesData(_currentBiomeData);
-            var level = Instantiate(_levelPrefab, _nextBiomeSpawnPosition, Quaternion.identity);
-            _currentBiome = level.GetComponent<Biome>();
-            var nextBiomeData = _currentLevelBiomesData[(_biomesCounter + 1) % _currentLevelBiomesData.Count];
-            _nextBiomeSpawnPosition = _currentBiome.Init(_currentBiomeData, nextBiomeData);
-            OnBiomeSpawned?.Invoke();
+            SpawnCurrentBiome();
             _biomesCounter++;
         }
 
-        if (_biomesCounter == _currentLevelBiomesData.Count)
+        if (_isGameInfinite && _biomesCounter == _currentLevelBiomesData.Count)
         {
-            if(_isGameInfinite)
-            {
-                SetBiomesOfCurrentLevel();
-                _currentBiome.SetNextBiomeData(_currentLevelBiomesData[0]);
-            }
+            SetBiomesOfCurrentLevel();
+            _currentBiome.SetNextBiomeData(_currentLevelBiomesData[0]);
         }
+    }
+
+    private void SpawnCurrentBiome()
+    {
+        EnemiesManager.Instance.SetEnemiesData(_currentBiomeData);
+        var level = Instantiate(_levelPrefab, _nextBiomeSpawnPosition, Quaternion.identity);
+        _currentBiome = level.GetComponent<Biome>();
+        if (_isBossPhase)
+        {
+            var nextBiomeData = _currentLevelBiomesData[0];
+            _nextBiomeSpawnPosition = _currentBiome.Init(_currentBiomeData, nextBiomeData, false);
+        }
+        else
+        {
+            var nextBiomeData = _currentLevelBiomesData[(_biomesCounter + 1) % _currentLevelBiomesData.Count];
+            _nextBiomeSpawnPosition = _currentBiome.Init(_currentBiomeData, nextBiomeData, true);
+        }
+
+        OnBiomeSpawned?.Invoke();
     }
 
     private void InitLevelUI()
     {
         int level = PlayerProgress.Instance.LevelNumber;
-        if(_isGameInfinite)
+        if (_isGameInfinite)
             level = _levelCounter;
 
         _pauseLevelInfoPanel.SetLevelInfoPanel(level, _currentLevelBiomesData.Distinct().ToList());
@@ -143,7 +181,9 @@ public class LevelSpawner : MonoBehaviour
     {
         string levelsDataPath = "Specifications/Levels";
         var levelsData = Resources.LoadAll<LevelData>(levelsDataPath).ToList();
+        Debug.Log(levelsData.Count + " " + (PlayerProgress.Instance.LevelNumber - 1));
         var levelData = levelsData[PlayerProgress.Instance.LevelNumber - 1];
+        _currentLevelData = levelData;
         _currentLevelBiomesData = levelData.Biomes;
         _gameStartUI.SetWeapons(levelData.Weapons);
         _gameStartUI.SetAmplifications(levelData.Amplifications);
@@ -151,7 +191,8 @@ public class LevelSpawner : MonoBehaviour
     }
 
     private void SetBiomesOfCurrentLevel()
-    {;
+    {
+        ;
         List<BiomeData> biomes = new List<BiomeData>();
         while (biomes.Count != NumberBiomesInLevel)
         {

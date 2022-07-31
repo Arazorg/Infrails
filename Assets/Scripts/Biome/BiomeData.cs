@@ -21,6 +21,7 @@ public class BiomeData : ScriptableObject
     [SerializeField] private EnemyData _staticEnemyData;
     [SerializeField] private EnemyData _eggData;
     [SerializeField] private EnemyData _mainManeCrystalData;
+    [SerializeField] private EnemyData _minimalDamageManeCrystalData;
 
     public string BiomeName => _biomeName;
 
@@ -47,4 +48,6 @@ public class BiomeData : ScriptableObject
     public EnemyData EggData => _eggData;
 
     public EnemyData MainManeCrystalData => _mainManeCrystalData;
+
+    public EnemyData MinimalDamageManeCrystalData => _minimalDamageManeCrystalData;
 }

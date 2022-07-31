@@ -5,33 +5,36 @@ using UnityEngine.UI;
 
 public class EndOfGameUI : BaseUI, IUIPanel
 {
-    [Header("Text")]
-    [SerializeField] private TextMeshProUGUI _countOfEarnedMoneyText;
+    [Header("Text")] [SerializeField] private TextMeshProUGUI _countOfEarnedMoneyText;
     [SerializeField] private TextMeshProUGUI _countOfKilledEnemyText;
     [SerializeField] private TextMeshProUGUI _playTimeText;
     [SerializeField] private TextMeshProUGUI _reachedLevelText;
     [SerializeField] private TextMeshProUGUI _doubleMoneyText;
     [SerializeField] private LocalizedText _resultText;
 
-    [Header("Images")]
-    [SerializeField] private Image _characterImage;
+    [Header("Images")] [SerializeField] private Image _characterImage;
     [SerializeField] private Image _weaponImage;
 
-    [Header("Rect Transform")]
-    [SerializeField] private RectTransform _trolley;
+    [Header("Rect Transform")] [SerializeField]
+    private RectTransform _trolley;
+
     [SerializeField] private RectTransform _flag;
 
-    [Header("AnimationsUI Scripts")]
-    [SerializeField] private AnimationsUI _shareButton;
+    [Header("AnimationsUI Scripts")] [SerializeField]
+    private AnimationsUI _shareButton;
+
     [SerializeField] private AnimationsUI _doubleRewardButton;
     [SerializeField] private AnimationsUI _goToLobbyButton;
     [SerializeField] private AnimationsUI _doubleMoneyImage;
     [SerializeField] private AnimationsUI _goToNextLevelButton;
     [SerializeField] private AnimationsUI _retryLevelButton;
 
-    [Header("Audio Clips")]
-    [SerializeField] private AudioClip _defeatAudioClip;
+    [Header("Audio Clips")] [SerializeField]
+    private AudioClip _defeatAudioClip;
 
+    [SerializeField] private AudioClip _winAudioClip;
+
+    private LevelData _levelData;
     private Vector2 _centerAnchor = new Vector2(0.5f, 0.5f);
     private Vector2 _startPosition;
     private Vector2 _finishPosition;
@@ -45,11 +48,23 @@ public class EndOfGameUI : BaseUI, IUIPanel
     private bool _isWin;
     private bool _isInifinite;
 
-    public bool IsActive { get => _isActive; set => _isActive = value; }
+    public bool IsActive
+    {
+        get => _isActive;
+        set => _isActive = value;
+    }
 
-    public bool IsBackButtonEnabled { get => _isBackButtonEnabled; set => _isBackButtonEnabled = value; }
+    public bool IsBackButtonEnabled
+    {
+        get => _isBackButtonEnabled;
+        set => _isBackButtonEnabled = value;
+    }
 
-    public bool IsPopAvailable { get => _isPopAvailable; set => _isPopAvailable = value; }
+    public bool IsPopAvailable
+    {
+        get => _isPopAvailable;
+        set => _isPopAvailable = value;
+    }
 
     public void SetInfo(bool isWin, bool isInfinite, float characterPositionY = 0)
     {
@@ -59,9 +74,10 @@ public class EndOfGameUI : BaseUI, IUIPanel
         SetResultText();
     }
 
-    public void SetLenghtOfLevel(float length)
+    public void SetLevelInfo(LevelData levelData, float levelLength)
     {
-        _levelLength = length;
+        _levelData = levelData;
+        _levelLength = levelLength;
     }
 
     public void OnPop()
@@ -110,6 +126,9 @@ public class EndOfGameUI : BaseUI, IUIPanel
 
     private IEnumerator Open()
     {
+        if (!CurrentGameInfo.Instance.IsInfinite)
+            CurrentGameInfo.Instance.CountOfEarnedMoney += _levelData.LevelReward;
+        
         CurrentGameInfo.Instance.AddResultsToProgress();
         _isPopAvailable = false;
         SetUI();
@@ -118,7 +137,12 @@ public class EndOfGameUI : BaseUI, IUIPanel
         float moveTrolleyDelay = 0.5f;
         yield return new WaitForSeconds(moveTrolleyDelay);
         SetTrolleyMovementParams();
-        AudioManager.Instance.PlayEffect(_defeatAudioClip);
+
+        if (_isWin)
+            AudioManager.Instance.PlayEffect(_winAudioClip);
+        else
+            AudioManager.Instance.PlayEffect(_defeatAudioClip);
+
         AudioManager.Instance.StopMusic();
     }
 
@@ -178,7 +202,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
     private void SetText()
     {
         float playTimeSeconds = (Time.time - CurrentGameInfo.Instance.GameStartTime);
-        _playTimeText.text = string.Format("{0:00}:{1:00}", (int)(playTimeSeconds / 60), (int)(playTimeSeconds % 60));
+        _playTimeText.text = string.Format("{0:00}:{1:00}", (int) (playTimeSeconds / 60), (int) (playTimeSeconds % 60));
         _countOfEarnedMoneyText.text = string.Format("+{0}", CurrentGameInfo.Instance.CountOfEarnedMoney.ToString());
         _doubleMoneyText.text = string.Format("+{0}", CurrentGameInfo.Instance.CountOfEarnedMoney.ToString());
         _countOfKilledEnemyText.text = CurrentGameInfo.Instance.CountOfKilledEnemies.ToString();
@@ -204,7 +228,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
             if (_isWin)
                 _reachedLevelText.text = "100%";
             else
-                _reachedLevelText.text = string.Format("{0}%", (int)((_characterPositionY / _levelLength) * 100));
+                _reachedLevelText.text = string.Format("{0}%", (int) ((_characterPositionY / _levelLength) * 100));
         }
 
         _flag.anchorMin = _centerAnchor;

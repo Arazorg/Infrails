@@ -18,6 +18,7 @@ public class EnemiesManager : MonoBehaviour
     private EnemyData _staticEnemyData;
     private EnemyData _eggData;
     private EnemyData _mainManeCrystalData;
+    private EnemyData _minimalDamageManeCrystalData;
     private Character _character;
     private StaticEnemy _currentStaticEnemy;
     private LevelData _levelData;
@@ -47,6 +48,7 @@ public class EnemiesManager : MonoBehaviour
         _flyingEnemiesData = biomeData.FlyingEnemiesData;
         _staticEnemyData = biomeData.StaticEnemyData;
         _mainManeCrystalData = biomeData.MainManeCrystalData;
+        _minimalDamageManeCrystalData = biomeData.MinimalDamageManeCrystalData;
         _eggData = biomeData.EggData;
         _staticEnemyTargets.Clear();
     }
@@ -87,7 +89,9 @@ public class EnemiesManager : MonoBehaviour
             Destroy(_currentStaticEnemy.gameObject);
 
         _currentStaticEnemy = SpawnEnemyToParent(_staticEnemyData, teleportationPoints[0]) as StaticEnemy;
-        _currentStaticEnemy.SetEnemyLevel(_levelData.EnemiesLevel);
+        if (!CurrentGameInfo.Instance.IsInfinite)
+            _currentStaticEnemy.SetEnemyLevel(_levelData.EnemiesLevel);
+
         _currentStaticEnemy.InitScripts(teleportationPoints, _staticEnemyTargets);
     }
 
@@ -110,7 +114,9 @@ public class EnemiesManager : MonoBehaviour
             {
                 int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
                 FlyingEnemy enemy = SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint) as FlyingEnemy;
-                enemy.SetEnemyLevel(_levelData.EnemiesLevel);
+                if (!CurrentGameInfo.Instance.IsInfinite)
+                    enemy.SetEnemyLevel(_levelData.EnemiesLevel);
+                
                 enemy.OnFlyingEnemyDeath += RemoveFlyingEnemyFromList;
                 _currentFlyingEnemies.Add(enemy);
             }
@@ -134,11 +140,18 @@ public class EnemiesManager : MonoBehaviour
     private void SpawnManeCrystal(Transform spawnPoint)
     {
         float maxBonusChance = 0.5f;
-        float bonusChance = (1f / CurrentGameInfo.Instance.ReachedBiomeNumber);
+
+        float bonusChance = 0;
+
+        if (CurrentGameInfo.Instance.IsInfinite)
+            bonusChance = (1f / CurrentGameInfo.Instance.ReachedBiomeNumber);
+        else
+            bonusChance = (1f / _levelData.EnemiesLevel);
+
         if (bonusChance > maxBonusChance)
             bonusChance = maxBonusChance;
 
-        float spawnChanceMainManeCrystal = 0.2f + bonusChance;
+        float spawnChanceMainManeCrystal = 0.125f + bonusChance;
 
         if (Random.Range(0f, 1f) < spawnChanceMainManeCrystal)
         {
@@ -149,9 +162,11 @@ public class EnemiesManager : MonoBehaviour
         else
         {
             int dataNumber = Random.Range(0, _maneCrystalsData.Count);
-            if(_maneCrystalsData[dataNumber].EnemyElement == _mainManeCrystalData.EnemyElement)
+            while (_maneCrystalsData[dataNumber].EnemyElement == _mainManeCrystalData.EnemyElement ||
+                   (!CurrentGameInfo.Instance.IsInfinite &&
+                    _maneCrystalsData[dataNumber] == _minimalDamageManeCrystalData))
                 dataNumber = Random.Range(0, _maneCrystalsData.Count);
-            
+
             SpawnEnemyToParent(_maneCrystalsData[dataNumber], spawnPoint);
         }
     }
