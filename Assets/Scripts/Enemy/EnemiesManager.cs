@@ -129,6 +129,11 @@ public class EnemiesManager : MonoBehaviour
         SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint);
     }
 
+    public void SpawnBoss(BossData bossData, Transform spawnPoint)
+    {
+        
+    }
+
     private void Awake()
     {
         if (Instance != null)

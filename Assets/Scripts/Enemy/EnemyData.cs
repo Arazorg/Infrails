@@ -16,7 +16,8 @@ public class EnemyData : UnitData
         Static,
         Egg,
         Chest,
-        ManeCrystal
+        ManeCrystal,
+        Boss
     }
 
     public Enemy Prefab => _prefab;

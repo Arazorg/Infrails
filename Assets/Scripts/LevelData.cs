@@ -7,6 +7,7 @@ public class LevelData : ScriptableObject
     [SerializeField] private List<BiomeData> _biomes;
     [SerializeField] private List<AmplificationData> _amplifications;
     [SerializeField] private List<WeaponData> _weapons;
+    [SerializeField] private BossData _bossData;
     [SerializeField] private int _enemiesLevel;
     [SerializeField] private int _levelReward;
     [SerializeField] private bool _isBossLevel;
@@ -16,6 +17,8 @@ public class LevelData : ScriptableObject
     public List<AmplificationData> Amplifications => _amplifications;
 
     public List<WeaponData> Weapons => _weapons;
+
+    public BossData BossData => _bossData;
 
     public int EnemiesLevel => _enemiesLevel;
 

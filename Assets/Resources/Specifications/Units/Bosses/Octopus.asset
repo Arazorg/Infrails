@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07383b67a15d9c545811be05c1fef778, type: 3}
+  m_Name: Octopus
+  m_EditorClassIdentifier: 
+  _animatorController: {fileID: 9100000, guid: 5364fe606e9539544adf28b3ecd518a6, type: 2}
+  _unitColor: {r: 0.92549026, g: 0.5372549, b: 0.21176472, a: 1}
+  _colliderOffset: {x: 0, y: 0}
+  _colliderSize: {x: 15, y: 15}
+  _unitName: Octopus
+  _maxHealth: 800
+  _prefab: {fileID: 4351345565261345811, guid: 7f4f016bcb9879d45a325b7c99e2036d, type: 3}
+  _enemyElement: {fileID: 11400000, guid: 97a0ce2a93f544643877c903e109af8f, type: 2}
+  _deathAudioClip: {fileID: 8300000, guid: 89c902147433c004483d46e25433bf8a, type: 3}
+  _popUpTextOffset: {x: 0, y: 12}
+  _center: {x: 0, y: 0}
+  _isFlipX: 0
+  _spawnAudioClip: {fileID: 8300000, guid: 3690163877fd6624a967ee58219bbfd5, type: 3}

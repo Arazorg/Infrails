@@ -46,7 +46,6 @@ public class Floor : MonoBehaviour
             float t = _timeElapsedLightIntensity / _lightOnOffDuration;
             _floorLight.intensity = Mathf.Lerp(_startGlobalLightIntensity, _neededGlobalLigthIntensity, t);
             _timeElapsedLightIntensity += Time.deltaTime;
-            Debug.Log(_timeElapsedLightIntensity);
         }
     }
 }
