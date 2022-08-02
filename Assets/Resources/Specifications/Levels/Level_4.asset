@@ -25,6 +25,7 @@ MonoBehaviour:
   _weapons:
   - {fileID: 11400000, guid: 56504f42026640e459958807c154e297, type: 2}
   - {fileID: 11400000, guid: 12c9f06f38b6b5248a6570019f0cc5b2, type: 2}
-  _enemiesLevel: 13
+  _bossData: {fileID: 0}
+  _enemiesLevel: 8
   _levelReward: 300
   _isBossLevel: 0

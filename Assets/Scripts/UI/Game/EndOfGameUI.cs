@@ -144,6 +144,7 @@ public class EndOfGameUI : BaseUI, IUIPanel
             AudioManager.Instance.PlayEffect(_defeatAudioClip);
 
         AudioManager.Instance.StopMusic();
+        CurrentGameInfo.Instance.RefreshGameStats();
     }
 
     private void SetUI()

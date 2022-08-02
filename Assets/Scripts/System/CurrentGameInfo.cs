@@ -27,9 +27,16 @@ public class CurrentGameInfo : MonoBehaviour
         CountOfEarnedMoney += ReachedBiomeNumber * numberMoneyForBiome;
         PlayerProgress.Instance.PlayerMoney += CountOfEarnedMoney;
         PlayerProgress.Instance.Save();
-        RefreshGameStats();
     }
-
+    
+    public void RefreshGameStats()
+    {
+        ReachedBiomeNumber = 0;
+        CountOfEarnedMoney = 0;
+        CountOfKilledEnemies = 0;
+        GameStartTime = 0;
+    }
+    
     public void CreateNewGame()
     {
         IsExpert = false;
@@ -65,13 +72,5 @@ public class CurrentGameInfo : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-    }
-
-    private void RefreshGameStats()
-    {
-        ReachedBiomeNumber = 0;
-        CountOfEarnedMoney = 0;
-        CountOfKilledEnemies = 0;
-        GameStartTime = 0;
     }
 }

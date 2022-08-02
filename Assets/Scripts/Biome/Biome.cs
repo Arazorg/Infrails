@@ -19,15 +19,11 @@ public class Biome : MonoBehaviour
     public Vector3 Init(BiomeData data, BiomeData nextBiomeData, bool isSimplePhase)
     {
         _biomeData = data;
-        int minLengthOfLevel = 5;
-        int maxLenghtOfLevel = 7;
-        Vector3 nextLevelSpawnPosition =
-            CreateEnvironment(Random.Range(minLengthOfLevel, maxLenghtOfLevel), isSimplePhase);
-        
+        int numberFloors = 4;
+        Vector3 nextLevelSpawnPosition = CreateEnvironment(numberFloors, isSimplePhase);
+
         if (isSimplePhase)
-        {
             SetNextBiomeData(nextBiomeData);
-        }
 
         SetBiomeLightsState(GameConstants.TurnOn);
         return nextLevelSpawnPosition;
@@ -71,7 +67,7 @@ public class Biome : MonoBehaviour
     private Vector3 CreateEnvironment(int lengthOfLevel, bool isSimplePhase)
     {
         _isSimplePhase = isSimplePhase;
-        
+
         Vector3 nextFloorSpawnPosition = transform.position;
         int lastRailsPatternNumber = Random.Range(0, _biomeData.RailsPrefabs.Count);
 
@@ -118,12 +114,12 @@ public class Biome : MonoBehaviour
 
         if (numberOfBiome == 0 && LevelSpawner.Instance.CurrentBiomeFinishRail != null)
         {
-            if(_isSimplePhase)
+            if (_isSimplePhase)
                 LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail.NextRail = railsPattern.FirstRail;
             else
-                LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail= railsPattern.FirstRail;
+                LevelSpawner.Instance.CurrentBiomeFinishRail.NextRail = railsPattern.FirstRail;
         }
-            
+
 
         EnemiesManager.Instance.SpawnDestroyableObjects(railsPattern.DestroyableObjectsSpawnPoints);
 

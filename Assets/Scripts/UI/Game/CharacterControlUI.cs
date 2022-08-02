@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class CharacterControlUI : BaseUI, IUIPanel
 {
-    [Header("UI Scripts")]
-    [SerializeField] private Joystick _joystick;
+    [Header("UI Scripts")] [SerializeField]
+    private Joystick _joystick;
+
     [SerializeField] private PauseUI _pauseUI;
     [SerializeField] private RebornUI _rebornUI;
     [SerializeField] private GameShopUI _gameShopUI;
@@ -14,26 +15,40 @@ public class CharacterControlUI : BaseUI, IUIPanel
     [SerializeField] private HealingButtonUI _healingButtonUI;
     [SerializeField] private CooldownIndicator _skillCooldownIndicator;
     [SerializeField] private List<CurrentAmplificationsPanelUI> _currentAmplificationsPanels;
-    [SerializeField] private AnimationsUI _healingButton;
-    [SerializeField] private AnimationsUI _openShopButton;
 
-    [Header("Bars")]
-    [SerializeField] private BarUI _healthBar;
+    [Header("Animations UI")] [SerializeField]
+    private AnimationsUI _healingButton;
+
+    [SerializeField] private AnimationsUI _openShopButton;
+    [SerializeField] private AnimationsUI _pauseButton;
+
+    [Header("Bars")] [SerializeField] private BarUI _healthBar;
     [SerializeField] private BarUI _armorBar;
 
-    [Header("Texts")]
-    [SerializeField] private TextMeshProUGUI _moneyText;
+    [Header("Texts")] [SerializeField] private TextMeshProUGUI _moneyText;
 
     private Character _character;
     private bool _isActive;
     private bool _isBackButtonEnabled;
     private bool _isPopAvailable;
 
-    public bool IsActive { get => _isActive; set => _isActive = value; }
+    public bool IsActive
+    {
+        get => _isActive;
+        set => _isActive = value;
+    }
 
-    public bool IsBackButtonEnabled { get => _isBackButtonEnabled; set => _isBackButtonEnabled = value; }
+    public bool IsBackButtonEnabled
+    {
+        get => _isBackButtonEnabled;
+        set => _isBackButtonEnabled = value;
+    }
 
-    public bool IsPopAvailable { get => _isPopAvailable; set => _isPopAvailable = value; }
+    public bool IsPopAvailable
+    {
+        get => _isPopAvailable;
+        set => _isPopAvailable = value;
+    }
 
     public void OnPush()
     {
@@ -65,7 +80,7 @@ public class CharacterControlUI : BaseUI, IUIPanel
         _healingButtonUI.Init(_character);
         foreach (var panel in _currentAmplificationsPanels)
             panel.Init(character.GetComponent<CharacterAmplifications>());
-        
+
         SubscribeToEvents();
     }
 
@@ -79,6 +94,7 @@ public class CharacterControlUI : BaseUI, IUIPanel
             _openShopButton.Show();
         else
             _healingButton.Show();
+        EnemiesManager.Instance.OnBossSpawned += ShowBossHealthBar;
     }
 
     public void OpenPauseUI()
@@ -126,13 +142,19 @@ public class CharacterControlUI : BaseUI, IUIPanel
         _moneyText.text = money.ToString();
     }
 
+
+    private void ShowBossHealthBar(BossData bossData)
+    {
+        _pauseButton.Hide();
+        _pauseButton.IsShowOnStart = false;
+    }
+
+
     private void BackButtonClick()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && _isBackButtonEnabled 
-            && UIManager.Instance.UIStackPeek() is CharacterControlUI)
-        {
+        if (Input.GetKeyDown(KeyCode.Escape) && _isBackButtonEnabled
+                                             && UIManager.Instance.UIStackPeek() is CharacterControlUI)
             OpenPauseUI();
-        }
     }
 
     private IEnumerator EnableBackButton()

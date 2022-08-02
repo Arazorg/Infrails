@@ -4,14 +4,15 @@ using UnityEngine;
 public class EnemiesManager : MonoBehaviour
 {
     public static EnemiesManager Instance;
-
-    [Header("Enemies Data")] [SerializeField]
-    private EnemyFactory _enemyFactory;
-
+    
+    [SerializeField] private EnemyFactory _enemyFactory;
+    
+    [Header("Enemies Data")] 
     [SerializeField] private List<EnemyData> _maneCrystalsData;
     [SerializeField] private EnemyData _firstAidKitData;
     [SerializeField] private EnemyData _repairKitData;
-
+    [SerializeField] private BossHealthBarUI _bossHealthBarUI;
+    
     private List<EnemyData> _flyingEnemiesData = new List<EnemyData>();
     private List<IEnemyLaserTarget> _staticEnemyTargets = new List<IEnemyLaserTarget>();
     private List<FlyingEnemy> _currentFlyingEnemies = new List<FlyingEnemy>();
@@ -26,6 +27,10 @@ public class EnemiesManager : MonoBehaviour
     public delegate void CharacterAvailable(Character character);
 
     public event CharacterAvailable OnCharacterAvailable;
+    
+    public delegate void BossSpawned(BossData bossData);
+
+    public event BossSpawned OnBossSpawned;
 
     public Character Character
     {
@@ -113,10 +118,10 @@ public class EnemiesManager : MonoBehaviour
             if (_currentFlyingEnemies.Count <= maxNumberOfEnemies + bonusNumbersOfEnemies && spawnPoint != null)
             {
                 int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
-                FlyingEnemy enemy = SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint) as FlyingEnemy;
+                FlyingEnemy enemy = SpawnEnemyByPoint(_flyingEnemiesData[dataNumber], spawnPoint) as FlyingEnemy;
                 if (!CurrentGameInfo.Instance.IsInfinite)
                     enemy.SetEnemyLevel(_levelData.EnemiesLevel);
-                
+
                 enemy.OnFlyingEnemyDeath += RemoveFlyingEnemyFromList;
                 _currentFlyingEnemies.Add(enemy);
             }
@@ -126,12 +131,15 @@ public class EnemiesManager : MonoBehaviour
     public void SpawnEnemyFromEgg(Transform spawnPoint)
     {
         int dataNumber = Random.Range(0, _flyingEnemiesData.Count);
-        SpawnEnemyByPosition(_flyingEnemiesData[dataNumber], spawnPoint);
+        SpawnEnemyByPoint(_flyingEnemiesData[dataNumber], spawnPoint);
     }
 
-    public void SpawnBoss(BossData bossData, Transform spawnPoint)
+    public void SpawnBoss(BossData bossData)
     {
-        
+        Vector3 spawnOffset = new Vector3(0, 75, 0);
+        var boss = SpawnEnemyByPosition(bossData, Character.Transform, Character.Transform.position + spawnOffset) as Boss;
+        _bossHealthBarUI.Init(boss, bossData);
+        OnBossSpawned?.Invoke(bossData);
     }
 
     private void Awake()
@@ -183,12 +191,20 @@ public class EnemiesManager : MonoBehaviour
         return enemy;
     }
 
-    private Enemy SpawnEnemyByPosition(EnemyData data, Transform spawnPoint)
+    private Enemy SpawnEnemyByPoint(EnemyData data, Transform spawnPoint)
     {
         Enemy enemy = _enemyFactory.GetEnemyByPosition(data.Prefab, spawnPoint.position);
         enemy.Init(data, spawnPoint, _character);
         return enemy;
     }
+
+    private Enemy SpawnEnemyByPosition(EnemyData data, Transform spawnPoint, Vector3 position)
+    {
+        Enemy enemy = _enemyFactory.GetEnemyByPosition(data.Prefab, position);
+        enemy.Init(data, spawnPoint, _character);
+        return enemy;
+    }
+
 
     private void RemoveFlyingEnemyFromList(FlyingEnemy enemy)
     {

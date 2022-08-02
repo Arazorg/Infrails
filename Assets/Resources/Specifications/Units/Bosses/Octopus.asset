@@ -24,4 +24,8 @@ MonoBehaviour:
   _popUpTextOffset: {x: 0, y: 12}
   _center: {x: 0, y: 0}
   _isFlipX: 0
+  _coinPrefab: {fileID: 9192394080527770458, guid: dbb5a281092de5f419b4e0e46fc450fb, type: 3}
+  _weaponData: {fileID: 11400000, guid: e0ce4824f9017b94f8d27c68beb2dbd1, type: 2}
+  _dizzinesEffectOffset: {x: -0.35, y: 6.05, z: 0}
+  _bossPortraitSprite: {fileID: -2511382521938653856, guid: 2b35a878e9b023545ade4a39b13c32c3, type: 3}
   _spawnAudioClip: {fileID: 8300000, guid: 3690163877fd6624a967ee58219bbfd5, type: 3}

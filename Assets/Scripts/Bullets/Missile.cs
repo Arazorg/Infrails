@@ -30,12 +30,16 @@ public class Missile : PlayerBullet
     {
         int partOfHealth = 7;
         int minDamage = 2;
+        int maxDamage = 4;
+        
         foreach (var collider in colliders)
         {
             if (collider.TryGetComponent(out Enemy enemy))
             {
-                if(enemy.Health / partOfHealth < 2)
+                if(enemy.Health / partOfHealth < minDamage)
                     enemy.GetDamage(minDamage);
+                else if(enemy.Health / partOfHealth > maxDamage)
+                    enemy.GetDamage(maxDamage);
                 else
                     enemy.GetDamage(enemy.Health / partOfHealth);
             }             

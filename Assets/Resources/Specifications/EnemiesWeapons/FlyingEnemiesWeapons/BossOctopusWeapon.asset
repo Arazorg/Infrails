@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa4733556bd7184d8037333868f58b8, type: 3}
+  m_Name: BossOctopusWeapon
+  m_EditorClassIdentifier: 
+  _itemName: 
+  _itemColor: {r: 0, g: 0, b: 0, a: 0}
+  _itemSpriteUI: {fileID: 0}
+  _isStartingItem: 0
+  _prefab: {fileID: 0}
+  _weaponAudioClip: {fileID: 8300000, guid: 7ca8d26a2b9c7c044b9f325517d182b4, type: 3}
+  _animatorController: {fileID: 0}
+  _mainSprite: {fileID: 0}
+  _handsPositions: []
+  _bulletSpeed: 55
+  _damage: 3
+  _critChance: 0
+  _fireRate: 0.9
+  _bulletScaleFactor: 1
+  _scatter: 0
+  _level: 0
+  _bulletSpawnPosition: {x: 0, y: -5.12}
+  _bulletData: {fileID: 0}
+  _DPS: 3.3333335

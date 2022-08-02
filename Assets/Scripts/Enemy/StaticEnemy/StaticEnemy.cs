@@ -99,7 +99,8 @@ public class StaticEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     {
         _isMove = false;
         _currentState.Stun();
-        _enemyDebuffs.StartStunning(this);
+        float stunDuration = 1.25f;
+        _enemyDebuffs.StartStunning(this, stunDuration);
     }
 
     public void StartBleeding()

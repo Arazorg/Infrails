@@ -105,7 +105,8 @@ public class FlyingEnemy : Enemy, IAttackingEnemy, IMovableEnemy, IEnemyStateSwi
     public void StartStunning()
     {
         Stun();
-        _enemyDebuffs.StartStunning(this);
+        float stunDuration = 1.25f;
+        _enemyDebuffs.StartStunning(this, stunDuration);
     }
 
     public void StartBleeding()

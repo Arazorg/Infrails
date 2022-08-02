@@ -42,6 +42,7 @@ public class LevelSpawner : MonoBehaviour
     public delegate void LevelFinished();
 
     public event LevelFinished OnLevelFinished;
+    
 
     public BiomeData CurrentBiomeData => _currentBiomeData;
 
@@ -105,8 +106,10 @@ public class LevelSpawner : MonoBehaviour
             {
                 if (_currentLevelData.IsBossLevel)
                 {
+                    if(!_isBossPhase)
+                        EnemiesManager.Instance.SpawnBoss(_currentLevelData.BossData);
+                    
                     _isBossPhase = true;
-
                     if (_currentBiome != null)
                         _currentBiome.DestroyLevel();
 
@@ -181,7 +184,6 @@ public class LevelSpawner : MonoBehaviour
     {
         string levelsDataPath = "Specifications/Levels";
         var levelsData = Resources.LoadAll<LevelData>(levelsDataPath).ToList();
-        Debug.Log(levelsData.Count + " " + (PlayerProgress.Instance.LevelNumber - 1));
         var levelData = levelsData[PlayerProgress.Instance.LevelNumber - 1];
         _currentLevelData = levelData;
         _currentLevelBiomesData = levelData.Biomes;
